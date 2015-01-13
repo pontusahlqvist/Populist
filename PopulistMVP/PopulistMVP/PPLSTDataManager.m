@@ -27,6 +27,7 @@
     for(int i = 0; i < 40; i++){
     
         NSString *eventId = [NSString stringWithFormat:@"eventId%i",i];
+        
         Event *event = [self getEventFromCoreDataWithId:eventId];
         if(!event) event = [self createEventWithId:eventId];
 
