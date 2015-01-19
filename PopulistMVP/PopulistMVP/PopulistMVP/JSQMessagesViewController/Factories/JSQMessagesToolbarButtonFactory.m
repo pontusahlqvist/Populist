@@ -26,11 +26,14 @@
 
 + (UIButton *)defaultAccessoryButtonItem
 {
-    UIImage *accessoryImage = [UIImage jsq_defaultAccessoryImage];
+    //NOTE: I changed the default here from the paperclip to our own camera icon
+//    UIImage *accessoryImage = [UIImage jsq_defaultAccessoryImage];
+    UIImage *accessoryImage = [UIImage imageNamed:@"camera@2x.png"];
     UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor lightGrayColor]];
     UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor darkGrayColor]];
     
-    UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, accessoryImage.size.width, 32.0f)];
+//    UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, accessoryImage.size.width, 32.0f)];
+    UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 32.0f, 32.0f)];
     [accessoryButton setImage:normalImage forState:UIControlStateNormal];
     [accessoryButton setImage:highlightedImage forState:UIControlStateHighlighted];
     

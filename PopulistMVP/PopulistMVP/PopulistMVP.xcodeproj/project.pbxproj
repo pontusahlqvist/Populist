@@ -65,6 +65,10 @@
 		165346DA1A5DCEC400343183 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346D91A5DCEC400343183 /* Event.m */; };
 		165346E11A5E21E600343183 /* PPLSTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346E01A5E21E600343183 /* PPLSTNavigationController.m */; };
 		165346E81A5F0DF500343183 /* PPLSTExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346E71A5F0DF500343183 /* PPLSTExploreTableViewController.m */; };
+		16671E481A6C472C00AD394F /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16671E471A6C472C00AD394F /* camera@2x.png */; };
+		16671E4A1A6C479A00AD394F /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 16671E491A6C479A00AD394F /* camera.png */; };
+		16671E4D1A6C58FD00AD394F /* PPLSTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16671E4C1A6C58FD00AD394F /* PPLSTImagePickerController.m */; };
+		16671E501A6C5CE100AD394F /* PPLSTImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16671E4F1A6C5CE100AD394F /* PPLSTImageDetailViewController.m */; };
 		167F78951A58725E00C7AB64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78941A58725E00C7AB64 /* Foundation.framework */; };
 		167F78971A58725E00C7AB64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78961A58725E00C7AB64 /* CoreGraphics.framework */; };
 		167F78991A58725E00C7AB64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78981A58725E00C7AB64 /* UIKit.framework */; };
@@ -218,6 +222,12 @@
 		165346E01A5E21E600343183 /* PPLSTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTNavigationController.m; sourceTree = "<group>"; };
 		165346E61A5F0DF500343183 /* PPLSTExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTExploreTableViewController.h; sourceTree = "<group>"; };
 		165346E71A5F0DF500343183 /* PPLSTExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTExploreTableViewController.m; sourceTree = "<group>"; };
+		16671E471A6C472C00AD394F /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		16671E491A6C479A00AD394F /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = ../camera.png; sourceTree = "<group>"; };
+		16671E4B1A6C58FD00AD394F /* PPLSTImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTImagePickerController.h; sourceTree = "<group>"; };
+		16671E4C1A6C58FD00AD394F /* PPLSTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTImagePickerController.m; sourceTree = "<group>"; };
+		16671E4E1A6C5CE100AD394F /* PPLSTImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTImageDetailViewController.h; sourceTree = "<group>"; };
+		16671E4F1A6C5CE100AD394F /* PPLSTImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTImageDetailViewController.m; sourceTree = "<group>"; };
 		167F78911A58725E00C7AB64 /* PopulistMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopulistMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F78941A58725E00C7AB64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		167F78961A58725E00C7AB64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -429,6 +439,7 @@
 		163E3D9E1A64DD8000913FBF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				16671E491A6C479A00AD394F /* camera.png */,
 				163E3D9F1A64DD8000913FBF /* jsq_message_chat_icon.png */,
 				163E3DA01A64DD8000913FBF /* jsq_messages_banner.png */,
 				163E3DA11A64DD8000913FBF /* jsq_messages_banner.psd */,
@@ -546,6 +557,7 @@
 		167F789D1A58725E00C7AB64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16671E471A6C472C00AD394F /* camera@2x.png */,
 				163E3DAD1A64DEE900913FBF /* JSQSystemSoundPlayer */,
 				163E3D9E1A64DD8000913FBF /* Assets */,
 				163E3D061A64DD3600913FBF /* JSQMessagesViewController */,
@@ -585,6 +597,10 @@
 				165346E71A5F0DF500343183 /* PPLSTExploreTableViewController.m */,
 				163E3BC91A64D7F000913FBF /* PPLSTChatViewController.h */,
 				163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */,
+				16671E4B1A6C58FD00AD394F /* PPLSTImagePickerController.h */,
+				16671E4C1A6C58FD00AD394F /* PPLSTImagePickerController.m */,
+				16671E4E1A6C5CE100AD394F /* PPLSTImageDetailViewController.h */,
+				16671E4F1A6C5CE100AD394F /* PPLSTImageDetailViewController.m */,
 				165346E21A5E21EC00343183 /* Navigation Controller */,
 			);
 			name = "View Controllers";
@@ -690,6 +706,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16671E4A1A6C479A00AD394F /* camera.png in Resources */,
 				163E3DA91A64DD8000913FBF /* jsq_messages_icon.psd in Resources */,
 				167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
@@ -701,6 +718,7 @@
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
 				163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */,
 				163E3D981A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				16671E481A6C472C00AD394F /* camera@2x.png in Resources */,
 				163E3DA71A64DD8000913FBF /* jsq_messages_banner.png in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
 				167F78AC1A58725E00C7AB64 /* Images.xcassets in Resources */,
@@ -749,6 +767,7 @@
 				167F78AA1A58725E00C7AB64 /* PopulistMVP.xcdatamodeld in Sources */,
 				163E3D811A64DD3600913FBF /* JSQMessagesTimestampFormatter.m in Sources */,
 				163E3D891A64DD3600913FBF /* JSQMessagesAvatarImage.m in Sources */,
+				16671E4D1A6C58FD00AD394F /* PPLSTImagePickerController.m in Sources */,
 				163E3D781A64DD3600913FBF /* UIDevice+JSQMessages.m in Sources */,
 				167F78A71A58725E00C7AB64 /* PPLSTAppDelegate.m in Sources */,
 				163E3D971A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
@@ -765,6 +784,7 @@
 				167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */,
 				163E3D881A64DD3600913FBF /* JSQMessage.m in Sources */,
 				163E3D841A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
+				16671E501A6C5CE100AD394F /* PPLSTImageDetailViewController.m in Sources */,
 				163E3B301A61E7A000913FBF /* Contribution.m in Sources */,
 				163E3D771A64DD3600913FBF /* UIColor+JSQMessages.m in Sources */,
 				165346C21A5BBBBC00343183 /* PPLSTDataManager.m in Sources */,

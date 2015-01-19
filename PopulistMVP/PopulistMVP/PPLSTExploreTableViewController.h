@@ -10,10 +10,11 @@
 #import "PPLSTDataManager.h"
 
 @interface PPLSTExploreTableViewController : UITableViewController
+@property (strong, nonatomic) PPLSTDataManager *dataManager;
 @property (strong, nonatomic) NSMutableArray *events;
 
-@property (strong, nonatomic) PPLSTDataManager *dataManager;
 
+//TODO: Location Data for User - consider moving into a separate location class
 @property (strong, nonatomic) NSString *country;
 @property (strong, nonatomic) NSString *state;
 @property (strong, nonatomic) NSString *city;

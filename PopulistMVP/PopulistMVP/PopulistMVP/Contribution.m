@@ -22,4 +22,5 @@
 @dynamic event;
 @dynamic titleEvent;
 
+
 @end

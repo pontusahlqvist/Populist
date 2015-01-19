@@ -6,12 +6,24 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "JSQMessagesViewController.h"
 #import "JSQMessages.h"
+#import "JSQMessagesBubbleImageFactory.h"
 #import "Event.h"
 #import "PPLSTDataManager.h"
 
-@interface PPLSTChatViewController : JSQMessagesViewController
-@property (strong, nonatomic) Event *event;
+@interface PPLSTChatViewController : JSQMessagesViewController <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout>
+//loads contributions for this event
+-(void) prepareForLoad;
+
 @property (strong, nonatomic) PPLSTDataManager *dataManager;
+@property (strong, nonatomic) Event *event;
+
+@property (strong, nonatomic) NSMutableArray *contributions;
+@property (strong, nonatomic) NSMutableArray *jsqMessages;
+
+@property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
+@property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;
 @end
