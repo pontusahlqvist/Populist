@@ -77,6 +77,7 @@
 
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData]; //TODO: make sure that it snaps to the bottom of the feed
+            [self scrollToBottomAnimated:NO];
         });
     });
 }
