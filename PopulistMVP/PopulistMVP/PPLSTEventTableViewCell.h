@@ -9,14 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface PPLSTEventTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *titleImageView2;
-@property (strong, nonatomic) IBOutlet UILabel *eventLocationTextLabel2;
-
-@property (strong, nonatomic) IBOutlet UILabel *eventTimeSinceActiveTextLabel2;
 @property (strong, nonatomic) IBOutlet UIImageView *titleImageView;
 @property (strong, nonatomic) IBOutlet UILabel *eventTimeSinceActiveTextLabel;
 @property (strong, nonatomic) IBOutlet UILabel *eventLocationTextLabel;
 
 @property (weak, nonatomic) UITableView *parentTableView;
-
+@property (nonatomic) BOOL loading; //keeps track of if the image for the cell has already been requested to avoid multiple requests.
 @end

@@ -7,9 +7,24 @@
 //
 
 #import "PPLSTDataManager.h"
+#import <Parse/Parse.h>
 
 
 @implementation PPLSTDataManager
+
+#pragma mark - Lazy Instantiation
+
+-(NSMutableDictionary *)imagesAtFilePath{
+    if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
+    return _imagesAtFilePath;
+}
+
+-(NSMutableDictionary *)isLoading {
+    if(!_isLoading) _isLoading = [[NSMutableDictionary alloc] init];
+    return _isLoading;
+}
+
+#pragma mark - Required Methods
 
 -(id) init{
     self = [super init];
@@ -20,36 +35,56 @@
     return self;
 }
 
--(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date{
-    /***************** GET DATA *****************/
-    NSMutableArray *events = [[NSMutableArray alloc] init];
-    //TODO: filler code. Replace with correct parse code
+#pragma mark - Public API
 
-    for(int i = 0; i < 40; i++){
-    
-        NSString *eventId = [NSString stringWithFormat:@"eventId%i",i];
-        
+
+-(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date{
+
+    NSDictionary *result = [PFCloud  callFunction:@"getClusters" withParameters:@{@"latitude": [NSNumber numberWithFloat:latitude], @"longitude": [NSNumber numberWithFloat:longitude]}];
+    NSArray *eventDataArray = result[@"customClusterObjects"];
+
+
+    NSMutableArray *events = [[NSMutableArray alloc] init];
+    for(NSDictionary *eventDictionary in eventDataArray){
+
+        NSString *eventId = eventDictionary[@"objectId"];
+
         Event *event = [self getEventFromCoreDataWithId:eventId];
         if(!event) event = [self createEventWithId:eventId];
-
-        event.longitude = @(35.00+i);
-        event.latitude = @(43.00+i);
-        event.lastActive = [NSDate dateWithTimeInterval:-(rand()%1000) sinceDate:[NSDate date]];
-        event.country = @"USA";
-        event.state = @"California";
-        event.city = @"Los Angeles";
-        NSArray *possibleNeighborhoods = @[@"Little Osaka", @"Venice Beach", @"Santa Monica Pier", @"Culver City", @"Santa Monica", @"Brentwood", @"Westwood", @"Burbank", @"Beverly Hills", @"Bel Air"];
-        event.neighborhood = possibleNeighborhoods[rand()%[possibleNeighborhoods count]];
         
-        NSString *titleContributionId = [NSString stringWithFormat: @"titleContributionIdForEvent%i",i];
+        event.containsUser = [NSNumber numberWithBool:[eventDictionary[@"containsUser"] boolValue]];
+        event.longitude = eventDictionary[@"longitude"];
+        event.latitude = eventDictionary[@"latitude"];
+        event.lastActive = eventDictionary[@"updatedAt"];
+        event.country = eventDictionary[@"country"];
+        event.state = eventDictionary[@"state"];
+        event.city = eventDictionary[@"city"];
+        event.neighborhood = eventDictionary[@"neighborhood"];
+        
+        //TODO: fix this by only sending along the titleContributionId for the image, i.e. get rid of titleMessages all together
+        NSString *titleContributionId = nil;
+        for(NSDictionary *titleContributionDictionary in eventDictionary[@"titleContributionIds"]){
+            NSString *key = [[titleContributionDictionary allKeys] firstObject];
+            if([titleContributionDictionary[key] isEqualToString:@"photo"]){
+                titleContributionId = key;
+                break;
+            }
+        }
+        NSLog(@"EventId = %@", eventId);
+        NSLog(@"**************************titleContributionId = %@", titleContributionId);
+        if (!titleContributionId) {
+            NSLog(@"ERROR: none of the titleContributions were images!!");
+        }
+        
+        NSLog(@"titleContributionIds = %@", titleContributionId);
         Contribution *titleContribution = [self getContributionFromCoreDataWithId:titleContributionId];
         if(!titleContribution) titleContribution = [self createContributionWithId:titleContributionId];
         
-        //setup the basic info for this contribution
+        //TODO: Fix this setup the basic info for this contribution
         titleContribution.contributingUserId = @"otherPerson";
         titleContribution.createdAt = [event.lastActive copy]; //be careful not to point to the same date object
         titleContribution.contributionType = @"photo";
-        
+
         titleContribution.titleEvent = event;
         titleContribution.contributionType = @"photo";
         
@@ -64,16 +99,17 @@
         }
         [events addObject:event];
     }
-    
-    /***************** SAVE DATA *****************/
+        
     [self saveCoreData];
-    
     return events;
 }
+
 
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event{
     /***************** GET DATA *****************/
     //TODO: filler code. Replace with correct parse code
+    
+    
     
 //    NSMutableArray *contributions = [[NSMutableArray alloc] init];
 //    for (int i = 0; i < 5; i++) {
@@ -94,8 +130,34 @@
 //    return contributions;
 
     //TODO: return sorted contributions by time
-    NSArray *contributions = [event.contributions allObjects];
-    NSLog(@"Downloaded %i objects", [contributions count]);
+//    NSArray *contributions = [event.contributions allObjects];
+//    
+//    NSSortDescriptor *sortDescriptor;
+//    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
+//    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+//    NSArray *sortedArray;
+//    sortedArray = [contributions sortedArrayUsingDescriptors:sortDescriptors];
+//    return sortedArray;
+    
+    
+    
+    
+    //TODO: make sure that they are sorted correctly too!
+    NSDictionary *result = [PFCloud callFunction:@"getContributionIdsInCluster" withParameters:@{@"clusterId" : event.eventId}];
+    NSArray *arrayOfContributionData = result[@"contributionIds"];
+    NSMutableArray *contributions = [[NSMutableArray alloc] init];
+    for(NSDictionary *contributionData in arrayOfContributionData){
+        NSString *contributionId = contributionData[@"contributionId"];
+        Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId];
+        if(!newContribution) newContribution = [self createContributionWithId:contributionId];
+        newContribution.contributingUserId = contributionData[@"userId"];
+        newContribution.contributionType = contributionData[@"type"];
+        if([newContribution.contributionType isEqualToString:@"message"]){
+            newContribution.message = contributionData[@"message"];
+        }
+        newContribution.createdAt = contributionData[@"createdAt"];
+        [contributions addObject:newContribution];
+    }
     
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
@@ -108,25 +170,32 @@
 
 //by now, there should already exist a contribution object in core data. Here we just update the object.
 -(Contribution*) downloadMediaForContribution:(Contribution*)contribution{
-    
+    NSLog(@"++++++++++++++++++++++++DOWNLOADING MEDIA FOR CONTRIBUTIONID = %@", contribution.contributionId);
     /************* GET FROM CORE DATA ******************/
 
     //TODO: check to see if this contribution already has its data set. In that case, don't query parse
     //TODO: filler code. Replace with correct parse code
-    
+    NSLog(@"About to start");
     if ([contribution.contributionType isEqualToString:@"message"]) {
-        NSLog(@"downloading message for contribution %@",contribution.contributionId);
+        NSLog(@"A");
         contribution.message = [NSString stringWithFormat:@"message for %@",contribution.contributionId];
     } else if([contribution.contributionType isEqualToString:@"photo"]){
+        NSLog(@"B");
+        NSLog(@"Querying Parse for image for contribution with id = %@", contribution.contributionId);
         //TODO: replace with parse code
-        NSLog(@"downloading image for contribution %@",contribution.contributionId);
-        UIImage *image = [UIImage imageNamed:@"nyc.jpg"];
+        PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
+        PFObject *parsePhoto = [query getObjectWithId:contribution.contributionId];
+        PFFile *file = [parsePhoto objectForKey:@"image"];
+        NSData *parseImageData = [file getData];
+        NSLog(@"Got data with length: %lu for contributionId = %@ in file %@", [parseImageData length], contribution.contributionId, file);
+        UIImage *image = [UIImage imageWithData:parseImageData];
         contribution.imagePath = [self storeImage:image];
+        contribution.contributingUserId = [parsePhoto objectForKey:@"userId"];
+        contribution.createdAt = [parsePhoto objectForKey:@"createdAt"];
+        NSLog(@"Stored it in imagePath = %@", contribution.imagePath);
     }
-    contribution.contributingUserId = @"otherPerson";
-    contribution.createdAt = [NSDate date];
+    NSLog(@"C");
     
-
     [self saveCoreData];
     
     return contribution;
@@ -178,38 +247,63 @@
 }
 
 
-#pragma mark - cell formatter
+#pragma mark - cell formatters (event and message cell)
 
 -(void) formatEventCell:(PPLSTEventTableViewCell*)cell ForContribution:(Contribution*) contribution{
     //first check to see if the media is already set (or its an image) for this cell. If not, go ahead and download it
-    NSLog(@"contributionPath for eventId %@ is %@",contribution.contributionId, contribution.imagePath);
-    if(([contribution.contributionType isEqualToString:@"photo"] && contribution.imagePath && ![contribution.imagePath isEqualToString:@""]) || ([contribution.contributionType isEqualToString:@"message"] && contribution.message && ![contribution.message isEqualToString:@""])) return;
+    NSLog(@"contribution.imagePath for contributionId %@ is %@",contribution.contributionId, contribution.imagePath);
+    if([contribution.contributionType isEqualToString:@"message"] && contribution.message && ![contribution.message isEqualToString:@""]) return;
+    if([contribution.contributionType isEqualToString:@"photo"] && contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
+        NSLog(@"------------------GETTING THE PHOTO FROM THE FILE SYSTEM / MEMORY");
+        cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
+    }
 
+    if(self.isLoading[contribution.contributionId]){
+        return; //wait for first load to complete before initializing a second load.
+    }
+    self.isLoading[contribution.contributionId] = @1;
     //TODO: make sure this asynch call is correct (i.e. uses the correct queues etc.)
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         [self downloadMediaForContribution:contribution];
         //after download is complete, move back to main queue for UI updates
-//        dispatch_async(dispatch_get_main_queue(), ^{
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            cell.titleImageView.image = [UIImage imageWithContentsOfFile:contribution.imagePath];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.isLoading[contribution.contributionId] = @0;
+            cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
             [cell.parentTableView reloadData];
         });
     });
 }
 
+
 -(void) formatJSQMessage:(JSQMessage*)message ForContribution:(Contribution*)contribution inCollectionView:(UITableView *)collectionView{
+    NSLog(@"Formatting JSQMessage");
     //TODO: make asynch
     if([contribution.contributionType isEqualToString:@"photo"]){
+        NSLog(@"Dealing with Photo");
         if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
                 JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                mediaItem.image = [UIImage imageWithContentsOfFile:contribution.imagePath];
+                NSLog(@"contribution.imagePath is set to = %@", contribution.imagePath);
+                mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
         } else{
             //TODO: put parse code here
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                mediaItem.image = [UIImage imageWithContentsOfFile:contribution.imagePath];
-                [collectionView reloadData];
+            //TODO: add flag here to avoid double loading
+
+            if(self.isLoading[contribution.contributionId]){
+                return; //avoid dubble loading while running in background thread
+            }
+            self.isLoading[contribution.contributionId] = @1;
+
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+            ^{
+                [self downloadMediaForContribution:contribution];
+                self.isLoading[contribution.contributionId] = @0;
+                //after download is complete, move back to main queue for UI updates
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
+                    mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
+                    [collectionView reloadData];
+                });
             });
         }
     }
@@ -250,6 +344,7 @@
     if(![self.context save:&error]){
         NSLog(@"error: %@",error);
     }
+    NSLog(@"Saved Core Data!");
 }
 
 //creates a new event with a given id
@@ -273,6 +368,7 @@
 //stores an image in the file system and returns the imagePath
 -(NSString *) storeImage:(UIImage*)image{
     NSData *imageData = UIImagePNGRepresentation(image);
+    NSLog(@"imageData about to be stored has length: %lu", [imageData length]);
     NSString *imagePath = [self getEmptyFilePath];
     NSLog((@"pre writing to file"));
     if (![imageData writeToFile:imagePath atomically:NO]){
@@ -309,6 +405,102 @@
     }
     return randString;
 }
+
+/*this method gets the image at the given file path. If it has already been loaded, it gets it from memory, otherwise it loads it into memory. This avoids multiple calls to the filesystem which necessarily slows down the app.*/
+-(UIImage*) getImageAtFilePath:(NSString*)filePath{
+    if(![[self.imagesAtFilePath allKeys] containsObject:filePath]){
+        self.imagesAtFilePath[filePath] = [UIImage imageWithContentsOfFile:filePath];
+    }
+    return self.imagesAtFilePath[filePath];
+}
+
+#pragma mark - Testing Parse stuff
+
+
+
+
+#pragma mark - OLD METHODS - KEPT FOR HISTORICAL REASONS
+
+////TODO: remove this method in favor of the parse one
+//-(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date{
+//    NSMutableArray *events = [[NSMutableArray alloc] init];
+//    for(int i = 0; i < 40; i++){
+//    
+//        NSString *eventId = [NSString stringWithFormat:@"eventId%i",i];
+//        
+//        Event *event = [self getEventFromCoreDataWithId:eventId];
+//        if(!event) event = [self createEventWithId:eventId];
+//
+//        event.containsUser = @0;
+//        if(i == 0) event.containsUser = @1;
+//        
+//        event.longitude = @(35.00+i);
+//        event.latitude = @(43.00+i);
+//        event.lastActive = [NSDate dateWithTimeInterval:-(rand()%1000) sinceDate:[NSDate date]];
+//        event.country = @"USA";
+//        event.state = @"California";
+//        event.city = @"Los Angeles";
+//        NSArray *possibleNeighborhoods = @[@"Little Osaka", @"Venice Beach", @"Santa Monica Pier", @"Culver City", @"Santa Monica", @"Brentwood", @"Westwood", @"Burbank", @"Beverly Hills", @"Bel Air"];
+//        event.neighborhood = possibleNeighborhoods[rand()%[possibleNeighborhoods count]];
+//        
+//        NSString *titleContributionId = [NSString stringWithFormat: @"titleContributionIdForEvent%i",i];
+//        Contribution *titleContribution = [self getContributionFromCoreDataWithId:titleContributionId];
+//        if(!titleContribution) titleContribution = [self createContributionWithId:titleContributionId];
+//        
+//        //setup the basic info for this contribution
+//        titleContribution.contributingUserId = @"otherPerson";
+//        titleContribution.createdAt = [event.lastActive copy]; //be careful not to point to the same date object
+//        titleContribution.contributionType = @"photo";
+//        
+//        titleContribution.titleEvent = event;
+//        titleContribution.contributionType = @"photo";
+//        
+//        //add as regular contribution too
+//        titleContribution.event = event;
+//        [event addContributionsObject:titleContribution];
+//        
+//        //TODO: since it's an NSSet, do we really have to check this? Aren't they unique by default?
+//        if(![[event titleContributions] containsObject:titleContribution]){
+//            //TODO: instead of adding the title contribution id, replace the old ones with new ones.. Think about perhaps deallocating memory for old contributions here...
+//            [event addTitleContributionsObject:titleContribution];
+//        }
+//        [events addObject:event];
+//    }
+//    
+//    /***************** SAVE DATA *****************/
+//    [self saveCoreData];
+//    
+//    return events;
+//
+//}
+
+
+
+////by now, there should already exist a contribution object in core data. Here we just update the object.
+//-(Contribution*) downloadMediaForContribution:(Contribution*)contribution{
+//    
+//    /************* GET FROM CORE DATA ******************/
+//
+//    //TODO: check to see if this contribution already has its data set. In that case, don't query parse
+//    //TODO: filler code. Replace with correct parse code
+//    
+//    if ([contribution.contributionType isEqualToString:@"message"]) {
+//        NSLog(@"downloading message for contribution %@",contribution.contributionId);
+//        contribution.message = [NSString stringWithFormat:@"message for %@",contribution.contributionId];
+//    } else if([contribution.contributionType isEqualToString:@"photo"]){
+//        //TODO: replace with parse code
+//        NSLog(@"downloading image for contribution %@",contribution.contributionId);
+//        UIImage *image = [UIImage imageNamed:@"nyc.jpg"];
+//        contribution.imagePath = [self storeImage:image];
+//    }
+//    contribution.contributingUserId = @"otherPerson";
+//    contribution.createdAt = [NSDate date];
+//    
+//
+//    [self saveCoreData];
+//    
+//    return contribution;
+//}
 
 
 @end

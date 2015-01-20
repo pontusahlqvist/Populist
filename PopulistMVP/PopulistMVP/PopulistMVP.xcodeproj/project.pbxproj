@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163E3B301A61E7A000913FBF /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3B2F1A61E7A000913FBF /* Contribution.m */; };
+		161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */; };
+		161102A91A6DB16B0022796E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 161102A81A6DB16B0022796E /* Event.m */; };
+		161102AC1A6DBB030022796E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AA1A6DBB030022796E /* Bolts.framework */; };
+		161102AD1A6DBB030022796E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AB1A6DBB030022796E /* Parse.framework */; };
+		161102AF1A6DBB280022796E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AE1A6DBB280022796E /* CFNetwork.framework */; };
+		161102B11A6DBB390022796E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102B01A6DBB390022796E /* CoreLocation.framework */; };
+		161102B31A6DBB420022796E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102B21A6DBB420022796E /* MobileCoreServices.framework */; };
+		161102B51A6DBB490022796E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102B41A6DBB490022796E /* QuartzCore.framework */; };
+		161102B71A6DBB520022796E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102B61A6DBB520022796E /* Security.framework */; };
+		161102B91A6DBB590022796E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102B81A6DBB590022796E /* StoreKit.framework */; };
+		161102BB1A6DBB600022796E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BA1A6DBB600022796E /* SystemConfiguration.framework */; };
+		161102BD1A6DBB6A0022796E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BC1A6DBB6A0022796E /* libz.dylib */; };
+		161102BF1A6DBB750022796E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BE1A6DBB750022796E /* libsqlite3.dylib */; };
+		161102C51A6E26100022796E /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 161102C41A6E26100022796E /* Contribution.m */; };
 		163E3BCB1A64D7F000913FBF /* PPLSTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */; };
 		163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */; };
 		163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D0A1A64DD3600913FBF /* JSQMessages.strings */; };
@@ -62,7 +75,6 @@
 		163E3DB11A64DEE900913FBF /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3DB01A64DEE900913FBF /* JSQSystemSoundPlayer.m */; };
 		163E3DB31A64DFBE00913FBF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E3DB21A64DFBE00913FBF /* AudioToolbox.framework */; };
 		165346C21A5BBBBC00343183 /* PPLSTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346C11A5BBBBC00343183 /* PPLSTDataManager.m */; };
-		165346DA1A5DCEC400343183 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346D91A5DCEC400343183 /* Event.m */; };
 		165346E11A5E21E600343183 /* PPLSTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346E01A5E21E600343183 /* PPLSTNavigationController.m */; };
 		165346E81A5F0DF500343183 /* PPLSTExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346E71A5F0DF500343183 /* PPLSTExploreTableViewController.m */; };
 		16671E481A6C472C00AD394F /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16671E471A6C472C00AD394F /* camera@2x.png */; };
@@ -101,8 +113,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		163E3B2E1A61E7A000913FBF /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contribution.h; sourceTree = "<group>"; };
-		163E3B2F1A61E7A000913FBF /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contribution.m; sourceTree = "<group>"; };
+		161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone6LaunchScreen.png; sourceTree = "<group>"; };
+		161102A71A6DB16B0022796E /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		161102A81A6DB16B0022796E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		161102AA1A6DBB030022796E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		161102AB1A6DBB030022796E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		161102AE1A6DBB280022796E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		161102B01A6DBB390022796E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		161102B21A6DBB420022796E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		161102B41A6DBB490022796E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		161102B61A6DBB520022796E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		161102B81A6DBB590022796E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		161102BA1A6DBB600022796E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		161102BC1A6DBB6A0022796E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		161102BE1A6DBB750022796E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		161102C31A6E26100022796E /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contribution.h; sourceTree = "<group>"; };
+		161102C41A6E26100022796E /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contribution.m; sourceTree = "<group>"; };
 		163E3BC91A64D7F000913FBF /* PPLSTChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTChatViewController.h; sourceTree = "<group>"; };
 		163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTChatViewController.m; sourceTree = "<group>"; };
 		163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
@@ -216,8 +242,6 @@
 		163E3DB21A64DFBE00913FBF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		165346C01A5BBBBC00343183 /* PPLSTDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPLSTDataManager.h; path = ../PPLSTDataManager.h; sourceTree = "<group>"; };
 		165346C11A5BBBBC00343183 /* PPLSTDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPLSTDataManager.m; path = ../PPLSTDataManager.m; sourceTree = "<group>"; };
-		165346D81A5DCEC400343183 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		165346D91A5DCEC400343183 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		165346DF1A5E21E600343183 /* PPLSTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTNavigationController.h; sourceTree = "<group>"; };
 		165346E01A5E21E600343183 /* PPLSTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTNavigationController.m; sourceTree = "<group>"; };
 		165346E61A5F0DF500343183 /* PPLSTExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTExploreTableViewController.h; sourceTree = "<group>"; };
@@ -258,9 +282,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163E3DB31A64DFBE00913FBF /* AudioToolbox.framework in Frameworks */,
+				161102BF1A6DBB750022796E /* libsqlite3.dylib in Frameworks */,
+				161102BD1A6DBB6A0022796E /* libz.dylib in Frameworks */,
+				161102BB1A6DBB600022796E /* SystemConfiguration.framework in Frameworks */,
+				161102B91A6DBB590022796E /* StoreKit.framework in Frameworks */,
+				161102B71A6DBB520022796E /* Security.framework in Frameworks */,
+				161102B51A6DBB490022796E /* QuartzCore.framework in Frameworks */,
+				161102B31A6DBB420022796E /* MobileCoreServices.framework in Frameworks */,
+				161102B11A6DBB390022796E /* CoreLocation.framework in Frameworks */,
 				167F78971A58725E00C7AB64 /* CoreGraphics.framework in Frameworks */,
+				161102AF1A6DBB280022796E /* CFNetwork.framework in Frameworks */,
+				163E3DB31A64DFBE00913FBF /* AudioToolbox.framework in Frameworks */,
 				167F789B1A58725E00C7AB64 /* CoreData.framework in Frameworks */,
+				161102AD1A6DBB030022796E /* Parse.framework in Frameworks */,
+				161102AC1A6DBB030022796E /* Bolts.framework in Frameworks */,
 				167F78991A58725E00C7AB64 /* UIKit.framework in Frameworks */,
 				167F78951A58725E00C7AB64 /* Foundation.framework in Frameworks */,
 			);
@@ -474,10 +509,8 @@
 				165346C01A5BBBBC00343183 /* PPLSTDataManager.h */,
 				165346C11A5BBBBC00343183 /* PPLSTDataManager.m */,
 				167F78A81A58725E00C7AB64 /* PopulistMVP.xcdatamodeld */,
-				163E3B2E1A61E7A000913FBF /* Contribution.h */,
-				163E3B2F1A61E7A000913FBF /* Contribution.m */,
-				165346D81A5DCEC400343183 /* Event.h */,
-				165346D91A5DCEC400343183 /* Event.m */,
+				161102C31A6E26100022796E /* Contribution.h */,
+				161102C41A6E26100022796E /* Contribution.m */,
 			);
 			name = "Model / Core Data";
 			sourceTree = "<group>";
@@ -512,6 +545,8 @@
 		167F78881A58725E00C7AB64 = {
 			isa = PBXGroup;
 			children = (
+				161102A71A6DB16B0022796E /* Event.h */,
+				161102A81A6DB16B0022796E /* Event.m */,
 				167F78C91A58727500C7AB64 /* Storyboard.storyboard */,
 				167F789C1A58725E00C7AB64 /* PopulistMVP */,
 				167F78B91A58725E00C7AB64 /* PopulistMVPTests */,
@@ -532,6 +567,17 @@
 		167F78931A58725E00C7AB64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				161102BE1A6DBB750022796E /* libsqlite3.dylib */,
+				161102BC1A6DBB6A0022796E /* libz.dylib */,
+				161102BA1A6DBB600022796E /* SystemConfiguration.framework */,
+				161102B81A6DBB590022796E /* StoreKit.framework */,
+				161102B61A6DBB520022796E /* Security.framework */,
+				161102B41A6DBB490022796E /* QuartzCore.framework */,
+				161102B21A6DBB420022796E /* MobileCoreServices.framework */,
+				161102B01A6DBB390022796E /* CoreLocation.framework */,
+				161102AE1A6DBB280022796E /* CFNetwork.framework */,
+				161102AA1A6DBB030022796E /* Bolts.framework */,
+				161102AB1A6DBB030022796E /* Parse.framework */,
 				163E3DB21A64DFBE00913FBF /* AudioToolbox.framework */,
 				167F78941A58725E00C7AB64 /* Foundation.framework */,
 				167F78961A58725E00C7AB64 /* CoreGraphics.framework */,
@@ -557,6 +603,7 @@
 		167F789D1A58725E00C7AB64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */,
 				16671E471A6C472C00AD394F /* camera@2x.png */,
 				163E3DAD1A64DEE900913FBF /* JSQSystemSoundPlayer */,
 				163E3D9E1A64DD8000913FBF /* Assets */,
@@ -710,6 +757,7 @@
 				163E3DA91A64DD8000913FBF /* jsq_messages_icon.psd in Resources */,
 				167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
+				161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */,
 				167F78DA1A591DFE00C7AB64 /* images.jpeg in Resources */,
 				163E3D9D1A64DD3600913FBF /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				163E3D7D1A64DD3600913FBF /* JSQMessagesViewController.xib in Resources */,
@@ -753,9 +801,9 @@
 				163E3D7C1A64DD3600913FBF /* JSQMessagesViewController.m in Sources */,
 				163E3D901A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				163E3D831A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
-				165346DA1A5DCEC400343183 /* Event.m in Sources */,
 				163E3D7F1A64DD3600913FBF /* JSQMessagesBubbleImageFactory.m in Sources */,
 				163E3D851A64DD3600913FBF /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
+				161102C51A6E26100022796E /* Contribution.m in Sources */,
 				163E3D761A64DD3600913FBF /* NSString+JSQMessages.m in Sources */,
 				163E3D791A64DD3600913FBF /* UIImage+JSQMessages.m in Sources */,
 				163E3D921A64DD3600913FBF /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
@@ -783,9 +831,9 @@
 				163E3D8D1A64DD3600913FBF /* JSQMessagesCellTextView.m in Sources */,
 				167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */,
 				163E3D881A64DD3600913FBF /* JSQMessage.m in Sources */,
+				161102A91A6DB16B0022796E /* Event.m in Sources */,
 				163E3D841A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				16671E501A6C5CE100AD394F /* PPLSTImageDetailViewController.m in Sources */,
-				163E3B301A61E7A000913FBF /* Contribution.m in Sources */,
 				163E3D771A64DD3600913FBF /* UIColor+JSQMessages.m in Sources */,
 				165346C21A5BBBBC00343183 /* PPLSTDataManager.m in Sources */,
 				163E3BCB1A64D7F000913FBF /* PPLSTChatViewController.m in Sources */,
@@ -932,10 +980,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopulistMVP/PopulistMVP-Prefix.pch";
 				INFOPLIST_FILE = "PopulistMVP/PopulistMVP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -945,10 +998,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopulistMVP/PopulistMVP-Prefix.pch";
 				INFOPLIST_FILE = "PopulistMVP/PopulistMVP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="g7Y-MV-mT0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="g7Y-MV-mT0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Explore Table View Controller - Populist-->
+        <!--Populist-->
         <scene sceneID="Y7Y-52-RZH">
             <objects>
                 <tableViewController id="zr8-ze-3dU" customClass="PPLSTExploreTableViewController" sceneMemberID="viewController">
@@ -20,29 +23,38 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-tr-q6r">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-tr-q6r">
                                             <rect key="frame" x="0.0" y="10" width="320" height="320"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="v5s-tr-q6r" secondAttribute="height" multiplier="1:1" id="4OI-yt-NtU"/>
+                                            </constraints>
                                         </imageView>
-                                        <view alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-uv-24L">
+                                        <view alpha="0.69999998807907104" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-uv-24L">
                                             <rect key="frame" x="5" y="15" width="310" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-as-Rc7">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-FO-7Vx">
+                                            <rect key="frame" x="25" y="25" width="200" height="20"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-as-Rc7">
                                             <rect key="frame" x="230" y="25" width="65" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                             <color key="textColor" red="1" green="0.46939445010000003" blue="0.40008976709999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-FO-7Vx">
-                                            <rect key="frame" x="25" y="25" width="200" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5Qr-uv-24L" firstAttribute="leading" secondItem="49g-hk-lFP" secondAttribute="leadingMargin" constant="-2" id="5Nx-nL-afG"/>
+                                        <constraint firstItem="5Qr-uv-24L" firstAttribute="trailing" secondItem="pN8-as-Rc7" secondAttribute="trailing" constant="20" id="GuV-Sn-McN"/>
+                                        <constraint firstItem="lNt-FO-7Vx" firstAttribute="leading" secondItem="5Qr-uv-24L" secondAttribute="leading" constant="20" id="I0q-CW-Jee"/>
+                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="leading" secondItem="49g-hk-lFP" secondAttribute="leadingMargin" constant="-8" id="KQp-qI-twX"/>
+                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="top" secondItem="49g-hk-lFP" secondAttribute="topMargin" constant="2" id="LcQ-yb-xNS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5Qr-uv-24L" secondAttribute="trailing" constant="-2" id="MIE-s7-kAq"/>
+                                        <constraint firstItem="5Qr-uv-24L" firstAttribute="top" secondItem="49g-hk-lFP" secondAttribute="topMargin" constant="7" id="fJT-MI-1Qz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="v5s-tr-q6r" secondAttribute="trailing" constant="-8" id="kOg-ww-G6t"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="eventLocationTextLabel" destination="lNt-FO-7Vx" id="DPM-bx-YZr"/>
@@ -71,11 +83,11 @@
         <scene sceneID="2eM-po-SEY">
             <objects>
                 <viewController id="FMo-Mq-a3K" customClass="PPLSTImageDetailViewController" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tcd-AA-sWM">
+                    <imageView key="view" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tcd-AA-sWM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <navigationItem key="navigationItem" id="p9B-cX-vjL"/>
+                    <navigationItem key="navigationItem" id="32i-2C-qUo"/>
                     <connections>
                         <outlet property="imageView" destination="Tcd-AA-sWM" id="CnP-oh-0hY"/>
                     </connections>

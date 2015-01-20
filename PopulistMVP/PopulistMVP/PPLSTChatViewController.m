@@ -31,15 +31,15 @@
 {
     [super viewDidLoad];
     
+    //TODO: fix these to the correct senderId. Possibly keep @"You" there, or remove completely
+    self.senderDisplayName = @"";
+    self.senderId = @"tmpSenderId";
+    
     [self prepareForLoad]; //load contributions for this event
     
     // Do any additional setup after loading the view.
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-
-    //TODO: fix these to the correct senderId. Possibly keep @"You" there, or remove completely
-    self.senderDisplayName = @"";
-    self.senderId = @"tmpSenderId";
 
     //TODO: add the avatars back in to show icons rather than profile pictures
     self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
@@ -57,6 +57,28 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Prepare for Load
+
+-(void) prepareForLoad{
+    //setup the textfield etc to disallow users to contribute to events that they are not part of
+    NSLog(@"event.containsUser = %@", self.event.containsUser);
+    if(![self.event.containsUser isEqualToNumber:@1]){
+        [self.inputToolbar.contentView.textView setEditable:NO];
+        [self.inputToolbar.contentView.textView setPlaceHolder:@"You can only observe this event"];
+    } else{
+        self.inputToolbar.backgroundColor = [UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f];
+    }
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
+        self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event] mutableCopy];
+        self.jsqMessages = [self createMessagesFromContributions:self.contributions];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData]; //TODO: make sure that it snaps to the bottom of the feed
+        });
+    });
 }
 
 #pragma mark - Lazy Instantiations
@@ -102,6 +124,7 @@
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     JSQMessage *message = [self.jsqMessages objectAtIndex:indexPath.row];
+    NSLog(@"self.senderId = %@, message.senderId = %@", self.senderId, message.senderId);
     if([message.senderId isEqualToString:self.senderId]){
         return self.outgoingBubbleImageData;
     } else{
@@ -155,7 +178,7 @@
     if (!message.isMediaMessage) {
         
         if ([message.senderId isEqualToString:self.senderId]) {
-            cell.textView.textColor = [UIColor blackColor];
+            cell.textView.textColor = [UIColor whiteColor];
         }
         else {
             cell.textView.textColor = [UIColor blackColor];
@@ -187,12 +210,25 @@
 //TODO: customize the imagePicker!
 //TODO: make sure that only images taken at the event can be uploaded
 -(void)didPressAccessoryButton:(UIButton *)sender{
+    if(![self.event.containsUser isEqualToNumber:@1]){
+        return; //can't contribute to the event
+    }
     PPLSTImagePickerController *picker = [[PPLSTImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
     
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Device has no camera"
+                                                        delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles: nil];
+        
+        [myAlertView show];
+        return;
+    }
+
+    picker.delegate = self;
+    picker.allowsEditing = NO;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
@@ -210,8 +246,10 @@
 #pragma mark - ImagePicker Delegate
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    UIImage *image = info[UIImagePickerControllerEditedImage];
+//    UIImage *image = [self imageWithImage:info[UIImagePickerControllerOriginalImage] scaledToSize:CGSizeMake(750.0, 750.0)];
+    UIImage *image = [self imageWithImage:info[UIImagePickerControllerOriginalImage] scaledDownToHorizontalPoints:750.0];
 
+    NSLog(@"VC should be dismissed...");
     //setup the contribution
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo"};
     
@@ -223,6 +261,7 @@
 
     [self finishSendingMessageAnimated:YES];
     [self.collectionView reloadData];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -247,15 +286,17 @@
     return messages;
 }
 
--(void) prepareForLoad{
-    self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event] mutableCopy];
-    self.jsqMessages = [self createMessagesFromContributions:self.contributions];
+-(UIImage*) imageWithImage:(UIImage*)image scaledDownToHorizontalPoints:(float)horizontal{
+    return [self imageWithImage:image scaledToSize:CGSizeMake(horizontal,(image.size.height/image.size.width)*horizontal)];
 }
 
-
-
-
-
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();    
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 
 

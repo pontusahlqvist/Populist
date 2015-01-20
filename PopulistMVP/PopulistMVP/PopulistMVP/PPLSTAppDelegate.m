@@ -7,6 +7,7 @@
 //
 
 #import "PPLSTAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation PPLSTAppDelegate
 
@@ -16,6 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //TODO: look into this: [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+ 
+    // Initialize Parse.
+    /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
+    The other ones are just meant for testing!
+    */
+//    [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
+//                  clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
+    
+    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
+                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
+ 
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
     return YES;
 }
 

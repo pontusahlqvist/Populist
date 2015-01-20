@@ -14,6 +14,8 @@
 #import "Event.h"
 #import "PPLSTDataManager.h"
 
+//TODO: make uiimagepicker disappear faster. It currently lags for a few seconds before disappearing. This might just be because various processes are running in the main thread and might be linked to e.g. core data...
+
 @interface PPLSTChatViewController : JSQMessagesViewController <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout>
 //loads contributions for this event
 -(void) prepareForLoad;

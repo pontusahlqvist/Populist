@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+//TODO: Allow the user to zoom
+//TODO: Make this view look better. Perhaps use modal instead of push segue and add some close functionality
 
 @interface PPLSTImageDetailViewController : UIViewController
 

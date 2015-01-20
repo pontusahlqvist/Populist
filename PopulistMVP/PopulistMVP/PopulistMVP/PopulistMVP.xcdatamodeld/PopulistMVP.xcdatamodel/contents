@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="12F45" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Contribution" representedClassName="Contribution" syncable="YES">
         <attribute name="contributingUserId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contributionId" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,6 +13,7 @@
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES">
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="containsUser" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastActive" optional="YES" attributeType="Date" syncable="YES"/>
@@ -24,7 +25,7 @@
         <relationship name="titleContributions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contribution" inverseName="titleEvent" inverseEntity="Contribution" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Contribution" positionX="2977" positionY="1125" width="128" height="180"/>
-        <element name="Event" positionX="2772" positionY="1107" width="128" height="193"/>
+        <element name="Contribution" positionX="2977" positionY="1125" width="128" height="178"/>
+        <element name="Event" positionX="2772" positionY="1107" width="128" height="208"/>
     </elements>
 </model>

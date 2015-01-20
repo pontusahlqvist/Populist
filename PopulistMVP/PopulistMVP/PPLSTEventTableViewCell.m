@@ -16,11 +16,13 @@
     if (self) {
         // Initialization code
     }
+    self.loading = NO;
     return self;
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
+    self.loading = NO;
     return self;
 }
 

@@ -11,7 +11,9 @@
 #import "Contribution.h"
 #import "PPLSTEventTableViewCell.h"
 #import "JSQMessages.h"
+#import "PPLSTExploreTableViewController.h"
 
+@class PPLSTExploreTableViewController;
 
 @interface PPLSTDataManager : NSObject
 @property (strong, nonatomic) NSManagedObjectContext *context;
@@ -20,6 +22,7 @@
 
 //Returns (and saves to core data) and NSArray where each entry corresponds to meta data for a given event
 -(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date;
+//-(void) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date;
 
 //Returns (and saves as a relationship) an NSArray with contribution meta data (id, message etc but not media) for a certain event.
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event;
@@ -35,4 +38,7 @@
 //Requests download of media for a given JSQMessage and then reloads the appropriate tableview upon completion
 -(void) formatJSQMessage:(JSQMessage*)message ForContribution:(Contribution*)contribution inCollectionView:(UICollectionView*)collectionView;
 
+@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
+@property (weak, nonatomic) PPLSTExploreTableViewController *exploreVC; //weak to avoid reference loops
+@property (strong, nonatomic) NSMutableDictionary *isLoading;
 @end

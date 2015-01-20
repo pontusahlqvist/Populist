@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Populist": {
+            "applicationId": "HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye", 
+            "masterKey": "e8EV8jPXBl2BurhPykVNpNMSvztlUbImS4pCgxDv"
+        }, 
+        "_default": {
+            "link": "Populist"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.3"
+    }
+}

@@ -28,13 +28,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
-    self.imageView.image = self.image;
+    self.imageView.image = [self scaledImageForImage:self.image];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Helper Methods
+
+-(UIImage*) scaledImageForImage:(UIImage*)originalImage {
+    float originalWidth = originalImage.size.width;
+    float originalHeight = originalImage.size.height;
+    float originalAspectRatio = originalWidth/originalHeight;
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    float screenWidth = screenBounds.size.width;
+    float screenHeight = screenBounds.size.height;
+    float screenAspectRatio = screenWidth/screenHeight;
+    
+    float newWidth, newHeight;
+    if(originalAspectRatio > screenAspectRatio){
+        //fit to height
+        newHeight = screenHeight;
+        newWidth = originalAspectRatio * newHeight;
+    } else{
+        //fit to width
+        newWidth = screenWidth;
+        newHeight = newWidth/originalAspectRatio;
+    }
+    
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [originalImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 /*

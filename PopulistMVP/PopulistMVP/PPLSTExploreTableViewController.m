@@ -9,6 +9,7 @@
 #import "PPLSTExploreTableViewController.h"
 #import "PPLSTChatViewController.h"
 #import "PPLSTEventTableViewCell.h"
+#import <Parse/Parse.h>
 
 @interface PPLSTExploreTableViewController ()
 @property (nonatomic) BOOL isDecelerating;
@@ -30,11 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
     [self setCurrentLocationData]; //TODO: consider moving into separate class
     self.dataManager = [[PPLSTDataManager alloc] init];
+    self.dataManager.exploreVC = self;
     
     //set tableview delegates, datasource
     self.tableView.delegate = self;
@@ -52,6 +54,7 @@
     
     //grab events with given location and time data - again, consider passing location data in via another class.
     self.events = [[self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]] mutableCopy];
+//    [self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]];
 }
 
 //refresh the uitableview
@@ -78,7 +81,7 @@
 #pragma mark - UITableView Delegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"Selected Row Number %i",indexPath.row);
+    NSLog(@"Selected Row Number %li",(long)indexPath.row);
     [self performSegueWithIdentifier:@"Segue To Chat" sender:indexPath];
 }
 
@@ -93,11 +96,14 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 340.0;
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    return screenBounds.size.width + 20.0;
+//    return 340.0;
+//    return 380.0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"indexPath.row = %i",indexPath.row);
+    NSLog(@"indexPath.row = %li",(long)indexPath.row);
     PPLSTEventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Event Cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.parentTableView = tableView;
@@ -107,9 +113,14 @@
 
     //configure cell - lazy approach
     //TODO: include also the top few titleMessages
+    NSLog(@"The contributionType is %@", titleContribution.contributionType);
     if([titleContribution.contributionType isEqualToString:@"photo"]){
         if(titleContribution.imagePath && ![titleContribution.imagePath isEqualToString:@""]){
             //TODO: consider loading image once-and-for-all into another object so that we avoid grabbing it from the filesystem each time we scroll by it
+            cell.titleImageView.image = nil;
+
+            /*TODO: for some reason it seems like the image is not persisted in the filesystem between runs if the app is run through xcode (even through a physical device). However, if the same app is run through the iphone directly, the data is persisted perfectly. One can get around this by checking to see if the file actually exists rather than simply checking if the imagePath property has been set in the contribution object.*/
+
             cell.titleImageView.image = [UIImage imageWithContentsOfFile:titleContribution.imagePath];
         } else{
             //we must download the image from the cloud

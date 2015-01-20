@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PPLSTDataManager.h"
 
+@class PPLSTDataManager;
+
 @interface PPLSTExploreTableViewController : UITableViewController
 @property (strong, nonatomic) PPLSTDataManager *dataManager;
 @property (strong, nonatomic) NSMutableArray *events;
