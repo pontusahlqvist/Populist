@@ -12,7 +12,7 @@
 
 @implementation PPLSTDataManager
 
-#pragma mark - Lazy Instantiation
+#pragma mark - Instantiation
 
 -(NSMutableDictionary *)imagesAtFilePath{
     if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
@@ -24,6 +24,27 @@
     return _isLoading;
 }
 
+-(NSMutableDictionary *)avatarForStatus{
+    if(!_avatarForStatus) _avatarForStatus = [[NSMutableDictionary alloc] init];
+    return _avatarForStatus;
+}
+
+-(void) createAvatarForStatusDictionary{
+    NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
+    //TODO: add real avatar images (diamond, gold, ....)
+    [avatarRawImages addObject:[UIImage imageNamed:@"SMPier.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"IMG_4699.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"nyc.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"images.jpeg"]];
+    int status = 0;
+    for(UIImage *avatarRawImage in avatarRawImages){
+        JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        [self.avatarForStatus setObject:avatarImage forKey:[NSNumber numberWithInt:status]];
+        NSLog(@"Just set the avatar %@ for status %i", avatarImage, status);
+        status++;
+    }
+}
+
 #pragma mark - Required Methods
 
 -(id) init{
@@ -31,6 +52,7 @@
     if(self){
         id delegate = [[UIApplication sharedApplication] delegate];
         self.context = [delegate managedObjectContext];
+        [self createAvatarForStatusDictionary];
     }
     return self;
 }
@@ -152,12 +174,15 @@
         if(!newContribution) newContribution = [self createContributionWithId:contributionId];
         newContribution.contributingUserId = contributionData[@"userId"];
         newContribution.contributionType = contributionData[@"type"];
+        [event addContributionsObject:newContribution];
         if([newContribution.contributionType isEqualToString:@"message"]){
             newContribution.message = contributionData[@"message"];
         }
         newContribution.createdAt = contributionData[@"createdAt"];
         [contributions addObject:newContribution];
     }
+
+    [self saveCoreData];
     
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
@@ -244,6 +269,27 @@
         //TODO: re-assign the contributionId when the upload has completed
         [self saveCoreData];
     });
+}
+
+-(NSMutableDictionary *)getStatusDictionaryForEvent:(Event *)event{
+    //TODO: replace with parse code
+    NSSet *contributions = event.contributions;
+    NSMutableSet *contributionIds = [[NSMutableSet alloc] init];
+    for(Contribution *contribution in contributions){
+        [contributionIds addObject:contribution.contributingUserId];
+    }
+    NSMutableDictionary *statusDictionary = [[NSMutableDictionary alloc] init];
+    int status = 0;
+    for(NSString *contributionId in contributionIds){
+        statusDictionary[contributionId] = [NSNumber numberWithInt:status];
+        status++;
+    }
+    NSLog(@"StatusDictionary = %@", statusDictionary);
+    return statusDictionary;
+}
+
+-(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
+    return self.avatarForStatus[status];
 }
 
 
@@ -359,6 +405,7 @@
 //creates a new contribution with a given id
 -(Contribution*) createContributionWithId:(NSString*)contributionId{
     NSLog(@"Creating contribution with id = %@",contributionId);
+    [self.contributionIds addObject:contributionId]; //keep track of which objects are currently being stored
     Contribution *contribution = [NSEntityDescription insertNewObjectForEntityForName:@"Contribution" inManagedObjectContext:self.context];
     contribution.contributionId = contributionId;
     [self saveCoreData];

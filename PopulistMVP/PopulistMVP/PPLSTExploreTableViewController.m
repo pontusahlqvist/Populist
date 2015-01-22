@@ -54,7 +54,6 @@
     
     //grab events with given location and time data - again, consider passing location data in via another class.
     self.events = [[self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]] mutableCopy];
-//    [self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]];
 }
 
 //refresh the uitableview

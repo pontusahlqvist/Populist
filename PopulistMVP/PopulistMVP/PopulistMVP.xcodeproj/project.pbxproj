@@ -100,6 +100,8 @@
 		167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */; };
 		167F78DA1A591DFE00C7AB64 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78D91A591DFE00C7AB64 /* images.jpeg */; };
 		167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78DB1A5926E700C7AB64 /* nyc.jpg */; };
+		16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA31A70460B003215E9 /* SMPier.jpg */; };
+		16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA51A704615003215E9 /* IMG_4699.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +277,8 @@
 		167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTEventTableViewCell.m; sourceTree = "<group>"; };
 		167F78D91A591DFE00C7AB64 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		167F78DB1A5926E700C7AB64 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
+		16F7DAA31A70460B003215E9 /* SMPier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SMPier.jpg; sourceTree = "<group>"; };
+		16F7DAA51A704615003215E9 /* IMG_4699.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4699.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -609,7 +613,9 @@
 				163E3D9E1A64DD8000913FBF /* Assets */,
 				163E3D061A64DD3600913FBF /* JSQMessagesViewController */,
 				167F78AB1A58725E00C7AB64 /* Images.xcassets */,
+				16F7DAA51A704615003215E9 /* IMG_4699.jpg */,
 				167F78DB1A5926E700C7AB64 /* nyc.jpg */,
+				16F7DAA31A70460B003215E9 /* SMPier.jpg */,
 				167F78D91A591DFE00C7AB64 /* images.jpeg */,
 				167F789E1A58725E00C7AB64 /* PopulistMVP-Info.plist */,
 				167F789F1A58725E00C7AB64 /* InfoPlist.strings */,
@@ -768,8 +774,10 @@
 				163E3D981A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				16671E481A6C472C00AD394F /* camera@2x.png in Resources */,
 				163E3DA71A64DD8000913FBF /* jsq_messages_banner.png in Resources */,
+				16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
 				167F78AC1A58725E00C7AB64 /* Images.xcassets in Resources */,
+				16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */,
 				163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */,
 				167F78CA1A58727500C7AB64 /* Storyboard.storyboard in Resources */,
 				163E3D911A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,

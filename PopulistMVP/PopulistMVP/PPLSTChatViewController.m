@@ -42,8 +42,8 @@
     self.collectionView.dataSource = self;
 
     //TODO: add the avatars back in to show icons rather than profile pictures
-    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
-    self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
+//    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
+//    self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
     
     //TODO: Change this to the camera icon. For now, only support text messages
 //    self.inputToolbar.contentView.leftBarButtonItem = nil;
@@ -70,10 +70,12 @@
     } else{
         self.inputToolbar.backgroundColor = [UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f];
     }
-
+    //TODO: kick these off in parallel async threads rather than doing the avatar AND contribution download back-to-back
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event] mutableCopy];
         self.jsqMessages = [self createMessagesFromContributions:self.contributions];
+        
+        self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
 
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData]; //TODO: make sure that it snaps to the bottom of the feed
@@ -120,7 +122,8 @@
 
 //TODO: include avatars based on arrival at event
 -(id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    Contribution *contribution = self.contributions[indexPath.row];
+    return [self.dataManager avatarForStatus:self.statusForSenderId[contribution.contributingUserId]];
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{

@@ -25,6 +25,8 @@
 
 @property (strong, nonatomic) NSMutableArray *contributions;
 @property (strong, nonatomic) NSMutableArray *jsqMessages;
+@property (strong, nonatomic) NSMutableDictionary *avatarForSenderId;
+@property (strong, nonatomic) NSMutableDictionary *statusForSenderId;
 
 @property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
 @property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;

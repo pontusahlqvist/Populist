@@ -70,10 +70,10 @@
 - (CGSize)mediaViewDisplaySize
 {
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-        return CGSizeMake(315.0f, 225.0f);
+        return CGSizeMake(315.0f, 225.0f); //original line of code
     }
-    
-    return CGSizeMake(210.0f, 150.0f);
+      return CGSizeMake(275.0f, 200.0f); //make the media bubbles larger.
+//    return CGSizeMake(210.0f, 150.0f); //original line of code.
 }
 
 - (UIView *)mediaPlaceholderView

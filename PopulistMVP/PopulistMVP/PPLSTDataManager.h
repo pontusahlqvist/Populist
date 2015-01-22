@@ -30,7 +30,8 @@
 //Uploads (and saves to core data) and then returns a contribution to the cloud with the given data dictionary
 -(Contribution*) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo;
 
-
+-(NSMutableDictionary*) getStatusDictionaryForEvent:(Event*)event;
+-(JSQMessagesAvatarImage*) avatarForStatus:(NSNumber*)status;
 
 //Requests download of media for a given cell and then reloads the appropriate tableview upon completion.
 -(void) formatEventCell:(PPLSTEventTableViewCell*)cell ForContribution:(Contribution*) contribution;
@@ -41,4 +42,11 @@
 @property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
 @property (weak, nonatomic) PPLSTExploreTableViewController *exploreVC; //weak to avoid reference loops
 @property (strong, nonatomic) NSMutableDictionary *isLoading;
+@property (strong, nonatomic) NSMutableDictionary *avatarForStatus;
+
+/*
+The worry is that while a core data contribution (created by this user) is being saved, the push notification comes in thereby clashing with the one already being saved (because there won't be a core data object yet). So, instead of comparing the incoming object with core data, we will keep an NSSet with all the contributionIds already in the system. Then, before we save an incoming contribution to core data, we compare with this set. This will only ever be kept in memory so it deisappears on each new load.
+*/
+@property (strong, nonatomic) NSMutableSet *contributionIds;
+
 @end
