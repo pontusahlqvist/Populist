@@ -40,6 +40,8 @@
     // Do any additional setup after loading the view.
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    self.locationManager = [[PPLSTLocationManager alloc] init];
+    self.locationManager.delegate = self;
 
     //TODO: add the avatars back in to show icons rather than profile pictures
 //    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
@@ -51,6 +53,29 @@
     JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
+    
+    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"mappin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
+    [button setImage:image forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(openMap) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+
+}
+
+-(void) openMap{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://maps.apple.com/?q=%f,%f",[self.event.latitude floatValue],[self.event.longitude floatValue]]];
+    NSLog(@"Opening URL %@", url);
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    //let the data manager know that this is the current VC
+    self.dataManager.currentVC = self;
+    self.locationManager.delegate = self;
+    [self.locationManager updateLocation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,6 +83,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - PPLSTLocationManagerDelegate Methods
+
+-(void)locationUpdatedTo:(CLLocation *)newLocation{
+    NSLog(@"locationUpdatedTo triggered in chatVC");
+}
+
+-(void)didAcceptAuthorization{}
+-(void)didDeclineAuthorization{}
 
 #pragma mark - Prepare for Load
 

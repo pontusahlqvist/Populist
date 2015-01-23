@@ -12,7 +12,15 @@
 
 @implementation PPLSTDataManager
 
-#pragma mark - Instantiation
+#pragma mark - Setup / Instantiation Methods
+
+//-(void) setupLocationMananger{
+//    self.isUpdatingLocation = NO;
+//    self.locationManager = [[CLLocationManager alloc] init];
+//    [self.locationManager requestWhenInUseAuthorization];
+//    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    self.locationManager.delegate = self;
+//}
 
 -(NSMutableDictionary *)imagesAtFilePath{
     if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
@@ -24,6 +32,16 @@
     return _isLoading;
 }
 
+-(CLLocationManager *)locationManager{
+    if(!_locationManager) _locationManager = [[CLLocationManager alloc] init];
+    return _locationManager;
+}
+
+-(CLLocation *)currentLocation{
+    if(!_currentLocation) _currentLocation = [[CLLocation alloc] init];
+    return _currentLocation;
+}
+
 -(NSMutableDictionary *)avatarForStatus{
     if(!_avatarForStatus) _avatarForStatus = [[NSMutableDictionary alloc] init];
     return _avatarForStatus;
@@ -32,10 +50,12 @@
 -(void) createAvatarForStatusDictionary{
     NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
     //TODO: add real avatar images (diamond, gold, ....)
-    [avatarRawImages addObject:[UIImage imageNamed:@"SMPier.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"IMG_4699.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"nyc.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"images.jpeg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"gold.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"salmon.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"darkBlue.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
     int status = 0;
     for(UIImage *avatarRawImage in avatarRawImages){
         JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
@@ -45,20 +65,58 @@
     }
 }
 
-#pragma mark - Required Methods
-
 -(id) init{
     self = [super init];
     if(self){
         id delegate = [[UIApplication sharedApplication] delegate];
         self.context = [delegate managedObjectContext];
         [self createAvatarForStatusDictionary];
+//        [self setupLocationMananger];
     }
     return self;
 }
 
+//#pragma mark - CLLocationManager Delegate methods
+//
+//-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+//    if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
+//    
+//    CLLocation *newLocation = [locations lastObject];
+//    NSLog(@"locationManager didUpdateLocation lastObject = %@", newLocation);
+//    if([[NSDate date] timeIntervalSinceDate:newLocation.timestamp] < 10){ //if the new location is newer than 10s old, we're done.
+//        [self.locationManager stopUpdatingLocation];
+//        self.isUpdatingLocation = NO;
+//        self.currentLocation = newLocation;
+//        [self.delegate locationUpdatedTo:newLocation];
+//    }
+//    
+//}
+//
+//-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+//    NSLog(@"locationManager didFailWithError: %@", error);
+//}
+//
+//-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+//    //TODO: make sure that this works properly, i.e. that we're checking for all correct acceptance codes
+//    NSLog(@"locationManager didChangeAuthorizationStatus to status = %i", status);
+//    if(status == 4){
+//        [self.delegate didAcceptAuthorization];
+//    } else if(status != 0){
+//        [self.delegate didDeclineAuthorization];
+//    }
+//}
+
 #pragma mark - Public API
 
+//-(void) updateLocation{
+//    [self.locationManager startUpdatingLocation];
+//    self.isUpdatingLocation = YES;
+//}
+//
+//-(CLLocation *)getCurrentLocation{
+//    //TODO: fix this! It's not certain that this actually gives the current location of the user
+//    return self.currentLocation;
+//}
 
 -(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date{
 
@@ -128,43 +186,6 @@
 
 
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event{
-    /***************** GET DATA *****************/
-    //TODO: filler code. Replace with correct parse code
-    
-    
-    
-//    NSMutableArray *contributions = [[NSMutableArray alloc] init];
-//    for (int i = 0; i < 5; i++) {
-//        Contribution *newContribution = [self createContributionWithId:[NSString stringWithFormat:@"%@id%i",eventId,i]];
-//        newContribution.contributionType = @"message";
-//        newContribution.message = [NSString stringWithFormat:@"message for contribution with id = %@",newContribution.contributionId];
-//        newContribution.createdAt = [NSDate date];
-//        newContribution.contributingUserId = @"otherPerson";
-//        if(rand()%2 == 0) newContribution.contributingUserId = @"tmpSenderId";
-//        [contributions addObject:newContribution];
-//    }
-//    /***************** SAVE DATA *****************/
-//
-//    Event *event = [self getEventFromCoreDataWithId:eventId];
-//    [event addContributions:[NSSet setWithArray:contributions]];
-//
-//    [self saveCoreData];
-//    return contributions;
-
-    //TODO: return sorted contributions by time
-//    NSArray *contributions = [event.contributions allObjects];
-//    
-//    NSSortDescriptor *sortDescriptor;
-//    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
-//    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-//    NSArray *sortedArray;
-//    sortedArray = [contributions sortedArrayUsingDescriptors:sortDescriptors];
-//    return sortedArray;
-    
-    
-    
-    
-    //TODO: make sure that they are sorted correctly too!
     NSDictionary *result = [PFCloud callFunction:@"getContributionIdsInCluster" withParameters:@{@"clusterId" : event.eventId}];
     NSArray *arrayOfContributionData = result[@"contributionIds"];
     NSMutableArray *contributions = [[NSMutableArray alloc] init];
@@ -254,21 +275,9 @@
         newContribution.imagePath = [self storeImage:photo];
     }
     
-    
     [self uploadAndSaveContributionInBackground:newContribution];
     
     return newContribution;
-}
-
-
-//private method
--(void) uploadAndSaveContributionInBackground:(Contribution*) contribution{
-    //TODO: replace with parse code
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
-    ^{
-        //TODO: re-assign the contributionId when the upload has completed
-        [self saveCoreData];
-    });
 }
 
 -(NSMutableDictionary *)getStatusDictionaryForEvent:(Event *)event{
@@ -355,7 +364,16 @@
     }
 }
 
-#pragma mark - Helper Methods
+#pragma mark - Helper Methods / Private Methods
+
+-(void) uploadAndSaveContributionInBackground:(Contribution*) contribution{
+    //TODO: replace with parse code
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+    ^{
+        //TODO: re-assign the contributionId when the upload has completed
+        [self saveCoreData];
+    });
+}
 
 //retrieves an event object from core data
 -(Event *) getEventFromCoreDataWithId:(NSString*) eventId{

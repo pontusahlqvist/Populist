@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "PPLSTDataManager.h"
+#import "PPLSTLocationManager.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @class PPLSTDataManager;
 
-@interface PPLSTExploreTableViewController : UITableViewController
+@interface PPLSTExploreTableViewController : UITableViewController <PPLSTLocationManagerDelegate>
 @property (strong, nonatomic) PPLSTDataManager *dataManager;
+@property (strong, nonatomic) PPLSTLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableArray *events;
+
+@property (nonatomic) BOOL isUpdatingEvents;
 
 
 //TODO: Location Data for User - consider moving into a separate location class
@@ -21,4 +27,6 @@
 @property (strong, nonatomic) NSString *state;
 @property (strong, nonatomic) NSString *city;
 @property (strong, nonatomic) NSString *neighborhood;
+
+-(void) updateEvents;
 @end

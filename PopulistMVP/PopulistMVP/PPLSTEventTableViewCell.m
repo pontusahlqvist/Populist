@@ -23,6 +23,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     self.loading = NO;
+    self.backgroundColor = [UIColor colorWithWhite:0.95f alpha:1.0f];
     return self;
 }
 

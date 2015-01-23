@@ -36,7 +36,9 @@
     
     [self setCurrentLocationData]; //TODO: consider moving into separate class
     self.dataManager = [[PPLSTDataManager alloc] init];
-    self.dataManager.exploreVC = self;
+    self.locationManager = [[PPLSTLocationManager alloc] init];
+//    self.dataManager.delegate = self; //for location updates
+    self.locationManager.delegate = self;
     
     //set tableview delegates, datasource
     self.tableView.delegate = self;
@@ -51,17 +53,56 @@
     self.refreshControl.backgroundColor = [UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
     self.refreshControl.tintColor = [UIColor whiteColor];
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
-    
+
     //grab events with given location and time data - again, consider passing location data in via another class.
-    self.events = [[self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]] mutableCopy];
+    [self updateEvents];
+    
+    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"compose.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
+    [button setImage:image forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(openChat) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+}
+
+-(void) openChat{
+    [self performSegueWithIdentifier:@"Segue To Chat" sender:self.navigationItem.rightBarButtonItem];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    //let the data manager know that this is the current VC
+    self.dataManager.currentVC = self;
+//    self.dataManager.delegate = self;
+    self.locationManager.delegate = self;
 }
 
 //refresh the uitableview
 -(void) refresh{
     //re-download the event meta data from the server
-    [self.dataManager downloadEventMetaDataWithInputLatitude:0.0 andLongitude:0.0 andDate:[NSDate date]];
+    [self updateEvents];
     [self.refreshControl endRefreshing];
+}
+
+-(void) startUpdatingEvents{
+    NSLog(@"startUpdatingEvents");
+    self.isUpdatingEvents = YES;
+//    [self.dataManager updateLocation];
+    [self.locationManager updateLocation];
+}
+-(void) finishUpdatingEvents{
+    NSLog(@"finishUpdatingEvents");
+//    CLLocation *currentLocation = [self.dataManager getCurrentLocation];
+    CLLocation *currentLocation = [self.locationManager getCurrentLocation];
+    NSLog(@"Current Location - lat = %f and long = %f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
+    self.events = [[self.dataManager downloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
     [self.tableView reloadData];
+    self.isUpdatingEvents = NO;
+}
+
+-(void) updateEvents{
+    NSLog(@"updateEvents");
+    [self startUpdatingEvents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,12 +132,13 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSLog(@"Number of events: %li", [self.events count]);
     return [self.events count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    return screenBounds.size.width + 20.0;
+    return screenBounds.size.width + 10.0;
 //    return 340.0;
 //    return 380.0;
 }
@@ -177,6 +219,28 @@
     }
 }
 
+#pragma mark - PPLSTLocationManager Delegate Methods
+
+-(void)locationUpdatedTo:(CLLocation *)newLocation{
+    NSLog(@"locationUpdatedTo triggered in ExploreVC");
+    //if the location is updated while we're loading events, we should continue to the next step and complete the loading process
+    if(self.isUpdatingEvents){
+        [self finishUpdatingEvents];
+    }
+}
+
+-(void)didAcceptAuthorization{
+    NSLog(@"didAcceptAuthorization triggered in ExploreVC");
+    [self updateEvents];
+}
+
+//TODO: implement an alert view etc here to make sure that the location services are enabled
+-(void)didDeclineAuthorization{
+    NSLog(@"didDeclineAuthorization triggered in ExploreVC");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"In order for Populist to work, you must allow location services. Please go to the settings page for Populist and enable location services." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
 #pragma mark - Helper Methods
 
 //returns a human readable time-since-event string (now, sec, min, h, d, w)
@@ -200,9 +264,14 @@
 
 //returns location string relevant to this user (e.g. neighborhood if in the same city but only country if on the other side of the world)
 -(NSString *) locationStringForEvent:(Event*)event{
-    if([event.neighborhood isEqualToString:self.neighborhood] || [event.city isEqualToString:self.city]){
+    NSString *eventNeighborhood = [event.neighborhood stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *eventCity = [event.city stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *eventState = [event.state stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *eventCountry = [event.country stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    if([eventNeighborhood isEqualToString:self.neighborhood] || [eventCity isEqualToString:self.city]){
         return event.neighborhood;
-    } else if([event.state isEqualToString:self.state] || [event.country isEqualToString:self.country]){
+    } else if([eventState isEqualToString:self.state] || [eventCountry isEqualToString:self.country]){
         return event.city;
     } else{
         return event.country;
@@ -218,5 +287,12 @@
     self.neighborhood = @"Venice Beach";
 }
 
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();    
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 @end

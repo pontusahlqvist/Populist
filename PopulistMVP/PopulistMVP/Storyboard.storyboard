@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-tr-q6r">
-                                            <rect key="frame" x="0.0" y="10" width="320" height="320"/>
+                                            <rect key="frame" x="3" y="8" width="314" height="314"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="v5s-tr-q6r" secondAttribute="height" multiplier="1:1" id="4OI-yt-NtU"/>
                                             </constraints>
@@ -49,11 +49,11 @@
                                         <constraint firstItem="5Qr-uv-24L" firstAttribute="leading" secondItem="49g-hk-lFP" secondAttribute="leadingMargin" constant="-2" id="5Nx-nL-afG"/>
                                         <constraint firstItem="5Qr-uv-24L" firstAttribute="trailing" secondItem="pN8-as-Rc7" secondAttribute="trailing" constant="20" id="GuV-Sn-McN"/>
                                         <constraint firstItem="lNt-FO-7Vx" firstAttribute="leading" secondItem="5Qr-uv-24L" secondAttribute="leading" constant="20" id="I0q-CW-Jee"/>
-                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="leading" secondItem="49g-hk-lFP" secondAttribute="leadingMargin" constant="-8" id="KQp-qI-twX"/>
-                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="top" secondItem="49g-hk-lFP" secondAttribute="topMargin" constant="2" id="LcQ-yb-xNS"/>
+                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="leading" secondItem="49g-hk-lFP" secondAttribute="leadingMargin" constant="-5" id="KQp-qI-twX"/>
+                                        <constraint firstItem="v5s-tr-q6r" firstAttribute="top" secondItem="49g-hk-lFP" secondAttribute="topMargin" id="LcQ-yb-xNS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="5Qr-uv-24L" secondAttribute="trailing" constant="-2" id="MIE-s7-kAq"/>
                                         <constraint firstItem="5Qr-uv-24L" firstAttribute="top" secondItem="49g-hk-lFP" secondAttribute="topMargin" constant="7" id="fJT-MI-1Qz"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="v5s-tr-q6r" secondAttribute="trailing" constant="-8" id="kOg-ww-G6t"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="v5s-tr-q6r" secondAttribute="trailing" constant="-5" id="kOg-ww-G6t"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
