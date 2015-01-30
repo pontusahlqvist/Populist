@@ -2,7 +2,7 @@
 //  Contribution.m
 //  PopulistMVP
 //
-//  Created by Pontus Ahlqvist on 1/19/15.
+//  Created by Pontus Ahlqvist on 1/27/15.
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
@@ -19,7 +19,9 @@
 @dynamic iconId;
 @dynamic imagePath;
 @dynamic message;
+@dynamic latitude;
+@dynamic longitude;
 @dynamic event;
-@dynamic titleEvent;
+@dynamic parentEvent;
 
 @end

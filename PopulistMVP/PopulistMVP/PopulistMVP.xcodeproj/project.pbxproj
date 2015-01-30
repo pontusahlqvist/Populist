@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */; };
-		161102A91A6DB16B0022796E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 161102A81A6DB16B0022796E /* Event.m */; };
 		161102AC1A6DBB030022796E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AA1A6DBB030022796E /* Bolts.framework */; };
 		161102AD1A6DBB030022796E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AB1A6DBB030022796E /* Parse.framework */; };
 		161102AF1A6DBB280022796E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AE1A6DBB280022796E /* CFNetwork.framework */; };
@@ -20,7 +19,6 @@
 		161102BB1A6DBB600022796E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BA1A6DBB600022796E /* SystemConfiguration.framework */; };
 		161102BD1A6DBB6A0022796E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BC1A6DBB6A0022796E /* libz.dylib */; };
 		161102BF1A6DBB750022796E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BE1A6DBB750022796E /* libsqlite3.dylib */; };
-		161102C51A6E26100022796E /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 161102C41A6E26100022796E /* Contribution.m */; };
 		163E3BCB1A64D7F000913FBF /* PPLSTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */; };
 		163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */; };
 		163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D0A1A64DD3600913FBF /* JSQMessages.strings */; };
@@ -100,6 +98,7 @@
 		167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */; };
 		167F78DA1A591DFE00C7AB64 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78D91A591DFE00C7AB64 /* images.jpeg */; };
 		167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78DB1A5926E700C7AB64 /* nyc.jpg */; };
+		16F3FF681A7C0AB6001BD00F /* launchImage.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage.PNG */; };
 		16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA31A70460B003215E9 /* SMPier.jpg */; };
 		16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA51A704615003215E9 /* IMG_4699.jpg */; };
 		16F7DAAA1A717CE5003215E9 /* PPLSTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */; };
@@ -115,6 +114,9 @@
 		16F7DAC21A723E1C003215E9 /* lightBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DABD1A723E1C003215E9 /* lightBlue.jpg */; };
 		16F7DAC31A723E1C003215E9 /* salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DABE1A723E1C003215E9 /* salmon.jpg */; };
 		16F7DAC61A724057003215E9 /* Populist-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAC51A724057003215E9 /* Populist-60.png */; };
+		16F7DACE1A761522003215E9 /* rsz_compose.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DACD1A761522003215E9 /* rsz_compose.png */; };
+		16F7DAD71A78031C003215E9 /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAD61A78031C003215E9 /* Contribution.m */; };
+		16F7DADA1A78031C003215E9 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAD91A78031C003215E9 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,8 +131,6 @@
 
 /* Begin PBXFileReference section */
 		161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone6LaunchScreen.png; sourceTree = "<group>"; };
-		161102A71A6DB16B0022796E /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
-		161102A81A6DB16B0022796E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
 		161102AA1A6DBB030022796E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		161102AB1A6DBB030022796E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		161102AE1A6DBB280022796E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -142,8 +142,6 @@
 		161102BA1A6DBB600022796E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		161102BC1A6DBB6A0022796E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		161102BE1A6DBB750022796E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		161102C31A6E26100022796E /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contribution.h; sourceTree = "<group>"; };
-		161102C41A6E26100022796E /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contribution.m; sourceTree = "<group>"; };
 		163E3BC91A64D7F000913FBF /* PPLSTChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTChatViewController.h; sourceTree = "<group>"; };
 		163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTChatViewController.m; sourceTree = "<group>"; };
 		163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
@@ -290,6 +288,7 @@
 		167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTEventTableViewCell.m; sourceTree = "<group>"; };
 		167F78D91A591DFE00C7AB64 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		167F78DB1A5926E700C7AB64 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
+		16F3FF671A7C0AB6001BD00F /* launchImage.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.PNG; sourceTree = "<group>"; };
 		16F7DAA31A70460B003215E9 /* SMPier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SMPier.jpg; sourceTree = "<group>"; };
 		16F7DAA51A704615003215E9 /* IMG_4699.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4699.jpg; sourceTree = "<group>"; };
 		16F7DAA81A717CE5003215E9 /* PPLSTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPLSTLocationManager.h; path = ../PPLSTLocationManager.h; sourceTree = "<group>"; };
@@ -306,6 +305,11 @@
 		16F7DABD1A723E1C003215E9 /* lightBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightBlue.jpg; sourceTree = "<group>"; };
 		16F7DABE1A723E1C003215E9 /* salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmon.jpg; sourceTree = "<group>"; };
 		16F7DAC51A724057003215E9 /* Populist-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Populist-60.png"; sourceTree = "<group>"; };
+		16F7DACD1A761522003215E9 /* rsz_compose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_compose.png; sourceTree = "<group>"; };
+		16F7DAD51A78031C003215E9 /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contribution.h; path = ../Contribution.h; sourceTree = "<group>"; };
+		16F7DAD61A78031C003215E9 /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contribution.m; path = ../Contribution.m; sourceTree = "<group>"; };
+		16F7DAD81A78031C003215E9 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
+		16F7DAD91A78031C003215E9 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,10 +545,10 @@
 				16F7DAA81A717CE5003215E9 /* PPLSTLocationManager.h */,
 				16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */,
 				167F78A81A58725E00C7AB64 /* PopulistMVP.xcdatamodeld */,
-				161102A71A6DB16B0022796E /* Event.h */,
-				161102A81A6DB16B0022796E /* Event.m */,
-				161102C31A6E26100022796E /* Contribution.h */,
-				161102C41A6E26100022796E /* Contribution.m */,
+				16F7DAD81A78031C003215E9 /* Event.h */,
+				16F7DAD91A78031C003215E9 /* Event.m */,
+				16F7DAD51A78031C003215E9 /* Contribution.h */,
+				16F7DAD61A78031C003215E9 /* Contribution.m */,
 			);
 			name = "Model / Core Data";
 			sourceTree = "<group>";
@@ -635,20 +639,22 @@
 		167F789D1A58725E00C7AB64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */,
 				16671E471A6C472C00AD394F /* camera@2x.png */,
 				163E3DAD1A64DEE900913FBF /* JSQSystemSoundPlayer */,
 				163E3D9E1A64DD8000913FBF /* Assets */,
 				163E3D061A64DD3600913FBF /* JSQMessagesViewController */,
 				167F78AB1A58725E00C7AB64 /* Images.xcassets */,
+				161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */,
 				16671E491A6C479A00AD394F /* camera.png */,
 				16F7DAC41A723E28003215E9 /* Color Images for Avatars */,
 				16F7DAAE1A722EF1003215E9 /* message.png */,
+				16F7DACD1A761522003215E9 /* rsz_compose.png */,
 				16F7DAB61A723A27003215E9 /* mappin.png */,
 				16F7DAB41A7239EE003215E9 /* pin.png */,
 				16F7DAB01A723235003215E9 /* compose.png */,
 				16F7DAAB1A722A54003215E9 /* Populist-60@2x.png */,
 				16F7DAC51A724057003215E9 /* Populist-60.png */,
+				16F3FF671A7C0AB6001BD00F /* launchImage.PNG */,
 				16F7DAA51A704615003215E9 /* IMG_4699.jpg */,
 				167F78DB1A5926E700C7AB64 /* nyc.jpg */,
 				16F7DAA31A70460B003215E9 /* SMPier.jpg */,
@@ -826,6 +832,7 @@
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
 				163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */,
 				163E3D981A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				16F7DACE1A761522003215E9 /* rsz_compose.png in Resources */,
 				16671E481A6C472C00AD394F /* camera@2x.png in Resources */,
 				16F7DAC21A723E1C003215E9 /* lightBlue.jpg in Resources */,
 				16F7DAC31A723E1C003215E9 /* salmon.jpg in Resources */,
@@ -834,6 +841,7 @@
 				16F7DAB11A723235003215E9 /* compose.png in Resources */,
 				16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
+				16F3FF681A7C0AB6001BD00F /* launchImage.PNG in Resources */,
 				167F78AC1A58725E00C7AB64 /* Images.xcassets in Resources */,
 				16F7DAAC1A722A54003215E9 /* Populist-60@2x.png in Resources */,
 				16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */,
@@ -872,7 +880,7 @@
 				163E3D831A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				163E3D7F1A64DD3600913FBF /* JSQMessagesBubbleImageFactory.m in Sources */,
 				163E3D851A64DD3600913FBF /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
-				161102C51A6E26100022796E /* Contribution.m in Sources */,
+				16F7DAD71A78031C003215E9 /* Contribution.m in Sources */,
 				163E3D761A64DD3600913FBF /* NSString+JSQMessages.m in Sources */,
 				163E3D791A64DD3600913FBF /* UIImage+JSQMessages.m in Sources */,
 				163E3D921A64DD3600913FBF /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
@@ -890,6 +898,7 @@
 				163E3D971A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
 				167F78A31A58725E00C7AB64 /* main.m in Sources */,
 				163E3D7E1A64DD3600913FBF /* JSQMessagesAvatarImageFactory.m in Sources */,
+				16F7DADA1A78031C003215E9 /* Event.m in Sources */,
 				163E3D751A64DD3600913FBF /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				163E3D8E1A64DD3600913FBF /* JSQMessagesCollectionView.m in Sources */,
 				163E3D7A1A64DD3600913FBF /* UIView+JSQMessages.m in Sources */,
@@ -900,7 +909,6 @@
 				163E3D8D1A64DD3600913FBF /* JSQMessagesCellTextView.m in Sources */,
 				167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */,
 				163E3D881A64DD3600913FBF /* JSQMessage.m in Sources */,
-				161102A91A6DB16B0022796E /* Event.m in Sources */,
 				163E3D841A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				16671E501A6C5CE100AD394F /* PPLSTImageDetailViewController.m in Sources */,
 				163E3D771A64DD3600913FBF /* UIColor+JSQMessages.m in Sources */,

@@ -14,19 +14,15 @@
 
 @class PPLSTDataManager;
 
-@interface PPLSTExploreTableViewController : UITableViewController <PPLSTLocationManagerDelegate>
+@interface PPLSTExploreTableViewController : UITableViewController <PPLSTLocationManagerDelegate, PPLSTDataManagerDelegate>
+
+//External data/location manager classes
 @property (strong, nonatomic) PPLSTDataManager *dataManager;
 @property (strong, nonatomic) PPLSTLocationManager *locationManager;
-@property (strong, nonatomic) NSMutableArray *events;
 
+//content related
+@property (strong, nonatomic) NSMutableArray *events;
+@property (strong, nonatomic) Event *currentEvent;
 @property (nonatomic) BOOL isUpdatingEvents;
 
-
-//TODO: Location Data for User - consider moving into a separate location class
-@property (strong, nonatomic) NSString *country;
-@property (strong, nonatomic) NSString *state;
-@property (strong, nonatomic) NSString *city;
-@property (strong, nonatomic) NSString *neighborhood;
-
--(void) updateEvents;
 @end

@@ -6,12 +6,18 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: fix avatars to make sure that they work properly accross multiple users and also that there's an avatar right away. Perhaps outsource to parse.
+//TODO: move all the styling into a separate class
+//TODO: create imageediting class where all the image editing methods can live
+//TODO: make image detail view looks better
+
 #import "PPLSTChatViewController.h"
 #import "PPLSTImagePickerController.h"
 #import "PPLSTImageDetailViewController.h"
 
 @interface PPLSTChatViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-
+@property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
+@property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;
 @end
 
 @implementation PPLSTChatViewController
@@ -30,41 +36,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //TODO: fix these to the correct senderId. Possibly keep @"You" there, or remove completely
+    NSLog(@"Inside Chat VC");
     self.senderDisplayName = @"";
-    self.senderId = @"tmpSenderId";
+    self.senderId = self.dataManager.contributingUserId;
     
     [self prepareForLoad]; //load contributions for this event
     
-    // Do any additional setup after loading the view.
+    //setup delegates and datasources
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.locationManager = [[PPLSTLocationManager alloc] init];
     self.locationManager.delegate = self;
-
-    //TODO: add the avatars back in to show icons rather than profile pictures
-//    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
-//    self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
-    
-    //TODO: Change this to the camera icon. For now, only support text messages
-//    self.inputToolbar.contentView.leftBarButtonItem = nil;
     
     JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
     
     UIImage *image = [self imageWithImage:[UIImage imageNamed:@"mappin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
-    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
     [button setImage:image forState:UIControlStateNormal];
     [button addTarget:self action:@selector(openMap) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = barButtonItem;
-
 }
 
+//opens the map to the given location
 -(void) openMap{
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://maps.apple.com/?q=%f,%f",[self.event.latitude floatValue],[self.event.longitude floatValue]]];
     NSLog(@"Opening URL %@", url);
@@ -72,24 +68,40 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated]; //TODO: I think this causes the snap-to-bottom each time, even when the user returns from the image detailed view
     //let the data manager know that this is the current VC
-    self.dataManager.currentVC = self;
     self.locationManager.delegate = self;
-    [self.locationManager updateLocation];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"didReceiveMemoryWarning in chatVC");
 }
 
 #pragma mark - PPLSTLocationManagerDelegate Methods
 
--(void)locationUpdatedTo:(CLLocation *)newLocation{
-    NSLog(@"locationUpdatedTo triggered in chatVC");
-}
+-(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation{
+    if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
+        NSNumber *thisEventContainsUser = [self.event.containsUser copy];
 
+        Event *bestEvent = [self.dataManager eventThatUserBelongsTo];
+        CLLocation *currentLocation = [self.locationManager getCurrentLocation];
+        [self.locationManager updateLocationOfLastUpdate:currentLocation];
+        [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
+
+        if([thisEventContainsUser isEqualToNumber:@1] && ![bestEvent.eventId isEqualToString:self.event.eventId]){
+            //disable chat and perhaps display an alert view
+            self.event.containsUser = @0; //don't worry about saving since there will already be a save in progress in the dataManager
+            [self.inputToolbar.contentView.textView setEditable:NO];
+            [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
+
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Thanks for the visit" message:@"It seems like you've left the event you were taking part in, or maybe it just ended. No worries, if you want to keep chatting and the event's still going on, just go back there." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alertView show];
+        }
+    }
+}
 -(void)didAcceptAuthorization{}
 -(void)didDeclineAuthorization{}
 
@@ -97,13 +109,13 @@
 
 -(void) prepareForLoad{
     //setup the textfield etc to disallow users to contribute to events that they are not part of
-    NSLog(@"event.containsUser = %@", self.event.containsUser);
     if(![self.event.containsUser isEqualToNumber:@1]){
         [self.inputToolbar.contentView.textView setEditable:NO];
-        [self.inputToolbar.contentView.textView setPlaceHolder:@"You can only observe this event"];
+        [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
     } else{
         self.inputToolbar.backgroundColor = [UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f];
     }
+
     //TODO: kick these off in parallel async threads rather than doing the avatar AND contribution download back-to-back
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event] mutableCopy];
@@ -112,7 +124,7 @@
         self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView reloadData]; //TODO: make sure that it snaps to the bottom of the feed
+            [self.collectionView reloadData];
             [self scrollToBottomAnimated:NO];
         });
     });
@@ -154,7 +166,6 @@
 
 #pragma mark - JSQMessageCollectionView Data Source
 
-//TODO: include avatars based on arrival at event
 -(id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
     return [self.dataManager avatarForStatus:self.statusForSenderId[contribution.contributingUserId]];
@@ -192,40 +203,18 @@
 
 - (UICollectionViewCell *)collectionView:(JSQMessagesCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  Override point for customizing cells
-     */
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-    
-    /**
-     *  Configure almost *anything* on the cell
-     *
-     *  Text colors, label text, label colors, etc.
-     *
-     *
-     *  DO NOT set `cell.textView.font` !
-     *  Instead, you need to set `self.collectionView.collectionViewLayout.messageBubbleFont` to the font you want in `viewDidLoad`
-     *
-     *
-     *  DO NOT manipulate cell layout information!
-     *  Instead, override the properties you want on `self.collectionView.collectionViewLayout` from `viewDidLoad`
-     */
-    
     JSQMessage *message = [self.jsqMessages objectAtIndex:indexPath.row];
     
     if (!message.isMediaMessage) {
-        
         if ([message.senderId isEqualToString:self.senderId]) {
             cell.textView.textColor = [UIColor whiteColor];
         }
         else {
             cell.textView.textColor = [UIColor blackColor];
         }
-        
-        cell.textView.linkTextAttributes = @{ NSForegroundColorAttributeName : cell.textView.textColor,
-                                              NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
+        cell.textView.linkTextAttributes = @{ NSForegroundColorAttributeName : cell.textView.textColor, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
     }
-    
     return cell;
 }
 
@@ -233,20 +222,15 @@
 #pragma mark - JSQMessageCollectionView Delegate
 
 -(void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date{
-    //TODO: also support images
-    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"message", @"message": text};
+    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"message", @"message": text, @"location":self.locationManager.currentLocation};
     Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:nil];
-    [self.contributions addObject:newContribution];
+    [self handleNewContribution:newContribution];
     
-    //TODO: also support media messages
-    [self.jsqMessages addObject:[[self createMessagesFromContributions:@[newContribution]] firstObject]];
-
     [self finishSendingMessageAnimated:YES];
     [self.collectionView reloadData];
 }
 
 //TODO: customize the imagePicker!
-//TODO: make sure that only images taken at the event can be uploaded
 -(void)didPressAccessoryButton:(UIButton *)sender{
     if(![self.event.containsUser isEqualToNumber:@1]){
         return; //can't contribute to the event
@@ -265,7 +249,7 @@
     }
 
     picker.delegate = self;
-    picker.allowsEditing = NO;
+    picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
@@ -275,27 +259,21 @@
 -(void)collectionView:(JSQMessagesCollectionView *)collectionView didTapMessageBubbleAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
     if([contribution.contributionType isEqualToString:@"photo"]){
-        //tapped on a photo
-        [self performSegueWithIdentifier:@"Segue To Image Detail" sender:indexPath];
+        [self performSegueWithIdentifier:@"Segue To Image Detail" sender:indexPath]; //tapped a photo
     }
 }
-
 
 #pragma mark - ImagePicker Delegate
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-//    UIImage *image = [self imageWithImage:info[UIImagePickerControllerOriginalImage] scaledToSize:CGSizeMake(750.0, 750.0)];
-    UIImage *image = [self imageWithImage:info[UIImagePickerControllerOriginalImage] scaledDownToHorizontalPoints:750.0];
+    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
 
     NSLog(@"VC should be dismissed...");
     //setup the contribution
-    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo"};
+    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
     
     Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:image];
-    [self.contributions addObject:newContribution];
-    
-    //TODO: also support media messages
-    [self.jsqMessages addObject:[[self createMessagesFromContributions:@[newContribution]] firstObject]];
+    [self handleNewContribution:newContribution];
 
     [self finishSendingMessageAnimated:YES];
     [self.collectionView reloadData];
@@ -310,24 +288,37 @@
 
     for (Contribution *contribution in contributions) {
         NSLog(@"In the process of converting contributionId = %@ where the senderId = %@", contribution.contributionId, contribution.contributingUserId);
+        JSQMessage *newMessage;
         if([contribution.contributionType isEqualToString:@"message"]){
             //create text message
-            JSQMessage *newMessage = [[JSQMessage alloc] initWithSenderId:contribution.contributingUserId senderDisplayName:@"asdf" date:contribution.createdAt text:contribution.message];
-            [messages addObject:newMessage];
+            newMessage = [[JSQMessage alloc] initWithSenderId:contribution.contributingUserId senderDisplayName:@"asdf" date:contribution.createdAt text:contribution.message];
         } else if([contribution.contributionType isEqualToString:@"photo"]){
             //create photo message. Note that we're holding off with loading the photo until it comes into view on the collectionview - i.e. lazy loading
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
-            JSQMessage *newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
-            [messages addObject:newMessage];
+            newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }
+        [messages addObject:newMessage];
     }
     return messages;
 }
 
+-(void) handleNewContribution:(Contribution*)newContribution{
+    [self.contributions addObject:newContribution];
+    [self.jsqMessages addObject:[[self createMessagesFromContributions:@[newContribution]] firstObject]];
+    if([self.event.importance floatValue] < 1.0){
+        [self.dataManager increaseImportanceOfEvent:self.event By:2.0];
+    }
+    self.event.lastActive = [NSDate date];
+}
+
+#pragma mark - Image Helper Methods
+
+//scales down an image to the given horizontal size while maintaining the proportions
 -(UIImage*) imageWithImage:(UIImage*)image scaledDownToHorizontalPoints:(float)horizontal{
     return [self imageWithImage:image scaledToSize:CGSizeMake(horizontal,(image.size.height/image.size.width)*horizontal)];
 }
 
+//scales the image down to a given size
 - (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
     UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];

@@ -203,7 +203,13 @@ Parse.Cloud.afterSave("Contribution", function(request){
                             newCluster.set("state", state);
                             newCluster.set("city", city);
                             newCluster.set("neighborhood", neighborhood);
-                            newCluster.save();
+                            newCluster.save(
+                                success: function(savedNewCluster){
+                                    request.object.set("originalClusterId", savedNewCluster.id); //TODO: do we have to wait for the cluster to be saved before it gets an id?
+                                    request.object.set("reSaved", 1);
+                                    request.object.save();
+                                }
+                            );
                         },
                         error: function(httpResponse) {
                             console.error('Request failed with response code ' + httpResponse.status);

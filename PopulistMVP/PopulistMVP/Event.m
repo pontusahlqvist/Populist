@@ -2,7 +2,7 @@
 //  Event.m
 //  PopulistMVP
 //
-//  Created by Pontus Ahlqvist on 1/19/15.
+//  Created by Pontus Ahlqvist on 1/27/15.
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
@@ -13,6 +13,7 @@
 @implementation Event
 
 @dynamic city;
+@dynamic containsUser;
 @dynamic country;
 @dynamic eventId;
 @dynamic lastActive;
@@ -20,8 +21,8 @@
 @dynamic longitude;
 @dynamic neighborhood;
 @dynamic state;
-@dynamic containsUser;
+@dynamic importance;
 @dynamic contributions;
-@dynamic titleContributions;
+@dynamic titleContribution;
 
 @end
