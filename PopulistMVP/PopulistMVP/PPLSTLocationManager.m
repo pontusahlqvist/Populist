@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: make sure location is sufficiently accurate before stopping the location loading. Maybe wait for +/-10m.
+
 #import "PPLSTLocationManager.h"
 
 @implementation PPLSTLocationManager

@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: add a progress spinner to loading photos
+
 #import "PPLSTExploreTableViewController.h"
 #import "PPLSTChatViewController.h"
 #import "PPLSTEventTableViewCell.h"
@@ -45,7 +47,7 @@
     self.tableView.dataSource = self;
     
     //customize look of tableview
-    [self.tableView setSeparatorColor:[UIColor redColor]];
+    [self.tableView setSeparatorColor:[UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f]];//[UIColor redColor]];
     [self.tableView setSeparatorInset:UIEdgeInsetsMake(0, 15, 10, 15)];
     
     //Initialize the refresh control.

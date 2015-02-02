@@ -19,5 +19,8 @@
 @property (strong, nonatomic) UIButton *takePictureButton;
 @property (strong, nonatomic) UIButton *reverseCameraButton;
 @property (strong, nonatomic) UIButton *dismissCamera;
+@property (strong, nonatomic) UIButton *toggleFlash;
 @property (weak, nonatomic) id<PPLSTImagePickerController> imagePickerDelegate;
+@property (strong, nonatomic) UIImage *chosenImage;
+@property (strong, nonatomic) UIView *previewBackgroundView;
 @end

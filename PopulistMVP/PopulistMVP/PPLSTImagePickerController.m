@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: make the image processing faster!
+
 #import "PPLSTImagePickerController.h"
 
 @interface PPLSTImagePickerController ()
@@ -13,6 +15,11 @@
 @end
 
 @implementation PPLSTImagePickerController
+
+-(UIView *)previewBackgroundView{
+    if(!_previewBackgroundView) _previewBackgroundView = [[UIView alloc] init];
+    return _previewBackgroundView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,8 +48,11 @@
     UIView *topBar = [[UIView alloc] initWithFrame:CGRectMake(width/10.0, (height-width)/2.0-2, width*4.0/5.0, 2.0)];
     UIView *bottomBar = [[UIView alloc] initWithFrame:CGRectMake(width/10.0, (height+width)/2.0, width*4.0/5.0, 2.0)];
 
-    topBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
-    bottomBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
+//    topBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
+//    bottomBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
+    topBar.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f];
+    bottomBar.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f];
+
 
     self.takePictureButton = [[UIButton alloc] init];
     [self.takePictureButton setImage:[UIImage imageNamed:@"takePicture@2x.png"] forState:UIControlStateNormal];
@@ -97,20 +107,42 @@
     self.reverseCameraButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.reverseCameraButton addTarget:self action:@selector(handleReverseCameraButton:) forControlEvents:UIControlEventTouchUpInside];
     [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.reverseCameraButton
-                                                          attribute:NSLayoutAttributeRight
+                                                          attribute:NSLayoutAttributeCenterX
                                                           relatedBy:NSLayoutRelationEqual
                                                              toItem:overlayTop
                                                           attribute:NSLayoutAttributeRight
                                                          multiplier:1.0f
                                                            constant:-30.0f]];
     [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.reverseCameraButton
-                                                          attribute:NSLayoutAttributeTop
+                                                          attribute:NSLayoutAttributeCenterY
                                                           relatedBy:NSLayoutRelationEqual
                                                              toItem:overlayTop
                                                           attribute:NSLayoutAttributeTop
                                                          multiplier:1.0f
-                                                           constant:15.0f]];
+                                                           constant:25.0f]];
     [overlayTop addSubview:self.reverseCameraButton];
+    
+    self.toggleFlash = [[UIButton alloc] init];
+    self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
+    [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+    self.toggleFlash.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.toggleFlash addTarget:self action:@selector(handleToggleFlash:) forControlEvents:UIControlEventTouchUpInside];
+    [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.toggleFlash
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:overlayTop
+                                                          attribute:NSLayoutAttributeLeft
+                                                         multiplier:1.0f
+                                                           constant:30.0f]];
+    [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.toggleFlash
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:overlayTop
+                                                          attribute:NSLayoutAttributeTop
+                                                         multiplier:1.0f
+                                                           constant:25.0f]];
+    [overlayTop addSubview:self.toggleFlash];
+
     
     self.showsCameraControls = NO;
     [self.cameraOverlayView addSubview:topBar];
@@ -142,11 +174,20 @@
     if(self.cameraDevice == UIImagePickerControllerCameraDeviceFront){
     [UIView transitionWithView:self.view duration:1.0 options:UIViewAnimationOptionAllowAnimatedContent | UIViewAnimationOptionTransitionFlipFromLeft animations:^{
             self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+            //reset the flash image to the appropriate value
+            if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeAuto){
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+            } else if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeOff){
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+            } else{
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+            }
+
         } completion:NULL];
-//        self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
     } else{
     [UIView transitionWithView:self.view duration:1.0 options:UIViewAnimationOptionAllowAnimatedContent | UIViewAnimationOptionTransitionFlipFromLeft animations:^{
             self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+            [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
         } completion:NULL];
         self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
     }
@@ -155,6 +196,24 @@
 -(void) handleCancelButton:(UIButton*) dismissCameraButton{
     NSLog(@"handleCancelButton");
     [self.imagePickerDelegate didCancelPickingImage];
+}
+
+-(void) handleToggleFlash:(UIButton*)toggleFlashButton{
+    NSLog(@"handleToggleFlash");
+    if(self.cameraDevice == UIImagePickerControllerCameraDeviceFront){
+        //can't toggle flash when front facing.
+        return;
+    }
+    if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeAuto){
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+    } else if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeOff){
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+    } else{
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -177,7 +236,73 @@
     
     UIImage *croppedImage = [self cropImage:flippedImage ToRect:CGRectMake(x, y, cropSize, cropSize)];
     UIImage *scaledImage = [self imageWithImage:croppedImage scaledDownToHorizontalPoints:750.0];
-    [self.imagePickerDelegate didFinishPickingImage:scaledImage];
+    self.chosenImage = scaledImage;
+    [self showImagePreview];
+//    [self.imagePickerDelegate didFinishPickingImage:scaledImage];
+}
+
+-(void) showImagePreview{
+    float screenWidth = self.view.bounds.size.width;
+    float screenHeight = self.view.bounds.size.height;
+    self.previewBackgroundView.frame = CGRectMake(0.0, 0.0, screenWidth, screenHeight);
+    [self.previewBackgroundView setBackgroundColor:[UIColor blackColor]];
+
+    UIImageView *previewImage = [[UIImageView alloc] initWithImage:self.chosenImage];
+    previewImage.frame = CGRectMake(0.0, (screenHeight-screenWidth)/2.0, screenWidth, screenWidth);
+    previewImage.image = self.chosenImage;
+    [self.previewBackgroundView addSubview:previewImage];
+
+    UIButton *acceptImageButton = [[UIButton alloc] init];
+    [acceptImageButton setImage:[UIImage imageNamed:@"accept@2x.png"] forState:UIControlStateNormal];
+    acceptImageButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [acceptImageButton addTarget:self action:@selector(handleAcceptImage:) forControlEvents:UIControlEventTouchUpInside];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
+                                                          attribute:NSLayoutAttributeRight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeRight
+                                                         multiplier:1.0f
+                                                           constant:-30.0f]];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.0f
+                                                           constant:-30.0f]];
+    [self.previewBackgroundView addSubview:acceptImageButton];
+
+
+    UIButton *retakeImageButton = [[UIButton alloc] init];
+    [retakeImageButton setImage:[UIImage imageNamed:@"cancel@2x.png"] forState:UIControlStateNormal];
+    retakeImageButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [retakeImageButton addTarget:self action:@selector(handleRetakeImage:) forControlEvents:UIControlEventTouchUpInside];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:retakeImageButton
+                                                          attribute:NSLayoutAttributeLeft
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeLeft
+                                                         multiplier:1.0f
+                                                           constant:30.0f]];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:retakeImageButton
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.0f
+                                                           constant:-30.0f]];
+    [self.previewBackgroundView addSubview:retakeImageButton];
+
+    [self.view addSubview:self.previewBackgroundView];
+}
+
+-(void) handleAcceptImage:(UIButton*) acceptImageButton{
+    NSLog(@"handleAcceptImage");
+    [self.imagePickerDelegate didFinishPickingImage:self.chosenImage];
+}
+-(void) handleRetakeImage:(UIButton*)retakeImageButton{
+    NSLog(@"handleRetakeImage");
+    [self.previewBackgroundView removeFromSuperview];
 }
 
 #pragma mark - Image Manipulation Methods
