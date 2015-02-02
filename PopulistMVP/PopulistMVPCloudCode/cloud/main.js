@@ -203,13 +203,7 @@ Parse.Cloud.afterSave("Contribution", function(request){
                             newCluster.set("state", state);
                             newCluster.set("city", city);
                             newCluster.set("neighborhood", neighborhood);
-                            newCluster.save(
-                                success: function(savedNewCluster){
-                                    request.object.set("originalClusterId", savedNewCluster.id); //TODO: do we have to wait for the cluster to be saved before it gets an id?
-                                    request.object.set("reSaved", 1);
-                                    request.object.save();
-                                }
-                            );
+                            newCluster.save();
                         },
                         error: function(httpResponse) {
                             console.error('Request failed with response code ' + httpResponse.status);
@@ -622,6 +616,9 @@ function filterAndOrderClusters(baseData, clusters){
         
         var localFitValue = (importance / ((0.001 + distanceToCluster)/(typicalDistanceForGettingLocal))) * Math.exp(-deltaTime/secondDecayForLocalGetting);
         var globalFitValue = importance*Math.exp(-deltaTime/secondDecayForGlobalGetting); //base global fit value only on importance and time
+        console.log("--------------------");
+        console.log(cluster.id);
+        console.log(localFitValue);
         if(localFitValue > minLocalFitValue || globalFitValue > minGlobalFitValue){
 
             var titlePhotoIdArray = cluster.get("titlePhotoIdArray");
@@ -749,6 +746,7 @@ Parse.Cloud.define("getContributionIdsInCluster", function(request, response){
                                 }
                                 contributionDict["userId"] = results[i].get("userId");
                                 contributionDict["contributionId"] = results[i].id;
+                                contributionDict["createdAt"] = results[i].createdAt;
                                 sortedContributionIds.push(contributionDict);
                             }
                             response.success({"contributionIds": sortedContributionIds});

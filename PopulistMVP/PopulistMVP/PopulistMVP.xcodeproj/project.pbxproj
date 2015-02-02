@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160372621A7EE5C100D4802C /* reverseCameraWhite32.png in Resources */ = {isa = PBXBuildFile; fileRef = 160372611A7EE5C100D4802C /* reverseCameraWhite32.png */; };
 		161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */; };
 		161102AC1A6DBB030022796E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AA1A6DBB030022796E /* Bolts.framework */; };
 		161102AD1A6DBB030022796E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102AB1A6DBB030022796E /* Parse.framework */; };
@@ -98,7 +99,18 @@
 		167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */; };
 		167F78DA1A591DFE00C7AB64 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78D91A591DFE00C7AB64 /* images.jpeg */; };
 		167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167F78DB1A5926E700C7AB64 /* nyc.jpg */; };
-		16F3FF681A7C0AB6001BD00F /* launchImage.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage.PNG */; };
+		16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */; };
+		16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF691A7C167A001BD00F /* launchImagev2.png */; };
+		16F3FF6E1A7C32E3001BD00F /* takePicture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */; };
+		16F3FF701A7C4A9A001BD00F /* launchImage5s.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */; };
+		16F3FF721A7EB4F6001BD00F /* reverseCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF711A7EB4F6001BD00F /* reverseCamera.png */; };
+		16F3FF741A7EB9A0001BD00F /* reverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF731A7EB9A0001BD00F /* reverse.png */; };
+		16F3FF761A7EBA01001BD00F /* reverse_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF751A7EBA01001BD00F /* reverse_small.png */; };
+		16F3FF781A7EDBE1001BD00F /* reverseCameraYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF771A7EDBE1001BD00F /* reverseCameraYellow.png */; };
+		16F3FF7A1A7EDCA0001BD00F /* reverseCameraBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF791A7EDCA0001BD00F /* reverseCameraBlue.png */; };
+		16F3FF7C1A7EDCE9001BD00F /* reverseCameraBlue32.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF7B1A7EDCE9001BD00F /* reverseCameraBlue32.png */; };
+		16F3FF7E1A7EDD27001BD00F /* reverseCameraBlue48.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF7D1A7EDD27001BD00F /* reverseCameraBlue48.png */; };
+		16F3FF801A7EE20B001BD00F /* populist_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF7F1A7EE20B001BD00F /* populist_cancel.png */; };
 		16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA31A70460B003215E9 /* SMPier.jpg */; };
 		16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAA51A704615003215E9 /* IMG_4699.jpg */; };
 		16F7DAAA1A717CE5003215E9 /* PPLSTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */; };
@@ -130,6 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160372611A7EE5C100D4802C /* reverseCameraWhite32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraWhite32.png; sourceTree = "<group>"; };
 		161102A51A6D75E60022796E /* iPhone6LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone6LaunchScreen.png; sourceTree = "<group>"; };
 		161102AA1A6DBB030022796E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		161102AB1A6DBB030022796E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -288,7 +301,18 @@
 		167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTEventTableViewCell.m; sourceTree = "<group>"; };
 		167F78D91A591DFE00C7AB64 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		167F78DB1A5926E700C7AB64 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
-		16F3FF671A7C0AB6001BD00F /* launchImage.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.PNG; sourceTree = "<group>"; };
+		16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.PNG"; sourceTree = "<group>"; };
+		16F3FF691A7C167A001BD00F /* launchImagev2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImagev2.png; sourceTree = "<group>"; };
+		16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takePicture@2x.png"; sourceTree = "<group>"; };
+		16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage5s.PNG; sourceTree = "<group>"; };
+		16F3FF711A7EB4F6001BD00F /* reverseCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCamera.png; sourceTree = "<group>"; };
+		16F3FF731A7EB9A0001BD00F /* reverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverse.png; sourceTree = "<group>"; };
+		16F3FF751A7EBA01001BD00F /* reverse_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverse_small.png; sourceTree = "<group>"; };
+		16F3FF771A7EDBE1001BD00F /* reverseCameraYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraYellow.png; sourceTree = "<group>"; };
+		16F3FF791A7EDCA0001BD00F /* reverseCameraBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraBlue.png; sourceTree = "<group>"; };
+		16F3FF7B1A7EDCE9001BD00F /* reverseCameraBlue32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraBlue32.png; sourceTree = "<group>"; };
+		16F3FF7D1A7EDD27001BD00F /* reverseCameraBlue48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraBlue48.png; sourceTree = "<group>"; };
+		16F3FF7F1A7EE20B001BD00F /* populist_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = populist_cancel.png; sourceTree = "<group>"; };
 		16F7DAA31A70460B003215E9 /* SMPier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SMPier.jpg; sourceTree = "<group>"; };
 		16F7DAA51A704615003215E9 /* IMG_4699.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4699.jpg; sourceTree = "<group>"; };
 		16F7DAA81A717CE5003215E9 /* PPLSTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPLSTLocationManager.h; path = ../PPLSTLocationManager.h; sourceTree = "<group>"; };
@@ -648,13 +672,25 @@
 				16671E491A6C479A00AD394F /* camera.png */,
 				16F7DAC41A723E28003215E9 /* Color Images for Avatars */,
 				16F7DAAE1A722EF1003215E9 /* message.png */,
+				16F3FF731A7EB9A0001BD00F /* reverse.png */,
+				16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */,
+				16F3FF691A7C167A001BD00F /* launchImagev2.png */,
+				16F3FF751A7EBA01001BD00F /* reverse_small.png */,
+				16F3FF771A7EDBE1001BD00F /* reverseCameraYellow.png */,
+				16F3FF711A7EB4F6001BD00F /* reverseCamera.png */,
+				16F3FF7F1A7EE20B001BD00F /* populist_cancel.png */,
 				16F7DACD1A761522003215E9 /* rsz_compose.png */,
+				16F3FF791A7EDCA0001BD00F /* reverseCameraBlue.png */,
+				16F3FF7B1A7EDCE9001BD00F /* reverseCameraBlue32.png */,
+				160372611A7EE5C100D4802C /* reverseCameraWhite32.png */,
+				16F3FF7D1A7EDD27001BD00F /* reverseCameraBlue48.png */,
 				16F7DAB61A723A27003215E9 /* mappin.png */,
 				16F7DAB41A7239EE003215E9 /* pin.png */,
 				16F7DAB01A723235003215E9 /* compose.png */,
 				16F7DAAB1A722A54003215E9 /* Populist-60@2x.png */,
 				16F7DAC51A724057003215E9 /* Populist-60.png */,
-				16F3FF671A7C0AB6001BD00F /* launchImage.PNG */,
+				16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */,
+				16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */,
 				16F7DAA51A704615003215E9 /* IMG_4699.jpg */,
 				167F78DB1A5926E700C7AB64 /* nyc.jpg */,
 				16F7DAA31A70460B003215E9 /* SMPier.jpg */,
@@ -772,6 +808,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = PontusAhlqvist;
 				TargetAttributes = {
+					167F78901A58725E00C7AB64 = {
+						DevelopmentTeam = NELZ9HHE6F;
+					};
 					167F78B01A58725E00C7AB64 = {
 						TestTargetID = 167F78901A58725E00C7AB64;
 					};
@@ -815,8 +854,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16671E4A1A6C479A00AD394F /* camera.png in Resources */,
+				16F3FF6E1A7C32E3001BD00F /* takePicture@2x.png in Resources */,
 				163E3DA91A64DD8000913FBF /* jsq_messages_icon.psd in Resources */,
 				16F7DAC11A723E1C003215E9 /* grey.jpg in Resources */,
+				16F3FF7C1A7EDCE9001BD00F /* reverseCameraBlue32.png in Resources */,
+				16F3FF801A7EE20B001BD00F /* populist_cancel.png in Resources */,
 				167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
 				161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */,
@@ -826,7 +868,9 @@
 				163E3D9D1A64DD3600913FBF /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				163E3D7D1A64DD3600913FBF /* JSQMessagesViewController.xib in Resources */,
 				16F7DAAF1A722EF1003215E9 /* message.png in Resources */,
+				16F3FF761A7EBA01001BD00F /* reverse_small.png in Resources */,
 				163E3DA61A64DD8000913FBF /* jsq_message_chat_icon.png in Resources */,
+				16F3FF741A7EB9A0001BD00F /* reverse.png in Resources */,
 				163E3DAA1A64DD8000913FBF /* jsq_messages_splash.psd in Resources */,
 				16F7DAC61A724057003215E9 /* Populist-60.png in Resources */,
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
@@ -837,22 +881,29 @@
 				16F7DAC21A723E1C003215E9 /* lightBlue.jpg in Resources */,
 				16F7DAC31A723E1C003215E9 /* salmon.jpg in Resources */,
 				16F7DAB71A723A27003215E9 /* mappin.png in Resources */,
+				16F3FF721A7EB4F6001BD00F /* reverseCamera.png in Resources */,
 				163E3DA71A64DD8000913FBF /* jsq_messages_banner.png in Resources */,
 				16F7DAB11A723235003215E9 /* compose.png in Resources */,
 				16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
-				16F3FF681A7C0AB6001BD00F /* launchImage.PNG in Resources */,
+				16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */,
 				167F78AC1A58725E00C7AB64 /* Images.xcassets in Resources */,
+				16F3FF7E1A7EDD27001BD00F /* reverseCameraBlue48.png in Resources */,
 				16F7DAAC1A722A54003215E9 /* Populist-60@2x.png in Resources */,
 				16F7DAA41A70460B003215E9 /* SMPier.jpg in Resources */,
 				163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */,
 				167F78CA1A58727500C7AB64 /* Storyboard.storyboard in Resources */,
 				163E3D911A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
+				16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */,
+				16F3FF7A1A7EDCA0001BD00F /* reverseCameraBlue.png in Resources */,
+				16F3FF701A7C4A9A001BD00F /* launchImage5s.PNG in Resources */,
 				163E3D931A64DD3600913FBF /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
+				16F3FF781A7EDBE1001BD00F /* reverseCameraYellow.png in Resources */,
 				16F7DAC01A723E1C003215E9 /* darkGreen.jpg in Resources */,
 				163E3D9B1A64DD3600913FBF /* JSQMessagesToolbarContentView.xib in Resources */,
 				163E3DAB1A64DD8000913FBF /* jsq_messages_splash_ipad.psd in Resources */,
 				16F7DAB91A723D65003215E9 /* gold.jpg in Resources */,
+				160372621A7EE5C100D4802C /* reverseCameraWhite32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,7 +1108,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1075,7 +1126,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -31,8 +31,6 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location will be used to show you nearby events</string>
-	<key>UILaunchStoryboardName</key>
-	<string>Storyboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Storyboard</string>
 	<key>UIRequiredDeviceCapabilities</key>

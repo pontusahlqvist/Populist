@@ -25,11 +25,12 @@
     /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
     The other ones are just meant for testing!
     */
-//    [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
-//                  clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
-    
-    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
-                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
+    [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
+                  clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
+
+    //These are the old credentials below
+//    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
+//                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
  
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];

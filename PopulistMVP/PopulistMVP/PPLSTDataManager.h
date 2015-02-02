@@ -8,6 +8,8 @@
 
 //TODO: include push notifications
 //TODO: be careful with managed object contexts. Apparently each thread needs its own MOC and they need to ultimately be merged together.
+//TODO: include launch images for iphone 5/5s and iphone 6+. Just drag them into launchImage-1 in images.xcasset
+//TODO: clean up core data for events that are no longer in the stream. Otherwise the data will just build and build...
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>

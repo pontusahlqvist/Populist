@@ -10,9 +10,10 @@
 //TODO: move all the styling into a separate class
 //TODO: create imageediting class where all the image editing methods can live
 //TODO: make image detail view looks better
+//TODO: implement 'load earlier'
+//TODO: must start the conversation with an image
 
 #import "PPLSTChatViewController.h"
-#import "PPLSTImagePickerController.h"
 #import "PPLSTImageDetailViewController.h"
 
 @interface PPLSTChatViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -95,6 +96,7 @@
             //disable chat and perhaps display an alert view
             self.event.containsUser = @0; //don't worry about saving since there will already be a save in progress in the dataManager
             [self.inputToolbar.contentView.textView setEditable:NO];
+            self.inputToolbar.backgroundColor = [UIColor clearColor];
             [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
 
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Thanks for the visit" message:@"It seems like you've left the event you were taking part in, or maybe it just ended. No worries, if you want to keep chatting and the event's still going on, just go back there." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
@@ -248,7 +250,7 @@
         return;
     }
 
-    picker.delegate = self;
+    picker.imagePickerDelegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
@@ -265,9 +267,15 @@
 
 #pragma mark - ImagePicker Delegate
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
+-(void)didFinishPickingImage:(UIImage *)originalImage{
+    //called from PPLSTImagePickerController
+    NSLog(@"is about to dismiss the VC");
+    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"should have dismissed the VC");
 
+//    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
+    UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
+    
     NSLog(@"VC should be dismissed...");
     //setup the contribution
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
@@ -278,7 +286,32 @@
     [self finishSendingMessageAnimated:YES];
     [self.collectionView reloadData];
     
+//    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+-(void)didCancelPickingImage{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//
+////    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
+//    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
+//    UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
+//    
+//    NSLog(@"VC should be dismissed...");
+//    //setup the contribution
+//    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
+//    
+//    Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:image];
+//    [self handleNewContribution:newContribution];
+//
+//    [self finishSendingMessageAnimated:YES];
+//    [self.collectionView reloadData];
+//    
+////    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Helper Methods
@@ -327,11 +360,73 @@
     return newImage;
 }
 
+-(UIImage*) cropImage:(UIImage*)image ToRect:(CGRect)rect{
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, [image scale]);
+    [image drawAtPoint:CGPointMake(-rect.origin.x, -rect.origin.y)];
+    UIImage *cropped_image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return cropped_image;
+}
 
 
+-(UIImage*) flipImageCorrectly:(UIImage*)inputImage{
+    NSLog(@"PPLSTChatViewController - flipImageCorrectly:%@",inputImage);
+
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    NSLog(@"transform before: %f,%f,%f,%f,%f,%f", transform.a, transform.b, transform.c, transform.d, transform.tx, transform.ty);
+    switch (inputImage.imageOrientation) {
+        case UIImageOrientationDown:
+        case UIImageOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, inputImage.size.width, inputImage.size.height);
+            transform = CGAffineTransformRotate(transform, M_PI);
+            break;
+
+        case UIImageOrientationLeft:
+        case UIImageOrientationLeftMirrored:
+            transform = CGAffineTransformTranslate(transform, inputImage.size.width, 0);
+            transform = CGAffineTransformRotate(transform, M_PI_2);
+            break;
+
+        case UIImageOrientationRight:
+        case UIImageOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, 0, inputImage.size.height);
+            transform = CGAffineTransformRotate(transform, -M_PI_2);
+            break;
+        case UIImageOrientationUp:
+        case UIImageOrientationUpMirrored:
+            break;
+    }
+
+    CIImage* coreImage = inputImage.CIImage;
+
+    if (!coreImage) {
+        coreImage = [CIImage imageWithCGImage:inputImage.CGImage];
+    }
+
+    coreImage = [coreImage imageByApplyingTransform:transform];
+    UIImage *newImage = [UIImage imageWithCIImage:coreImage];
+
+    NSLog(@"image - %f,%f", newImage.size.width, newImage.size.height);
+    return newImage;
+}
 
 
+-(UIImage*) cropImage:(UIImage*)originalImage AndScaleToPoints:(float)newWidth{
+    NSLog(@"PPLSTChatViewController - cropImage:%@ AndScaleToPoints:%f",originalImage,newWidth);
+    UIImage *rotatedImage = [self flipImageCorrectly:originalImage];
 
+    float imageWidth = originalImage.size.width;
+    float imageHeight = originalImage.size.height;
+    NSLog(@"size - %f,%f", originalImage.size.width, originalImage.size.height);
+    UIImage *croppedImage;
+    if(imageHeight > imageWidth){
+        croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake(0.0, (imageHeight - imageWidth)/2.0, imageWidth, imageWidth)];
+    } else{
+        croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake((imageWidth-imageHeight)/2.0, 0.0, imageHeight, imageHeight)];
+    }
+    NSLog(@"image size = %f,%f", croppedImage.size.width, croppedImage.size.height);
+    return [self imageWithImage:croppedImage scaledDownToHorizontalPoints:newWidth];
+}
 
 
 

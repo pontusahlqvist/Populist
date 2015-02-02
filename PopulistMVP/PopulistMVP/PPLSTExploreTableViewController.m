@@ -102,8 +102,8 @@
     self.events = [[self.dataManager sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
     if([self.events count] > 0){
         self.currentEvent = [self.events objectAtIndex:0];
+        self.tableView.backgroundView = nil;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-//        [self.tableView setSeparatorColor:[UIColor redColor]];
     }
     
     [self removeInvisibleEvents];
@@ -159,7 +159,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"Number of events: %li", [self.events count]);
+    NSLog(@"Number of events: %li", (unsigned long)[self.events count]);
     return [self.events count];
 }
 
