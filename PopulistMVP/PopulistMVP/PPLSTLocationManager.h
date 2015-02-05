@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: check for internet connectivity
+
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "Event.h"

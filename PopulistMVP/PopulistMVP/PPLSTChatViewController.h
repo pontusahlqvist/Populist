@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 #import "JSQMessagesViewController.h"
 #import "JSQMessages.h"
 #import "JSQMessagesBubbleImageFactory.h"
@@ -18,7 +19,7 @@
 //TODO: make uiimagepicker disappear faster. It currently lags for a few seconds before disappearing. This might just be because various processes are running in the main thread and might be linked to e.g. core data...
 //TODO: make sure that the user returns to the same place in the feed when they go into the image detailed view. Currently it always snaps to the end.
 
-@interface PPLSTChatViewController : JSQMessagesViewController <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout, PPLSTLocationManagerDelegate, PPLSTImagePickerController>
+@interface PPLSTChatViewController : JSQMessagesViewController <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout, PPLSTLocationManagerDelegate, PPLSTImagePickerController, PPLSTDataManagerPushDelegate>
 //loads contributions for this event
 -(void) prepareForLoad;
 
@@ -29,5 +30,5 @@
 @property (strong, nonatomic) NSMutableArray *contributions;
 @property (strong, nonatomic) NSMutableArray *jsqMessages;
 @property (strong, nonatomic) NSMutableDictionary *statusForSenderId;
-
+@property (strong, nonatomic) NSMutableSet *userIds;
 @end

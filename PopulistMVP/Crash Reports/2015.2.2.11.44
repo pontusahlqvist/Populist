@@ -1,0 +1,3351 @@
+2015-02-04 18:35:01.114 PopulistMVP[12780:2455939] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-04 18:35:01.205 PopulistMVP[12780:2455939] updateEvents
+2015-02-04 18:35:01.205 PopulistMVP[12780:2455939] startUpdatingEvents
+2015-02-04 18:35:01.205 PopulistMVP[12780:2455939] updateLocation called in PPLSTLocationManager
+2015-02-04 18:35:01.262 PopulistMVP[12780:2455939] locationManager didChangeAuthorizationStatus to status = 0
+2015-02-04 18:35:01.264 PopulistMVP[12780:2455939] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-02-04 18:35:03.073 PopulistMVP[12780:2455939] locationManager didChangeAuthorizationStatus to status = 4
+2015-02-04 18:35:03.073 PopulistMVP[12780:2455939] didAcceptAuthorization triggered in ExploreVC
+2015-02-04 18:35:03.073 PopulistMVP[12780:2455939] updateEvents
+2015-02-04 18:35:03.083 PopulistMVP[12780:2455939] locationManager didUpdateLocation lastObject = <+34.02100491,-118.42764429> +/- 10.00m (speed 0.00 mps / course -1.00) @ 2/4/15, 6:35:03 PM Pacific Standard Time, accuracy = 10.000000
+2015-02-04 18:35:03.432 PopulistMVP[12780:2455939] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-02-04 18:35:03.432 PopulistMVP[12780:2455939] finishUpdatingEvents
+2015-02-04 18:35:03.433 PopulistMVP[12780:2455939] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02100491,-118.42764429> +/- 10.00m (speed 0.00 mps / course -1.00) @ 2/4/15, 6:35:03 PM Pacific Standard Time
+2015-02-04 18:35:03.434 PopulistMVP[12780:2455939] PPLSTLocationManager - updateTimeOfLastUpdate:2015-02-05 02:35:03 +0000
+2015-02-04 18:35:03.434 PopulistMVP[12780:2455939] Current Location - lat = 34.021005 and long = -118.427644
+2015-02-04 18:35:03.435 PopulistMVP[12780:2455939] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.021004 andLongitude:-118.427643 andDate:2015-02-05 02:35:03 +0000
+2015-02-04 18:35:03.435 PopulistMVP[12780:2455939] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.021004 andLongitude:-118.427643 andDate:2015-02-05 02:35:03 +0000
+2015-02-04 18:35:03.437 PopulistMVP[12780:2455939] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-02-04 18:35:03.819 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 2;
+    isActive = YES;
+    latitude = "34.02100972647097";
+    longitude = "-118.4276744823396";
+    neighborhood = "Mar Vista";
+    objectId = fewf9BumUm;
+    state = CA;
+    titleContributionIds =     (
+                {
+            xxO39vLHLS = message;
+        },
+                {
+            ZcDjsyult2 = message;
+        }
+    );
+    updatedAt = "2015-02-05 02:23:24 +0000";
+}
+2015-02-04 18:35:03.819 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:fewf9BumUm
+2015-02-04 18:35:03.821 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = fewf9BumUm
+2015-02-04 18:35:03.821 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = fewf9BumUm
+2015-02-04 18:35:03.821 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:fewf9BumUm
+2015-02-04 18:35:03.822 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.829 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.829 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.830 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.830 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfzxc0WG0lV
+2015-02-04 18:35:03.831 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:03.831 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:03.831 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyfzxc0WG0lV
+2015-02-04 18:35:03.832 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.834 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.837 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 18;
+    isActive = NO;
+    latitude = "34.02103617384203";
+    longitude = "-118.4276513226451";
+    neighborhood = "Mar Vista";
+    objectId = wPSS6e201S;
+    state = CA;
+    titleContributionIds =     (
+                {
+            zeCWG6YKbF = photo;
+        }
+    );
+    updatedAt = "2015-02-01 19:48:46 +0000";
+}
+2015-02-04 18:35:03.838 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:wPSS6e201S
+2015-02-04 18:35:03.838 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = wPSS6e201S
+2015-02-04 18:35:03.839 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = wPSS6e201S
+2015-02-04 18:35:03.839 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:wPSS6e201S
+2015-02-04 18:35:03.839 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.840 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.841 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:zeCWG6YKbF
+2015-02-04 18:35:03.841 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = zeCWG6YKbF
+2015-02-04 18:35:03.842 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = zeCWG6YKbF
+2015-02-04 18:35:03.842 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:zeCWG6YKbF
+2015-02-04 18:35:03.842 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.843 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.844 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 12;
+    isActive = NO;
+    latitude = "34.02104491661797";
+    longitude = "-118.4276580435787";
+    neighborhood = "Mar Vista";
+    objectId = g45Lk0bA30;
+    state = CA;
+    titleContributionIds =     (
+                {
+            IZOiH38UD3 = photo;
+        }
+    );
+    updatedAt = "2015-01-31 20:03:27 +0000";
+}
+2015-02-04 18:35:03.844 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:g45Lk0bA30
+2015-02-04 18:35:03.845 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = g45Lk0bA30
+2015-02-04 18:35:03.845 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = g45Lk0bA30
+2015-02-04 18:35:03.845 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:g45Lk0bA30
+2015-02-04 18:35:03.845 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.847 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.847 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:IZOiH38UD3
+2015-02-04 18:35:03.847 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = IZOiH38UD3
+2015-02-04 18:35:03.848 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = IZOiH38UD3
+2015-02-04 18:35:03.848 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:IZOiH38UD3
+2015-02-04 18:35:03.848 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.849 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.850 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 11;
+    isActive = NO;
+    latitude = "34.02102881070993";
+    longitude = "-118.4276638342738";
+    neighborhood = "Mar Vista";
+    objectId = TwDoXRsZLv;
+    state = CA;
+    titleContributionIds =     (
+                {
+            9KmzsJrP7E = photo;
+        }
+    );
+    updatedAt = "2015-01-31 03:10:32 +0000";
+}
+2015-02-04 18:35:03.850 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:TwDoXRsZLv
+2015-02-04 18:35:03.851 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = TwDoXRsZLv
+2015-02-04 18:35:03.851 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = TwDoXRsZLv
+2015-02-04 18:35:03.851 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:TwDoXRsZLv
+2015-02-04 18:35:03.851 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.852 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.853 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:9KmzsJrP7E
+2015-02-04 18:35:03.853 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = 9KmzsJrP7E
+2015-02-04 18:35:03.854 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = 9KmzsJrP7E
+2015-02-04 18:35:03.854 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:9KmzsJrP7E
+2015-02-04 18:35:03.854 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.855 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.856 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02103857582922";
+    longitude = "-118.4276466214489";
+    neighborhood = "Mar Vista";
+    objectId = PtapG16Yl3;
+    state = CA;
+    titleContributionIds =     (
+                {
+            CMZIAXAfNQ = message;
+        }
+    );
+    updatedAt = "2015-02-03 07:00:53 +0000";
+}
+2015-02-04 18:35:03.856 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:PtapG16Yl3
+2015-02-04 18:35:03.857 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = PtapG16Yl3
+2015-02-04 18:35:03.857 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = PtapG16Yl3
+2015-02-04 18:35:03.857 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:PtapG16Yl3
+2015-02-04 18:35:03.857 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.859 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.859 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.859 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.859 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAj6ATjjX2A
+2015-02-04 18:35:03.860 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyAj6ATjjX2A
+2015-02-04 18:35:03.860 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyAj6ATjjX2A
+2015-02-04 18:35:03.860 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyAj6ATjjX2A
+2015-02-04 18:35:03.860 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.861 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.862 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02102855385472";
+    longitude = "-118.4276746740376";
+    neighborhood = "Mar Vista";
+    objectId = zeh7DtRcX0;
+    state = CA;
+    titleContributionIds =     (
+                {
+            xg6K8ijf4P = photo;
+        },
+                {
+            nVxuEZYFRK = message;
+        },
+                {
+            knGydCMdFO = message;
+        }
+    );
+    updatedAt = "2015-01-31 00:02:35 +0000";
+}
+2015-02-04 18:35:03.862 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:zeh7DtRcX0
+2015-02-04 18:35:03.863 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = zeh7DtRcX0
+2015-02-04 18:35:03.863 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = zeh7DtRcX0
+2015-02-04 18:35:03.863 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:zeh7DtRcX0
+2015-02-04 18:35:03.864 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.865 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.865 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:xg6K8ijf4P
+2015-02-04 18:35:03.866 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = xg6K8ijf4P
+2015-02-04 18:35:03.866 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = xg6K8ijf4P
+2015-02-04 18:35:03.866 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:xg6K8ijf4P
+2015-02-04 18:35:03.866 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.868 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.868 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02101553752839";
+    longitude = "-118.4276655391445";
+    neighborhood = "Mar Vista";
+    objectId = LY0GzJnfhL;
+    state = CA;
+    titleContributionIds =     (
+                {
+            kugFqJZs3r = photo;
+        }
+    );
+    updatedAt = "2015-02-01 22:55:48 +0000";
+}
+2015-02-04 18:35:03.868 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:LY0GzJnfhL
+2015-02-04 18:35:03.869 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = LY0GzJnfhL
+2015-02-04 18:35:03.869 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = LY0GzJnfhL
+2015-02-04 18:35:03.869 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:LY0GzJnfhL
+2015-02-04 18:35:03.870 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.871 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.871 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:kugFqJZs3r
+2015-02-04 18:35:03.872 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = kugFqJZs3r
+2015-02-04 18:35:03.872 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = kugFqJZs3r
+2015-02-04 18:35:03.872 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:kugFqJZs3r
+2015-02-04 18:35:03.872 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.873 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.874 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02102593713904";
+    longitude = "-118.4276547416177";
+    neighborhood = "Mar Vista";
+    objectId = T3qZAxQe72;
+    state = CA;
+    titleContributionIds =     (
+                {
+            fPgbD9FUbi = photo;
+        }
+    );
+    updatedAt = "2015-02-02 17:35:27 +0000";
+}
+2015-02-04 18:35:03.874 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:T3qZAxQe72
+2015-02-04 18:35:03.874 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = T3qZAxQe72
+2015-02-04 18:35:03.875 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = T3qZAxQe72
+2015-02-04 18:35:03.875 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:T3qZAxQe72
+2015-02-04 18:35:03.875 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.877 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.877 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:fPgbD9FUbi
+2015-02-04 18:35:03.877 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = fPgbD9FUbi
+2015-02-04 18:35:03.878 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = fPgbD9FUbi
+2015-02-04 18:35:03.878 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:fPgbD9FUbi
+2015-02-04 18:35:03.878 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.879 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.879 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02100949742864";
+    longitude = "-118.427691999593";
+    neighborhood = "Mar Vista";
+    objectId = Fx8LJWqBZ8;
+    state = CA;
+    titleContributionIds =     (
+                {
+            WBSgNoHVH3 = photo;
+        }
+    );
+    updatedAt = "2015-02-02 05:11:51 +0000";
+}
+2015-02-04 18:35:03.880 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Fx8LJWqBZ8
+2015-02-04 18:35:03.880 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = Fx8LJWqBZ8
+2015-02-04 18:35:03.881 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = Fx8LJWqBZ8
+2015-02-04 18:35:03.881 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:Fx8LJWqBZ8
+2015-02-04 18:35:03.881 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.882 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.882 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:WBSgNoHVH3
+2015-02-04 18:35:03.883 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = WBSgNoHVH3
+2015-02-04 18:35:03.883 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = WBSgNoHVH3
+2015-02-04 18:35:03.883 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:WBSgNoHVH3
+2015-02-04 18:35:03.884 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.884 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.885 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.0210199510587";
+    longitude = "-118.4277028002207";
+    neighborhood = "Mar Vista";
+    objectId = cLCODUS7pU;
+    state = CA;
+    titleContributionIds =     (
+                {
+            0lfVgWbpKd = photo;
+        },
+                {
+            eGXG8KEi0M = message;
+        },
+                {
+            zDO1vhe0Gc = message;
+        }
+    );
+    updatedAt = "2015-02-04 05:24:08 +0000";
+}
+2015-02-04 18:35:03.885 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:cLCODUS7pU
+2015-02-04 18:35:03.886 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = cLCODUS7pU
+2015-02-04 18:35:03.886 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = cLCODUS7pU
+2015-02-04 18:35:03.886 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:cLCODUS7pU
+2015-02-04 18:35:03.886 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.887 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.888 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:0lfVgWbpKd
+2015-02-04 18:35:03.888 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = 0lfVgWbpKd
+2015-02-04 18:35:03.888 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = 0lfVgWbpKd
+2015-02-04 18:35:03.889 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:0lfVgWbpKd
+2015-02-04 18:35:03.889 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.890 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.890 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02103416955273";
+    longitude = "-118.4276823076166";
+    neighborhood = "Mar Vista";
+    objectId = DkXC8cul6F;
+    state = CA;
+    titleContributionIds =     (
+                {
+            lyEyq9ocYw = photo;
+        },
+                {
+            rmcBDkqtnR = message;
+        },
+                {
+            CtUc8n2kry = message;
+        }
+    );
+    updatedAt = "2015-02-04 17:09:24 +0000";
+}
+2015-02-04 18:35:03.891 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:DkXC8cul6F
+2015-02-04 18:35:03.892 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = DkXC8cul6F
+2015-02-04 18:35:03.892 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = DkXC8cul6F
+2015-02-04 18:35:03.892 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:DkXC8cul6F
+2015-02-04 18:35:03.892 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.893 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.894 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:lyEyq9ocYw
+2015-02-04 18:35:03.894 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = lyEyq9ocYw
+2015-02-04 18:35:03.894 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = lyEyq9ocYw
+2015-02-04 18:35:03.894 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:lyEyq9ocYw
+2015-02-04 18:35:03.895 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.896 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.897 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02109152017";
+    longitude = "-118.4276398379055";
+    neighborhood = "Mar Vista";
+    objectId = JVB1MvpGdE;
+    state = CA;
+    titleContributionIds =     (
+                {
+            YZJHJ4MGXa = message;
+        },
+                {
+            jGYE8stcTC = message;
+        }
+    );
+    updatedAt = "2015-02-03 03:12:00 +0000";
+}
+2015-02-04 18:35:03.897 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:JVB1MvpGdE
+2015-02-04 18:35:03.898 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = JVB1MvpGdE
+2015-02-04 18:35:03.898 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = JVB1MvpGdE
+2015-02-04 18:35:03.898 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:JVB1MvpGdE
+2015-02-04 18:35:03.898 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.900 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.900 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.900 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.900 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy9VNFsfJ4qH
+2015-02-04 18:35:03.901 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy9VNFsfJ4qH
+2015-02-04 18:35:03.901 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy9VNFsfJ4qH
+2015-02-04 18:35:03.901 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy9VNFsfJ4qH
+2015-02-04 18:35:03.901 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.903 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.903 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02099484944684";
+    longitude = "-118.4276908226261";
+    neighborhood = "Mar Vista";
+    objectId = SNEk0EjtAk;
+    state = CA;
+    titleContributionIds =     (
+                {
+            qjXiGd83OY = message;
+        },
+                {
+            PZgok3JZZg = message;
+        }
+    );
+    updatedAt = "2015-02-03 07:45:14 +0000";
+}
+2015-02-04 18:35:03.903 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:SNEk0EjtAk
+2015-02-04 18:35:03.904 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = SNEk0EjtAk
+2015-02-04 18:35:03.904 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = SNEk0EjtAk
+2015-02-04 18:35:03.904 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:SNEk0EjtAk
+2015-02-04 18:35:03.904 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.906 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.906 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.906 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.906 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLoGBufBRBH
+2015-02-04 18:35:03.907 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyLoGBufBRBH
+2015-02-04 18:35:03.907 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyLoGBufBRBH
+2015-02-04 18:35:03.907 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyLoGBufBRBH
+2015-02-04 18:35:03.907 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.908 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.909 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02101135253906";
+    longitude = "-118.4276428222656";
+    neighborhood = "Mar Vista";
+    objectId = X3FLgnXo5M;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 05:21:58 +0000";
+}
+2015-02-04 18:35:03.909 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:X3FLgnXo5M
+2015-02-04 18:35:03.910 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = X3FLgnXo5M
+2015-02-04 18:35:03.910 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = X3FLgnXo5M
+2015-02-04 18:35:03.910 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:X3FLgnXo5M
+2015-02-04 18:35:03.911 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.912 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.912 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.912 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.912 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNmNqfXqfK9
+2015-02-04 18:35:03.913 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyNmNqfXqfK9
+2015-02-04 18:35:03.913 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyNmNqfXqfK9
+2015-02-04 18:35:03.913 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyNmNqfXqfK9
+2015-02-04 18:35:03.913 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.914 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.915 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02104568481445";
+    longitude = "-118.4275894165039";
+    neighborhood = "Mar Vista";
+    objectId = OyxdKIjgDI;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 08:15:48 +0000";
+}
+2015-02-04 18:35:03.915 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:OyxdKIjgDI
+2015-02-04 18:35:03.916 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = OyxdKIjgDI
+2015-02-04 18:35:03.916 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = OyxdKIjgDI
+2015-02-04 18:35:03.916 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:OyxdKIjgDI
+2015-02-04 18:35:03.916 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.918 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.918 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.918 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.918 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNxwuggw4mF
+2015-02-04 18:35:03.919 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyNxwuggw4mF
+2015-02-04 18:35:03.919 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyNxwuggw4mF
+2015-02-04 18:35:03.919 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyNxwuggw4mF
+2015-02-04 18:35:03.919 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.920 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.921 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02096176147461";
+    longitude = "-118.4276580810547";
+    neighborhood = "Mar Vista";
+    objectId = VFuDHVxfTL;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 05:51:05 +0000";
+}
+2015-02-04 18:35:03.921 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:VFuDHVxfTL
+2015-02-04 18:35:03.922 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = VFuDHVxfTL
+2015-02-04 18:35:03.922 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = VFuDHVxfTL
+2015-02-04 18:35:03.922 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:VFuDHVxfTL
+2015-02-04 18:35:03.922 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.923 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.924 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.924 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.924 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummygqHSf71iez
+2015-02-04 18:35:03.924 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummygqHSf71iez
+2015-02-04 18:35:03.925 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummygqHSf71iez
+2015-02-04 18:35:03.925 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummygqHSf71iez
+2015-02-04 18:35:03.925 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.926 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.926 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02106094360352";
+    longitude = "-118.4275817871094";
+    neighborhood = "Mar Vista";
+    objectId = 63EQd6xiwr;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:43:24 +0000";
+}
+2015-02-04 18:35:03.927 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:63EQd6xiwr
+2015-02-04 18:35:03.927 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 63EQd6xiwr
+2015-02-04 18:35:03.927 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 63EQd6xiwr
+2015-02-04 18:35:03.928 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:63EQd6xiwr
+2015-02-04 18:35:03.928 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.929 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.930 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.930 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.930 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummycBdjbEHKvr
+2015-02-04 18:35:03.930 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummycBdjbEHKvr
+2015-02-04 18:35:03.931 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummycBdjbEHKvr
+2015-02-04 18:35:03.931 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummycBdjbEHKvr
+2015-02-04 18:35:03.931 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.932 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.933 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02093505859375";
+    longitude = "-118.4276733398438";
+    neighborhood = "Mar Vista";
+    objectId = sZAnA4swOT;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 07:42:00 +0000";
+}
+2015-02-04 18:35:03.933 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sZAnA4swOT
+2015-02-04 18:35:03.934 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = sZAnA4swOT
+2015-02-04 18:35:03.934 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = sZAnA4swOT
+2015-02-04 18:35:03.934 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:sZAnA4swOT
+2015-02-04 18:35:03.934 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.936 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.936 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.936 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.936 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLK5t5pJqPy
+2015-02-04 18:35:03.937 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyLK5t5pJqPy
+2015-02-04 18:35:03.937 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyLK5t5pJqPy
+2015-02-04 18:35:03.937 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyLK5t5pJqPy
+2015-02-04 18:35:03.938 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.939 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.939 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02106475830078";
+    longitude = "-118.4273223876953";
+    neighborhood = "Mar Vista";
+    objectId = 8EHBoAIeEt;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 02:41:36 +0000";
+}
+2015-02-04 18:35:03.940 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:8EHBoAIeEt
+2015-02-04 18:35:03.940 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 8EHBoAIeEt
+2015-02-04 18:35:03.940 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 8EHBoAIeEt
+2015-02-04 18:35:03.940 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:8EHBoAIeEt
+2015-02-04 18:35:03.941 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.942 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.942 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.943 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.943 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyehHGCc0Fy6
+2015-02-04 18:35:03.943 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyehHGCc0Fy6
+2015-02-04 18:35:03.944 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyehHGCc0Fy6
+2015-02-04 18:35:03.944 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyehHGCc0Fy6
+2015-02-04 18:35:03.944 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.945 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.946 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02128219604492";
+    longitude = "-118.4275741577148";
+    neighborhood = "Mar Vista";
+    objectId = nFKQvmCRHh;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 06:25:32 +0000";
+}
+2015-02-04 18:35:03.946 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:nFKQvmCRHh
+2015-02-04 18:35:03.947 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = nFKQvmCRHh
+2015-02-04 18:35:03.947 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = nFKQvmCRHh
+2015-02-04 18:35:03.947 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:nFKQvmCRHh
+2015-02-04 18:35:03.947 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.948 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.949 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.949 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.949 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfV74lolx4O
+2015-02-04 18:35:03.950 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyfV74lolx4O
+2015-02-04 18:35:03.950 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyfV74lolx4O
+2015-02-04 18:35:03.950 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyfV74lolx4O
+2015-02-04 18:35:03.951 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.952 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.952 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02106929525455";
+    longitude = "-118.4286034796939";
+    neighborhood = "Mar Vista";
+    objectId = 3MRBBPdOKt;
+    state = CA;
+    titleContributionIds =     (
+                {
+            yODgD2gI1N = photo;
+        }
+    );
+    updatedAt = "2015-01-31 01:41:23 +0000";
+}
+2015-02-04 18:35:03.952 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:3MRBBPdOKt
+2015-02-04 18:35:03.953 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 3MRBBPdOKt
+2015-02-04 18:35:03.953 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 3MRBBPdOKt
+2015-02-04 18:35:03.953 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:3MRBBPdOKt
+2015-02-04 18:35:03.954 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.955 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.955 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:yODgD2gI1N
+2015-02-04 18:35:03.956 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = yODgD2gI1N
+2015-02-04 18:35:03.957 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = yODgD2gI1N
+2015-02-04 18:35:03.957 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:yODgD2gI1N
+2015-02-04 18:35:03.957 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.958 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.959 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 23;
+    isActive = NO;
+    latitude = "34.01700103003831";
+    longitude = "-118.4690499552863";
+    neighborhood = "Sunset Park";
+    objectId = joAOP58mom;
+    state = CA;
+    titleContributionIds =     (
+                {
+            URnHqeMrAB = photo;
+        },
+                {
+            eKh3v4t0ai = message;
+        },
+                {
+            yk3iQ8aLaV = message;
+        }
+    );
+    updatedAt = "2015-02-02 20:20:52 +0000";
+}
+2015-02-04 18:35:03.959 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:joAOP58mom
+2015-02-04 18:35:03.960 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = joAOP58mom
+2015-02-04 18:35:03.960 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = joAOP58mom
+2015-02-04 18:35:03.960 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:joAOP58mom
+2015-02-04 18:35:03.960 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.962 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.962 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:URnHqeMrAB
+2015-02-04 18:35:03.962 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = URnHqeMrAB
+2015-02-04 18:35:03.963 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = URnHqeMrAB
+2015-02-04 18:35:03.963 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:URnHqeMrAB
+2015-02-04 18:35:03.963 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.964 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.964 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02105712890625";
+    longitude = "-118.4292831420898";
+    neighborhood = "Mar Vista";
+    objectId = tR0Jsp7UdR;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 16:58:23 +0000";
+}
+2015-02-04 18:35:03.965 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:tR0Jsp7UdR
+2015-02-04 18:35:03.965 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = tR0Jsp7UdR
+2015-02-04 18:35:03.966 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = tR0Jsp7UdR
+2015-02-04 18:35:03.966 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:tR0Jsp7UdR
+2015-02-04 18:35:03.966 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.968 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.969 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.969 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.970 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyhLjzJCaRYs
+2015-02-04 18:35:03.971 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyhLjzJCaRYs
+2015-02-04 18:35:03.971 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyhLjzJCaRYs
+2015-02-04 18:35:03.972 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyhLjzJCaRYs
+2015-02-04 18:35:03.972 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.973 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.974 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02123307751989";
+    longitude = "-118.4314938503337";
+    neighborhood = "Mar Vista";
+    objectId = dBzy8barjz;
+    state = CA;
+    titleContributionIds =     (
+                {
+            OPs5nyGgG8 = message;
+        }
+    );
+    updatedAt = "2015-02-04 16:57:04 +0000";
+}
+2015-02-04 18:35:03.975 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:dBzy8barjz
+2015-02-04 18:35:03.976 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = dBzy8barjz
+2015-02-04 18:35:03.977 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = dBzy8barjz
+2015-02-04 18:35:03.977 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:dBzy8barjz
+2015-02-04 18:35:03.978 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.979 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.979 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.980 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.980 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummygZQKLSjEy4
+2015-02-04 18:35:03.980 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummygZQKLSjEy4
+2015-02-04 18:35:03.981 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummygZQKLSjEy4
+2015-02-04 18:35:03.981 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummygZQKLSjEy4
+2015-02-04 18:35:03.981 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.982 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.982 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02196884155273";
+    longitude = "-118.4292297363281";
+    neighborhood = "Mar Vista";
+    objectId = 92egamzVim;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 01:43:15 +0000";
+}
+2015-02-04 18:35:03.983 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:92egamzVim
+2015-02-04 18:35:03.983 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 92egamzVim
+2015-02-04 18:35:03.983 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 92egamzVim
+2015-02-04 18:35:03.984 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:92egamzVim
+2015-02-04 18:35:03.984 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.985 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.985 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.985 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.986 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyCZwcDVRab5
+2015-02-04 18:35:03.986 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyCZwcDVRab5
+2015-02-04 18:35:03.987 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyCZwcDVRab5
+2015-02-04 18:35:03.987 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyCZwcDVRab5
+2015-02-04 18:35:03.987 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.988 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.989 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02121353149414";
+    longitude = "-118.430908203125";
+    neighborhood = "Mar Vista";
+    objectId = 0Ta0G2Q8UM;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 05:22:00 +0000";
+}
+2015-02-04 18:35:03.989 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:0Ta0G2Q8UM
+2015-02-04 18:35:03.989 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 0Ta0G2Q8UM
+2015-02-04 18:35:03.990 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 0Ta0G2Q8UM
+2015-02-04 18:35:03.990 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:0Ta0G2Q8UM
+2015-02-04 18:35:03.990 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.991 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.992 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.992 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.992 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyy965CSUrp2
+2015-02-04 18:35:03.993 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyy965CSUrp2
+2015-02-04 18:35:03.993 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyy965CSUrp2
+2015-02-04 18:35:03.993 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyy965CSUrp2
+2015-02-04 18:35:03.993 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.995 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.995 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02123260498047";
+    longitude = "-118.4314956665039";
+    neighborhood = "Mar Vista";
+    objectId = qRhcc9n0RU;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:20:22 +0000";
+}
+2015-02-04 18:35:03.995 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:qRhcc9n0RU
+2015-02-04 18:35:03.996 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = qRhcc9n0RU
+2015-02-04 18:35:03.996 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = qRhcc9n0RU
+2015-02-04 18:35:03.996 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:qRhcc9n0RU
+2015-02-04 18:35:03.996 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:03.998 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:03.998 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:03.998 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:03.998 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy649VOR3g7q
+2015-02-04 18:35:03.999 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy649VOR3g7q
+2015-02-04 18:35:03.999 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy649VOR3g7q
+2015-02-04 18:35:03.999 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy649VOR3g7q
+2015-02-04 18:35:03.999 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.001 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.001 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02123260498047";
+    longitude = "-118.4314956665039";
+    neighborhood = "Mar Vista";
+    objectId = EVCWzcb5WJ;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 06:27:39 +0000";
+}
+2015-02-04 18:35:04.001 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:EVCWzcb5WJ
+2015-02-04 18:35:04.002 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = EVCWzcb5WJ
+2015-02-04 18:35:04.002 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = EVCWzcb5WJ
+2015-02-04 18:35:04.002 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:EVCWzcb5WJ
+2015-02-04 18:35:04.002 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.004 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.004 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.004 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.004 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLY34AAQWyg
+2015-02-04 18:35:04.005 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyLY34AAQWyg
+2015-02-04 18:35:04.005 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyLY34AAQWyg
+2015-02-04 18:35:04.005 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyLY34AAQWyg
+2015-02-04 18:35:04.005 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.006 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.007 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Culver City";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.00642603414011";
+    longitude = "-118.4121932910846";
+    neighborhood = Clarkdale;
+    objectId = yTstLFIp9H;
+    state = CA;
+    titleContributionIds =     (
+                {
+            jqX5Q3z12Z = photo;
+        },
+                {
+            XUYaavKKKw = message;
+        },
+                {
+            CfqEbLyRCw = message;
+        }
+    );
+    updatedAt = "2015-02-01 04:31:57 +0000";
+}
+2015-02-04 18:35:04.007 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:yTstLFIp9H
+2015-02-04 18:35:04.008 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = yTstLFIp9H
+2015-02-04 18:35:04.008 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = yTstLFIp9H
+2015-02-04 18:35:04.008 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:yTstLFIp9H
+2015-02-04 18:35:04.009 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.010 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.010 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:jqX5Q3z12Z
+2015-02-04 18:35:04.011 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = jqX5Q3z12Z
+2015-02-04 18:35:04.011 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = jqX5Q3z12Z
+2015-02-04 18:35:04.011 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:jqX5Q3z12Z
+2015-02-04 18:35:04.011 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.012 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.013 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02606201171875";
+    longitude = "-118.4313583374023";
+    neighborhood = "Mar Vista";
+    objectId = J7VGOIxfUi;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:15:03 +0000";
+}
+2015-02-04 18:35:04.013 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:J7VGOIxfUi
+2015-02-04 18:35:04.014 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = J7VGOIxfUi
+2015-02-04 18:35:04.014 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = J7VGOIxfUi
+2015-02-04 18:35:04.014 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:J7VGOIxfUi
+2015-02-04 18:35:04.014 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.016 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.016 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.016 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.016 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyqUNk06ONHx
+2015-02-04 18:35:04.017 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyqUNk06ONHx
+2015-02-04 18:35:04.017 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyqUNk06ONHx
+2015-02-04 18:35:04.017 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyqUNk06ONHx
+2015-02-04 18:35:04.018 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.019 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.019 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01698981119477";
+    longitude = "-118.4690219729816";
+    neighborhood = "Sunset Park";
+    objectId = cjxYEDAo7a;
+    state = CA;
+    titleContributionIds =     (
+                {
+            PlspdcNQrC = photo;
+        },
+                {
+            sI1ZQZqYJo = message;
+        },
+                {
+            u40CFWuKgN = message;
+        }
+    );
+    updatedAt = "2015-02-04 19:20:01 +0000";
+}
+2015-02-04 18:35:04.020 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:cjxYEDAo7a
+2015-02-04 18:35:04.020 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = cjxYEDAo7a
+2015-02-04 18:35:04.020 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = cjxYEDAo7a
+2015-02-04 18:35:04.021 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:cjxYEDAo7a
+2015-02-04 18:35:04.021 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.022 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.022 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:PlspdcNQrC
+2015-02-04 18:35:04.023 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = PlspdcNQrC
+2015-02-04 18:35:04.023 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = PlspdcNQrC
+2015-02-04 18:35:04.023 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:PlspdcNQrC
+2015-02-04 18:35:04.023 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.025 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.026 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02682876586914";
+    longitude = "-118.4319534301758";
+    neighborhood = "Mar Vista";
+    objectId = zyGcpjYCAH;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:14:21 +0000";
+}
+2015-02-04 18:35:04.026 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:zyGcpjYCAH
+2015-02-04 18:35:04.027 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = zyGcpjYCAH
+2015-02-04 18:35:04.027 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = zyGcpjYCAH
+2015-02-04 18:35:04.027 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:zyGcpjYCAH
+2015-02-04 18:35:04.028 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.029 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.029 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.029 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.029 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyBBKNLvwJBy
+2015-02-04 18:35:04.030 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyBBKNLvwJBy
+2015-02-04 18:35:04.030 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyBBKNLvwJBy
+2015-02-04 18:35:04.030 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyBBKNLvwJBy
+2015-02-04 18:35:04.030 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.031 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.032 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01994497936997";
+    longitude = "-118.4544266972369";
+    neighborhood = "Sunset Park";
+    objectId = 70RdIyxEXV;
+    state = CA;
+    titleContributionIds =     (
+                {
+            dgAsqSsZAY = photo;
+        },
+                {
+            8SV34RGHRu = message;
+        },
+                {
+            X5zekek7r7 = message;
+        }
+    );
+    updatedAt = "2015-02-01 20:25:08 +0000";
+}
+2015-02-04 18:35:04.032 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:70RdIyxEXV
+2015-02-04 18:35:04.033 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 70RdIyxEXV
+2015-02-04 18:35:04.033 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 70RdIyxEXV
+2015-02-04 18:35:04.033 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:70RdIyxEXV
+2015-02-04 18:35:04.033 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.035 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.035 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dgAsqSsZAY
+2015-02-04 18:35:04.036 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dgAsqSsZAY
+2015-02-04 18:35:04.036 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dgAsqSsZAY
+2015-02-04 18:35:04.036 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dgAsqSsZAY
+2015-02-04 18:35:04.036 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.037 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.038 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.0008830093455";
+    longitude = "-118.4825823931529";
+    neighborhood = "Ocean Park";
+    objectId = w0XAlfhIwI;
+    state = CA;
+    titleContributionIds =     (
+                {
+            A6atGLjlMU = photo;
+        },
+                {
+            ZBXgvqupMG = message;
+        },
+                {
+            m0NofYTJdu = message;
+        }
+    );
+    updatedAt = "2015-01-31 04:59:01 +0000";
+}
+2015-02-04 18:35:04.039 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:w0XAlfhIwI
+2015-02-04 18:35:04.039 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = w0XAlfhIwI
+2015-02-04 18:35:04.039 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = w0XAlfhIwI
+2015-02-04 18:35:04.039 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:w0XAlfhIwI
+2015-02-04 18:35:04.040 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.041 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.041 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:A6atGLjlMU
+2015-02-04 18:35:04.042 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = A6atGLjlMU
+2015-02-04 18:35:04.042 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = A6atGLjlMU
+2015-02-04 18:35:04.042 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:A6atGLjlMU
+2015-02-04 18:35:04.042 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.044 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.044 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02631759643555";
+    longitude = "-118.4438095092773";
+    neighborhood = "Mar Vista";
+    objectId = QvxOWkoOMv;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:19:49 +0000";
+}
+2015-02-04 18:35:04.044 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:QvxOWkoOMv
+2015-02-04 18:35:04.045 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = QvxOWkoOMv
+2015-02-04 18:35:04.045 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = QvxOWkoOMv
+2015-02-04 18:35:04.045 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:QvxOWkoOMv
+2015-02-04 18:35:04.045 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.047 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.047 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.047 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.047 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyKkPJnkGR7Q
+2015-02-04 18:35:04.048 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyKkPJnkGR7Q
+2015-02-04 18:35:04.048 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyKkPJnkGR7Q
+2015-02-04 18:35:04.048 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyKkPJnkGR7Q
+2015-02-04 18:35:04.049 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.050 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.050 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01738429583331";
+    longitude = "-118.4688481120945";
+    neighborhood = "Sunset Park";
+    objectId = nHABw7Vlcd;
+    state = CA;
+    titleContributionIds =     (
+                {
+            5di68jVNtt = message;
+        }
+    );
+    updatedAt = "2015-02-04 21:01:38 +0000";
+}
+2015-02-04 18:35:04.051 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:nHABw7Vlcd
+2015-02-04 18:35:04.051 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = nHABw7Vlcd
+2015-02-04 18:35:04.051 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = nHABw7Vlcd
+2015-02-04 18:35:04.052 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:nHABw7Vlcd
+2015-02-04 18:35:04.052 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.053 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.053 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.053 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.054 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy0B0MwbPNRB
+2015-02-04 18:35:04.054 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy0B0MwbPNRB
+2015-02-04 18:35:04.054 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy0B0MwbPNRB
+2015-02-04 18:35:04.055 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy0B0MwbPNRB
+2015-02-04 18:35:04.055 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.056 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.057 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01725805953821";
+    longitude = "-118.4690203369598";
+    neighborhood = "Sunset Park";
+    objectId = rrLryzmaQ4;
+    state = CA;
+    titleContributionIds =     (
+                {
+            EzWDvH8jkX = photo;
+        }
+    );
+    updatedAt = "2015-02-02 23:56:02 +0000";
+}
+2015-02-04 18:35:04.057 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:rrLryzmaQ4
+2015-02-04 18:35:04.058 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = rrLryzmaQ4
+2015-02-04 18:35:04.058 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = rrLryzmaQ4
+2015-02-04 18:35:04.058 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:rrLryzmaQ4
+2015-02-04 18:35:04.058 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.059 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.060 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:EzWDvH8jkX
+2015-02-04 18:35:04.060 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = EzWDvH8jkX
+2015-02-04 18:35:04.060 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = EzWDvH8jkX
+2015-02-04 18:35:04.060 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:EzWDvH8jkX
+2015-02-04 18:35:04.061 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.062 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.062 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.0344352722168";
+    longitude = "-118.4401550292969";
+    neighborhood = Sawtelle;
+    objectId = sTIifzr3LG;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:11:38 +0000";
+}
+2015-02-04 18:35:04.062 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sTIifzr3LG
+2015-02-04 18:35:04.063 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = sTIifzr3LG
+2015-02-04 18:35:04.063 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = sTIifzr3LG
+2015-02-04 18:35:04.063 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:sTIifzr3LG
+2015-02-04 18:35:04.064 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.065 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.065 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.065 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.065 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy7BJI6dqpRz
+2015-02-04 18:35:04.066 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy7BJI6dqpRz
+2015-02-04 18:35:04.066 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy7BJI6dqpRz
+2015-02-04 18:35:04.066 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy7BJI6dqpRz
+2015-02-04 18:35:04.067 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.068 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.068 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.98924735438948";
+    longitude = "-118.4625071958443";
+    neighborhood = Venice;
+    objectId = GFIB53uXF6;
+    state = CA;
+    titleContributionIds =     (
+                {
+            WnYtJGQovO = photo;
+        },
+                {
+            dsn3zH05YU = message;
+        }
+    );
+    updatedAt = "2015-01-31 05:56:45 +0000";
+}
+2015-02-04 18:35:04.069 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:GFIB53uXF6
+2015-02-04 18:35:04.069 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = GFIB53uXF6
+2015-02-04 18:35:04.070 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = GFIB53uXF6
+2015-02-04 18:35:04.070 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:GFIB53uXF6
+2015-02-04 18:35:04.070 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.071 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.072 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:WnYtJGQovO
+2015-02-04 18:35:04.072 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = WnYtJGQovO
+2015-02-04 18:35:04.072 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = WnYtJGQovO
+2015-02-04 18:35:04.073 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:WnYtJGQovO
+2015-02-04 18:35:04.073 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.074 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.074 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.05897982718452";
+    longitude = "-118.4225066626131";
+    neighborhood = Westwood;
+    objectId = 35JcNtI86S;
+    state = CA;
+    titleContributionIds =     (
+                {
+            MBPFRyWh5V = photo;
+        }
+    );
+    updatedAt = "2015-02-02 00:05:05 +0000";
+}
+2015-02-04 18:35:04.075 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:35JcNtI86S
+2015-02-04 18:35:04.076 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 35JcNtI86S
+2015-02-04 18:35:04.076 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 35JcNtI86S
+2015-02-04 18:35:04.076 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:35JcNtI86S
+2015-02-04 18:35:04.076 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.078 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.078 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:MBPFRyWh5V
+2015-02-04 18:35:04.079 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = MBPFRyWh5V
+2015-02-04 18:35:04.079 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = MBPFRyWh5V
+2015-02-04 18:35:04.079 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:MBPFRyWh5V
+2015-02-04 18:35:04.080 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.081 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.081 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Culver City";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00746536254883";
+    longitude = "-118.4130325317383";
+    neighborhood = Clarkdale;
+    objectId = uaVkiyZFw9;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 02:51:50 +0000";
+}
+2015-02-04 18:35:04.082 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:uaVkiyZFw9
+2015-02-04 18:35:04.082 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = uaVkiyZFw9
+2015-02-04 18:35:04.083 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = uaVkiyZFw9
+2015-02-04 18:35:04.083 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:uaVkiyZFw9
+2015-02-04 18:35:04.083 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.084 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.085 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.085 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.085 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy1glsXJsDCl
+2015-02-04 18:35:04.086 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy1glsXJsDCl
+2015-02-04 18:35:04.086 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy1glsXJsDCl
+2015-02-04 18:35:04.086 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy1glsXJsDCl
+2015-02-04 18:35:04.087 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.088 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.088 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99460460806514";
+    longitude = "-118.4763853190581";
+    neighborhood = Venice;
+    objectId = Go4eGF5AIU;
+    state = CA;
+    titleContributionIds =     (
+                {
+            4VZCsC9oNH = photo;
+        },
+                {
+            2ug63r1opI = message;
+        }
+    );
+    updatedAt = "2015-01-31 05:35:36 +0000";
+}
+2015-02-04 18:35:04.089 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Go4eGF5AIU
+2015-02-04 18:35:04.089 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = Go4eGF5AIU
+2015-02-04 18:35:04.089 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = Go4eGF5AIU
+2015-02-04 18:35:04.090 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:Go4eGF5AIU
+2015-02-04 18:35:04.090 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.091 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.091 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:4VZCsC9oNH
+2015-02-04 18:35:04.092 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = 4VZCsC9oNH
+2015-02-04 18:35:04.092 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = 4VZCsC9oNH
+2015-02-04 18:35:04.092 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:4VZCsC9oNH
+2015-02-04 18:35:04.092 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.094 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.094 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02929306030273";
+    longitude = "-118.4506225585938";
+    neighborhood = Sawtelle;
+    objectId = TEph0gk89v;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:08:37 +0000";
+}
+2015-02-04 18:35:04.095 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:TEph0gk89v
+2015-02-04 18:35:04.096 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = TEph0gk89v
+2015-02-04 18:35:04.096 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = TEph0gk89v
+2015-02-04 18:35:04.096 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:TEph0gk89v
+2015-02-04 18:35:04.096 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.097 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.099 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.099 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.100 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAyQ67Rr71R
+2015-02-04 18:35:04.100 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyAyQ67Rr71R
+2015-02-04 18:35:04.100 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyAyQ67Rr71R
+2015-02-04 18:35:04.101 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyAyQ67Rr71R
+2015-02-04 18:35:04.101 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.102 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.103 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01988220214844";
+    longitude = "-118.4541854858398";
+    neighborhood = "Sunset Park";
+    objectId = kjY0feN0QB;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:02:18 +0000";
+}
+2015-02-04 18:35:04.103 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:kjY0feN0QB
+2015-02-04 18:35:04.104 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = kjY0feN0QB
+2015-02-04 18:35:04.104 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = kjY0feN0QB
+2015-02-04 18:35:04.104 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:kjY0feN0QB
+2015-02-04 18:35:04.104 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.106 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.106 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.106 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.106 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy83pEVYSS5R
+2015-02-04 18:35:04.107 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy83pEVYSS5R
+2015-02-04 18:35:04.107 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy83pEVYSS5R
+2015-02-04 18:35:04.107 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy83pEVYSS5R
+2015-02-04 18:35:04.107 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.108 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.109 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01886295068116";
+    longitude = "-118.4984296875636";
+    neighborhood = Downtown;
+    objectId = xUVcPAPQ2a;
+    state = CA;
+    titleContributionIds =     (
+                {
+            2RtRbEKVbG = photo;
+        },
+                {
+            QZUVDwsoCJ = message;
+        }
+    );
+    updatedAt = "2015-01-31 23:45:00 +0000";
+}
+2015-02-04 18:35:04.109 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xUVcPAPQ2a
+2015-02-04 18:35:04.110 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = xUVcPAPQ2a
+2015-02-04 18:35:04.110 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = xUVcPAPQ2a
+2015-02-04 18:35:04.110 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:xUVcPAPQ2a
+2015-02-04 18:35:04.110 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.112 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.112 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:2RtRbEKVbG
+2015-02-04 18:35:04.112 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = 2RtRbEKVbG
+2015-02-04 18:35:04.113 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = 2RtRbEKVbG
+2015-02-04 18:35:04.113 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:2RtRbEKVbG
+2015-02-04 18:35:04.113 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.114 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.115 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.07708699370479";
+    longitude = "-118.4740335085381";
+    neighborhood = Brentwood;
+    objectId = lZInTFr7Tw;
+    state = CA;
+    titleContributionIds =     (
+                {
+            g993dpsbbE = photo;
+        },
+                {
+            LmKE09pf2b = message;
+        }
+    );
+    updatedAt = "2015-01-31 21:50:18 +0000";
+}
+2015-02-04 18:35:04.115 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:lZInTFr7Tw
+2015-02-04 18:35:04.116 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = lZInTFr7Tw
+2015-02-04 18:35:04.116 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = lZInTFr7Tw
+2015-02-04 18:35:04.116 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:lZInTFr7Tw
+2015-02-04 18:35:04.117 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.118 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.118 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:g993dpsbbE
+2015-02-04 18:35:04.119 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = g993dpsbbE
+2015-02-04 18:35:04.119 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = g993dpsbbE
+2015-02-04 18:35:04.119 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:g993dpsbbE
+2015-02-04 18:35:04.119 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.121 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.121 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02032797684864";
+    longitude = "-118.4987092285488";
+    neighborhood = "Wilshire Montana";
+    objectId = 8ygzwcVNeI;
+    state = CA;
+    titleContributionIds =     (
+                {
+            472kc7QpC7 = photo;
+        }
+    );
+    updatedAt = "2015-01-31 22:02:27 +0000";
+}
+2015-02-04 18:35:04.121 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:8ygzwcVNeI
+2015-02-04 18:35:04.122 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 8ygzwcVNeI
+2015-02-04 18:35:04.122 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 8ygzwcVNeI
+2015-02-04 18:35:04.122 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:8ygzwcVNeI
+2015-02-04 18:35:04.123 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.124 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.124 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:472kc7QpC7
+2015-02-04 18:35:04.125 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = 472kc7QpC7
+2015-02-04 18:35:04.125 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = 472kc7QpC7
+2015-02-04 18:35:04.125 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:472kc7QpC7
+2015-02-04 18:35:04.126 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.127 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.127 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02732467651367";
+    longitude = "-118.4548873901367";
+    neighborhood = Pico;
+    objectId = 3fZOdFzDII;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-03 02:10:30 +0000";
+}
+2015-02-04 18:35:04.127 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:3fZOdFzDII
+2015-02-04 18:35:04.128 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 3fZOdFzDII
+2015-02-04 18:35:04.128 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 3fZOdFzDII
+2015-02-04 18:35:04.128 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:3fZOdFzDII
+2015-02-04 18:35:04.129 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.130 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.130 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.130 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.131 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyyWOLZLVXDS
+2015-02-04 18:35:04.131 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyyWOLZLVXDS
+2015-02-04 18:35:04.132 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyyWOLZLVXDS
+2015-02-04 18:35:04.132 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyyWOLZLVXDS
+2015-02-04 18:35:04.132 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.133 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.133 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01889038085938";
+    longitude = "-118.4556579589844";
+    neighborhood = "Sunset Park";
+    objectId = xWggjioRp7;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:17:51 +0000";
+}
+2015-02-04 18:35:04.134 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xWggjioRp7
+2015-02-04 18:35:04.134 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = xWggjioRp7
+2015-02-04 18:35:04.134 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = xWggjioRp7
+2015-02-04 18:35:04.135 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:xWggjioRp7
+2015-02-04 18:35:04.135 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.137 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.137 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.137 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.137 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyZ7h6HJk0tJ
+2015-02-04 18:35:04.138 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyZ7h6HJk0tJ
+2015-02-04 18:35:04.138 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyZ7h6HJk0tJ
+2015-02-04 18:35:04.138 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyZ7h6HJk0tJ
+2015-02-04 18:35:04.138 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.139 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.140 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "33.99647903442383";
+    longitude = "-118.4477767944336";
+    neighborhood = Venice;
+    objectId = Oor3ZzdI7w;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:09:32 +0000";
+}
+2015-02-04 18:35:04.140 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Oor3ZzdI7w
+2015-02-04 18:35:04.141 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = Oor3ZzdI7w
+2015-02-04 18:35:04.141 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = Oor3ZzdI7w
+2015-02-04 18:35:04.141 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:Oor3ZzdI7w
+2015-02-04 18:35:04.141 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.143 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.143 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.143 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.143 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyBfIewjUiks
+2015-02-04 18:35:04.144 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyBfIewjUiks
+2015-02-04 18:35:04.144 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyBfIewjUiks
+2015-02-04 18:35:04.144 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyBfIewjUiks
+2015-02-04 18:35:04.144 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.146 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.146 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.01699447631836";
+    longitude = "-118.4690704345703";
+    neighborhood = "Sunset Park";
+    objectId = 6FuTEe3rZV;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 19:55:18 +0000";
+}
+2015-02-04 18:35:04.147 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:6FuTEe3rZV
+2015-02-04 18:35:04.147 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 6FuTEe3rZV
+2015-02-04 18:35:04.148 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 6FuTEe3rZV
+2015-02-04 18:35:04.148 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:6FuTEe3rZV
+2015-02-04 18:35:04.148 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.149 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.150 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.150 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.150 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummy8qojmZ4HUX
+2015-02-04 18:35:04.151 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummy8qojmZ4HUX
+2015-02-04 18:35:04.151 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummy8qojmZ4HUX
+2015-02-04 18:35:04.151 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummy8qojmZ4HUX
+2015-02-04 18:35:04.151 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.153 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.153 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01679992675781";
+    longitude = "-118.4686737060547";
+    neighborhood = "Sunset Park";
+    objectId = pAq1qU5gQt;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 22:09:16 +0000";
+}
+2015-02-04 18:35:04.153 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:pAq1qU5gQt
+2015-02-04 18:35:04.154 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = pAq1qU5gQt
+2015-02-04 18:35:04.154 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = pAq1qU5gQt
+2015-02-04 18:35:04.154 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:pAq1qU5gQt
+2015-02-04 18:35:04.155 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.156 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.157 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.157 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.157 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummybH5Xp338Xs
+2015-02-04 18:35:04.157 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummybH5Xp338Xs
+2015-02-04 18:35:04.158 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummybH5Xp338Xs
+2015-02-04 18:35:04.158 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummybH5Xp338Xs
+2015-02-04 18:35:04.158 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.159 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.160 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01690673828125";
+    longitude = "-118.4689559936523";
+    neighborhood = "Sunset Park";
+    objectId = 6q4dqX3vIh;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-03 02:03:14 +0000";
+}
+2015-02-04 18:35:04.160 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:6q4dqX3vIh
+2015-02-04 18:35:04.160 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 6q4dqX3vIh
+2015-02-04 18:35:04.161 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 6q4dqX3vIh
+2015-02-04 18:35:04.161 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:6q4dqX3vIh
+2015-02-04 18:35:04.161 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.162 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.163 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.163 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.163 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummybwQ4YUInOG
+2015-02-04 18:35:04.163 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummybwQ4YUInOG
+2015-02-04 18:35:04.164 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummybwQ4YUInOG
+2015-02-04 18:35:04.164 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummybwQ4YUInOG
+2015-02-04 18:35:04.164 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.165 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.166 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01725387573242";
+    longitude = "-118.4690933227539";
+    neighborhood = "Sunset Park";
+    objectId = d9d4oLXQSs;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 21:54:03 +0000";
+}
+2015-02-04 18:35:04.166 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:d9d4oLXQSs
+2015-02-04 18:35:04.167 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = d9d4oLXQSs
+2015-02-04 18:35:04.167 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = d9d4oLXQSs
+2015-02-04 18:35:04.167 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:d9d4oLXQSs
+2015-02-04 18:35:04.167 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.169 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.169 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.169 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.169 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyVfXYO2XleW
+2015-02-04 18:35:04.170 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyVfXYO2XleW
+2015-02-04 18:35:04.170 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyVfXYO2XleW
+2015-02-04 18:35:04.171 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyVfXYO2XleW
+2015-02-04 18:35:04.171 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.173 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.173 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "33.99409866333008";
+    longitude = "-118.4524307250977";
+    neighborhood = Venice;
+    objectId = mRbtjbabX3;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:09:04 +0000";
+}
+2015-02-04 18:35:04.174 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:mRbtjbabX3
+2015-02-04 18:35:04.175 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = mRbtjbabX3
+2015-02-04 18:35:04.175 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = mRbtjbabX3
+2015-02-04 18:35:04.176 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:mRbtjbabX3
+2015-02-04 18:35:04.176 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.177 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.178 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.178 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.179 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyRbjzwgnZRc
+2015-02-04 18:35:04.180 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyRbjzwgnZRc
+2015-02-04 18:35:04.180 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyRbjzwgnZRc
+2015-02-04 18:35:04.180 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyRbjzwgnZRc
+2015-02-04 18:35:04.181 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.182 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.183 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05849075317383";
+    longitude = "-118.4191589355469";
+    neighborhood = "Century City";
+    objectId = WKwPetmgUA;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 00:58:02 +0000";
+}
+2015-02-04 18:35:04.183 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:WKwPetmgUA
+2015-02-04 18:35:04.184 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = WKwPetmgUA
+2015-02-04 18:35:04.185 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = WKwPetmgUA
+2015-02-04 18:35:04.185 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:WKwPetmgUA
+2015-02-04 18:35:04.186 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.187 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.188 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.188 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.189 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyxRhcckQQlP
+2015-02-04 18:35:04.189 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyxRhcckQQlP
+2015-02-04 18:35:04.190 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyxRhcckQQlP
+2015-02-04 18:35:04.190 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyxRhcckQQlP
+2015-02-04 18:35:04.191 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.192 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.193 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.0589714050293";
+    longitude = "-118.4207229614258";
+    neighborhood = "Century City";
+    objectId = sjlaAaj7i3;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 00:05:39 +0000";
+}
+2015-02-04 18:35:04.193 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sjlaAaj7i3
+2015-02-04 18:35:04.194 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = sjlaAaj7i3
+2015-02-04 18:35:04.195 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = sjlaAaj7i3
+2015-02-04 18:35:04.195 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:sjlaAaj7i3
+2015-02-04 18:35:04.196 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.198 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.198 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.199 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.199 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyEutoNWWajJ
+2015-02-04 18:35:04.200 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyEutoNWWajJ
+2015-02-04 18:35:04.200 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyEutoNWWajJ
+2015-02-04 18:35:04.201 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyEutoNWWajJ
+2015-02-04 18:35:04.201 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.203 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.203 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05400466918945";
+    longitude = "-118.4636688232422";
+    neighborhood = Sawtelle;
+    objectId = D6tIMZXb4w;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 01:40:11 +0000";
+}
+2015-02-04 18:35:04.204 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:D6tIMZXb4w
+2015-02-04 18:35:04.205 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = D6tIMZXb4w
+2015-02-04 18:35:04.205 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = D6tIMZXb4w
+2015-02-04 18:35:04.206 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:D6tIMZXb4w
+2015-02-04 18:35:04.206 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.208 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.208 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.208 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.209 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyb4pssczxPD
+2015-02-04 18:35:04.210 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyb4pssczxPD
+2015-02-04 18:35:04.210 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyb4pssczxPD
+2015-02-04 18:35:04.211 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyb4pssczxPD
+2015-02-04 18:35:04.211 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.212 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.213 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00357055664062";
+    longitude = "-118.4853286743164";
+    neighborhood = "Ocean Park";
+    objectId = gCPTVbmP36;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 03:36:02 +0000";
+}
+2015-02-04 18:35:04.213 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:gCPTVbmP36
+2015-02-04 18:35:04.214 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = gCPTVbmP36
+2015-02-04 18:35:04.215 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = gCPTVbmP36
+2015-02-04 18:35:04.215 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:gCPTVbmP36
+2015-02-04 18:35:04.216 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.217 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.218 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.218 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.219 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNwTtplfjV5
+2015-02-04 18:35:04.219 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyNwTtplfjV5
+2015-02-04 18:35:04.220 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyNwTtplfjV5
+2015-02-04 18:35:04.220 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyNwTtplfjV5
+2015-02-04 18:35:04.221 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.222 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.223 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05979919433594";
+    longitude = "-118.470947265625";
+    neighborhood = Brentwood;
+    objectId = haYYSkyuKy;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 02:05:52 +0000";
+}
+2015-02-04 18:35:04.224 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:haYYSkyuKy
+2015-02-04 18:35:04.225 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = haYYSkyuKy
+2015-02-04 18:35:04.225 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = haYYSkyuKy
+2015-02-04 18:35:04.226 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:haYYSkyuKy
+2015-02-04 18:35:04.226 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.228 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.228 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.228 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.228 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyZ9yBmzye88
+2015-02-04 18:35:04.229 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyZ9yBmzye88
+2015-02-04 18:35:04.229 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyZ9yBmzye88
+2015-02-04 18:35:04.229 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyZ9yBmzye88
+2015-02-04 18:35:04.230 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.231 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.231 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00532913208008";
+    longitude = "-118.4878158569336";
+    neighborhood = "Ocean Park";
+    objectId = xOIRNTT7dG;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 03:33:44 +0000";
+}
+2015-02-04 18:35:04.231 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xOIRNTT7dG
+2015-02-04 18:35:04.232 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = xOIRNTT7dG
+2015-02-04 18:35:04.232 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = xOIRNTT7dG
+2015-02-04 18:35:04.232 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:xOIRNTT7dG
+2015-02-04 18:35:04.232 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.234 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.235 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.235 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.235 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfNJe8BcXsq
+2015-02-04 18:35:04.236 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyfNJe8BcXsq
+2015-02-04 18:35:04.236 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyfNJe8BcXsq
+2015-02-04 18:35:04.236 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyfNJe8BcXsq
+2015-02-04 18:35:04.236 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.238 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.238 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02022552490234";
+    longitude = "-118.4984893798828";
+    neighborhood = "Wilshire Montana";
+    objectId = 7HOQAmSGDU;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 22:58:45 +0000";
+}
+2015-02-04 18:35:04.238 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:7HOQAmSGDU
+2015-02-04 18:35:04.239 PopulistMVP[12780:2455939] Found 0 events in coredata with eventId = 7HOQAmSGDU
+2015-02-04 18:35:04.239 PopulistMVP[12780:2455939] Error: No event found in core data with eventId = 7HOQAmSGDU
+2015-02-04 18:35:04.239 PopulistMVP[12780:2455939] PPLSTDataManager - createEventWithId:7HOQAmSGDU
+2015-02-04 18:35:04.240 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.241 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.241 PopulistMVP[12780:2455939] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-04 18:35:04.241 PopulistMVP[12780:2455939] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.241 PopulistMVP[12780:2455939] PPLSTDataManager - getContributionFromCoreDataWithId:dummyB6reMIm1Yy
+2015-02-04 18:35:04.242 PopulistMVP[12780:2455939] Found 0 contributions in core data with ContributionId = dummyB6reMIm1Yy
+2015-02-04 18:35:04.242 PopulistMVP[12780:2455939] Error: No contribution found in core data with contributionId = dummyB6reMIm1Yy
+2015-02-04 18:35:04.242 PopulistMVP[12780:2455939] PPLSTDataManager - createContributionWithId:dummyB6reMIm1Yy
+2015-02-04 18:35:04.242 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.244 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.244 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.245 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:04.245 PopulistMVP[12780:2455939] already contains user
+2015-02-04 18:35:04.246 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:04.246 PopulistMVP[12780:2455939] About to change isUpdatingEvents from 1
+2015-02-04 18:35:04.246 PopulistMVP[12780:2455939] Now, it's equal to 0
+2015-02-04 18:35:04.248 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:04.251 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:04.251 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.251 PopulistMVP[12780:2455939] titleContribution.imagePath was either empty or not set at all
+2015-02-04 18:35:04.252 PopulistMVP[12780:2455939] calling formatEventCellForContribution
+2015-02-04 18:35:04.253 PopulistMVP[12780:2455939] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x154e27140; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x174033980>> ForContribution:<Contribution: 0x1740df1e0> (entity: Contribution; id: 0xd000000000040002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p1> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-02-05 02:23:24 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000040000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p1>";
+})
+2015-02-04 18:35:04.253 PopulistMVP[12780:2455939] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = (null)
+2015-02-04 18:35:04.254 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:04.255 PopulistMVP[12780:2455963] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740df1e0> (entity: Contribution; id: 0xd000000000040002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p1> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-02-05 02:23:24 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000040000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p1>";
+})
+2015-02-04 18:35:04.256 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:04.257 PopulistMVP[12780:2455963] PPLSTDataManager - storeImage:<UIImage: 0x170280190>
+2015-02-04 18:35:04.258 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:04.289 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.289 PopulistMVP[12780:2455939] titleContribution.imagePath was either empty or not set at all
+2015-02-04 18:35:04.289 PopulistMVP[12780:2455939] calling formatEventCellForContribution
+2015-02-04 18:35:04.289 PopulistMVP[12780:2455939] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x154e2a5d0; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x17422ce20>> ForContribution:<Contribution: 0x1742c0e00> (entity: Contribution; id: 0xd000000000080002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = zeCWG6YKbF;
+    contributionType = photo;
+    createdAt = "2015-02-01 19:48:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p2>";
+})
+2015-02-04 18:35:04.290 PopulistMVP[12780:2455939] contributionId = zeCWG6YKbF, contributionType = photo, imagePath = (null)
+2015-02-04 18:35:04.290 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:04.293 PopulistMVP[12780:2455984] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1742c0e00> (entity: Contribution; id: 0xd000000000080002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = zeCWG6YKbF;
+    contributionType = photo;
+    createdAt = "2015-02-01 19:48:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p2>";
+})
+2015-02-04 18:35:04.294 PopulistMVP[12780:2455963] PPLSTDataManager - getEmptyFilePath
+2015-02-04 18:35:04.295 PopulistMVP[12780:2455984] B
+2015-02-04 18:35:04.295 PopulistMVP[12780:2455963] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.295 PopulistMVP[12780:2455984] Querying Parse for image for contribution with id = zeCWG6YKbF
+2015-02-04 18:35:04.295 PopulistMVP[12780:2455963] Just generated the following free file path: /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:04.306 PopulistMVP[12780:2455963] the cachedImagedPath is /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:04.307 PopulistMVP[12780:2455963] C
+2015-02-04 18:35:04.307 PopulistMVP[12780:2455963] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.308 PopulistMVP[12780:2455963] Saved Core Data!
+2015-02-04 18:35:04.308 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:04.308 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:04.308 PopulistMVP[12780:2455939] getting image from filePath = /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png and storing it into memory
+2015-02-04 18:35:04.310 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:04.310 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:04.311 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:04.311 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.311 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:04.311 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:04.311 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:04.312 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:04.312 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:04.313 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:04.313 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.313 PopulistMVP[12780:2455939] titleContribution.imagePath was either empty or not set at all
+2015-02-04 18:35:04.313 PopulistMVP[12780:2455939] calling formatEventCellForContribution
+2015-02-04 18:35:04.314 PopulistMVP[12780:2455939] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x154e2a5d0; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17422ce20>> ForContribution:<Contribution: 0x1742c0e00> (entity: Contribution; id: 0xd000000000080002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = zeCWG6YKbF;
+    contributionType = photo;
+    createdAt = "2015-02-01 19:48:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p2>";
+})
+2015-02-04 18:35:04.314 PopulistMVP[12780:2455939] contributionId = zeCWG6YKbF, contributionType = photo, imagePath = (null)
+2015-02-04 18:35:04.315 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:04.876 PopulistMVP[12780:2455984] Got data with length: 42464 for contributionId = zeCWG6YKbF in file <PFFile: 0x17027d0c0>
+2015-02-04 18:35:04.877 PopulistMVP[12780:2455984] PPLSTDataManager - storeImage:<UIImage: 0x17009c480>
+2015-02-04 18:35:04.941 PopulistMVP[12780:2455984] PPLSTDataManager - getEmptyFilePath
+2015-02-04 18:35:04.941 PopulistMVP[12780:2455984] PPLSTDataManager - randomgStringWithLength:10
+2015-02-04 18:35:04.942 PopulistMVP[12780:2455984] Just generated the following free file path: /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:04.962 PopulistMVP[12780:2455984] the cachedImagedPath is /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:04.962 PopulistMVP[12780:2455984] just set the imagePath = /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png for contributionId = zeCWG6YKbF and contribution = <Contribution: 0x1742c0e00> (entity: Contribution; id: 0xd000000000080002 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = zeCWG6YKbF;
+    contributionType = photo;
+    createdAt = "2015-02-01 19:48:46 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://54184A35-C8B4-479B-9BA8-9C2BC1842207/Event/p2>";
+})
+2015-02-04 18:35:04.963 PopulistMVP[12780:2455984] Stored it in imagePath = /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:04.963 PopulistMVP[12780:2455984] C
+2015-02-04 18:35:04.964 PopulistMVP[12780:2455984] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:04.965 PopulistMVP[12780:2455984] Saved Core Data!
+2015-02-04 18:35:04.965 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:04.965 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:04.965 PopulistMVP[12780:2455939] getting image from filePath = /var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png and storing it into memory
+2015-02-04 18:35:04.967 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:04.967 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:04.967 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:04.967 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.967 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:04.968 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:04.968 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:04.968 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:04.968 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:04.969 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:04.969 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:04.969 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:04.970 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:04.970 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:04.970 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:17.181 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:17.184 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:17.185 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:17.185 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:17.185 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:17.185 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:17.185 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:17.186 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:17.186 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:17.186 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:17.186 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:17.187 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:17.187 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:17.187 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:17.187 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:17.340 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:17.341 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:17.341 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:17.341 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:17.341 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:17.341 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:17.342 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:17.683 PopulistMVP[12780:2455939] updateEvents
+2015-02-04 18:35:17.684 PopulistMVP[12780:2455939] startUpdatingEvents
+2015-02-04 18:35:17.685 PopulistMVP[12780:2455939] updateLocation called in PPLSTLocationManager
+2015-02-04 18:35:17.701 PopulistMVP[12780:2455939] locationManager didUpdateLocation lastObject = <+34.02100491,-118.42764429> +/- 10.00m (speed 0.00 mps / course -1.00) @ 2/4/15, 6:35:17 PM Pacific Standard Time, accuracy = 10.000000
+2015-02-04 18:35:17.705 PopulistMVP[12780:2455939] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-02-04 18:35:17.706 PopulistMVP[12780:2455939] finishUpdatingEvents
+2015-02-04 18:35:17.708 PopulistMVP[12780:2455939] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02100491,-118.42764429> +/- 10.00m (speed 0.00 mps / course -1.00) @ 2/4/15, 6:35:17 PM Pacific Standard Time
+2015-02-04 18:35:17.709 PopulistMVP[12780:2455939] PPLSTLocationManager - updateTimeOfLastUpdate:2015-02-05 02:35:17 +0000
+2015-02-04 18:35:17.709 PopulistMVP[12780:2455939] Current Location - lat = 34.021005 and long = -118.427644
+2015-02-04 18:35:17.709 PopulistMVP[12780:2455939] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.021004 andLongitude:-118.427643 andDate:2015-02-05 02:35:17 +0000
+2015-02-04 18:35:17.710 PopulistMVP[12780:2455939] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.021004 andLongitude:-118.427643 andDate:2015-02-05 02:35:17 +0000
+2015-02-04 18:35:17.713 PopulistMVP[12780:2455939] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-02-04 18:35:17.965 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 2;
+    isActive = YES;
+    latitude = "34.02100972647097";
+    longitude = "-118.4276744823396";
+    neighborhood = "Mar Vista";
+    objectId = fewf9BumUm;
+    state = CA;
+    titleContributionIds =     (
+                {
+            xxO39vLHLS = message;
+        },
+                {
+            ZcDjsyult2 = message;
+        }
+    );
+    updatedAt = "2015-02-05 02:23:24 +0000";
+}
+2015-02-04 18:35:17.966 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:fewf9BumUm
+2015-02-04 18:35:17.968 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = fewf9BumUm
+2015-02-04 18:35:17.970 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 18;
+    isActive = NO;
+    latitude = "34.02103617384203";
+    longitude = "-118.4276513226451";
+    neighborhood = "Mar Vista";
+    objectId = wPSS6e201S;
+    state = CA;
+    titleContributionIds =     (
+                {
+            zeCWG6YKbF = photo;
+        }
+    );
+    updatedAt = "2015-02-01 19:48:46 +0000";
+}
+2015-02-04 18:35:17.971 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:wPSS6e201S
+2015-02-04 18:35:17.973 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = wPSS6e201S
+2015-02-04 18:35:17.975 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 12;
+    isActive = NO;
+    latitude = "34.02104491661797";
+    longitude = "-118.4276580435787";
+    neighborhood = "Mar Vista";
+    objectId = g45Lk0bA30;
+    state = CA;
+    titleContributionIds =     (
+                {
+            IZOiH38UD3 = photo;
+        }
+    );
+    updatedAt = "2015-01-31 20:03:27 +0000";
+}
+2015-02-04 18:35:17.977 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:g45Lk0bA30
+2015-02-04 18:35:17.979 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = g45Lk0bA30
+2015-02-04 18:35:17.980 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 11;
+    isActive = NO;
+    latitude = "34.02102881070993";
+    longitude = "-118.4276638342738";
+    neighborhood = "Mar Vista";
+    objectId = TwDoXRsZLv;
+    state = CA;
+    titleContributionIds =     (
+                {
+            9KmzsJrP7E = photo;
+        }
+    );
+    updatedAt = "2015-01-31 03:10:32 +0000";
+}
+2015-02-04 18:35:17.980 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:TwDoXRsZLv
+2015-02-04 18:35:17.981 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = TwDoXRsZLv
+2015-02-04 18:35:17.982 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02103857582922";
+    longitude = "-118.4276466214489";
+    neighborhood = "Mar Vista";
+    objectId = PtapG16Yl3;
+    state = CA;
+    titleContributionIds =     (
+                {
+            CMZIAXAfNQ = message;
+        }
+    );
+    updatedAt = "2015-02-03 07:00:53 +0000";
+}
+2015-02-04 18:35:17.983 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:PtapG16Yl3
+2015-02-04 18:35:17.984 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = PtapG16Yl3
+2015-02-04 18:35:17.984 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02102855385472";
+    longitude = "-118.4276746740376";
+    neighborhood = "Mar Vista";
+    objectId = zeh7DtRcX0;
+    state = CA;
+    titleContributionIds =     (
+                {
+            xg6K8ijf4P = photo;
+        },
+                {
+            nVxuEZYFRK = message;
+        },
+                {
+            knGydCMdFO = message;
+        }
+    );
+    updatedAt = "2015-01-31 00:02:35 +0000";
+}
+2015-02-04 18:35:17.985 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:zeh7DtRcX0
+2015-02-04 18:35:17.987 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = zeh7DtRcX0
+2015-02-04 18:35:17.987 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02101553752839";
+    longitude = "-118.4276655391445";
+    neighborhood = "Mar Vista";
+    objectId = LY0GzJnfhL;
+    state = CA;
+    titleContributionIds =     (
+                {
+            kugFqJZs3r = photo;
+        }
+    );
+    updatedAt = "2015-02-01 22:55:48 +0000";
+}
+2015-02-04 18:35:17.988 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:LY0GzJnfhL
+2015-02-04 18:35:17.989 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = LY0GzJnfhL
+2015-02-04 18:35:17.990 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02102593713904";
+    longitude = "-118.4276547416177";
+    neighborhood = "Mar Vista";
+    objectId = T3qZAxQe72;
+    state = CA;
+    titleContributionIds =     (
+                {
+            fPgbD9FUbi = photo;
+        }
+    );
+    updatedAt = "2015-02-02 17:35:27 +0000";
+}
+2015-02-04 18:35:17.992 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:T3qZAxQe72
+2015-02-04 18:35:17.993 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = T3qZAxQe72
+2015-02-04 18:35:17.994 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02100949742864";
+    longitude = "-118.427691999593";
+    neighborhood = "Mar Vista";
+    objectId = Fx8LJWqBZ8;
+    state = CA;
+    titleContributionIds =     (
+                {
+            WBSgNoHVH3 = photo;
+        }
+    );
+    updatedAt = "2015-02-02 05:11:51 +0000";
+}
+2015-02-04 18:35:17.995 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Fx8LJWqBZ8
+2015-02-04 18:35:17.996 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = Fx8LJWqBZ8
+2015-02-04 18:35:17.997 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.0210199510587";
+    longitude = "-118.4277028002207";
+    neighborhood = "Mar Vista";
+    objectId = cLCODUS7pU;
+    state = CA;
+    titleContributionIds =     (
+                {
+            0lfVgWbpKd = photo;
+        },
+                {
+            eGXG8KEi0M = message;
+        },
+                {
+            zDO1vhe0Gc = message;
+        }
+    );
+    updatedAt = "2015-02-04 05:24:08 +0000";
+}
+2015-02-04 18:35:17.998 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:cLCODUS7pU
+2015-02-04 18:35:17.999 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = cLCODUS7pU
+2015-02-04 18:35:17.999 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02103416955273";
+    longitude = "-118.4276823076166";
+    neighborhood = "Mar Vista";
+    objectId = DkXC8cul6F;
+    state = CA;
+    titleContributionIds =     (
+                {
+            lyEyq9ocYw = photo;
+        },
+                {
+            rmcBDkqtnR = message;
+        },
+                {
+            CtUc8n2kry = message;
+        }
+    );
+    updatedAt = "2015-02-04 17:09:24 +0000";
+}
+2015-02-04 18:35:18.000 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:DkXC8cul6F
+2015-02-04 18:35:18.001 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = DkXC8cul6F
+2015-02-04 18:35:18.001 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02109152017";
+    longitude = "-118.4276398379055";
+    neighborhood = "Mar Vista";
+    objectId = JVB1MvpGdE;
+    state = CA;
+    titleContributionIds =     (
+                {
+            YZJHJ4MGXa = message;
+        },
+                {
+            jGYE8stcTC = message;
+        }
+    );
+    updatedAt = "2015-02-03 03:12:00 +0000";
+}
+2015-02-04 18:35:18.002 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:JVB1MvpGdE
+2015-02-04 18:35:18.003 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = JVB1MvpGdE
+2015-02-04 18:35:18.003 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02099484944684";
+    longitude = "-118.4276908226261";
+    neighborhood = "Mar Vista";
+    objectId = SNEk0EjtAk;
+    state = CA;
+    titleContributionIds =     (
+                {
+            qjXiGd83OY = message;
+        },
+                {
+            PZgok3JZZg = message;
+        }
+    );
+    updatedAt = "2015-02-03 07:45:14 +0000";
+}
+2015-02-04 18:35:18.004 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:SNEk0EjtAk
+2015-02-04 18:35:18.005 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = SNEk0EjtAk
+2015-02-04 18:35:18.005 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02101135253906";
+    longitude = "-118.4276428222656";
+    neighborhood = "Mar Vista";
+    objectId = X3FLgnXo5M;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 05:21:58 +0000";
+}
+2015-02-04 18:35:18.006 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:X3FLgnXo5M
+2015-02-04 18:35:18.008 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = X3FLgnXo5M
+2015-02-04 18:35:18.008 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02104568481445";
+    longitude = "-118.4275894165039";
+    neighborhood = "Mar Vista";
+    objectId = OyxdKIjgDI;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 08:15:48 +0000";
+}
+2015-02-04 18:35:18.009 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:OyxdKIjgDI
+2015-02-04 18:35:18.010 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = OyxdKIjgDI
+2015-02-04 18:35:18.011 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02096176147461";
+    longitude = "-118.4276580810547";
+    neighborhood = "Mar Vista";
+    objectId = VFuDHVxfTL;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 05:51:05 +0000";
+}
+2015-02-04 18:35:18.013 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:VFuDHVxfTL
+2015-02-04 18:35:18.014 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = VFuDHVxfTL
+2015-02-04 18:35:18.015 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02106094360352";
+    longitude = "-118.4275817871094";
+    neighborhood = "Mar Vista";
+    objectId = 63EQd6xiwr;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:43:24 +0000";
+}
+2015-02-04 18:35:18.015 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:63EQd6xiwr
+2015-02-04 18:35:18.016 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 63EQd6xiwr
+2015-02-04 18:35:18.017 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02093505859375";
+    longitude = "-118.4276733398438";
+    neighborhood = "Mar Vista";
+    objectId = sZAnA4swOT;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 07:42:00 +0000";
+}
+2015-02-04 18:35:18.017 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sZAnA4swOT
+2015-02-04 18:35:18.018 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = sZAnA4swOT
+2015-02-04 18:35:18.019 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02106475830078";
+    longitude = "-118.4273223876953";
+    neighborhood = "Mar Vista";
+    objectId = 8EHBoAIeEt;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 02:41:36 +0000";
+}
+2015-02-04 18:35:18.019 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:8EHBoAIeEt
+2015-02-04 18:35:18.020 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 8EHBoAIeEt
+2015-02-04 18:35:18.020 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02128219604492";
+    longitude = "-118.4275741577148";
+    neighborhood = "Mar Vista";
+    objectId = nFKQvmCRHh;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 06:25:32 +0000";
+}
+2015-02-04 18:35:18.020 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:nFKQvmCRHh
+2015-02-04 18:35:18.021 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = nFKQvmCRHh
+2015-02-04 18:35:18.021 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02106929525455";
+    longitude = "-118.4286034796939";
+    neighborhood = "Mar Vista";
+    objectId = 3MRBBPdOKt;
+    state = CA;
+    titleContributionIds =     (
+                {
+            yODgD2gI1N = photo;
+        }
+    );
+    updatedAt = "2015-01-31 01:41:23 +0000";
+}
+2015-02-04 18:35:18.022 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:3MRBBPdOKt
+2015-02-04 18:35:18.023 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 3MRBBPdOKt
+2015-02-04 18:35:18.023 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 23;
+    isActive = NO;
+    latitude = "34.01700103003831";
+    longitude = "-118.4690499552863";
+    neighborhood = "Sunset Park";
+    objectId = joAOP58mom;
+    state = CA;
+    titleContributionIds =     (
+                {
+            URnHqeMrAB = photo;
+        },
+                {
+            eKh3v4t0ai = message;
+        },
+                {
+            yk3iQ8aLaV = message;
+        }
+    );
+    updatedAt = "2015-02-02 20:20:52 +0000";
+}
+2015-02-04 18:35:18.024 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:joAOP58mom
+2015-02-04 18:35:18.024 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = joAOP58mom
+2015-02-04 18:35:18.025 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02105712890625";
+    longitude = "-118.4292831420898";
+    neighborhood = "Mar Vista";
+    objectId = tR0Jsp7UdR;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 16:58:23 +0000";
+}
+2015-02-04 18:35:18.025 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:tR0Jsp7UdR
+2015-02-04 18:35:18.026 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = tR0Jsp7UdR
+2015-02-04 18:35:18.026 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02123307751989";
+    longitude = "-118.4314938503337";
+    neighborhood = "Mar Vista";
+    objectId = dBzy8barjz;
+    state = CA;
+    titleContributionIds =     (
+                {
+            OPs5nyGgG8 = message;
+        }
+    );
+    updatedAt = "2015-02-04 16:57:04 +0000";
+}
+2015-02-04 18:35:18.027 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:dBzy8barjz
+2015-02-04 18:35:18.028 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = dBzy8barjz
+2015-02-04 18:35:18.028 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02196884155273";
+    longitude = "-118.4292297363281";
+    neighborhood = "Mar Vista";
+    objectId = 92egamzVim;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 01:43:15 +0000";
+}
+2015-02-04 18:35:18.028 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:92egamzVim
+2015-02-04 18:35:18.029 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 92egamzVim
+2015-02-04 18:35:18.030 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02121353149414";
+    longitude = "-118.430908203125";
+    neighborhood = "Mar Vista";
+    objectId = 0Ta0G2Q8UM;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 05:22:00 +0000";
+}
+2015-02-04 18:35:18.030 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:0Ta0G2Q8UM
+2015-02-04 18:35:18.031 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 0Ta0G2Q8UM
+2015-02-04 18:35:18.031 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02123260498047";
+    longitude = "-118.4314956665039";
+    neighborhood = "Mar Vista";
+    objectId = qRhcc9n0RU;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:20:22 +0000";
+}
+2015-02-04 18:35:18.032 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:qRhcc9n0RU
+2015-02-04 18:35:18.032 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = qRhcc9n0RU
+2015-02-04 18:35:18.033 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02123260498047";
+    longitude = "-118.4314956665039";
+    neighborhood = "Mar Vista";
+    objectId = EVCWzcb5WJ;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 06:27:39 +0000";
+}
+2015-02-04 18:35:18.033 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:EVCWzcb5WJ
+2015-02-04 18:35:18.034 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = EVCWzcb5WJ
+2015-02-04 18:35:18.034 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Culver City";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.00642603414011";
+    longitude = "-118.4121932910846";
+    neighborhood = Clarkdale;
+    objectId = yTstLFIp9H;
+    state = CA;
+    titleContributionIds =     (
+                {
+            jqX5Q3z12Z = photo;
+        },
+                {
+            XUYaavKKKw = message;
+        },
+                {
+            CfqEbLyRCw = message;
+        }
+    );
+    updatedAt = "2015-02-01 04:31:57 +0000";
+}
+2015-02-04 18:35:18.035 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:yTstLFIp9H
+2015-02-04 18:35:18.036 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = yTstLFIp9H
+2015-02-04 18:35:18.036 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02606201171875";
+    longitude = "-118.4313583374023";
+    neighborhood = "Mar Vista";
+    objectId = J7VGOIxfUi;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:15:03 +0000";
+}
+2015-02-04 18:35:18.036 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:J7VGOIxfUi
+2015-02-04 18:35:18.037 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = J7VGOIxfUi
+2015-02-04 18:35:18.037 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01698981119477";
+    longitude = "-118.4690219729816";
+    neighborhood = "Sunset Park";
+    objectId = cjxYEDAo7a;
+    state = CA;
+    titleContributionIds =     (
+                {
+            PlspdcNQrC = photo;
+        },
+                {
+            sI1ZQZqYJo = message;
+        },
+                {
+            u40CFWuKgN = message;
+        }
+    );
+    updatedAt = "2015-02-04 19:20:01 +0000";
+}
+2015-02-04 18:35:18.038 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:cjxYEDAo7a
+2015-02-04 18:35:18.038 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = cjxYEDAo7a
+2015-02-04 18:35:18.039 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02682876586914";
+    longitude = "-118.4319534301758";
+    neighborhood = "Mar Vista";
+    objectId = zyGcpjYCAH;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:14:21 +0000";
+}
+2015-02-04 18:35:18.039 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:zyGcpjYCAH
+2015-02-04 18:35:18.040 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = zyGcpjYCAH
+2015-02-04 18:35:18.040 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01994497936997";
+    longitude = "-118.4544266972369";
+    neighborhood = "Sunset Park";
+    objectId = 70RdIyxEXV;
+    state = CA;
+    titleContributionIds =     (
+                {
+            dgAsqSsZAY = photo;
+        },
+                {
+            8SV34RGHRu = message;
+        },
+                {
+            X5zekek7r7 = message;
+        }
+    );
+    updatedAt = "2015-02-01 20:25:08 +0000";
+}
+2015-02-04 18:35:18.041 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:70RdIyxEXV
+2015-02-04 18:35:18.041 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 70RdIyxEXV
+2015-02-04 18:35:18.041 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.0008830093455";
+    longitude = "-118.4825823931529";
+    neighborhood = "Ocean Park";
+    objectId = w0XAlfhIwI;
+    state = CA;
+    titleContributionIds =     (
+                {
+            A6atGLjlMU = photo;
+        },
+                {
+            ZBXgvqupMG = message;
+        },
+                {
+            m0NofYTJdu = message;
+        }
+    );
+    updatedAt = "2015-01-31 04:59:01 +0000";
+}
+2015-02-04 18:35:18.042 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:w0XAlfhIwI
+2015-02-04 18:35:18.042 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = w0XAlfhIwI
+2015-02-04 18:35:18.043 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02631759643555";
+    longitude = "-118.4438095092773";
+    neighborhood = "Mar Vista";
+    objectId = QvxOWkoOMv;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:19:49 +0000";
+}
+2015-02-04 18:35:18.043 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:QvxOWkoOMv
+2015-02-04 18:35:18.044 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = QvxOWkoOMv
+2015-02-04 18:35:18.044 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01738429583331";
+    longitude = "-118.4688481120945";
+    neighborhood = "Sunset Park";
+    objectId = nHABw7Vlcd;
+    state = CA;
+    titleContributionIds =     (
+                {
+            5di68jVNtt = message;
+        }
+    );
+    updatedAt = "2015-02-04 21:01:38 +0000";
+}
+2015-02-04 18:35:18.045 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:nHABw7Vlcd
+2015-02-04 18:35:18.045 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = nHABw7Vlcd
+2015-02-04 18:35:18.046 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01725805953821";
+    longitude = "-118.4690203369598";
+    neighborhood = "Sunset Park";
+    objectId = rrLryzmaQ4;
+    state = CA;
+    titleContributionIds =     (
+                {
+            EzWDvH8jkX = photo;
+        }
+    );
+    updatedAt = "2015-02-02 23:56:02 +0000";
+}
+2015-02-04 18:35:18.046 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:rrLryzmaQ4
+2015-02-04 18:35:18.047 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = rrLryzmaQ4
+2015-02-04 18:35:18.047 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.0344352722168";
+    longitude = "-118.4401550292969";
+    neighborhood = Sawtelle;
+    objectId = sTIifzr3LG;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:11:38 +0000";
+}
+2015-02-04 18:35:18.048 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sTIifzr3LG
+2015-02-04 18:35:18.049 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = sTIifzr3LG
+2015-02-04 18:35:18.049 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.98924735438948";
+    longitude = "-118.4625071958443";
+    neighborhood = Venice;
+    objectId = GFIB53uXF6;
+    state = CA;
+    titleContributionIds =     (
+                {
+            WnYtJGQovO = photo;
+        },
+                {
+            dsn3zH05YU = message;
+        }
+    );
+    updatedAt = "2015-01-31 05:56:45 +0000";
+}
+2015-02-04 18:35:18.049 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:GFIB53uXF6
+2015-02-04 18:35:18.050 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = GFIB53uXF6
+2015-02-04 18:35:18.050 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.05897982718452";
+    longitude = "-118.4225066626131";
+    neighborhood = Westwood;
+    objectId = 35JcNtI86S;
+    state = CA;
+    titleContributionIds =     (
+                {
+            MBPFRyWh5V = photo;
+        }
+    );
+    updatedAt = "2015-02-02 00:05:05 +0000";
+}
+2015-02-04 18:35:18.050 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:35JcNtI86S
+2015-02-04 18:35:18.051 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 35JcNtI86S
+2015-02-04 18:35:18.052 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Culver City";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00746536254883";
+    longitude = "-118.4130325317383";
+    neighborhood = Clarkdale;
+    objectId = uaVkiyZFw9;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 02:51:50 +0000";
+}
+2015-02-04 18:35:18.052 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:uaVkiyZFw9
+2015-02-04 18:35:18.052 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = uaVkiyZFw9
+2015-02-04 18:35:18.053 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99460460806514";
+    longitude = "-118.4763853190581";
+    neighborhood = Venice;
+    objectId = Go4eGF5AIU;
+    state = CA;
+    titleContributionIds =     (
+                {
+            4VZCsC9oNH = photo;
+        },
+                {
+            2ug63r1opI = message;
+        }
+    );
+    updatedAt = "2015-01-31 05:35:36 +0000";
+}
+2015-02-04 18:35:18.053 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Go4eGF5AIU
+2015-02-04 18:35:18.054 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = Go4eGF5AIU
+2015-02-04 18:35:18.054 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02929306030273";
+    longitude = "-118.4506225585938";
+    neighborhood = Sawtelle;
+    objectId = TEph0gk89v;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-05 02:08:37 +0000";
+}
+2015-02-04 18:35:18.054 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:TEph0gk89v
+2015-02-04 18:35:18.055 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = TEph0gk89v
+2015-02-04 18:35:18.055 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01988220214844";
+    longitude = "-118.4541854858398";
+    neighborhood = "Sunset Park";
+    objectId = kjY0feN0QB;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:02:18 +0000";
+}
+2015-02-04 18:35:18.056 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:kjY0feN0QB
+2015-02-04 18:35:18.056 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = kjY0feN0QB
+2015-02-04 18:35:18.057 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01886295068116";
+    longitude = "-118.4984296875636";
+    neighborhood = Downtown;
+    objectId = xUVcPAPQ2a;
+    state = CA;
+    titleContributionIds =     (
+                {
+            2RtRbEKVbG = photo;
+        },
+                {
+            QZUVDwsoCJ = message;
+        }
+    );
+    updatedAt = "2015-01-31 23:45:00 +0000";
+}
+2015-02-04 18:35:18.057 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xUVcPAPQ2a
+2015-02-04 18:35:18.058 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = xUVcPAPQ2a
+2015-02-04 18:35:18.058 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.07708699370479";
+    longitude = "-118.4740335085381";
+    neighborhood = Brentwood;
+    objectId = lZInTFr7Tw;
+    state = CA;
+    titleContributionIds =     (
+                {
+            g993dpsbbE = photo;
+        },
+                {
+            LmKE09pf2b = message;
+        }
+    );
+    updatedAt = "2015-01-31 21:50:18 +0000";
+}
+2015-02-04 18:35:18.058 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:lZInTFr7Tw
+2015-02-04 18:35:18.059 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = lZInTFr7Tw
+2015-02-04 18:35:18.060 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02032797684864";
+    longitude = "-118.4987092285488";
+    neighborhood = "Wilshire Montana";
+    objectId = 8ygzwcVNeI;
+    state = CA;
+    titleContributionIds =     (
+                {
+            472kc7QpC7 = photo;
+        }
+    );
+    updatedAt = "2015-01-31 22:02:27 +0000";
+}
+2015-02-04 18:35:18.060 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:8ygzwcVNeI
+2015-02-04 18:35:18.061 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 8ygzwcVNeI
+2015-02-04 18:35:18.061 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02732467651367";
+    longitude = "-118.4548873901367";
+    neighborhood = Pico;
+    objectId = 3fZOdFzDII;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-03 02:10:30 +0000";
+}
+2015-02-04 18:35:18.061 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:3fZOdFzDII
+2015-02-04 18:35:18.062 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 3fZOdFzDII
+2015-02-04 18:35:18.062 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01889038085938";
+    longitude = "-118.4556579589844";
+    neighborhood = "Sunset Park";
+    objectId = xWggjioRp7;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-01 21:17:51 +0000";
+}
+2015-02-04 18:35:18.062 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xWggjioRp7
+2015-02-04 18:35:18.063 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = xWggjioRp7
+2015-02-04 18:35:18.063 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "33.99647903442383";
+    longitude = "-118.4477767944336";
+    neighborhood = Venice;
+    objectId = Oor3ZzdI7w;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:09:32 +0000";
+}
+2015-02-04 18:35:18.064 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:Oor3ZzdI7w
+2015-02-04 18:35:18.064 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = Oor3ZzdI7w
+2015-02-04 18:35:18.065 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.01699447631836";
+    longitude = "-118.4690704345703";
+    neighborhood = "Sunset Park";
+    objectId = 6FuTEe3rZV;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-04 19:55:18 +0000";
+}
+2015-02-04 18:35:18.065 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:6FuTEe3rZV
+2015-02-04 18:35:18.065 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 6FuTEe3rZV
+2015-02-04 18:35:18.066 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01679992675781";
+    longitude = "-118.4686737060547";
+    neighborhood = "Sunset Park";
+    objectId = pAq1qU5gQt;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 22:09:16 +0000";
+}
+2015-02-04 18:35:18.066 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:pAq1qU5gQt
+2015-02-04 18:35:18.067 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = pAq1qU5gQt
+2015-02-04 18:35:18.067 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01690673828125";
+    longitude = "-118.4689559936523";
+    neighborhood = "Sunset Park";
+    objectId = 6q4dqX3vIh;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-03 02:03:14 +0000";
+}
+2015-02-04 18:35:18.068 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:6q4dqX3vIh
+2015-02-04 18:35:18.068 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 6q4dqX3vIh
+2015-02-04 18:35:18.069 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.01725387573242";
+    longitude = "-118.4690933227539";
+    neighborhood = "Sunset Park";
+    objectId = d9d4oLXQSs;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 21:54:03 +0000";
+}
+2015-02-04 18:35:18.069 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:d9d4oLXQSs
+2015-02-04 18:35:18.070 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = d9d4oLXQSs
+2015-02-04 18:35:18.070 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "33.99409866333008";
+    longitude = "-118.4524307250977";
+    neighborhood = Venice;
+    objectId = mRbtjbabX3;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 06:09:04 +0000";
+}
+2015-02-04 18:35:18.070 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:mRbtjbabX3
+2015-02-04 18:35:18.071 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = mRbtjbabX3
+2015-02-04 18:35:18.071 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05849075317383";
+    longitude = "-118.4191589355469";
+    neighborhood = "Century City";
+    objectId = WKwPetmgUA;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 00:58:02 +0000";
+}
+2015-02-04 18:35:18.071 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:WKwPetmgUA
+2015-02-04 18:35:18.072 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = WKwPetmgUA
+2015-02-04 18:35:18.072 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.0589714050293";
+    longitude = "-118.4207229614258";
+    neighborhood = "Century City";
+    objectId = sjlaAaj7i3;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 00:05:39 +0000";
+}
+2015-02-04 18:35:18.073 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:sjlaAaj7i3
+2015-02-04 18:35:18.073 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = sjlaAaj7i3
+2015-02-04 18:35:18.074 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05400466918945";
+    longitude = "-118.4636688232422";
+    neighborhood = Sawtelle;
+    objectId = D6tIMZXb4w;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 01:40:11 +0000";
+}
+2015-02-04 18:35:18.074 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:D6tIMZXb4w
+2015-02-04 18:35:18.075 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = D6tIMZXb4w
+2015-02-04 18:35:18.075 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00357055664062";
+    longitude = "-118.4853286743164";
+    neighborhood = "Ocean Park";
+    objectId = gCPTVbmP36;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 03:36:02 +0000";
+}
+2015-02-04 18:35:18.076 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:gCPTVbmP36
+2015-02-04 18:35:18.077 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = gCPTVbmP36
+2015-02-04 18:35:18.077 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.05979919433594";
+    longitude = "-118.470947265625";
+    neighborhood = Brentwood;
+    objectId = haYYSkyuKy;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-02-02 02:05:52 +0000";
+}
+2015-02-04 18:35:18.077 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:haYYSkyuKy
+2015-02-04 18:35:18.078 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = haYYSkyuKy
+2015-02-04 18:35:18.078 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.00532913208008";
+    longitude = "-118.4878158569336";
+    neighborhood = "Ocean Park";
+    objectId = xOIRNTT7dG;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 03:33:44 +0000";
+}
+2015-02-04 18:35:18.078 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:xOIRNTT7dG
+2015-02-04 18:35:18.079 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = xOIRNTT7dG
+2015-02-04 18:35:18.080 PopulistMVP[12780:2455939] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02022552490234";
+    longitude = "-118.4984893798828";
+    neighborhood = "Wilshire Montana";
+    objectId = 7HOQAmSGDU;
+    state = CA;
+    titleContributionIds =     (
+    );
+    updatedAt = "2015-01-31 22:58:45 +0000";
+}
+2015-02-04 18:35:18.080 PopulistMVP[12780:2455939] PPLSTDataManager - getEventFromCoreDataWithId:7HOQAmSGDU
+2015-02-04 18:35:18.080 PopulistMVP[12780:2455939] Found 1 events in coredata with eventId = 7HOQAmSGDU
+2015-02-04 18:35:18.081 PopulistMVP[12780:2455939] PPLSTDataManager - saveCoreData
+2015-02-04 18:35:18.085 PopulistMVP[12780:2455939] Saved Core Data!
+2015-02-04 18:35:18.085 PopulistMVP[12780:2455939] already contains user
+2015-02-04 18:35:18.085 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:18.086 PopulistMVP[12780:2455939] About to change isUpdatingEvents from 1
+2015-02-04 18:35:18.086 PopulistMVP[12780:2455939] Now, it's equal to 0
+2015-02-04 18:35:18.087 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:18.087 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:18.087 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:18.088 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:18.088 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:18.088 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:18.088 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:18.088 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:18.089 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:18.174 PopulistMVP[12780:2455939] Number of events: 28
+2015-02-04 18:35:18.175 PopulistMVP[12780:2455939] indexPath.row = 0
+2015-02-04 18:35:18.175 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-02-04 18:35:18.176 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:18.176 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:18.176 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/BMjfiNlSUT.png
+2015-02-04 18:35:18.176 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:18.176 PopulistMVP[12780:2455939] finished!
+2015-02-04 18:35:18.177 PopulistMVP[12780:2455939] indexPath.row = 1
+2015-02-04 18:35:18.177 PopulistMVP[12780:2455939] Formatting Event Cell for contributionId = zeCWG6YKbF
+2015-02-04 18:35:18.177 PopulistMVP[12780:2455939] Was a photo
+2015-02-04 18:35:18.178 PopulistMVP[12780:2455939] titleContribution.imagePath was set and not empty
+2015-02-04 18:35:18.178 PopulistMVP[12780:2455939] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/C73640E0-0889-4857-8BB3-1AE27187941B/Documents/In5yMpo9Eo.png
+2015-02-04 18:35:18.178 PopulistMVP[12780:2455939] inside getImageAtFilePath
+2015-02-04 18:35:18.178 PopulistMVP[12780:2455939] finished!

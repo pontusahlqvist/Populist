@@ -58,6 +58,7 @@
 
     [self updateEvents];
     [self setupChatButton];
+
 }
 
 //creates and adds the chat button that takes you to your local chat
@@ -153,7 +154,10 @@
     } else{
         UIImageView *backgroundImageView = [[UIImageView alloc] init];
         backgroundImageView.backgroundColor = [UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
-        
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        spinner.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0);
+        [backgroundImageView addSubview:spinner];
+        [spinner startAnimating];
         self.tableView.backgroundView = backgroundImageView;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         return 0;

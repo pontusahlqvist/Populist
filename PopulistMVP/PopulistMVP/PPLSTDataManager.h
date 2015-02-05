@@ -23,11 +23,17 @@
 -(void) updateEventsTo:(NSArray*)newEventsArray;
 @end
 
+@protocol PPLSTDataManagerPushDelegate <NSObject>
+-(void) didAddIncomingContribution:(Contribution*)newContribution ForEvent:(Event*)event;
+@end
+
 #import "Contribution.h"
 #import "PPLSTEventTableViewCell.h"
 #import "JSQMessages.h"
 #import "PPLSTExploreTableViewController.h"
 #import "PPLSTLocationManager.h"
+#import "PPLSTAppDelegate.h"
+#import <Parse/Parse.h>
 
 @class PPLSTExploreTableViewController;
 
@@ -82,7 +88,9 @@
 //Requests download of media for a given JSQMessage and then reloads the appropriate tableview upon completion
 -(void) formatJSQMessage:(JSQMessage*)message ForContribution:(Contribution*)contribution inCollectionView:(UICollectionView*)collectionView;
 
+#pragma mark - Incoming Push Notification Handler
 
+-(void) handleIncomingDataFromPush:(NSDictionary*)data;
 
 #pragma mark - Variables
 
@@ -102,5 +110,6 @@ The worry is that while a core data contribution (created by this user) is being
 @property (strong, nonatomic) NSMutableSet *contributionIds;
 
 @property (weak, nonatomic) id <PPLSTDataManagerDelegate> delegate;
+@property (weak, nonatomic) id <PPLSTDataManagerPushDelegate> pushDelegate;
 
 @end

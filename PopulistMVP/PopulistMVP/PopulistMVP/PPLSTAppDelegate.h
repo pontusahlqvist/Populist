@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PPLSTDataManager.h"
+#import <Parse/Parse.h>
+
+//TODO: make sure all the images are good to go accross multiple devices with varying resolutions
+
+@class PPLSTDataManager;
 
 @interface PPLSTAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -19,4 +25,5 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+@property (strong, nonatomic) PPLSTDataManager *dataManager;
 @end

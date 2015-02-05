@@ -14,9 +14,10 @@
 
 #pragma mark - Parameters
 float veryNearCutoff = 30.0; //in meters
-float cutoffDistance = 100.0; //in meters - TODO: update to 100.0 meters
+float cutoffDistance = 50.0; //in meters - TODO: update to 100.0 meters or something reasonable
 float cutoffTime = 60.0*30; //in seconds - TODO: update to a reasonable time
 int locationUpdateTimeInterval = 60; //in seconds - TODO: update to e.g. every 1 min or so
+int locationUpdateCount = 0; //keeps track of how many times the location has been updated so that we don't wait forever for accurate results
 
 #pragma mark - Initialization
 
@@ -32,7 +33,7 @@ int locationUpdateTimeInterval = 60; //in seconds - TODO: update to e.g. every 1
     self.isUpdatingLocation = NO;
     self.locationManager = [[CLLocationManager alloc] init];
     [self.locationManager requestWhenInUseAuthorization];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation; //kCLLocationAccuracyBest;
     self.locationManager.delegate = self;
     [self startUpdatingLocationWithInterval:locationUpdateTimeInterval];
 }
@@ -54,16 +55,26 @@ int locationUpdateTimeInterval = 60; //in seconds - TODO: update to e.g. every 1
     if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
     
     CLLocation *newLocation = [locations lastObject];
-    NSLog(@"locationManager didUpdateLocation lastObject = %@", newLocation);
+    NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
+    [newLocation horizontalAccuracy];
     if([[NSDate date] timeIntervalSinceDate:newLocation.timestamp] < 10){ //if the new location is newer than 10s old, we're done.
-        [self.locationManager stopUpdatingLocation];
-
-        CLLocation *oldLocation = self.currentLocation;
-        self.currentLocation = newLocation;
-        [self setCurrentLocationStrings];
-        
-        self.isUpdatingLocation = NO;
-        [self.delegate locationUpdatedTo:newLocation From:oldLocation];
+        locationUpdateCount++;
+        //if either location is rather precise, or we've already looked at a certain number of updates, we set the location. Otherwise we keep waiting.
+        if(locationUpdateCount >= 10 || [newLocation horizontalAccuracy] <= 15.0){
+            [self.locationManager stopUpdatingLocation];
+            locationUpdateCount = 0;
+            
+            CLLocation *oldLocation = self.currentLocation;
+            self.currentLocation = newLocation;
+            [self setCurrentLocationStrings];
+            
+            self.isUpdatingLocation = NO;
+            [self.delegate locationUpdatedTo:newLocation From:oldLocation];
+        } else{
+            //This forces a quick update of the location so that the user doesn't have to wait too long
+            [self.locationManager stopUpdatingLocation];
+            [self.locationManager startUpdatingLocation];
+        }
     }
     
 }

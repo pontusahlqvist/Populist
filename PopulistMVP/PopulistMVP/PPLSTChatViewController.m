@@ -52,6 +52,7 @@
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
     
+    //TODO: just make the image the right size from the beginning
     UIImage *image = [self imageWithImage:[UIImage imageNamed:@"mappin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
@@ -59,6 +60,18 @@
     [button addTarget:self action:@selector(openMap) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = barButtonItem;
+    
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
+    [currentInstallation saveInBackground];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    //unsubscribe to this push notification channel
+    //note: push channels must start with letter so we can't just subscribe to the channel given by the event id since that could begin with a number
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation removeObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
+    [currentInstallation saveInBackground];
 }
 
 //opens the map to the given location
@@ -72,6 +85,7 @@
     [super viewDidAppear:animated]; //TODO: I think this causes the snap-to-bottom each time, even when the user returns from the image detailed view
     //let the data manager know that this is the current VC
     self.locationManager.delegate = self;
+    self.dataManager.pushDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,6 +93,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     NSLog(@"didReceiveMemoryWarning in chatVC");
+}
+
+#pragma mark - Lazy Instantiation
+
+-(NSMutableSet *)userIds{
+    if(!_userIds) _userIds = [[NSMutableSet alloc] init];
+    return _userIds;
 }
 
 #pragma mark - PPLSTLocationManagerDelegate Methods
@@ -107,6 +128,20 @@
 -(void)didAcceptAuthorization{}
 -(void)didDeclineAuthorization{}
 
+#pragma mark - PPLSTDataManagerPushDelegate
+
+-(void)didAddIncomingContribution:(Contribution *)newContribution ForEvent:(Event *)event{
+    NSLog(@"didAddIncomingContribution:%@ ForEvent:%@", newContribution, event);
+    if(![event.eventId isEqualToString:self.event.eventId]){
+        return; //shouldn't be part of this event
+    }
+    [self handleUserId:newContribution.contributingUserId];
+    [self.contributions addObject:newContribution];
+    [self.jsqMessages addObject:[[self createMessagesFromContributions:@[newContribution]] firstObject]];
+    [self.collectionView reloadData];
+    [self scrollToBottomAnimated:YES];
+}
+
 #pragma mark - Prepare for Load
 
 -(void) prepareForLoad{
@@ -124,6 +159,8 @@
         self.jsqMessages = [self createMessagesFromContributions:self.contributions];
         
         self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
+        self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
+        NSLog(@"userIds = %@", self.userIds);
 
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];
@@ -232,7 +269,6 @@
     [self.collectionView reloadData];
 }
 
-//TODO: customize the imagePicker!
 -(void)didPressAccessoryButton:(UIButton *)sender{
     if(![self.event.containsUser isEqualToNumber:@1]){
         return; //can't contribute to the event
@@ -342,9 +378,21 @@
         [self.dataManager increaseImportanceOfEvent:self.event By:2.0];
     }
     self.event.lastActive = [NSDate date];
+    [self handleUserId:newContribution.contributingUserId];
+}
+
+//handles the collection of userIds and determins if we should update avatars.
+-(void) handleUserId:(NSString*)userId{
+    if(![self.userIds containsObject:userId]){
+        [self.userIds addObject:userId];
+        self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
+        //TODO: do we need to reload the collection view? It should be updated in the calling functions code anyway, so likely not.
+        //on the other hand, we will be handing this off to parse, so it will run in a background thread. As a result, we'll have to wait for a call-back. This callback will potentially occur after the collection view has already been reloaded.
+    }
 }
 
 #pragma mark - Image Helper Methods
+//TODO: get rid of all of these image methods. We shouldn't need them if we already scale the image properly in the imagepicker.
 
 //scales down an image to the given horizontal size while maintaining the proportions
 -(UIImage*) imageWithImage:(UIImage*)image scaledDownToHorizontalPoints:(float)horizontal{

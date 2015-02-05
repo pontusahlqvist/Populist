@@ -14,7 +14,7 @@
 		<string>Populist-60@2x.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>co.populistapp.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>io.populist.PopulistMVPDev</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

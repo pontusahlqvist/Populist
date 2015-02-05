@@ -20,6 +20,8 @@
         id delegate = [[UIApplication sharedApplication] delegate];
         self.context = [delegate managedObjectContext];
         self.contributingUserId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
+        appDelegate.dataManager = self;
         [self createAvatarForStatusDictionary];
     }
     return self;
@@ -43,6 +45,18 @@
     return _avatarForStatus;
 }
 
+-(UIImage*) drawText:(NSString*)text atCenterOfImage:(UIImage*)image{
+    UIFont *font = [UIFont boldSystemFontOfSize:150];
+    UIGraphicsBeginImageContext(image.size);
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    CGRect rect = CGRectMake(image.size.width/3.0, image.size.height/10.0, image.size.width, image.size.height);
+    [[UIColor whiteColor] set];
+    [text drawInRect:rect withAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor whiteColor]}]; //TODO: change to withAttributes
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 -(void) createAvatarForStatusDictionary{
     NSLog(@"PPLSTDataManager - createAvatarForStatusDictionary");
     NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
@@ -52,13 +66,23 @@
     [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
     [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
     [avatarRawImages addObject:[UIImage imageNamed:@"darkBlue.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
+    UIImage *greyBackground = [UIImage imageNamed:@"grey.jpg"];
+    NSArray *textOverlays = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+    for(int i = 0; i < [textOverlays count]; i++){
+        [avatarRawImages addObject:[self drawText:textOverlays[i] atCenterOfImage:greyBackground]];
+    }
+
     int status = 0;
     for(UIImage *avatarRawImage in avatarRawImages){
         JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
         [self.avatarForStatus setObject:avatarImage forKey:[NSNumber numberWithInt:status]];
         status++;
     }
+}
+
+-(NSMutableSet *)contributionIds{
+    if(!_contributionIds) _contributionIds = [[NSMutableSet alloc] init];
+    return _contributionIds;
 }
 
 #pragma mark - Server Side Data Related API
@@ -360,6 +384,26 @@
             //get the object id and reassign it locally
             NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
             contribution.contributionId = objectId;
+            NSLog(@"just found out that the objectId = %@", objectId);
+            NSLog(@"before - self.contributionIds = %@", self.contributionIds);
+            [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
+            NSLog(@"after - self.contributionIds = %@", self.contributionIds);
+            //send push notification
+            NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
+            pushData[@"alert"] = @"New stuff at your event!";
+            pushData[@"c"] = objectId;
+            pushData[@"t"] = contribution.contributionType;
+            pushData[@"u"] = contribution.contributingUserId;
+            pushData[@"e"] = contribution.event.eventId;
+            if([contribution.contributionType isEqualToString:@"message"]){
+                pushData[@"m"] = contribution.message; //TODO: what if message is too long?
+            }
+            PFPush *pushNotification = [[PFPush alloc] init];
+            [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
+            [pushNotification setData:pushData];
+            [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
+            [pushNotification sendPushInBackground];
+            
             [self saveCoreData]; //TODO: does this screw things up because it's in a different thread as far as the ManagedObjectContext goes?
         }];
     });
@@ -406,10 +450,40 @@
     return events[0];
 }
 
+#pragma mark - Incoming Data From Push Notifications
+
+-(void) handleIncomingDataFromPush:(NSDictionary*)data{
+    NSLog(@"PPLSTDataManager - handleIncomingDataFromPush");
+    NSString *contributionId = data[@"c"];
+    if(![self.contributionIds containsObject:contributionId]){
+        NSLog(@"it did not contain the id:%@ so we're adding it now...", contributionId);
+        [self.contributionIds addObject:contributionId];
+        //it's a new contribution
+        Contribution *newIncomingContribution = [self createContributionWithId:contributionId];
+        newIncomingContribution.contributingUserId = data[@"u"];
+        newIncomingContribution.contributionType = data[@"t"];
+        newIncomingContribution.createdAt = [NSDate date]; //TODO: update to actual date to make sure order is the same throughout all feeds
+        newIncomingContribution.imagePath = nil;
+        newIncomingContribution.latitude = nil;
+        newIncomingContribution.longitude = nil;
+        if([data[@"t"] isEqualToString:@"message"]){
+            newIncomingContribution.message = data[@"m"];
+        }
+        Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"]];
+        newIncomingContribution.event = eventToWhichThisContributionBelongs;
+        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"]]; //TODO: is there any case where the event may not already exist?
+        //TODO: make sure to update the detailed view with this new info. Also update the explore view if this was a photo.
+        [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventForIncomingContribution];
+    }
+}
+
 #pragma mark - Local Data API
 
 -(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
     NSLog(@"PPLSTDataManager - avatarForStatus:%@",status);
+    if([status integerValue] >= [self.avatarForStatus count] - 1){
+        return self.avatarForStatus[[NSNumber numberWithInteger:[self.avatarForStatus count] - 1 ]];
+    }
     return self.avatarForStatus[status];
 }
 

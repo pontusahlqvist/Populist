@@ -19,15 +19,19 @@
 {
     //TODO: look into this: [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
-    [Parse enableLocalDatastore];
+//    [Parse enableLocalDatastore];
  
     // Initialize Parse.
     /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
     The other ones are just meant for testing!
     */
+    //These are for Populist
     [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
                   clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
-
+    //These are for PopulistDev
+//    [Parse setApplicationId:@"9QBXXnp5slVEcnO4yofC8V6mh2UhbCIUEuWb6pIf"
+//                  clientKey:@"MG7WGsU9FAkrT9ciEiH59ns0emRLcWJj5vOQaoOa"];
+    
     //These are the old credentials below
 //    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
 //                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
@@ -35,7 +39,34 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                  UIUserNotificationTypeBadge |
+                                                  UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                           categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  // Store the deviceToken in the current installation and save it to Parse.
+    NSLog(@"didRegisterForRemoteNotificationWithDeviceToken:%@", deviceToken);
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    currentInstallation.channels = @[ @"global" ];
+    [currentInstallation saveInBackground];
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    //TODO: remove this
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"error: %@",error] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    //TODO: make sure to check to see what the channel is. If it doesn't start with "event", it might be a generic notification.
+    [self.dataManager handleIncomingDataFromPush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
