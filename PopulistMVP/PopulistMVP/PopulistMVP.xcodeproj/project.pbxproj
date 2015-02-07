@@ -111,6 +111,14 @@
 		16888AA81A7FE6D300AC4F60 /* acceptSmallGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 16888AA71A7FE6D300AC4F60 /* acceptSmallGreen.png */; };
 		16888AAA1A7FE72E00AC4F60 /* accept@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16888AA91A7FE72E00AC4F60 /* accept@2x.png */; };
 		16888AAC1A7FE7B500AC4F60 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16888AAB1A7FE7B500AC4F60 /* cancel@2x.png */; };
+		16E619191A83EB7000FBAAB3 /* map-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619181A83EB7000FBAAB3 /* map-pin.png */; };
+		16E6191C1A83F3E300FBAAB3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6191B1A83F3E300FBAAB3 /* Reachability.m */; };
+		16E6191F1A855B6500FBAAB3 /* PPLSTReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6191E1A855B6500FBAAB3 /* PPLSTReportView.m */; };
+		16E619221A85847B00FBAAB3 /* flag_icon_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619211A85847B00FBAAB3 /* flag_icon_w.png */; };
+		16E619241A85872C00FBAAB3 /* black-filled-flag-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619231A85872C00FBAAB3 /* black-filled-flag-48.png */; };
+		16E619261A85877400FBAAB3 /* black-filled-flag-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619251A85877400FBAAB3 /* black-filled-flag-32.png */; };
+		16E619281A85880D00FBAAB3 /* flag-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619271A85880D00FBAAB3 /* flag-64.png */; };
+		16E6192A1A8589F900FBAAB3 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E619291A8589F900FBAAB3 /* flag.png */; };
 		16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */; };
 		16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF691A7C167A001BD00F /* launchImagev2.png */; };
 		16F3FF6E1A7C32E3001BD00F /* takePicture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */; };
@@ -325,6 +333,16 @@
 		16888AA71A7FE6D300AC4F60 /* acceptSmallGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acceptSmallGreen.png; sourceTree = "<group>"; };
 		16888AA91A7FE72E00AC4F60 /* accept@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accept@2x.png"; sourceTree = "<group>"; };
 		16888AAB1A7FE7B500AC4F60 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
+		16E619181A83EB7000FBAAB3 /* map-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-pin.png"; sourceTree = "<group>"; };
+		16E6191A1A83F3E300FBAAB3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		16E6191B1A83F3E300FBAAB3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		16E6191D1A855B6500FBAAB3 /* PPLSTReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTReportView.h; sourceTree = "<group>"; };
+		16E6191E1A855B6500FBAAB3 /* PPLSTReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTReportView.m; sourceTree = "<group>"; };
+		16E619211A85847B00FBAAB3 /* flag_icon_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag_icon_w.png; sourceTree = "<group>"; };
+		16E619231A85872C00FBAAB3 /* black-filled-flag-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-filled-flag-48.png"; sourceTree = "<group>"; };
+		16E619251A85877400FBAAB3 /* black-filled-flag-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-filled-flag-32.png"; sourceTree = "<group>"; };
+		16E619271A85880D00FBAAB3 /* flag-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-64.png"; sourceTree = "<group>"; };
+		16E619291A8589F900FBAAB3 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.PNG"; sourceTree = "<group>"; };
 		16F3FF691A7C167A001BD00F /* launchImagev2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImagev2.png; sourceTree = "<group>"; };
 		16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takePicture@2x.png"; sourceTree = "<group>"; };
@@ -606,6 +624,8 @@
 			children = (
 				167F78A51A58725E00C7AB64 /* PPLSTAppDelegate.h */,
 				167F78A61A58725E00C7AB64 /* PPLSTAppDelegate.m */,
+				16E6191A1A83F3E300FBAAB3 /* Reachability.h */,
+				16E6191B1A83F3E300FBAAB3 /* Reachability.m */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -613,6 +633,7 @@
 		165346DE1A5E207600343183 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				16E619201A855B7000FBAAB3 /* Report View */,
 				167F78D21A5876C600C7AB64 /* TableViewCells */,
 			);
 			name = Views;
@@ -687,7 +708,6 @@
 		167F789D1A58725E00C7AB64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				16671E471A6C472C00AD394F /* camera@2x.png */,
 				163E3DAD1A64DEE900913FBF /* JSQSystemSoundPlayer */,
 				163E3D9E1A64DD8000913FBF /* Assets */,
 				163E3D061A64DD3600913FBF /* JSQMessagesViewController */,
@@ -696,6 +716,7 @@
 				16671E491A6C479A00AD394F /* camera.png */,
 				16F7DAC41A723E28003215E9 /* Color Images for Avatars */,
 				16F7DAAE1A722EF1003215E9 /* message.png */,
+				16671E471A6C472C00AD394F /* camera@2x.png */,
 				160372671A7F39AC00D4802C /* flashOn32.png */,
 				160372691A7F39B600D4802C /* flashOff32.png */,
 				1603726D1A7F3AD100D4802C /* flashOn48.png */,
@@ -703,6 +724,11 @@
 				160372711A7F3ADA00D4802C /* flashAuto48.png */,
 				1603726B1A7F39BC00D4802C /* flashAuto32.png */,
 				16F3FF731A7EB9A0001BD00F /* reverse.png */,
+				16E619291A8589F900FBAAB3 /* flag.png */,
+				16E619211A85847B00FBAAB3 /* flag_icon_w.png */,
+				16E619231A85872C00FBAAB3 /* black-filled-flag-48.png */,
+				16E619251A85877400FBAAB3 /* black-filled-flag-32.png */,
+				16E619271A85880D00FBAAB3 /* flag-64.png */,
 				16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */,
 				16F3FF691A7C167A001BD00F /* launchImagev2.png */,
 				16F3FF751A7EBA01001BD00F /* reverse_small.png */,
@@ -721,6 +747,7 @@
 				16F3FF7D1A7EDD27001BD00F /* reverseCameraBlue48.png */,
 				160372631A7F24F900D4802C /* flash48.png */,
 				16F7DAB61A723A27003215E9 /* mappin.png */,
+				16E619181A83EB7000FBAAB3 /* map-pin.png */,
 				16F7DAB41A7239EE003215E9 /* pin.png */,
 				16F7DAB01A723235003215E9 /* compose.png */,
 				16F7DAAB1A722A54003215E9 /* Populist-60@2x.png */,
@@ -781,6 +808,15 @@
 				167F78D01A5876C000C7AB64 /* PPLSTEventTableViewCell.m */,
 			);
 			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		16E619201A855B7000FBAAB3 /* Report View */ = {
+			isa = PBXGroup;
+			children = (
+				16E6191D1A855B6500FBAAB3 /* PPLSTReportView.h */,
+				16E6191E1A855B6500FBAAB3 /* PPLSTReportView.m */,
+			);
+			name = "Report View";
 			sourceTree = "<group>";
 		};
 		16F7DAC41A723E28003215E9 /* Color Images for Avatars */ = {
@@ -895,13 +931,16 @@
 				1603726C1A7F39BC00D4802C /* flashAuto32.png in Resources */,
 				16F7DAC11A723E1C003215E9 /* grey.jpg in Resources */,
 				16F3FF7C1A7EDCE9001BD00F /* reverseCameraBlue32.png in Resources */,
+				16E619221A85847B00FBAAB3 /* flag_icon_w.png in Resources */,
 				1603726E1A7F3AD100D4802C /* flashOn48.png in Resources */,
 				16F3FF801A7EE20B001BD00F /* cancel.png in Resources */,
 				167F78DC1A5926E800C7AB64 /* nyc.jpg in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
+				16E619241A85872C00FBAAB3 /* black-filled-flag-48.png in Resources */,
 				1603726A1A7F39B600D4802C /* flashOff32.png in Resources */,
 				161102A61A6D75E60022796E /* iPhone6LaunchScreen.png in Resources */,
 				160372661A7F276700D4802C /* flashOff.png in Resources */,
+				16E619281A85880D00FBAAB3 /* flag-64.png in Resources */,
 				16888AA61A7FE5AA00AC4F60 /* accept.png in Resources */,
 				16F7DABF1A723E1C003215E9 /* darkBlue.jpg in Resources */,
 				16F7DAB51A7239EE003215E9 /* pin.png in Resources */,
@@ -925,6 +964,7 @@
 				16F7DAB71A723A27003215E9 /* mappin.png in Resources */,
 				16F3FF721A7EB4F6001BD00F /* reverseCamera.png in Resources */,
 				163E3DA71A64DD8000913FBF /* jsq_messages_banner.png in Resources */,
+				16E619261A85877400FBAAB3 /* black-filled-flag-32.png in Resources */,
 				16F7DAB11A723235003215E9 /* compose.png in Resources */,
 				16F7DAA61A704615003215E9 /* IMG_4699.jpg in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
@@ -937,6 +977,8 @@
 				163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */,
 				167F78CA1A58727500C7AB64 /* Storyboard.storyboard in Resources */,
 				163E3D911A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
+				16E619191A83EB7000FBAAB3 /* map-pin.png in Resources */,
+				16E6192A1A8589F900FBAAB3 /* flag.png in Resources */,
 				16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */,
 				16888AAC1A7FE7B500AC4F60 /* cancel@2x.png in Resources */,
 				16F3FF7A1A7EDCA0001BD00F /* reverseCameraBlue.png in Resources */,
@@ -974,9 +1016,11 @@
 				165346E11A5E21E600343183 /* PPLSTNavigationController.m in Sources */,
 				163E3D871A64DD3600913FBF /* JSQMediaItem.m in Sources */,
 				163E3D991A64DD3600913FBF /* JSQMessagesMediaPlaceholderView.m in Sources */,
+				16E6191C1A83F3E300FBAAB3 /* Reachability.m in Sources */,
 				163E3D7C1A64DD3600913FBF /* JSQMessagesViewController.m in Sources */,
 				163E3D901A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				163E3D831A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
+				16E6191F1A855B6500FBAAB3 /* PPLSTReportView.m in Sources */,
 				163E3D7F1A64DD3600913FBF /* JSQMessagesBubbleImageFactory.m in Sources */,
 				163E3D851A64DD3600913FBF /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				16F7DAD71A78031C003215E9 /* Contribution.m in Sources */,

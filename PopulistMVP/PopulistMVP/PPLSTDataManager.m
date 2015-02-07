@@ -450,6 +450,19 @@
     return events[0];
 }
 
+-(void) flagContribution:(Contribution*) contributionToBeFlagged{
+    [PFCloud callFunctionInBackground:@"flagContribution" withParameters:@{@"contributionId":contributionToBeFlagged.contributionId, @"clusterId":contributionToBeFlagged.event.eventId, @"userId":self.contributingUserId} block:^(id object, NSError *error) {
+        NSLog(@"flag error = %@", error);
+        if(!error){
+            UIAlertView *reportSuccessAlertView = [[UIAlertView alloc] initWithTitle:@"Thanks!" message:@"Thanks for reporting this piece of content! We have forwarded this to one of our reviewers. At Populist we take the integrity of our service very seriously and appreciate people like you who keep an eye out for bad stuff. Keep up the good work!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [reportSuccessAlertView show];
+        } else{
+            UIAlertView *reportErrorAlertView = [[UIAlertView alloc] initWithTitle:@"Hmmm..." message:@"It seems like we encountered an error when attempting to flag this piece of content. Please try flagging this in a bit." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [reportErrorAlertView show];
+        }
+    }];
+}
+
 #pragma mark - Incoming Data From Push Notifications
 
 -(void) handleIncomingDataFromPush:(NSDictionary*)data{
@@ -562,6 +575,9 @@
                 });
             });
         }
+    } else{
+        //TODO: check if the message is set. If not, we must download it from parse.
+        
     }
 }
 

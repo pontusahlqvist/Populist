@@ -48,7 +48,7 @@ var beta = 11111.1
 var alpha0 = 1.4489501
 var beta0 = 0.000073628
 //adding to cluster parameters
-var thresholdToAdd = 0.003;
+var thresholdToAdd = 0.002; //originally 0.003, but decreased to increase likelyhood of adding.
 //var multiplier = 1.0; //the issue with setting this to something other than 1 is that if two nearby photos create two separate clusters, other photos will always start their own clusters.
 //merge two clusters parameters
 //var mergeThresholdSpace = 3.0;
@@ -57,8 +57,8 @@ var thresholdToMerge = thresholdToAdd;
 //space and time cutoffs to avoid having to look through too many clusters.
 var minuteCutoffAdd = 60*2; // default 120
 var minuteCutoffMerge = 60*1;
-var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
-var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
+var minuteCutoffGetLocal = 60*24*7;//60*24*7;
+var minuteCutoffGetGlobal = 60*24*7;//60*24*7;
 var maxMilesToAdd = 0.1;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
@@ -67,9 +67,9 @@ var minGlobalFitValue = 1.0;
 //local stuff
 var localGettingMilesCutoff = 10;
 var typicalDistanceForGettingLocal = 10;
-var secondDecayForLocalGetting = 60*60*24*7*10; //typical time decay for finding a nearby cluster (since last update)
+var secondDecayForLocalGetting = 60*60*24*7; //typical time decay for finding a nearby cluster (since last update)
 //global stuff
-var secondDecayForGlobalGetting = 60*60*24*7*10;
+var secondDecayForGlobalGetting = 60*60*24*7;
 var globalImportanceThreshold = 2; //this will have to start out small and increase over time as more people join the service.
 
 /*powerUsers are userIds which are allowed to artificially inflate the importance of an event.*/
@@ -823,18 +823,31 @@ Parse.Cloud.define("flagContribution", function(request, response){
     var clusterId = request.params.clusterId;
     var userId = request.params.userId;
 
+    var contributionSaveDone = false;
+    var clusterSaveDone = false;
+
     //TODO: use pointers here to cut down one API call.
     var contributionQuery = new Parse.Query("Contribution");
     contributionQuery.get(contributionId);
     contributionQuery.find({
         success: function(resultingContribution){
+            contributionSaveDone = true;
             if(resultingContribution.length > 0){
                 var contribution = resultingContribution[0];
-                contribution.add("flaggedBy", userId);
-                contribution.increment("reviewCount", 1);
+                var flaggedBy = contribution.get("flaggedBy");
+                if(flaggedBy.indexOf(userId) == -1){ //only allow each user to flag a piece of content once
+                    contribution.add("flaggedBy", userId);
+                    contribution.increment("reviewCount", 1);
+                }
                 contribution.set("reSaved", 1);
                 contribution.save();
             }
+            if(contributionSaveDone && clusterSaveDone){
+                response.success();
+            }
+        },
+        error: function(error){
+            response.error(error);
         }
     });
     if(clusterId != "none"){
@@ -842,22 +855,37 @@ Parse.Cloud.define("flagContribution", function(request, response){
         clusterQuery.get(clusterId);
         clusterQuery.find({
             success: function(resultingCluster){
+                clusterSaveDone = true;
                 if(resultingCluster.length > 0){
                     var cluster = resultingCluster[0];
                     var titlePhotoIdArray = cluster.get("titlePhotoIdArray");
-                    var titleMessageIdArray = cluster.get("titleMessageId");
+//                    var titleMessageIdArray = cluster.get("titleMessageId");
                     //go through each array and delete the given contributionId
                     var indexOfContributionInTitlePhotoIdArray = titlePhotoIdArray.indexOf(contributionId);
-                    var indexOfContributionInTitleMessageIdArray = titleMessageIdArray.indexOf(contributionId);
+//                    var indexOfContributionInTitleMessageIdArray = titleMessageIdArray.indexOf(contributionId);
                     if(indexOfContributionInTitlePhotoIdArray != -1){
+                        console.log("1 - array"+titlePhotoIdArray);
                         titlePhotoIdArray.splice(indexOfContributionInTitlePhotoIdArray, 1);
+                        console.log("2 - array"+titlePhotoIdArray);
+                        cluster.set("titlePhotoIdArray",titlePhotoIdArray);
                     } else if(indexOfContributionInTitleMessageIdArray != -1){
-                        titleMessageIdArray.splice(indexOfContributionInTitleMessageIdArray, 1);
+  //                      titleMessageIdArray.splice(indexOfContributionInTitleMessageIdArray, 1);
                     }
                     cluster.save();
                 }
+                if(contributionSaveDone && clusterSaveDone){
+                    response.success();
+                }
+            },
+            error: function(error){
+                response.error(error);
             }
         });
+    } else{
+        clusterSaveDone = true;
+        if(contributionSaveDone && clusterSaveDone){
+            response.success();
+        }
     }
 })
 

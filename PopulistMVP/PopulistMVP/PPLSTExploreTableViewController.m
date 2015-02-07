@@ -34,6 +34,14 @@
 {
     [super viewDidLoad];
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        return;
+    }
+
+    
+    
     // Do any additional setup after loading the view.
 
     self.locationManager = [[PPLSTLocationManager alloc] init];

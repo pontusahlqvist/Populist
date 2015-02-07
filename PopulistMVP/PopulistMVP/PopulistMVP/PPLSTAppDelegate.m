@@ -17,37 +17,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //TODO: look into this: [Optional] Power your app with Local Datastore. For more info, go to
-    // https://parse.com/docs/ios_guide#localdatastore/iOS
-//    [Parse enableLocalDatastore];
- 
-    // Initialize Parse.
-    /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
-    The other ones are just meant for testing!
-    */
-    //These are for Populist
-    [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
-                  clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
-    //These are for PopulistDev
-//    [Parse setApplicationId:@"9QBXXnp5slVEcnO4yofC8V6mh2UhbCIUEuWb6pIf"
-//                  clientKey:@"MG7WGsU9FAkrT9ciEiH59ns0emRLcWJj5vOQaoOa"];
-    
-    //These are the old credentials below
-//    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
-//                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
- 
-    // [Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        NSLog(@"There IS NO internet connection");
+        UIAlertView *internetIssueAlert = [[UIAlertView alloc] initWithTitle:@"Failed to connect to the internet" message:@"It seems like your internet connection is a bit spotty right now. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [internetIssueAlert show];
+    } else{
+        //TODO: look into this: [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios_guide#localdatastore/iOS
+    //    [Parse enableLocalDatastore];
+     
+        // Initialize Parse.
+        /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
+        The other ones are just meant for testing!
+        */
+        //These are for Populist
+        [Parse setApplicationId:@"HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye"
+                      clientKey:@"yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja"];
+        //These are for PopulistDev
+    //    [Parse setApplicationId:@"9QBXXnp5slVEcnO4yofC8V6mh2UhbCIUEuWb6pIf"
+    //                  clientKey:@"MG7WGsU9FAkrT9ciEiH59ns0emRLcWJj5vOQaoOa"];
+        
+        //These are the old credentials below
+    //    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
+    //                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
+     
+        // [Optional] Track statistics around application opens.
+        [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
-    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
-                                                  UIUserNotificationTypeBadge |
-                                                  UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
-                                                                           categories:nil];
-    [application registerUserNotificationSettings:settings];
-    [application registerForRemoteNotifications];
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                      UIUserNotificationTypeBadge |
+                                                      UIUserNotificationTypeSound);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                               categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications]; 
+    }
     return YES;
 }
+
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
   // Store the deviceToken in the current installation and save it to Parse.

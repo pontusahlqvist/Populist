@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PPLSTReportView.h"
+#import "Contribution.h"
+#import "PPLSTDataManager.h"
 //TODO: Allow the user to zoom
 //TODO: Make this view look better. Perhaps use modal instead of push segue and add some close functionality
 
-@interface PPLSTImageDetailViewController : UIViewController
+@interface PPLSTImageDetailViewController : UIViewController <PPLSTReportViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) Contribution *contribution;
+
+@property (strong, nonatomic) PPLSTReportView *reportView;
+@property (strong, nonatomic) PPLSTDataManager *dataManager;
 @end

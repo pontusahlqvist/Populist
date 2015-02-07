@@ -64,6 +64,7 @@
 
 -(Event*) eventThatUserBelongsTo;
 
+-(void) flagContribution:(Contribution*) contributionToBeFlagged;
 #pragma mark - Local Data API
 
 //returns the avatar that each status should have

@@ -57,7 +57,7 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
     CLLocation *newLocation = [locations lastObject];
     NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
     [newLocation horizontalAccuracy];
-    if([[NSDate date] timeIntervalSinceDate:newLocation.timestamp] < 10){ //if the new location is newer than 10s old, we're done.
+    if([[NSDate date] timeIntervalSinceDate:newLocation.timestamp] < 5){ //if the new location is newer than 10s old, we're done.
         locationUpdateCount++;
         //if either location is rather precise, or we've already looked at a certain number of updates, we set the location. Otherwise we keep waiting.
         if(locationUpdateCount >= 10 || [newLocation horizontalAccuracy] <= 15.0){

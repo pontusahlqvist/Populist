@@ -53,7 +53,7 @@
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
     
     //TODO: just make the image the right size from the beginning
-    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"mappin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"map-pin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
     [button setImage:image forState:UIControlStateNormal];
@@ -199,6 +199,8 @@
             //TODO: consider placing image inside contribution instead
             JSQPhotoMediaItem *photo = (JSQPhotoMediaItem*)[message media];
             destinationVC.image = photo.image;
+            destinationVC.contribution = self.contributions[indexPath.row];
+            destinationVC.dataManager = self.dataManager;
         }
     }
 }
@@ -298,7 +300,16 @@
     Contribution *contribution = self.contributions[indexPath.row];
     if([contribution.contributionType isEqualToString:@"photo"]){
         [self performSegueWithIdentifier:@"Segue To Image Detail" sender:indexPath]; //tapped a photo
+    } else if([contribution.contributionType isEqualToString:@"message"]){
+        [self displayReportOptionForContribution:contribution];
     }
+}
+
+-(void) displayReportOptionForContribution:(Contribution*) contribution{
+    self.reportView = [[PPLSTReportView alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] bounds] andContribution:contribution];
+    self.reportView.delegate = self;
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self.reportView];
+    [self.reportView animateAdd];
 }
 
 #pragma mark - ImagePicker Delegate
@@ -348,6 +359,16 @@
 //    [self.collectionView reloadData];
 //    
 ////    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - PPLSTReportViewDelegate Methods
+
+-(void)didPressReportButtonForContribution:(Contribution *)contribution{
+    //TODO: also report the contribution
+    [self.dataManager flagContribution:contribution];
+}
+-(void)didPressCancelButton{
+    NSLog(@"didPressCancelButton");
 }
 
 #pragma mark - Helper Methods

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
+#import "Reachability.h"
 
 //TODO: make sure all the images are good to go accross multiple devices with varying resolutions
 
