@@ -123,8 +123,19 @@
     [overlayTop addSubview:self.reverseCameraButton];
     
     self.toggleFlash = [[UIButton alloc] init];
-    self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
-    [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+
+    NSString *flashPreference = [[NSUserDefaults standardUserDefaults] objectForKey:@"flashPreference"];
+    if([flashPreference isEqualToString:@"auto"]){
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+    } else if([flashPreference isEqualToString:@"on"]){
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+    } else{
+        self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+    }
+    
     self.toggleFlash.translatesAutoresizingMaskIntoConstraints = NO;
     [self.toggleFlash addTarget:self action:@selector(handleToggleFlash:) forControlEvents:UIControlEventTouchUpInside];
     [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.toggleFlash
@@ -204,16 +215,21 @@
         //can't toggle flash when front facing.
         return;
     }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeAuto){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
         [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+        [userDefaults setObject:@"off" forKey:@"flashPreference"];
     } else if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeOff){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
         [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+        [userDefaults setObject:@"on" forKey:@"flashPreference"];
     } else{
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
         [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+        [userDefaults setObject:@"auto" forKey:@"flashPreference"];
     }
+    [userDefaults synchronize];
 }
 
 - (void)didReceiveMemoryWarning

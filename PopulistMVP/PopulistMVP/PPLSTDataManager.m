@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+// TODO: make sure to update title image and time stamp on incoming contributions
+
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 
@@ -19,6 +21,8 @@
     if(self){
         id delegate = [[UIApplication sharedApplication] delegate];
         self.context = [delegate managedObjectContext];
+        //setup a listener to see if other contexts on other threads have been saved
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contextHasChanged:) name:NSManagedObjectContextDidSaveNotification object:nil];
         self.contributingUserId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
         appDelegate.dataManager = self;
@@ -27,6 +31,17 @@
     return self;
 }
 
+#pragma mark - NSManagedObjectContext Save Notification
+
+-(void) contextHasChanged:(NSNotification*)notification{
+    if ([notification object] == [self context]) return;
+
+    if (![NSThread isMainThread]) {
+        [self performSelectorOnMainThread:@selector(contextHasChanged:) withObject:notification waitUntilDone:YES];
+        return;
+    }
+    [[self context] mergeChangesFromContextDidSaveNotification:notification];
+}
 
 #pragma mark - Setup / Instantiation Methods
 
@@ -137,7 +152,7 @@
         PFObject *newEvent = [self sendSignalWithLatitude:latitude andLongitude:longitude andDate:date];
         NSString *eventId = newEvent.objectId;
         NSLog(@"about to create core data event with id = %@", eventId);
-        Event *currentEvent = [self createEventWithId:eventId];
+        Event *currentEvent = [self createEventWithId:eventId inContext:self.context];
         currentEvent.city = [newEvent objectForKey:@"city"];
         currentEvent.country = [newEvent objectForKey:@"country"];
         currentEvent.containsUser = @1;
@@ -155,7 +170,7 @@
 
         self.currentEvent = currentEvent;
 
-        [self saveCoreData];
+        [self saveCoreDataInContext:self.context];
         
         [eventsFromCloud insertObject:currentEvent atIndex:0];
         return eventsFromCloud;
@@ -173,8 +188,8 @@
         NSLog(@"eventDictionary = %@", eventDictionary);
         NSString *eventId = eventDictionary[@"objectId"];
 
-        Event *event = [self getEventFromCoreDataWithId:eventId];
-        if(!event) event = [self createEventWithId:eventId];
+        Event *event = [self getEventFromCoreDataWithId:eventId inContext:self.context];
+        if(!event) event = [self createEventWithId:eventId inContext:self.context];
         
         event.city = eventDictionary[@"city"];
         event.containsUser = [NSNumber numberWithBool:[eventDictionary[@"containsUser"] boolValue]];
@@ -206,9 +221,9 @@
                 }
             }
 
-            Contribution *titleContribution = [self getContributionFromCoreDataWithId:titleContributionId];
+            Contribution *titleContribution = [self getContributionFromCoreDataWithId:titleContributionId inContext:self.context];
             if(!titleContribution){
-                titleContribution = [self createContributionWithId:titleContributionId];
+                titleContribution = [self createContributionWithId:titleContributionId inContext:self.context];
                 titleContribution.contributingUserId = @"";
                 titleContribution.contributionType = @"photo";
                 titleContribution.createdAt = [event.lastActive copy]; //be careful not to point to the same date object
@@ -224,20 +239,20 @@
         [events addObject:event];
     }
         
-    [self saveCoreData];
+    [self saveCoreDataInContext:self.context];
     return events;
 }
 
 
--(NSArray*) downloadContributionMetaDataForEvent:(Event*)event{
+-(NSArray*) downloadContributionMetaDataForEvent:(Event*)event inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - downloadContributionMetaDataForEvent:%@",event);
     NSDictionary *result = [PFCloud callFunction:@"getContributionIdsInCluster" withParameters:@{@"clusterId" : event.eventId}];
     NSArray *arrayOfContributionData = result[@"contributionIds"];
     NSMutableArray *contributions = [[NSMutableArray alloc] init];
     for(NSDictionary *contributionData in arrayOfContributionData){
         NSString *contributionId = contributionData[@"contributionId"];
-        Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId];
-        if(!newContribution) newContribution = [self createContributionWithId:contributionId];
+        Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
+        if(!newContribution) newContribution = [self createContributionWithId:contributionId inContext:self.context];
 
         newContribution.contributingUserId = contributionData[@"userId"];
         newContribution.contributionType = contributionData[@"type"];
@@ -255,7 +270,7 @@
         [contributions addObject:newContribution];
     }
 
-    [self saveCoreData];
+    [self saveCoreDataInContext:context];
     
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
@@ -267,7 +282,7 @@
 
 
 //by now, there should already exist a contribution object in core data. Here we just update the object.
--(Contribution*) downloadMediaForContribution:(Contribution*)contribution{
+-(Contribution*) downloadMediaForContribution:(Contribution*)contribution inContext:(NSManagedObjectContext*) context{
     NSLog(@"PPLSTDataManager - downloadMediaForContribution:%@",contribution);
     if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
         //TODO: perhaps change this to different images for different events? Maybe create images on the fly with some text indicating their location?
@@ -293,7 +308,7 @@
     }
     NSLog(@"C");
     
-    [self saveCoreData];
+    [self saveCoreDataInContext:context];
     
     return contribution;
 }
@@ -301,7 +316,7 @@
 
 -(Contribution *) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo{
     NSLog(@"PPLSTDataManager - uploadContributionWithData:%@ andPhoto%@",contributionDictionary, photo);
-    Contribution *newContribution = [self createContributionWithId:[NSString stringWithFormat:@"tmpId%i",rand()]];
+    Contribution *newContribution = [self createContributionWithId:[NSString stringWithFormat:@"tmpId%i",rand()] inContext:self.context];
 
     if([[contributionDictionary allKeys] containsObject:@"senderId"]){
         newContribution.contributingUserId = contributionDictionary[@"senderId"];
@@ -343,7 +358,7 @@
 
     Event *event;
     if([[contributionDictionary allKeys] containsObject:@"eventId"]){
-        event = [self getEventFromCoreDataWithId:contributionDictionary[@"eventId"]];
+        event = [self getEventFromCoreDataWithId:contributionDictionary[@"eventId"] inContext:self.context];
         newContribution.event = event;
         [event addContributionsObject:newContribution];
         if([newContribution.contributionType isEqualToString:@"photo"]){
@@ -358,53 +373,66 @@
     return newContribution;
 }
 
+//TODO: this method takes in a contribution object and then modifies it in another queue. This may pose a problem with Core Data. What should you do? Copy the object over?
 -(void) uploadAndSaveContributionInBackground:(Contribution*) contribution{
     NSLog(@"PPLSTDataManager - uploadAndSaveContributionInBackground:%@",contribution);
+    //we grab the data from the contribution before the queue since we want to avoid passing NSManagedObjects between queues (in this case contribution)
+    __block NSString *contributionType = contribution.contributionType;
+    __block NSString *message = contribution.message;
+    __block NSString *imagePath = contribution.imagePath;
+    __block NSString *contributingUserId = contribution.contributingUserId;
+    __block NSNumber *latitude = contribution.latitude;
+    __block NSNumber *longitude = contribution.longitude;
+    __block NSString *eventId = contribution.event.eventId;
+    //message, imagePath, userId, latitude, longitude, event.eventId,
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         PFObject *parseContribution = [PFObject objectWithClassName:@"Contribution"];
-        if([contribution.contributionType isEqualToString:@"message"]){
+        if([contributionType isEqualToString:@"message"]){
             [parseContribution setObject:@"message" forKey:@"type"];
-            [parseContribution setObject:contribution.message forKey:@"message"];
-        } else if([contribution.contributionType isEqualToString:@"photo"]){
+            [parseContribution setObject:message forKey:@"message"];
+        } else if([contributionType isEqualToString:@"photo"]){
             [parseContribution setObject:@"photo" forKey:@"type"];
             
             //Note: compression of 1.0 -> size in the 300-400kb range. 0.5 -> 30-40kb, and 0.0 -> 10-20 kb. Original image -> 1.5 Mb.
-            NSData *imageData = UIImageJPEGRepresentation([self getImageAtFilePath:contribution.imagePath], 0.5f);
+            NSData *imageData = UIImageJPEGRepresentation([self getImageAtFilePath:imagePath], 0.5f);
             PFFile *imageFile = [PFFile fileWithName:@"image.jpg" data:imageData];
             [imageFile saveInBackground];
             [parseContribution setObject:imageFile forKey:@"image"];
         }
-        [parseContribution setObject:contribution.contributingUserId forKey:@"userId"];
+        [parseContribution setObject:contributingUserId forKey:@"userId"];
         [parseContribution setObject:[[NSArray alloc] init] forKey:@"flaggedBy"];
-        [parseContribution setObject:[PFGeoPoint geoPointWithLatitude:[contribution.latitude doubleValue] longitude:[contribution.longitude doubleValue]] forKey:@"location"];
-        [parseContribution setObject:contribution.event.eventId forKey:@"promise"];
+        [parseContribution setObject:[PFGeoPoint geoPointWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]] forKey:@"location"];
+        [parseContribution setObject:eventId forKey:@"promise"];
 
         [parseContribution saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            //get the object id and reassign it locally
-            NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
-            contribution.contributionId = objectId;
-            NSLog(@"just found out that the objectId = %@", objectId);
-            NSLog(@"before - self.contributionIds = %@", self.contributionIds);
-            [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
-            NSLog(@"after - self.contributionIds = %@", self.contributionIds);
-            //send push notification
-            NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
-            pushData[@"alert"] = @"New stuff at your event!";
-            pushData[@"c"] = objectId;
-            pushData[@"t"] = contribution.contributionType;
-            pushData[@"u"] = contribution.contributingUserId;
-            pushData[@"e"] = contribution.event.eventId;
-            if([contribution.contributionType isEqualToString:@"message"]){
-                pushData[@"m"] = contribution.message; //TODO: what if message is too long?
-            }
-            PFPush *pushNotification = [[PFPush alloc] init];
-            [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
-            [pushNotification setData:pushData];
-            [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
-            [pushNotification sendPushInBackground];
-            
-            [self saveCoreData]; //TODO: does this screw things up because it's in a different thread as far as the ManagedObjectContext goes?
+            //we return to the main queue since we're modifying an NSManagedObject subclass (contribution) which was originally definied in the main queue
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //get the object id and reassign it locally
+                NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
+                contribution.contributionId = objectId;
+                NSLog(@"just found out that the objectId = %@", objectId);
+                NSLog(@"before - self.contributionIds = %@", self.contributionIds);
+                [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
+                NSLog(@"after - self.contributionIds = %@", self.contributionIds);
+                //send push notification
+                NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
+                pushData[@"alert"] = @"New stuff at your event!";
+                pushData[@"c"] = objectId;
+                pushData[@"t"] = contribution.contributionType;
+                pushData[@"u"] = contribution.contributingUserId;
+                pushData[@"e"] = contribution.event.eventId;
+                if([contribution.contributionType isEqualToString:@"message"]){
+                    pushData[@"m"] = contribution.message; //TODO: what if message is too long?
+                }
+                PFPush *pushNotification = [[PFPush alloc] init];
+                [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
+                [pushNotification setData:pushData];
+                [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
+                [pushNotification sendPushInBackground];
+                
+                [self saveCoreDataInContext:self.context]; //TODO: does this screw things up because it's in a different thread as far as the ManagedObjectContext goes?
+            });
         }];
     });
 }
@@ -472,7 +500,7 @@
         NSLog(@"it did not contain the id:%@ so we're adding it now...", contributionId);
         [self.contributionIds addObject:contributionId];
         //it's a new contribution
-        Contribution *newIncomingContribution = [self createContributionWithId:contributionId];
+        Contribution *newIncomingContribution = [self createContributionWithId:contributionId inContext:self.context];
         newIncomingContribution.contributingUserId = data[@"u"];
         newIncomingContribution.contributionType = data[@"t"];
         newIncomingContribution.createdAt = [NSDate date]; //TODO: update to actual date to make sure order is the same throughout all feeds
@@ -482,9 +510,9 @@
         if([data[@"t"] isEqualToString:@"message"]){
             newIncomingContribution.message = data[@"m"];
         }
-        Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"]];
+        Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
-        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"]]; //TODO: is there any case where the event may not already exist?
+        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context]; //TODO: is there any case where the event may not already exist?
         //TODO: make sure to update the detailed view with this new info. Also update the explore view if this was a photo.
         [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventForIncomingContribution];
     }
@@ -505,7 +533,7 @@
     float oldImportance = [event.importance floatValue];
     event.importance = [NSNumber numberWithFloat:(oldImportance + amount)];
     float newImportance = [event.importance floatValue];
-    [self saveCoreData];
+    [self saveCoreDataInContext:self.context];
     
     [self.delegate didUpdateImportanceOfEvent:event From:oldImportance To:newImportance];
 }
@@ -532,13 +560,19 @@
     //TODO: make sure this asynch call is correct (i.e. uses the correct queues etc.)
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
-        [self downloadMediaForContribution:contribution];
-        //after download is complete, move back to main queue for UI updates
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.isLoading[contribution.contributionId] = @0;
-            cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
-            [cell.parentTableView reloadData];
-        });
+        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        context.parentContext = self.context;
+        [context performBlock:^{
+            [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: fix context
+            //TODO: perhaps, you define a new context prior to this call. Then in the dispatch_main below we can merge them?
+            //after download is complete, move back to main queue for UI updates
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.isLoading[contribution.contributionId] = @0;
+                cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
+                [cell.parentTableView reloadData];
+            });
+        }]; //TODO: can you move the dispatch_get_main_queue to after the context performBlock? In other words, does the performBlock wait for completion?
+            //This source seems to indicate that we should call dispatch_sync with the original queue at the end of the performBlock: http://stackoverflow.com/questions/13468705/dispatch-async-in-nsmanagedobjectcontexts-performblock
     });
 }
 
@@ -562,17 +596,22 @@
 
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
             ^{
-                NSLog(@"imagePath = %@", contribution.imagePath);
-                [self downloadMediaForContribution:contribution];
-                NSLog(@"now, imagePath = %@", contribution.imagePath);
-                //after download is complete, move back to main queue for UI updates
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"async loading is complete, and we're back in the main queue");
-                    self.isLoading[contribution.contributionId] = @0;
-                    JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                    mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
-                    [collectionView reloadData];
-                });
+                NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+                context.parentContext = self.context;
+                [context performBlock:^{
+                    NSLog(@"imagePath = %@", contribution.imagePath);
+                    [self downloadMediaForContribution:contribution inContext:self.context];
+                    //TODO: maybe we define a new context prior to this and then merge it into the main context below?
+                    NSLog(@"now, imagePath = %@", contribution.imagePath);
+                    //after download is complete, move back to main queue for UI updates
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"async loading is complete, and we're back in the main queue");
+                        self.isLoading[contribution.contributionId] = @0;
+                        JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
+                        mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
+                        [collectionView reloadData];
+                    });
+                }];
             });
         }
     } else{
@@ -585,12 +624,12 @@
 
 
 //retrieves an event object from core data
--(Event *) getEventFromCoreDataWithId:(NSString*) eventId{
+-(Event *) getEventFromCoreDataWithId:(NSString*) eventId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - getEventFromCoreDataWithId:%@",eventId);
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"eventId == %@",eventId];
     NSError *error = nil;
-    NSArray *returnedEvents = [self.context executeFetchRequest:fetchRequest error:&error];
+    NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
     NSLog(@"Found %lu events in coredata with eventId = %@", [returnedEvents count], eventId);
     if([returnedEvents count] == 0){
         NSLog(@"Error: No event found in core data with eventId = %@",eventId);
@@ -600,12 +639,12 @@
 }
 
 //retreives a contribution object from core data
--(Contribution *) getContributionFromCoreDataWithId:(NSString*)contributionId{
+-(Contribution *) getContributionFromCoreDataWithId:(NSString*)contributionId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - getContributionFromCoreDataWithId:%@",contributionId);
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Contribution"];
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"contributionId == %@",contributionId];
     NSError *error = nil;
-    NSArray *returnedContributions = [self.context executeFetchRequest:fetchRequest error:&error];
+    NSArray *returnedContributions = [context executeFetchRequest:fetchRequest error:&error];
     NSLog(@"Found %lu contributions in core data with ContributionId = %@", [returnedContributions count], contributionId);
     if([returnedContributions count] == 0){
         NSLog(@"Error: No contribution found in core data with contributionId = %@",contributionId);
@@ -615,32 +654,32 @@
 }
 
 //just saves the current state to core data
--(void) saveCoreData{
+-(void) saveCoreDataInContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - saveCoreData");
     NSError *error = nil;
-    if(![self.context save:&error]){
-        NSLog(@"error: %@",error);
+    if(![context save:&error]){
+        NSLog(@"core data save error: %@",error);
     }
     NSLog(@"Saved Core Data!");
 }
 
 //creates a new event with a given id
--(Event*) createEventWithId:(NSString*)eventId{
+-(Event*) createEventWithId:(NSString*)eventId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - createEventWithId:%@",eventId);
-    Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.context];
+    Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:context];
     event.eventId = eventId;
-    [self saveCoreData];
+    [self saveCoreDataInContext:context];
     return event;
 }
 
 
 //creates a new contribution with a given id
--(Contribution*) createContributionWithId:(NSString*)contributionId{
+-(Contribution*) createContributionWithId:(NSString*)contributionId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - createContributionWithId:%@",contributionId);
     [self.contributionIds addObject:contributionId]; //keep track of which objects are currently being stored
-    Contribution *contribution = [NSEntityDescription insertNewObjectForEntityForName:@"Contribution" inManagedObjectContext:self.context];
+    Contribution *contribution = [NSEntityDescription insertNewObjectForEntityForName:@"Contribution" inManagedObjectContext:context];
     contribution.contributionId = contributionId;
-    [self saveCoreData];
+    [self saveCoreDataInContext:context];
     return contribution;
 }
 
@@ -700,7 +739,7 @@
 -(Contribution *) newDummyTitleContribution{
     NSLog(@"PPLSTDataManager - newDummyTitleContribution");
     NSString *titleContributionId = [NSString stringWithFormat:@"%@%@",@"dummy", [self randomStringWithLength:10]];
-    Contribution *titleContribution = [self createContributionWithId:titleContributionId];
+    Contribution *titleContribution = [self createContributionWithId:titleContributionId inContext:self.context];
     titleContribution.contributingUserId = self.contributingUserId;
     titleContribution.contributionType = @"photo";
     titleContribution.createdAt = [NSDate date];

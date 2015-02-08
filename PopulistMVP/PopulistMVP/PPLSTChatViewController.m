@@ -37,6 +37,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterForeground:) name: UIApplicationWillEnterForegroundNotification object:nil];
+    
     NSLog(@"Inside Chat VC");
     self.senderDisplayName = @"";
     self.senderId = self.dataManager.contributingUserId;
@@ -72,6 +74,10 @@
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
     [currentInstallation saveInBackground];
+}
+
+-(void) appDidEnterForeground:(NSNotification*)notification{
+    [self prepareForLoad];
 }
 
 //opens the map to the given location
@@ -155,17 +161,21 @@
 
     //TODO: kick these off in parallel async threads rather than doing the avatar AND contribution download back-to-back
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
-        self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event] mutableCopy];
-        self.jsqMessages = [self createMessagesFromContributions:self.contributions];
-        
-        self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
-        self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
-        NSLog(@"userIds = %@", self.userIds);
+        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        context.parentContext = self.dataManager.context;
+        [context performBlock:^{
+            self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
+            self.jsqMessages = [self createMessagesFromContributions:self.contributions];
+            
+            self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
+            self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
+            NSLog(@"userIds = %@", self.userIds);
 
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView reloadData];
-            [self scrollToBottomAnimated:NO];
-        });
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.collectionView reloadData];
+                [self scrollToBottomAnimated:NO];
+            });
+        }];
     });
 }
 

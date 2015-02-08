@@ -15,7 +15,7 @@ float verticalFramePositionOffScreen;
 float separation;
 float buttonHeight;
 float buttonWidth;
-float maxAlpha = 0.3;
+float maxAlpha = 0.5;
 
 -(id) initWithFrame:(CGRect)frame andContribution:(Contribution*)contribution{
     self = [super initWithFrame:frame];

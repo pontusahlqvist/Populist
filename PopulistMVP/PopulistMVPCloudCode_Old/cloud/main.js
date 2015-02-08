@@ -859,10 +859,10 @@ Parse.Cloud.define("flagContribution", function(request, response){
                 if(resultingCluster.length > 0){
                     var cluster = resultingCluster[0];
                     var titlePhotoIdArray = cluster.get("titlePhotoIdArray");
-//                    var titleMessageIdArray = cluster.get("titleMessageId");
+                    var titleMessageIdArray = cluster.get("titleMessageId");
                     //go through each array and delete the given contributionId
                     var indexOfContributionInTitlePhotoIdArray = titlePhotoIdArray.indexOf(contributionId);
-//                    var indexOfContributionInTitleMessageIdArray = titleMessageIdArray.indexOf(contributionId);
+                    var indexOfContributionInTitleMessageIdArray = titleMessageIdArray.indexOf(contributionId);
                     if(indexOfContributionInTitlePhotoIdArray != -1){
                         console.log("1 - array"+titlePhotoIdArray);
                         titlePhotoIdArray.splice(indexOfContributionInTitlePhotoIdArray, 1);

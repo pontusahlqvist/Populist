@@ -50,11 +50,8 @@
 //This method first retrieves the events. Then, if the user is not part of any of them, it creates a new invisible event
 -(NSArray*) sendSignalAndDownloadEventMetaDataWithInputLatitude:(float) latitude andLongitude:(float) longitude andDate:(NSDate*)date;
 
-//Returns (and saves to core data) and NSArray where each entry corresponds to meta data for a given event
--(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date;
-
 //Returns (and saves as a relationship) an NSArray with contribution meta data (id, message etc but not media) for a certain event.
--(NSArray*) downloadContributionMetaDataForEvent:(Event*)event;
+-(NSArray*) downloadContributionMetaDataForEvent:(Event*)event inContext:(NSManagedObjectContext*)context;
 
 //Uploads (and saves to core data) and then returns a contribution to the cloud with the given data dictionary
 -(Contribution*) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo;
