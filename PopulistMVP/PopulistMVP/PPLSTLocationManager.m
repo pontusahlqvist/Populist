@@ -55,12 +55,17 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
     if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
     
     CLLocation *newLocation = [locations lastObject];
-    NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
+    NSLog(@"count = %i, locationManager didUpdateLocation lastObject = %@, accuracy = %f", locationUpdateCount, newLocation, [newLocation horizontalAccuracy]);
     [newLocation horizontalAccuracy];
     if(-[newLocation.timestamp timeIntervalSinceNow] < 5){ //if the new location is newer than 5s old, we're done.
         locationUpdateCount++;
         //if either location is rather precise, or we've already looked at a certain number of updates, we set the location. Otherwise we keep waiting.
-        if(locationUpdateCount >= 10 || [newLocation horizontalAccuracy] <= 15.0){
+        NSLog(@"startedUpdatingLocationAt:%@",self.startedUpdatingLocationAt);
+        NSLog(@"now: %@", [NSDate date]);
+        NSLog(@"timeinterval = %f", [self.startedUpdatingLocationAt timeIntervalSinceNow]);
+        //TODO: keep checking for awesome accuracy (10) for 10s, then settle for ok accuracy (30)
+        if([newLocation horizontalAccuracy] <= 15.0 || -[self.startedUpdatingLocationAt timeIntervalSinceNow] >= 20){
+            //TODO: if accuracy ended up very poor, tell the user.
             [self.locationManager stopUpdatingLocation];
             locationUpdateCount = 0;
             
@@ -71,9 +76,10 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
             self.isUpdatingLocation = NO;
             [self.delegate locationUpdatedTo:newLocation From:oldLocation];
         } else{
-            //This forces a quick update of the location so that the user doesn't have to wait too long
-            [self.locationManager stopUpdatingLocation];
-            [self.locationManager startUpdatingLocation];
+            //TODO: keep track of the best location so far
+//            //This forces a quick update of the location so that the user doesn't have to wait too long
+//            [self.locationManager stopUpdatingLocation];
+//            [self.locationManager startUpdatingLocation];
         }
     }
     
@@ -99,6 +105,8 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
 -(void)updateLocation{
     NSLog(@"updateLocation called in PPLSTLocationManager");
     [self.locationManager startUpdatingLocation];
+    self.startedUpdatingLocationAt = [NSDate date];
+    NSLog(@"just set it to %@", self.startedUpdatingLocationAt);
     self.isUpdatingLocation = YES;
 }
 

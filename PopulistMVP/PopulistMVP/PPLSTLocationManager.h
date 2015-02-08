@@ -28,6 +28,7 @@
 @property (nonatomic) BOOL isUpdatingLocation;
 @property (weak, nonatomic) id<PPLSTLocationManagerDelegate> delegate;
 @property (strong, nonatomic) NSTimer *locationUpdateTimer;
+@property (strong, nonatomic) NSDate *startedUpdatingLocationAt;
 
 #pragma mark - location based parameters
 
