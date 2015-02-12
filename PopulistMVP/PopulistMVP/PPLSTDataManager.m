@@ -299,16 +299,23 @@
     NSLog(@"PPLSTDataManager - downloadMediaForContribution:%@",contribution);
     if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
         //TODO: perhaps change this to different images for different events? Maybe create images on the fly with some text indicating their location?
+        //TODO: improve the quality of the placeholder image
         contribution.imagePath = [self storeImage:[UIImage imageNamed:@"Populist-60@2x.png"]];
     } else if ([contribution.contributionType isEqualToString:@"message"]) {
-        //TODO: we might have to download messages that are too long for a push notification
         NSLog(@"A");
+        PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
+        PFObject *parseContribution = [query getObjectWithId:contribution.contributionId];
+        NSString *message = [parseContribution objectForKey:@"message"];
+        contribution.message = message;
+        contribution.contributingUserId = [parseContribution objectForKey:@"userId"];
+        contribution.createdAt = parseContribution.createdAt;
     } else if([contribution.contributionType isEqualToString:@"photo"]){
         NSLog(@"B");
         NSLog(@"Querying Parse for image for contribution with id = %@", contribution.contributionId);
 
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
         PFObject *parsePhoto = [query getObjectWithId:contribution.contributionId];
+        NSLog(@"photo - parseContribution = %@", parsePhoto);
         PFFile *file = [parsePhoto objectForKey:@"image"];
         NSData *parseImageData = [file getData];
         NSLog(@"Got data with length: %lu for contributionId = %@ in file %@", [parseImageData length], contribution.contributionId, file);
@@ -316,7 +323,7 @@
         contribution.imagePath = [self storeImage:image];
         NSLog(@"just set the imagePath = %@ for contributionId = %@ and contribution = %@", contribution.imagePath, contribution.contributionId, contribution);
         contribution.contributingUserId = [parsePhoto objectForKey:@"userId"];
-        contribution.createdAt = [parsePhoto objectForKey:@"createdAt"];
+        contribution.createdAt = contribution.createdAt;//[parsePhoto objectForKey:@"createdAt"];
         NSLog(@"Stored it in imagePath = %@", contribution.imagePath);
     }
     NSLog(@"C");
@@ -507,7 +514,7 @@
 #pragma mark - Incoming Data From Push Notifications
 
 -(void) handleIncomingDataFromPush:(NSDictionary*)data{
-    NSLog(@"PPLSTDataManager - handleIncomingDataFromPush");
+    NSLog(@"PPLSTDataManager - handleIncomingDataFromPush:%@",data);
     NSString *contributionId = data[@"c"];
     if(![self.contributionIds containsObject:contributionId]){
         NSLog(@"it did not contain the id:%@ so we're adding it now...", contributionId);
@@ -521,7 +528,7 @@
         newIncomingContribution.latitude = nil;
         newIncomingContribution.longitude = nil;
         if([data[@"t"] isEqualToString:@"message"]){
-            newIncomingContribution.message = data[@"m"];
+            newIncomingContribution.message = data[@"m"]; //TODO: include this!
         }
         Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
@@ -614,7 +621,7 @@
                 context.parentContext = self.context;
                 [context performBlock:^{
                     NSLog(@"imagePath = %@", contribution.imagePath);
-                    [self downloadMediaForContribution:contribution inContext:self.context];
+                    [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: shouldn't this be context?
                     NSLog(@"now, imagePath = %@", contribution.imagePath);
                     //after download is complete, move back to main queue for UI updates
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -627,9 +634,39 @@
                 }];
             });
         }
-    } else{
-        //TODO: check if the message is set. If not, we must download it from parse.
-        
+    } else if([contribution.contributionType isEqualToString:@"message"]){
+        //TODO: note that the message should have already been downloaded if it was too long in the chatVC's createMessagesFromContributions
+//        NSLog(@"inside jsqformat with message");
+//        //TODO: check if the message is set. If not, we must download it from parse.
+//        if(!contribution.message || [contribution.message isEqualToString:@""]){
+//            NSLog(@"message is nil or empty");
+//            NSNumber *loading = self.isLoading[contribution.contributionId];
+//            if([loading isEqualToNumber:@1]){
+//                NSLog(@"avoiding double loading, %@", self.isLoading[contribution.contributionId]);
+//                return; //avoid dubble loading while running in background thread
+//            }
+//            self.isLoading[contribution.contributionId] = @1;
+//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+//            ^{
+//                NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+//                context.parentContext = self.context;
+//                [context performBlock:^{
+//                    [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: shouldn't this be context?
+//                    //after download is complete, move back to main queue for UI updates
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        NSLog(@"async loading is complete, and we're back in the main queue");
+//                        self.isLoading[contribution.contributionId] = @0;
+//                        NSString *messageText = message.text;
+//                        
+//
+//                    
+//
+//                        [collectionView reloadData];
+//                    });
+//                }];
+//            });
+//
+//        }
     }
 }
 

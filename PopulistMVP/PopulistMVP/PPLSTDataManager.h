@@ -56,6 +56,8 @@
 //Returns (and saves as a relationship) an NSArray with contribution meta data (id, message etc but not media) for a certain event.
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event inContext:(NSManagedObjectContext*)context;
 
+-(Contribution*) downloadMediaForContribution:(Contribution*)contribution inContext:(NSManagedObjectContext*) context;
+
 //Uploads (and saves to core data) and then returns a contribution to the cloud with the given data dictionary
 -(Contribution*) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo;
 

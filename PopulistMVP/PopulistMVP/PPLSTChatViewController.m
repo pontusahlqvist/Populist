@@ -422,7 +422,12 @@
         JSQMessage *newMessage;
         if([contribution.contributionType isEqualToString:@"message"]){
             //create text message
+            if(!contribution.message || [contribution.message isEqualToString:@""]){
+                [self.dataManager downloadMediaForContribution:contribution inContext:self.dataManager.context]; //sync call
+            }
+            NSLog(@"createdAt: %@", contribution.createdAt);
             newMessage = [[JSQMessage alloc] initWithSenderId:contribution.contributingUserId senderDisplayName:@"asdf" date:contribution.createdAt text:contribution.message];
+            NSLog(@"Made it here...");
         } else if([contribution.contributionType isEqualToString:@"photo"]){
             //create photo message. Note that we're holding off with loading the photo until it comes into view on the collectionview - i.e. lazy loading
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
