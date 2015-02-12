@@ -62,7 +62,9 @@
     [button addTarget:self action:@selector(openMap) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = barButtonItem;
-    
+}
+
+-(void) subscribeToPushNotifications{
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation addUniqueObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
     [currentInstallation saveInBackground];
@@ -90,8 +92,8 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated]; //TODO: I think this causes the snap-to-bottom each time, even when the user returns from the image detailed view
     //let the data manager know that this is the current VC
-//    self.locationManager.delegate = self;
     self.dataManager.pushDelegate = self;
+    [self subscribeToPushNotifications];
 }
 
 - (void)didReceiveMemoryWarning
