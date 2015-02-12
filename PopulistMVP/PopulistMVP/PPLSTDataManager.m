@@ -12,6 +12,8 @@
 
 @implementation PPLSTDataManager
 
+int maxMessageLengthForPush = 250;
+
 #pragma mark - Required Methods
 
 -(id) init{
@@ -76,6 +78,7 @@
     return newImage;
 }
 
+//TODO: this re-generates the avatars each time. Do something better than this. Maybe just store them as image assets or something
 -(void) createAvatarForStatusDictionary{
     NSLog(@"PPLSTDataManager - createAvatarForStatusDictionary");
     NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
@@ -443,7 +446,11 @@
                 pushData[@"u"] = contribution.contributingUserId;
                 pushData[@"e"] = contribution.event.eventId;
                 if([contribution.contributionType isEqualToString:@"message"]){
-                    pushData[@"m"] = contribution.message; //TODO: what if message is too long?
+                    if ([contribution.message length] <= maxMessageLengthForPush) {
+                        pushData[@"m"] = contribution.message; //TODO: what if message is too long?
+                    } else{
+                        pushData[@"m"] = @""; //send the empty string along, and let the other user download the data from the server
+                    }
                 }
                 PFPush *pushNotification = [[PFPush alloc] init];
                 [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
