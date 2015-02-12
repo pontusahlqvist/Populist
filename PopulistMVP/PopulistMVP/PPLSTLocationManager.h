@@ -11,12 +11,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "Event.h"
+#import "PPLSTUpdatingLocationView.h"
 
 #pragma mark - PPLSTLocationManagerDelegate
 
 @protocol PPLSTLocationManagerDelegate <NSObject>
 @required
--(void) locationUpdatedTo:(CLLocation*) newLocation From:(CLLocation*) oldLocation;
+-(void) locationUpdatedTo:(CLLocation*) newLocation From:(CLLocation*) oldLocation withPoorAccuracy:(BOOL)poorAccuracy;
 -(void) didAcceptAuthorization;
 -(void) didDeclineAuthorization;
 @end

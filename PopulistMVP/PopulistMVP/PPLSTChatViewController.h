@@ -23,6 +23,8 @@
 @interface PPLSTChatViewController : JSQMessagesViewController <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout, PPLSTLocationManagerDelegate, PPLSTImagePickerController, PPLSTDataManagerPushDelegate, PPLSTReportViewDelegate>
 //loads contributions for this event
 -(void) prepareForLoad;
+-(void) disableEventBecauseOfPoorLocation;
+-(void) disableEventBecauseUserLeftIt;
 
 @property (strong, nonatomic) PPLSTDataManager *dataManager;
 @property (strong, nonatomic) PPLSTLocationManager *locationManager;

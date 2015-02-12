@@ -68,14 +68,16 @@
 }
 
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
-    //TODO: remove this
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"error: %@",error] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    NSLog(@"didFailToRegisterForRemoteNotificationsWithError");
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     //TODO: make sure to check to see what the channel is. If it doesn't start with "event", it might be a generic notification.
-    [self.dataManager handleIncomingDataFromPush:userInfo];
+    if([[userInfo allKeys] containsObject:@"t"]){ //t for type. If push doesn't contain t as a key, we deal with it separately
+        [self.dataManager handleIncomingDataFromPush:userInfo];
+    } else{
+        [PFPush handlePush:userInfo];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

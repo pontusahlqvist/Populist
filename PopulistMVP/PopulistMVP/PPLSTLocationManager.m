@@ -6,18 +6,29 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: make sure location is sufficiently accurate before stopping the location loading. Maybe wait for +/-10m.
-
 #import "PPLSTLocationManager.h"
+
+@interface PPLSTLocationManager()
+@property (strong, nonatomic) CLLocation *bestLocationDuringUpdate; //keeps track of the best location found during the update
+@property (strong, nonatomic) PPLSTUpdatingLocationView *updatingLocationView;
+@property (strong, nonatomic) NSDate *timeOfLastLocationCheck; //Note: different from timeOfLastUpdate since that has to do with actual clustering.
+@end
 
 @implementation PPLSTLocationManager
 
 #pragma mark - Parameters
+//TODO: make sure parameters are reasonable
 float veryNearCutoff = 30.0; //in meters
-float cutoffDistance = 50.0; //in meters - TODO: update to 100.0 meters or something reasonable
-float cutoffTime = 60.0*30; //in seconds - TODO: update to a reasonable time
-int locationUpdateTimeInterval = 60; //in seconds - TODO: update to e.g. every 1 min or so
-int locationUpdateCount = 0; //keeps track of how many times the location has been updated so that we don't wait forever for accurate results
+float cutoffDistance = 50.0; //in meters
+float cutoffTime = 60.0*30; //in seconds
+int locationUpdateTimeInterval = 60; //in seconds
+
+float desiredHorizontalAccuracy = 10.0; //meters
+float acceptableHorizontalAccuracy = 15.0; //meters
+float worstHorizontalAccuracyToEnableChat = 100.0; //meters - if accuracy falls below this, the local chat feature is disabled.
+float maxWaitTimeForLocationUpdate = 20.0; //seconds - max wait time before we give up
+float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired accuracy
+
 
 #pragma mark - Initialization
 
@@ -42,6 +53,11 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
     self.locationUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(onLocationTick:) userInfo:nil repeats:YES];
 }
 
+-(PPLSTUpdatingLocationView *)updatingLocationView{
+    if(!_updatingLocationView) _updatingLocationView = [[PPLSTUpdatingLocationView alloc] initWithFrame:[[UIApplication sharedApplication] keyWindow].frame];
+    return _updatingLocationView;
+}
+
 #pragma mark - NSTimer related methods
 
 -(void) onLocationTick:(NSTimer*)locationTimer{
@@ -55,31 +71,31 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
     if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
     
     CLLocation *newLocation = [locations lastObject];
-    NSLog(@"count = %i, locationManager didUpdateLocation lastObject = %@, accuracy = %f", locationUpdateCount, newLocation, [newLocation horizontalAccuracy]);
+    NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
     [newLocation horizontalAccuracy];
     if(-[newLocation.timestamp timeIntervalSinceNow] < 5){ //if the new location is newer than 5s old, we're done.
-        locationUpdateCount++;
-        //if either location is rather precise, or we've already looked at a certain number of updates, we set the location. Otherwise we keep waiting.
-        NSLog(@"startedUpdatingLocationAt:%@",self.startedUpdatingLocationAt);
-        NSLog(@"now: %@", [NSDate date]);
-        NSLog(@"timeinterval = %f", [self.startedUpdatingLocationAt timeIntervalSinceNow]);
-        //TODO: keep checking for awesome accuracy (10) for 10s, then settle for ok accuracy (30)
-        if([newLocation horizontalAccuracy] <= 15.0 || -[self.startedUpdatingLocationAt timeIntervalSinceNow] >= 20){
-            //TODO: if accuracy ended up very poor, tell the user.
+        float timeSinceStartedUpdating = -[self.startedUpdatingLocationAt timeIntervalSinceNow];
+        if(!self.bestLocationDuringUpdate || [self.bestLocationDuringUpdate horizontalAccuracy] > [newLocation horizontalAccuracy]){
+            self.bestLocationDuringUpdate = newLocation;
+        }
+        if([self.bestLocationDuringUpdate horizontalAccuracy] <= desiredHorizontalAccuracy || ([self.bestLocationDuringUpdate horizontalAccuracy] <= acceptableHorizontalAccuracy && timeSinceStartedUpdating > maxWaitTimeForDesiredAccuracy) || timeSinceStartedUpdating >= maxWaitTimeForLocationUpdate){
+
             [self.locationManager stopUpdatingLocation];
-            locationUpdateCount = 0;
+            [self.updatingLocationView removeFromSuperview];
             
             CLLocation *oldLocation = self.currentLocation;
-            self.currentLocation = newLocation;
+            self.currentLocation = self.bestLocationDuringUpdate;
+            self.bestLocationDuringUpdate = nil;
             [self setCurrentLocationStrings];
             
             self.isUpdatingLocation = NO;
-            [self.delegate locationUpdatedTo:newLocation From:oldLocation];
-        } else{
-            //TODO: keep track of the best location so far
-//            //This forces a quick update of the location so that the user doesn't have to wait too long
-//            [self.locationManager stopUpdatingLocation];
-//            [self.locationManager startUpdatingLocation];
+            
+            if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
+                [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:NO];
+            } else{
+                //accuracy was so bad that we can't enable the local chat. We will still allow the user to view nearby conversations though.
+                [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:YES];
+            }
         }
     }
     
@@ -103,11 +119,13 @@ int locationUpdateCount = 0; //keeps track of how many times the location has be
 #pragma mark - Public API
 
 -(void)updateLocation{
-    NSLog(@"updateLocation called in PPLSTLocationManager");
     [self.locationManager startUpdatingLocation];
     self.startedUpdatingLocationAt = [NSDate date];
-    NSLog(@"just set it to %@", self.startedUpdatingLocationAt);
     self.isUpdatingLocation = YES;
+    if(!self.timeOfLastLocationCheck || -[self.timeOfLastLocationCheck timeIntervalSinceNow] > 2*locationUpdateTimeInterval){
+        [[[UIApplication sharedApplication] keyWindow] addSubview:self.updatingLocationView];
+    }
+    self.timeOfLastLocationCheck = [NSDate date];
 }
 
 -(CLLocation *)getCurrentLocation{

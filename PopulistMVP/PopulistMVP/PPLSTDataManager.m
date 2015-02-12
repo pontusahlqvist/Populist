@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-// TODO: make sure to update title image and time stamp on incoming contributions
-
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 
@@ -61,30 +59,45 @@
 }
 
 -(UIImage*) drawText:(NSString*)text atCenterOfImage:(UIImage*)image{
-    UIFont *font = [UIFont boldSystemFontOfSize:150];
+    UIFont *font = [UIFont boldSystemFontOfSize:110];
+    NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    [style setAlignment:NSTextAlignmentCenter];
+    NSDictionary *attributesForText = @{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor whiteColor], NSParagraphStyleAttributeName:style};
+    CGSize size = [text sizeWithAttributes:attributesForText];
+    CGRect rect = CGRectMake(image.size.width/2.0-size.width/2.0, image.size.height/2.0-size.height/2.0, size.width, size.height);
+    
     UIGraphicsBeginImageContext(image.size);
     [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-    CGRect rect = CGRectMake(image.size.width/3.0, image.size.height/10.0, image.size.width, image.size.height);
     [[UIColor whiteColor] set];
-    [text drawInRect:rect withAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor whiteColor]}]; //TODO: change to withAttributes
+    [text drawInRect:rect withAttributes:attributesForText];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
     return newImage;
 }
 
 -(void) createAvatarForStatusDictionary{
     NSLog(@"PPLSTDataManager - createAvatarForStatusDictionary");
     NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
-    //TODO: add more avatars
+
     [avatarRawImages addObject:[UIImage imageNamed:@"gold.jpg"]];
     [avatarRawImages addObject:[UIImage imageNamed:@"salmon.jpg"]];
     [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
     [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"darkBlue.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"lightGreen.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"purple.png"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"red.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"black.png"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"orange.jpg"]];
+    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
+    
     UIImage *greyBackground = [UIImage imageNamed:@"grey.jpg"];
-    NSArray *textOverlays = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
-    for(int i = 0; i < [textOverlays count]; i++){
-        [avatarRawImages addObject:[self drawText:textOverlays[i] atCenterOfImage:greyBackground]];
+    NSArray *firstLetter = [NSArray arrayWithObjects: @"", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+    NSArray *secondLetter = [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+    for(int i = 0; i < [firstLetter count]; i++){
+        for(int j = 0; j < [secondLetter count]; j++){
+            [avatarRawImages addObject:[self drawText:[NSString stringWithFormat:@"%@%@",firstLetter[i],secondLetter[j]] atCenterOfImage:greyBackground]];
+        }
     }
 
     int status = 0;
@@ -115,7 +128,7 @@
     [newEvent setObject:@0.9 forKey:@"importance"]; //just a signal so keep smaller than 1, however close to 1 to make sure nearby people get clustered properly.
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd-MM-yyyy";
-    [newEvent setObject:[dateFormatter dateFromString:@"1-1-2101"] forKey:@"validUntil"]; //TODO: do I need to allocate memory for this?
+    [newEvent setObject:[dateFormatter dateFromString:@"1-1-2101"] forKey:@"validUntil"];
     [newEvent setObject:@[] forKey:@"contributions"];
     [newEvent setObject:@[] forKey:@"contributingUsers"];
     [newEvent setObject:@[] forKey:@"titlePhotoIdArray"];
@@ -512,9 +525,14 @@
         }
         Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
-        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context]; //TODO: is there any case where the event may not already exist?
-        //TODO: make sure to update the detailed view with this new info. Also update the explore view if this was a photo.
+        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventForIncomingContribution];
+        eventToWhichThisContributionBelongs.lastActive = newIncomingContribution.createdAt;
+        [self.delegate didUpdateLastActiveForEvent:eventForIncomingContribution];
+        if([data[@"t"] isEqualToString:@"photo"]){
+            eventForIncomingContribution.titleContribution = newIncomingContribution;
+            [self.delegate didUpdateTitleContributionForEvent:eventForIncomingContribution];
+        }
     }
 }
 
@@ -557,22 +575,18 @@
         return; //wait for first load to complete before initializing a second load.
     }
     self.isLoading[contribution.contributionId] = @1;
-    //TODO: make sure this asynch call is correct (i.e. uses the correct queues etc.)
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.context;
         [context performBlock:^{
-            [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: fix context
-            //TODO: perhaps, you define a new context prior to this call. Then in the dispatch_main below we can merge them?
-            //after download is complete, move back to main queue for UI updates
+            [self downloadMediaForContribution:contribution inContext:self.context];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
                 cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
                 [cell.parentTableView reloadData];
             });
-        }]; //TODO: can you move the dispatch_get_main_queue to after the context performBlock? In other words, does the performBlock wait for completion?
-            //This source seems to indicate that we should call dispatch_sync with the original queue at the end of the performBlock: http://stackoverflow.com/questions/13468705/dispatch-async-in-nsmanagedobjectcontexts-performblock
+        }];
     });
 }
 
@@ -601,7 +615,6 @@
                 [context performBlock:^{
                     NSLog(@"imagePath = %@", contribution.imagePath);
                     [self downloadMediaForContribution:contribution inContext:self.context];
-                    //TODO: maybe we define a new context prior to this and then merge it into the main context below?
                     NSLog(@"now, imagePath = %@", contribution.imagePath);
                     //after download is complete, move back to main queue for UI updates
                     dispatch_async(dispatch_get_main_queue(), ^{

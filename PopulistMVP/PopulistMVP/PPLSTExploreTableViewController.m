@@ -82,7 +82,12 @@
 
 //opens the local chat (this is different than looking at other chats in progress)
 -(void) openChat{
-    [self performSegueWithIdentifier:@"Segue To Chat" sender:self.navigationItem.rightBarButtonItem];
+    if(self.currentEvent){
+        [self performSegueWithIdentifier:@"Segue To Chat" sender:self.navigationItem.rightBarButtonItem];
+    } else{
+        UIAlertView *lackOfAccurateLocationAlertView = [[UIAlertView alloc] initWithTitle:@"Can't Chat" message:@"Unfortunately your location is too imprecise for you to be able to chat with those around you. Try reloading or moving to a more open space." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [lackOfAccurateLocationAlertView show];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -94,7 +99,6 @@
 -(void) refresh{
     //re-download the event meta data from the server
     [self updateEvents];
-    [self.refreshControl endRefreshing];
 }
 
 -(void) startUpdatingEvents{
@@ -103,27 +107,82 @@
     [self.locationManager updateLocation];
 }
 
--(void) finishUpdatingEvents{
+-(void) finishUpdatingEventsWithPoorAccuracy:(BOOL)poorAccuracy{
     NSLog(@"finishUpdatingEvents");
+    if([self.refreshControl isRefreshing]){
+        [self.refreshControl endRefreshing];
+    }
+    
     CLLocation *currentLocation = [self.locationManager getCurrentLocation];
     [self.locationManager updateLocationOfLastUpdate:currentLocation];
     [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
-    NSLog(@"Current Location - lat = %f and long = %f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
+
+    if(poorAccuracy){
+        NSLog(@"poorAccuracy = YES");
+        //Since the accuracy is poor, we just download the events and disable the local chat
+        self.events = [[self.dataManager downloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
+        if([self.events count] > 0){
+            //make sure that even though parse may think this person belongs to an event, we disable the chat.
+            [[self.events firstObject] setContainsUser:@0];
+        }
+        [self disableChatVCBecauseOfPoorLocation];
+    } else{
+        NSLog(@"poorAccuracy = false, so we also send signal.");
+        self.events = [[self.dataManager sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
+
+        if([self.events count] > 0){
+            Event *bestEvent = [self.events objectAtIndex:0];
+            if(![bestEvent.eventId isEqualToString:self.currentEvent.eventId]){
+                [self disableChatVCBecauseUserLeftIt];
+            }
+            self.currentEvent = bestEvent;
+        } else{
+            self.currentEvent = nil;
+        }
+    }
     
-    self.events = [[self.dataManager sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
     if([self.events count] > 0){
-        self.currentEvent = [self.events objectAtIndex:0];
         self.tableView.backgroundView = nil;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     
-    [self removeInvisibleEvents];
+    [self removeInvisibleEvents]; //TODO: do this on the parse side to avoid having people intercept the signal to spy on people
     
     [self.tableView reloadData];
-    NSLog(@"About to change isUpdatingEvents from %i", self.isUpdatingEvents);
     self.isUpdatingEvents = NO;
-    NSLog(@"Now, it's equal to %i", self.isUpdatingEvents);
 }
+
+//This reaches into the chatVC and disables the controlls.
+-(void) disableChatVCBecauseOfPoorLocation{
+    NSInteger myVCIndex = [self.navigationController.viewControllers indexOfObject:self];
+    if([self.navigationController.viewControllers count] > myVCIndex+1){
+        //this means that another vc sits ontop of the exploreVC
+        UIViewController *nextVC = self.navigationController.viewControllers[myVCIndex+1];
+        if([nextVC isKindOfClass:[PPLSTChatViewController class]]){
+            if([[(PPLSTChatViewController*)nextVC event].eventId isEqualToString:self.currentEvent.eventId]){
+                [(PPLSTChatViewController*)nextVC disableEventBecauseOfPoorLocation];
+            }
+        }
+    }
+    self.currentEvent.containsUser = @0;
+    self.currentEvent = nil;
+}
+
+-(void) disableChatVCBecauseUserLeftIt{
+    NSInteger myVCIndex = [self.navigationController.viewControllers indexOfObject:self];
+    if([self.navigationController.viewControllers count] > myVCIndex+1){
+        //this means that another vc sits ontop of the exploreVC
+        UIViewController *nextVC = self.navigationController.viewControllers[myVCIndex+1];
+        if([nextVC isKindOfClass:[PPLSTChatViewController class]]){
+            if([[(PPLSTChatViewController*)nextVC event].eventId isEqualToString:self.currentEvent.eventId]){
+                [(PPLSTChatViewController*)nextVC disableEventBecauseUserLeftIt];
+            }
+        }
+    }
+    self.currentEvent.containsUser = @0;
+    self.currentEvent = nil;
+}
+
 
 -(void) updateEvents{
     NSLog(@"updateEvents");
@@ -162,10 +221,6 @@
     } else{
         UIImageView *backgroundImageView = [[UIImageView alloc] init];
         backgroundImageView.backgroundColor = [UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
-        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        spinner.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0);
-        [backgroundImageView addSubview:spinner];
-        [spinner startAnimating];
         self.tableView.backgroundView = backgroundImageView;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         return 0;
@@ -267,16 +322,21 @@
 
 #pragma mark - PPLSTLocationManager Delegate Methods
 
--(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation{
+-(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation withPoorAccuracy:(BOOL)poorAccuracy{
     NSLog(@"PPLSTExploreTablewViewController - locationUpdatedTo");
     //if the location is updated while we're loading events, we should continue to the next step and complete the loading process
     if(self.isUpdatingEvents){
-        [self finishUpdatingEvents];
-    } else if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
-        //The user moved too far from the old location or they waited to long to refresh, so we update the events
+        NSLog(@"self.isUpdatingEvents = YES");
+        [self finishUpdatingEventsWithPoorAccuracy:poorAccuracy];
+    } else if(poorAccuracy){
+        NSLog(@"poorAccuracy = YES");
         [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
         [self.locationManager updateLocationOfLastUpdate:self.locationManager.currentLocation];
-        [self.dataManager eventThatUserBelongsTo]; //note: this returns an event, but we'll deal with it on the delegate call instead
+        [self disableChatVCBecauseOfPoorLocation];
+    } else if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
+        //The user moved too far from the old location or they waited to long to refresh, so we update the events
+        NSLog(@"movedTooFar || waitedToLongSinceTime...");
+        [self.dataManager eventThatUserBelongsTo]; //note: this returns an event, but we'll deal with it on the dataManager delegate call
     }
 }
 
@@ -310,7 +370,18 @@
 -(void) updateEventsTo:(NSArray*)newEventsArray{
     NSLog(@"PPLSTExploreTableViewController - updateEventsTo:");
     self.events = [newEventsArray mutableCopy];
-    self.currentEvent = [self.events objectAtIndex:0];
+    if([self.events count] > 0){
+        //check to see if the best fit event has been updated. If so, push the change to the detailedVC
+        Event* bestEvent = [self.events objectAtIndex:0];
+        if(![self.currentEvent.eventId isEqualToString:bestEvent.eventId]){
+            //the best fit event switched. We must handle this in the chatVC
+            [self disableChatVCBecauseUserLeftIt];
+        }
+        self.currentEvent = bestEvent;
+    } else{
+        [self disableChatVCBecauseUserLeftIt];
+        self.currentEvent = nil;
+    }
     [self removeInvisibleEvents];
     [self.tableView reloadData];
 }

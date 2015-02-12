@@ -48,7 +48,7 @@
     //setup delegates and datasources
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.locationManager.delegate = self;
+//    self.locationManager.delegate = self;
     
     JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
@@ -90,7 +90,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated]; //TODO: I think this causes the snap-to-bottom each time, even when the user returns from the image detailed view
     //let the data manager know that this is the current VC
-    self.locationManager.delegate = self;
+//    self.locationManager.delegate = self;
     self.dataManager.pushDelegate = self;
 }
 
@@ -108,32 +108,60 @@
     return _userIds;
 }
 
-#pragma mark - PPLSTLocationManagerDelegate Methods
+//#pragma mark - PPLSTLocationManagerDelegate Methods
+////TODO: fix this with accuracyFlag
+//-(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation withPoorAccuracy:(BOOL)poorAccuracy{
+//    NSLog(@"inside locationUpdatedTo within chatVC");
+//    if(poorAccuracy){
+//        //TODO: think carefully about this. If the user was already part of the event, their location must have already been pretty accurate. Should we let them continue talking? Perhaps make the location that's sent along with the contribution adhere to the event location if the user's location is too imprecise. This would avoid spreading the cluster out in space because of poor location data.
+//        NSNumber *thisEventContainsUser = [self.event.containsUser copy];
+//        if([thisEventContainsUser isEqualToNumber:@1]){ //only worry about location if the user was participating.
+//            //disable chat and perhaps display an alert view
+//            self.event.containsUser = @0; //don't worry about saving since there will already be a save in progress in the dataManager
+//            [self.inputToolbar.contentView.textView setEditable:NO];
+//            self.inputToolbar.backgroundColor = [UIColor clearColor];
+//            [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
+//        }
+//    } else{
+//        if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
+//            NSNumber *thisEventContainsUser = [self.event.containsUser copy];
+//
+//            Event *bestEvent = [self.dataManager eventThatUserBelongsTo];
+//            CLLocation *currentLocation = [self.locationManager getCurrentLocation];
+//            [self.locationManager updateLocationOfLastUpdate:currentLocation];
+//            [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
+//            //TODO: what happens if the user is currently browsing another event when the location updates? Is the other event not nullified then?
+//            if([thisEventContainsUser isEqualToNumber:@1] && ![bestEvent.eventId isEqualToString:self.event.eventId]){
+//                //disable chat and perhaps display an alert view
+//                [self disableEvent];
+//            }
+//        }
+//    }
+//
+//}
+//-(void)didAcceptAuthorization{}
+//-(void)didDeclineAuthorization{}
 
--(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation{
-    if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
-        NSNumber *thisEventContainsUser = [self.event.containsUser copy];
+#pragma mark - Disable Chat Methods
 
-        Event *bestEvent = [self.dataManager eventThatUserBelongsTo];
-        CLLocation *currentLocation = [self.locationManager getCurrentLocation];
-        [self.locationManager updateLocationOfLastUpdate:currentLocation];
-        [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
-
-        if([thisEventContainsUser isEqualToNumber:@1] && ![bestEvent.eventId isEqualToString:self.event.eventId]){
-            //disable chat and perhaps display an alert view
-            self.event.containsUser = @0; //don't worry about saving since there will already be a save in progress in the dataManager
-            [self.inputToolbar.contentView.textView setEditable:NO];
-            self.inputToolbar.backgroundColor = [UIColor clearColor];
-            [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
-
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Thanks for the visit" message:@"It seems like you've left the event you were taking part in, or maybe it just ended. No worries, if you want to keep chatting and the event's still going on, just go back there." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [alertView show];
-        }
-    }
+//This method disables the event, i.e. the user will no longer be able to participate/chat
+-(void) disableEventBecauseOfPoorLocation{
+    [self disableEvent];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Darn, lost your location..." message:@"It seems like your location is not very precise right now. Try moving to a more open space, or go back and refresh." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alertView show];
 }
--(void)didAcceptAuthorization{}
--(void)didDeclineAuthorization{}
 
+-(void)disableEventBecauseUserLeftIt{
+    [self disableEvent];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Thanks for the visit" message:@"It seems like you've left the event you were taking part in, or maybe it just ended. No worries, if you want to keep chatting and the event's still going on, just go back there." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alertView show];
+}
+
+-(void) disableEvent{
+    [self.inputToolbar.contentView.textView setEditable:NO];
+    self.inputToolbar.backgroundColor = [UIColor clearColor];
+    [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
+}
 #pragma mark - PPLSTDataManagerPushDelegate
 
 -(void)didAddIncomingContribution:(Contribution *)newContribution ForEvent:(Event *)event{
@@ -159,7 +187,6 @@
         self.inputToolbar.backgroundColor = [UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f];
     }
 
-    //TODO: kick these off in parallel async threads rather than doing the avatar AND contribution download back-to-back
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.dataManager.context;
@@ -206,7 +233,7 @@
             NSIndexPath *indexPath = sender;
             PPLSTImageDetailViewController *destinationVC = segue.destinationViewController;
             JSQMessage *message = self.jsqMessages[indexPath.row];
-            //TODO: consider placing image inside contribution instead
+
             JSQPhotoMediaItem *photo = (JSQPhotoMediaItem*)[message media];
             destinationVC.image = photo.image;
             destinationVC.contribution = self.contributions[indexPath.row];
@@ -273,12 +300,17 @@
 #pragma mark - JSQMessageCollectionView Delegate
 
 -(void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date{
+    NSLog(@"didPressSendButton");
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"message", @"message": text, @"location":self.locationManager.currentLocation};
+    NSLog(@"About to create a new contribution");
     Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:nil];
+    NSLog(@"about to handleNewContriburion");
     [self handleNewContribution:newContribution];
-    
+    NSLog(@"about to finishSendingMessageAnimated");
     [self finishSendingMessageAnimated:YES];
+    NSLog(@"About to reloadData");
     [self.collectionView reloadData];
+    NSLog(@"Done with send!");
 }
 
 -(void)didPressAccessoryButton:(UIButton *)sender{
@@ -374,7 +406,6 @@
 #pragma mark - PPLSTReportViewDelegate Methods
 
 -(void)didPressReportButtonForContribution:(Contribution *)contribution{
-    //TODO: also report the contribution
     [self.dataManager flagContribution:contribution];
 }
 -(void)didPressCancelButton{

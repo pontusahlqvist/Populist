@@ -67,9 +67,9 @@ var minGlobalFitValue = 1.0;
 //local stuff
 var localGettingMilesCutoff = 10;
 var typicalDistanceForGettingLocal = 10;
-var secondDecayForLocalGetting = 60*60*24*7; //typical time decay for finding a nearby cluster (since last update)
+var secondDecayForLocalGetting = 60*60*8; //typical time decay for finding a nearby cluster (since last update).
 //global stuff
-var secondDecayForGlobalGetting = 60*60*24*7;
+var secondDecayForGlobalGetting = 60*60*24;
 var globalImportanceThreshold = 2; //this will have to start out small and increase over time as more people join the service.
 
 /*powerUsers are userIds which are allowed to artificially inflate the importance of an event.*/
