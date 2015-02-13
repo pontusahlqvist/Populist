@@ -211,10 +211,10 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
 
-    self.country = nil;
-    self.state = nil;
-    self.city = nil;
-    self.neighborhood = nil;
+    self.country = @"";
+    self.state = @"";
+    self.city = @"";
+    self.neighborhood = @"";
 
     if([locationArray count] > 0){
         self.country = [locationArray[[locationArray count] - 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];

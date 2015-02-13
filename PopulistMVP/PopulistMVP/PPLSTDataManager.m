@@ -126,18 +126,23 @@ int maxMessageLengthForPush = 1000;
     NSNumber *beta0 = [NSNumber numberWithDouble:0.000073628];
     NSNumber *alpha = [NSNumber numberWithDouble:2.77777];
     NSNumber *beta = [NSNumber numberWithDouble:11111.1];
+    NSLog(@"1");
     PFObject *newEvent = [PFObject objectWithClassName:@"FlatCluster"];
     [newEvent setObject:@1 forKey:@"k"];
     [newEvent setObject:@2 forKey:@"N"];
     [newEvent setObject:@0.9 forKey:@"importance"]; //just a signal so keep smaller than 1, however close to 1 to make sure nearby people get clustered properly.
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd-MM-yyyy";
+    NSLog(@"2");
     [newEvent setObject:[dateFormatter dateFromString:@"1-1-2101"] forKey:@"validUntil"];
+    NSLog(@"3");
     [newEvent setObject:@[] forKey:@"contributions"];
     [newEvent setObject:@[] forKey:@"contributingUsers"];
     [newEvent setObject:@[] forKey:@"titlePhotoIdArray"];
     [newEvent setObject:@[] forKey:@"titleMessageIdArray"];
+    NSLog(@"4");
     [newEvent setObject:[PFGeoPoint geoPointWithLatitude:latitude longitude:longitude] forKey:@"location"];
+    NSLog(@"5");
     [newEvent setObject:alpha0 forKey:@"alphan"];
     [newEvent setObject:beta0 forKey:@"betan"];
     [newEvent setObject:date forKey:@"t1"];
@@ -145,12 +150,13 @@ int maxMessageLengthForPush = 1000;
     [newEvent setObject:date forKey:@"tbar"];
     [newEvent setObject:alpha forKey:@"alpha"];
     [newEvent setObject:beta forKey:@"beta"];
-
+    NSLog(@"6 with location strings %@, %@, %@, %@.", self.locationManager.country, self.locationManager.state, self.locationManager.city, self.locationManager.neighborhood);
     [newEvent setObject:self.locationManager.country forKey:@"country"];
     [newEvent setObject:self.locationManager.state forKey:@"state"];
     [newEvent setObject:self.locationManager.city forKey:@"city"];
     [newEvent setObject:self.locationManager.neighborhood forKey:@"neighborhood"];
     //Note: must save synchronously so that the event newEvent has a correct eventId by the time we create the core data event below.
+    NSLog(@"made it here");
     [newEvent save];
     return newEvent;
 }

@@ -432,11 +432,11 @@
     NSLog(@"self.location: -%@-%@-%@-%@",self.locationManager.country,self.locationManager.state,self.locationManager.city,self.locationManager.neighborhood);
     NSLog(@"event.location: -%@-%@-%@-%@",eventCountry, eventState, eventCity, eventNeighborhood);
     
-    if([eventNeighborhood isEqualToString:self.locationManager.neighborhood] || [eventCity isEqualToString:self.locationManager.city]){
+    if(([eventNeighborhood isEqualToString:self.locationManager.neighborhood] && ![eventNeighborhood isEqualToString:@""]) || ([eventCity isEqualToString:self.locationManager.city] && ![eventCity isEqualToString:@""])){
         return event.neighborhood;
-    } else if([eventState isEqualToString:self.locationManager.state]){
+    } else if([eventState isEqualToString:self.locationManager.state] && ![eventState isEqualToString:@""]){
         return event.city;
-    } else if([eventCountry isEqualToString:self.locationManager.country]){
+    } else if([eventCountry isEqualToString:self.locationManager.country] && ![eventCountry isEqualToString:@""]){
         return [NSString stringWithFormat:@"%@, %@", event.city, event.state];
     } else{
         return event.country;
