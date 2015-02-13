@@ -104,6 +104,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Failed To Get Location" message:@"Hmm, it seems like we're having a tough time gathering your location. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
+    NSLog(@"locationManager didFailWithError: %@", error);
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{

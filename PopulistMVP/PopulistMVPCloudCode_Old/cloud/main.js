@@ -647,7 +647,8 @@ function filterAndOrderClusters(baseData, clusters){
 
             var newCustomClusterObject = {};
             newCustomClusterObject["objectId"] = cluster.id;
-            newCustomClusterObject["titleContributionIds"] = titleContributionArray;
+//            newCustomClusterObject["titleContributionIds"] = titleContributionArray;
+            newCustomClusterObject["titlePhotoId"] = titlePhotoId;
             newCustomClusterObject["importance"] = Math.floor(importance);
             newCustomClusterObject["latitude"] = cluster.get("location").latitude;
             newCustomClusterObject["longitude"] = cluster.get("location").longitude;

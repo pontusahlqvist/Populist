@@ -12,7 +12,8 @@
 
 @implementation PPLSTDataManager
 
-int maxMessageLengthForPush = 250;
+//NOTE: prior to iOS8 the max payload for an apple push notification was 256 bytes. Starting with iOS8, this has been increased to 2kb.
+int maxMessageLengthForPush = 1000;
 
 #pragma mark - Required Methods
 
@@ -217,15 +218,7 @@ int maxMessageLengthForPush = 250;
         event.neighborhood = eventDictionary[@"neighborhood"];
         event.state = eventDictionary[@"state"];
         
-        //TODO: fix this by only sending along the titleContributionId for the image, i.e. get rid of titleMessages all together
-        NSString *titleContributionId = nil;
-        for(NSDictionary *titleContributionDictionary in eventDictionary[@"titleContributionIds"]){
-            NSString *key = [[titleContributionDictionary allKeys] firstObject];
-            if([titleContributionDictionary[key] isEqualToString:@"photo"]){
-                titleContributionId = key;
-                break;
-            }
-        }
+        NSString *titleContributionId = eventDictionary[@"titlePhotoId"];
         if(![titleContributionId isEqualToString:event.titleContribution.contributionId] && (titleContributionId || !event.titleContribution)){
             if (!titleContributionId) {
                 titleContributionId = event.titleContribution.contributionId;
@@ -447,7 +440,7 @@ int maxMessageLengthForPush = 250;
                 pushData[@"e"] = contribution.event.eventId;
                 if([contribution.contributionType isEqualToString:@"message"]){
                     if ([contribution.message length] <= maxMessageLengthForPush) {
-                        pushData[@"m"] = contribution.message; //TODO: what if message is too long?
+                        pushData[@"m"] = contribution.message;
                     } else{
                         pushData[@"m"] = @""; //send the empty string along, and let the other user download the data from the server
                     }
