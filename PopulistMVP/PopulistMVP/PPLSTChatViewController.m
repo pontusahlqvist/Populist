@@ -17,19 +17,23 @@
 
 #import "PPLSTChatViewController.h"
 #import "PPLSTImageDetailViewController.h"
+#import "PPLSTMutableDictionary.h"
 
 @interface PPLSTChatViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
 @property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;
-@property (strong, nonatomic) NSMutableDictionary *jsqMessageForContributionId;
+//@property (strong, nonatomic) NSMutableDictionary *jsqMessageForContributionId;
+@property (strong, nonatomic) PPLSTMutableDictionary *jsqMessageForContributionId;
 @end
 
 @implementation PPLSTChatViewController
 
 #pragma mark - required methods
 
--(NSMutableDictionary *)jsqMessageForContributionId{
-    if(!_jsqMessageForContributionId) _jsqMessageForContributionId = [[NSMutableDictionary alloc] init];
+//-(NSMutableDictionary *)jsqMessageForContributionId{
+-(PPLSTMutableDictionary *)jsqMessageForContributionId{
+//    if(!_jsqMessageForContributionId) _jsqMessageForContributionId = [[NSMutableDictionary alloc] init];
+    if(!_jsqMessageForContributionId) _jsqMessageForContributionId = [[PPLSTMutableDictionary alloc] init];
     return _jsqMessageForContributionId;
 }
 
@@ -236,7 +240,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    NSLog(@"prepareForSegue Called");
     if([sender isKindOfClass:[NSIndexPath class]]){
         if([segue.destinationViewController isKindOfClass:[PPLSTImageDetailViewController class]]){
             NSIndexPath *indexPath = sender;
@@ -244,6 +248,7 @@
 //            JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
             Contribution *contribution = self.contributions[indexPath.row];
             JSQMessage *message = [self jsqMessageForContribution:contribution];
+            NSLog(@"prepareForSegue: message = %@", message);
             JSQPhotoMediaItem *photo = (JSQPhotoMediaItem*)[message media];
             destinationVC.image = photo.image;
             destinationVC.contribution = self.contributions[indexPath.row];
@@ -446,6 +451,9 @@
         } else if([contribution.contributionType isEqualToString:@"photo"]){
             //create photo message. Note that we're holding off with loading the photo until it comes into view on the collectionview - i.e. lazy loading
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
+            if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
+                photo.image = [self.dataManager getImageAtFilePath:contribution.imagePath];
+            }
             newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }
         NSLog(@"Just created a new JSQMessage object: %@", newMessage);

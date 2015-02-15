@@ -9,10 +9,12 @@
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 #import "PPLSTMutableDictionary.h"
+#import "PPLSTUUID.h"
 
 @interface PPLSTDataManager()
 //@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
 @property (strong, nonatomic) PPLSTMutableDictionary *imagesAtFilePath;
+@property (strong, nonatomic) NSMutableDictionary *avatarImageSourceForStatus;
 @end
 
 @implementation PPLSTDataManager
@@ -29,7 +31,9 @@ int maxMessageLengthForPush = 1000;
         self.context = [delegate managedObjectContext];
         //setup a listener to see if other contexts on other threads have been saved
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contextHasChanged:) name:NSManagedObjectContextDidSaveNotification object:nil];
-        self.contributingUserId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+//        self.contributingUserId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        self.contributingUserId = [PPLSTUUID UUID];
+        
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
         appDelegate.dataManager = self;
         [self createAvatarForStatusDictionary];
@@ -51,7 +55,8 @@ int maxMessageLengthForPush = 1000;
 
 #pragma mark - Setup / Instantiation Methods
 
--(NSMutableDictionary *)imagesAtFilePath{
+//-(NSMutableDictionary *)imagesAtFilePath{
+-(PPLSTMutableDictionary *)imagesAtFilePath{
 //    if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
     if(!_imagesAtFilePath) _imagesAtFilePath = [[PPLSTMutableDictionary alloc] init];
     return _imagesAtFilePath;
@@ -65,6 +70,11 @@ int maxMessageLengthForPush = 1000;
 -(NSMutableDictionary *)avatarForStatus{
     if(!_avatarForStatus) _avatarForStatus = [[NSMutableDictionary alloc] init];
     return _avatarForStatus;
+}
+
+-(NSMutableDictionary *)avatarImageSourceForStatus{
+    if(!_avatarImageSourceForStatus) _avatarImageSourceForStatus = [[NSMutableDictionary alloc] init];
+    return _avatarImageSourceForStatus;
 }
 
 -(UIImage*) drawText:(NSString*)text atCenterOfImage:(UIImage*)image{
@@ -88,34 +98,59 @@ int maxMessageLengthForPush = 1000;
 //TODO: this re-generates the avatars each time. Do something better than this. Maybe just store them as image assets or something
 -(void) createAvatarForStatusDictionary{
     NSLog(@"PPLSTDataManager - createAvatarForStatusDictionary");
-    NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
 
-    [avatarRawImages addObject:[UIImage imageNamed:@"gold.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"salmon.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"lightGreen.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"purple.png"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"red.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"black.png"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"orange.jpg"]];
-    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
-    
-    UIImage *greyBackground = [UIImage imageNamed:@"grey.jpg"];
+    self.avatarImageSourceForStatus[@0] = @"gold.jpg";
+    self.avatarImageSourceForStatus[@1] = @"salmon.jpg";
+    self.avatarImageSourceForStatus[@2] = @"lightBlue.jpg";
+    self.avatarImageSourceForStatus[@3] = @"darkGreen.jpg";
+    self.avatarImageSourceForStatus[@4] = @"lightGreen.jpg";
+    self.avatarImageSourceForStatus[@5] = @"purple.png";
+    self.avatarImageSourceForStatus[@6] = @"red.jpg";
+    self.avatarImageSourceForStatus[@7] = @"black.png";
+    self.avatarImageSourceForStatus[@8] = @"orange.jpg";
+    self.avatarImageSourceForStatus[@9] = @"grey.jpg";
+
     NSArray *firstLetter = [NSArray arrayWithObjects: @"", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
     NSArray *secondLetter = [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+    
+    NSInteger count = [self.avatarImageSourceForStatus count];
     for(int i = 0; i < [firstLetter count]; i++){
         for(int j = 0; j < [secondLetter count]; j++){
-            [avatarRawImages addObject:[self drawText:[NSString stringWithFormat:@"%@%@",firstLetter[i],secondLetter[j]] atCenterOfImage:greyBackground]];
+            self.avatarImageSourceForStatus[[NSNumber numberWithInteger:count]] = [NSString stringWithFormat:@"%@%@",firstLetter[i],secondLetter[j]];
+            count++;
         }
     }
-
-    int status = 0;
-    for(UIImage *avatarRawImage in avatarRawImages){
-        JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        [self.avatarForStatus setObject:avatarImage forKey:[NSNumber numberWithInt:status]];
-        status++;
-    }
+//
+//    NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
+//
+//    [avatarRawImages addObject:[UIImage imageNamed:@"gold.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"salmon.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"lightGreen.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"purple.png"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"red.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"black.png"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"orange.jpg"]];
+//    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
+//    
+//    UIImage *greyBackground = [UIImage imageNamed:@"grey.jpg"];
+//    NSArray *firstLetter = [NSArray arrayWithObjects: @"", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+//    NSArray *secondLetter = [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
+//    for(int i = 0; i < [firstLetter count]; i++){
+//        for(int j = 0; j < [secondLetter count]; j++){
+//            [avatarRawImages addObject:[self drawText:[NSString stringWithFormat:@"%@%@",firstLetter[i],secondLetter[j]] atCenterOfImage:greyBackground]];
+//        }
+//    }
+//
+//    
+//
+//    int status = 0;
+//    for(UIImage *avatarRawImage in avatarRawImages){
+//        JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+//        [self.avatarForStatus setObject:avatarImage forKey:[NSNumber numberWithInt:status]];
+//        status++;
+//    }
 }
 
 -(NSMutableSet *)contributionIds{
@@ -558,8 +593,13 @@ int maxMessageLengthForPush = 1000;
 
 -(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
     NSLog(@"PPLSTDataManager - avatarForStatus:%@",status);
-    if([status integerValue] >= [self.avatarForStatus count] - 1){
-        return self.avatarForStatus[[NSNumber numberWithInteger:[self.avatarForStatus count] - 1 ]];
+    if(![[self.avatarForStatus allKeys] containsObject:status]){
+        UIImage *image = [UIImage imageNamed:self.avatarImageSourceForStatus[status]];
+        if(!image){
+            image = [self drawText:self.avatarImageSourceForStatus[status] atCenterOfImage:[UIImage imageNamed:@"grey.jpg"]];
+        }
+        JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:image diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        self.avatarForStatus[status] = avatarImage;
     }
     return self.avatarForStatus[status];
 }

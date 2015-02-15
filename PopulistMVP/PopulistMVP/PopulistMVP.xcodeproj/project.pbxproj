@@ -126,6 +126,7 @@
 		16E619361A8A9B0D00FBAAB3 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16E619351A8A9B0D00FBAAB3 /* red.jpg */; };
 		16E619381A8A9D0300FBAAB3 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16E619371A8A9D0300FBAAB3 /* orange.jpg */; };
 		16E6193B1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6193A1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m */; };
+		16E619421A91305700FBAAB3 /* PPLSTUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E619411A91305700FBAAB3 /* PPLSTUUID.m */; };
 		16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */; };
 		16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF691A7C167A001BD00F /* launchImagev2.png */; };
 		16F3FF6E1A7C32E3001BD00F /* takePicture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */; };
@@ -359,6 +360,8 @@
 		16E619371A8A9D0300FBAAB3 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
 		16E619391A8EC23300FBAAB3 /* PPLSTMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTMutableDictionary.h; sourceTree = "<group>"; };
 		16E6193A1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTMutableDictionary.m; sourceTree = "<group>"; };
+		16E619401A91305700FBAAB3 /* PPLSTUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTUUID.h; sourceTree = "<group>"; };
+		16E619411A91305700FBAAB3 /* PPLSTUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTUUID.m; sourceTree = "<group>"; };
 		16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.PNG"; sourceTree = "<group>"; };
 		16F3FF691A7C167A001BD00F /* launchImagev2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImagev2.png; sourceTree = "<group>"; };
 		16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takePicture@2x.png"; sourceTree = "<group>"; };
@@ -643,6 +646,8 @@
 				167F78A61A58725E00C7AB64 /* PPLSTAppDelegate.m */,
 				16E6191A1A83F3E300FBAAB3 /* Reachability.h */,
 				16E6191B1A83F3E300FBAAB3 /* Reachability.m */,
+				16E619401A91305700FBAAB3 /* PPLSTUUID.h */,
+				16E619411A91305700FBAAB3 /* PPLSTUUID.m */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -1071,6 +1076,7 @@
 				163E3D851A64DD3600913FBF /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				16F7DAD71A78031C003215E9 /* Contribution.m in Sources */,
 				16E6193B1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m in Sources */,
+				16E619421A91305700FBAAB3 /* PPLSTUUID.m in Sources */,
 				163E3D761A64DD3600913FBF /* NSString+JSQMessages.m in Sources */,
 				163E3D791A64DD3600913FBF /* UIImage+JSQMessages.m in Sources */,
 				163E3D921A64DD3600913FBF /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,

@@ -1,0 +1,29 @@
+2015-02-15 11:55:50.641 PopulistMVP[4611:1165151] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:55:50.731 PopulistMVP[4611:1165151] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:55:50.803 PopulistMVP[4611:1165151] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-15 11:55:50.804 PopulistMVP[4611:1165151] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-15 11:55:50.811 PopulistMVP[4611:1165151] updateEvents
+2015-02-15 11:55:50.811 PopulistMVP[4611:1165151] startUpdatingEvents
+2015-02-15 11:55:50.856 PopulistMVP[4611:1165151] locationManager didChangeAuthorizationStatus to status = 0
+2015-02-15 11:55:50.870 PopulistMVP[4611:1165151] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+
+
+
+2015-02-15 11:56:19.101 PopulistMVP[4615:1165506] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:56:19.191 PopulistMVP[4615:1165506] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:56:19.269 PopulistMVP[4615:1165506] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-15 11:56:19.269 PopulistMVP[4615:1165506] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-15 11:56:19.276 PopulistMVP[4615:1165506] updateEvents
+2015-02-15 11:56:19.276 PopulistMVP[4615:1165506] startUpdatingEvents
+2015-02-15 11:56:19.320 PopulistMVP[4615:1165506] locationManager didChangeAuthorizationStatus to status = 0
+2015-02-15 11:56:19.333 PopulistMVP[4615:1165506] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+
+
+2015-02-15 11:56:48.978 PopulistMVP[4619:1165995] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:56:49.063 PopulistMVP[4619:1165995] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:56:49.146 PopulistMVP[4619:1165995] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-15 11:56:49.146 PopulistMVP[4619:1165995] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-15 11:56:49.154 PopulistMVP[4619:1165995] updateEvents
+2015-02-15 11:56:49.154 PopulistMVP[4619:1165995] startUpdatingEvents
+2015-02-15 11:56:49.199 PopulistMVP[4619:1165995] locationManager didChangeAuthorizationStatus to status = 0
+2015-02-15 11:56:49.203 PopulistMVP[4619:1165995] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>

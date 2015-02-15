@@ -16,7 +16,7 @@
 
 @implementation PPLSTMutableDictionary
 
-int maxCapacity = 100; //TODO: setting this to 1 doesn't seem to free up any memory. Why? Is there something about JSQ going on here?
+int maxCapacity = 10; //TODO: setting this to 1 doesn't seem to free up any memory. Why? Is there something about JSQ going on here?
 
 -(NSMutableDictionary *)dictionary{
     if(!_dictionary) _dictionary = [[NSMutableDictionary alloc] init];
