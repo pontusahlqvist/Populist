@@ -679,6 +679,7 @@ int maxMessageLengthForPush = 1000;
 //
 //        }
     }
+    NSLog(@"made it to the end of formatJSQMessage");
 }
 
 #pragma mark - Helper Methods / Private Methods
