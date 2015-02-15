@@ -31,7 +31,6 @@
 @property (strong, nonatomic) Event *event;
 
 @property (strong, nonatomic) NSMutableArray *contributions;
-@property (strong, nonatomic) NSMutableArray *jsqMessages;
 @property (strong, nonatomic) NSMutableDictionary *statusForSenderId;
 @property (strong, nonatomic) NSMutableSet *userIds;
 

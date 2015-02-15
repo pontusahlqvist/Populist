@@ -12,6 +12,7 @@
 #import "Reachability.h"
 
 //TODO: make sure all the images are good to go accross multiple devices with varying resolutions
+//TODO: make sure that only things that are actually public appear in the .h file.
 
 @class PPLSTDataManager;
 

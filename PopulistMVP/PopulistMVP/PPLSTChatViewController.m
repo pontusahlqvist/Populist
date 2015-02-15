@@ -183,7 +183,6 @@
     [self handleUserId:newContribution.contributingUserId];
     [self.contributions addObject:newContribution];
     JSQMessage *newJSQMessage = [[self createMessagesFromContributions:@[newContribution]] firstObject];
-//    [self.jsqMessages addObject:newJSQMessage];
     self.jsqMessageForContributionId[newContribution.contributionId] = newJSQMessage;
 
     [self.collectionView reloadData];
@@ -206,7 +205,6 @@
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
-//            self.jsqMessages = [self createMessagesFromContributions:self.contributions];
             for(int i = 0; i < [self.contributions count]; i++){
                 Contribution *contribution = self.contributions[i];
                 JSQMessage *message = [[self createMessagesFromContributions:@[contribution]] firstObject];
@@ -233,13 +231,6 @@
     return _contributions;
 }
 
--(NSMutableArray *)jsqMessages{
-    if(!_jsqMessages){
-        _jsqMessages = [[NSMutableArray alloc] init];
-    }
-    return _jsqMessages;
-}
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -250,7 +241,6 @@
         if([segue.destinationViewController isKindOfClass:[PPLSTImageDetailViewController class]]){
             NSIndexPath *indexPath = sender;
             PPLSTImageDetailViewController *destinationVC = segue.destinationViewController;
-//            JSQMessage *message = self.jsqMessages[indexPath.row];
             JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
             JSQPhotoMediaItem *photo = (JSQPhotoMediaItem*)[message media];
             destinationVC.image = photo.image;
@@ -268,7 +258,6 @@
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    JSQMessage *message = [self.jsqMessages objectAtIndex:indexPath.row];
     JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     NSLog(@"self.senderId = %@, message.senderId = %@", self.senderId, message.senderId);
     if([message.senderId isEqualToString:self.senderId]){
@@ -279,7 +268,6 @@
 }
 
 -(id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    JSQMessage *message = [self.jsqMessages objectAtIndex:indexPath.row];
     JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     //This method call runs asynch if image isn't already loaded and synch if it is.
     [self.dataManager formatJSQMessage:message ForContribution:self.contributions[indexPath.row] inCollectionView:collectionView];
@@ -293,7 +281,6 @@
 #pragma mark - CollectionView Data Source
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-//    return [self.jsqMessages count];
     return [self.contributions count];
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -303,7 +290,6 @@
 - (UICollectionViewCell *)collectionView:(JSQMessagesCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-//    JSQMessage *message = [self.jsqMessages objectAtIndex:indexPath.row];
     JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     if (!message.isMediaMessage) {
         if ([message.senderId isEqualToString:self.senderId]) {
@@ -463,7 +449,6 @@
 -(void) handleNewContribution:(Contribution*)newContribution{
     [self.contributions addObject:newContribution];
     JSQMessage *newMessage = [[self createMessagesFromContributions:@[newContribution]] firstObject];
-//    [self.jsqMessages addObject:newMessage];
     self.jsqMessageForContributionId[newContribution.contributionId] = newMessage;
     
     if([self.event.importance floatValue] < 1.0){
