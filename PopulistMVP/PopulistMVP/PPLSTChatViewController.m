@@ -186,7 +186,7 @@
 //    [self.jsqMessages addObject:newJSQMessage];
     self.jsqMessageForContributionId[newContribution.contributionId] = newJSQMessage;
 
-    [self.collectionView reloadData];
+//    [self.collectionView reloadData];
     [self scrollToBottomAnimated:YES];
 }
 
