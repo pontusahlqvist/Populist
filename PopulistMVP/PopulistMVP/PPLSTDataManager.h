@@ -8,6 +8,7 @@
 
 //TODO: include launch images for iphone 5/5s and iphone 6+. Just drag them into launchImage-1 in images.xcasset
 //TODO: clean up core data for events that are no longer in the stream. Otherwise the data will just build and build...
+//TODO: think carefully about memory management. We'll have to only load a certain number of contributions into memory. After that, we'll have to just read them from the file system. Basically create a FIFO max capacity queue data structure.
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
@@ -95,7 +96,7 @@
 
 #pragma mark - Variables
 
-@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
+//@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
 @property (strong, nonatomic) NSMutableDictionary *squareImagesForImageAtFilePath;
 @property (strong, nonatomic) NSMutableDictionary *isLoading;
 @property (strong, nonatomic) NSMutableDictionary *avatarForStatus;

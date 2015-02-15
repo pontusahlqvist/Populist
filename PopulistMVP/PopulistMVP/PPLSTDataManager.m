@@ -8,7 +8,12 @@
 
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
+#import "PPLSTMutableDictionary.h"
 
+@interface PPLSTDataManager()
+//@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
+@property (strong, nonatomic) PPLSTMutableDictionary *imagesAtFilePath;
+@end
 
 @implementation PPLSTDataManager
 
@@ -47,7 +52,8 @@ int maxMessageLengthForPush = 1000;
 #pragma mark - Setup / Instantiation Methods
 
 -(NSMutableDictionary *)imagesAtFilePath{
-    if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
+//    if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
+    if(!_imagesAtFilePath) _imagesAtFilePath = [[PPLSTMutableDictionary alloc] init];
     return _imagesAtFilePath;
 }
 
@@ -395,7 +401,6 @@ int maxMessageLengthForPush = 1000;
     return newContribution;
 }
 
-//TODO: this method takes in a contribution object and then modifies it in another queue. This may pose a problem with Core Data. What should you do? Copy the object over?
 -(void) uploadAndSaveContributionInBackground:(Contribution*) contribution{
     NSLog(@"PPLSTDataManager - uploadAndSaveContributionInBackground:%@",contribution);
     //we grab the data from the contribution before the queue since we want to avoid passing NSManagedObjects between queues (in this case contribution)
@@ -534,7 +539,7 @@ int maxMessageLengthForPush = 1000;
         newIncomingContribution.latitude = nil;
         newIncomingContribution.longitude = nil;
         if([data[@"t"] isEqualToString:@"message"]){
-            newIncomingContribution.message = data[@"m"]; //TODO: include this!
+            newIncomingContribution.message = data[@"m"];
         }
         Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
@@ -627,7 +632,7 @@ int maxMessageLengthForPush = 1000;
                 context.parentContext = self.context;
                 [context performBlock:^{
                     NSLog(@"imagePath = %@", contribution.imagePath);
-                    [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: shouldn't this be context?
+                    [self downloadMediaForContribution:contribution inContext:context]; //TODO: shouldn't this be context? - originally self.context
                     NSLog(@"now, imagePath = %@", contribution.imagePath);
                     //after download is complete, move back to main queue for UI updates
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -784,7 +789,7 @@ int maxMessageLengthForPush = 1000;
 -(UIImage*) getImageAtFilePath:(NSString*)filePath{
     NSLog(@"PPLSTDataManager - getImageAtFilePath:%@",filePath);
     NSLog(@"inside getImageAtFilePath");
-    if(![[self.imagesAtFilePath allKeys] containsObject:filePath]){
+    if(![[self.imagesAtFilePath allKeys] containsObject:filePath] || !self.imagesAtFilePath[filePath]){
         NSLog(@"getting image from filePath = %@ and storing it into memory", filePath);
         self.imagesAtFilePath[filePath] = [UIImage imageWithContentsOfFile:filePath];
     }
