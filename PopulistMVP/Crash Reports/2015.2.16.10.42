@@ -1,0 +1,1857 @@
+2015-02-16 10:42:13.724 PopulistMVP[5373:1339418] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-16 10:42:13.831 PopulistMVP[5373:1339418] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-16 10:42:13.925 PopulistMVP[5373:1339418] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-16 10:42:13.934 PopulistMVP[5373:1339418] updateEvents
+2015-02-16 10:42:13.934 PopulistMVP[5373:1339418] startUpdatingEvents
+2015-02-16 10:42:13.982 PopulistMVP[5373:1339418] locationManager didChangeAuthorizationStatus to status = 0
+2015-02-16 10:42:13.986 PopulistMVP[5373:1339418] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-02-16 10:42:15.212 PopulistMVP[5373:1339418] locationManager didChangeAuthorizationStatus to status = 4
+2015-02-16 10:42:15.212 PopulistMVP[5373:1339418] didAcceptAuthorization triggered in ExploreVC
+2015-02-16 10:42:15.213 PopulistMVP[5373:1339418] updateEvents
+2015-02-16 10:42:15.219 PopulistMVP[5373:1339418] locationManager didUpdateLocation lastObject = <+34.02103575,-118.42763448> +/- 5.00m (speed 0.00 mps / course 239.41) @ 2/16/15, 10:42:15 AM Pacific Standard Time, accuracy = 5.000000
+2015-02-16 10:42:15.876 PopulistMVP[5373:1339418] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-02-16 10:42:15.876 PopulistMVP[5373:1339418] self.isUpdatingEvents = YES
+2015-02-16 10:42:15.876 PopulistMVP[5373:1339418] finishUpdatingEvents
+2015-02-16 10:42:15.877 PopulistMVP[5373:1339418] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02103575,-118.42763448> +/- 5.00m (speed 0.00 mps / course 239.41) @ 2/16/15, 10:42:15 AM Pacific Standard Time
+2015-02-16 10:42:15.878 PopulistMVP[5373:1339418] PPLSTLocationManager - updateTimeOfLastUpdate:2015-02-16 18:42:15 +0000
+2015-02-16 10:42:15.878 PopulistMVP[5373:1339418] poorAccuracy = false, so we also send signal.
+2015-02-16 10:42:15.878 PopulistMVP[5373:1339418] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.021034 andLongitude:-118.427635 andDate:2015-02-16 18:42:15 +0000
+2015-02-16 10:42:15.879 PopulistMVP[5373:1339418] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.021034 andLongitude:-118.427635 andDate:2015-02-16 18:42:15 +0000
+2015-02-16 10:42:15.880 PopulistMVP[5373:1339418] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-02-16 10:42:16.440 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02101898193359";
+    longitude = "-118.4276275634766";
+    neighborhood = "Mar Vista";
+    objectId = C8Fa4Fjrcu;
+    state = CA;
+    updatedAt = "2015-02-16 18:33:06 +0000";
+}
+2015-02-16 10:42:16.440 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:C8Fa4Fjrcu
+2015-02-16 10:42:16.442 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = C8Fa4Fjrcu
+2015-02-16 10:42:16.442 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = C8Fa4Fjrcu
+2015-02-16 10:42:16.442 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:C8Fa4Fjrcu
+2015-02-16 10:42:16.443 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.450 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.450 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.450 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.451 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfzxc0WG0lV
+2015-02-16 10:42:16.452 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummyfzxc0WG0lV
+2015-02-16 10:42:16.452 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummyfzxc0WG0lV
+2015-02-16 10:42:16.452 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummyfzxc0WG0lV
+2015-02-16 10:42:16.453 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.455 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.458 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 42;
+    isActive = NO;
+    latitude = "34.02101355771917";
+    longitude = "-118.4276580509148";
+    neighborhood = "Mar Vista";
+    objectId = HvHxadIVKA;
+    state = CA;
+    titlePhotoId = 432iBhXkEU;
+    updatedAt = "2015-02-15 20:28:07 +0000";
+}
+2015-02-16 10:42:16.459 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:HvHxadIVKA
+2015-02-16 10:42:16.460 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = HvHxadIVKA
+2015-02-16 10:42:16.460 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = HvHxadIVKA
+2015-02-16 10:42:16.460 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:HvHxadIVKA
+2015-02-16 10:42:16.460 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.462 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.462 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:432iBhXkEU
+2015-02-16 10:42:16.462 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = 432iBhXkEU
+2015-02-16 10:42:16.463 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = 432iBhXkEU
+2015-02-16 10:42:16.463 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:432iBhXkEU
+2015-02-16 10:42:16.463 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.464 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.465 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02101135253906";
+    longitude = "-118.4277114868164";
+    neighborhood = "Mar Vista";
+    objectId = sbVYKQqFph;
+    state = CA;
+    updatedAt = "2015-02-16 16:33:03 +0000";
+}
+2015-02-16 10:42:16.465 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:sbVYKQqFph
+2015-02-16 10:42:16.466 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = sbVYKQqFph
+2015-02-16 10:42:16.466 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = sbVYKQqFph
+2015-02-16 10:42:16.466 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:sbVYKQqFph
+2015-02-16 10:42:16.466 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.468 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.468 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.468 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.468 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAj6ATjjX2A
+2015-02-16 10:42:16.469 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummyAj6ATjjX2A
+2015-02-16 10:42:16.469 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummyAj6ATjjX2A
+2015-02-16 10:42:16.469 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummyAj6ATjjX2A
+2015-02-16 10:42:16.469 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.470 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.471 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02098846435547";
+    longitude = "-118.4276580810547";
+    neighborhood = "Mar Vista";
+    objectId = UsQekTLhuu;
+    state = CA;
+    updatedAt = "2015-02-16 02:09:45 +0000";
+}
+2015-02-16 10:42:16.471 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:UsQekTLhuu
+2015-02-16 10:42:16.472 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = UsQekTLhuu
+2015-02-16 10:42:16.472 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = UsQekTLhuu
+2015-02-16 10:42:16.472 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:UsQekTLhuu
+2015-02-16 10:42:16.472 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.474 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.474 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.474 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.474 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummy9VNFsfJ4qH
+2015-02-16 10:42:16.475 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummy9VNFsfJ4qH
+2015-02-16 10:42:16.475 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummy9VNFsfJ4qH
+2015-02-16 10:42:16.475 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummy9VNFsfJ4qH
+2015-02-16 10:42:16.476 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.477 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.477 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02107620239258";
+    longitude = "-118.4276123046875";
+    neighborhood = "Mar Vista";
+    objectId = tH4brYccNm;
+    state = CA;
+    updatedAt = "2015-02-15 23:35:02 +0000";
+}
+2015-02-16 10:42:16.477 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:tH4brYccNm
+2015-02-16 10:42:16.478 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = tH4brYccNm
+2015-02-16 10:42:16.478 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = tH4brYccNm
+2015-02-16 10:42:16.478 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:tH4brYccNm
+2015-02-16 10:42:16.479 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.480 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.480 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.481 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.481 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLoGBufBRBH
+2015-02-16 10:42:16.481 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummyLoGBufBRBH
+2015-02-16 10:42:16.481 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummyLoGBufBRBH
+2015-02-16 10:42:16.482 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummyLoGBufBRBH
+2015-02-16 10:42:16.482 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.483 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.483 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02098846435547";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = OESoRzNG8d;
+    state = CA;
+    updatedAt = "2015-02-15 03:23:16 +0000";
+}
+2015-02-16 10:42:16.484 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:OESoRzNG8d
+2015-02-16 10:42:16.484 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = OESoRzNG8d
+2015-02-16 10:42:16.484 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = OESoRzNG8d
+2015-02-16 10:42:16.484 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:OESoRzNG8d
+2015-02-16 10:42:16.485 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.486 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.486 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.486 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.487 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNmNqfXqfK9
+2015-02-16 10:42:16.487 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummyNmNqfXqfK9
+2015-02-16 10:42:16.487 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummyNmNqfXqfK9
+2015-02-16 10:42:16.487 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummyNmNqfXqfK9
+2015-02-16 10:42:16.488 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.489 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.489 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02095031738281";
+    longitude = "-118.4277114868164";
+    neighborhood = "Mar Vista";
+    objectId = wx7IoqBXqM;
+    state = CA;
+    updatedAt = "2015-02-15 06:25:57 +0000";
+}
+2015-02-16 10:42:16.490 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:wx7IoqBXqM
+2015-02-16 10:42:16.490 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = wx7IoqBXqM
+2015-02-16 10:42:16.490 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = wx7IoqBXqM
+2015-02-16 10:42:16.491 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:wx7IoqBXqM
+2015-02-16 10:42:16.491 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.492 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.492 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.493 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.493 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNxwuggw4mF
+2015-02-16 10:42:16.493 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummyNxwuggw4mF
+2015-02-16 10:42:16.493 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummyNxwuggw4mF
+2015-02-16 10:42:16.494 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummyNxwuggw4mF
+2015-02-16 10:42:16.494 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.495 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.495 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02092361450195";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = vaaxFM7vKf;
+    state = CA;
+    updatedAt = "2015-02-15 00:55:02 +0000";
+}
+2015-02-16 10:42:16.496 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:vaaxFM7vKf
+2015-02-16 10:42:16.496 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = vaaxFM7vKf
+2015-02-16 10:42:16.496 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = vaaxFM7vKf
+2015-02-16 10:42:16.497 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:vaaxFM7vKf
+2015-02-16 10:42:16.497 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.498 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.498 PopulistMVP[5373:1339418] ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now
+2015-02-16 10:42:16.499 PopulistMVP[5373:1339418] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:16.499 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:dummygqHSf71iez
+2015-02-16 10:42:16.500 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = dummygqHSf71iez
+2015-02-16 10:42:16.500 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = dummygqHSf71iez
+2015-02-16 10:42:16.500 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:dummygqHSf71iez
+2015-02-16 10:42:16.500 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.501 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.502 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99522340369923";
+    longitude = "-118.4799030400709";
+    neighborhood = Venice;
+    objectId = EA55jb8lQf;
+    state = CA;
+    titlePhotoId = CTu7DmM9po;
+    updatedAt = "2015-02-15 23:34:59 +0000";
+}
+2015-02-16 10:42:16.502 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:EA55jb8lQf
+2015-02-16 10:42:16.502 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = EA55jb8lQf
+2015-02-16 10:42:16.503 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = EA55jb8lQf
+2015-02-16 10:42:16.503 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:EA55jb8lQf
+2015-02-16 10:42:16.503 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.506 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.506 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:CTu7DmM9po
+2015-02-16 10:42:16.506 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = CTu7DmM9po
+2015-02-16 10:42:16.507 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = CTu7DmM9po
+2015-02-16 10:42:16.507 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:CTu7DmM9po
+2015-02-16 10:42:16.507 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.508 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.508 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.00572845341886";
+    longitude = "-118.4579472368698";
+    neighborhood = Venice;
+    objectId = WWkvsj95Da;
+    state = CA;
+    titlePhotoId = Rf8LSYpthC;
+    updatedAt = "2015-02-16 00:29:02 +0000";
+}
+2015-02-16 10:42:16.509 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:WWkvsj95Da
+2015-02-16 10:42:16.510 PopulistMVP[5373:1339418] Found 0 events in coredata with eventId = WWkvsj95Da
+2015-02-16 10:42:16.510 PopulistMVP[5373:1339418] Error: No event found in core data with eventId = WWkvsj95Da
+2015-02-16 10:42:16.510 PopulistMVP[5373:1339418] PPLSTDataManager - createEventWithId:WWkvsj95Da
+2015-02-16 10:42:16.510 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.512 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.512 PopulistMVP[5373:1339418] PPLSTDataManager - getContributionFromCoreDataWithId:Rf8LSYpthC
+2015-02-16 10:42:16.512 PopulistMVP[5373:1339418] Found 0 contributions in core data with ContributionId = Rf8LSYpthC
+2015-02-16 10:42:16.513 PopulistMVP[5373:1339418] Error: No contribution found in core data with contributionId = Rf8LSYpthC
+2015-02-16 10:42:16.513 PopulistMVP[5373:1339418] PPLSTDataManager - createContributionWithId:Rf8LSYpthC
+2015-02-16 10:42:16.513 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.514 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.514 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:16.515 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:16.516 PopulistMVP[5373:1339418] already contains user
+2015-02-16 10:42:16.516 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:16.517 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:16.521 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:16.521 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:16.521 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:16.521 PopulistMVP[5373:1339418] calling formatEventCellForContribution
+2015-02-16 10:42:16.522 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:16.523 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = (null)
+2015-02-16 10:42:16.523 PopulistMVP[5373:1339418] creating spinner
+2015-02-16 10:42:16.527 PopulistMVP[5373:1339418] cell.spinner = <UIActivityIndicatorView: 0x13d52c8a0; frame = (177.5 177.5; 20 20); hidden = YES; layer = <CALayer: 0x170221560>>
+2015-02-16 10:42:16.527 PopulistMVP[5373:1339418] should be animating
+2015-02-16 10:42:16.528 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:16.529 PopulistMVP[5373:1339441] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:16.529 PopulistMVP[5373:1339441] B
+2015-02-16 10:42:16.529 PopulistMVP[5373:1339441] Querying Parse for image for contribution with id = 432iBhXkEU
+2015-02-16 10:42:16.530 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:16.531 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:16.532 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:16.532 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:16.532 PopulistMVP[5373:1339418] calling formatEventCellForContribution
+2015-02-16 10:42:16.532 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:16.534 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = (null)
+2015-02-16 10:42:16.534 PopulistMVP[5373:1339418] creating spinner
+2015-02-16 10:42:16.535 PopulistMVP[5373:1339418] cell.spinner = <UIActivityIndicatorView: 0x13d52e5a0; frame = (177.5 177.5; 20 20); hidden = YES; layer = <CALayer: 0x17022dc40>>
+2015-02-16 10:42:16.535 PopulistMVP[5373:1339418] should be animating
+2015-02-16 10:42:16.535 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:16.535 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:16.536 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:16.537 PopulistMVP[5373:1339446] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:16.538 PopulistMVP[5373:1339446] B
+2015-02-16 10:42:16.538 PopulistMVP[5373:1339446] Querying Parse for image for contribution with id = CTu7DmM9po
+2015-02-16 10:42:16.952 PopulistMVP[5373:1339446] photo - parseContribution = <Contribution: 0x174302b50, objectId: CTu7DmM9po, localId: (null)> {
+    flaggedBy =     (
+    );
+    image = "<PFFile: 0x174460a80>";
+    location = "<PFGeoPoint: 0x174235660, latitude: 33.995236, longitude: -118.479898>";
+    promise = EA55jb8lQf;
+    type = photo;
+    userId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+}
+2015-02-16 10:42:16.952 PopulistMVP[5373:1339441] photo - parseContribution = <Contribution: 0x1703027f0, objectId: 432iBhXkEU, localId: (null)> {
+    flaggedBy =     (
+    );
+    image = "<PFFile: 0x17026f800>";
+    location = "<PFGeoPoint: 0x1702317a0, latitude: 34.021002, longitude: -118.427636>";
+    promise = HvHxadIVKA;
+    type = photo;
+    userId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+}
+2015-02-16 10:42:17.424 PopulistMVP[5373:1339446] Got data with length: 31990 for contributionId = CTu7DmM9po in file <PFFile: 0x174460a80>
+2015-02-16 10:42:17.426 PopulistMVP[5373:1339446] PPLSTDataManager - storeImage:<UIImage: 0x170280140>
+2015-02-16 10:42:17.518 PopulistMVP[5373:1339446] PPLSTDataManager - getEmptyFilePath
+2015-02-16 10:42:17.518 PopulistMVP[5373:1339446] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:17.518 PopulistMVP[5373:1339446] Just generated the following free file path: /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.535 PopulistMVP[5373:1339446] the cachedImagedPath is /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.535 PopulistMVP[5373:1339446] just set the imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png for contributionId = CTu7DmM9po and contribution = <Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:17.536 PopulistMVP[5373:1339446] Stored it in imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.536 PopulistMVP[5373:1339446] C
+2015-02-16 10:42:17.536 PopulistMVP[5373:1339446] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:17.538 PopulistMVP[5373:1339446] Saved Core Data!
+2015-02-16 10:42:17.539 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.539 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:17.539 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png and storing it into memory
+2015-02-16 10:42:17.540 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.540 PopulistMVP[5373:1339418] self.keysSet = {(
+)}
+2015-02-16 10:42:17.541 PopulistMVP[5373:1339418] [self.keysArray count] = 0. Max = 10
+2015-02-16 10:42:17.541 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:17.541 PopulistMVP[5373:1339441] Got data with length: 36950 for contributionId = 432iBhXkEU in file <PFFile: 0x17026f800>
+2015-02-16 10:42:17.541 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:17.541 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:17.542 PopulistMVP[5373:1339441] PPLSTDataManager - storeImage:<UIImage: 0x170281e00>
+2015-02-16 10:42:17.542 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:17.543 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:17.544 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:17.545 PopulistMVP[5373:1339418] calling formatEventCellForContribution
+2015-02-16 10:42:17.545 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:17.546 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = (null)
+2015-02-16 10:42:17.546 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:17.546 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:17.547 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:17.547 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:17.547 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:17.549 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:17.550 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.551 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.551 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:17.551 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:17.552 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:17.552 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:17.585 PopulistMVP[5373:1339441] PPLSTDataManager - getEmptyFilePath
+2015-02-16 10:42:17.585 PopulistMVP[5373:1339441] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:17.586 PopulistMVP[5373:1339441] Just generated the following free file path: /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.599 PopulistMVP[5373:1339441] the cachedImagedPath is /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.600 PopulistMVP[5373:1339441] just set the imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png for contributionId = 432iBhXkEU and contribution = <Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:17.600 PopulistMVP[5373:1339441] Stored it in imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.601 PopulistMVP[5373:1339441] C
+2015-02-16 10:42:17.601 PopulistMVP[5373:1339441] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:17.602 PopulistMVP[5373:1339441] Saved Core Data!
+2015-02-16 10:42:17.603 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.603 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:17.603 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png and storing it into memory
+2015-02-16 10:42:17.605 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.605 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png"
+)}
+2015-02-16 10:42:17.605 PopulistMVP[5373:1339418] [self.keysArray count] = 1. Max = 10
+2015-02-16 10:42:17.605 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:17.605 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:17.606 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:17.606 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:17.606 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:17.606 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:17.607 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:17.607 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.608 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:17.608 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:17.608 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:17.609 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:17.609 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:17.609 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:17.609 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:17.610 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:17.610 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.610 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:17.611 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:17.611 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:17.611 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:17.611 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:18.415 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:18.422 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:18.423 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:18.423 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:18.424 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:18.425 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:18.427 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:18.428 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:18.428 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:18.429 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:18.430 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:18.430 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:18.431 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:18.431 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:18.431 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:18.432 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:18.432 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:18.432 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:18.433 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:18.433 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:18.433 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:18.439 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:18.441 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:18.441 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:18.441 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:18.441 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:18.441 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:18.442 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:18.883 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:18.886 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:18.886 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:18.887 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:18.887 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:18.888 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:18.889 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:18.890 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:18.890 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:18.891 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:18.891 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:18.892 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:18.892 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:18.893 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:18.893 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:18.894 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:18.894 PopulistMVP[5373:1339418] calling formatEventCellForContribution
+2015-02-16 10:42:18.895 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d632130; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174234900>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:18.896 PopulistMVP[5373:1339418] contributionId = Rf8LSYpthC, contributionType = photo, imagePath = (null)
+2015-02-16 10:42:18.897 PopulistMVP[5373:1339418] creating spinner
+2015-02-16 10:42:18.900 PopulistMVP[5373:1339418] cell.spinner = <UIActivityIndicatorView: 0x13d633840; frame = (177.5 177.5; 20 20); hidden = YES; layer = <CALayer: 0x1742385a0>>
+2015-02-16 10:42:18.900 PopulistMVP[5373:1339418] should be animating
+2015-02-16 10:42:18.901 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:18.901 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:18.901 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:18.903 PopulistMVP[5373:1339444] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:18.904 PopulistMVP[5373:1339444] B
+2015-02-16 10:42:18.905 PopulistMVP[5373:1339444] Querying Parse for image for contribution with id = Rf8LSYpthC
+2015-02-16 10:42:19.086 PopulistMVP[5373:1339444] photo - parseContribution = <Contribution: 0x170302760, objectId: Rf8LSYpthC, localId: (null)> {
+    flaggedBy =     (
+    );
+    image = "<PFFile: 0x170274180>";
+    location = "<PFGeoPoint: 0x170232c00, latitude: 34.005728, longitude: -118.457947>";
+    promise = WWkvsj95Da;
+    type = photo;
+    userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+}
+2015-02-16 10:42:19.148 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:19.150 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:19.150 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:19.151 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.151 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:19.152 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:19.153 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.154 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.154 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:19.155 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.155 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.155 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:19.156 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:19.156 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:19.157 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.157 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:19.157 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.158 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.159 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:19.719 PopulistMVP[5373:1339444] Got data with length: 72306 for contributionId = Rf8LSYpthC in file <PFFile: 0x170274180>
+2015-02-16 10:42:19.720 PopulistMVP[5373:1339444] PPLSTDataManager - storeImage:<UIImage: 0x174282120>
+2015-02-16 10:42:19.757 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:19.757 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:19.757 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:19.757 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.758 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:19.758 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:19.759 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:19.760 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:19.761 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:19.763 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.763 PopulistMVP[5373:1339418] titleContribution.imagePath was either empty or not set at all
+2015-02-16 10:42:19.764 PopulistMVP[5373:1339418] calling formatEventCellForContribution
+2015-02-16 10:42:19.764 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d632130; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174234900>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:19.765 PopulistMVP[5373:1339418] contributionId = Rf8LSYpthC, contributionType = photo, imagePath = (null)
+2015-02-16 10:42:19.765 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.766 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.766 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:19.786 PopulistMVP[5373:1339444] PPLSTDataManager - getEmptyFilePath
+2015-02-16 10:42:19.786 PopulistMVP[5373:1339444] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:19.786 PopulistMVP[5373:1339444] Just generated the following free file path: /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.811 PopulistMVP[5373:1339444] the cachedImagedPath is /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.811 PopulistMVP[5373:1339444] just set the imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png for contributionId = Rf8LSYpthC and contribution = <Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:19.812 PopulistMVP[5373:1339444] Stored it in imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.812 PopulistMVP[5373:1339444] C
+2015-02-16 10:42:19.812 PopulistMVP[5373:1339444] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:19.814 PopulistMVP[5373:1339444] Saved Core Data!
+2015-02-16 10:42:19.814 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.814 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:19.815 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png and storing it into memory
+2015-02-16 10:42:19.816 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.816 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png"
+)}
+2015-02-16 10:42:19.816 PopulistMVP[5373:1339418] [self.keysArray count] = 2. Max = 10
+2015-02-16 10:42:19.816 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:19.817 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:19.817 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:19.817 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:19.817 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.818 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:19.818 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:19.818 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.819 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:19.819 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:19.819 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.819 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.819 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:19.820 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:19.820 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:19.820 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:19.820 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:19.820 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d632130; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174234900>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:19.821 PopulistMVP[5373:1339418] contributionId = Rf8LSYpthC, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.821 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png
+2015-02-16 10:42:19.821 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:19.822 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:19.822 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:19.822 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:21.401 PopulistMVP[5373:1339418] Selected Row Number 2
+2015-02-16 10:42:21.574 PopulistMVP[5373:1339418] Inside Chat VC
+2015-02-16 10:42:21.578 PopulistMVP[5373:1339439] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1702c2bc0> (entity: Event; id: 0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10> ; data: {
+    city = "Los Angeles";
+    containsUser = 0;
+    contributions =     (
+    );
+    country = USA;
+    eventId = WWkvsj95Da;
+    importance = 2;
+    lastActive = "2015-02-16 00:29:02 +0000";
+    latitude = "34.00573";
+    longitude = "-118.4579";
+    neighborhood = Venice;
+    state = CA;
+    titleContribution = "0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10>";
+})
+2015-02-16 10:42:21.615 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:21.824 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:OFmzf4sNEc
+2015-02-16 10:42:21.826 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = OFmzf4sNEc
+2015-02-16 10:42:21.826 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = OFmzf4sNEc
+2015-02-16 10:42:21.827 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:OFmzf4sNEc
+2015-02-16 10:42:21.827 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:21.829 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:21.830 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:Rf8LSYpthC
+2015-02-16 10:42:21.831 PopulistMVP[5373:1339439] Found 1 contributions in core data with ContributionId = Rf8LSYpthC
+2015-02-16 10:42:21.831 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:21.832 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:21.833 PopulistMVP[5373:1339439] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1702c2bc0> (entity: Event; id: 0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10> ; data: {
+    city = "Los Angeles";
+    containsUser = 0;
+    contributions =     (
+        "0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10>",
+        "0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11>"
+    );
+    country = USA;
+    eventId = WWkvsj95Da;
+    importance = 2;
+    lastActive = "2015-02-16 00:29:02 +0000";
+    latitude = "34.00573";
+    longitude = "-118.4579";
+    neighborhood = Venice;
+    state = CA;
+    titleContribution = "0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10>";
+})
+2015-02-16 10:42:21.833 PopulistMVP[5373:1339439] StatusDictionary = {
+    "09425E21-46F9-4014-B2AF-74EB104AFD46" = 0;
+}
+2015-02-16 10:42:21.833 PopulistMVP[5373:1339439] userIds = {(
+    "09425E21-46F9-4014-B2AF-74EB104AFD46"
+)}
+2015-02-16 10:42:21.834 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:21.834 PopulistMVP[5373:1339418] In the process of converting contributionId = Rf8LSYpthC where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-16 10:42:21.834 PopulistMVP[5373:1339418] Just created a new JSQMessage object: <JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>>
+2015-02-16 10:42:21.835 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:Rf8LSYpthC
+2015-02-16 10:42:21.835 PopulistMVP[5373:1339418] self.keysSet = {(
+)}
+2015-02-16 10:42:21.835 PopulistMVP[5373:1339418] [self.keysArray count] = 0. Max = 10
+2015-02-16 10:42:21.835 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:21.836 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.837 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:21.837 PopulistMVP[5373:1339418] either nil or empty
+2015-02-16 10:42:21.837 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:21.838 PopulistMVP[5373:1339439] imagePath = (null)
+2015-02-16 10:42:21.838 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.838 PopulistMVP[5373:1339439] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339439] B
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339418] either nil or empty
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339439] Querying Parse for image for contribution with id = Rf8LSYpthC
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339418] avoiding double loading, 1
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.839 PopulistMVP[5373:1339418] In the process of converting contributionId = OFmzf4sNEc where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-16 10:42:21.840 PopulistMVP[5373:1339418] createdAt: 2015-02-16 00:29:02 +0000
+2015-02-16 10:42:21.842 PopulistMVP[5373:1339418] Made it here...
+2015-02-16 10:42:21.843 PopulistMVP[5373:1339418] Just created a new JSQMessage object: <JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)>
+2015-02-16 10:42:21.843 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:OFmzf4sNEc
+2015-02-16 10:42:21.843 PopulistMVP[5373:1339418] self.keysSet = {(
+    Rf8LSYpthC
+)}
+2015-02-16 10:42:21.844 PopulistMVP[5373:1339418] [self.keysArray count] = 1. Max = 10
+2015-02-16 10:42:21.844 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:21.844 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.846 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.846 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.850 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.851 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.852 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:21.853 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.853 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:21.853 PopulistMVP[5373:1339418] either nil or empty
+2015-02-16 10:42:21.854 PopulistMVP[5373:1339418] avoiding double loading, 1
+2015-02-16 10:42:21.854 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.854 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 20}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.855 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:21.855 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.856 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:21.856 PopulistMVP[5373:1339418] either nil or empty
+2015-02-16 10:42:21.857 PopulistMVP[5373:1339418] avoiding double loading, 1
+2015-02-16 10:42:21.878 PopulistMVP[5373:1339418] PPLSTDataManager - avatarForStatus:0
+2015-02-16 10:42:21.885 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:21.888 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.888 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:21.896 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.897 PopulistMVP[5373:1339418] self.senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46, message.senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-16 10:42:21.897 PopulistMVP[5373:1339418] PPLSTDataManager - avatarForStatus:0
+2015-02-16 10:42:21.897 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:21.943 PopulistMVP[5373:1339439] photo - parseContribution = <Contribution: 0x1743041d0, objectId: Rf8LSYpthC, localId: (null)> {
+    flaggedBy =     (
+    );
+    image = "<PFFile: 0x174467480>";
+    location = "<PFGeoPoint: 0x17423ce80, latitude: 34.005728, longitude: -118.457947>";
+    promise = WWkvsj95Da;
+    type = photo;
+    userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+}
+2015-02-16 10:42:21.945 PopulistMVP[5373:1339439] Got data with length: 72306 for contributionId = Rf8LSYpthC in file <PFFile: 0x174467480>
+2015-02-16 10:42:21.946 PopulistMVP[5373:1339439] PPLSTDataManager - storeImage:<UIImage: 0x1742854b0>
+2015-02-16 10:42:22.016 PopulistMVP[5373:1339439] PPLSTDataManager - getEmptyFilePath
+2015-02-16 10:42:22.016 PopulistMVP[5373:1339439] PPLSTDataManager - randomgStringWithLength:10
+2015-02-16 10:42:22.017 PopulistMVP[5373:1339439] Just generated the following free file path: /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.038 PopulistMVP[5373:1339439] the cachedImagedPath is /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.038 PopulistMVP[5373:1339439] just set the imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png for contributionId = Rf8LSYpthC and contribution = <Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:22.039 PopulistMVP[5373:1339439] Stored it in imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.040 PopulistMVP[5373:1339439] C
+2015-02-16 10:42:22.040 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:22.041 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:22.041 PopulistMVP[5373:1339439] now, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.042 PopulistMVP[5373:1339418] async loading is complete, and we're back in the main queue
+2015-02-16 10:42:22.042 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.042 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:22.043 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png and storing it into memory
+2015-02-16 10:42:22.045 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.047 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png"
+)}
+2015-02-16 10:42:22.047 PopulistMVP[5373:1339418] [self.keysArray count] = 3. Max = 10
+2015-02-16 10:42:22.047 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:22.048 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:22.049 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x170282620>, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.051 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:22.051 PopulistMVP[5373:1339418] imagepath != nil && imagePath != empty string
+2015-02-16 10:42:22.052 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.052 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:22.052 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:22.052 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x170282620>, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.053 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:22.053 PopulistMVP[5373:1339418] imagepath != nil && imagePath != empty string
+2015-02-16 10:42:22.054 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.054 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:22.054 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.055 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.056 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.056 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.057 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:22.058 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x170282620>, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.059 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:22.060 PopulistMVP[5373:1339418] imagepath != nil && imagePath != empty string
+2015-02-16 10:42:22.060 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.060 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:22.060 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.061 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.062 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:22.062 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 18:42:21 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x170282620>, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.063 PopulistMVP[5373:1339418] it's a photo
+2015-02-16 10:42:22.064 PopulistMVP[5373:1339418] imagepath != nil && imagePath != empty string
+2015-02-16 10:42:22.064 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:22.064 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:22.068 PopulistMVP[5373:1339418] PPLSTDataManager - avatarForStatus:0
+2015-02-16 10:42:22.068 PopulistMVP[5373:1339418] jsqMessageForContribution:Rf8LSYpthC
+2015-02-16 10:42:22.070 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.071 PopulistMVP[5373:1339418] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-02-16 00:29:02 +0000, isMediaMessage=0, text=A day in the park, media=(null)> ForContribution:<Contribution: 0x1702c7f50> (entity: Contribution; id: 0xd0000000002c0002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p11> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = OFmzf4sNEc;
+    contributionType = message;
+    createdAt = "2015-02-16 00:29:02 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "A day in the park";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13e0a5800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17024a5c0>; layer = <CALayer: 0x170232e80>; contentOffset: {0, 0}; contentSize: {375, 262}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x13d539210>
+2015-02-16 10:42:22.073 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.073 PopulistMVP[5373:1339418] self.senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46, message.senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-02-16 10:42:22.073 PopulistMVP[5373:1339418] PPLSTDataManager - avatarForStatus:0
+2015-02-16 10:42:22.073 PopulistMVP[5373:1339418] jsqMessageForContribution:OFmzf4sNEc
+2015-02-16 10:42:22.625 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:23.383 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:23.384 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:23.384 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:23.384 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:23.384 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:23.385 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:23.385 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:23.385 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:23.386 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png and storing it into memory
+2015-02-16 10:42:23.387 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:23.387 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png"
+)}
+2015-02-16 10:42:23.388 PopulistMVP[5373:1339418] [self.keysArray count] = 4. Max = 10
+2015-02-16 10:42:23.388 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:23.388 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:23.402 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:23.403 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:23.404 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:23.404 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:23.404 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:23.405 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:23.405 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:23.406 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:23.406 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:23.406 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:23.406 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:23.407 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:23.407 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:23.407 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:23.408 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:23.408 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:23.409 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:23.409 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:23.410 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png and storing it into memory
+2015-02-16 10:42:23.411 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:23.411 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png"
+)}
+2015-02-16 10:42:23.412 PopulistMVP[5373:1339418] [self.keysArray count] = 4. Max = 10
+2015-02-16 10:42:23.412 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:23.412 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:23.413 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:23.413 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:23.414 PopulistMVP[5373:1339418] indexPath.row = 2
+2015-02-16 10:42:23.414 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = Rf8LSYpthC
+2015-02-16 10:42:23.414 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:23.414 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:23.415 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d632130; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174234900>> ForContribution:<Contribution: 0x1742c4c90> (entity: Contribution; id: 0xd000000000280002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p10> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Rf8LSYpthC;
+    contributionType = photo;
+    createdAt = "2015-02-16 00:28:54 +0000";
+    event = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000280000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p10>";
+})
+2015-02-16 10:42:23.415 PopulistMVP[5373:1339418] contributionId = Rf8LSYpthC, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:23.416 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:23.416 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:23.416 PopulistMVP[5373:1339418] getting image from filePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png and storing it into memory
+2015-02-16 10:42:23.417 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png
+2015-02-16 10:42:23.417 PopulistMVP[5373:1339418] self.keysSet = {(
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/fV74lolx4O.png",
+    "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/ehHGCc0Fy6.png"
+)}
+2015-02-16 10:42:23.418 PopulistMVP[5373:1339418] [self.keysArray count] = 4. Max = 10
+2015-02-16 10:42:23.418 PopulistMVP[5373:1339418] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-16 10:42:23.418 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:23.418 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:23.419 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:24.070 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:24.071 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:24.072 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:24.072 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:24.072 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:24.073 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:24.074 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:24.074 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:24.074 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:24.075 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:24.075 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:24.076 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:24.076 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:24.076 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:24.077 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:24.079 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:24.079 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:24.080 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:24.080 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:24.080 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:24.080 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:24.167 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:24.168 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:24.168 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:24.169 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:24.169 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:24.169 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:24.170 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:24.170 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:24.171 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:24.171 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:24.171 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:24.171 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:24.172 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:24.172 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:24.172 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:24.173 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:24.173 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:24.174 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:24.174 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:24.174 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:24.174 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:24.685 PopulistMVP[5373:1339418] updateEvents
+2015-02-16 10:42:24.686 PopulistMVP[5373:1339418] startUpdatingEvents
+2015-02-16 10:42:24.692 PopulistMVP[5373:1339418] locationManager didUpdateLocation lastObject = <+34.02103575,-118.42763448> +/- 5.00m (speed 0.00 mps / course 239.41) @ 2/16/15, 10:42:24 AM Pacific Standard Time, accuracy = 5.000000
+2015-02-16 10:42:24.696 PopulistMVP[5373:1339418] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-02-16 10:42:24.696 PopulistMVP[5373:1339418] self.isUpdatingEvents = YES
+2015-02-16 10:42:24.697 PopulistMVP[5373:1339418] finishUpdatingEvents
+2015-02-16 10:42:24.698 PopulistMVP[5373:1339418] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02103575,-118.42763448> +/- 5.00m (speed 0.00 mps / course 239.41) @ 2/16/15, 10:42:24 AM Pacific Standard Time
+2015-02-16 10:42:24.699 PopulistMVP[5373:1339418] PPLSTLocationManager - updateTimeOfLastUpdate:2015-02-16 18:42:24 +0000
+2015-02-16 10:42:24.699 PopulistMVP[5373:1339418] poorAccuracy = false, so we also send signal.
+2015-02-16 10:42:24.699 PopulistMVP[5373:1339418] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.021034 andLongitude:-118.427635 andDate:2015-02-16 18:42:24 +0000
+2015-02-16 10:42:24.699 PopulistMVP[5373:1339418] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.021034 andLongitude:-118.427635 andDate:2015-02-16 18:42:24 +0000
+2015-02-16 10:42:24.702 PopulistMVP[5373:1339418] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-02-16 10:42:25.111 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02101898193359";
+    longitude = "-118.4276275634766";
+    neighborhood = "Mar Vista";
+    objectId = C8Fa4Fjrcu;
+    state = CA;
+    updatedAt = "2015-02-16 18:33:06 +0000";
+}
+2015-02-16 10:42:25.112 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:C8Fa4Fjrcu
+2015-02-16 10:42:25.113 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = C8Fa4Fjrcu
+2015-02-16 10:42:25.114 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 42;
+    isActive = NO;
+    latitude = "34.02101355771917";
+    longitude = "-118.4276580509148";
+    neighborhood = "Mar Vista";
+    objectId = HvHxadIVKA;
+    state = CA;
+    titlePhotoId = 432iBhXkEU;
+    updatedAt = "2015-02-15 20:28:07 +0000";
+}
+2015-02-16 10:42:25.115 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:HvHxadIVKA
+2015-02-16 10:42:25.116 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = HvHxadIVKA
+2015-02-16 10:42:25.117 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02101135253906";
+    longitude = "-118.4277114868164";
+    neighborhood = "Mar Vista";
+    objectId = sbVYKQqFph;
+    state = CA;
+    updatedAt = "2015-02-16 16:33:03 +0000";
+}
+2015-02-16 10:42:25.117 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:sbVYKQqFph
+2015-02-16 10:42:25.118 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = sbVYKQqFph
+2015-02-16 10:42:25.119 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02098846435547";
+    longitude = "-118.4276580810547";
+    neighborhood = "Mar Vista";
+    objectId = UsQekTLhuu;
+    state = CA;
+    updatedAt = "2015-02-16 02:09:45 +0000";
+}
+2015-02-16 10:42:25.120 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:UsQekTLhuu
+2015-02-16 10:42:25.121 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = UsQekTLhuu
+2015-02-16 10:42:25.122 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02107620239258";
+    longitude = "-118.4276123046875";
+    neighborhood = "Mar Vista";
+    objectId = tH4brYccNm;
+    state = CA;
+    updatedAt = "2015-02-15 23:35:02 +0000";
+}
+2015-02-16 10:42:25.122 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:tH4brYccNm
+2015-02-16 10:42:25.123 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = tH4brYccNm
+2015-02-16 10:42:25.124 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02098846435547";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = OESoRzNG8d;
+    state = CA;
+    updatedAt = "2015-02-15 03:23:16 +0000";
+}
+2015-02-16 10:42:25.125 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:OESoRzNG8d
+2015-02-16 10:42:25.126 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = OESoRzNG8d
+2015-02-16 10:42:25.127 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02095031738281";
+    longitude = "-118.4277114868164";
+    neighborhood = "Mar Vista";
+    objectId = wx7IoqBXqM;
+    state = CA;
+    updatedAt = "2015-02-15 06:25:57 +0000";
+}
+2015-02-16 10:42:25.127 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:wx7IoqBXqM
+2015-02-16 10:42:25.128 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = wx7IoqBXqM
+2015-02-16 10:42:25.129 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02092361450195";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = vaaxFM7vKf;
+    state = CA;
+    updatedAt = "2015-02-15 00:55:02 +0000";
+}
+2015-02-16 10:42:25.130 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:vaaxFM7vKf
+2015-02-16 10:42:25.131 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = vaaxFM7vKf
+2015-02-16 10:42:25.132 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99522340369923";
+    longitude = "-118.4799030400709";
+    neighborhood = Venice;
+    objectId = EA55jb8lQf;
+    state = CA;
+    titlePhotoId = CTu7DmM9po;
+    updatedAt = "2015-02-15 23:34:59 +0000";
+}
+2015-02-16 10:42:25.132 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:EA55jb8lQf
+2015-02-16 10:42:25.134 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = EA55jb8lQf
+2015-02-16 10:42:25.135 PopulistMVP[5373:1339418] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.00572845341886";
+    longitude = "-118.4579472368698";
+    neighborhood = Venice;
+    objectId = WWkvsj95Da;
+    state = CA;
+    titlePhotoId = Rf8LSYpthC;
+    updatedAt = "2015-02-16 00:29:02 +0000";
+}
+2015-02-16 10:42:25.136 PopulistMVP[5373:1339418] PPLSTDataManager - getEventFromCoreDataWithId:WWkvsj95Da
+2015-02-16 10:42:25.137 PopulistMVP[5373:1339418] Found 1 events in coredata with eventId = WWkvsj95Da
+2015-02-16 10:42:25.137 PopulistMVP[5373:1339418] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:25.142 PopulistMVP[5373:1339418] Saved Core Data!
+2015-02-16 10:42:25.143 PopulistMVP[5373:1339418] already contains user
+2015-02-16 10:42:25.144 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:25.145 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:25.146 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:25.146 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:25.147 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:25.148 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:25.149 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:25.149 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:25.149 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:25.150 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:25.150 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:25.151 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:25.151 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:25.151 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:25.152 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:25.152 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:25.153 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:25.153 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:25.153 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:25.153 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:25.154 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:25.177 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:25.178 PopulistMVP[5373:1339418] indexPath.row = 0
+2015-02-16 10:42:25.178 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-02-16 10:42:25.178 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:25.179 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:25.179 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d52e270; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17022d860>> ForContribution:<Contribution: 0x1742c4210> (entity: Contribution; id: 0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 20:28:07 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2>";
+})
+2015-02-16 10:42:25.180 PopulistMVP[5373:1339418] contributionId = 432iBhXkEU, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:25.181 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/LK5t5pJqPy.png
+2015-02-16 10:42:25.181 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:25.181 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:25.182 PopulistMVP[5373:1339418] indexPath.row = 1
+2015-02-16 10:42:25.182 PopulistMVP[5373:1339418] Formatting Event Cell for contributionId = CTu7DmM9po
+2015-02-16 10:42:25.182 PopulistMVP[5373:1339418] Was a photo
+2015-02-16 10:42:25.182 PopulistMVP[5373:1339418] titleContribution.imagePath was set and not empty
+2015-02-16 10:42:25.183 PopulistMVP[5373:1339418] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13d631150; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174238160>> ForContribution:<Contribution: 0x1702c2990> (entity: Contribution; id: 0xd000000000240002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p9> ; data: {
+    contributingUserId = "6C850360-5EA6-43FD-9754-C353C7C22EF0";
+    contributionId = CTu7DmM9po;
+    contributionType = photo;
+    createdAt = "2015-02-15 23:34:59 +0000";
+    event = nil;
+    imagePath = "/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png";
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000240000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p9>";
+})
+2015-02-16 10:42:25.184 PopulistMVP[5373:1339418] contributionId = CTu7DmM9po, contributionType = photo, imagePath = /var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:25.184 PopulistMVP[5373:1339418] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/444D0343-4063-4148-B028-F0F3EBBF8581/Documents/cBdjbEHKvr.png
+2015-02-16 10:42:25.185 PopulistMVP[5373:1339418] inside getImageAtFilePath
+2015-02-16 10:42:25.185 PopulistMVP[5373:1339418] finished!
+2015-02-16 10:42:25.185 PopulistMVP[5373:1339418] self.location: -USA-CA-Los Angeles-Mar Vista
+2015-02-16 10:42:25.185 PopulistMVP[5373:1339418] event.location: -USA-CA-Los Angeles-Venice
+2015-02-16 10:42:25.970 PopulistMVP[5373:1339418] Selected Row Number 0
+2015-02-16 10:42:25.999 PopulistMVP[5373:1339418] Inside Chat VC
+2015-02-16 10:42:26.002 PopulistMVP[5373:1339439] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1702c1ce0> (entity: Event; id: 0xd000000000080000 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Event/p2> ; data: {
+    city = "Los Angeles";
+    containsUser = 0;
+    contributions =     (
+    );
+    country = USA;
+    eventId = HvHxadIVKA;
+    importance = 42;
+    lastActive = "2015-02-15 20:28:07 +0000";
+    latitude = "34.02102";
+    longitude = "-118.4277";
+    neighborhood = "Mar Vista";
+    state = CA;
+    titleContribution = "0xd000000000080002 <x-coredata://B907B91D-4B55-49BF-9AD8-5367B735FDFC/Contribution/p2>";
+})
+2015-02-16 10:42:26.018 PopulistMVP[5373:1339418] Number of events: 3
+2015-02-16 10:42:26.376 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:eUedViBdsr
+2015-02-16 10:42:26.378 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = eUedViBdsr
+2015-02-16 10:42:26.378 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = eUedViBdsr
+2015-02-16 10:42:26.379 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:eUedViBdsr
+2015-02-16 10:42:26.379 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.383 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.384 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:b8NX94v9L5
+2015-02-16 10:42:26.387 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = b8NX94v9L5
+2015-02-16 10:42:26.388 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = b8NX94v9L5
+2015-02-16 10:42:26.389 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:b8NX94v9L5
+2015-02-16 10:42:26.390 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.393 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.393 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:KokxUTPKad
+2015-02-16 10:42:26.394 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = KokxUTPKad
+2015-02-16 10:42:26.395 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = KokxUTPKad
+2015-02-16 10:42:26.395 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:KokxUTPKad
+2015-02-16 10:42:26.395 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.398 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.399 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:dmqDhSHX46
+2015-02-16 10:42:26.401 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = dmqDhSHX46
+2015-02-16 10:42:26.402 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = dmqDhSHX46
+2015-02-16 10:42:26.402 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:dmqDhSHX46
+2015-02-16 10:42:26.402 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.405 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.406 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:NS7v95DR2m
+2015-02-16 10:42:26.407 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = NS7v95DR2m
+2015-02-16 10:42:26.407 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = NS7v95DR2m
+2015-02-16 10:42:26.407 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:NS7v95DR2m
+2015-02-16 10:42:26.408 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.410 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.411 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:432iBhXkEU
+2015-02-16 10:42:26.411 PopulistMVP[5373:1339439] Found 1 contributions in core data with ContributionId = 432iBhXkEU
+2015-02-16 10:42:26.412 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:zD2HrvRPtL
+2015-02-16 10:42:26.413 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = zD2HrvRPtL
+2015-02-16 10:42:26.413 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = zD2HrvRPtL
+2015-02-16 10:42:26.413 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:zD2HrvRPtL
+2015-02-16 10:42:26.414 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.416 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.417 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:XtFwxWqMdR
+2015-02-16 10:42:26.418 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = XtFwxWqMdR
+2015-02-16 10:42:26.418 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = XtFwxWqMdR
+2015-02-16 10:42:26.418 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:XtFwxWqMdR
+2015-02-16 10:42:26.419 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.421 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.421 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:4QzueXZwIj
+2015-02-16 10:42:26.422 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 4QzueXZwIj
+2015-02-16 10:42:26.422 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 4QzueXZwIj
+2015-02-16 10:42:26.422 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:4QzueXZwIj
+2015-02-16 10:42:26.423 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.425 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.425 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:3US6yMqEPf
+2015-02-16 10:42:26.426 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 3US6yMqEPf
+2015-02-16 10:42:26.427 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 3US6yMqEPf
+2015-02-16 10:42:26.427 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:3US6yMqEPf
+2015-02-16 10:42:26.427 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.429 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.429 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:P0b0RJjkvm
+2015-02-16 10:42:26.430 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = P0b0RJjkvm
+2015-02-16 10:42:26.431 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = P0b0RJjkvm
+2015-02-16 10:42:26.431 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:P0b0RJjkvm
+2015-02-16 10:42:26.431 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.433 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.434 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:BmDYzsnjm6
+2015-02-16 10:42:26.434 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = BmDYzsnjm6
+2015-02-16 10:42:26.435 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = BmDYzsnjm6
+2015-02-16 10:42:26.435 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:BmDYzsnjm6
+2015-02-16 10:42:26.435 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.437 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.437 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:PrH85gDCNR
+2015-02-16 10:42:26.438 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = PrH85gDCNR
+2015-02-16 10:42:26.438 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = PrH85gDCNR
+2015-02-16 10:42:26.438 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:PrH85gDCNR
+2015-02-16 10:42:26.438 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.440 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.440 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:aKiMd3jGvg
+2015-02-16 10:42:26.441 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = aKiMd3jGvg
+2015-02-16 10:42:26.441 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = aKiMd3jGvg
+2015-02-16 10:42:26.441 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:aKiMd3jGvg
+2015-02-16 10:42:26.442 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.443 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.443 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:1kUJCDhWcU
+2015-02-16 10:42:26.444 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 1kUJCDhWcU
+2015-02-16 10:42:26.444 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 1kUJCDhWcU
+2015-02-16 10:42:26.445 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:1kUJCDhWcU
+2015-02-16 10:42:26.445 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.447 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.447 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:UW8Lj1CshM
+2015-02-16 10:42:26.448 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = UW8Lj1CshM
+2015-02-16 10:42:26.448 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = UW8Lj1CshM
+2015-02-16 10:42:26.449 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:UW8Lj1CshM
+2015-02-16 10:42:26.449 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.451 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.451 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:6r6pAyMr60
+2015-02-16 10:42:26.452 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 6r6pAyMr60
+2015-02-16 10:42:26.452 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 6r6pAyMr60
+2015-02-16 10:42:26.452 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:6r6pAyMr60
+2015-02-16 10:42:26.452 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.454 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.454 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:7FnSkYIHIe
+2015-02-16 10:42:26.455 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 7FnSkYIHIe
+2015-02-16 10:42:26.455 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 7FnSkYIHIe
+2015-02-16 10:42:26.455 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:7FnSkYIHIe
+2015-02-16 10:42:26.455 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.457 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.457 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:6A17piRU9g
+2015-02-16 10:42:26.458 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 6A17piRU9g
+2015-02-16 10:42:26.458 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 6A17piRU9g
+2015-02-16 10:42:26.458 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:6A17piRU9g
+2015-02-16 10:42:26.458 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.459 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.460 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:jiqZGYbJrg
+2015-02-16 10:42:26.460 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = jiqZGYbJrg
+2015-02-16 10:42:26.461 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = jiqZGYbJrg
+2015-02-16 10:42:26.461 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:jiqZGYbJrg
+2015-02-16 10:42:26.461 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.463 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.463 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:YEwIyHERvc
+2015-02-16 10:42:26.464 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = YEwIyHERvc
+2015-02-16 10:42:26.464 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = YEwIyHERvc
+2015-02-16 10:42:26.464 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:YEwIyHERvc
+2015-02-16 10:42:26.464 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.466 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.466 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:ks6XAoRUnQ
+2015-02-16 10:42:26.467 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = ks6XAoRUnQ
+2015-02-16 10:42:26.467 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = ks6XAoRUnQ
+2015-02-16 10:42:26.467 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:ks6XAoRUnQ
+2015-02-16 10:42:26.468 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.469 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.470 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:apB3k01Yge
+2015-02-16 10:42:26.471 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = apB3k01Yge
+2015-02-16 10:42:26.472 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = apB3k01Yge
+2015-02-16 10:42:26.472 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:apB3k01Yge
+2015-02-16 10:42:26.473 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.474 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.475 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:x9GRiiZ3sR
+2015-02-16 10:42:26.476 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = x9GRiiZ3sR
+2015-02-16 10:42:26.476 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = x9GRiiZ3sR
+2015-02-16 10:42:26.477 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:x9GRiiZ3sR
+2015-02-16 10:42:26.478 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.481 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.482 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:Barnt1yM1l
+2015-02-16 10:42:26.483 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = Barnt1yM1l
+2015-02-16 10:42:26.483 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = Barnt1yM1l
+2015-02-16 10:42:26.484 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:Barnt1yM1l
+2015-02-16 10:42:26.484 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.486 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.486 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:9aURhROtYv
+2015-02-16 10:42:26.487 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 9aURhROtYv
+2015-02-16 10:42:26.488 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 9aURhROtYv
+2015-02-16 10:42:26.489 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:9aURhROtYv
+2015-02-16 10:42:26.489 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.491 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.495 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:6yvaGEI6BT
+2015-02-16 10:42:26.498 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 6yvaGEI6BT
+2015-02-16 10:42:26.498 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 6yvaGEI6BT
+2015-02-16 10:42:26.500 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:6yvaGEI6BT
+2015-02-16 10:42:26.500 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.503 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.504 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:2dn5Illr9S
+2015-02-16 10:42:26.505 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 2dn5Illr9S
+2015-02-16 10:42:26.505 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 2dn5Illr9S
+2015-02-16 10:42:26.506 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:2dn5Illr9S
+2015-02-16 10:42:26.506 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.507 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.508 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:txBjdMcpsj
+2015-02-16 10:42:26.509 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = txBjdMcpsj
+2015-02-16 10:42:26.510 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = txBjdMcpsj
+2015-02-16 10:42:26.510 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:txBjdMcpsj
+2015-02-16 10:42:26.511 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.514 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.515 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:6cq02u8gC1
+2015-02-16 10:42:26.516 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = 6cq02u8gC1
+2015-02-16 10:42:26.517 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = 6cq02u8gC1
+2015-02-16 10:42:26.517 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:6cq02u8gC1
+2015-02-16 10:42:26.517 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.520 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.520 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:h4BG3cDGwf
+2015-02-16 10:42:26.521 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = h4BG3cDGwf
+2015-02-16 10:42:26.522 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = h4BG3cDGwf
+2015-02-16 10:42:26.522 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:h4BG3cDGwf
+2015-02-16 10:42:26.523 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.524 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.525 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:inTtJu30to
+2015-02-16 10:42:26.526 PopulistMVP[5373:1339439] Found 0 contributions in core data with ContributionId = inTtJu30to
+2015-02-16 10:42:26.527 PopulistMVP[5373:1339439] Error: No contribution found in core data with contributionId = inTtJu30to
+2015-02-16 10:42:26.528 PopulistMVP[5373:1339439] PPLSTDataManager - createContributionWithId:inTtJu30to
+2015-02-16 10:42:26.528 PopulistMVP[5373:1339439] PPLSTDataManager - saveCoreData
+2015-02-16 10:42:26.530 PopulistMVP[5373:1339439] Saved Core Data!
+2015-02-16 10:42:26.531 PopulistMVP[5373:1339439] PPLSTDataManager - getContributionFromCoreDataWithId:GrGwmAdeYO
+2015-02-16 10:42:26.535 PopulistMVP[5373:1339439] *** Terminating app due to uncaught exception 'NSGenericException', reason: '*** Collection <__NSCFSet: 0x1702667c0> was mutated while being enumerated.'
+*** First throw call stack:
+(0x18470a59c 0x194e600e4 0x184709f50 0x1843c1cf8 0x100119a4c 0x10011257c 0x10011cc3c 0x18445d270 0x10036cdf0 0x100377854 0x100370120 0x10037975c 0x10037af18 0x1956812e4 0x195680fa8)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+(lldb) 

@@ -257,7 +257,6 @@
             NSLog(@"titleContribution.imagePath was set and not empty");
             /*TODO: for some reason it seems like the image is not persisted in the filesystem between runs if the app is run through xcode (even through a physical device). However, if the same app is run through the iphone directly, the data is persisted perfectly. One can get around this by checking to see if the file actually exists rather than simply checking if the imagePath property has been set in the contribution object.*/
             [self.dataManager formatEventCell:cell ForContribution:titleContribution];
-//            cell.titleImageView.image = [self.dataManager getImageAtFilePath:titleContribution.imagePath];
         } else{
             NSLog(@"titleContribution.imagePath was either empty or not set at all");
             //we must download the image from the cloud

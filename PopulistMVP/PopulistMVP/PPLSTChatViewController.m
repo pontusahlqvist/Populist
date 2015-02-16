@@ -30,9 +30,7 @@
 
 #pragma mark - required methods
 
-//-(NSMutableDictionary *)jsqMessageForContributionId{
 -(PPLSTMutableDictionary *)jsqMessageForContributionId{
-//    if(!_jsqMessageForContributionId) _jsqMessageForContributionId = [[NSMutableDictionary alloc] init];
     if(!_jsqMessageForContributionId) _jsqMessageForContributionId = [[PPLSTMutableDictionary alloc] init];
     return _jsqMessageForContributionId;
 }
@@ -60,7 +58,6 @@
     //setup delegates and datasources
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-//    self.locationManager.delegate = self;
     
     JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
@@ -123,40 +120,6 @@
     return _userIds;
 }
 
-//#pragma mark - PPLSTLocationManagerDelegate Methods
-////TODO: fix this with accuracyFlag
-//-(void)locationUpdatedTo:(CLLocation *)newLocation From:(CLLocation *)oldLocation withPoorAccuracy:(BOOL)poorAccuracy{
-//    NSLog(@"inside locationUpdatedTo within chatVC");
-//    if(poorAccuracy){
-//        //TODO: think carefully about this. If the user was already part of the event, their location must have already been pretty accurate. Should we let them continue talking? Perhaps make the location that's sent along with the contribution adhere to the event location if the user's location is too imprecise. This would avoid spreading the cluster out in space because of poor location data.
-//        NSNumber *thisEventContainsUser = [self.event.containsUser copy];
-//        if([thisEventContainsUser isEqualToNumber:@1]){ //only worry about location if the user was participating.
-//            //disable chat and perhaps display an alert view
-//            self.event.containsUser = @0; //don't worry about saving since there will already be a save in progress in the dataManager
-//            [self.inputToolbar.contentView.textView setEditable:NO];
-//            self.inputToolbar.backgroundColor = [UIColor clearColor];
-//            [self.inputToolbar.contentView.textView setPlaceHolder:@"You are an observer"];
-//        }
-//    } else{
-//        if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
-//            NSNumber *thisEventContainsUser = [self.event.containsUser copy];
-//
-//            Event *bestEvent = [self.dataManager eventThatUserBelongsTo];
-//            CLLocation *currentLocation = [self.locationManager getCurrentLocation];
-//            [self.locationManager updateLocationOfLastUpdate:currentLocation];
-//            [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
-//            //TODO: what happens if the user is currently browsing another event when the location updates? Is the other event not nullified then?
-//            if([thisEventContainsUser isEqualToNumber:@1] && ![bestEvent.eventId isEqualToString:self.event.eventId]){
-//                //disable chat and perhaps display an alert view
-//                [self disableEvent];
-//            }
-//        }
-//    }
-//
-//}
-//-(void)didAcceptAuthorization{}
-//-(void)didDeclineAuthorization{}
-
 #pragma mark - Disable Chat Methods
 
 //This method disables the event, i.e. the user will no longer be able to participate/chat
@@ -186,9 +149,6 @@
     }
     [self handleUserId:newContribution.contributingUserId];
     [self.contributions addObject:newContribution];
-//    JSQMessage *newJSQMessage = [[self createMessagesFromContributions:@[newContribution]] firstObject];
-//    self.jsqMessageForContributionId[newContribution.contributionId] = newJSQMessage;
-
     [self.collectionView reloadData];
     [self scrollToBottomAnimated:YES];
 }
@@ -209,11 +169,6 @@
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
-//            for(int i = 0; i < [self.contributions count]; i++){
-//                Contribution *contribution = self.contributions[i];
-//                JSQMessage *message = [[self createMessagesFromContributions:@[contribution]] firstObject];
-//                self.jsqMessageForContributionId[contribution.contributionId] = message;
-//            }
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
             self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
             NSLog(@"userIds = %@", self.userIds);
@@ -245,7 +200,6 @@
         if([segue.destinationViewController isKindOfClass:[PPLSTImageDetailViewController class]]){
             NSIndexPath *indexPath = sender;
             PPLSTImageDetailViewController *destinationVC = segue.destinationViewController;
-//            JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
             Contribution *contribution = self.contributions[indexPath.row];
             JSQMessage *message = [self jsqMessageForContribution:contribution];
             NSLog(@"prepareForSegue: message = %@", message);
@@ -265,7 +219,6 @@
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
     NSLog(@"self.senderId = %@, message.senderId = %@", self.senderId, message.senderId);
@@ -277,7 +230,6 @@
 }
 
 -(id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
     //This method call runs asynch if image isn't already loaded and synch if it is.
@@ -301,7 +253,6 @@
 - (UICollectionViewCell *)collectionView:(JSQMessagesCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-//    JSQMessage *message = self.jsqMessageForContributionId[((Contribution*)self.contributions[indexPath.row]).contributionId];
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
     if (!message.isMediaMessage) {
@@ -382,7 +333,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     NSLog(@"should have dismissed the VC");
 
-//    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
     UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
     
     NSLog(@"VC should be dismissed...");
@@ -394,33 +344,10 @@
 
     [self finishSendingMessageAnimated:YES];
     [self.collectionView reloadData];
-    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-
 }
 
 -(void)didCancelPickingImage{
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//
-////    UIImage *image = [self imageWithImage:info[UIImagePickerControllerEditedImage] scaledDownToHorizontalPoints:750.0];
-//    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
-//    UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
-//    
-//    NSLog(@"VC should be dismissed...");
-//    //setup the contribution
-//    NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
-//    
-//    Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:image];
-//    [self handleNewContribution:newContribution];
-//
-//    [self finishSendingMessageAnimated:YES];
-//    [self.collectionView reloadData];
-//    
-////    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - PPLSTReportViewDelegate Methods
@@ -473,8 +400,6 @@
 
 -(void) handleNewContribution:(Contribution*)newContribution{
     [self.contributions addObject:newContribution];
-//    JSQMessage *newMessage = [[self createMessagesFromContributions:@[newContribution]] firstObject];
-//    self.jsqMessageForContributionId[newContribution.contributionId] = newMessage;
     
     if([self.event.importance floatValue] < 1.0){
         [self.dataManager increaseImportanceOfEvent:self.event By:2.0];

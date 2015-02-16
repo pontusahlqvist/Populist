@@ -40,16 +40,12 @@
     UIView *overlayTop = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, width, (height-width)/2.0 - 4.0)];
     UIView *overlayBottom = [[UIView alloc] initWithFrame:CGRectMake(0.0, (height+width)/2.0 + 4.0, width, (height-width)/2.0)];
 
-//    overlayTop.backgroundColor = [UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:0.5f];
-//    overlayBottom.backgroundColor = [UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:0.5f];
     overlayTop.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5f];
     overlayBottom.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5f];
 
     UIView *topBar = [[UIView alloc] initWithFrame:CGRectMake(width/10.0, (height-width)/2.0-2, width*4.0/5.0, 2.0)];
     UIView *bottomBar = [[UIView alloc] initWithFrame:CGRectMake(width/10.0, (height+width)/2.0, width*4.0/5.0, 2.0)];
 
-//    topBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
-//    bottomBar.backgroundColor = [UIColor redColor];//[UIColor colorWithRed:93.0f/255.0f green:151.0f/255.0f blue:174.0f/255.0f alpha:1.0f];
     topBar.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f];
     bottomBar.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f];
 
@@ -254,7 +250,6 @@
     UIImage *scaledImage = [self imageWithImage:croppedImage scaledDownToHorizontalPoints:750.0];
     self.chosenImage = scaledImage;
     [self showImagePreview];
-//    [self.imagePickerDelegate didFinishPickingImage:scaledImage];
 }
 
 -(void) showImagePreview{

@@ -34,8 +34,8 @@ float maxAlpha = 0.5;
 
         self.frame = frame;
         UIColor *buttonBackgroundColor = [UIColor whiteColor];
-        UIColor *cancelTextColor = nil;//[UIColor blueColor];
-        UIColor *reportTextColor = [UIColor redColor];//[UIColor colorWithRed:240.0f/255.0f green:91.0f/255.0f blue:98.0f/255.0f alpha:1.0f];
+        UIColor *cancelTextColor = nil;
+        UIColor *reportTextColor = [UIColor redColor];
 
         //Add report button
         self.reportButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];

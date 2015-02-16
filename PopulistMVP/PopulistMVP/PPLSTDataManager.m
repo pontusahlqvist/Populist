@@ -31,7 +31,6 @@ int maxMessageLengthForPush = 1000;
         self.context = [delegate managedObjectContext];
         //setup a listener to see if other contexts on other threads have been saved
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contextHasChanged:) name:NSManagedObjectContextDidSaveNotification object:nil];
-//        self.contributingUserId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
         self.contributingUserId = [PPLSTUUID UUID];
         
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
@@ -55,9 +54,7 @@ int maxMessageLengthForPush = 1000;
 
 #pragma mark - Setup / Instantiation Methods
 
-//-(NSMutableDictionary *)imagesAtFilePath{
 -(PPLSTMutableDictionary *)imagesAtFilePath{
-//    if(!_imagesAtFilePath) _imagesAtFilePath = [[NSMutableDictionary alloc] init];
     if(!_imagesAtFilePath) _imagesAtFilePath = [[PPLSTMutableDictionary alloc] init];
     return _imagesAtFilePath;
 }
@@ -120,37 +117,6 @@ int maxMessageLengthForPush = 1000;
             count++;
         }
     }
-//
-//    NSMutableArray *avatarRawImages = [[NSMutableArray alloc] init];
-//
-//    [avatarRawImages addObject:[UIImage imageNamed:@"gold.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"salmon.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"lightBlue.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"darkGreen.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"lightGreen.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"purple.png"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"red.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"black.png"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"orange.jpg"]];
-//    [avatarRawImages addObject:[UIImage imageNamed:@"grey.jpg"]];
-//    
-//    UIImage *greyBackground = [UIImage imageNamed:@"grey.jpg"];
-//    NSArray *firstLetter = [NSArray arrayWithObjects: @"", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
-//    NSArray *secondLetter = [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
-//    for(int i = 0; i < [firstLetter count]; i++){
-//        for(int j = 0; j < [secondLetter count]; j++){
-//            [avatarRawImages addObject:[self drawText:[NSString stringWithFormat:@"%@%@",firstLetter[i],secondLetter[j]] atCenterOfImage:greyBackground]];
-//        }
-//    }
-//
-//    
-//
-//    int status = 0;
-//    for(UIImage *avatarRawImage in avatarRawImages){
-//        JSQMessagesAvatarImage *avatarImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:avatarRawImage diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-//        [self.avatarForStatus setObject:avatarImage forKey:[NSNumber numberWithInt:status]];
-//        status++;
-//    }
 }
 
 -(NSMutableSet *)contributionIds{

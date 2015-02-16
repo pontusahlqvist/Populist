@@ -13,12 +13,6 @@
 -(id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if(self){
-//        float width = frame.size.width*0.2;
-//        float height = width;
-//        float x = (frame.size.width - width)/2.0;
-//        float y = (frame.size.height - height)/2.0;
-//        self.frame = CGRectMake(x, y, width, height);
-//        self.layer.cornerRadius = 10.0;
         float width = frame.size.width;
         float height = frame.size.height;
         self.frame = frame;
@@ -36,18 +30,7 @@
         label.text = @"Updating your location...";
         label.textColor = [UIColor whiteColor];
         [label setNumberOfLines:0];
-//        [label sizeToFit];
         [self addSubview:label];
-
-
-//        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(width*0.1, width*0.1, width*0.8, height)];
-//        label.font = [UIFont systemFontOfSize:25.0];
-//        label.textAlignment = UITextAlignmentCenter;
-//        label.text = @"Updating your location...";
-//        label.textColor = [UIColor whiteColor];
-//        [label setNumberOfLines:0];
-//        [label sizeToFit];
-//        [self addSubview:label];
     }
     return self;
 }

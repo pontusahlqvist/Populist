@@ -24,10 +24,6 @@
         UIAlertView *internetIssueAlert = [[UIAlertView alloc] initWithTitle:@"Failed to connect to the internet" message:@"It seems like your internet connection is a bit spotty right now. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [internetIssueAlert show];
     } else{
-        //TODO: look into this: [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios_guide#localdatastore/iOS
-    //    [Parse enableLocalDatastore];
-     
         // Initialize Parse.
         /*TODO: make sure to use the applicationkey HqSQkohCVzDHOILzZ6tVcV7uPc2Sycv5SHTY5rye and clientKey yFhhnIp67MMBejd9xsb9Snph9tfYnad7vPXw56Ja
         The other ones are just meant for testing!
