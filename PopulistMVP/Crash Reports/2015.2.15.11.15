@@ -1,29 +1,194 @@
-2015-02-15 11:55:50.641 PopulistMVP[4611:1165151] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:55:50.731 PopulistMVP[4611:1165151] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:55:50.803 PopulistMVP[4611:1165151] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
-2015-02-15 11:55:50.804 PopulistMVP[4611:1165151] PPLSTDataManager - createAvatarForStatusDictionary
-2015-02-15 11:55:50.811 PopulistMVP[4611:1165151] updateEvents
-2015-02-15 11:55:50.811 PopulistMVP[4611:1165151] startUpdatingEvents
-2015-02-15 11:55:50.856 PopulistMVP[4611:1165151] locationManager didChangeAuthorizationStatus to status = 0
-2015-02-15 11:55:50.870 PopulistMVP[4611:1165151] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
-
-
-
-2015-02-15 11:56:19.101 PopulistMVP[4615:1165506] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:56:19.191 PopulistMVP[4615:1165506] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:56:19.269 PopulistMVP[4615:1165506] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
-2015-02-15 11:56:19.269 PopulistMVP[4615:1165506] PPLSTDataManager - createAvatarForStatusDictionary
-2015-02-15 11:56:19.276 PopulistMVP[4615:1165506] updateEvents
-2015-02-15 11:56:19.276 PopulistMVP[4615:1165506] startUpdatingEvents
-2015-02-15 11:56:19.320 PopulistMVP[4615:1165506] locationManager didChangeAuthorizationStatus to status = 0
-2015-02-15 11:56:19.333 PopulistMVP[4615:1165506] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
-
-
-2015-02-15 11:56:48.978 PopulistMVP[4619:1165995] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:56:49.063 PopulistMVP[4619:1165995] Reachability Flag Status: -R -----l- networkStatusForFlags
-2015-02-15 11:56:49.146 PopulistMVP[4619:1165995] PPLSTUUID = 09425E21-46F9-4014-B2AF-74EB104AFD46
-2015-02-15 11:56:49.146 PopulistMVP[4619:1165995] PPLSTDataManager - createAvatarForStatusDictionary
-2015-02-15 11:56:49.154 PopulistMVP[4619:1165995] updateEvents
-2015-02-15 11:56:49.154 PopulistMVP[4619:1165995] startUpdatingEvents
-2015-02-15 11:56:49.199 PopulistMVP[4619:1165995] locationManager didChangeAuthorizationStatus to status = 0
-2015-02-15 11:56:49.203 PopulistMVP[4619:1165995] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-02-15 11:02:12.481 PopulistMVP[4312:1138356] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:02:12.574 PopulistMVP[4312:1138356] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-02-15 11:02:12.609 PopulistMVP[4312:1138356] PPLSTDataManager - createAvatarForStatusDictionary
+2015-02-15 11:02:12.617 PopulistMVP[4312:1138356] updateEvents
+2015-02-15 11:02:12.617 PopulistMVP[4312:1138356] startUpdatingEvents
+2015-02-15 11:02:12.664 PopulistMVP[4312:1138356] locationManager didChangeAuthorizationStatus to status = 4
+2015-02-15 11:02:12.664 PopulistMVP[4312:1138356] didAcceptAuthorization triggered in ExploreVC
+2015-02-15 11:02:12.665 PopulistMVP[4312:1138356] updateEvents
+2015-02-15 11:02:12.668 PopulistMVP[4312:1138356] locationManager didUpdateLocation lastObject = <+34.02106086,-118.42763289> +/- 5.00m (speed 0.00 mps / course -1.00) @ 2/15/15, 11:02:12 AM Pacific Standard Time, accuracy = 5.000000
+2015-02-15 11:02:13.293 PopulistMVP[4312:1138356] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-02-15 11:02:13.293 PopulistMVP[4312:1138356] self.isUpdatingEvents = YES
+2015-02-15 11:02:13.294 PopulistMVP[4312:1138356] finishUpdatingEvents
+2015-02-15 11:02:13.295 PopulistMVP[4312:1138356] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02106086,-118.42763289> +/- 5.00m (speed 0.00 mps / course -1.00) @ 2/15/15, 11:02:12 AM Pacific Standard Time
+2015-02-15 11:02:13.296 PopulistMVP[4312:1138356] PPLSTLocationManager - updateTimeOfLastUpdate:2015-02-15 19:02:13 +0000
+2015-02-15 11:02:13.296 PopulistMVP[4312:1138356] poorAccuracy = false, so we also send signal.
+2015-02-15 11:02:13.296 PopulistMVP[4312:1138356] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.021061 andLongitude:-118.427635 andDate:2015-02-15 19:02:13 +0000
+2015-02-15 11:02:13.296 PopulistMVP[4312:1138356] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.021061 andLongitude:-118.427635 andDate:2015-02-15 19:02:13 +0000
+2015-02-15 11:02:13.298 PopulistMVP[4312:1138356] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-02-15 11:02:14.900 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02107620239258";
+    longitude = "-118.4277954101562";
+    neighborhood = "Mar Vista";
+    objectId = HvHxadIVKA;
+    state = CA;
+    updatedAt = "2015-02-15 17:52:55 +0000";
+}
+2015-02-15 11:02:14.901 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:HvHxadIVKA
+2015-02-15 11:02:14.906 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = HvHxadIVKA
+2015-02-15 11:02:14.914 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02098846435547";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = OESoRzNG8d;
+    state = CA;
+    updatedAt = "2015-02-15 03:23:16 +0000";
+}
+2015-02-15 11:02:14.915 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:OESoRzNG8d
+2015-02-15 11:02:14.922 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = OESoRzNG8d
+2015-02-15 11:02:14.924 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02095031738281";
+    longitude = "-118.4277114868164";
+    neighborhood = "Mar Vista";
+    objectId = wx7IoqBXqM;
+    state = CA;
+    updatedAt = "2015-02-15 06:25:57 +0000";
+}
+2015-02-15 11:02:14.924 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:wx7IoqBXqM
+2015-02-15 11:02:14.926 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = wx7IoqBXqM
+2015-02-15 11:02:14.930 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02092361450195";
+    longitude = "-118.4276504516602";
+    neighborhood = "Mar Vista";
+    objectId = vaaxFM7vKf;
+    state = CA;
+    updatedAt = "2015-02-15 00:55:02 +0000";
+}
+2015-02-15 11:02:14.930 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:vaaxFM7vKf
+2015-02-15 11:02:14.932 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = vaaxFM7vKf
+2015-02-15 11:02:14.933 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02118301391602";
+    longitude = "-118.4276809692383";
+    neighborhood = "Mar Vista";
+    objectId = 5JnFWlVmqx;
+    state = CA;
+    updatedAt = "2015-02-14 07:47:12 +0000";
+}
+2015-02-15 11:02:14.936 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:5JnFWlVmqx
+2015-02-15 11:02:14.937 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = 5JnFWlVmqx
+2015-02-15 11:02:14.939 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02090855492153";
+    longitude = "-118.4276725600251";
+    neighborhood = "Mar Vista";
+    objectId = 8CyDARhTa5;
+    state = CA;
+    titlePhotoId = zRDqRBmgFW;
+    updatedAt = "2015-02-13 18:57:13 +0000";
+}
+2015-02-15 11:02:14.939 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:8CyDARhTa5
+2015-02-15 11:02:14.941 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = 8CyDARhTa5
+2015-02-15 11:02:14.942 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 0;
+    isActive = NO;
+    latitude = "34.02099609375";
+    longitude = "-118.4276809692383";
+    neighborhood = "Mar Vista";
+    objectId = RYxqcFrs43;
+    state = CA;
+    updatedAt = "2015-02-14 01:30:50 +0000";
+}
+2015-02-15 11:02:14.944 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:RYxqcFrs43
+2015-02-15 11:02:14.946 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = RYxqcFrs43
+2015-02-15 11:02:14.949 PopulistMVP[4312:1138356] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 10;
+    isActive = NO;
+    latitude = "34.02103396033796";
+    longitude = "-118.427660232342";
+    neighborhood = "Mar Vista";
+    objectId = SOyF65odh2;
+    state = CA;
+    titlePhotoId = dv4C30TAKi;
+    updatedAt = "2015-02-12 18:40:16 +0000";
+}
+2015-02-15 11:02:14.950 PopulistMVP[4312:1138356] PPLSTDataManager - getEventFromCoreDataWithId:SOyF65odh2
+2015-02-15 11:02:14.952 PopulistMVP[4312:1138356] Found 1 events in coredata with eventId = SOyF65odh2
+2015-02-15 11:02:14.953 PopulistMVP[4312:1138356] PPLSTDataManager - saveCoreData
+2015-02-15 11:02:14.960 PopulistMVP[4312:1138356] Saved Core Data!
+2015-02-15 11:02:14.961 PopulistMVP[4312:1138356] already contains user
+2015-02-15 11:02:14.963 PopulistMVP[4312:1138356] Number of events: 2
+2015-02-15 11:02:14.964 PopulistMVP[4312:1138356] indexPath.row = 0
+2015-02-15 11:02:14.975 PopulistMVP[4312:1138356] Formatting Event Cell for contributionId = zRDqRBmgFW
+2015-02-15 11:02:14.977 PopulistMVP[4312:1138356] Was a photo
+2015-02-15 11:02:14.977 PopulistMVP[4312:1138356] titleContribution.imagePath was either empty or not set at all
+2015-02-15 11:02:14.978 PopulistMVP[4312:1138356] calling formatEventCellForContribution
+2015-02-15 11:02:14.984 PopulistMVP[4312:1138356] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13c528020; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x174223d80>> ForContribution:<Contribution: 0x1700d5f50> (entity: Contribution; id: 0xd000000000180002 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Contribution/p6> ; data: {
+    contributingUserId = "A0C51A1D-E53C-4FE8-8109-5AF5DD54539C";
+    contributionId = zRDqRBmgFW;
+    contributionType = photo;
+    createdAt = "2015-02-13 18:57:13 +0000";
+    event = "0xd000000000180000 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Event/p6>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000180000 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Event/p6>";
+})
+2015-02-15 11:02:14.985 PopulistMVP[4312:1138356] contributionId = zRDqRBmgFW, contributionType = photo, imagePath = (null)
+2015-02-15 11:02:14.985 PopulistMVP[4312:1138356] finished!
+2015-02-15 11:02:14.987 PopulistMVP[4312:1138403] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1700d5f50> (entity: Contribution; id: 0xd000000000180002 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Contribution/p6> ; data: {
+    contributingUserId = "A0C51A1D-E53C-4FE8-8109-5AF5DD54539C";
+    contributionId = zRDqRBmgFW;
+    contributionType = photo;
+    createdAt = "2015-02-13 18:57:13 +0000";
+    event = "0xd000000000180000 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Event/p6>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000180000 <x-coredata://648AD9C2-99BF-435E-A001-332ADAA40457/Event/p6>";
+})
+2015-02-15 11:02:14.988 PopulistMVP[4312:1138403] B
+2015-02-15 11:02:14.990 PopulistMVP[4312:1138403] Querying Parse for image for contribution with id = zRDqRBmgFW
+2015-02-15 11:02:14.993 PopulistMVP[4312:1138356] indexPath.row = 1
+2015-02-15 11:02:14.996 PopulistMVP[4312:1138356] Formatting Event Cell for contributionId = dv4C30TAKi
+2015-02-15 11:02:14.996 PopulistMVP[4312:1138356] Was a photo
+2015-02-15 11:02:14.997 PopulistMVP[4312:1138356] titleContribution.imagePath was set and not empty
+2015-02-15 11:02:14.997 PopulistMVP[4312:1138356] PPLSTDataManager - getImageAtFilePath:/var/mobile/Containers/Data/Application/4168909E-ECF2-42EA-BA2A-1235E53BC997/Documents/cBdjbEHKvr.png
+2015-02-15 11:02:14.997 PopulistMVP[4312:1138356] inside getImageAtFilePath
+2015-02-15 11:02:14.999 PopulistMVP[4312:1138356] getting image from filePath = /var/mobile/Containers/Data/Application/4168909E-ECF2-42EA-BA2A-1235E53BC997/Documents/cBdjbEHKvr.png and storing it into memory
+2015-02-15 11:02:15.001 PopulistMVP[4312:1138356] PPLST prepareDictionaryForInsertWithKey:/var/mobile/Containers/Data/Application/4168909E-ECF2-42EA-BA2A-1235E53BC997/Documents/cBdjbEHKvr.png
+2015-02-15 11:02:15.001 PopulistMVP[4312:1138356] self.keysSet = {(
+)}
+2015-02-15 11:02:15.001 PopulistMVP[4312:1138356] [self.keysArray count] = 0. Max = 1
+2015-02-15 11:02:15.001 PopulistMVP[4312:1138356] PPLST prepareDictionaryForInsertWithKey - done
+2015-02-15 11:02:15.008 PopulistMVP[4312:1138356] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** setObjectForKey: object cannot be nil (key: /var/mobile/Containers/Data/Application/4168909E-ECF2-42EA-BA2A-1235E53BC997/Documents/cBdjbEHKvr.png)'
+*** First throw call stack:
+(0x18470a59c 0x194e600e4 0x1845f51f8 0x1000c7100 0x1000ee8f0 0x1000fd3f4 0x1891b2ef0 0x1891a7aa4 0x188f9cce8 0x188eb9648 0x188811994 0x18880c564 0x18880c408 0x18880bc08 0x18880b98c 0x188eb061c 0x1846c2a50 0x1846bf9dc 0x1846bfdbc 0x1845ed0a4 0x18d78f5a4 0x188f223c0 0x1000d67a8 0x1954cea08)
+libc++abi.dylib: terminating with uncaught exception of type NSException

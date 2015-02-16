@@ -136,7 +136,7 @@ static CFMutableDictionaryRef CreateKeychainQueryDictionary(void)
 	
 	if (status != noErr)
 	{
-		NSLog(@"BPXLUUIDHandler Keychain Save Error: %ld", status);
+		NSLog(@"BPXLUUIDHandler Keychain Save Error: %ld", (long)status);
 		uuid = nil;
 	}
 	

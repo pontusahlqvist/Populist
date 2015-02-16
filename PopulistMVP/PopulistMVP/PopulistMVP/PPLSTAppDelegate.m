@@ -72,7 +72,6 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    //TODO: make sure to check to see what the channel is. If it doesn't start with "event", it might be a generic notification.
     if([[userInfo allKeys] containsObject:@"t"]){ //t for type. If push doesn't contain t as a key, we deal with it separately
         [self.dataManager handleIncomingDataFromPush:userInfo];
     } else{

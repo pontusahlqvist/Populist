@@ -19,7 +19,7 @@
 #pragma mark - Parameters
 //TODO: make sure parameters are reasonable
 float veryNearCutoff = 30.0; //in meters
-float cutoffDistance = 50.0; //in meters
+float cutoffDistance = 100.0; //in meters
 float cutoffTime = 60.0*30; //in seconds
 int locationUpdateTimeInterval = 60; //in seconds
 
@@ -108,9 +108,8 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
-    //TODO: make sure that this works properly, i.e. that we're checking for all correct acceptance codes
     NSLog(@"locationManager didChangeAuthorizationStatus to status = %i", status);
-    if(status == 4){
+    if(status == kCLAuthorizationStatusAuthorized || status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse){
         [self.delegate didAcceptAuthorization];
     } else if(status != 0){
         [self.delegate didDeclineAuthorization];

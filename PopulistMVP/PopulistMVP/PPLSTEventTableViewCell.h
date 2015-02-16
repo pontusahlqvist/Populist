@@ -16,4 +16,5 @@
 
 @property (weak, nonatomic) UITableView *parentTableView;
 @property (nonatomic) BOOL loading; //keeps track of if the image for the cell has already been requested to avoid multiple requests.
+@property (strong, nonatomic) UIActivityIndicatorView *spinner;
 @end

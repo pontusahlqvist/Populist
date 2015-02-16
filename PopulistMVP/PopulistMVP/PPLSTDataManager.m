@@ -399,7 +399,6 @@ int maxMessageLengthForPush = 1000;
         newContribution.createdAt = [NSDate date];
     }
     if(photo){
-        //TODO: make the resizing better - this is intended to save space / memory
         newContribution.imagePath = [self storeImage:[self imageWithImage:photo scaledToSize:CGSizeMake(320.0, 320.0)]];
     } else{
         newContribution.imagePath = nil;
@@ -497,7 +496,7 @@ int maxMessageLengthForPush = 1000;
                 [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
                 [pushNotification sendPushInBackground];
                 
-                [self saveCoreDataInContext:self.context]; //TODO: does this screw things up because it's in a different thread as far as the ManagedObjectContext goes?
+                [self saveCoreDataInContext:self.context];
             });
         }];
     });
@@ -627,12 +626,22 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"contributionId = %@, contributionType = %@, imagePath = %@", contribution.contributionId, contribution.contributionType, contribution.imagePath);
     if([contribution.contributionType isEqualToString:@"photo"] && contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
         cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
+        return;
     }
     NSNumber *loading = self.isLoading[contribution.contributionId];
     if([loading isEqualToNumber:@1]){
         return; //wait for first load to complete before initializing a second load.
     }
     self.isLoading[contribution.contributionId] = @1;
+    //add spinner to cell
+    NSLog(@"creating spinner");
+    cell.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    cell.spinner.center = CGPointMake([UIScreen mainScreen].applicationFrame.size.width/2,[UIScreen mainScreen].applicationFrame.size.width/2);
+    [cell addSubview:cell.spinner];
+    [cell bringSubviewToFront:cell.spinner];
+    NSLog(@"cell.spinner = %@", cell.spinner);
+    [cell.spinner startAnimating];
+    NSLog(@"should be animating");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
@@ -641,6 +650,11 @@ int maxMessageLengthForPush = 1000;
             [self downloadMediaForContribution:contribution inContext:self.context];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
+                if(cell.spinner){
+                    [cell.spinner stopAnimating];
+                    [cell.spinner removeFromSuperview];
+                    cell.spinner = nil;
+                }
                 cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
                 [cell.parentTableView reloadData];
             });
@@ -672,7 +686,7 @@ int maxMessageLengthForPush = 1000;
                 context.parentContext = self.context;
                 [context performBlock:^{
                     NSLog(@"imagePath = %@", contribution.imagePath);
-                    [self downloadMediaForContribution:contribution inContext:context]; //TODO: shouldn't this be context? - originally self.context
+                    [self downloadMediaForContribution:contribution inContext:context];
                     NSLog(@"now, imagePath = %@", contribution.imagePath);
                     //after download is complete, move back to main queue for UI updates
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -685,41 +699,7 @@ int maxMessageLengthForPush = 1000;
                 }];
             });
         }
-    } else if([contribution.contributionType isEqualToString:@"message"]){
-        //TODO: note that the message should have already been downloaded if it was too long in the chatVC's createMessagesFromContributions
-//        NSLog(@"inside jsqformat with message");
-//        //TODO: check if the message is set. If not, we must download it from parse.
-//        if(!contribution.message || [contribution.message isEqualToString:@""]){
-//            NSLog(@"message is nil or empty");
-//            NSNumber *loading = self.isLoading[contribution.contributionId];
-//            if([loading isEqualToNumber:@1]){
-//                NSLog(@"avoiding double loading, %@", self.isLoading[contribution.contributionId]);
-//                return; //avoid dubble loading while running in background thread
-//            }
-//            self.isLoading[contribution.contributionId] = @1;
-//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
-//            ^{
-//                NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-//                context.parentContext = self.context;
-//                [context performBlock:^{
-//                    [self downloadMediaForContribution:contribution inContext:self.context]; //TODO: shouldn't this be context?
-//                    //after download is complete, move back to main queue for UI updates
-//                    dispatch_async(dispatch_get_main_queue(), ^{
-//                        NSLog(@"async loading is complete, and we're back in the main queue");
-//                        self.isLoading[contribution.contributionId] = @0;
-//                        NSString *messageText = message.text;
-//                        
-//
-//                    
-//
-//                        [collectionView reloadData];
-//                    });
-//                }];
-//            });
-//
-//        }
-    }
-    NSLog(@"made it to the end of formatJSQMessage");
+    } else if([contribution.contributionType isEqualToString:@"message"]){}
 }
 
 #pragma mark - Helper Methods / Private Methods

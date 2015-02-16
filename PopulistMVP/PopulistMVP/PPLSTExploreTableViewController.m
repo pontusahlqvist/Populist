@@ -256,7 +256,8 @@
         if(titleContribution.imagePath && ![titleContribution.imagePath isEqualToString:@""]){
             NSLog(@"titleContribution.imagePath was set and not empty");
             /*TODO: for some reason it seems like the image is not persisted in the filesystem between runs if the app is run through xcode (even through a physical device). However, if the same app is run through the iphone directly, the data is persisted perfectly. One can get around this by checking to see if the file actually exists rather than simply checking if the imagePath property has been set in the contribution object.*/
-            cell.titleImageView.image = [self.dataManager getImageAtFilePath:titleContribution.imagePath];
+            [self.dataManager formatEventCell:cell ForContribution:titleContribution];
+//            cell.titleImageView.image = [self.dataManager getImageAtFilePath:titleContribution.imagePath];
         } else{
             NSLog(@"titleContribution.imagePath was either empty or not set at all");
             //we must download the image from the cloud
@@ -346,12 +347,19 @@
     [self updateEvents];
 }
 
-//TODO: place a link to the settings page here
 -(void)didDeclineAuthorization{
     NSLog(@"didDeclineAuthorization triggered in ExploreVC");
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"In order for Populist to work, you must allow location services. Please go to the settings page for Populist and enable location services." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"In order for Populist to work, you must allow location services. Please go to the settings page for Populist and enable location services." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Settings",nil];
+    alert.tag = 1;
     [alert show];
 }
+
+-(void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(alertView.tag == 1 && buttonIndex == 1){
+        [[UIApplication sharedApplication] openURL:[NSURL  URLWithString:UIApplicationOpenSettingsURLString]];
+    }
+}
+
 
 #pragma mark - PPLSTDataManagerDelegate Methods
 

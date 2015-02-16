@@ -75,7 +75,6 @@
 -(void) increaseImportanceOfEvent:(Event*)event By:(float)amount;
 
 //Resets the images stored in memory to avoid large amounts of wasted memory
-//TODO: only reset the ones that are not titleContributions
 -(void) resetImagesInMemory;
 
 //Returns the image at a given filePath. It does so by storing them in memory once they have been loaded
