@@ -379,7 +379,7 @@
             //create photo message. Note that we're holding off with loading the photo until it comes into view on the collectionview - i.e. lazy loading
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
             if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
-                photo.image = [self.dataManager getImageAtFilePath:contribution.imagePath];
+                photo.image = [self.dataManager getImageWithFileName:contribution.imagePath];
             }
             newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }

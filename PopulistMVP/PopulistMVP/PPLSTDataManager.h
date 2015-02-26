@@ -78,7 +78,7 @@
 -(void) resetImagesInMemory;
 
 //Returns the image at a given filePath. It does so by storing them in memory once they have been loaded
--(UIImage*) getImageAtFilePath:(NSString*)filePath;
+-(UIImage*) getImageWithFileName:(NSString*)filePath;
 
 
 #pragma mark - Cell Formatter API

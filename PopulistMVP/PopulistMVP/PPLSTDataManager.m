@@ -434,7 +434,7 @@ int maxMessageLengthForPush = 1000;
             [parseContribution setObject:@"photo" forKey:@"type"];
             
             //Note: compression of 1.0 -> size in the 300-400kb range. 0.5 -> 30-40kb, and 0.0 -> 10-20 kb. Original image -> 1.5 Mb.
-            NSData *imageData = UIImageJPEGRepresentation([self getImageAtFilePath:imagePath], 0.5f);
+            NSData *imageData = UIImageJPEGRepresentation([self getImageWithFileName:imagePath], 0.5f);
             PFFile *imageFile = [PFFile fileWithName:@"image.jpg" data:imageData];
             [imageFile saveInBackground];
             [parseContribution setObject:imageFile forKey:@"image"];
@@ -655,7 +655,7 @@ int maxMessageLengthForPush = 1000;
     if([contribution.contributionType isEqualToString:@"message"] && contribution.message && ![contribution.message isEqualToString:@""]) return;
     NSLog(@"contributionId = %@, contributionType = %@, imagePath = %@", contribution.contributionId, contribution.contributionType, contribution.imagePath);
     if([contribution.contributionType isEqualToString:@"photo"] && contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
-        cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
+        cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
         return;
     }
     NSNumber *loading = self.isLoading[contribution.contributionId];
@@ -685,7 +685,7 @@ int maxMessageLengthForPush = 1000;
                     [cell.spinner removeFromSuperview];
                     cell.spinner = nil;
                 }
-                cell.titleImageView.image = [self getImageAtFilePath:contribution.imagePath];
+                cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
                 [cell.parentTableView reloadData];
             });
         }];
@@ -700,7 +700,7 @@ int maxMessageLengthForPush = 1000;
         if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
                 NSLog(@"imagepath != nil && imagePath != empty string");
                 JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
+                mediaItem.image = [self getImageWithFileName:contribution.imagePath];
         } else{
             NSLog(@"either nil or empty");
             NSNumber *loading = self.isLoading[contribution.contributionId];
@@ -723,7 +723,7 @@ int maxMessageLengthForPush = 1000;
                         NSLog(@"async loading is complete, and we're back in the main queue");
                         self.isLoading[contribution.contributionId] = @0;
                         JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                        mediaItem.image = [self getImageAtFilePath:contribution.imagePath];
+                        mediaItem.image = [self getImageWithFileName:contribution.imagePath];
                         [collectionView reloadData];
                     });
                 }];
@@ -799,18 +799,21 @@ int maxMessageLengthForPush = 1000;
 -(NSString *) storeImage:(UIImage*)image{
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
     NSData *imageData = UIImagePNGRepresentation(image);
-    NSString *imagePath = [self getEmptyFilePath];
-    if (![imageData writeToFile:imagePath atomically:NO]){
+    NSString *fileName = [self getEmptyFileName];
+    NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]];
+    NSLog(@"filepath = %@", fpath);
+    if (![imageData writeToFile:fpath atomically:NO]){
         NSLog(@"Failed to cache image data to disk");
     } else{
-        NSLog(@"the cachedImagedPath is %@",imagePath);
+        NSLog(@"the cachedImagedFileName is %@",fileName);
     }
-    return imagePath;
+    return fileName;
 }
 
 //returns NSString representing a filePath which is guaranteed to be empty
--(NSString*) getEmptyFilePath{
-    NSLog(@"PPLSTDataManager - getEmptyFilePath");
+-(NSString*) getEmptyFileName{
+    NSLog(@"PPLSTDataManager - getEmptyFileName");
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
     NSString *imageName = [self randomStringWithLength:10];
@@ -822,7 +825,7 @@ int maxMessageLengthForPush = 1000;
         filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
     }
     NSLog(@"Just generated the following free file path: %@", filePath);
-    return filePath;
+    return imageName;
 }
 
 //returns a random alphanumeric string of a given length
@@ -837,14 +840,16 @@ int maxMessageLengthForPush = 1000;
 }
 
 /*this method gets the image at the given file path. If it has already been loaded, it gets it from memory, otherwise it loads it into memory. This avoids multiple calls to the filesystem which necessarily slows down the app.*/
--(UIImage*) getImageAtFilePath:(NSString*)filePath{
-    NSLog(@"PPLSTDataManager - getImageAtFilePath:%@",filePath);
-    NSLog(@"inside getImageAtFilePath");
-    if(![[self.imagesAtFilePath allKeys] containsObject:filePath] || !self.imagesAtFilePath[filePath]){
-        NSLog(@"getting image from filePath = %@ and storing it into memory", filePath);
-        self.imagesAtFilePath[filePath] = [UIImage imageWithContentsOfFile:filePath];
+-(UIImage*) getImageWithFileName:(NSString*)fileName{
+    NSLog(@"PPLSTDataManager - getImageWithFileName:%@",fileName);
+    if(![[self.imagesAtFilePath allKeys] containsObject:fileName] || !self.imagesAtFilePath[fileName]){
+        NSLog(@"getting image with fileName = %@ and storing it into memory", fileName);
+        NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        UIImage *image = [UIImage imageWithContentsOfFile:[homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]]];
+        NSLog(@"image received from file path = %@", image);
+        self.imagesAtFilePath[fileName] = image;
     }
-    return self.imagesAtFilePath[filePath];
+    return self.imagesAtFilePath[fileName];
 }
 
 //creates a new dummy titleContribution that will only be used locally
