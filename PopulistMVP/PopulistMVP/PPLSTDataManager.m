@@ -286,16 +286,16 @@ int maxMessageLengthForPush = 1000;
     for(NSDictionary *contributionData in arrayOfContributionData){
         NSString *contributionId = contributionData[@"contributionId"];
         Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
-        if(!newContribution) newContribution = [self createContributionWithId:contributionId inContext:self.context];
-
-        newContribution.contributingUserId = contributionData[@"userId"];
-        newContribution.contributionType = contributionData[@"type"];
-        newContribution.createdAt = contributionData[@"createdAt"];
-        newContribution.imagePath = nil;
-        newContribution.latitude = nil;
-        newContribution.longitude = nil;
-        newContribution.message = nil;
-        
+        if(!newContribution){
+            newContribution = [self createContributionWithId:contributionId inContext:self.context];
+            newContribution.contributingUserId = contributionData[@"userId"];
+            newContribution.contributionType = contributionData[@"type"];
+            newContribution.createdAt = contributionData[@"createdAt"];
+            newContribution.imagePath = nil;
+            newContribution.latitude = nil;
+            newContribution.longitude = nil;
+            newContribution.message = nil;
+        }
         [event addContributionsObject:newContribution];
         if([newContribution.contributionType isEqualToString:@"message"]){
             newContribution.message = contributionData[@"message"];
@@ -553,6 +553,7 @@ int maxMessageLengthForPush = 1000;
         if([data[@"t"] isEqualToString:@"message"]){
             newIncomingContribution.message = data[@"m"];
         }
+        //TODO: aren't there duplicate variables here? Don't eventToWhich... and eventForIncoming... refer to the same thing?
         Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
         Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
