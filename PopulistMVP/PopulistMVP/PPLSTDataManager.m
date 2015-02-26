@@ -596,14 +596,20 @@ int maxMessageLengthForPush = 1000;
 }
 
 -(void) cleanUpUnusedDataForEventsNotIn:(NSArray*)eventsToKeep inContext:(NSManagedObjectContext*)context{
+    NSLog(@"PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:%@ inContext:%@",eventsToKeep, context);
+    NSMutableArray *eventIdsToKeep = [[NSMutableArray alloc] init];
+    for (Event *event in eventsToKeep) {
+        [eventIdsToKeep addObject:event.eventId];
+    }
     //retrieve all the events from core data not in the array passed in
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
     NSError *error = nil;
     NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
     NSFileManager *manager = [NSFileManager defaultManager];
     for (Event* event in returnedEvents){
-        NSLog(@"Considering Event with ID %@",event.eventId);
-        if(![eventsToKeep containsObject:event]){
+        NSLog(@"Considering event %@ with ID %@",event,event.eventId);
+        //Note: containsObject calls isEqual which, when acting on NSManagedObjects compares points values. Thus we must not use [eventsToKeep containsObject:event]. Instead, we must compare eventIds.
+        if(![eventIdsToKeep containsObject:event.eventId]){
             NSLog(@"Event shouldn't be around anymore, so we're deleting it.");
             /*delete the event and all dependent objects of it*/
             //Retrieve all the contributons
