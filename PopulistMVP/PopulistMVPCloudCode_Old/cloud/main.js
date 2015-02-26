@@ -57,8 +57,12 @@ var thresholdToMerge = thresholdToAdd;
 //space and time cutoffs to avoid having to look through too many clusters.
 var minuteCutoffAdd = 60*2; // default 120
 var minuteCutoffMerge = 60*1;
-var minuteCutoffGetLocal = 60*24*7;//60*24*7;
-var minuteCutoffGetGlobal = 60*24*7;//60*24*7;
+
+var minuteCutoffGetLocal = 60*24*7;
+var minuteCutoffGetGlobal = 60*24*7;
+//var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
+//var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
+
 var maxMilesToAdd = 0.1;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
@@ -67,9 +71,13 @@ var minGlobalFitValue = 1.0;
 //local stuff
 var localGettingMilesCutoff = 10;
 var typicalDistanceForGettingLocal = 10;
-var secondDecayForLocalGetting = 60*60*8; //typical time decay for finding a nearby cluster (since last update).
+var secondDecayForLocalGetting = 60*60*8;
+//var secondDecayForLocalGetting = 60*60*24*7*10;//60*60*8; //typical time decay for finding a nearby cluster (since last update).
+
 //global stuff
 var secondDecayForGlobalGetting = 60*60*24;
+//var secondDecayForGlobalGetting = 60*60*24*7*10; //60*60*24;
+
 var globalImportanceThreshold = 2; //this will have to start out small and increase over time as more people join the service.
 
 /*powerUsers are userIds which are allowed to artificially inflate the importance of an event.*/

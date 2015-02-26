@@ -8,11 +8,6 @@
 	<string>Populist</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Populist-60.png</string>
-		<string>Populist-60@2x.png</string>
-	</array>
 	<key>CFBundleIdentifier</key>
 	<string>io.populist.PopulistMVPDev</string>
 	<key>CFBundleInfoDictionaryVersion</key>

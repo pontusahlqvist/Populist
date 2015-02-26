@@ -113,11 +113,10 @@
 		16E619381A8A9D0300FBAAB3 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16E619371A8A9D0300FBAAB3 /* orange.jpg */; };
 		16E6193B1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6193A1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m */; };
 		16E619421A91305700FBAAB3 /* PPLSTUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E619411A91305700FBAAB3 /* PPLSTUUID.m */; };
+		16E6194B1A92EDEA00FBAAB3 /* reverseCameraWhite32.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E6194A1A92EDEA00FBAAB3 /* reverseCameraWhite32.png */; };
 		16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */; };
-		16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF691A7C167A001BD00F /* launchImagev2.png */; };
 		16F3FF6E1A7C32E3001BD00F /* takePicture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */; };
 		16F3FF701A7C4A9A001BD00F /* launchImage5s.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */; };
-		16F3FF741A7EB9A0001BD00F /* reverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF731A7EB9A0001BD00F /* reverse.png */; };
 		16F3FF801A7EE20B001BD00F /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3FF7F1A7EE20B001BD00F /* cancel.png */; };
 		16F7DAAA1A717CE5003215E9 /* PPLSTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */; };
 		16F7DAAC1A722A54003215E9 /* Populist-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAAB1A722A54003215E9 /* Populist-60@2x.png */; };
@@ -322,11 +321,10 @@
 		16E6193A1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTMutableDictionary.m; sourceTree = "<group>"; };
 		16E619401A91305700FBAAB3 /* PPLSTUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTUUID.h; sourceTree = "<group>"; };
 		16E619411A91305700FBAAB3 /* PPLSTUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTUUID.m; sourceTree = "<group>"; };
+		16E6194A1A92EDEA00FBAAB3 /* reverseCameraWhite32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverseCameraWhite32.png; sourceTree = "<group>"; };
 		16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.PNG"; sourceTree = "<group>"; };
-		16F3FF691A7C167A001BD00F /* launchImagev2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImagev2.png; sourceTree = "<group>"; };
 		16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takePicture@2x.png"; sourceTree = "<group>"; };
 		16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage5s.PNG; sourceTree = "<group>"; };
-		16F3FF731A7EB9A0001BD00F /* reverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverse.png; sourceTree = "<group>"; };
 		16F3FF7F1A7EE20B001BD00F /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		16F7DAA81A717CE5003215E9 /* PPLSTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPLSTLocationManager.h; path = ../PPLSTLocationManager.h; sourceTree = "<group>"; };
 		16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPLSTLocationManager.m; path = ../PPLSTLocationManager.m; sourceTree = "<group>"; };
@@ -791,7 +789,7 @@
 			isa = PBXGroup;
 			children = (
 				16F3FF6D1A7C32E3001BD00F /* takePicture@2x.png */,
-				16F3FF731A7EB9A0001BD00F /* reverse.png */,
+				16E6194A1A92EDEA00FBAAB3 /* reverseCameraWhite32.png */,
 				1603726D1A7F3AD100D4802C /* flashOn48.png */,
 				1603726F1A7F3AD500D4802C /* flashOff48.png */,
 				160372711A7F3ADA00D4802C /* flashAuto48.png */,
@@ -808,7 +806,6 @@
 			children = (
 				16F3FF6F1A7C4A9A001BD00F /* launchImage5s.PNG */,
 				16F3FF671A7C0AB6001BD00F /* launchImage@2x.PNG */,
-				16F3FF691A7C167A001BD00F /* launchImagev2.png */,
 			);
 			name = "Launch Images";
 			sourceTree = "<group>";
@@ -959,11 +956,11 @@
 				16888AA61A7FE5AA00AC4F60 /* accept.png in Resources */,
 				16F7DABF1A723E1C003215E9 /* darkBlue.jpg in Resources */,
 				16E619381A8A9D0300FBAAB3 /* orange.jpg in Resources */,
+				16E6194B1A92EDEA00FBAAB3 /* reverseCameraWhite32.png in Resources */,
 				160372721A7F3ADA00D4802C /* flashAuto48.png in Resources */,
 				163E3D9D1A64DD3600913FBF /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				163E3D7D1A64DD3600913FBF /* JSQMessagesViewController.xib in Resources */,
 				163E3DA61A64DD8000913FBF /* jsq_message_chat_icon.png in Resources */,
-				16F3FF741A7EB9A0001BD00F /* reverse.png in Resources */,
 				163E3DAA1A64DD8000913FBF /* jsq_messages_splash.psd in Resources */,
 				16F7DAC61A724057003215E9 /* Populist-60.png in Resources */,
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
@@ -987,7 +984,6 @@
 				163E3D911A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				16E619191A83EB7000FBAAB3 /* map-pin.png in Resources */,
 				16E6192A1A8589F900FBAAB3 /* flag.png in Resources */,
-				16F3FF6A1A7C167A001BD00F /* launchImagev2.png in Resources */,
 				16888AAC1A7FE7B500AC4F60 /* cancel@2x.png in Resources */,
 				16F3FF701A7C4A9A001BD00F /* launchImage5s.PNG in Resources */,
 				16888AAA1A7FE72E00AC4F60 /* accept@2x.png in Resources */,
@@ -1210,7 +1206,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Stein Ahlqvist (45RTAWL2DW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stein Ahlqvist (45RTAWL2DW)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1231,7 +1227,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Stein Ahlqvist (45RTAWL2DW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stein Ahlqvist (45RTAWL2DW)";
 				FRAMEWORK_SEARCH_PATHS = (

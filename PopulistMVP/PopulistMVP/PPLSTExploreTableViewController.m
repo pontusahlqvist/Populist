@@ -71,7 +71,7 @@
 
 //creates and adds the chat button that takes you to your local chat
 -(void) setupChatButton{
-    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"compose.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"compose_glyph"] scaledToSize:CGSizeMake(30.0, 30.0)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
     [button setImage:image forState:UIControlStateNormal];

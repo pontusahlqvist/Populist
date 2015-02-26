@@ -64,7 +64,7 @@
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
     
     //TODO: just make the image the right size from the beginning
-    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"map-pin.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"mappin_glyph"] scaledToSize:CGSizeMake(30.0, 30.0)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
     [button setImage:image forState:UIControlStateNormal];

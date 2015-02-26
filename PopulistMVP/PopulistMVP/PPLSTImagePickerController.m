@@ -123,13 +123,13 @@
     NSString *flashPreference = [[NSUserDefaults standardUserDefaults] objectForKey:@"flashPreference"];
     if([flashPreference isEqualToString:@"auto"]){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto_glyph"] forState:UIControlStateNormal];
     } else if([flashPreference isEqualToString:@"on"]){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn_glyph"] forState:UIControlStateNormal];
     } else{
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff_glyph"] forState:UIControlStateNormal];
     }
     
     self.toggleFlash.translatesAutoresizingMaskIntoConstraints = NO;
@@ -183,11 +183,11 @@
             self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
             //reset the flash image to the appropriate value
             if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeAuto){
-                [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto_glyph"] forState:UIControlStateNormal];
             } else if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeOff){
-                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff_glyph"] forState:UIControlStateNormal];
             } else{
-                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+                [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn_glyph"] forState:UIControlStateNormal];
             }
 
         } completion:NULL];
@@ -214,15 +214,15 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeAuto){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff_glyph"] forState:UIControlStateNormal];
         [userDefaults setObject:@"off" forKey:@"flashPreference"];
     } else if(self.cameraFlashMode == UIImagePickerControllerCameraFlashModeOff){
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashOn_glyph"] forState:UIControlStateNormal];
         [userDefaults setObject:@"on" forKey:@"flashPreference"];
     } else{
         self.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
-        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto48.png"] forState:UIControlStateNormal];
+        [self.toggleFlash setImage:[UIImage imageNamed:@"flashAuto_glyph"] forState:UIControlStateNormal];
         [userDefaults setObject:@"auto" forKey:@"flashPreference"];
     }
     [userDefaults synchronize];

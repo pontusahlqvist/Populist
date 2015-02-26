@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: it seems like the app is re-saving data each time it downloads a contribution even if it already has it saved.
+
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 #import "PPLSTMutableDictionary.h"
@@ -262,6 +264,16 @@ int maxMessageLengthForPush = 1000;
     }
         
     [self saveCoreDataInContext:self.context];
+    //set up a separate queue and context and then use those to delete the unused events from core data.
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+    ^{
+        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        context.parentContext = self.context;
+        [context performBlock:^{
+            [self cleanUpUnusedDataForEventsNotIn:events inContext:context];
+        }];
+    });
+
     return events;
 }
 
@@ -581,6 +593,51 @@ int maxMessageLengthForPush = 1000;
 
 -(void) resetImagesInMemory{
     [self.imagesAtFilePath removeAllObjects];
+}
+
+-(void) cleanUpUnusedDataForEventsNotIn:(NSArray*)eventsToKeep inContext:(NSManagedObjectContext*)context{
+    //retrieve all the events from core data not in the array passed in
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
+    NSError *error = nil;
+    NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
+    NSFileManager *manager = [NSFileManager defaultManager];
+    for (Event* event in returnedEvents){
+        NSLog(@"Considering Event with ID %@",event.eventId);
+        if(![eventsToKeep containsObject:event]){
+            NSLog(@"Event shouldn't be around anymore, so we're deleting it.");
+            /*delete the event and all dependent objects of it*/
+            //Retrieve all the contributons
+            NSLog(@"This event has %lu contributions", [event.contributions count]);
+            for(Contribution *contribution in event.contributions){
+                NSString *fpath = contribution.imagePath;
+                NSLog(@"Deleting file at file path = %@", fpath);
+                if(fpath){
+                    //delete file at that file path
+                    NSError *error = nil;
+                    [manager removeItemAtPath:fpath error:&error];
+                    NSLog(@"Got Error When Deleting: %@", error);
+                }
+                NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
+                [context deleteObject:contribution];
+            }
+
+            //Also deal with title contribution
+            Contribution *contribution = event.titleContribution;
+            NSString *fpath = contribution.imagePath;
+            NSLog(@"Deleting file at file path = %@", fpath);
+            if(fpath){
+                //delete file at that file path
+                NSError *error = nil;
+                [manager removeItemAtPath:fpath error:&error];
+                NSLog(@"Got Error When Deleting: %@", error);
+            }
+            NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
+            [context deleteObject:contribution];
+
+            NSLog(@"Deleting Event with ID %@", event.eventId);
+            [context deleteObject:event];
+        }
+    }
 }
 
 #pragma mark - cell formatters (event and message cell)
