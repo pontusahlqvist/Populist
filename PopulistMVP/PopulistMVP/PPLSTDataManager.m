@@ -610,18 +610,18 @@ int maxMessageLengthForPush = 1000;
     for (Event* event in returnedEvents){
         NSLog(@"Considering event %@ with ID %@",event,event.eventId);
         //Note: containsObject calls isEqual which, when acting on NSManagedObjects compares points values. Thus we must not use [eventsToKeep containsObject:event]. Instead, we must compare eventIds.
-        if(![eventIdsToKeep containsObject:event.eventId]){
+        if(![eventIdsToKeep containsObject:event.eventId] && ![event.eventId isEqualToString:self.currentEvent.eventId]){
             NSLog(@"Event shouldn't be around anymore, so we're deleting it.");
             /*delete the event and all dependent objects of it*/
             //Retrieve all the contributons
             NSLog(@"This event has %lu contributions", [event.contributions count]);
             for(Contribution *contribution in event.contributions){
-                NSString *fpath = contribution.imagePath;
-                NSLog(@"Deleting file at file path = %@", fpath);
-                if(fpath){
+                NSString *fileName = contribution.imagePath;
+                NSLog(@"Deleting file at file path = %@", fileName);
+                if(fileName){
                     //delete file at that file path
                     NSError *error = nil;
-                    [manager removeItemAtPath:fpath error:&error];
+                    [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
                     NSLog(@"Got Error When Deleting: %@", error);
                 }
                 NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
@@ -630,12 +630,12 @@ int maxMessageLengthForPush = 1000;
 
             //Also deal with title contribution
             Contribution *contribution = event.titleContribution;
-            NSString *fpath = contribution.imagePath;
-            NSLog(@"Deleting file at file path = %@", fpath);
-            if(fpath){
+            NSString *fileName = contribution.imagePath;
+            NSLog(@"Deleting file at file path = %@", fileName);
+            if(fileName){
                 //delete file at that file path
                 NSError *error = nil;
-                [manager removeItemAtPath:fpath error:&error];
+                [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
                 NSLog(@"Got Error When Deleting: %@", error);
             }
             NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
@@ -800,15 +800,19 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
     NSData *imageData = UIImagePNGRepresentation(image);
     NSString *fileName = [self getEmptyFileName];
-    NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]];
-    NSLog(@"filepath = %@", fpath);
-    if (![imageData writeToFile:fpath atomically:NO]){
+
+    if (![imageData writeToFile:[self filePathForImageWithFileName:fileName] atomically:NO]){
         NSLog(@"Failed to cache image data to disk");
     } else{
         NSLog(@"the cachedImagedFileName is %@",fileName);
     }
     return fileName;
+}
+
+-(NSString*) filePathForImageWithFileName:(NSString*)fileName{
+    NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]];
+    return fpath;
 }
 
 //returns NSString representing a filePath which is guaranteed to be empty
@@ -844,8 +848,7 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - getImageWithFileName:%@",fileName);
     if(![[self.imagesAtFilePath allKeys] containsObject:fileName] || !self.imagesAtFilePath[fileName]){
         NSLog(@"getting image with fileName = %@ and storing it into memory", fileName);
-        NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-        UIImage *image = [UIImage imageWithContentsOfFile:[homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]]];
+        UIImage *image = [UIImage imageWithContentsOfFile:[self filePathForImageWithFileName:fileName]];
         NSLog(@"image received from file path = %@", image);
         self.imagesAtFilePath[fileName] = image;
     }
