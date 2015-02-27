@@ -278,14 +278,15 @@ int maxMessageLengthForPush = 1000;
         Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
         if(!newContribution){
             newContribution = [self createContributionWithId:contributionId inContext:self.context];
-            newContribution.contributingUserId = contributionData[@"userId"];
-            newContribution.contributionType = contributionData[@"type"];
             newContribution.imagePath = nil;
             newContribution.latitude = nil;
             newContribution.longitude = nil;
             newContribution.message = nil;
         }
         newContribution.createdAt = contributionData[@"createdAt"]; //makes sure that even title contributions get their date set properly
+        newContribution.contributingUserId = contributionData[@"userId"]; //same reason as above.
+        newContribution.contributionType = contributionData[@"type"];
+        
         [event addContributionsObject:newContribution];
         if([newContribution.contributionType isEqualToString:@"message"]){
             newContribution.message = contributionData[@"message"];
@@ -463,7 +464,6 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - getStatusDictionaryForEvent:%@",event);
     //TODO: replace with parse code. Must make sure that avatars are consistent across users!
     NSSet *contributions = event.contributions;
-
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];

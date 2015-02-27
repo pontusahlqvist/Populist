@@ -165,10 +165,15 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.dataManager.context;
+        NSLog(@"1");
         [context performBlock:^{
+            NSLog(@"2");
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
+            NSLog(@"3");
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
+            NSLog(@"4");
             self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
+            NSLog(@"5");
             NSLog(@"userIds = %@", self.userIds);
 
             dispatch_async(dispatch_get_main_queue(), ^{
