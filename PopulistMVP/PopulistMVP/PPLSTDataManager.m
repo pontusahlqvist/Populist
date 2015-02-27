@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: it seems like the app is re-saving data each time it downloads a contribution even if it already has it saved.
-
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 #import "PPLSTMutableDictionary.h"

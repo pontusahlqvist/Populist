@@ -6,14 +6,11 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: fix avatars to make sure that they work properly accross multiple users and also that there's an avatar right away. Perhaps outsource to parse.
 //TODO: move all the styling into a separate class
 //TODO: create imageediting class where all the image editing methods can live
 //TODO: make image detail view looks better
 //TODO: implement 'load earlier'
 //TODO: must start the conversation with an image
-
-//TODO: in order to reduce memory usage, we can't keep all the jsqmessages in memory. Instead, we have to only keep a few in memory and create the other ones on the fly. We may very well save the other images to the filesystem, but we should only keep a few jsqmessages in memory. Perhaps, create a dictionary from contributionId -> jsqMessage. Then, make this dictionary of type PPLSTMutableDictionary with a finite size limit. Finally, in the method that normally returns self.jsqmessages[indexPath.row], fetch the objectValue for key = self.contributions[indexPath.row].contributionId instead. If this key is not in the dictionary, create a new one on the fly.
 
 #import "PPLSTChatViewController.h"
 #import "PPLSTImageDetailViewController.h"

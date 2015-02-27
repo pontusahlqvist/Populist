@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: add a progress spinner to loading photos
-
 #import "PPLSTExploreTableViewController.h"
 #import "PPLSTChatViewController.h"
 #import "PPLSTEventTableViewCell.h"
