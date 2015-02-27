@@ -280,12 +280,12 @@ int maxMessageLengthForPush = 1000;
             newContribution = [self createContributionWithId:contributionId inContext:self.context];
             newContribution.contributingUserId = contributionData[@"userId"];
             newContribution.contributionType = contributionData[@"type"];
-            newContribution.createdAt = contributionData[@"createdAt"];
             newContribution.imagePath = nil;
             newContribution.latitude = nil;
             newContribution.longitude = nil;
             newContribution.message = nil;
         }
+        newContribution.createdAt = contributionData[@"createdAt"]; //makes sure that even title contributions get their date set properly
         [event addContributionsObject:newContribution];
         if([newContribution.contributionType isEqualToString:@"message"]){
             newContribution.message = contributionData[@"message"];
