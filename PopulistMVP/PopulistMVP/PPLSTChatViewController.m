@@ -227,8 +227,6 @@
 -(id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
-    //This method call runs asynch if image isn't already loaded and synch if it is.
-    [self.dataManager formatJSQMessage:message ForContribution:self.contributions[indexPath.row] inCollectionView:collectionView];
     return message;
 }
 
@@ -259,6 +257,8 @@
         }
         cell.textView.linkTextAttributes = @{ NSForegroundColorAttributeName : cell.textView.textColor, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
     }
+    //This method call runs asynch if image isn't already loaded and synch if it is.
+    [self.dataManager formatJSQMessage:message ForContribution:self.contributions[indexPath.row] inCollectionView:collectionView];
     return cell;
 }
 
