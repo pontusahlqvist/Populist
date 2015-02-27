@@ -135,23 +135,18 @@ int maxMessageLengthForPush = 1000;
     NSNumber *beta0 = [NSNumber numberWithDouble:0.000073628];
     NSNumber *alpha = [NSNumber numberWithDouble:2.77777];
     NSNumber *beta = [NSNumber numberWithDouble:11111.1];
-    NSLog(@"1");
     PFObject *newEvent = [PFObject objectWithClassName:@"FlatCluster"];
     [newEvent setObject:@1 forKey:@"k"];
     [newEvent setObject:@2 forKey:@"N"];
     [newEvent setObject:@0.9 forKey:@"importance"]; //just a signal so keep smaller than 1, however close to 1 to make sure nearby people get clustered properly.
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd-MM-yyyy";
-    NSLog(@"2");
     [newEvent setObject:[dateFormatter dateFromString:@"1-1-2101"] forKey:@"validUntil"];
-    NSLog(@"3");
     [newEvent setObject:@[] forKey:@"contributions"];
     [newEvent setObject:@[] forKey:@"contributingUsers"];
     [newEvent setObject:@[] forKey:@"titlePhotoIdArray"];
     [newEvent setObject:@[] forKey:@"titleMessageIdArray"];
-    NSLog(@"4");
     [newEvent setObject:[PFGeoPoint geoPointWithLatitude:latitude longitude:longitude] forKey:@"location"];
-    NSLog(@"5");
     [newEvent setObject:alpha0 forKey:@"alphan"];
     [newEvent setObject:beta0 forKey:@"betan"];
     [newEvent setObject:date forKey:@"t1"];
@@ -159,13 +154,12 @@ int maxMessageLengthForPush = 1000;
     [newEvent setObject:date forKey:@"tbar"];
     [newEvent setObject:alpha forKey:@"alpha"];
     [newEvent setObject:beta forKey:@"beta"];
-    NSLog(@"6 with location strings %@, %@, %@, %@.", self.locationManager.country, self.locationManager.state, self.locationManager.city, self.locationManager.neighborhood);
     [newEvent setObject:self.locationManager.country forKey:@"country"];
     [newEvent setObject:self.locationManager.state forKey:@"state"];
     [newEvent setObject:self.locationManager.city forKey:@"city"];
     [newEvent setObject:self.locationManager.neighborhood forKey:@"neighborhood"];
+
     //Note: must save synchronously so that the event newEvent has a correct eventId by the time we create the core data event below.
-    NSLog(@"made it here");
     [newEvent save];
     return newEvent;
 }
@@ -176,14 +170,11 @@ int maxMessageLengthForPush = 1000;
     NSMutableArray *eventsFromCloud = [[self downloadEventMetaDataWithInputLatitude:latitude andLongitude:longitude andDate:date] mutableCopy];
     Event *firstEvent = [eventsFromCloud firstObject];
     if([firstEvent.containsUser isEqualToNumber:@1]){
-        NSLog(@"already contains user");
         self.currentEvent = firstEvent;
         return eventsFromCloud;
     } else{
-        NSLog(@"doesn't already contain the user so we create a new one...");
         PFObject *newEvent = [self sendSignalWithLatitude:latitude andLongitude:longitude andDate:date];
         NSString *eventId = newEvent.objectId;
-        NSLog(@"about to create core data event with id = %@", eventId);
         Event *currentEvent = [self createEventWithId:eventId inContext:self.context];
         currentEvent.city = [newEvent objectForKey:@"city"];
         currentEvent.country = [newEvent objectForKey:@"country"];
@@ -239,7 +230,6 @@ int maxMessageLengthForPush = 1000;
                 titleContributionId = event.titleContribution.contributionId;
                 if(!titleContributionId){
                     //must create a dummy titleContribution. Note, this one should not be added to contributions
-                    NSLog(@"ERROR: none of the titleContributions were images!! We're creating a dummy titleContribution as a placeholder for now");
                     //TODO: make sure this is unique
                     titleContributionId = [NSString stringWithFormat:@"%@%@",@"dummy", [self randomStringWithLength:10]];
                 }
@@ -323,7 +313,6 @@ int maxMessageLengthForPush = 1000;
         //TODO: improve the quality of the placeholder image
         contribution.imagePath = [self storeImage:[UIImage imageNamed:@"Populist-60@2x.png"]];
     } else if ([contribution.contributionType isEqualToString:@"message"]) {
-        NSLog(@"A");
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
         PFObject *parseContribution = [query getObjectWithId:contribution.contributionId];
         NSString *message = [parseContribution objectForKey:@"message"];
@@ -331,23 +320,15 @@ int maxMessageLengthForPush = 1000;
         contribution.contributingUserId = [parseContribution objectForKey:@"userId"];
         contribution.createdAt = parseContribution.createdAt;
     } else if([contribution.contributionType isEqualToString:@"photo"]){
-        NSLog(@"B");
-        NSLog(@"Querying Parse for image for contribution with id = %@", contribution.contributionId);
-
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
         PFObject *parsePhoto = [query getObjectWithId:contribution.contributionId];
-        NSLog(@"photo - parseContribution = %@", parsePhoto);
         PFFile *file = [parsePhoto objectForKey:@"image"];
         NSData *parseImageData = [file getData];
-        NSLog(@"Got data with length: %lu for contributionId = %@ in file %@", [parseImageData length], contribution.contributionId, file);
         UIImage *image = [UIImage imageWithData:parseImageData];
         contribution.imagePath = [self storeImage:image];
-        NSLog(@"just set the imagePath = %@ for contributionId = %@ and contribution = %@", contribution.imagePath, contribution.contributionId, contribution);
         contribution.contributingUserId = [parsePhoto objectForKey:@"userId"];
         contribution.createdAt = contribution.createdAt;//[parsePhoto objectForKey:@"createdAt"];
-        NSLog(@"Stored it in imagePath = %@", contribution.imagePath);
     }
-    NSLog(@"C");
     
     [self saveCoreDataInContext:context];
     
@@ -450,10 +431,8 @@ int maxMessageLengthForPush = 1000;
                 //get the object id and reassign it locally
                 NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
                 contribution.contributionId = objectId;
-                NSLog(@"just found out that the objectId = %@", objectId);
-                NSLog(@"before - self.contributionIds = %@", self.contributionIds);
                 [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
-                NSLog(@"after - self.contributionIds = %@", self.contributionIds);
+                
                 //send push notification
                 NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
                 pushData[@"alert"] = @"New stuff at your event!";
@@ -502,7 +481,6 @@ int maxMessageLengthForPush = 1000;
         statusDictionary[contributionId] = [NSNumber numberWithInt:status];
         status++;
     }
-    NSLog(@"StatusDictionary = %@", statusDictionary);
     return statusDictionary;
 }
 
@@ -540,7 +518,6 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - handleIncomingDataFromPush:%@",data);
     NSString *contributionId = data[@"c"];
     if(![self.contributionIds containsObject:contributionId]){
-        NSLog(@"it did not contain the id:%@ so we're adding it now...", contributionId);
         [self.contributionIds addObject:contributionId];
         //it's a new contribution
         Contribution *newIncomingContribution = [self createContributionWithId:contributionId inContext:self.context];
@@ -608,16 +585,13 @@ int maxMessageLengthForPush = 1000;
     NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
     NSFileManager *manager = [NSFileManager defaultManager];
     for (Event* event in returnedEvents){
-        NSLog(@"Considering event %@ with ID %@",event,event.eventId);
         //Note: containsObject calls isEqual which, when acting on NSManagedObjects compares points values. Thus we must not use [eventsToKeep containsObject:event]. Instead, we must compare eventIds.
         if(![eventIdsToKeep containsObject:event.eventId] && ![event.eventId isEqualToString:self.currentEvent.eventId]){
-            NSLog(@"Event shouldn't be around anymore, so we're deleting it.");
             /*delete the event and all dependent objects of it*/
             //Retrieve all the contributons
-            NSLog(@"This event has %lu contributions", [event.contributions count]);
             for(Contribution *contribution in event.contributions){
                 NSString *fileName = contribution.imagePath;
-                NSLog(@"Deleting file at file path = %@", fileName);
+                NSLog(@"Deleting file with fileName = %@", fileName);
                 if(fileName){
                     //delete file at that file path
                     NSError *error = nil;
@@ -631,7 +605,7 @@ int maxMessageLengthForPush = 1000;
             //Also deal with title contribution
             Contribution *contribution = event.titleContribution;
             NSString *fileName = contribution.imagePath;
-            NSLog(@"Deleting file at file path = %@", fileName);
+            NSLog(@"Deleting file with fileName = %@", fileName);
             if(fileName){
                 //delete file at that file path
                 NSError *error = nil;
@@ -664,14 +638,11 @@ int maxMessageLengthForPush = 1000;
     }
     self.isLoading[contribution.contributionId] = @1;
     //add spinner to cell
-    NSLog(@"creating spinner");
     cell.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     cell.spinner.center = CGPointMake([UIScreen mainScreen].applicationFrame.size.width/2,[UIScreen mainScreen].applicationFrame.size.width/2);
     [cell addSubview:cell.spinner];
     [cell bringSubviewToFront:cell.spinner];
-    NSLog(@"cell.spinner = %@", cell.spinner);
     [cell.spinner startAnimating];
-    NSLog(@"should be animating");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
@@ -696,16 +667,12 @@ int maxMessageLengthForPush = 1000;
 -(void) formatJSQMessage:(JSQMessage*)message ForContribution:(Contribution*)contribution inCollectionView:(UITableView *)collectionView{
     NSLog(@"PPLSTDataManager - formatJSQMessage:%@ ForContribution:%@ inCollectionView:%@", message, contribution, collectionView);
     if([contribution.contributionType isEqualToString:@"photo"]){
-        NSLog(@"it's a photo");
         if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
-                NSLog(@"imagepath != nil && imagePath != empty string");
                 JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
                 mediaItem.image = [self getImageWithFileName:contribution.imagePath];
         } else{
-            NSLog(@"either nil or empty");
             NSNumber *loading = self.isLoading[contribution.contributionId];
             if([loading isEqualToNumber:@1]){
-                NSLog(@"avoiding double loading, %@", self.isLoading[contribution.contributionId]);
                 return; //avoid dubble loading while running in background thread
             }
             self.isLoading[contribution.contributionId] = @1;
@@ -715,12 +682,9 @@ int maxMessageLengthForPush = 1000;
                 NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
                 context.parentContext = self.context;
                 [context performBlock:^{
-                    NSLog(@"imagePath = %@", contribution.imagePath);
                     [self downloadMediaForContribution:contribution inContext:context];
-                    NSLog(@"now, imagePath = %@", contribution.imagePath);
                     //after download is complete, move back to main queue for UI updates
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        NSLog(@"async loading is complete, and we're back in the main queue");
                         self.isLoading[contribution.contributionId] = @0;
                         JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
                         mediaItem.image = [self getImageWithFileName:contribution.imagePath];
@@ -742,7 +706,6 @@ int maxMessageLengthForPush = 1000;
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"eventId == %@",eventId];
     NSError *error = nil;
     NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
-    NSLog(@"Found %lu events in coredata with eventId = %@", [returnedEvents count], eventId);
     if([returnedEvents count] == 0){
         NSLog(@"Error: No event found in core data with eventId = %@",eventId);
         return nil;
@@ -757,7 +720,6 @@ int maxMessageLengthForPush = 1000;
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"contributionId == %@",contributionId];
     NSError *error = nil;
     NSArray *returnedContributions = [context executeFetchRequest:fetchRequest error:&error];
-    NSLog(@"Found %lu contributions in core data with ContributionId = %@", [returnedContributions count], contributionId);
     if([returnedContributions count] == 0){
         NSLog(@"Error: No contribution found in core data with contributionId = %@",contributionId);
         return nil;
@@ -772,7 +734,6 @@ int maxMessageLengthForPush = 1000;
     if(![context save:&error]){
         NSLog(@"core data save error: %@",error);
     }
-    NSLog(@"Saved Core Data!");
 }
 
 //creates a new event with a given id
@@ -803,8 +764,6 @@ int maxMessageLengthForPush = 1000;
 
     if (![imageData writeToFile:[self filePathForImageWithFileName:fileName] atomically:NO]){
         NSLog(@"Failed to cache image data to disk");
-    } else{
-        NSLog(@"the cachedImagedFileName is %@",fileName);
     }
     return fileName;
 }
@@ -828,7 +787,6 @@ int maxMessageLengthForPush = 1000;
         imageName = [self randomStringWithLength:10];
         filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
     }
-    NSLog(@"Just generated the following free file path: %@", filePath);
     return imageName;
 }
 
@@ -847,9 +805,7 @@ int maxMessageLengthForPush = 1000;
 -(UIImage*) getImageWithFileName:(NSString*)fileName{
     NSLog(@"PPLSTDataManager - getImageWithFileName:%@",fileName);
     if(![[self.imagesAtFilePath allKeys] containsObject:fileName] || !self.imagesAtFilePath[fileName]){
-        NSLog(@"getting image with fileName = %@ and storing it into memory", fileName);
         UIImage *image = [UIImage imageWithContentsOfFile:[self filePathForImageWithFileName:fileName]];
-        NSLog(@"image received from file path = %@", image);
         self.imagesAtFilePath[fileName] = image;
     }
     return self.imagesAtFilePath[fileName];

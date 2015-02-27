@@ -49,7 +49,6 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterForeground:) name: UIApplicationWillEnterForegroundNotification object:nil];
     
-    NSLog(@"Inside Chat VC");
     self.senderDisplayName = @"";
     self.senderId = self.dataManager.contributingUserId;
     
@@ -95,7 +94,6 @@
 //opens the map to the given location
 -(void) openMap{
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://maps.apple.com/?q=%f,%f",[self.event.latitude floatValue],[self.event.longitude floatValue]]];
-    NSLog(@"Opening URL %@", url);
     [[UIApplication sharedApplication] openURL:url];
 }
 
@@ -195,14 +193,12 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"prepareForSegue Called");
     if([sender isKindOfClass:[NSIndexPath class]]){
         if([segue.destinationViewController isKindOfClass:[PPLSTImageDetailViewController class]]){
             NSIndexPath *indexPath = sender;
             PPLSTImageDetailViewController *destinationVC = segue.destinationViewController;
             Contribution *contribution = self.contributions[indexPath.row];
             JSQMessage *message = [self jsqMessageForContribution:contribution];
-            NSLog(@"prepareForSegue: message = %@", message);
             JSQPhotoMediaItem *photo = (JSQPhotoMediaItem*)[message media];
             destinationVC.image = photo.image;
             destinationVC.contribution = self.contributions[indexPath.row];
@@ -221,7 +217,6 @@
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
-    NSLog(@"self.senderId = %@, message.senderId = %@", self.senderId, message.senderId);
     if([message.senderId isEqualToString:self.senderId]){
         return self.outgoingBubbleImageData;
     } else{
@@ -273,15 +268,10 @@
 -(void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date{
     NSLog(@"didPressSendButton");
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"message", @"message": text, @"location":self.locationManager.currentLocation};
-    NSLog(@"About to create a new contribution");
     Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:nil];
-    NSLog(@"about to handleNewContriburion");
     [self handleNewContribution:newContribution];
-    NSLog(@"about to finishSendingMessageAnimated");
     [self finishSendingMessageAnimated:YES];
-    NSLog(@"About to reloadData");
     [self.collectionView reloadData];
-    NSLog(@"Done with send!");
 }
 
 -(void)didPressAccessoryButton:(UIButton *)sender{
@@ -329,13 +319,10 @@
 
 -(void)didFinishPickingImage:(UIImage *)originalImage{
     //called from PPLSTImagePickerController
-    NSLog(@"is about to dismiss the VC");
     [self dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"should have dismissed the VC");
 
     UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
     
-    NSLog(@"VC should be dismissed...");
     //setup the contribution
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
     
@@ -372,9 +359,7 @@
             if(!contribution.message || [contribution.message isEqualToString:@""]){
                 [self.dataManager downloadMediaForContribution:contribution inContext:self.dataManager.context]; //sync call
             }
-            NSLog(@"createdAt: %@", contribution.createdAt);
             newMessage = [[JSQMessage alloc] initWithSenderId:contribution.contributingUserId senderDisplayName:@"asdf" date:contribution.createdAt text:contribution.message];
-            NSLog(@"Made it here...");
         } else if([contribution.contributionType isEqualToString:@"photo"]){
             //create photo message. Note that we're holding off with loading the photo until it comes into view on the collectionview - i.e. lazy loading
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
@@ -383,7 +368,6 @@
             }
             newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }
-        NSLog(@"Just created a new JSQMessage object: %@", newMessage);
         [messages addObject:newMessage];
     }
     return messages;
@@ -391,7 +375,6 @@
 
 -(JSQMessage *) jsqMessageForContribution:(Contribution*)contribution{
     NSString *contributionId = contribution.contributionId;
-    NSLog(@"jsqMessageForContribution:%@",contributionId);
     if(![[self.jsqMessageForContributionId allKeys] containsObject:contributionId]){
         self.jsqMessageForContributionId[contributionId] = [[self createMessagesFromContributions:@[contribution]] firstObject];
     }
@@ -448,7 +431,6 @@
     NSLog(@"PPLSTChatViewController - flipImageCorrectly:%@",inputImage);
 
     CGAffineTransform transform = CGAffineTransformIdentity;
-    NSLog(@"transform before: %f,%f,%f,%f,%f,%f", transform.a, transform.b, transform.c, transform.d, transform.tx, transform.ty);
     switch (inputImage.imageOrientation) {
         case UIImageOrientationDown:
         case UIImageOrientationDownMirrored:
@@ -481,7 +463,6 @@
     coreImage = [coreImage imageByApplyingTransform:transform];
     UIImage *newImage = [UIImage imageWithCIImage:coreImage];
 
-    NSLog(@"image - %f,%f", newImage.size.width, newImage.size.height);
     return newImage;
 }
 
@@ -492,14 +473,12 @@
 
     float imageWidth = originalImage.size.width;
     float imageHeight = originalImage.size.height;
-    NSLog(@"size - %f,%f", originalImage.size.width, originalImage.size.height);
     UIImage *croppedImage;
     if(imageHeight > imageWidth){
         croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake(0.0, (imageHeight - imageWidth)/2.0, imageWidth, imageWidth)];
     } else{
         croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake((imageWidth-imageHeight)/2.0, 0.0, imageHeight, imageHeight)];
     }
-    NSLog(@"image size = %f,%f", croppedImage.size.width, croppedImage.size.height);
     return [self imageWithImage:croppedImage scaledDownToHorizontalPoints:newWidth];
 }
 

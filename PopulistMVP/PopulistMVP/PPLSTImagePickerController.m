@@ -171,13 +171,11 @@
 }
 
 -(void) handleTakePictureButton:(UIButton*) takePictureButton{
-    NSLog(@"taking picture!!");
     [self takePicture];
 }
 
 -(void) handleReverseCameraButton:(UIButton*) reverseCameraButton{
     //reverse camera
-    NSLog(@"reverse Camera");
     if(self.cameraDevice == UIImagePickerControllerCameraDeviceFront){
     [UIView transitionWithView:self.view duration:1.0 options:UIViewAnimationOptionAllowAnimatedContent | UIViewAnimationOptionTransitionFlipFromLeft animations:^{
             self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
@@ -201,12 +199,10 @@
 }
 
 -(void) handleCancelButton:(UIButton*) dismissCameraButton{
-    NSLog(@"handleCancelButton");
     [self.imagePickerDelegate didCancelPickingImage];
 }
 
 -(void) handleToggleFlash:(UIButton*)toggleFlashButton{
-    NSLog(@"handleToggleFlash");
     if(self.cameraDevice == UIImagePickerControllerCameraDeviceFront){
         //can't toggle flash when front facing.
         return;
@@ -244,7 +240,6 @@
     float cropSize = flippedImage.size.height*screenSize.width/screenSize.height;
     float x = 0.5*(flippedImage.size.width - cropSize);
     float y = 0.5*(flippedImage.size.height - cropSize);
-    NSLog(@"x = %f, y = %f, cropSize = %f", x, y, cropSize);
     
     UIImage *croppedImage = [self cropImage:flippedImage ToRect:CGRectMake(x, y, cropSize, cropSize)];
     UIImage *scaledImage = [self imageWithImage:croppedImage scaledDownToHorizontalPoints:750.0];
@@ -334,8 +329,6 @@
 
 -(UIImage*) cropImage:(UIImage*)image ToRect:(CGRect)rect{
     UIGraphicsBeginImageContextWithOptions(rect.size, false, [image scale]);
-    NSLog(@"image scale = %f", [image scale]);
-    NSLog(@"rect.size.width = %f, rect.size.height = %f", rect.size.width, rect.size.height);
     [image drawAtPoint:CGPointMake(-rect.origin.x, -rect.origin.y)];
     UIImage *cropped_image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -347,7 +340,6 @@
     NSLog(@"PPLSTChatViewController - flipImageCorrectly:%@",inputImage);
 
     CGAffineTransform transform = CGAffineTransformIdentity;
-    NSLog(@"transform before: %f,%f,%f,%f,%f,%f", transform.a, transform.b, transform.c, transform.d, transform.tx, transform.ty);
     switch (inputImage.imageOrientation) {
         case UIImageOrientationDown:
         case UIImageOrientationDownMirrored:
@@ -380,7 +372,6 @@
     coreImage = [coreImage imageByApplyingTransform:transform];
     UIImage *newImage = [UIImage imageWithCIImage:coreImage];
 
-    NSLog(@"image - %f,%f", newImage.size.width, newImage.size.height);
     return newImage;
 }
 
@@ -391,14 +382,12 @@
 
     float imageWidth = originalImage.size.width;
     float imageHeight = originalImage.size.height;
-    NSLog(@"size - %f,%f", originalImage.size.width, originalImage.size.height);
     UIImage *croppedImage;
     if(imageHeight > imageWidth){
         croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake(0.0, (imageHeight - imageWidth)/2.0, imageWidth, imageWidth)];
     } else{
         croppedImage = [self cropImage:rotatedImage ToRect:CGRectMake((imageWidth-imageHeight)/2.0, 0.0, imageHeight, imageHeight)];
     }
-    NSLog(@"image size = %f,%f", croppedImage.size.width, croppedImage.size.height);
     return [self imageWithImage:croppedImage scaledDownToHorizontalPoints:newWidth];
 }
 

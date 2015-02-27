@@ -128,7 +128,6 @@
         }
         [self disableChatVCBecauseOfPoorLocation];
     } else{
-        NSLog(@"poorAccuracy = false, so we also send signal.");
         self.events = [[self.dataManager sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
 
         if([self.events count] > 0){
@@ -229,7 +228,6 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"Number of events: %li", (unsigned long)[self.events count]);
     return [self.events count];
 }
 
@@ -239,7 +237,6 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"indexPath.row = %li",(long)indexPath.row);
     PPLSTEventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Event Cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.parentTableView = tableView;
@@ -252,23 +249,16 @@
     //TODO: decide on how to deal with events without a titleImage
     NSLog(@"Formatting Event Cell for contributionId = %@", titleContribution.contributionId);
     if([titleContribution.contributionType isEqualToString:@"photo"]){
-        NSLog(@"Was a photo");
         if(titleContribution.imagePath && ![titleContribution.imagePath isEqualToString:@""]){
-            NSLog(@"titleContribution.imagePath was set and not empty");
             /*TODO: for some reason it seems like the image is not persisted in the filesystem between runs if the app is run through xcode (even through a physical device). However, if the same app is run through the iphone directly, the data is persisted perfectly. One can get around this by checking to see if the file actually exists rather than simply checking if the imagePath property has been set in the contribution object.*/
             [self.dataManager formatEventCell:cell ForContribution:titleContribution];
         } else{
-            NSLog(@"titleContribution.imagePath was either empty or not set at all");
             //we must download the image from the cloud
             if(!self.isDecelerating && !self.isDragging){
-                NSLog(@"calling formatEventCellForContribution");
                 [self.dataManager formatEventCell:cell ForContribution:titleContribution]; //runs asynchronously in datamanager class
             }
         }
     }
-    
-    NSLog(@"finished!");
-
     cell.eventLocationTextLabel.text = [self locationStringForEvent:event];
     cell.eventTimeSinceActiveTextLabel.text = [self timeIntervalStringSinceDate:event.lastActive];
     return cell;
@@ -327,16 +317,13 @@
     NSLog(@"PPLSTExploreTablewViewController - locationUpdatedTo");
     //if the location is updated while we're loading events, we should continue to the next step and complete the loading process
     if(self.isUpdatingEvents){
-        NSLog(@"self.isUpdatingEvents = YES");
         [self finishUpdatingEventsWithPoorAccuracy:poorAccuracy];
     } else if(poorAccuracy){
-        NSLog(@"poorAccuracy = YES");
         [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
         [self.locationManager updateLocationOfLastUpdate:self.locationManager.currentLocation];
         [self disableChatVCBecauseOfPoorLocation];
     } else if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
         //The user moved too far from the old location or they waited to long to refresh, so we update the events
-        NSLog(@"movedTooFar || waitedToLongSinceTime...");
         [self.dataManager eventThatUserBelongsTo]; //note: this returns an event, but we'll deal with it on the dataManager delegate call
     }
 }

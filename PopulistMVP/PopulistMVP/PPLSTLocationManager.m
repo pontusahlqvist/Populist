@@ -61,13 +61,14 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 #pragma mark - NSTimer related methods
 
 -(void) onLocationTick:(NSTimer*)locationTimer{
-    NSLog(@"locationTimer tick - updating location");
+    NSLog(@"PPLSTLocationManager - onLocationTick:%@", locationTimer);
     [self updateLocation];
 }
 
 #pragma mark - CLLocationManager Delegate methods
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    NSLog(@"PPLSTLocationManager - locationManager:%@ didUpdateLocations:%@",manager, locations);
     if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
     
     CLLocation *newLocation = [locations lastObject];
@@ -102,13 +103,13 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    NSLog(@"PPLSTLocationManager - locationManager:%@ didFailWithError: %@", manager, error);
     UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Failed To Get Location" message:@"Hmm, it seems like we're having a tough time gathering your location. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
-    NSLog(@"locationManager didFailWithError: %@", error);
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
-    NSLog(@"locationManager didChangeAuthorizationStatus to status = %i", status);
+    NSLog(@"PPLSTLocationManager - locationManager:%@ didChangeAuthorizationStatus to status = %i",manager, status);
     if(status == kCLAuthorizationStatusAuthorized || status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse){
         [self.delegate didAcceptAuthorization];
     } else if(status != 0){
@@ -153,7 +154,6 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 }
 
 -(BOOL)movedTooFarFrom:(CLLocation *)locationA To:(CLLocation *)locationB{
-    NSLog(@"locationA = %@, locationB = %@", locationA, locationB);
     float distanceMoved = [self distanceMovedFrom:locationA To:locationB];
     NSLog(@"Distance Moved = %f", distanceMoved);
     if(distanceMoved > cutoffDistance){
@@ -210,6 +210,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
 
+    //TODO: make sure this works properly
     self.country = @"";
     self.state = @"";
     self.city = @"";
