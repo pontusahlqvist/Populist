@@ -462,24 +462,13 @@ int maxMessageLengthForPush = 1000;
 
 -(NSMutableDictionary *)getStatusDictionaryForEvent:(Event *)event{
     NSLog(@"PPLSTDataManager - getStatusDictionaryForEvent:%@",event);
-    //TODO: replace with parse code. Must make sure that avatars are consistent across users!
-    NSSet *contributions = event.contributions;
-    NSSortDescriptor *sortDescriptor;
-    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
-    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-    NSArray *sortedContributions = [contributions sortedArrayUsingDescriptors:sortDescriptors];
     
-    NSMutableArray *userIds = [[NSMutableArray alloc] init];
-    for(Contribution *contribution in sortedContributions){
-        if(![userIds containsObject:contribution.contributingUserId]){
-            [userIds addObject:contribution.contributingUserId];
-        }
-    }
+    NSDictionary *result = [PFCloud  callFunction:@"getStatusInCluster" withParameters:@{@"clusterId": event.eventId}];
+    NSLog(@"return from parse: %@", result);
+    NSArray *statusArray = result[@"statusArray"];
     NSMutableDictionary *statusDictionary = [[NSMutableDictionary alloc] init];
-    int status = 0;
-    for(NSString *contributionId in userIds){
-        statusDictionary[contributionId] = [NSNumber numberWithInt:status];
-        status++;
+    for(int status = 0; status < [statusArray count]; status++){
+        statusDictionary[statusArray[status]] = [NSNumber numberWithInt:status];
     }
     return statusDictionary;
 }

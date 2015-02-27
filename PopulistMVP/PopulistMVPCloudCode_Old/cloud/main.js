@@ -810,6 +810,29 @@ Parse.Cloud.define("getContributionIdsInCluster", function(request, response){
     });
 })
 
+//This method returns the userIds for a particular cluster in the order that they contributed. This is used on the client side for generating the avatars
+Parse.Cloud.define("getStatusInCluster", function(request, response){
+    var clusterId = request.params.clusterId;
+    var query = new Parse.Query("FlatCluster");
+    query.get(clusterId);
+    query.find({
+        success: function(cluster){
+            var contributingUsers = cluster[0].get("contributingUsers");
+            var statusArray = new Array();
+            for(var i = 0; i < contributingUsers.length; i++){
+                var userId = contributingUsers[i];
+                if(statusArray.indexOf(userId) == -1){
+                    statusArray.push(userId);
+                }
+            }
+            response.success({"statusArray":statusArray});
+        },
+        error: function(error){
+            response.error(error);
+        }
+    })
+})
+
 //This method returns the clusterId of a possibly parent cluster to a given clusterId. If no such parent cluster exists, it just returns the original clusterId
 Parse.Cloud.define("getParentClusterId", function(request, response){
     var clusterId = request.params.clusterId;
@@ -817,6 +840,7 @@ Parse.Cloud.define("getParentClusterId", function(request, response){
     query.get(clusterId);
     query.find({
         success: function(cluster){
+            //TODO: should this be cluster[0].get()?
             var mergedIntoClusterId = cluster.get("mergedIntoClusterId");
             if(mergedIntoClusterId == null){
                 response.success({"clusterId": clusterId});
