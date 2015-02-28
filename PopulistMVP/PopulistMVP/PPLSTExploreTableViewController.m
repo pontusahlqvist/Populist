@@ -436,13 +436,4 @@
     }
 }
 
-//TODO: fix the image compose.png to already be 30x30 with high quality so that this method is unnecessary
-- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();    
-    UIGraphicsEndImageContext();
-    return newImage;
-}
-
 @end
