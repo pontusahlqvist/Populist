@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "compose-1.png"
+      "filename" : "compose32.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "compose.png"
+      "filename" : "compose64.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "compose-2.png"
+      "filename" : "compose96.png"
     }
   ],
   "info" : {

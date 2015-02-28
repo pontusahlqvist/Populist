@@ -2,16 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "flashOffWhite36.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "flashOff48.png"
+      "filename" : "flashOffWhite72.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "flashOffWhite108.png"
     }
   ],
   "info" : {

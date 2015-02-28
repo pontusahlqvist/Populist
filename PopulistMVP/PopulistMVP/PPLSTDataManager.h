@@ -41,7 +41,6 @@
 
 -(id) init;
 
-
 #pragma mark - Server Side Data Related API
 
 //This method first retrieves the events. Then, if the user is not part of any of them, it creates a new invisible event
@@ -53,17 +52,21 @@
 //Returns (and saves as a relationship) an NSArray with contribution meta data (id, message etc but not media) for a certain event.
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event inContext:(NSManagedObjectContext*)context;
 
+//by now, there should already exist a contribution object in core data. Here we just update the object.
 -(Contribution*) downloadMediaForContribution:(Contribution*)contribution inContext:(NSManagedObjectContext*) context;
 
 //Uploads (and saves to core data) and then returns a contribution to the cloud with the given data dictionary
--(Contribution*) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo;
+-(Contribution *) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo;
 
 //returns (from the server side) a dictionary where the keys are the contributingUserIds and the values are their respective status in the event
 -(NSMutableDictionary*) getStatusDictionaryForEvent:(Event*)event;
 
+//returns the event that the user belongs to (after calling parse) and also forces an update on the current events displayed in the explore tab
 -(Event*) eventThatUserBelongsTo;
 
+//Flags the contribution in the background and displays an alert view with a confirmation / error message
 -(void) flagContribution:(Contribution*) contributionToBeFlagged;
+
 #pragma mark - Local Data API
 
 //returns the avatar that each status should have

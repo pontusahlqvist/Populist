@@ -29,7 +29,7 @@
     //NOTE: I changed the default here from the paperclip to our own camera icon
 //    UIImage *accessoryImage = [UIImage jsq_defaultAccessoryImage];
     UIImage *accessoryImage = [UIImage imageNamed:@"camera_glyph"];
-    UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor lightGrayColor]];
+    UIImage *normalImage = accessoryImage;//[accessoryImage jsq_imageMaskedWithColor:[UIColor lightGrayColor]];
     UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor darkGrayColor]];
     
 //    UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, accessoryImage.size.width, 32.0f)];

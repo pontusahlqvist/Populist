@@ -30,7 +30,8 @@
     self.view.backgroundColor = [UIColor blackColor];
     self.imageView.image = [self scaledImageForImage:self.image];
     
-    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"flag.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+//    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"flag.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
+    UIImage *image = [UIImage imageNamed:@"flag_glyph"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
     [button setImage:image forState:UIControlStateNormal];

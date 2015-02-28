@@ -51,7 +51,7 @@
 
 
     self.takePictureButton = [[UIButton alloc] init];
-    [self.takePictureButton setImage:[UIImage imageNamed:@"takePicture@2x.png"] forState:UIControlStateNormal];
+    [self.takePictureButton setImage:[UIImage imageNamed:@"takePicture"] forState:UIControlStateNormal];
     self.takePictureButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.takePictureButton addTarget:self action:@selector(handleTakePictureButton:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -99,7 +99,7 @@
     
     
     self.reverseCameraButton = [[UIButton alloc] init];
-    [self.reverseCameraButton setImage:[UIImage imageNamed:@"reverseCameraWhite32.png"] forState:UIControlStateNormal];
+    [self.reverseCameraButton setImage:[UIImage imageNamed:@"reverseCamera"] forState:UIControlStateNormal];
     self.reverseCameraButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.reverseCameraButton addTarget:self action:@selector(handleReverseCameraButton:) forControlEvents:UIControlEventTouchUpInside];
     [overlayTop addConstraint:[NSLayoutConstraint constraintWithItem:self.reverseCameraButton
@@ -192,7 +192,7 @@
     } else{
     [UIView transitionWithView:self.view duration:1.0 options:UIViewAnimationOptionAllowAnimatedContent | UIViewAnimationOptionTransitionFlipFromLeft animations:^{
             self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-            [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff48.png"] forState:UIControlStateNormal];
+            [self.toggleFlash setImage:[UIImage imageNamed:@"flashOff_glyph"] forState:UIControlStateNormal];
         } completion:NULL];
         self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
     }
@@ -259,7 +259,7 @@
     [self.previewBackgroundView addSubview:previewImage];
 
     UIButton *acceptImageButton = [[UIButton alloc] init];
-    [acceptImageButton setImage:[UIImage imageNamed:@"accept@2x.png"] forState:UIControlStateNormal];
+    [acceptImageButton setImage:[UIImage imageNamed:@"accept_glyph"] forState:UIControlStateNormal];
     acceptImageButton.translatesAutoresizingMaskIntoConstraints = NO;
     [acceptImageButton addTarget:self action:@selector(handleAcceptImage:) forControlEvents:UIControlEventTouchUpInside];
     [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
@@ -280,7 +280,7 @@
 
 
     UIButton *retakeImageButton = [[UIButton alloc] init];
-    [retakeImageButton setImage:[UIImage imageNamed:@"cancel@2x.png"] forState:UIControlStateNormal];
+    [retakeImageButton setImage:[UIImage imageNamed:@"cancel_glyph"] forState:UIControlStateNormal];
     retakeImageButton.translatesAutoresizingMaskIntoConstraints = NO;
     [retakeImageButton addTarget:self action:@selector(handleRetakeImage:) forControlEvents:UIControlEventTouchUpInside];
     [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:retakeImageButton

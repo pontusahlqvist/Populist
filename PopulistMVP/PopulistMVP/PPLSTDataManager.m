@@ -334,7 +334,7 @@ int maxMessageLengthForPush = 1000;
     return contribution;
 }
 
-
+//Uploads (and saves to core data) and then returns a contribution to the cloud with the given data dictionary
 -(Contribution *) uploadContributionWithData:(NSDictionary*)contributionDictionary andPhoto:(UIImage*)photo{
     NSLog(@"PPLSTDataManager - uploadContributionWithData:%@ andPhoto%@",contributionDictionary, photo);
     Contribution *newContribution = [self createContributionWithId:[NSString stringWithFormat:@"tmpId%i",rand()] inContext:self.context];
