@@ -591,19 +591,21 @@ int maxMessageLengthForPush = 1000;
 
             //Also deal with title contribution
             Contribution *contribution = event.titleContribution;
-            NSString *fileName = contribution.imagePath;
-            NSLog(@"Deleting file with fileName = %@", fileName);
-            if(fileName){
-                //delete file at that file path
-                NSError *error = nil;
-                [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
-                NSLog(@"Got Error When Deleting: %@", error);
-            }
-            NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
-            [context deleteObject:contribution];
+            if(contribution){
+                NSString *fileName = contribution.imagePath;
+                NSLog(@"Deleting file with fileName = %@", fileName);
+                if(fileName){
+                    //delete file at that file path
+                    NSError *error = nil;
+                    [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
+                    NSLog(@"Got Error When Deleting: %@", error);
+                }
+                NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
+                [context deleteObject:contribution];
 
-            NSLog(@"Deleting Event with ID %@", event.eventId);
-            [context deleteObject:event];
+                NSLog(@"Deleting Event with ID %@", event.eventId);
+                [context deleteObject:event];
+            }
         }
     }
 }
