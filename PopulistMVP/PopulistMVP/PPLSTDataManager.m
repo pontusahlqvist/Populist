@@ -273,27 +273,41 @@ int maxMessageLengthForPush = 1000;
     NSMutableArray *contributions = [[NSMutableArray alloc] init];
     for(NSDictionary *contributionData in arrayOfContributionData){
         NSString *contributionId = contributionData[@"contributionId"];
+        NSLog(@"considering contribution with Id = %@", contributionId);
         Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
         if(!newContribution){
+            NSLog(@"downloadContributionMetaDataForEvent - 1");
             newContribution = [self createContributionWithId:contributionId inContext:self.context];
+            NSLog(@"downloadContributionMetaDataForEvent - 2");
             newContribution.imagePath = nil;
+            NSLog(@"downloadContributionMetaDataForEvent - 3");
             newContribution.latitude = nil;
+            NSLog(@"downloadContributionMetaDataForEvent - 4");
             newContribution.longitude = nil;
+            NSLog(@"downloadContributionMetaDataForEvent - 5");
             newContribution.message = nil;
+            NSLog(@"downloadContributionMetaDataForEvent - 6");
         }
+        NSLog(@"downloadContributionMetaDataForEvent - 7");
         newContribution.createdAt = contributionData[@"createdAt"]; //makes sure that even title contributions get their date set properly
+        NSLog(@"downloadContributionMetaDataForEvent - 8");
         newContribution.contributingUserId = contributionData[@"userId"]; //same reason as above.
+        NSLog(@"downloadContributionMetaDataForEvent - 9");
         newContribution.contributionType = contributionData[@"type"];
+        NSLog(@"downloadContributionMetaDataForEvent - 10");
         
         [event addContributionsObject:newContribution];
+        NSLog(@"downloadContributionMetaDataForEvent - 11");
         if([newContribution.contributionType isEqualToString:@"message"]){
+            NSLog(@"downloadContributionMetaDataForEvent - 12");
             newContribution.message = contributionData[@"message"];
         }
-
+        NSLog(@"downloadContributionMetaDataForEvent - 13");
         [contributions addObject:newContribution];
     }
-
+    NSLog(@"downloadContributionMetaDataForEvent - 14");
     [self saveCoreDataInContext:context];
+    NSLog(@"downloadContributionMetaDataForEvent - 15");
     
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];
@@ -517,16 +531,15 @@ int maxMessageLengthForPush = 1000;
         if([data[@"t"] isEqualToString:@"message"]){
             newIncomingContribution.message = data[@"m"];
         }
-        //TODO: aren't there duplicate variables here? Don't eventToWhich... and eventForIncoming... refer to the same thing?
+        
         Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
-        Event *eventForIncomingContribution = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
-        [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventForIncomingContribution];
+        [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventToWhichThisContributionBelongs];
         eventToWhichThisContributionBelongs.lastActive = newIncomingContribution.createdAt;
-        [self.delegate didUpdateLastActiveForEvent:eventForIncomingContribution];
+        [self.delegate didUpdateLastActiveForEvent:eventToWhichThisContributionBelongs];
         if([data[@"t"] isEqualToString:@"photo"]){
-            eventForIncomingContribution.titleContribution = newIncomingContribution;
-            [self.delegate didUpdateTitleContributionForEvent:eventForIncomingContribution];
+            eventToWhichThisContributionBelongs.titleContribution = newIncomingContribution;
+            [self.delegate didUpdateTitleContributionForEvent:eventToWhichThisContributionBelongs];
         }
     }
 }
@@ -706,13 +719,18 @@ int maxMessageLengthForPush = 1000;
 -(Contribution *) getContributionFromCoreDataWithId:(NSString*)contributionId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - getContributionFromCoreDataWithId:%@",contributionId);
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Contribution"];
+NSLog(@"getContributionFromCoreDataWithId - 1");
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"contributionId == %@",contributionId];
+NSLog(@"getContributionFromCoreDataWithId - 2");
     NSError *error = nil;
+NSLog(@"getContributionFromCoreDataWithId - 3");
     NSArray *returnedContributions = [context executeFetchRequest:fetchRequest error:&error];
+NSLog(@"getContributionFromCoreDataWithId - 4");
     if([returnedContributions count] == 0){
         NSLog(@"Error: No contribution found in core data with contributionId = %@",contributionId);
         return nil;
     }
+NSLog(@"getContributionFromCoreDataWithId - 5");
     return returnedContributions[0];
 }
 

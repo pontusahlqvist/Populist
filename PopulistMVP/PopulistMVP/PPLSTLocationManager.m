@@ -20,7 +20,7 @@
 //TODO: make sure parameters are reasonable
 float veryNearCutoff = 30.0; //in meters
 float cutoffDistance = 100.0; //in meters
-float cutoffTime = 60.0*30; //in seconds
+float cutoffTime = 60.0*30; //in seconds. The time after which we re-fetch the event that the user belongs to
 int locationUpdateTimeInterval = 60; //in seconds
 
 float desiredHorizontalAccuracy = 10.0; //meters
@@ -123,8 +123,8 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     [self.locationManager startUpdatingLocation];
     self.startedUpdatingLocationAt = [NSDate date];
     self.isUpdatingLocation = YES;
-    if(!self.timeOfLastLocationCheck || -[self.timeOfLastLocationCheck timeIntervalSinceNow] > 2*locationUpdateTimeInterval){
-        [[[UIApplication sharedApplication] keyWindow] addSubview:self.updatingLocationView];
+    if(!self.timeOfLastLocationCheck || -[self.timeOfLastLocationCheck timeIntervalSinceNow] > cutoffTime){
+        [[[UIApplication sharedApplication] keyWindow] addSubview:self.updatingLocationView]; //TODO: is it really necessary to even show this?
     }
     self.timeOfLastLocationCheck = [NSDate date];
 }
