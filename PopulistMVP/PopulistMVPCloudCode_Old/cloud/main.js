@@ -63,7 +63,7 @@ var minuteCutoffMerge = 60*1;
 var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
 var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
 
-var maxMilesToAdd = 0.1;
+var maxMilesToAdd = 0.5;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
 var minLocalFitValue = 1.0;
@@ -372,6 +372,7 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                             var updatedClusterImportance = updatedCluster.get("importance");
                                             var invalidatedNeighborImportance = invalidatedNeighbor.get("importance");
                                             var invalidatedNeighborContributionIds = invalidatedNeighbor.get("contributions");
+                                            var invalidatedNeighborContributingUsers = invalidatedNeighbor.get("contributingUsers");
                                             
                                             for(var i = 0; i < invalidatedNeighborContributionIds.length; i++){
                                                 //TODO: technically if two different clusters simultaneously try to merge with a given cluster, they will both duplicate its images.
@@ -379,6 +380,9 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                                 //However, a subtlety in this approach is that the importance of the overlapping images gets double counted. I will accept this rare
                                                 //issue for now, but this is something that must be addressed in the future.
                                                 updatedCluster.addUnique("contributions", invalidatedNeighborContributionIds[i]);
+                                            }
+                                            for(var i = 0; i < invalidatedNeighborContributingUsers.length; i++){
+                                                updatedCluster.add("contributingUsers",invalidatedNeighborContributingUsers[i]);
                                             }
                                             updatedCluster.increment("importance", invalidatedNeighbor.get("importance"));
                                             updatedCluster.save();

@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
+//TODO: issue with using parse to get status for avatar. When a use uploads the first contribution to an event, it is likely (since the contribution is saved in the background) that the contribution finishes being saved AFTER the status for that user has been requested. As a result, we'll receive a partial list only of statuses and this will crash the app once the result null is obtained.
+//TODO: when two events are merged, the contributingUsers were not previously merged on parse. I have added code to fix this, but we still need to make sure that it works properly.
+
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 #import "PPLSTMutableDictionary.h"
@@ -324,7 +327,7 @@ int maxMessageLengthForPush = 1000;
     if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
         //TODO: perhaps change this to different images for different events? Maybe create images on the fly with some text indicating their location?
         //TODO: improve the quality of the placeholder image
-        contribution.imagePath = [self storeImage:[UIImage imageNamed:@"Populist-60@2x.png"]];
+        contribution.imagePath = [self storeImage:[UIImage imageNamed:@"PlaceholderImage"]];
     } else if ([contribution.contributionType isEqualToString:@"message"]) {
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
         PFObject *parseContribution = [query getObjectWithId:contribution.contributionId];
@@ -548,6 +551,10 @@ int maxMessageLengthForPush = 1000;
 
 -(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
     NSLog(@"PPLSTDataManager - avatarForStatus:%@",status);
+    if(!status){
+        return nil;
+    }
+    
     if(![[self.avatarForStatus allKeys] containsObject:status]){
         UIImage *image = [UIImage imageNamed:self.avatarImageSourceForStatus[status]];
         if(!image){
@@ -631,13 +638,24 @@ int maxMessageLengthForPush = 1000;
     if([contribution.contributionType isEqualToString:@"message"] && contribution.message && ![contribution.message isEqualToString:@""]) return;
     NSLog(@"contributionId = %@, contributionType = %@, imagePath = %@", contribution.contributionId, contribution.contributionType, contribution.imagePath);
     if([contribution.contributionType isEqualToString:@"photo"] && contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
-        cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
-        return;
+        NSLog(@"it's a photo and the imagePath is not nil, nor is it the empty string");
+        UIImage *image = [self getImageWithFileName:contribution.imagePath];
+        NSLog(@"Just got the image %@", image);
+        if(image){
+            NSLog(@"Yay, the image wasn't nil");
+            cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
+            return;
+        } else{
+            NSLog(@"Darn, the image was nil... let's keep going");
+        }
     }
     NSNumber *loading = self.isLoading[contribution.contributionId];
+    NSLog(@"loading = %@", loading);
     if([loading isEqualToNumber:@1]){
+        NSLog(@"It's loading, let's return");
         return; //wait for first load to complete before initializing a second load.
     }
+    NSLog(@"it wasn't loading, so we'll move forward");
     self.isLoading[contribution.contributionId] = @1;
     //add spinner to cell
     cell.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
@@ -645,11 +663,13 @@ int maxMessageLengthForPush = 1000;
     [cell addSubview:cell.spinner];
     [cell bringSubviewToFront:cell.spinner];
     [cell.spinner startAnimating];
+    NSLog(@"About to dispatch async");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.context;
         [context performBlock:^{
+            NSLog(@"About to download the media for this contribution");
             [self downloadMediaForContribution:contribution inContext:self.context];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
@@ -812,7 +832,11 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 -(UIImage*) getImageWithFileName:(NSString*)fileName{
     NSLog(@"PPLSTDataManager - getImageWithFileName:%@",fileName);
     if(![[self.imagesAtFilePath allKeys] containsObject:fileName] || !self.imagesAtFilePath[fileName]){
-        UIImage *image = [UIImage imageWithContentsOfFile:[self filePathForImageWithFileName:fileName]];
+        NSLog(@"self.imageAtFilePath doesn't already contain the fileName or the filename is nil");
+        NSString *filePath = [self filePathForImageWithFileName:fileName];
+        NSLog(@"the filePath is %@", filePath);
+        UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+        NSLog(@"the image is %@", image);
         self.imagesAtFilePath[fileName] = image;
     }
     return self.imagesAtFilePath[fileName];

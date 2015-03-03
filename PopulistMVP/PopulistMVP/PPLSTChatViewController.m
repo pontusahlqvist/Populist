@@ -213,7 +213,8 @@
 
 -(id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
-    return [self.dataManager avatarForStatus:self.statusForSenderId[contribution.contributingUserId]];
+    NSNumber *status = self.statusForSenderId[contribution.contributingUserId];
+    return [self.dataManager avatarForStatus:status];
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -396,10 +397,10 @@
 //handles the collection of userIds and determins if we should update avatars.
 -(void) handleUserId:(NSString*)userId{
     if(![self.userIds containsObject:userId]){
-        [self.userIds addObject:userId];
         self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
-        //TODO: do we need to reload the collection view? It should be updated in the calling functions code anyway, so likely not.
-        //on the other hand, we will be handing this off to parse, so it will run in a background thread. As a result, we'll have to wait for a call-back. This callback will potentially occur after the collection view has already been reloaded.
+        if([[self.statusForSenderId allKeys] containsObject:userId]){
+            [self.userIds addObject:userId]; //Note: if for some reason, the save of the object takes too long and the userId hasn't been added to the list yet, we'll make sure to pull the avatar next time.
+        }
     }
 }
 
