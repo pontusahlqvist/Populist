@@ -791,6 +791,7 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 
     if (![imageData writeToFile:[self filePathForImageWithFileName:fileName] atomically:NO]){
         NSLog(@"Failed to cache image data to disk");
+        fileName = nil;
     }
     return fileName;
 }
