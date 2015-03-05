@@ -63,7 +63,7 @@ var minuteCutoffMerge = 60*1;
 var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
 var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
 
-var maxMilesToAdd = 0.5;
+var maxMilesToAdd = 1;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
 var minLocalFitValue = 1.0;

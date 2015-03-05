@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: issue with using parse to get status for avatar. When a use uploads the first contribution to an event, it is likely (since the contribution is saved in the background) that the contribution finishes being saved AFTER the status for that user has been requested. As a result, we'll receive a partial list only of statuses and this will crash the app once the result null is obtained.
 //TODO: when two events are merged, the contributingUsers were not previously merged on parse. I have added code to fix this, but we still need to make sure that it works properly.
 
 #import "PPLSTDataManager.h"
@@ -639,6 +638,7 @@ int maxMessageLengthForPush = 1000;
             }
         }
     }
+    [self saveCoreDataInContext:context];
 }
 
 #pragma mark - cell formatters (event and message cell)
