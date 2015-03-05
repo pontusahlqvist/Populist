@@ -219,7 +219,7 @@
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
-    JSQMessage *message = [self jsqMessageForContribution:contribution];
+    JSQMessage *message = [self jsqMessageForContribution:contribution]; //TODO: we don't need to synthesize this right? We could just extract the senderId from the contribution.
     if([message.senderId isEqualToString:self.senderId]){
         return self.outgoingBubbleImageData;
     } else{
@@ -368,6 +368,9 @@
             JSQPhotoMediaItem *photo = [[JSQPhotoMediaItem alloc] initWithMaskAsOutgoing:([contribution.contributingUserId isEqualToString:self.senderId]? YES:NO)];
             if(contribution.imagePath && ![contribution.imagePath isEqualToString:@""]){
                 photo.image = [self.dataManager getImageWithFileName:contribution.imagePath];
+            } else if([[self.dataManager.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
+                NSLog(@"calling imagesInMemoryForContributionId from within createMessagesFromContributions with contributionId = %@", contribution.contributionId);
+                photo.image = self.dataManager.imagesInMemoryForContributionId[contribution.contributionId];
             }
             newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }

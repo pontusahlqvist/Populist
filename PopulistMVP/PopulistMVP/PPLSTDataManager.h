@@ -31,6 +31,7 @@
 #import "PPLSTLocationManager.h"
 #import "PPLSTAppDelegate.h"
 #import <Parse/Parse.h>
+#import "PPLSTMutableDictionary.h"
 
 @class PPLSTExploreTableViewController;
 
@@ -98,6 +99,7 @@
 
 //@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
 @property (strong, nonatomic) NSMutableDictionary *squareImagesForImageAtFilePath;
+@property (strong, nonatomic) PPLSTMutableDictionary *imagesInMemoryForContributionId;
 @property (strong, nonatomic) NSMutableDictionary *isLoading;
 @property (strong, nonatomic) NSMutableDictionary *avatarForStatus;
 @property (strong, nonatomic) NSString *contributingUserId;

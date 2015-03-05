@@ -11,7 +11,6 @@
 
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
-#import "PPLSTMutableDictionary.h"
 #import "PPLSTUUID.h"
 
 @interface PPLSTDataManager()
@@ -60,6 +59,11 @@ int maxMessageLengthForPush = 1000;
 -(PPLSTMutableDictionary *)imagesAtFilePath{
     if(!_imagesAtFilePath) _imagesAtFilePath = [[PPLSTMutableDictionary alloc] init];
     return _imagesAtFilePath;
+}
+
+-(PPLSTMutableDictionary *)imagesInMemoryForContributionId{
+    if(!_imagesInMemoryForContributionId) _imagesInMemoryForContributionId = [[PPLSTMutableDictionary alloc] init];
+    return _imagesInMemoryForContributionId;
 }
 
 -(NSMutableDictionary *)isLoading {
@@ -327,7 +331,7 @@ int maxMessageLengthForPush = 1000;
     if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
         //TODO: perhaps change this to different images for different events? Maybe create images on the fly with some text indicating their location?
         //TODO: improve the quality of the placeholder image
-        contribution.imagePath = [self storeImage:[UIImage imageNamed:@"PlaceholderImage"]];
+        contribution.imagePath = [self storeImage:[UIImage imageNamed:@"PlaceholderImage"] forContributionId:contribution.contributionId];
     } else if ([contribution.contributionType isEqualToString:@"message"]) {
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
         PFObject *parseContribution = [query getObjectWithId:contribution.contributionId];
@@ -341,9 +345,9 @@ int maxMessageLengthForPush = 1000;
         PFFile *file = [parsePhoto objectForKey:@"image"];
         NSData *parseImageData = [file getData];
         UIImage *image = [UIImage imageWithData:parseImageData];
-        contribution.imagePath = [self storeImage:image];
+        contribution.imagePath = [self storeImage:image forContributionId:contribution.contributionId];
         contribution.contributingUserId = [parsePhoto objectForKey:@"userId"];
-        contribution.createdAt = contribution.createdAt;//[parsePhoto objectForKey:@"createdAt"];
+        contribution.createdAt = contribution.createdAt;//[parsePhoto objectForKey:@"createdAt"]; TODO: why is this commented out? Shouldn't it come from parse?
     }
     
     [self saveCoreDataInContext:context];
@@ -374,7 +378,7 @@ int maxMessageLengthForPush = 1000;
         newContribution.createdAt = [NSDate date];
     }
     if(photo){
-        newContribution.imagePath = [self storeImage:[self imageWithImage:photo scaledToSize:CGSizeMake(320.0, 320.0)]];
+        newContribution.imagePath = [self storeImage:[self imageWithImage:photo scaledToSize:CGSizeMake(320.0, 320.0)] forContributionId:newContribution.contributionId];
     } else{
         newContribution.imagePath = nil;
     }
@@ -431,7 +435,7 @@ int maxMessageLengthForPush = 1000;
             [parseContribution setObject:@"photo" forKey:@"type"];
             
             //Note: compression of 1.0 -> size in the 300-400kb range. 0.5 -> 30-40kb, and 0.0 -> 10-20 kb. Original image -> 1.5 Mb.
-            NSData *imageData = UIImageJPEGRepresentation([self getImageWithFileName:imagePath], 0.5f);
+            NSData *imageData = UIImageJPEGRepresentation([self getImageWithFileName:imagePath], 0.5f); //TODO: port over to memory-only method
             PFFile *imageFile = [PFFile fileWithName:@"image.jpg" data:imageData];
             [imageFile saveInBackground];
             [parseContribution setObject:imageFile forKey:@"image"];
@@ -446,7 +450,13 @@ int maxMessageLengthForPush = 1000;
             dispatch_async(dispatch_get_main_queue(), ^{
                 //get the object id and reassign it locally
                 NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
-                contribution.contributionId = objectId;
+                //we need to update the contributionId if applicable and also go ahead and move the old file to the new location
+                if(![contribution.contributionId isEqualToString:objectId]){
+                    if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
+                        self.imagesInMemoryForContributionId[objectId] = self.imagesInMemoryForContributionId[contribution.contributionId];
+                        contribution.contributionId = objectId;
+                    }
+                }
                 [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
                 
                 //send push notification
@@ -649,6 +659,11 @@ int maxMessageLengthForPush = 1000;
             NSLog(@"Darn, the image was nil... let's keep going");
         }
     }
+    if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
+        cell.titleImageView.image = self.imagesInMemoryForContributionId[contribution.contributionId];
+        return;
+    }
+    
     NSNumber *loading = self.isLoading[contribution.contributionId];
     NSLog(@"loading = %@", loading);
     if([loading isEqualToNumber:@1]){
@@ -678,7 +693,13 @@ int maxMessageLengthForPush = 1000;
                     [cell.spinner removeFromSuperview];
                     cell.spinner = nil;
                 }
-                cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
+                if(contribution.imagePath){
+                    cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
+                } else{
+                    //for some reason the save must have failed. Let's look to memory to see if we can recover it.
+                    NSLog(@"The save must have failed. Resorting to looking at the in-memory stuff: %@", self.imagesInMemoryForContributionId);
+                    cell.titleImageView.image = self.imagesInMemoryForContributionId[contribution.contributionId];
+                }
                 [cell.parentTableView reloadData];
             });
         }];
@@ -693,6 +714,11 @@ int maxMessageLengthForPush = 1000;
                 JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
                 mediaItem.image = [self getImageWithFileName:contribution.imagePath];
         } else{
+            if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
+                JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
+                mediaItem.image = self.imagesInMemoryForContributionId[contribution.contributionId];
+                return;
+            }
             NSNumber *loading = self.isLoading[contribution.contributionId];
             if([loading isEqualToNumber:@1]){
                 return; //avoid dubble loading while running in background thread
@@ -709,7 +735,11 @@ int maxMessageLengthForPush = 1000;
                     dispatch_async(dispatch_get_main_queue(), ^{
                         self.isLoading[contribution.contributionId] = @0;
                         JSQPhotoMediaItem *mediaItem = (JSQPhotoMediaItem*)message.media;
-                        mediaItem.image = [self getImageWithFileName:contribution.imagePath];
+                        if(contribution.imagePath){
+                            mediaItem.image = [self getImageWithFileName:contribution.imagePath];
+                        } else{
+                            mediaItem.image = self.imagesInMemoryForContributionId[contribution.contributionId];
+                        }
                         [collectionView reloadData];
                     });
                 }];
@@ -784,15 +814,18 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 }
 
 //stores an image in the file system and returns the imagePath
--(NSString *) storeImage:(UIImage*)image{
+-(NSString *) storeImage:(UIImage*)image forContributionId:(NSString*)contributionId{
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
     NSData *imageData = UIImagePNGRepresentation(image);
     NSString *fileName = [self getEmptyFileName];
 
     if (![imageData writeToFile:[self filePathForImageWithFileName:fileName] atomically:NO]){
         NSLog(@"Failed to cache image data to disk");
+        //if the save was unsuccesful, we go ahead and store it in memory at least
+        self.imagesInMemoryForContributionId[contributionId] = image;
         fileName = nil;
     }
+
     return fileName;
 }
 
