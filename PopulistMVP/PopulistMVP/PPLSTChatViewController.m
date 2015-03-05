@@ -169,7 +169,7 @@
             NSLog(@"3");
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
             NSLog(@"4");
-            self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning. In the future the prior call will be async, and we'll have to move this line of code into a delegate callback.
+            self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning.
             NSLog(@"5");
             NSLog(@"userIds = %@", self.userIds);
 
@@ -214,7 +214,13 @@
 -(id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
     NSNumber *status = self.statusForSenderId[contribution.contributingUserId];
-    return [self.dataManager avatarForStatus:status];
+    if(status){
+        return [self.dataManager avatarForStatus:status];
+    } else{
+        //if the status has not yet been recorder (e.g. our new contribution has not yet saved) we make our best guess as to what the avatar should be and update it on the next contribution upload. The only time there would be a disagreement would be if another user was able to save a contribution and we submitted ours in between that save and when the push went through. In other words very rarely. This would only apply to new users too.
+        NSNumber *maxStatus = [NSNumber numberWithInteger:[[self.statusForSenderId allKeys] count]];
+        return [self.dataManager avatarForStatus:maxStatus];
+    }
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{

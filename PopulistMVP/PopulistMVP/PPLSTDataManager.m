@@ -406,6 +406,8 @@ int maxMessageLengthForPush = 1000;
             event.titleContribution = newContribution;
             [self.delegate didUpdateTitleContributionForEvent:event];
         }
+    } else{
+        NSLog(@"Error: eventId is not set");
     }
     
     [self uploadAndSaveContributionInBackground:newContribution];
@@ -444,44 +446,43 @@ int maxMessageLengthForPush = 1000;
         [parseContribution setObject:[[NSArray alloc] init] forKey:@"flaggedBy"];
         [parseContribution setObject:[PFGeoPoint geoPointWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]] forKey:@"location"];
         [parseContribution setObject:eventId forKey:@"promise"];
-
-        [parseContribution saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            //we return to the main queue since we're modifying an NSManagedObject subclass (contribution) which was originally definied in the main queue
-            dispatch_async(dispatch_get_main_queue(), ^{
-                //get the object id and reassign it locally
-                NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
-                //we need to update the contributionId if applicable and also go ahead and move the old file to the new location
-                if(![contribution.contributionId isEqualToString:objectId]){
-                    if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
-                        self.imagesInMemoryForContributionId[objectId] = self.imagesInMemoryForContributionId[contribution.contributionId];
-                        contribution.contributionId = objectId;
-                    }
+        [parseContribution save];
+        
+        //we return to the main queue since we're modifying an NSManagedObject subclass (contribution) which was originally definied in the main queue
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //get the object id and reassign it locally
+            NSString *objectId = [parseContribution valueForKeyPath:@"objectId"];
+            //we need to update the contributionId if applicable and also go ahead and move the old file to the new location
+            if(![contribution.contributionId isEqualToString:objectId]){
+                if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
+                    self.imagesInMemoryForContributionId[objectId] = self.imagesInMemoryForContributionId[contribution.contributionId];
+                    contribution.contributionId = objectId;
                 }
-                [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
-                
-                //send push notification
-                NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
-                pushData[@"alert"] = @"New stuff at your event!";
-                pushData[@"c"] = objectId;
-                pushData[@"t"] = contribution.contributionType;
-                pushData[@"u"] = contribution.contributingUserId;
-                pushData[@"e"] = contribution.event.eventId;
-                if([contribution.contributionType isEqualToString:@"message"]){
-                    if ([contribution.message length] <= maxMessageLengthForPush) {
-                        pushData[@"m"] = contribution.message;
-                    } else{
-                        pushData[@"m"] = @""; //send the empty string along, and let the other user download the data from the server
-                    }
+            }
+            [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
+            
+            //send push notification
+            NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
+            pushData[@"alert"] = @"New stuff at your event!";
+            pushData[@"c"] = objectId;
+            pushData[@"t"] = contribution.contributionType;
+            pushData[@"u"] = contribution.contributingUserId;
+            pushData[@"e"] = contribution.event.eventId;
+            if([contribution.contributionType isEqualToString:@"message"]){
+                if ([contribution.message length] <= maxMessageLengthForPush) {
+                    pushData[@"m"] = contribution.message;
+                } else{
+                    pushData[@"m"] = @""; //send the empty string along, and let the other user download the data from the server
                 }
-                PFPush *pushNotification = [[PFPush alloc] init];
-                [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
-                [pushNotification setData:pushData];
-                [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
-                [pushNotification sendPushInBackground];
-                
-                [self saveCoreDataInContext:self.context];
-            });
-        }];
+            }
+            PFPush *pushNotification = [[PFPush alloc] init];
+            [pushNotification setChannels:@[[NSString stringWithFormat:@"event%@",contribution.event.eventId]]];
+            [pushNotification setData:pushData];
+            [pushNotification expireAfterTimeInterval:5];//expires after 5 sec
+            [pushNotification sendPushInBackground];
+            
+            [self saveCoreDataInContext:self.context];
+        });
     });
 }
 
