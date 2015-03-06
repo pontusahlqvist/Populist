@@ -22,6 +22,7 @@
 
 @protocol PPLSTDataManagerPushDelegate <NSObject>
 -(void) didAddIncomingContribution:(Contribution*)newContribution ForEvent:(Event*)event;
+-(void) eventIdWasUpdatedFrom:(NSString*)oldEventId to:(NSString*)newEventId;
 @end
 
 #import "Contribution.h"
@@ -94,6 +95,7 @@
 #pragma mark - Incoming Push Notification Handler
 
 -(void) handleIncomingDataFromPush:(NSDictionary*)data;
+-(void) handleIncomingMergePush:(NSDictionary*)data;
 
 #pragma mark - Variables
 

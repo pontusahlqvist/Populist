@@ -70,6 +70,8 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     if([[userInfo allKeys] containsObject:@"t"]){ //t for type. If push doesn't contain t as a key, we deal with it separately
         [self.dataManager handleIncomingDataFromPush:userInfo];
+    } else if([[userInfo allKeys] containsObject:@"o"]){ //o for old. If push contains this key, it's a merge notification
+        [self.dataManager handleIncomingMergePush:userInfo];
     } else{
         [PFPush handlePush:userInfo];
     }

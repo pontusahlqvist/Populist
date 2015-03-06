@@ -387,6 +387,16 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                             updatedCluster.increment("importance", invalidatedNeighbor.get("importance"));
                                             updatedCluster.save();
                                             
+                                            //send push notification to the involved subscribers
+                                            Parse.Push.send({
+                                                channels: [ "event"+updatedCluster.id, "event"+invalidatedNeighbor.id],
+                                                data: {
+                                                    alert: "Your event merged with another event.",
+                                                    o:invalidatedNeighbor.id,
+                                                    n:updatedCluster.id
+                                                }
+                                            }, {success: function(){}, error: function(error){}});
+                                            
                                             /*this next part looks for clusters that were themselves merged into the neighbor cluster and updates their mergedIntoClusterId. This may not really
                                             be necessary since presumably clusters only merge once in a while and the chance of this happening multiple times is slim to none. Either way, it's included for
                                             completeness.*/

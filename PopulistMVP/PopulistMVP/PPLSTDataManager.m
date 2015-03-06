@@ -7,6 +7,7 @@
 //
 
 //TODO: when two events are merged, the contributingUsers were not previously merged on parse. I have added code to fix this, but we still need to make sure that it works properly.
+//TODO: when deleting events/contributions/files during cleanup, there seems to be left over garbage. Not sure why, but even with a clean slate, there's still several MB of stored stuff...
 
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
@@ -556,6 +557,24 @@ int maxMessageLengthForPush = 1000;
         }
     }
 }
+
+-(void)handleIncomingMergePush:(NSDictionary *)data{
+    NSLog(@"PPLSTDataManager - handleIncomingMergePush:%@",data);
+    NSString *oldEventId = data[@"o"];
+    NSString *newEventId = data[@"n"];
+    
+    NSLog(@"oldeventId = %@, newEventId = %@",oldEventId, newEventId);
+    //we update the event id for the old event in case we have it
+    Event *oldEvent = [self getEventFromCoreDataWithId:oldEventId inContext:self.context];
+//    Event *newEvent = [self getEventFromCoreDataWithId:newEventId inContext:self.context];
+    if(oldEvent){
+        oldEvent.eventId = newEventId;
+        [self saveCoreDataInContext:self.context];
+    }
+    [self.pushDelegate eventIdWasUpdatedFrom:oldEventId to:newEventId];
+}
+
+
 
 #pragma mark - Local Data API
 

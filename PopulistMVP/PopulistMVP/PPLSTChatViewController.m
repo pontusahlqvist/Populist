@@ -148,6 +148,17 @@
     [self scrollToBottomAnimated:YES];
 }
 
+-(void)eventIdWasUpdatedFrom:(NSString *)oldEventId to:(NSString *)newEventId{
+    NSLog(@"eventIdWasUpdatedFrom:%@ to:%@",oldEventId,newEventId);
+    NSLog(@"self.event.eventId = %@", self.event.eventId);
+    if([self.event.eventId isEqualToString:oldEventId] || [self.event.eventId isEqualToString:newEventId]){
+        NSLog(@"calling prepareForLoad");
+        //the current event participated in a merge, so we update the stream
+        [self prepareForLoad];
+        [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... TODO: is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess.
+    }
+}
+
 #pragma mark - Prepare for Load
 
 -(void) prepareForLoad{
