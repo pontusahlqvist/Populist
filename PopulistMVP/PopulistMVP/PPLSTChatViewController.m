@@ -157,6 +157,8 @@
         [self prepareForLoad];
         [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... TODO: is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess.
     }
+    UIAlertView *mergeOccurredAlertView = [[UIAlertView alloc] initWithTitle:@"Your Event Merged" message:@"Hey, it seems like your event just merged with another one neaby. The more the merrier!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [mergeOccurredAlertView show];
 }
 
 #pragma mark - Prepare for Load
