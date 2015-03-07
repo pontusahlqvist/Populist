@@ -20,6 +20,7 @@
 @property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
 @property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;
 //@property (strong, nonatomic) NSMutableDictionary *jsqMessageForContributionId;
+@property (strong, nonatomic) NSString *currentEventId; //only for comparison reasons during merges. Otherwise, use self.event.eventId
 @property (strong, nonatomic) PPLSTMutableDictionary *jsqMessageForContributionId;
 @end
 
@@ -99,6 +100,7 @@
     //let the data manager know that this is the current VC
     self.dataManager.pushDelegate = self;
     [self subscribeToPushNotifications];
+    self.currentEventId = [self.event.eventId copy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -148,17 +150,22 @@
     [self scrollToBottomAnimated:YES];
 }
 
--(void)eventIdWasUpdatedFrom:(NSString *)oldEventId to:(NSString *)newEventId{
+-(void)eventIdWasUpdatedFrom:(NSString *)oldEventId to:(NSString *)newEventId oldCount:(NSNumber*)oldCount newCount:(NSNumber*)newCount{
     NSLog(@"eventIdWasUpdatedFrom:%@ to:%@",oldEventId,newEventId);
     NSLog(@"self.event.eventId = %@", self.event.eventId);
+
     if([self.event.eventId isEqualToString:oldEventId] || [self.event.eventId isEqualToString:newEventId]){
         NSLog(@"calling prepareForLoad");
         //the current event participated in a merge, so we update the stream
         [self prepareForLoad];
         [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... TODO: is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess.
     }
-    UIAlertView *mergeOccurredAlertView = [[UIAlertView alloc] initWithTitle:@"Your Event Merged" message:@"Hey, it seems like your event just merged with another one neaby. The more the merrier!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [mergeOccurredAlertView show];
+    NSLog(@"currentEventId = %@, oldEventId = %@, newEventId = %@, oldCount = %@, newCount = %@",self.currentEventId,oldEventId,newEventId, oldCount, newCount);
+    if(([self.currentEventId isEqualToString:oldEventId] && ![newCount isEqualToNumber:@0]) || ([self.currentEventId isEqualToString:newEventId] && ![oldCount isEqualToNumber:@0])){
+        UIAlertView *mergeOccurredAlertView = [[UIAlertView alloc] initWithTitle:@"Your Event Merged" message:@"Hey, it seems like your event just merged with another one neaby. The more the merrier!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [mergeOccurredAlertView show];
+    }
+    self.currentEventId = [self.event.eventId copy];
 }
 
 #pragma mark - Prepare for Load

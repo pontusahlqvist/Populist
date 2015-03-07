@@ -63,7 +63,7 @@ var minuteCutoffMerge = 60*1;
 var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
 var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
 
-var maxMilesToAdd = 1;
+var maxMilesToAdd = 0.5;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
 var minLocalFitValue = 1.0;
@@ -393,7 +393,9 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                                 data: {
                                                     alert: "Your event merged with another event.",
                                                     o:invalidatedNeighbor.id,
-                                                    n:updatedCluster.id
+                                                    n:updatedCluster.id,
+                                                    oc:invalidatedNeighbor.get("contributingUsers").length,
+                                                    nc:updatedCluster.get("contributingUsers").length
                                                 }
                                             }, {success: function(){}, error: function(error){}});
                                             
@@ -631,6 +633,9 @@ function filterAndOrderClusters(baseData, clusters){
     for(var i = 0; i < clusters.length; i++){
         var cluster = clusters[i];
         var importance = cluster.get("importance");
+        if(importance < 1.0){
+            console.log("importance = " + importance + " for event with id = " +cluster.id);
+        }
         var distanceToCluster = cluster.get("location").milesTo(baseLocation);
         
         var clusterTime = cluster.get("tk");
@@ -638,9 +643,6 @@ function filterAndOrderClusters(baseData, clusters){
         
         var localFitValue = (importance / ((0.001 + distanceToCluster)/(typicalDistanceForGettingLocal))) * Math.exp(-deltaTime/secondDecayForLocalGetting);
         var globalFitValue = importance*Math.exp(-deltaTime/secondDecayForGlobalGetting); //base global fit value only on importance and time
-        console.log("--------------------");
-        console.log(cluster.id);
-        console.log(localFitValue);
         if(localFitValue > minLocalFitValue || globalFitValue > minGlobalFitValue){
 
             var titlePhotoIdArray = cluster.get("titlePhotoIdArray");

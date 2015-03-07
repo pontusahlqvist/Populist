@@ -22,7 +22,7 @@
 
 @protocol PPLSTDataManagerPushDelegate <NSObject>
 -(void) didAddIncomingContribution:(Contribution*)newContribution ForEvent:(Event*)event;
--(void) eventIdWasUpdatedFrom:(NSString*)oldEventId to:(NSString*)newEventId;
+-(void) eventIdWasUpdatedFrom:(NSString*)oldEventId to:(NSString*)newEventId oldCount:(NSNumber*)oldCount newCount:(NSNumber*)newCount;
 @end
 
 #import "Contribution.h"

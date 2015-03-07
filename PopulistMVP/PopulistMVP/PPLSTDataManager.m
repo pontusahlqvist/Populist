@@ -220,7 +220,7 @@ int maxMessageLengthForPush = 1000;
         if(!event) event = [self createEventWithId:eventId inContext:self.context];
         
         event.city = eventDictionary[@"city"];
-        event.containsUser = [NSNumber numberWithBool:[eventDictionary[@"containsUser"] boolValue]];
+        event.containsUser = [NSNumber numberWithBool:[eventDictionary[@"containsUser"] boolValue]]; //@"YES" gets converted to YES.
         event.country = eventDictionary[@"country"];
         event.importance = eventDictionary[@"importance"];
         event.lastActive = eventDictionary[@"updatedAt"];
@@ -562,6 +562,8 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - handleIncomingMergePush:%@",data);
     NSString *oldEventId = data[@"o"];
     NSString *newEventId = data[@"n"];
+    NSNumber *oldCount = data[@"oc"];
+    NSNumber *newCount = data[@"nc"];
     
     NSLog(@"oldeventId = %@, newEventId = %@",oldEventId, newEventId);
     //we update the event id for the old event in case we have it
@@ -571,7 +573,7 @@ int maxMessageLengthForPush = 1000;
         oldEvent.eventId = newEventId;
         [self saveCoreDataInContext:self.context];
     }
-    [self.pushDelegate eventIdWasUpdatedFrom:oldEventId to:newEventId];
+    [self.pushDelegate eventIdWasUpdatedFrom:oldEventId to:newEventId oldCount:oldCount newCount:newCount];
 }
 
 
