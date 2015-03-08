@@ -280,10 +280,10 @@ int maxMessageLengthForPush = 1000;
     for(NSDictionary *contributionData in arrayOfContributionData){
         NSString *contributionId = contributionData[@"contributionId"];
         NSLog(@"considering contribution with Id = %@", contributionId);
-        Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
+        Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:context];
         if(!newContribution){
             NSLog(@"downloadContributionMetaDataForEvent - 1");
-            newContribution = [self createContributionWithId:contributionId inContext:self.context];
+            newContribution = [self createContributionWithId:contributionId inContext:context];
             NSLog(@"downloadContributionMetaDataForEvent - 2");
             newContribution.imagePath = nil;
             NSLog(@"downloadContributionMetaDataForEvent - 3");
@@ -706,7 +706,7 @@ int maxMessageLengthForPush = 1000;
         context.parentContext = self.context;
         [context performBlock:^{
             NSLog(@"About to download the media for this contribution");
-            [self downloadMediaForContribution:contribution inContext:self.context];
+            [self downloadMediaForContribution:contribution inContext:context];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
                 if(cell.spinner){
