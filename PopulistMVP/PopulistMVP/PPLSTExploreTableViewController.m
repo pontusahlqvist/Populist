@@ -248,7 +248,6 @@
     NSLog(@"Formatting Event Cell for contributionId = %@", titleContribution.contributionId);
     if([titleContribution.contributionType isEqualToString:@"photo"]){
         if(titleContribution.imagePath && ![titleContribution.imagePath isEqualToString:@""]){
-            /*TODO: for some reason it seems like the image is not persisted in the filesystem between runs if the app is run through xcode (even through a physical device). However, if the same app is run through the iphone directly, the data is persisted perfectly. One can get around this by checking to see if the file actually exists rather than simply checking if the imagePath property has been set in the contribution object.*/
             [self.dataManager formatEventCell:cell ForContribution:titleContribution];
         } else if([[self.dataManager.imagesInMemoryForContributionId allKeys] containsObject:titleContribution.contributionId]){
             [self.dataManager formatEventCell:cell ForContribution:titleContribution];

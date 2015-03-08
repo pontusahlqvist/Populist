@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: when two events are merged, the contributingUsers were not previously merged on parse. I have added code to fix this, but we still need to make sure that it works properly.
 //TODO: when deleting events/contributions/files during cleanup, there seems to be left over garbage. Not sure why, but even with a clean slate, there's still several MB of stored stuff...
 
 #import "PPLSTDataManager.h"
