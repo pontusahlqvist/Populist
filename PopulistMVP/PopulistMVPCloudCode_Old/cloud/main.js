@@ -45,8 +45,10 @@ i.e. on the scale of a few minutes to a couple of hours. Note that all the time 
 var alpha = 2.77777
 var beta = 11111.1
 //space related parameter
-var alpha0 = 1.4489501
-var beta0 = 0.000073628
+//var alpha0 = 1.4489501
+//var beta0 = 0.000073628
+var alpha0 = 1.5625
+var beta0 = 0.001125
 //adding to cluster parameters
 var thresholdToAdd = 0.002; //originally 0.003, but decreased to increase likelyhood of adding.
 //var multiplier = 1.0; //the issue with setting this to something other than 1 is that if two nearby photos create two separate clusters, other photos will always start their own clusters.
