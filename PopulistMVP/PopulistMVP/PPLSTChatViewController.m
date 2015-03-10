@@ -185,6 +185,7 @@
         NSLog(@"1");
         [context performBlock:^{
             NSLog(@"2");
+            //TODO: You should really get a new copy of the event here in the proper context. Otherwise there will be issues linking objects in two diff contexts
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
             NSLog(@"3");
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
