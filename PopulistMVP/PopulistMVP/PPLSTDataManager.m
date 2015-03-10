@@ -135,8 +135,10 @@ int maxMessageLengthForPush = 1000;
 -(PFObject*) sendSignalWithLatitude:(float)latitude andLongitude:(float)longitude andDate:(NSDate*)date{
     NSLog(@"PPLSTDataManager - sendSignalWithLatitude:%f andLongitude:%f andDate:%@", latitude, longitude, date);
     //TODO: make sure that these are the same as on the cloud side. In fact, perhaps outsource all of this to the cloud to avoid duplication
-    NSNumber *alpha0 = [NSNumber numberWithDouble:1.4489501];
-    NSNumber *beta0 = [NSNumber numberWithDouble:0.000073628];
+//    NSNumber *alpha0 = [NSNumber numberWithDouble:1.4489501];
+//    NSNumber *beta0 = [NSNumber numberWithDouble:0.000073628];
+    NSNumber *alpha0 = [NSNumber numberWithDouble:1.5625];
+    NSNumber *beta0 = [NSNumber numberWithDouble:0.001125];
     NSNumber *alpha = [NSNumber numberWithDouble:2.77777];
     NSNumber *beta = [NSNumber numberWithDouble:11111.1];
     PFObject *newEvent = [PFObject objectWithClassName:@"FlatCluster"];
