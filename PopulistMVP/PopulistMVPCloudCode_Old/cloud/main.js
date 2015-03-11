@@ -363,6 +363,10 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                             //space stuff
                                             updatedCluster.increment("alphan", invalidatedNeighbork);
                                             updatedCluster.increment("betan", invalidatedNeighbor.get("betan") - beta0 + 0.5*(invalidatedNeighbork*Math.pow(mergedLocation.milesTo(invalidatedNeighborLocation),2) + updatedClusterk*Math.pow(mergedLocation.milesTo(updatedClusterLocation),2)));
+                                            if(updatedCluster.get("betan") < 0){
+                                                //Only necessary because I made a stupid choice of setting the cluster size on the client side. Some users now have older versions that set the event to be small. Then, during this phase, it's possible that betan could go negative. In order to protect for this, I include this check. Once we release the full app, this is not necessary
+                                                updatedCluster.set("betan",beta0);
+                                            }
                                             updatedCluster.set("location", mergedLocation);
                                             //time stuff
                                             updatedCluster.set("t1", mergedt1);
