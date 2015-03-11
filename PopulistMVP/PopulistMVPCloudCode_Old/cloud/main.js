@@ -428,6 +428,57 @@ Parse.Cloud.afterSave("Contribution", function(request){
 });
 
 
+Parse.Cloud.define("createNewEmptyCluster", function(request, response){
+    //grab the submitted data
+    var location = new Parse.GeoPoint({latitude: request.params.latitude, longitude: request.params.longitude});
+    var country = request.params.country;
+    var state = request.params.state;
+    var city = request.params.city;
+    var neighborhood = request.params.neighborhood;
+    
+    //create a new cluster
+    var newCluster = new Parse.Object("FlatCluster");
+
+    //set general parameters
+    newCluster.set("k", 1);
+    newCluster.set("N", estimate_N(1.0));
+    newCluster.set("validUntil",futureInfinity);
+    newCluster.set("importance",0.9); //dummy cluster, so the importance is set to 0.9 rather than 1.0
+    newCluster.set("contributions", []);
+    newCluster.set("contributingUsers", []);
+    newCluster.set("titlePhotoIdArray", []);
+    newCluster.set("titleMessageIdArray", []);
+
+    //set space parameters
+    newCluster.set("location",location);
+    newCluster.set("alphan",alpha0);
+    newCluster.set("betan",beta0);
+
+    //set time parameters
+    var time = new Date();
+    newCluster.set("t1",time);
+    newCluster.set("tk",time);
+    newCluster.set("tbar", time);
+    newCluster.set("alpha",alpha);
+    newCluster.set("beta",beta);
+
+    //set location strings
+    newCluster.set("country", country);
+    newCluster.set("state", state);
+    newCluster.set("city", city);
+    newCluster.set("neighborhood", neighborhood);
+
+    newCluster.save({
+        success: function(){
+            response.success(newCluster);
+        },
+        error: function(error){
+            response.error(error);
+        }
+    });
+});
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////// ADDITION TO ALREADY EXISTING CLUSTER  //////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
