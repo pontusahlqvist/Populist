@@ -134,39 +134,8 @@ int maxMessageLengthForPush = 1000;
 
 -(PFObject*) sendSignalWithLatitude:(float)latitude andLongitude:(float)longitude andDate:(NSDate*)date{
     NSLog(@"PPLSTDataManager - sendSignalWithLatitude:%f andLongitude:%f andDate:%@", latitude, longitude, date);
-    //TODO: make sure that these are the same as on the cloud side. In fact, perhaps outsource all of this to the cloud to avoid duplication
-//    NSNumber *alpha0 = [NSNumber numberWithDouble:1.4489501];
-//    NSNumber *beta0 = [NSNumber numberWithDouble:0.000073628];
-    NSNumber *alpha0 = [NSNumber numberWithDouble:1.5625];
-    NSNumber *beta0 = [NSNumber numberWithDouble:0.001125];
-    NSNumber *alpha = [NSNumber numberWithDouble:2.77777];
-    NSNumber *beta = [NSNumber numberWithDouble:11111.1];
-    PFObject *newEvent = [PFObject objectWithClassName:@"FlatCluster"];
-    [newEvent setObject:@1 forKey:@"k"];
-    [newEvent setObject:@2 forKey:@"N"];
-    [newEvent setObject:@0.9 forKey:@"importance"]; //just a signal so keep smaller than 1, however close to 1 to make sure nearby people get clustered properly.
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"dd-MM-yyyy";
-    [newEvent setObject:[dateFormatter dateFromString:@"1-1-2101"] forKey:@"validUntil"];
-    [newEvent setObject:@[] forKey:@"contributions"];
-    [newEvent setObject:@[] forKey:@"contributingUsers"];
-    [newEvent setObject:@[] forKey:@"titlePhotoIdArray"];
-    [newEvent setObject:@[] forKey:@"titleMessageIdArray"];
-    [newEvent setObject:[PFGeoPoint geoPointWithLatitude:latitude longitude:longitude] forKey:@"location"];
-    [newEvent setObject:alpha0 forKey:@"alphan"];
-    [newEvent setObject:beta0 forKey:@"betan"];
-    [newEvent setObject:date forKey:@"t1"];
-    [newEvent setObject:date forKey:@"tk"];
-    [newEvent setObject:date forKey:@"tbar"];
-    [newEvent setObject:alpha forKey:@"alpha"];
-    [newEvent setObject:beta forKey:@"beta"];
-    [newEvent setObject:self.locationManager.country forKey:@"country"];
-    [newEvent setObject:self.locationManager.state forKey:@"state"];
-    [newEvent setObject:self.locationManager.city forKey:@"city"];
-    [newEvent setObject:self.locationManager.neighborhood forKey:@"neighborhood"];
-
-    //Note: must save synchronously so that the event newEvent has a correct eventId by the time we create the core data event below.
-    [newEvent save];
+    NSDictionary *locationDataDictionary = [self.locationManager getLocationStringData];
+    PFObject *newEvent = [PFCloud callFunction:@"createNewEmptyCluster" withParameters:@{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude], @"country":locationDataDictionary[@"country"], @"state":locationDataDictionary[@"state"], @"city":locationDataDictionary[@"city"], @"neighborhood":locationDataDictionary[@"neighborhood"]}];
     return newEvent;
 }
 

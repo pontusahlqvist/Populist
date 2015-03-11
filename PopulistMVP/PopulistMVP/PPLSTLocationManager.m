@@ -197,6 +197,17 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 
 //sets user's current location strings
 -(void) setCurrentLocationStrings{
+
+    NSDictionary *dictionary = [self getLocationStringData];
+
+    //TODO: make sure this works properly
+    self.country = dictionary[@"country"];
+    self.state = dictionary[@"state"];
+    self.city = dictionary[@"city"];
+    self.neighborhood = dictionary[@"neighborhood"];
+}
+
+-(NSDictionary*) getLocationStringData{
     NSString *googleUrl = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=false&result_type=neighborhood%%7Clocality%%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude];
     NSURL *url = [[NSURL alloc] initWithString:googleUrl];
     
@@ -206,28 +217,31 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     NSURLResponse *response = nil;
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:nil];
-
+    
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
-
-    //TODO: make sure this works properly
-    self.country = @"";
-    self.state = @"";
-    self.city = @"";
-    self.neighborhood = @"";
-
+    
+    NSMutableDictionary *locationStringDictionary = [[NSMutableDictionary alloc] init];
+    locationStringDictionary[@"Country"] = @"";
+    locationStringDictionary[@"State"] = @"";
+    locationStringDictionary[@"City"] = @"";
+    locationStringDictionary[@"Neighborhood"] = @"";
     if([locationArray count] > 0){
-        self.country = [locationArray[[locationArray count] - 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        locationStringDictionary[@"country"] = [locationArray[[locationArray count] - 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 1){
-        self.state = [locationArray[[locationArray count] - 2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        locationStringDictionary[@"state"] = [locationArray[[locationArray count] - 2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 2){
-        self.city = [locationArray[[locationArray count] - 3] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        locationStringDictionary[@"city"] = [locationArray[[locationArray count] - 3] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 3){
-        self.neighborhood = [locationArray[[locationArray count] - 4] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        locationStringDictionary[@"neighborhood"] = [locationArray[[locationArray count] - 4] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
+
+    NSLog(@"locationStringDictionary = %@", locationStringDictionary);
+
+    return locationStringDictionary;
 }
 
 @end

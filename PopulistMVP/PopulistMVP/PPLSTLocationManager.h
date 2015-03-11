@@ -52,4 +52,6 @@
 -(void) updateTimeOfLastUpdate:(NSDate*)newTimeOfLastUpdate;
 -(BOOL) waitedToLongSinceTimeOfLastUpdate;
 
+-(NSDictionary*) getLocationStringData;
+
 @end
