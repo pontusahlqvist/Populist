@@ -18,6 +18,9 @@
 		161102BB1A6DBB600022796E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BA1A6DBB600022796E /* SystemConfiguration.framework */; };
 		161102BD1A6DBB6A0022796E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BC1A6DBB6A0022796E /* libz.dylib */; };
 		161102BF1A6DBB750022796E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 161102BE1A6DBB750022796E /* libsqlite3.dylib */; };
+		1639C5471AB24A190023E70D /* closeWhite32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C5461AB24A190023E70D /* closeWhite32.png */; };
+		1639C5491AB24A200023E70D /* closeWhite64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C5481AB24A200023E70D /* closeWhite64.png */; };
+		1639C54B1AB24A250023E70D /* closeWhite96.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C54A1AB24A250023E70D /* closeWhite96.png */; };
 		163E3BCB1A64D7F000913FBF /* PPLSTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */; };
 		163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */; };
 		163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D0A1A64DD3600913FBF /* JSQMessages.strings */; };
@@ -180,6 +183,9 @@
 		161102BA1A6DBB600022796E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		161102BC1A6DBB6A0022796E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		161102BE1A6DBB750022796E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1639C5461AB24A190023E70D /* closeWhite32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite32.png; sourceTree = "<group>"; };
+		1639C5481AB24A200023E70D /* closeWhite64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite64.png; sourceTree = "<group>"; };
+		1639C54A1AB24A250023E70D /* closeWhite96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite96.png; sourceTree = "<group>"; };
 		163E3BC91A64D7F000913FBF /* PPLSTChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTChatViewController.h; sourceTree = "<group>"; };
 		163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTChatViewController.m; sourceTree = "<group>"; };
 		163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
@@ -909,6 +915,9 @@
 				16E619A21AA27A0F00FBAAB3 /* flag32.png */,
 				16E619A31AA27A0F00FBAAB3 /* flag64.png */,
 				16E619A41AA27A0F00FBAAB3 /* flag96.png */,
+				1639C5461AB24A190023E70D /* closeWhite32.png */,
+				1639C5481AB24A200023E70D /* closeWhite64.png */,
+				1639C54A1AB24A250023E70D /* closeWhite96.png */,
 			);
 			name = "Image Details";
 			sourceTree = "<group>";
@@ -1027,6 +1036,7 @@
 				16E619731AA265E200FBAAB3 /* flashOnWhite108.png in Resources */,
 				16F3FF6E1A7C32E3001BD00F /* takePicture200.png in Resources */,
 				163E3DA91A64DD8000913FBF /* jsq_messages_icon.psd in Resources */,
+				1639C5491AB24A200023E70D /* closeWhite64.png in Resources */,
 				16F7DAC11A723E1C003215E9 /* grey.jpg in Resources */,
 				16E619991AA2788900FBAAB3 /* accept50.png in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
@@ -1051,10 +1061,12 @@
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
 				16E619361A8A9B0D00FBAAB3 /* red.jpg in Resources */,
 				16E6198D1AA275C400FBAAB3 /* camera80.png in Resources */,
+				1639C5471AB24A190023E70D /* closeWhite32.png in Resources */,
 				16E619751AA265E700FBAAB3 /* flashOnWhite72.png in Resources */,
 				163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */,
 				16E6198B1AA275AB00FBAAB3 /* camera40.png in Resources */,
 				16E619631AA2642000FBAAB3 /* flashOffWhite72.png in Resources */,
+				1639C54B1AB24A250023E70D /* closeWhite96.png in Resources */,
 				163E3D981A64DD3600913FBF /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				16E619951AA2785100FBAAB3 /* cancel45.png in Resources */,
 				16E619AB1AA27B5400FBAAB3 /* takePicture100.png in Resources */,

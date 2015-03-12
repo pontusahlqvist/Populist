@@ -15,6 +15,7 @@
 
 @interface PPLSTImageDetailViewController : UIViewController <PPLSTReportViewDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *imageScrollView;
+@property (strong, nonatomic) IBOutlet UIButton *closeDetailImageButton;
 
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) Contribution *contribution;

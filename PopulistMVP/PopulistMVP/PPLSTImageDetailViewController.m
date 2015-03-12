@@ -32,6 +32,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
 
+    [self.closeDetailImageButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    [self.closeDetailImageButton addTarget:self action:@selector(closeDetailImageButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+
     //setup scroll view
     self.imageScrollView.delegate = self;
     self.imageView = [[UIImageView alloc] initWithImage:self.image];
@@ -147,6 +150,13 @@
     // The scroll view has zoomed, so you need to re-center the contents
     [self centerScrollViewContents];
 }
+
+#pragma mark - Button Presses
+
+-(void) closeDetailImageButtonPressed:(UIButton*)closeDetailImageButton{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - PPLLSTReportViewDelegate Methods
 
 -(void) didPressCancelButton{}
