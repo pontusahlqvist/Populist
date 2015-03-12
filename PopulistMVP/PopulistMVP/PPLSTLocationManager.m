@@ -197,10 +197,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 
 //sets user's current location strings
 -(void) setCurrentLocationStrings{
-
     NSDictionary *dictionary = [self getLocationStringData];
-
-    //TODO: make sure this works properly
     self.country = dictionary[@"country"];
     self.state = dictionary[@"state"];
     self.city = dictionary[@"city"];
