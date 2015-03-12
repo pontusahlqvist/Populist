@@ -123,7 +123,8 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     [self.locationManager startUpdatingLocation];
     self.startedUpdatingLocationAt = [NSDate date];
     self.isUpdatingLocation = YES;
-    if(!self.timeOfLastLocationCheck || -[self.timeOfLastLocationCheck timeIntervalSinceNow] > cutoffTime){
+//    if(!self.timeOfLastLocationCheck || -[self.timeOfLastLocationCheck timeIntervalSinceNow] > cutoffTime){
+    if(!self.timeOfLastLocationCheck){ //signifies a fresh app open
         [[[UIApplication sharedApplication] keyWindow] addSubview:self.updatingLocationView]; //TODO: is it really necessary to even show this?
     }
     self.timeOfLastLocationCheck = [NSDate date];
