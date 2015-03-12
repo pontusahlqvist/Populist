@@ -144,8 +144,6 @@
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     
-    [self removeInvisibleEvents]; //TODO: do this on the parse side to avoid having people intercept the signal to spy on people
-    
     [self.tableView reloadData];
     self.isUpdatingEvents = NO;
 }
@@ -244,7 +242,6 @@
     Contribution *titleContribution = event.titleContribution;
 
     //configure cell - lazy approach
-    //TODO: decide on how to deal with events without a titleImage
     NSLog(@"Formatting Event Cell for contributionId = %@", titleContribution.contributionId);
     if([titleContribution.contributionType isEqualToString:@"photo"]){
         if(titleContribution.imagePath && ![titleContribution.imagePath isEqualToString:@""]){
@@ -376,20 +373,7 @@
         [self disableChatVCBecauseUserLeftIt];
         self.currentEvent = nil;
     }
-    [self removeInvisibleEvents];
     [self.tableView reloadData];
-}
-
--(void) removeInvisibleEvents{
-    NSMutableIndexSet *eventIndexesToRemove = [[NSMutableIndexSet alloc] init];
-    int eventIndex = 0;
-    for(Event *event in self.events){
-        if([event.importance integerValue] < 1){
-            [eventIndexesToRemove addIndex:eventIndex];
-        }
-        eventIndex++;
-    }
-    [self.events removeObjectsAtIndexes:eventIndexesToRemove];
 }
 
 #pragma mark - Helper Methods

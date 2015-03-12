@@ -762,9 +762,11 @@ function filterAndOrderClusters(baseData, clusters){
     //sort by fit value, largest first
     fitAndObjectList.sort(mySortFunction);
     var returnObjects = new Array();
-    var fitValues = "";
     for(var i = 0; i < fitAndObjectList.length; i++){
-        returnObjects.push(fitAndObjectList[i][1]);
+        //only send along 0.9 importance object if it contains the user. Otherwise hide it from the client side
+        if(fitAndObjectList[i][1]["importance"] >= 1.0 || fitAndObjectList[i][1]["containsUser"] == "YES"){
+            returnObjects.push(fitAndObjectList[i][1]);
+        }
     }
     return returnObjects;
 }
