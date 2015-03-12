@@ -7,7 +7,7 @@
 //
 
 //TODO: when deleting events/contributions/files during cleanup, there seems to be left over garbage. Not sure why, but even with a clean slate, there's still several MB of stored stuff...
-
+//TODO: what happens if a user takes a photo, it fails to save to drive and also gets pushed out of memory before it can be succesfully uploaded to parse? It seems like there would be a phantom contribution laying around with imagePath set to nil. Then on the next load, it would see imagePath=nil and try to download it from parse. however, since it never was uploaded properly it might just die on the spot. Very unlikely since it would have to be pushed out of memory very quickly... Could happen at large events perhaps.
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>
 #import "PPLSTUUID.h"
