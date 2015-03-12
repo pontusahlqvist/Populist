@@ -302,7 +302,6 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - downloadMediaForContribution:%@",contribution);
     if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
         //TODO: perhaps change this to different images for different events? Maybe create images on the fly with some text indicating their location?
-        //TODO: improve the quality of the placeholder image
         contribution.imagePath = [self storeImage:[UIImage imageNamed:@"PlaceholderImage"] forContributionId:contribution.contributionId];
     } else if ([contribution.contributionType isEqualToString:@"message"]) {
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
