@@ -7,7 +7,6 @@
 //
 
 //TODO: make image detail view looks better
-//TODO: we might have to implement 'load earlier' at some point. This would only be relevant if there are so many contributions in an event that event the metadata is too much to handle. We could also cut things off on the parse side and only display e.g. 1000 contributions at most. Always possible to edit going forward.
 //TODO: should the user have to start the conversation with an image?
 
 #import "PPLSTChatViewController.h"
