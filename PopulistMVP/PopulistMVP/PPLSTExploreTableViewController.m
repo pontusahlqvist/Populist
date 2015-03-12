@@ -144,6 +144,8 @@
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     
+    [self removeInvisibleEvents];
+
     [self.tableView reloadData];
     self.isUpdatingEvents = NO;
 }
@@ -373,7 +375,20 @@
         [self disableChatVCBecauseUserLeftIt];
         self.currentEvent = nil;
     }
+    [self removeInvisibleEvents];
     [self.tableView reloadData];
+}
+
+-(void) removeInvisibleEvents{
+    NSMutableIndexSet *eventIndexesToRemove = [[NSMutableIndexSet alloc] init];
+    int eventIndex = 0;
+    for(Event *event in self.events){
+        if([event.importance integerValue] < 1){
+            [eventIndexesToRemove addIndex:eventIndex];
+        }
+        eventIndex++;
+    }
+    [self.events removeObjectsAtIndexes:eventIndexesToRemove];
 }
 
 #pragma mark - Helper Methods
