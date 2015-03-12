@@ -6,11 +6,9 @@
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
-//TODO: move all the styling into a separate class
-//TODO: create imageediting class where all the image editing methods can live
 //TODO: make image detail view looks better
 //TODO: implement 'load earlier'
-//TODO: must start the conversation with an image
+//TODO: should the user have to start the conversation with an image?
 
 #import "PPLSTChatViewController.h"
 #import "PPLSTImageDetailViewController.h"
@@ -60,7 +58,6 @@
     self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor colorWithRed:138.0f/255.0f green:201.0f/255.0f blue:221.0f/255.0f alpha:1.0f]];
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
     
-    //TODO: just make the image the right size from the beginning
     UIImage *image = [UIImage imageNamed:@"mappin_glyph"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
@@ -99,7 +96,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated]; //TODO: I think this causes the snap-to-bottom each time, even when the user returns from the image detailed view
+    [super viewDidAppear:animated];
     //let the data manager know that this is the current VC
     self.dataManager.pushDelegate = self;
     [self subscribeToPushNotifications];
@@ -185,16 +182,11 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.dataManager.context;
-        NSLog(@"1");
         [context performBlock:^{
-            NSLog(@"2");
             //TODO: You should really get a new copy of the event here in the proper context. Otherwise there will be issues linking objects in two diff contexts
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
-            NSLog(@"3");
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
-            NSLog(@"4");
             self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning.
-            NSLog(@"5");
             NSLog(@"userIds = %@", self.userIds);
 
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -249,8 +241,7 @@
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath{
     Contribution *contribution = self.contributions[indexPath.row];
-    JSQMessage *message = [self jsqMessageForContribution:contribution]; //TODO: we don't need to synthesize this right? We could just extract the senderId from the contribution.
-    if([message.senderId isEqualToString:self.senderId]){
+    if([contribution.contributingUserId isEqualToString:self.senderId]){
         return self.outgoingBubbleImageData;
     } else{
         return self.incomingBubbleImageData;
