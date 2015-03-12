@@ -443,6 +443,7 @@ int maxMessageLengthForPush = 1000;
             pushData[@"t"] = contribution.contributionType;
             pushData[@"u"] = contribution.contributingUserId;
             pushData[@"e"] = contribution.event.eventId;
+            pushData[@"d"] = parseContribution.createdAt;
             if([contribution.contributionType isEqualToString:@"message"]){
                 if ([contribution.message length] <= maxMessageLengthForPush) {
                     pushData[@"m"] = contribution.message;
@@ -474,12 +475,10 @@ int maxMessageLengthForPush = 1000;
     return statusDictionary;
 }
 
-//TODO: create a custom server side function to handle this so that we don't have to download all the events each time. That would save a lot of API calls
 -(Event *)eventThatUserBelongsTo{
     NSLog(@"PPLSTDataManager - eventThatUserBelongsTo");
     CLLocation *currentLocation = [self.locationManager getCurrentLocation];
     NSString *oldCurrentEventId = [self.currentEvent.eventId copy];
-    //TODO: change this to only check the given event instead of downloading everything again
     NSArray *events = [self sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]];
     //note: self.currentEvent should have been updated during the sendSignalAndDownload... call
     if(![self.currentEvent.eventId isEqualToString:oldCurrentEventId]){
@@ -513,7 +512,12 @@ int maxMessageLengthForPush = 1000;
         Contribution *newIncomingContribution = [self createContributionWithId:contributionId inContext:self.context];
         newIncomingContribution.contributingUserId = data[@"u"];
         newIncomingContribution.contributionType = data[@"t"];
-        newIncomingContribution.createdAt = [NSDate date]; //TODO: update to actual date to make sure order is the same throughout all feeds
+        //Note: the following check to see if the key @"d" exists in the incoming push data is only here since some versions of the app currently don't send along this information. The app would then crash if the key isn't sent along and so I check first.
+        if([[data allKeys] containsObject:@"d"]){
+            newIncomingContribution.createdAt = data[@"d"];
+        } else{
+            newIncomingContribution.createdAt = [NSDate date];
+        }
         newIncomingContribution.imagePath = nil;
         newIncomingContribution.latitude = nil;
         newIncomingContribution.longitude = nil;
