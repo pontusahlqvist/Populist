@@ -552,7 +552,7 @@ int maxMessageLengthForPush = 1000;
 
 -(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
     NSLog(@"PPLSTDataManager - avatarForStatus:%@",status);
-    if(!status){
+    if(!status || status >= [NSNumber numberWithInteger:[self.avatarImageSourceForStatus count]]){
         return nil;
     }
     
