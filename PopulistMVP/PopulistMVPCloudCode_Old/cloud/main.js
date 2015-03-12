@@ -85,6 +85,7 @@ var globalImportanceThreshold = 2; //this will have to start out small and incre
 /*powerUsers are userIds which are allowed to artificially inflate the importance of an event.*/
 var powerUsers = ["temporaryUserId"];
 var maxUserCountToIterate = 1000; //sets the number of users to iterate through to determine the importance reduction. After 1000 users, we don't loop through them since it would be very expensive
+var maxContributionsToReturn = 100; //max number of contributions to show in an event. Intended to avoid overloading the iOS side...
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -833,7 +834,7 @@ Parse.Cloud.define("getContributionIdsInCluster", function(request, response){
                                 contributionDict["createdAt"] = results[i].createdAt;
                                 sortedContributionIds.push(contributionDict);
                             }
-                            response.success({"contributionIds": sortedContributionIds});
+                            response.success({"contributionIds": sortedContributionIds.slice(-maxContributionsToReturn)}); //only return at most a fixed number of contributions. Pick the last ones...
                         }
                     });
                 } else{
@@ -865,7 +866,7 @@ Parse.Cloud.define("getContributionIdsInCluster", function(request, response){
                                         }
                                         sortedContributionIds.push(contributionDict);
                                     }
-                                    response.success({"contributionIds": sortedContributionIds});
+                                    response.success({"contributionIds": sortedContributionIds.slice(-maxContributionsToReturn)}); //only return at most a fixed number of contributions. Pick the last ones...
                                 }
                             });
                         },
