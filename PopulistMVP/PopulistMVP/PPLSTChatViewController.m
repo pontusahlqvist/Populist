@@ -84,6 +84,9 @@
     [currentInstallation saveInBackground];
     [super viewWillDisappear:animated];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated]; //note: in the superclass, I have disabled the automatic scrollToBottom.
+}
 
 -(void) appDidEnterForeground:(NSNotification*)notification{
     [self prepareForLoad];
