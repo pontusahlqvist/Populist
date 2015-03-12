@@ -312,13 +312,13 @@ int maxMessageLengthForPush = 1000;
         contribution.createdAt = parseContribution.createdAt;
     } else if([contribution.contributionType isEqualToString:@"photo"]){
         PFQuery *query = [PFQuery queryWithClassName:@"Contribution"];
-        PFObject *parsePhoto = [query getObjectWithId:contribution.contributionId];
-        PFFile *file = [parsePhoto objectForKey:@"image"];
+        PFObject *parseContribution = [query getObjectWithId:contribution.contributionId];
+        PFFile *file = [parseContribution objectForKey:@"image"];
         NSData *parseImageData = [file getData];
         UIImage *image = [UIImage imageWithData:parseImageData];
         contribution.imagePath = [self storeImage:image forContributionId:contribution.contributionId];
-        contribution.contributingUserId = [parsePhoto objectForKey:@"userId"];
-        contribution.createdAt = contribution.createdAt;//[parsePhoto objectForKey:@"createdAt"]; TODO: why is this commented out? Shouldn't it come from parse?
+        contribution.contributingUserId = [parseContribution objectForKey:@"userId"];
+        contribution.createdAt = parseContribution.createdAt;
     }
     
     [self saveCoreDataInContext:context];
