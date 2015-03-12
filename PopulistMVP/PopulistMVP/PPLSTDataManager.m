@@ -408,7 +408,11 @@ int maxMessageLengthForPush = 1000;
             [parseContribution setObject:@"photo" forKey:@"type"];
             
             //Note: compression of 1.0 -> size in the 300-400kb range. 0.5 -> 30-40kb, and 0.0 -> 10-20 kb. Original image -> 1.5 Mb.
-            NSData *imageData = UIImageJPEGRepresentation([self getImageWithFileName:imagePath], 0.5f); //TODO: port over to memory-only method
+            UIImage *image = [self getImageWithFileName:imagePath];
+            if(!image){
+                image = self.imagesInMemoryForContributionId[contribution.contributionId];
+            }
+            NSData *imageData = UIImageJPEGRepresentation(image, 0.5f);
             PFFile *imageFile = [PFFile fileWithName:@"image.jpg" data:imageData];
             [imageFile saveInBackground];
             [parseContribution setObject:imageFile forKey:@"image"];
