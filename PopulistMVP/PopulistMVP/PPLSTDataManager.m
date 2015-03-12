@@ -205,8 +205,10 @@ int maxMessageLengthForPush = 1000;
                 titleContributionId = event.titleContribution.contributionId;
                 if(!titleContributionId){
                     //must create a dummy titleContribution. Note, this one should not be added to contributions
-                    //TODO: make sure this is unique
                     titleContributionId = [NSString stringWithFormat:@"%@%@",@"dummy", [self randomStringWithLength:10]];
+                    while ([self.contributionIds containsObject:titleContributionId]) {
+                        titleContributionId = [NSString stringWithFormat:@"%@%@",@"dummy", [self randomStringWithLength:10]];
+                    }
                 }
             }
 
