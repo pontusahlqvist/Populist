@@ -505,6 +505,10 @@ int maxMessageLengthForPush = 1000;
 
 -(void) handleIncomingDataFromPush:(NSDictionary*)data{
     NSLog(@"PPLSTDataManager - handleIncomingDataFromPush:%@",data);
+    Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
+    if(!eventToWhichThisContributionBelongs){ //for some reason, we don't have access to this event. Might be because of a merge where we're getting old pushes
+        return;
+    }
     NSString *contributionId = data[@"c"];
     if(![self.contributionIds containsObject:contributionId]){
         [self.contributionIds addObject:contributionId];
@@ -525,7 +529,6 @@ int maxMessageLengthForPush = 1000;
             newIncomingContribution.message = data[@"m"];
         }
         
-        Event *eventToWhichThisContributionBelongs = [self getEventFromCoreDataWithId:data[@"e"] inContext:self.context];
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
         [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventToWhichThisContributionBelongs];
         eventToWhichThisContributionBelongs.lastActive = newIncomingContribution.createdAt;
