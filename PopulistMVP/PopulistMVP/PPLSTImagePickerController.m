@@ -158,7 +158,7 @@
     [self.cameraOverlayView addSubview:overlayBottom];
 
     CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    float cameraAspectRatio = 4.0/3.0; //TODO: check for different screen sizes to support multiple iPhone models
+    float cameraAspectRatio = 4.0/3.0;
     float imageHeight = screenSize.width * cameraAspectRatio;
     float scale = screenSize.height / imageHeight;
 
