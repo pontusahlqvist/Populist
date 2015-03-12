@@ -7,6 +7,7 @@
 //
 
 #import "PPLSTLocationManager.h"
+#import <Parse/Parse.h>
 
 @interface PPLSTLocationManager()
 @property (strong, nonatomic) CLLocation *bestLocationDuringUpdate; //keeps track of the best location found during the update
@@ -90,6 +91,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
             [self setCurrentLocationStrings];
             
             self.isUpdatingLocation = NO;
+            [self sendNewLocationToParse];
             
             if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
                 [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:NO];
@@ -100,6 +102,13 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
         }
     }
     
+}
+
+-(void) sendNewLocationToParse{
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setObject:[PFGeoPoint geoPointWithLatitude:self.currentLocation.coordinate.latitude longitude:self.currentLocation.coordinate.longitude] forKey:@"lastKnownLocation"];
+    [currentInstallation setObject:[NSDate date] forKey:@"lastKnownLocationDate"];
+    [currentInstallation saveInBackground];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
