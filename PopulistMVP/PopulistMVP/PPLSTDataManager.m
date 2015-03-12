@@ -434,7 +434,7 @@ int maxMessageLengthForPush = 1000;
                     contribution.contributionId = objectId;
                 }
             }
-            [self.contributionIds addObject:objectId]; //TODO: we'll end up with a lot of temporary Ids here since we add to it already in the creation process..
+            [self.contributionIds addObject:objectId];
             
             //send push notification
             NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
