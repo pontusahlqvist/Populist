@@ -83,13 +83,17 @@
         <scene sceneID="2eM-po-SEY">
             <objects>
                 <viewController id="FMo-Mq-a3K" customClass="PPLSTImageDetailViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tcd-AA-sWM">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qqq-78-yz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FDX-TM-OvK"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0Iq-ev-Fsc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </imageView>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="32i-2C-qUo"/>
                     <connections>
-                        <outlet property="imageView" destination="Tcd-AA-sWM" id="CnP-oh-0hY"/>
+                        <outlet property="imageScrollView" destination="0Iq-ev-Fsc" id="xrG-Jp-VKC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee3-Vo-cAF" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,9 +13,9 @@
 //TODO: Allow the user to zoom
 //TODO: Make this view look better. Perhaps use modal instead of push segue and add some close functionality
 
-@interface PPLSTImageDetailViewController : UIViewController <PPLSTReportViewDelegate>
+@interface PPLSTImageDetailViewController : UIViewController <PPLSTReportViewDelegate, UIScrollViewDelegate>
+@property (strong, nonatomic) IBOutlet UIScrollView *imageScrollView;
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) Contribution *contribution;
 
