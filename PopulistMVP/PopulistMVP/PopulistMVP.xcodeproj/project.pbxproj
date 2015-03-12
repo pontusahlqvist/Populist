@@ -21,6 +21,9 @@
 		1639C5471AB24A190023E70D /* closeWhite32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C5461AB24A190023E70D /* closeWhite32.png */; };
 		1639C5491AB24A200023E70D /* closeWhite64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C5481AB24A200023E70D /* closeWhite64.png */; };
 		1639C54B1AB24A250023E70D /* closeWhite96.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C54A1AB24A250023E70D /* closeWhite96.png */; };
+		1639C54D1AB25B950023E70D /* flagWhite32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C54C1AB25B950023E70D /* flagWhite32.png */; };
+		1639C54F1AB25B9B0023E70D /* flagWhite64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C54E1AB25B9B0023E70D /* flagWhite64.png */; };
+		1639C5511AB25B9F0023E70D /* flagWhite96.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639C5501AB25B9F0023E70D /* flagWhite96.png */; };
 		163E3BCB1A64D7F000913FBF /* PPLSTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */; };
 		163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */; };
 		163E3D741A64DD3600913FBF /* JSQMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 163E3D0A1A64DD3600913FBF /* JSQMessages.strings */; };
@@ -186,6 +189,9 @@
 		1639C5461AB24A190023E70D /* closeWhite32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite32.png; sourceTree = "<group>"; };
 		1639C5481AB24A200023E70D /* closeWhite64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite64.png; sourceTree = "<group>"; };
 		1639C54A1AB24A250023E70D /* closeWhite96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeWhite96.png; sourceTree = "<group>"; };
+		1639C54C1AB25B950023E70D /* flagWhite32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagWhite32.png; sourceTree = "<group>"; };
+		1639C54E1AB25B9B0023E70D /* flagWhite64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagWhite64.png; sourceTree = "<group>"; };
+		1639C5501AB25B9F0023E70D /* flagWhite96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagWhite96.png; sourceTree = "<group>"; };
 		163E3BC91A64D7F000913FBF /* PPLSTChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTChatViewController.h; sourceTree = "<group>"; };
 		163E3BCA1A64D7F000913FBF /* PPLSTChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTChatViewController.m; sourceTree = "<group>"; };
 		163E3D081A64DD3600913FBF /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
@@ -915,6 +921,9 @@
 				16E619A21AA27A0F00FBAAB3 /* flag32.png */,
 				16E619A31AA27A0F00FBAAB3 /* flag64.png */,
 				16E619A41AA27A0F00FBAAB3 /* flag96.png */,
+				1639C54C1AB25B950023E70D /* flagWhite32.png */,
+				1639C54E1AB25B9B0023E70D /* flagWhite64.png */,
+				1639C5501AB25B9F0023E70D /* flagWhite96.png */,
 				1639C5461AB24A190023E70D /* closeWhite32.png */,
 				1639C5481AB24A200023E70D /* closeWhite64.png */,
 				1639C54A1AB24A250023E70D /* closeWhite96.png */,
@@ -1060,6 +1069,7 @@
 				16E6199D1AA2793800FBAAB3 /* compose32.png in Resources */,
 				163E3DA81A64DD8000913FBF /* jsq_messages_banner.psd in Resources */,
 				16E619361A8A9B0D00FBAAB3 /* red.jpg in Resources */,
+				1639C5511AB25B9F0023E70D /* flagWhite96.png in Resources */,
 				16E6198D1AA275C400FBAAB3 /* camera80.png in Resources */,
 				1639C5471AB24A190023E70D /* closeWhite32.png in Resources */,
 				16E619751AA265E700FBAAB3 /* flashOnWhite72.png in Resources */,
@@ -1074,6 +1084,7 @@
 				16E619331A8A9A5300FBAAB3 /* black.png in Resources */,
 				16E6198F1AA275CA00FBAAB3 /* camera120.png in Resources */,
 				16F7DAC21A723E1C003215E9 /* lightBlue.jpg in Resources */,
+				1639C54D1AB25B950023E70D /* flagWhite32.png in Resources */,
 				16E6199B1AA2789700FBAAB3 /* accept150.png in Resources */,
 				16E619691AA2651D00FBAAB3 /* mappinDark32.png in Resources */,
 				16F7DAC31A723E1C003215E9 /* salmon.jpg in Resources */,
@@ -1081,6 +1092,7 @@
 				163E3DA71A64DD8000913FBF /* jsq_messages_banner.png in Resources */,
 				16E619851AA2755700FBAAB3 /* mappin32.png in Resources */,
 				16F7DAB11A723235003215E9 /* compose.png in Resources */,
+				1639C54F1AB25B9B0023E70D /* flagWhite64.png in Resources */,
 				163E3DAC1A64DD8000913FBF /* JSQmessages.png in Resources */,
 				16F3FF681A7C0AB6001BD00F /* launchImage@2x.PNG in Resources */,
 				16E6195D1AA2614700FBAAB3 /* reverseCameraWhite72.png in Resources */,

@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "flag32.png"
+      "filename" : "flagWhite32.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "flag64.png"
+      "filename" : "flagWhite64.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "flag96.png"
+      "filename" : "flagWhite96.png"
     }
   ],
   "info" : {

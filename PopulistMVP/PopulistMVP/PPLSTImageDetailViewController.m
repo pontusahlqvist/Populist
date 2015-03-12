@@ -17,6 +17,9 @@
 
 @implementation PPLSTImageDetailViewController
 
+BOOL showControls = YES;
+float padding = 20.0; //padding between the close button and the edge
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,10 +34,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
-
-    [self.closeDetailImageButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    showControls = YES;
+    
+    UIImage *buttonImage = [UIImage imageNamed:@"close"];
+    self.closeDetailImageButton = [[UIButton alloc] initWithFrame:CGRectMake(padding, padding, buttonImage.size.width, buttonImage.size.height)];
+    [self.closeDetailImageButton setImage:buttonImage forState:UIControlStateNormal];
     [self.closeDetailImageButton addTarget:self action:@selector(closeDetailImageButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-
+    [self.view addSubview:self.closeDetailImageButton];
+    
     //setup scroll view
     self.imageScrollView.delegate = self;
     self.imageView = [[UIImageView alloc] initWithImage:self.image];
@@ -52,19 +59,18 @@
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     [self.imageScrollView addGestureRecognizer:twoFingerTapRecognizer];
 
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewSingleTapped:)];
+    singleTapGestureRecognizer.numberOfTapsRequired = 1;
+    singleTapGestureRecognizer.enabled = YES;
+    singleTapGestureRecognizer.cancelsTouchesInView = NO;
+    [self.imageScrollView addGestureRecognizer:singleTapGestureRecognizer];
 
-
-    
-//    self.imageScrollView.image = [self scaledImageForImage:self.image];
-    
-//    UIImage *image = [self imageWithImage:[UIImage imageNamed:@"flag.png"] scaledToSize:CGSizeMake(30.0, 30.0)];
     UIImage *image = [UIImage imageNamed:@"flag_glyph"];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.bounds = CGRectMake( 0, 0, image.size.width, image.size.height);
-    [button setImage:image forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(flagContentPressed:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.rightBarButtonItem = barButtonItem;
+    self.flagContentButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - image.size.width, padding, image.size.width, image.size.height);
+    [self.flagContentButton setImage:image forState:UIControlStateNormal];
+    [self.flagContentButton addTarget:self action:@selector(flagContentPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.flagContentButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -80,6 +86,10 @@
     self.imageScrollView.zoomScale = minScale;
  
     [self centerScrollViewContents];
+}
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 -(void) flagContentPressed:(UIBarButtonItem*)flagBarButtonItem{
@@ -149,6 +159,31 @@
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
     // The scroll view has zoomed, so you need to re-center the contents
     [self centerScrollViewContents];
+}
+
+-(void)scrollViewSingleTapped:(UIScrollView*)scrollView{
+    showControls = !showControls;
+    float closeButtonWidth = self.closeDetailImageButton.frame.size.width;
+    float closeButtonHeight = self.closeDetailImageButton.frame.size.height;
+    float flagButtonWidth = self.flagContentButton.frame.size.width;
+    float flagButtonHeight = self.flagContentButton.frame.size.height;
+    if(showControls){
+        NSLog(@"showing controls!");
+        [UIView animateWithDuration:0.25 animations:^{
+            self.closeDetailImageButton.frame = CGRectMake(padding, padding, closeButtonWidth, closeButtonHeight);
+            self.closeDetailImageButton.alpha = 1.0;
+            self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - flagButtonWidth, padding, flagButtonWidth, flagButtonHeight);
+            self.flagContentButton.alpha = 1.0;
+        }];
+    } else{
+        NSLog(@"hiding controls!");
+        [UIView animateWithDuration:0.25 animations:^{
+            self.closeDetailImageButton.frame = CGRectMake(padding, -closeButtonHeight, closeButtonWidth, closeButtonHeight);
+            self.closeDetailImageButton.alpha = 0.0;
+            self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - flagButtonWidth, -flagButtonHeight, flagButtonWidth, flagButtonHeight);
+            self.flagContentButton.alpha = 0.0;
+        }];
+    }
 }
 
 #pragma mark - Button Presses
