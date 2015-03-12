@@ -158,7 +158,7 @@
         NSLog(@"calling prepareForLoad");
         //the current event participated in a merge, so we update the stream
         [self prepareForLoad];
-        [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... TODO: is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess.
+        [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... TODO: is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess. Note: we protect against the case where we don't have access to the event in parsing the push in the dataManager so it shouldn't be a problem to get additional pushes.
     }
     NSLog(@"currentEventId = %@, oldEventId = %@, newEventId = %@, oldCount = %@, newCount = %@",self.currentEventId,oldEventId,newEventId, oldCount, newCount);
     if(([self.currentEventId isEqualToString:oldEventId] && ![newCount isEqualToNumber:@0]) || ([self.currentEventId isEqualToString:newEventId] && ![oldCount isEqualToNumber:@0])){
