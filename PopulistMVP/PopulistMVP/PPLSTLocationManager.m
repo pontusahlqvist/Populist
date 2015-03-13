@@ -44,7 +44,8 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 -(void) setupLocationMananger{
     self.isUpdatingLocation = NO;
     self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestWhenInUseAuthorization];
+    [self.locationManager requestAlwaysAuthorization];
+    [self.locationManager startMonitoringSignificantLocationChanges];
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation; //kCLLocationAccuracyBest;
     self.locationManager.delegate = self;
     [self startUpdatingLocationWithInterval:locationUpdateTimeInterval];
@@ -70,12 +71,14 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     NSLog(@"PPLSTLocationManager - locationManager:%@ didUpdateLocations:%@",manager, locations);
-    if(!self.isUpdatingLocation) return; //makes sure that we only update the location once per update cycle.
-    
     CLLocation *newLocation = [locations lastObject];
     NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
-    [newLocation horizontalAccuracy];
     if(-[newLocation.timestamp timeIntervalSinceNow] < 5){ //if the new location is newer than 5s old, we're done.
+        if(!self.isUpdatingLocation){ //this means that this update must be a significant location change from the background. Just use it to update parse
+            [self sendLocationToParse:newLocation]; //TODO: should we place an accuracy resistriction here?
+            return;
+        }
+
         float timeSinceStartedUpdating = -[self.startedUpdatingLocationAt timeIntervalSinceNow];
         if(!self.bestLocationDuringUpdate || [self.bestLocationDuringUpdate horizontalAccuracy] > [newLocation horizontalAccuracy]){
             self.bestLocationDuringUpdate = newLocation;
@@ -91,7 +94,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
             [self setCurrentLocationStrings];
             
             self.isUpdatingLocation = NO;
-            [self sendNewLocationToParse];
+            [self sendLocationToParse:self.currentLocation];
             
             if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
                 [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:NO];
@@ -104,7 +107,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     
 }
 
--(void) sendNewLocationToParse{
+-(void) sendLocationToParse:(CLLocation*)newLocation{
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setObject:[PFGeoPoint geoPointWithLatitude:self.currentLocation.coordinate.latitude longitude:self.currentLocation.coordinate.longitude] forKey:@"lastKnownLocation"];
     [currentInstallation setObject:[NSDate date] forKey:@"lastKnownLocationDate"];
