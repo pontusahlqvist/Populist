@@ -72,6 +72,10 @@
         [self.dataManager handleIncomingDataFromPush:userInfo];
     } else if([[userInfo allKeys] containsObject:@"o"]){ //o for old. If push contains this key, it's a merge notification
         [self.dataManager handleIncomingMergePush:userInfo];
+    } else if([[userInfo allKeys] containsObject:@"d"]){ //d for description
+        //If the app is open, do nothing. This is meant to engage the user once the app is closed.
+//        UIAlertView *crowdForming = [[UIAlertView alloc] initWithTitle:@"A crowd is forming near you!" message:userInfo[@"d"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        [crowdForming show];
     } else{
         [PFPush handlePush:userInfo];
     }

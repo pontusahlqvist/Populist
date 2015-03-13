@@ -82,6 +82,10 @@ var secondDecayForGlobalGetting = 60*60*24*7*10; //60*60*24;
 
 var globalImportanceThreshold = 2; //this will have to start out small and increase over time as more people join the service.
 
+//push to engage users
+var maxMilesToSendNewClusterPush = 1;
+var maxMinutesSinceUserLocationDataToSendNewClusterPush = 60.0; //the oldest location data that's ok in order to send location based push
+
 /*powerUsers are userIds which are allowed to artificially inflate the importance of an event.*/
 var powerUsers = ["temporaryUserId"];
 var maxUserCountToIterate = 1000; //sets the number of users to iterate through to determine the importance reduction. After 1000 users, we don't loop through them since it would be very expensive
@@ -308,6 +312,31 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                     "m": request.object.get("message")
                                 }
                             }, {success: function() {},error: function(error) {}});
+                        }
+                        console.log("1");
+                        if(oldk <= 1.0){ //this means that it's a new event
+                            console.log("2");
+                            var nearbyUsersQuery = new Parse.Query(Parse.Installation);
+                            nearbyUsersQuery.withinMiles("lastKnownLocation", bestCluster.get("location"), maxMilesToSendNewClusterPush);
+                            console.log("bestCluster.location = " + bestCluster.get("location").longitude + ", " + bestCluster.get("location").latitude + ", " + maxMilesToSendNewClusterPush);
+                            nearbyUsersQuery.greaterThanOrEqualTo("lastKnownLocationDate", new Date(Date.now() - maxMinutesSinceUserLocationDataToSendNewClusterPush*60*1000));
+                            //NOTE: for some reason, we must first perform the query, and then send the push...
+                            nearbyUsersQuery.find({
+                                success:function(results){},
+                                error:function(error){console.log("ERROR: " + error.message)}
+                            });
+                            
+                            Parse.Push.send({
+                                where: nearbyUsersQuery, // Set our Installation query
+                                data: {
+                                    "alert": "A crowd is forming near you!",
+                                    "d":"Something's going on near you! It seems like a crowd is forming.",
+                                    "sound": "cheering.caf"
+                                }
+                            }, {
+                                success: function() {},
+                                error: function(error) {}
+                            });
                         }
                     
                         //TODO: maybe don't do this every time to avoid wasting api calls
