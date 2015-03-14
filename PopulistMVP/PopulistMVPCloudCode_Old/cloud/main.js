@@ -922,15 +922,34 @@ Parse.Cloud.define("getStatusInCluster", function(request, response){
     query.get(clusterId);
     query.find({
         success: function(cluster){
-            var contributingUsers = cluster[0].get("contributingUsers");
-            var statusArray = new Array();
-            for(var i = 0; i < contributingUsers.length; i++){
-                var userId = contributingUsers[i];
-                if(statusArray.indexOf(userId) == -1){
-                    statusArray.push(userId);
+            if(cluster[0].get("mergedIntoClusterId") == null){
+                var contributingUsers = cluster[0].get("contributingUsers");
+                var statusArray = new Array();
+                for(var i = 0; i < contributingUsers.length; i++){
+                    var userId = contributingUsers[i];
+                    if(statusArray.indexOf(userId) == -1){
+                        statusArray.push(userId);
+                    }
                 }
+                response.success({"statusArray":statusArray});
+            } else{
+                var queryMerged = new Parse.Query("FlatCluster");
+                queryMerged.get(cluster[0].get("mergedIntoClusterId"));
+                queryMerged.find({
+                    success:function(mergedCluster){
+                        var contributingUsers = mergedCluster[0].get("contributingUsers");
+                        var statusArray = new Array();
+                        for(var i = 0; i < contributingUsers.length; i++){
+                            var userId = contributingUsers[i];
+                            if(statusArray.indexOf(userId) == -1){
+                                statusArray.push(userId);
+                            }
+                        }
+                        response.success({"statusArray":statusArray});
+                    },
+                    error:function(error){ response.error(error); }
+                });
             }
-            response.success({"statusArray":statusArray});
         },
         error: function(error){
             response.error(error);

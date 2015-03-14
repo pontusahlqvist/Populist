@@ -574,10 +574,10 @@ int maxMessageLengthForPush = 1000;
 
 -(JSQMessagesAvatarImage *)avatarForStatus:(NSNumber *)status{
     NSLog(@"PPLSTDataManager - avatarForStatus:%@",status);
-    if(!status || status >= [NSNumber numberWithInteger:[self.avatarImageSourceForStatus count]]){
+    if(!status || [status integerValue] >= [self.avatarImageSourceForStatus count]){
         return nil;
     }
-    
+    NSLog(@"has");
     if(![[self.avatarForStatus allKeys] containsObject:status]){
         UIImage *image = [UIImage imageNamed:self.avatarImageSourceForStatus[status]];
         if(!image){

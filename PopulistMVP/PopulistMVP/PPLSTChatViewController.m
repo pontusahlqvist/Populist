@@ -160,7 +160,7 @@
         [self subscribeToPushNotifications]; //in case the event id was updated, we need to subscribe to the new channel. Keep subscribing to the old one too just in case... Is this logic correct? Should we still subscribe to the old channel? It can't hurt I guess. Note: we protect against the case where we don't have access to the event in parsing the push in the dataManager so it shouldn't be a problem to get additional pushes.
     }
     NSLog(@"currentEventId = %@, oldEventId = %@, newEventId = %@, oldCount = %@, newCount = %@",self.currentEventId,oldEventId,newEventId, oldCount, newCount);
-    if(([self.currentEventId isEqualToString:oldEventId] && ![newCount isEqualToNumber:@0]) || ([self.currentEventId isEqualToString:newEventId] && ![oldCount isEqualToNumber:@0])){
+    if(![newCount isEqualToNumber:@0] && ![oldCount isEqualToNumber:@0]){
         UIAlertView *mergeOccurredAlertView = [[UIAlertView alloc] initWithTitle:@"Your Event Merged" message:@"Hey, it seems like your event just merged with another one neaby. The more the merrier!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [mergeOccurredAlertView show];
     }
