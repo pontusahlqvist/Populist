@@ -19,6 +19,7 @@
 //@property (strong, nonatomic) NSMutableDictionary *imagesAtFilePath;
 @property (strong, nonatomic) PPLSTMutableDictionary *imagesAtFilePath;
 @property (strong, nonatomic) NSMutableDictionary *avatarImageSourceForStatus;
+@property (strong, nonatomic) NSDateFormatter *dateFormatter;
 @end
 
 @implementation PPLSTDataManager
@@ -40,6 +41,10 @@ int maxMessageLengthForPush = 1000;
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
         appDelegate.dataManager = self;
         [self createAvatarForStatusDictionary];
+
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        [self.dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+        [self.dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSS'Z'"];
     }
     return self;
 }
@@ -523,10 +528,7 @@ int maxMessageLengthForPush = 1000;
         newIncomingContribution.contributionType = data[@"t"];
         //Note: the following check to see if the key @"d" exists in the incoming push data is only here since some versions of the app currently don't send along this information. The app would then crash if the key isn't sent along and so I check first.
         if([[data allKeys] containsObject:@"d"]){
-            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-            [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSS'Z'"];
-            newIncomingContribution.createdAt = [dateFormatter dateFromString:data[@"d"][@"iso"]];
+            newIncomingContribution.createdAt = [self.dateFormatter dateFromString:data[@"d"][@"iso"]];
         } else{
             newIncomingContribution.createdAt = [NSDate date];
         }
