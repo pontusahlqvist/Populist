@@ -292,13 +292,9 @@ Parse.Cloud.afterSave("Contribution", function(request){
                         var bufferTime = 7000;
                         if(request.object.get("type") == "message"){
                             bufferTime = 1000;
-                            console.log("was a message");
-                        } else{
-                            console.log("was an image");
                         }
                         bufferTime = 0; //TODO: get rid of this. I just added it back since we are temporarily uploading the content to parse.
                         if(!promise){
-                            console.log("pushing in "+bufferTime + " milli seconds");
                             Parse.Push.send({
                                 channels: [ "event" + bestCluster.id ],
                                 expiration_interval: 5, //expires in 5 seconds in case a user has their phone turned off etc. Remember that the contributions will still be gotten via a pull etc anyway.
@@ -313,12 +309,9 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                 }
                             }, {success: function() {},error: function(error) {}});
                         }
-                        console.log("1");
                         if(oldk <= 1.0){ //this means that it's a new event
-                            console.log("2");
                             var nearbyUsersQuery = new Parse.Query(Parse.Installation);
                             nearbyUsersQuery.withinMiles("lastKnownLocation", bestCluster.get("location"), maxMilesToSendNewClusterPush);
-                            console.log("bestCluster.location = " + bestCluster.get("location").longitude + ", " + bestCluster.get("location").latitude + ", " + maxMilesToSendNewClusterPush);
                             nearbyUsersQuery.greaterThanOrEqualTo("lastKnownLocationDate", new Date(Date.now() - maxMinutesSinceUserLocationDataToSendNewClusterPush*60*1000));
                             //NOTE: for some reason, we must first perform the query, and then send the push...
                             nearbyUsersQuery.find({
@@ -691,7 +684,7 @@ Parse.Cloud.define("getClusters", function(request, response) {
     localQuery.withinMiles("location", location, localGettingMilesCutoff);
     localQuery.greaterThanOrEqualTo("validUntil", futureInfinity);
     localQuery.greaterThanOrEqualTo("tk", new Date(inputTime.getTime() - 1000*60*minuteCutoffGetLocal));
-    
+    localQuery.addDescending("tk"); //Note: necessary to ensure that recent events show up at all in the feed. This is important to ensure that users near eachother take part in the same event.
     var localQueryWrapped = new Parse.Query("FlatCluster");
     localQueryWrapped.matchesKeyInQuery("objectId", "objectId", localQuery);
 
@@ -699,10 +692,13 @@ Parse.Cloud.define("getClusters", function(request, response) {
     globalQuery.greaterThanOrEqualTo("validUntil", futureInfinity);
     globalQuery.greaterThanOrEqualTo("tk", new Date(inputTime.getTime() - 1000*60*minuteCutoffGetGlobal));
     globalQuery.greaterThanOrEqualTo("importance", globalImportanceThreshold);
+    globalQuery.limit(5); //only allow 5 global events
 
     var totalQuery = Parse.Query.or(localQueryWrapped, globalQuery);
-    totalQuery.find({
+//    totalQuery.find({ //NOTE: / TODO: limit can only be applied to the final query. As a result, we may end up losing the nearby query within the global query and thereby never see current conversations. For now, I just disabled the global query.
+    localQueryWrapped.find({
         success: function(clusterObjects){
+            console.log("There are the cluster objects that were found: " + clusterObjects);
             response.success({"customClusterObjects": filterAndOrderClusters({"location": location, "time": inputTime, "userId": userId}, clusterObjects)});
         }, error: function(error){response.error(error);}
     });
@@ -1033,9 +1029,7 @@ Parse.Cloud.define("flagContribution", function(request, response){
                     var indexOfContributionInTitlePhotoIdArray = titlePhotoIdArray.indexOf(contributionId);
                     var indexOfContributionInTitleMessageIdArray = titleMessageIdArray.indexOf(contributionId);
                     if(indexOfContributionInTitlePhotoIdArray != -1){
-                        console.log("1 - array"+titlePhotoIdArray);
                         titlePhotoIdArray.splice(indexOfContributionInTitlePhotoIdArray, 1);
-                        console.log("2 - array"+titlePhotoIdArray);
                         cluster.set("titlePhotoIdArray",titlePhotoIdArray);
                     } else if(indexOfContributionInTitleMessageIdArray != -1){
   //                      titleMessageIdArray.splice(indexOfContributionInTitleMessageIdArray, 1);

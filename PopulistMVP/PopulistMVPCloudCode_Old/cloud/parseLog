@@ -1,0 +1,133 @@
+WARNING: Version 1.4.2 of the parse tool is deprecated.
+Please upgrade by running:
+parse update (available in version 1.3.0 or later)
+or go to https://parse.com/docs/cloud_code_guide#started-installing for instructions
+I2015-03-14T22:30:45.809Z]got rid of sub 1.0 importance event with event Id = vmGwbia6UY where containsUser = NO
+I2015-03-14T22:30:45.810Z]got rid of sub 1.0 importance event with event Id = scWVZuhjVO where containsUser = NO
+I2015-03-14T22:30:45.811Z]got rid of sub 1.0 importance event with event Id = 0nTnutsWBc where containsUser = NO
+I2015-03-14T22:30:45.812Z]got rid of sub 1.0 importance event with event Id = 6BIWqiicZH where containsUser = NO
+I2015-03-14T22:30:45.813Z]got rid of sub 1.0 importance event with event Id = tP1jS1qJjv where containsUser = NO
+I2015-03-14T22:30:45.814Z]got rid of sub 1.0 importance event with event Id = TYdeNammRu where containsUser = NO
+I2015-03-14T22:30:45.815Z]got rid of sub 1.0 importance event with event Id = pmnIdFTIO1 where containsUser = NO
+I2015-03-14T22:30:45.816Z]got rid of sub 1.0 importance event with event Id = 5Q6MiFf0bt where containsUser = NO
+I2015-03-14T22:30:45.817Z]got rid of sub 1.0 importance event with event Id = nZM00eMm1R where containsUser = NO
+I2015-03-14T22:30:45.818Z]got rid of sub 1.0 importance event with event Id = Y99HVcDDRi where containsUser = NO
+I2015-03-14T22:30:45.819Z]got rid of sub 1.0 importance event with event Id = IPLUeonlVY where containsUser = NO
+I2015-03-14T22:30:45.820Z]got rid of sub 1.0 importance event with event Id = DTqPk18Qtn where containsUser = NO
+I2015-03-14T22:30:45.821Z]got rid of sub 1.0 importance event with event Id = puvQsFDlOj where containsUser = NO
+I2015-03-14T22:30:45.822Z]got rid of sub 1.0 importance event with event Id = 65eSv9Buu1 where containsUser = NO
+I2015-03-14T22:30:45.823Z]got rid of sub 1.0 importance event with event Id = mEOGwnKc4r where containsUser = NO
+I2015-03-14T22:30:45.824Z]got rid of sub 1.0 importance event with event Id = cnTaR9en07 where containsUser = NO
+I2015-03-14T22:30:45.825Z]got rid of sub 1.0 importance event with event Id = 12fQngUTzG where containsUser = NO
+I2015-03-14T22:30:45.826Z]got rid of sub 1.0 importance event with event Id = be0bTXUJnD where containsUser = NO
+I2015-03-14T22:30:45.827Z]got rid of sub 1.0 importance event with event Id = 4XxxSuu7Hl where containsUser = NO
+I2015-03-14T22:30:45.828Z]got rid of sub 1.0 importance event with event Id = FDxBM3I8kv where containsUser = NO
+I2015-03-14T22:30:45.829Z]got rid of sub 1.0 importance event with event Id = YArCpdHZOI where containsUser = NO
+I2015-03-14T22:30:45.830Z]Reached max log messages per request, later messages for this request are truncated.
+I2015-03-14T22:30:46.132Z]v123 Ran cloud function createNewEmptyCluster with:
+  Input: {"city":"Los Angeles","country":"USA","latitude":34.0210075378418,"longitude":-118.4276504516602,"neighborhood":"Mar Vista","state":"CA"}
+  Result: {"N":2,"__type":"Object","alpha":2.77777,"alphan":1.5625,"beta":11111.1,"betan":0.001125,"city":"Los Angeles","className":"FlatCluster","contributingUsers":[],"contributions":[],"country":"USA","createdAt":"2015-03-14T22:30:46.158Z","importance":0.9,"k":1,"location":{"__type":"GeoPoint","latitude":34.0210075378418,"longitude":-118.4276504516602},"neighborhood":"Mar Vista","objectId":"7lLkyJ1zWQ","state":"CA","t1":{"__type":"Date","iso":"2015-03-14T22:30:46.148Z"},"tbar":{"__type":"Date","iso":"2015-03-14T22:30:46.148Z"},"titleMessageIdArray":[],"titlePhotoIdArray":[],"tk":{"__type":"Date","iso":"2015-03-14T22:30:46.148Z"},"updatedAt":"2015-03-14T22:30:46.158Z","validUntil":{"__type":"Date","iso":"2100-12-31T23:59:59.000Z"}}
+I2015-03-14T22:30:58.854Z]v123 Ran cloud function getClusters with:
+  Input: {"latitude":34.02097,"longitude":-118.4278}
+  Result: {"customClusterObjects":[{"city":"Los Angeles","containsUser":"YES","country":"USA","importance":0,"isActive":"YES","latitude":34.0210075378418,"longitude":-118.4276504516602,"neighborhood":"Mar Vista","objectId":"7lLkyJ1zWQ","state":"CA","updatedAt":{"__type":"Date","iso":"2015-03-14T22:30:46.158Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":42,"isActive":"NO","latitude":34.02101355771917,"longitude":-118.42765805091476,"neighborhood":"Mar Vista","objectId":"HvHxadIVKA","state":"CA","titlePhotoId":"432iBhXkEU","updatedAt":{"__type":"Date","iso":"2015-02-15T20:28:07.010Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":13,"isActive":"NO","latitude":34.02098768152816,"longitude":-118.42764299275281,"neighborhood":"Mar Vista","objectId":"O9Sl4rSgYe","state":"CA","updatedAt":{"__type":"Date","iso":"2015-03-05T22:57:56.981Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":18,"isActive":"NO","latitude":34.02103617384203,"longitude":-118.42765132264509,"neighborhood":"Mar Vista","objectId":"wPSS6e201S","state":"CA","titlePhotoId":"jS16wyASqY","updatedAt":{"__type":"Date","iso":"2015-02-07T01:52:45.088Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":11,"isActive":"NO","latitude":34.021005935918396,"longitude":-118.42765890537625,"neighborhood":"Mar Vista","objectId":"eKAxW0pzLu","state":"CA","titlePhotoId":"0wtYKycoLI","updatedAt":{"__type":"Date","iso":"2015-02-10T20:06:11.391Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":10,"isActive":"NO","latitude":34.02103396033796,"longitude":-118.42766023234198,"neighborhood":"Mar Vista","objectId":"SOyF65odh2","state":"CA","titlePhotoId":"dv4C30TAKi","updatedAt":{"__type":"Date","iso":"2015-02-12T18:40:16.743Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":10,"isActive":"NO","latitude":34.02100463047196,"longitude":-118.42766251629526,"neighborhood":"Mar Vista","objectId":"RD8dSAhqAy","state":"CA","titlePhotoId":"14GHutb3q5","updatedAt":{"__type":"Date","iso":"2015-02-08T02:38:18.192Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":11,"isActive":"NO","latitude":34.02102881070993,"longitude":-118.42766383427382,"neighborhood":"Mar Vista","objectId":"TwDoXRsZLv","state":"CA","titlePhotoId":"9KmzsJrP7E","updatedAt":{"__type":"Date","iso":"2015-01-31T03:10:32.536Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":12,"isActive":"NO","latitude":34.02104491661797,"longitude":-118.4276580435787,"neighborhood":"Mar Vista","objectId":"g45Lk0bA30","state":"CA","titlePhotoId":"vkzAsKTHkr","updatedAt":{"__type":"Date","iso":"2015-02-07T01:52:15.880Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.02099175141007,"longitude":-118.42767156134674,"neighborhood":"Mar Vista","objectId":"KyEeFZRhkq","state":"CA","titlePhotoId":"d11f2DeaqQ","updatedAt":{"__type":"Date","iso":"2015-03-02T01:52:19.273Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":6,"isActive":"NO","latitude":34.02103269913581,"longitude":-118.42766041474601,"neighborhood":"Mar Vista","objectId":"fm9E9HE7P3","state":"CA","titlePhotoId":"LRj5NN2OQX","updatedAt":{"__type":"Date","iso":"2015-03-07T04:27:48.974Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.021026162105144,"longitude":-118.42765606598817,"neighborhood":"Mar Vista","objectId":"ACGE87Qvkq","state":"CA","titlePhotoId":"MZmSXnA1mV","updatedAt":{"__type":"Date","iso":"2015-03-12T20:43:28.099Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.0210215311101,"longitude":-118.42765365811799,"neighborhood":"Mar Vista","objectId":"76q9Z3iZxf","state":"CA","titlePhotoId":"LsLqWn7S16","updatedAt":{"__type":"Date","iso":"2015-03-08T18:26:21.904Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":7,"isActive":"NO","latitude":34.021034173165695,"longitude":-118.42767286628766,"neighborhood":"Mar Vista","objectId":"vo8FR3xzWM","state":"CA","titlePhotoId":"vCuH5z1y3v","updatedAt":{"__type":"Date","iso":"2015-02-07T01:53:22.781Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":4,"isActive":"NO","latitude":34.02100191372924,"longitude":-118.42770544051466,"neighborhood":"Mar Vista","objectId":"eSDjAGf0Qz","state":"CA","titlePhotoId":"JWkbHRhnbd","updatedAt":{"__type":"Date","iso":"2015-02-07T08:19:11.461Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":6,"isActive":"NO","latitude":34.02102855385472,"longitude":-118.4276746740376,"neighborhood":"Mar Vista","objectId":"zeh7DtRcX0","state":"CA","titlePhotoId":"xg6K8ijf4P","updatedAt":{"__type":"Date","iso":"2015-01-31T00:02:35.245Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":4,"isActive":"NO","latitude":34.021019951058705,"longitude":-118.42770280022069,"neighborhood":"Mar Vista","objectId":"cLCODUS7pU","state":"CA","titlePhotoId":"0lfVgWbpKd","updatedAt":{"__type":"Date","iso":"2015-02-04T05:24:08.058Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.02102119740507,"longitude":-118.42764795779811,"neighborhood":"Mar Vista","objectId":"omqyUQ1ql3","state":"CA","titlePhotoId":"IRfVZg8Aa9","updatedAt":{"__type":"Date","iso":"2015-02-12T07:28:39.536Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":4,"isActive":"NO","latitude":34.021009497428636,"longitude":-118.42769199959295,"neighborhood":"Mar Vista","objectId":"Fx8LJWqBZ8","state":"CA","titlePhotoId":"WBSgNoHVH3","updatedAt":{"__type":"Date","iso":"2015-02-02T05:11:51.624Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":4,"isActive":"NO","latitude":34.020908554921526,"longitude":-118.4276725600251,"neighborhood":"Mar Vista","objectId":"8CyDARhTa5","state":"CA","titlePhotoId":"zRDqRBmgFW","updatedAt":{"__type":"Date","iso":"2015-02-13T18:57:13.971Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.02101553752839,"longitude":-118.42766553914448,"neighborhood":"Mar Vista","objectId":"LY0GzJnfhL","state":"CA","titlePhotoId":"kugFqJZs3r","updatedAt":{"__type":"Date","iso":"2015-02-01T22:55:48.053Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.02100745982168,"longitude":-118.42765261624177,"neighborhood":"Mar Vista","objectId":"wDueINjX7v","state":"CA","titlePhotoId":"RC55648KLk","updatedAt":{"__type":"Date","iso":"2015-02-08T18:59:05.442Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":5,"isActive":"NO","latitude":34.021038575829216,"longitude":-118.42764662144889,"neighborhood":"Mar Vista","objectId":"PtapG16Yl3","state":"CA","updatedAt":{"__type":"Date","iso":"2015-02-03T07:00:53.472Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":4,"isActive":"NO","latitude":34.02106414844471,"longitude":-118.42769156618716,"neighborhood":"Mar Vista","objectId":"3n26U3sca0","state":"CA","titlePhotoId":"4d1ajcZYEP","updatedAt":{"__type":"Date","iso":"2015-02-08T22:12:42.626Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":3,"isActive":"NO","latitude":34.02100856830307,"longitude":-118.42766684298519,"neighborhood":"Mar Vista","objectId":"fewf9BumUm","state":"CA","titlePhotoId":"OUyH0UtkVz","updatedAt":{"__type":"Date","iso":"2015-02-05T02:37:52.567Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":3,"isActive":"NO","latitude":34.02103416955273,"longitude":-118.42768230761656,"neighborhood":"Mar Vista","objectId":"DkXC8cul6F","state":"CA","titlePhotoId":"lyEyq9ocYw","updatedAt":{"__type":"Date","iso":"2015-02-04T17:09:24.083Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":1,"isActive":"NO","latitude":34.02103445261439,"longitude":-118.42770994832665,"neighborhood":"Mar Vista","objectId":"Hp0IKBtAgk","state":"CA","updatedAt":{"__type":"Date","iso":"2015-03-06T02:47:47.092Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":3,"isActive":"NO","latitude":34.02102593713904,"longitude":-118.42765474161774,"neighborhood":"Mar Vista","objectId":"T3qZAxQe72","state":"CA","titlePhotoId":"fPgbD9FUbi","updatedAt":{"__type":"Date","iso":"2015-02-02T17:35:27.549Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":2,"isActive":"NO","latitude":34.02099484944684,"longitude":-118.4276908226261,"neighborhood":"Mar Vista","objectId":"SNEk0EjtAk","state":"CA","updatedAt":{"__type":"Date","iso":"2015-02-03T07:45:14.780Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":2,"isActive":"NO","latitude":34.02099557178344,"longitude":-118.42765938410878,"neighborhood":"Mar Vista","objectId":"eoE1TgeJCI","state":"CA","titlePhotoId":"8QM7NZxM0Q","updatedAt":{"__type":"Date","iso":"2015-02-08T07:13:27.791Z"}},{"city":"Los Angeles","containsUser":"NO","country":"USA","importance":2,"isActive":"NO","latitude":34.02101370011396,"longitude":-118.42765836176675,"neighborhood":"Mar Vista","objectId":"wAze0tEH5E","state":"CA","titlePhotoId":"GnQJDXTdP6","updatedAt":{"__type":"Date","iso":"2015-02-17T17:11:10.172Z"}}]}
+I2015-03-14T22:30:59.170Z]added descending.
+I2015-03-14T22:30:59.328Z]There are the cluster objects that were found: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+I2015-03-14T22:30:59.329Z]importance = 0.9 for event with id = 0nTnutsWBc
+I2015-03-14T22:30:59.330Z]importance = 0.9 for event with id = 12fQngUTzG
+I2015-03-14T22:30:59.331Z]importance = 0.9 for event with id = 2l144AXwio
+I2015-03-14T22:30:59.332Z]importance = 0.9 for event with id = 49jRc73EnO
+I2015-03-14T22:30:59.333Z]importance = 0.9 for event with id = 4XxxSuu7Hl
+I2015-03-14T22:30:59.334Z]importance = 0.9 for event with id = 5Q6MiFf0bt
+I2015-03-14T22:30:59.335Z]importance = 0.9 for event with id = 65eSv9Buu1
+I2015-03-14T22:30:59.336Z]importance = 0.9 for event with id = 6BIWqiicZH
+I2015-03-14T22:30:59.337Z]importance = 0.9 for event with id = 7kpgFE5iYS
+I2015-03-14T22:30:59.338Z]importance = 0.9 for event with id = 7lLkyJ1zWQ
+I2015-03-14T22:30:59.339Z]importance = 0.9 for event with id = 83QXSzFcIp
+I2015-03-14T22:30:59.340Z]importance = 0.9 for event with id = B1oYcSXj0L
+I2015-03-14T22:30:59.341Z]importance = 0.9 for event with id = BhFNeBD8Mt
+I2015-03-14T22:30:59.342Z]importance = 0.9 for event with id = DB2fyreo2n
+I2015-03-14T22:30:59.343Z]importance = 0.9 for event with id = DTqPk18Qtn
+I2015-03-14T22:30:59.344Z]importance = 0.9 for event with id = EbttFD6RyH
+I2015-03-14T22:30:59.345Z]importance = 0.9 for event with id = FDxBM3I8kv
+I2015-03-14T22:30:59.346Z]importance = 0.9 for event with id = HQSsmeGpIq
+I2015-03-14T22:30:59.347Z]importance = 0.9 for event with id = IPLUeonlVY
+I2015-03-14T22:30:59.348Z]importance = 0.9 for event with id = IvdbOkhwf8
+I2015-03-14T22:30:59.349Z]importance = 0.9 for event with id = OESoRzNG8d
+I2015-03-14T22:30:59.350Z]importance = 0.9 for event with id = OFN5pOVo4g
+I2015-03-14T22:30:59.351Z]importance = 0.9 for event with id = RTNT5LA8sD
+I2015-03-14T22:30:59.352Z]importance = 0.9 for event with id = RYxqcFrs43
+I2015-03-14T22:30:59.353Z]importance = 0.9 for event with id = TAGySgAmM6
+I2015-03-14T22:30:59.354Z]importance = 0.9 for event with id = TYdeNammRu
+I2015-03-14T22:30:59.355Z]importance = 0.9 for event with id = UsQekTLhuu
+I2015-03-14T22:30:59.356Z]importance = 0.9 for event with id = UsrJfXZqUz
+I2015-03-14T22:30:59.357Z]importance = 0.9 for event with id = VFuDHVxfTL
+I2015-03-14T22:30:59.358Z]importance = 0.9 for event with id = VSEVDc6Lhp
+I2015-03-14T22:30:59.359Z]importance = 0.9 for event with id = WF0zqokHbf
+I2015-03-14T22:30:59.360Z]importance = 0.9 for event with id = X3FLgnXo5M
+I2015-03-14T22:30:59.361Z]importance = 0.9 for event with id = Y99HVcDDRi
+I2015-03-14T22:30:59.362Z]importance = 0.9 for event with id = YArCpdHZOI
+I2015-03-14T22:30:59.363Z]importance = 0.9 for event with id = YgiyiM9g8N
+I2015-03-14T22:30:59.364Z]importance = 0.9 for event with id = ao48eV1gdW
+I2015-03-14T22:30:59.365Z]importance = 0.9 for event with id = bc5h3Gydwg
+I2015-03-14T22:30:59.366Z]importance = 0.9 for event with id = be0bTXUJnD
+I2015-03-14T22:30:59.367Z]importance = 0.9 for event with id = cnTaR9en07
+I2015-03-14T22:30:59.368Z]importance = 0.9 for event with id = dJS3rc5Pdw
+I2015-03-14T22:30:59.369Z]importance = 0.9 for event with id = dP5PeTOkyU
+I2015-03-14T22:30:59.370Z]importance = 0.9 for event with id = dTdwSQ1QcL
+I2015-03-14T22:30:59.371Z]importance = 0.9 for event with id = dgzOny6KQz
+I2015-03-14T22:30:59.372Z]importance = 0.9 for event with id = eRez93GAYS
+I2015-03-14T22:30:59.373Z]importance = 0.9 for event with id = eUUFyDv0bi
+I2015-03-14T22:30:59.374Z]importance = 0.9 for event with id = fdeaR4sXFc
+I2015-03-14T22:30:59.375Z]importance = 0.9 for event with id = frd4dio3h5
+I2015-03-14T22:30:59.376Z]importance = 0.9 for event with id = fsKuG0bbgL
+I2015-03-14T22:30:59.377Z]importance = 0.9 for event with id = i9FZt1TN7V
+I2015-03-14T22:30:59.378Z]importance = 0.9 for event with id = kXd9i9elTJ
+I2015-03-14T22:30:59.379Z]importance = 0.9 for event with id = kt59woX4KX
+I2015-03-14T22:30:59.380Z]importance = 0.9 for event with id = ljBjQ9OCQU
+I2015-03-14T22:30:59.381Z]importance = 0.9 for event with id = mEOGwnKc4r
+I2015-03-14T22:30:59.382Z]importance = 0.9 for event with id = mMcCmBA1Sy
+I2015-03-14T22:30:59.383Z]importance = 0.9 for event with id = mpHvpDWEGS
+I2015-03-14T22:30:59.384Z]importance = 0.9 for event with id = nZM00eMm1R
+I2015-03-14T22:30:59.385Z]importance = 0.9 for event with id = pmnIdFTIO1
+I2015-03-14T22:30:59.386Z]importance = 0.9 for event with id = puvQsFDlOj
+I2015-03-14T22:30:59.387Z]importance = 0.9 for event with id = qZMAbzfP6o
+I2015-03-14T22:30:59.388Z]importance = 0.9 for event with id = s9vwovOhEc
+I2015-03-14T22:30:59.389Z]importance = 0.9 for event with id = sZAnA4swOT
+I2015-03-14T22:30:59.390Z]importance = 0.9 for event with id = sbVYKQqFph
+I2015-03-14T22:30:59.391Z]importance = 0.9 for event with id = scWVZuhjVO
+I2015-03-14T22:30:59.392Z]importance = 0.9 for event with id = tP1jS1qJjv
+I2015-03-14T22:30:59.393Z]importance = 0.9 for event with id = uUqRT06A9H
+I2015-03-14T22:30:59.394Z]importance = 0.9 for event with id = vaaxFM7vKf
+I2015-03-14T22:30:59.395Z]importance = 0.9 for event with id = vmGwbia6UY
+I2015-03-14T22:30:59.396Z]importance = 0.9 for event with id = wx7IoqBXqM
+I2015-03-14T22:30:59.397Z]importance = 0.9 for event with id = yaKxXFazWi
+I2015-03-14T22:30:59.398Z]importance = 0.9 for event with id = zxpFBibm7r
+I2015-03-14T22:30:59.399Z]got rid of sub 1.0 importance event with event Id = 4XxxSuu7Hl where containsUser = NO
+I2015-03-14T22:30:59.400Z]got rid of sub 1.0 importance event with event Id = i9FZt1TN7V where containsUser = NO
+I2015-03-14T22:30:59.401Z]got rid of sub 1.0 importance event with event Id = vmGwbia6UY where containsUser = NO
+I2015-03-14T22:30:59.402Z]got rid of sub 1.0 importance event with event Id = 7kpgFE5iYS where containsUser = NO
+I2015-03-14T22:30:59.403Z]got rid of sub 1.0 importance event with event Id = TAGySgAmM6 where containsUser = NO
+I2015-03-14T22:30:59.404Z]got rid of sub 1.0 importance event with event Id = B1oYcSXj0L where containsUser = NO
+I2015-03-14T22:30:59.405Z]got rid of sub 1.0 importance event with event Id = HQSsmeGpIq where containsUser = NO
+I2015-03-14T22:30:59.406Z]got rid of sub 1.0 importance event with event Id = nZM00eMm1R where containsUser = NO
+I2015-03-14T22:30:59.407Z]got rid of sub 1.0 importance event with event Id = Y99HVcDDRi where containsUser = NO
+I2015-03-14T22:30:59.408Z]got rid of sub 1.0 importance event with event Id = kXd9i9elTJ where containsUser = NO
+I2015-03-14T22:30:59.409Z]got rid of sub 1.0 importance event with event Id = scWVZuhjVO where containsUser = NO
+I2015-03-14T22:30:59.410Z]got rid of sub 1.0 importance event with event Id = DB2fyreo2n where containsUser = NO
+I2015-03-14T22:30:59.411Z]got rid of sub 1.0 importance event with event Id = ljBjQ9OCQU where containsUser = NO
+I2015-03-14T22:30:59.412Z]got rid of sub 1.0 importance event with event Id = zxpFBibm7r where containsUser = NO
+I2015-03-14T22:30:59.413Z]got rid of sub 1.0 importance event with event Id = 6BIWqiicZH where containsUser = NO
+I2015-03-14T22:30:59.414Z]got rid of sub 1.0 importance event with event Id = bc5h3Gydwg where containsUser = NO
+I2015-03-14T22:30:59.415Z]got rid of sub 1.0 importance event with event Id = be0bTXUJnD where containsUser = NO
+I2015-03-14T22:30:59.416Z]got rid of sub 1.0 importance event with event Id = fdeaR4sXFc where containsUser = NO
+I2015-03-14T22:30:59.417Z]got rid of sub 1.0 importance event with event Id = DTqPk18Qtn where containsUser = NO
+I2015-03-14T22:30:59.418Z]got rid of sub 1.0 importance event with event Id = puvQsFDlOj where containsUser = NO
+I2015-03-14T22:30:59.419Z]got rid of sub 1.0 importance event with event Id = wx7IoqBXqM where containsUser = NO
+I2015-03-14T22:30:59.420Z]got rid of sub 1.0 importance event with event Id = dP5PeTOkyU where containsUser = NO
+I2015-03-14T22:30:59.421Z]got rid of sub 1.0 importance event with event Id = dJS3rc5Pdw where containsUser = NO
+I2015-03-14T22:30:59.422Z]got rid of sub 1.0 importance event with event Id = 83QXSzFcIp where containsUser = NO
+I2015-03-14T22:30:59.423Z]got rid of sub 1.0 importance event with event Id = mMcCmBA1Sy where containsUser = NO
+I2015-03-14T22:30:59.424Z]got rid of sub 1.0 importance event with event Id = uUqRT06A9H where containsUser = NO
+I2015-03-14T22:30:59.425Z]got rid of sub 1.0 importance event with event Id = sbVYKQqFph where containsUser = NO
+I2015-03-14T22:30:59.426Z]got rid of sub 1.0 importance event with event Id = ao48eV1gdW where containsUser = NO
+I2015-03-14T22:30:59.427Z]Reached max log messages per request, later messages for this request are truncated.
