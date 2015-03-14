@@ -439,6 +439,8 @@ int maxMessageLengthForPush = 1000;
             }
             [self.contributionIds addObject:objectId];
             
+            contribution.createdAt = parseContribution.createdAt;
+
             //send push notification
             NSMutableDictionary *pushData = [[NSMutableDictionary alloc] init];
             pushData[@"alert"] = @"New stuff at your event!";
@@ -521,7 +523,10 @@ int maxMessageLengthForPush = 1000;
         newIncomingContribution.contributionType = data[@"t"];
         //Note: the following check to see if the key @"d" exists in the incoming push data is only here since some versions of the app currently don't send along this information. The app would then crash if the key isn't sent along and so I check first.
         if([[data allKeys] containsObject:@"d"]){
-            newIncomingContribution.createdAt = data[@"d"];
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+            [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSS'Z'"];
+            newIncomingContribution.createdAt = [dateFormatter dateFromString:data[@"d"][@"iso"]];
         } else{
             newIncomingContribution.createdAt = [NSDate date];
         }
