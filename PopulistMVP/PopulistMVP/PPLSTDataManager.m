@@ -152,9 +152,12 @@ int maxMessageLengthForPush = 1000;
     //first setup a new event with the given location and time. Then, fetch and return the events
     NSMutableArray *eventsFromCloud = [[self downloadEventMetaDataWithInputLatitude:latitude andLongitude:longitude andDate:date] mutableCopy];
     Event *firstEvent = [eventsFromCloud firstObject];
+    NSString *oldCurrentEventId = nil;
+    if(self.currentEvent){
+        oldCurrentEventId = [self.currentEvent.eventId copy];
+    }
     if([firstEvent.containsUser isEqualToNumber:@1]){
         self.currentEvent = firstEvent;
-        return eventsFromCloud;
     } else{
         PFObject *newEvent = [self sendSignalWithLatitude:latitude andLongitude:longitude andDate:date];
         NSString *eventId = newEvent.objectId;
@@ -175,12 +178,21 @@ int maxMessageLengthForPush = 1000;
         titleContribution.parentEvent = currentEvent;
 
         self.currentEvent = currentEvent;
-
         [self saveCoreDataInContext:self.context];
-        
         [eventsFromCloud insertObject:currentEvent atIndex:0];
-        return eventsFromCloud;
     }
+    
+    //if the current event changes, we unsubscribe from merge pushes
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    NSLog(@"channels: %@", [currentInstallation objectForKey:@"channels"]);
+    if(oldCurrentEventId && ![self.currentEvent.eventId isEqualToString:oldCurrentEventId] && [[currentInstallation objectForKey:@"channels"] containsObject:[@"merge" stringByAppendingString:oldCurrentEventId]]){
+        NSLog(@"trying to remove %@", [@"merge" stringByAppendingString:oldCurrentEventId]);
+        [currentInstallation removeObject:[@"merge" stringByAppendingString:oldCurrentEventId] forKey:@"channels"];
+    }
+    [currentInstallation saveInBackground];
+    [currentInstallation addUniqueObject:[@"merge" stringByAppendingString:self.currentEvent.eventId] forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    return eventsFromCloud;
 }
 
 -(NSArray*) downloadEventMetaDataWithInputLatitude:(float)latitude andLongitude:(float) longitude andDate:(NSDate*)date{
@@ -557,6 +569,25 @@ int maxMessageLengthForPush = 1000;
     NSNumber *oldCount = data[@"oc"];
     NSNumber *newCount = data[@"nc"];
     
+    //update channels for push notifications
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    if([[currentInstallation objectForKey:@"channels"] containsObject:[@"merge" stringByAppendingString:oldEventId]]){
+        [currentInstallation addObject:[@"merge" stringByAppendingString:newEventId] forKey:@"channels"];
+    }
+    if([[currentInstallation objectForKey:@"channels"] containsObject:[@"event" stringByAppendingString:oldEventId]]){
+        [currentInstallation addObject:[@"event" stringByAppendingString:newEventId] forKey:@"channels"];
+    }
+    [currentInstallation save];
+    
+    if([[currentInstallation objectForKey:@"channels"] containsObject:[@"merge" stringByAppendingString:oldEventId]]){
+        [currentInstallation removeObject:[@"merge" stringByAppendingString:oldEventId] forKey:@"channels"];
+    }
+    if([[currentInstallation objectForKey:@"channels"] containsObject:[@"event" stringByAppendingString:oldEventId]]){
+        [currentInstallation removeObject:[@"event" stringByAppendingString:oldEventId] forKey:@"channels"];
+    }
+    [currentInstallation saveInBackground];
+
+    
     NSLog(@"oldeventId = %@, newEventId = %@",oldEventId, newEventId);
     //we update the event id for the old event in case we have it
     Event *oldEvent = [self getEventFromCoreDataWithId:oldEventId inContext:self.context];
@@ -613,6 +644,9 @@ int maxMessageLengthForPush = 1000;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
     NSError *error = nil;
     NSArray *returnedEvents = [context executeFetchRequest:fetchRequest error:&error];
+    if(error){
+        NSLog(@"error when cleaning up unused data: %@", error);
+    }
     NSFileManager *manager = [NSFileManager defaultManager];
     for (Event* event in returnedEvents){
         //Note: containsObject calls isEqual which, when acting on NSManagedObjects compares points values. Thus we must not use [eventsToKeep containsObject:event]. Instead, we must compare eventIds.

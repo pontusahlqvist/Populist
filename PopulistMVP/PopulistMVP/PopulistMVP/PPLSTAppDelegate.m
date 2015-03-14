@@ -42,6 +42,12 @@
         // [Optional] Track statistics around application opens.
         [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+        //Reset the channels. This must be done here to ensure that we start with a clean slate elsewhere.
+        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+        currentInstallation.channels = @[ @"global" ];
+        [currentInstallation save];
+
+
         UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                       UIUserNotificationTypeBadge |
                                                       UIUserNotificationTypeSound);
@@ -59,8 +65,7 @@
     NSLog(@"didRegisterForRemoteNotificationWithDeviceToken:%@", deviceToken);
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setDeviceTokenFromData:deviceToken];
-    currentInstallation.channels = @[ @"global" ];
-    [currentInstallation saveInBackground];
+    [currentInstallation save];
 }
 
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{

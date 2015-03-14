@@ -425,7 +425,7 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                             
                                             //send push notification to the involved subscribers
                                             Parse.Push.send({
-                                                channels: [ "event"+updatedCluster.id, "event"+invalidatedNeighbor.id],
+                                                channels: [ "merge"+updatedCluster.id, "merge"+invalidatedNeighbor.id],
                                                 data: {
                                                     alert: "Your event merged with another event.",
                                                     o:invalidatedNeighbor.id,
@@ -884,15 +884,27 @@ Parse.Cloud.define("getContributionIdsInCluster", function(request, response){
                                 success: function(results){
                                     sortedContributionIds = new Array();
                                     for(var i = 0; i < results.length; i++){
+                                        var flaggedBy = results[i].get("flaggedBy");
+                                        if(shouldBeCensored(flaggedBy) == "YES"){
+                                            continue;
+                                        }
                                         var contributionDict = {};
                                         contributionDict[results[i].id] = "photo";
                                         if(results[i].get("image") || results[i].get("type") == "photo"){
                                             contributionDict[results[i].id] = "photo";
+                                            contributionDict["type"] = "photo";
+                                            contributionDict["message"] = "";
                                         } else if(results[i].get("message") || results[i].get("type") == "message"){
                                             contributionDict[results[i].id] = "message";
+                                            contributionDict["type"] = "message";
+                                            contributionDict["message"] = results[i].get("message");
                                         } else{
                                             contributionDict[results[i].id] = "other";
+                                            contributionDict["type"] = "other";
                                         }
+                                        contributionDict["userId"] = results[i].get("userId");
+                                        contributionDict["contributionId"] = results[i].id;
+                                        contributionDict["createdAt"] = results[i].createdAt;
                                         sortedContributionIds.push(contributionDict);
                                     }
                                     response.success({"contributionIds": sortedContributionIds.slice(-maxContributionsToReturn)}); //only return at most a fixed number of contributions. Pick the last ones...

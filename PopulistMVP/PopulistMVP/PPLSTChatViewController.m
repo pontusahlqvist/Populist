@@ -69,6 +69,7 @@
 -(void) subscribeToPushNotifications{
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation addUniqueObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
+    [currentInstallation addUniqueObject:[@"merge" stringByAppendingString:self.event.eventId] forKey:@"channels"];
     [currentInstallation saveInBackground];
 }
 
@@ -77,6 +78,9 @@
     //note: push channels must start with letter so we can't just subscribe to the channel given by the event id since that could begin with a number
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:[@"event" stringByAppendingString:self.event.eventId] forKey:@"channels"];
+    if(![self.event.containsUser isEqualToNumber:@1]){ //only remove the merge channel if the user is not part of this event
+        [currentInstallation removeObject:[@"merge" stringByAppendingString:self.event.eventId] forKey:@"channels"];
+    }
     [currentInstallation saveInBackground];
     [super viewWillDisappear:animated];
 }
