@@ -269,38 +269,23 @@ int maxMessageLengthForPush = 1000;
         NSLog(@"considering contribution with Id = %@", contributionId);
         Contribution *newContribution = [self getContributionFromCoreDataWithId:contributionId inContext:self.context];
         if(!newContribution){
-            NSLog(@"downloadContributionMetaDataForEvent - 1");
             newContribution = [self createContributionWithId:contributionId inContext:self.context];
-            NSLog(@"downloadContributionMetaDataForEvent - 2");
             newContribution.imagePath = nil;
-            NSLog(@"downloadContributionMetaDataForEvent - 3");
             newContribution.latitude = nil;
-            NSLog(@"downloadContributionMetaDataForEvent - 4");
             newContribution.longitude = nil;
-            NSLog(@"downloadContributionMetaDataForEvent - 5");
             newContribution.message = nil;
-            NSLog(@"downloadContributionMetaDataForEvent - 6");
         }
-        NSLog(@"downloadContributionMetaDataForEvent - 7");
         newContribution.createdAt = contributionData[@"createdAt"]; //makes sure that even title contributions get their date set properly
-        NSLog(@"downloadContributionMetaDataForEvent - 8");
         newContribution.contributingUserId = contributionData[@"userId"]; //same reason as above.
-        NSLog(@"downloadContributionMetaDataForEvent - 9");
         newContribution.contributionType = contributionData[@"type"];
-        NSLog(@"downloadContributionMetaDataForEvent - 10");
         
         [event addContributionsObject:newContribution];
-        NSLog(@"downloadContributionMetaDataForEvent - 11");
         if([newContribution.contributionType isEqualToString:@"message"]){
-            NSLog(@"downloadContributionMetaDataForEvent - 12");
             newContribution.message = contributionData[@"message"];
         }
-        NSLog(@"downloadContributionMetaDataForEvent - 13");
         [contributions addObject:newContribution];
     }
-    NSLog(@"downloadContributionMetaDataForEvent - 14");
     [self saveCoreDataInContext:context];
-    NSLog(@"downloadContributionMetaDataForEvent - 15");
     
     NSSortDescriptor *sortDescriptor;
     sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:YES];

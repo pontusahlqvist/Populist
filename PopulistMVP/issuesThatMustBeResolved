@@ -1,6 +1,4 @@
 Issues: 
--note: if an event is merged before the user goes into the local chat, he/she will not receive the push indicating the merge. In other words, they will still publish to the old thread. Very important to fix!! A side effect of this goes as follows (and is very serious). User A and user B create one event each, but only B enters the local chat. Once B sends the first message the two events will be merged on parse’s side. However, since A is not subscribed to event A, he/she is unaware of this. User A then enters the local chat which is actually inactive on parse. When submitting the first message in A’s event, parse will actually merge this back with B thereby also invalidating B. This then implies that both events are invalidated.
-
 -parse creates duplicate events even when not queried simultaneously - Reason: max number of events returned is 100. Then with the local and global, this becomes 200. Thus, since there are a lot of nearby events, it will sometimes not return the one that’s next to you. Must filter on last update I guess…
 -if 0.9 event is merged into another 0.9 event, neither show up in the exploreVC. Must update importance after merge.
 -titlephotos are sometimes empty for events without title image
