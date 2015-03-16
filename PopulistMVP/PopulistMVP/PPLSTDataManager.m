@@ -641,7 +641,7 @@ int maxMessageLengthForPush = 1000;
     if(error){
         NSLog(@"error when cleaning up unused data: %@", error);
     }
-    NSFileManager *manager = [NSFileManager defaultManager];
+    NSMutableSet *filesToDelete = [[NSMutableSet alloc] init];
     for (Event* event in returnedEvents){
         //Note: containsObject calls isEqual which, when acting on NSManagedObjects compares points values. Thus we must not use [eventsToKeep containsObject:event]. Instead, we must compare eventIds.
         if(![eventIdsToKeep containsObject:event.eventId] && ![event.eventId isEqualToString:self.currentEvent.eventId]){
@@ -649,12 +649,8 @@ int maxMessageLengthForPush = 1000;
             //Retrieve all the contributons
             for(Contribution *contribution in event.contributions){
                 NSString *fileName = contribution.imagePath;
-                NSLog(@"Deleting file with fileName = %@", fileName);
                 if(fileName){
-                    //delete file at that file path
-                    NSError *error = nil;
-                    [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
-                    NSLog(@"Got Error When Deleting: %@", error);
+                    [filesToDelete addObject:fileName];
                 }
                 NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
                 [context deleteObject:contribution];
@@ -664,12 +660,8 @@ int maxMessageLengthForPush = 1000;
             Contribution *contribution = event.titleContribution;
             if(contribution){
                 NSString *fileName = contribution.imagePath;
-                NSLog(@"Deleting file with fileName = %@", fileName);
                 if(fileName){
-                    //delete file at that file path
-                    NSError *error = nil;
-                    [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
-                    NSLog(@"Got Error When Deleting: %@", error);
+                    [filesToDelete addObject:fileName];
                 }
                 NSLog(@"About to delete contribution with ID %@", contribution.contributionId);
                 [context deleteObject:contribution];
@@ -680,6 +672,17 @@ int maxMessageLengthForPush = 1000;
         }
     }
     [self saveCoreDataInContext:context];
+
+    //Note: save context first, then delete the files. This is important since a context is just like a scratch pad and otherwise you could have inconsistent contribution/event lists floating around.
+    NSFileManager *manager = [NSFileManager defaultManager];
+    for(NSString *fileName in filesToDelete){
+        NSLog(@"Deleting file with fileName = %@", fileName);
+        NSError *error = nil;
+        [manager removeItemAtPath:[self filePathForImageWithFileName:fileName] error:&error];
+        if(error){
+            NSLog(@"Got Error When Deleting: %@", error);
+        }
+    }
 }
 
 #pragma mark - cell formatters (event and message cell)
