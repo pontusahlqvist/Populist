@@ -10,6 +10,7 @@
 //TODO: what happens if a user takes a photo, it fails to save to drive and also gets pushed out of memory before it can be succesfully uploaded to parse? It seems like there would be a phantom contribution laying around with imagePath set to nil. Then on the next load, it would see imagePath=nil and try to download it from parse. however, since it never was uploaded properly it might just die on the spot. Very unlikely since it would have to be pushed out of memory very quickly... Could happen at large events perhaps.
 //TODO: remove old events during merge. If A and B merge into B, then A should no longer appear in the tableview
 //TODO: make sure that the event in the explore tab is always up to date (through merges, pushes, reloads etc). This means titleImage, lastupdate, location etc.
+//TODO: make sure titleImages work properly when merging two events.
 
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>

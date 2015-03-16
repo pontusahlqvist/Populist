@@ -187,6 +187,7 @@
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
             //TODO: You should really get a new copy of the event here in the proper context. Otherwise there will be issues linking objects in two diff contexts
+            //TODO: (same as above, just extending the description) Just noted a crash. It crashed as a result of this call. This calls the DM which then calls getContributionFromCoreDataWithId but not with context. Instead it calls it with self.context which is inconsistent, thereby potentially causing a crash. We must change that context and also modify self.event here to be thread safe.
             self.contributions = [[self.dataManager downloadContributionMetaDataForEvent:self.event inContext:context] mutableCopy];
             self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
             self.userIds = [[NSSet setWithArray:[self.statusForSenderId allKeys]] mutableCopy]; //set the userIds at the very beginning.

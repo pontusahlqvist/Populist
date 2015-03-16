@@ -5,7 +5,7 @@
 //  Created by Pontus Ahlqvist on 1/18/15.
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
-
+//TODO: figure out why the buttons move when zooming.
 #import "PPLSTImageDetailViewController.h"
 
 @interface PPLSTImageDetailViewController ()
@@ -70,6 +70,7 @@ float padding = 20.0; //padding between the close button and the edge
     self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - image.size.width, padding, image.size.width, image.size.height);
     [self.flagContentButton setImage:image forState:UIControlStateNormal];
     [self.flagContentButton addTarget:self action:@selector(flagContentPressed:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.view addSubview:self.flagContentButton];
 }
 
@@ -163,13 +164,17 @@ float padding = 20.0; //padding between the close button and the edge
 
 -(void)scrollViewSingleTapped:(UIScrollView*)scrollView{
     showControls = !showControls;
+    [self toggleControlsToState:showControls withDuration:0.25];
+}
+
+-(void) toggleControlsToState:(BOOL)show withDuration:(float)duration{
     float closeButtonWidth = self.closeDetailImageButton.frame.size.width;
     float closeButtonHeight = self.closeDetailImageButton.frame.size.height;
     float flagButtonWidth = self.flagContentButton.frame.size.width;
     float flagButtonHeight = self.flagContentButton.frame.size.height;
-    if(showControls){
+    if(show){
         NSLog(@"showing controls!");
-        [UIView animateWithDuration:0.25 animations:^{
+        [UIView animateWithDuration:duration animations:^{
             self.closeDetailImageButton.frame = CGRectMake(padding, padding, closeButtonWidth, closeButtonHeight);
             self.closeDetailImageButton.alpha = 1.0;
             self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - flagButtonWidth, padding, flagButtonWidth, flagButtonHeight);
@@ -177,7 +182,7 @@ float padding = 20.0; //padding between the close button and the edge
         }];
     } else{
         NSLog(@"hiding controls!");
-        [UIView animateWithDuration:0.25 animations:^{
+        [UIView animateWithDuration:duration animations:^{
             self.closeDetailImageButton.frame = CGRectMake(padding, -closeButtonHeight, closeButtonWidth, closeButtonHeight);
             self.closeDetailImageButton.alpha = 0.0;
             self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - flagButtonWidth, -flagButtonHeight, flagButtonWidth, flagButtonHeight);
