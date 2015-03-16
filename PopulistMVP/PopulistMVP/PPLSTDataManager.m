@@ -918,13 +918,11 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
         NSLog(@"the image is %@", image);
         if(image){ //protect against null images
             self.imagesAtFilePath[fileName] = image;
+        } else{
+            return [UIImage imageNamed:@"oopsImage"];
         }
     }
-    if([[self.imagesAtFilePath allKeys] containsObject:fileName]){
-        return self.imagesAtFilePath[fileName];
-    } else{
-        return [UIImage imageNamed:@"oopsImage"];
-    }
+    return self.imagesAtFilePath[fileName];
 }
 
 //creates a new dummy titleContribution that will only be used locally
