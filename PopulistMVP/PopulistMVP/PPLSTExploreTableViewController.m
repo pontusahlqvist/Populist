@@ -145,9 +145,9 @@
     }
     
     [self removeInvisibleEvents];
-
     [self.tableView reloadData];
     self.isUpdatingEvents = NO;
+    [self cleanUpEventsInBackground];
 }
 
 //This reaches into the chatVC and disables the controlls.
@@ -377,6 +377,7 @@
     }
     [self removeInvisibleEvents];
     [self.tableView reloadData];
+    [self cleanUpEventsInBackground];
 }
 
 -(void) removeInvisibleEvents{
@@ -389,6 +390,18 @@
         eventIndex++;
     }
     [self.events removeObjectsAtIndexes:eventIndexesToRemove];
+}
+
+-(void) cleanUpEventsInBackground{
+    //set up a separate queue and context and then use those to delete the unused events from core data.
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+    ^{
+        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        context.parentContext = self.dataManager.context;
+        [context performBlock:^{
+            [self.dataManager cleanUpUnusedDataForEventsNotIn:self.events inContext:context];
+        }];
+    });
 }
 
 #pragma mark - Helper Methods

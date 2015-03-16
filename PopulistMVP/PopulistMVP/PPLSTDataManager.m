@@ -52,6 +52,7 @@ int maxMessageLengthForPush = 1000;
 #pragma mark - NSManagedObjectContext Save Notification
 
 -(void) contextHasChanged:(NSNotification*)notification{
+    NSLog(@"PPLSTDataManager - contextHasChanged");
     if ([notification object] == [self context]) return;
 
     if (![NSThread isMainThread]) {
@@ -143,7 +144,8 @@ int maxMessageLengthForPush = 1000;
 -(PFObject*) sendSignalWithLatitude:(float)latitude andLongitude:(float)longitude andDate:(NSDate*)date{
     NSLog(@"PPLSTDataManager - sendSignalWithLatitude:%f andLongitude:%f andDate:%@", latitude, longitude, date);
     NSDictionary *locationDataDictionary = [self.locationManager getLocationStringData];
-    PFObject *newEvent = [PFCloud callFunction:@"createNewEmptyCluster" withParameters:@{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude], @"country":locationDataDictionary[@"country"], @"state":locationDataDictionary[@"state"], @"city":locationDataDictionary[@"city"], @"neighborhood":locationDataDictionary[@"neighborhood"]}];
+    NSDictionary *parameterDictionary = @{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude], @"country":locationDataDictionary[@"country"], @"state":locationDataDictionary[@"state"], @"city":locationDataDictionary[@"city"], @"neighborhood":locationDataDictionary[@"neighborhood"]};
+    PFObject *newEvent = [PFCloud callFunction:@"createNewEmptyCluster" withParameters:parameterDictionary];
     return newEvent;
 }
 
@@ -218,7 +220,8 @@ int maxMessageLengthForPush = 1000;
         event.longitude = eventDictionary[@"longitude"];
         event.neighborhood = eventDictionary[@"neighborhood"];
         event.state = eventDictionary[@"state"];
-        
+
+        //TODO: Note that when the event only has messages, it's possible that event.titleContribution = nil AND titleContributionId = nil. Then perhaps the following will still evaluate to true since maybe [nil isEqualToString:nil] probably evaluates to false. Then we'll start creating new titleContributions each time we refresh. We must therefore add here && (titleContributionId || event.titleContribution) which together with what's already there equates to requiring titleContributionId != nil.
         NSString *titleContributionId = eventDictionary[@"titlePhotoId"];
         if(![titleContributionId isEqualToString:event.titleContribution.contributionId] && (titleContributionId || !event.titleContribution)){
             if (!titleContributionId) {
@@ -251,15 +254,6 @@ int maxMessageLengthForPush = 1000;
     }
         
     [self saveCoreDataInContext:self.context];
-    //set up a separate queue and context and then use those to delete the unused events from core data.
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
-    ^{
-        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-        context.parentContext = self.context;
-        [context performBlock:^{
-            [self cleanUpUnusedDataForEventsNotIn:events inContext:context];
-        }];
-    });
 
     return events;
 }
@@ -633,7 +627,7 @@ int maxMessageLengthForPush = 1000;
 -(void) resetImagesInMemory{
     [self.imagesAtFilePath removeAllObjects];
 }
-
+//TODO: note that we're deleting the files while we're deleting the objects in context. This has not yet merged with self.context so there are situations where in principle you'd be deleting files before the rest of the code knows that they're gone. Also, what happens if another part of the code has a strong pointer to an NSManagedObject which is then deleted here?
 -(void) cleanUpUnusedDataForEventsNotIn:(NSArray*)eventsToKeep inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:%@ inContext:%@",eventsToKeep, context);
     NSMutableArray *eventIdsToKeep = [[NSMutableArray alloc] init];
@@ -919,9 +913,15 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
         NSLog(@"the filePath is %@", filePath);
         UIImage *image = [UIImage imageWithContentsOfFile:filePath];
         NSLog(@"the image is %@", image);
-        self.imagesAtFilePath[fileName] = image;
+        if(image){ //protect against null images
+            self.imagesAtFilePath[fileName] = image;
+        }
     }
-    return self.imagesAtFilePath[fileName];
+    if([[self.imagesAtFilePath allKeys] containsObject:fileName]){
+        return self.imagesAtFilePath[fileName];
+    } else{
+        return [UIImage imageNamed:@"oopsImage"];
+    }
 }
 
 //creates a new dummy titleContribution that will only be used locally

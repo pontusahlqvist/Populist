@@ -83,6 +83,9 @@
 //Returns the image at a given filePath. It does so by storing them in memory once they have been loaded
 -(UIImage*) getImageWithFileName:(NSString*)filePath;
 
+//cleans up the data stored
+-(void) cleanUpUnusedDataForEventsNotIn:(NSArray*)eventsToKeep inContext:(NSManagedObjectContext*)context;
+
 
 #pragma mark - Cell Formatter API
 

@@ -78,24 +78,19 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
             [self sendLocationToParse:newLocation]; //TODO: should we place an accuracy resistriction here?
             return;
         }
-
         float timeSinceStartedUpdating = -[self.startedUpdatingLocationAt timeIntervalSinceNow];
         if(!self.bestLocationDuringUpdate || [self.bestLocationDuringUpdate horizontalAccuracy] > [newLocation horizontalAccuracy]){
             self.bestLocationDuringUpdate = newLocation;
         }
         if([self.bestLocationDuringUpdate horizontalAccuracy] <= desiredHorizontalAccuracy || ([self.bestLocationDuringUpdate horizontalAccuracy] <= acceptableHorizontalAccuracy && timeSinceStartedUpdating > maxWaitTimeForDesiredAccuracy) || timeSinceStartedUpdating >= maxWaitTimeForLocationUpdate){
-
             [self.locationManager stopUpdatingLocation];
             [self.updatingLocationView removeFromSuperview];
-            
             CLLocation *oldLocation = self.currentLocation;
             self.currentLocation = self.bestLocationDuringUpdate;
             self.bestLocationDuringUpdate = nil;
             [self setCurrentLocationStrings];
-            
             self.isUpdatingLocation = NO;
             [self sendLocationToParse:self.currentLocation];
-            
             if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
                 [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:NO];
             } else{
@@ -104,7 +99,6 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
             }
         }
     }
-    
 }
 
 -(void) sendLocationToParse:(CLLocation*)newLocation{
@@ -225,7 +219,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     NSError *error = nil;
     NSURLResponse *response = nil;
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:nil];
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:nil]; //TODO: app has crashed here 
     
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];

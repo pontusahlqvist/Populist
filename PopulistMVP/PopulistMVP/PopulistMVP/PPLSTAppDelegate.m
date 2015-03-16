@@ -38,7 +38,6 @@
         //These are the old credentials below
     //    [Parse setApplicationId:@"DxLocYGgTcUhCkpYsicPsKYVdBv9IxPClq8vS3pf"
     //                  clientKey:@"Nk8ICVkbYUsENWel8iO8ww6WUwDSOgvmcHNUyYJM"];
-     
         // [Optional] Track statistics around application opens.
         [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
@@ -46,7 +45,6 @@
         PFInstallation *currentInstallation = [PFInstallation currentInstallation];
         currentInstallation.channels = @[ @"global" ];
         [currentInstallation save];
-
 
         UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                       UIUserNotificationTypeBadge |
