@@ -11,6 +11,8 @@
 //TODO: remove old events during merge. If A and B merge into B, then A should no longer appear in the tableview
 //TODO: make sure that the event in the explore tab is always up to date (through merges, pushes, reloads etc). This means titleImage, lastupdate, location etc.
 //TODO: make sure titleImages work properly when merging two events.
+//TODO: make sure parse is aware that the app is live. Also, sign up for parse premium service
+//TODO: make sure that google is aware that the api calls are from a live app. Also, add credit card to that service.
 
 #import "PPLSTDataManager.h"
 #import <Parse/Parse.h>

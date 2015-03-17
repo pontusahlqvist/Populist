@@ -210,7 +210,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     self.neighborhood = dictionary[@"neighborhood"];
 }
 
--(NSDictionary*) getLocationStringData{
+-(NSDictionary*) getLocationStringData{ //TODO: maybe create 2 apis here and rand. choose one to send our requests from? This would increase the # of api calls.
     NSString *googleUrl = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=false&result_type=neighborhood%%7Clocality%%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude];
     NSURL *url = [[NSURL alloc] initWithString:googleUrl];
     
@@ -219,7 +219,19 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     NSError *error = nil;
     NSURLResponse *response = nil;
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:nil]; //TODO: app has crashed here 
+    if(error){
+        NSLog(@"Error on getting location strings from google: %@",error);
+        NSDictionary *emptyReturnDictionary = @{@"country":@"", @"state":@"", @"city":@"", @"neighborhood":@""};
+        return emptyReturnDictionary;
+    }
+    NSError *errorJSON = nil;
+    returnData = nil; //TODO: remove. Just trying to make the app crash.
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&errorJSON]; //TODO: app has crashed here
+    if(errorJSON){
+        NSLog(@"Error on converting the returned data to a dictionary: %@", errorJSON);
+        NSDictionary *emptyReturnDictionary = @{@"country":@"", @"state":@"", @"city":@"", @"neighborhood":@""};
+        return emptyReturnDictionary;
+    }
     
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
