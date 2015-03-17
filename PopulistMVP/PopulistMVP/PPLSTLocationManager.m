@@ -225,7 +225,6 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
         return emptyReturnDictionary;
     }
     NSError *errorJSON = nil;
-    returnData = nil; //TODO: remove. Just trying to make the app crash.
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&errorJSON]; //TODO: app has crashed here
     if(errorJSON){
         NSLog(@"Error on converting the returned data to a dictionary: %@", errorJSON);
