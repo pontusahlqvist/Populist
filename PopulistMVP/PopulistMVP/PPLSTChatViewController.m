@@ -273,6 +273,7 @@
 
 - (UICollectionViewCell *)collectionView:(JSQMessagesCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"PPLSTChatViewController - cellForItemAtIndexPath:%@", indexPath);
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
     Contribution *contribution = self.contributions[indexPath.row];
     JSQMessage *message = [self jsqMessageForContribution:contribution];
@@ -346,6 +347,7 @@
 #pragma mark - ImagePicker Delegate
 
 -(void)didFinishPickingImage:(UIImage *)originalImage{
+    NSLog(@"PPLSTChatViewController - didFinishPickingImage:");
     //called from PPLSTImagePickerController
     [self dismissViewControllerAnimated:YES completion:nil];
 
@@ -413,6 +415,7 @@
 }
 
 -(void) handleNewContribution:(Contribution*)newContribution{
+    NSLog(@"PPLSTChatViewController - handleNewContribution:%@", newContribution);
     [self.contributions addObject:newContribution];
     
     if([self.event.importance floatValue] < 1.0){
@@ -424,9 +427,12 @@
 
 //handles the collection of userIds and determins if we should update avatars.
 -(void) handleUserId:(NSString*)userId{
+    NSLog(@"PPLSTChatViewController - handleUserId:%@", userId);
     if(![self.userIds containsObject:userId]){
+        NSLog(@"it was a new userId. About to ask for the new userIdDictionary");
         self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
         if([[self.statusForSenderId allKeys] containsObject:userId]){
+            NSLog(@"about to add the userId to self.userIds");
             [self.userIds addObject:userId]; //Note: if for some reason, the save of the object takes too long and the userId hasn't been added to the list yet, we'll make sure to pull the avatar next time.
         }
     }

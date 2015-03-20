@@ -267,7 +267,9 @@ int maxMessageLengthForPush = 1000;
 -(NSArray*) downloadContributionMetaDataForEvent:(Event*)event inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - downloadContributionMetaDataForEvent:%@",event);
     NSDictionary *result = [PFCloud callFunction:@"getContributionIdsInCluster" withParameters:@{@"clusterId" : event.eventId}];
+    NSLog(@"return from parse: %@", result); //TODO: check for results == nil
     NSArray *arrayOfContributionData = result[@"contributionIds"];
+    NSLog(@"arrayOfContributionData = %@", arrayOfContributionData);
     NSMutableArray *contributions = [[NSMutableArray alloc] init];
     for(NSDictionary *contributionData in arrayOfContributionData){
         NSString *contributionId = contributionData[@"contributionId"];

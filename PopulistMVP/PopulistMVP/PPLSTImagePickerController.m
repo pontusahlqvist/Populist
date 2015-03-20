@@ -257,32 +257,36 @@
     previewImage.frame = CGRectMake(0.0, (screenHeight-screenWidth)/2.0, screenWidth, screenWidth);
     previewImage.image = self.chosenImage;
     [self.previewBackgroundView addSubview:previewImage];
-
+    [self.view addSubview:self.previewBackgroundView];
+    
     UIButton *acceptImageButton = [[UIButton alloc] init];
     [acceptImageButton setImage:[UIImage imageNamed:@"accept_glyph"] forState:UIControlStateNormal];
     acceptImageButton.translatesAutoresizingMaskIntoConstraints = NO;
     [acceptImageButton addTarget:self action:@selector(handleAcceptImage:) forControlEvents:UIControlEventTouchUpInside];
-    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
-                                                          attribute:NSLayoutAttributeRight
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.previewBackgroundView
-                                                          attribute:NSLayoutAttributeRight
-                                                         multiplier:1.0f
-                                                           constant:-30.0f]];
-    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
-                                                          attribute:NSLayoutAttributeBottom
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.previewBackgroundView
-                                                          attribute:NSLayoutAttributeBottom
-                                                         multiplier:1.0f
-                                                           constant:-30.0f]];
+
     [self.previewBackgroundView addSubview:acceptImageButton];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
+                                                          attribute:NSLayoutAttributeRight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeRight
+                                                         multiplier:1.0f
+                                                           constant:-30.0f]];
+    [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:acceptImageButton
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.previewBackgroundView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.0f
+                                                           constant:-30.0f]];
 
 
     UIButton *retakeImageButton = [[UIButton alloc] init];
     [retakeImageButton setImage:[UIImage imageNamed:@"cancel_glyph"] forState:UIControlStateNormal];
     retakeImageButton.translatesAutoresizingMaskIntoConstraints = NO;
     [retakeImageButton addTarget:self action:@selector(handleRetakeImage:) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.previewBackgroundView addSubview:retakeImageButton];
     [self.previewBackgroundView addConstraint:[NSLayoutConstraint constraintWithItem:retakeImageButton
                                                           attribute:NSLayoutAttributeLeft
                                                           relatedBy:NSLayoutRelationEqual
@@ -297,9 +301,6 @@
                                                           attribute:NSLayoutAttributeBottom
                                                          multiplier:1.0f
                                                            constant:-30.0f]];
-    [self.previewBackgroundView addSubview:retakeImageButton];
-
-    [self.view addSubview:self.previewBackgroundView];
 }
 
 -(void) handleAcceptImage:(UIButton*) acceptImageButton{
