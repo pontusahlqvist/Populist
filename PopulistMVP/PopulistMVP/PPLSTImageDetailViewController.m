@@ -36,12 +36,6 @@ float padding = 20.0; //padding between the close button and the edge
     self.view.backgroundColor = [UIColor blackColor];
     showControls = YES;
     
-    UIImage *buttonImage = [UIImage imageNamed:@"close"];
-    self.closeDetailImageButton = [[UIButton alloc] initWithFrame:CGRectMake(padding, padding, buttonImage.size.width, buttonImage.size.height)];
-    [self.closeDetailImageButton setImage:buttonImage forState:UIControlStateNormal];
-    [self.closeDetailImageButton addTarget:self action:@selector(closeDetailImageButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.closeDetailImageButton];
-    
     //setup scroll view
     self.imageScrollView.delegate = self;
     self.imageView = [[UIImageView alloc] initWithImage:self.image];
@@ -65,13 +59,21 @@ float padding = 20.0; //padding between the close button and the edge
     singleTapGestureRecognizer.cancelsTouchesInView = NO;
     [self.imageScrollView addGestureRecognizer:singleTapGestureRecognizer];
 
+
+    UIImage *buttonImage = [UIImage imageNamed:@"close"];
+    self.closeDetailImageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.closeDetailImageButton setFrame:CGRectMake(padding, padding, buttonImage.size.width, buttonImage.size.height)];
+    [self.closeDetailImageButton setImage:buttonImage forState:UIControlStateNormal];
+    [self.closeDetailImageButton addTarget:self action:@selector(closeDetailImageButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self.closeDetailImageButton];
+
+
     UIImage *image = [UIImage imageNamed:@"flag_glyph"];
     self.flagContentButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.flagContentButton.frame = CGRectMake(self.view.frame.size.width - padding - image.size.width, padding, image.size.width, image.size.height);
     [self.flagContentButton setImage:image forState:UIControlStateNormal];
     [self.flagContentButton addTarget:self action:@selector(flagContentPressed:) forControlEvents:UIControlEventTouchUpInside];
-
-    [self.view addSubview:self.flagContentButton];
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self.flagContentButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -130,9 +132,13 @@ float padding = 20.0; //padding between the close button and the edge
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer*)recognizer {
     CGPoint pointInView = [recognizer locationInView:self.imageView];
  
-    CGFloat newZoomScale = self.imageScrollView.zoomScale * 1.5f;
-    newZoomScale = MIN(newZoomScale, self.imageScrollView.maximumZoomScale);
- 
+    CGFloat newZoomScale;
+    if(self.imageScrollView.zoomScale == self.imageScrollView.maximumZoomScale){
+        newZoomScale = self.imageScrollView.minimumZoomScale;
+    } else{
+        newZoomScale = self.imageScrollView.maximumZoomScale;
+    }
+
     CGSize scrollViewSize = self.imageScrollView.bounds.size;
  
     CGFloat w = scrollViewSize.width / newZoomScale;
@@ -194,6 +200,8 @@ float padding = 20.0; //padding between the close button and the edge
 #pragma mark - Button Presses
 
 -(void) closeDetailImageButtonPressed:(UIButton*)closeDetailImageButton{
+    [self.closeDetailImageButton removeFromSuperview];
+    [self.flagContentButton removeFromSuperview];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
