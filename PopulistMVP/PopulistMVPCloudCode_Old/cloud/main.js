@@ -413,6 +413,12 @@ Parse.Cloud.afterSave("Contribution", function(request){
                                             for(var i = 0; i < invalidatedNeighborContributingUsers.length; i++){
                                                 updatedCluster.add("contributingUsers",invalidatedNeighborContributingUsers[i]);
                                             }
+                                            if(!updatedCluster.get("titlePhotoIdArray") || updatedCluster.get("titlePhotoIdArray").length == 0){
+                                                var invalidatedNeighborTitlePhotoIdArray = invalidatedNeighbor.get("titlePhotoIdArray");
+                                                for(var i = 0; i < invalidatedNeighborTitlePhotoIdArray.length; i++){
+                                                    updatedCluster.addUnique("titlePhotoIdArray", invalidatedNeighborTitlePhotoIdArray[i]);
+                                                }
+                                            }
                                             updatedCluster.increment("importance", invalidatedNeighbor.get("importance"));
                                             updatedCluster.save();
                                             
