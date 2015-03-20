@@ -5,7 +5,7 @@
 //  Created by Pontus Ahlqvist on 1/5/15.
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
-
+//TODO: remove application supports iTunes sharing in info.plist before deploying.
 //TODO: when deleting events/contributions/files during cleanup, there seems to be left over garbage. Not sure why, but even with a clean slate, there's still several MB of stored stuff...
 //TODO: what happens if a user takes a photo, it fails to save to drive and also gets pushed out of memory before it can be succesfully uploaded to parse? It seems like there would be a phantom contribution laying around with imagePath set to nil. Then on the next load, it would see imagePath=nil and try to download it from parse. however, since it never was uploaded properly it might just die on the spot. Very unlikely since it would have to be pushed out of memory very quickly... Could happen at large events perhaps.
 //TODO: remove old events during merge. If A and B merge into B, then A should no longer appear in the tableview
@@ -147,6 +147,8 @@ int maxMessageLengthForPush = 1000;
 -(PFObject*) sendSignalWithLatitude:(float)latitude andLongitude:(float)longitude andDate:(NSDate*)date{
     NSLog(@"PPLSTDataManager - sendSignalWithLatitude:%f andLongitude:%f andDate:%@", latitude, longitude, date);
     NSDictionary *locationDataDictionary = [self.locationManager getLocationStringData];
+    NSLog(@"Right before creating the parameter dictionary. Here are the parameters:");
+    NSLog(@"latitude: %f, longitude: %f, locationDataDictionary: %@, locationDataDictionary[country]: %@, locationDataDictionary[state]: %@, locationDataDictionary[city]: %@, locationDataDictionary[neighborhood]: %@.", longitude, latitude, locationDataDictionary, locationDataDictionary[@"country"], locationDataDictionary[@"state"], locationDataDictionary[@"city"], locationDataDictionary[@"neighborhood"]);
     NSDictionary *parameterDictionary = @{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude], @"country":locationDataDictionary[@"country"], @"state":locationDataDictionary[@"state"], @"city":locationDataDictionary[@"city"], @"neighborhood":locationDataDictionary[@"neighborhood"]};
     PFObject *newEvent = [PFCloud callFunction:@"createNewEmptyCluster" withParameters:parameterDictionary];
     return newEvent;

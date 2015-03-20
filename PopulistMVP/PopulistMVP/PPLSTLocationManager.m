@@ -211,14 +211,17 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
 }
 
 -(NSDictionary*) getLocationStringData{ //TODO: maybe create 2 apis here and rand. choose one to send our requests from? This would increase the # of api calls.
+    NSLog(@"PPLSTLocationManager - getLocationStringData");
+    NSLog(@"We're using the coordiantes self.currentLocation.coordinate.latitude = %f and longitude = %f", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude);
     NSString *googleUrl = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=false&result_type=neighborhood%%7Clocality%%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude];
     NSURL *url = [[NSURL alloc] initWithString:googleUrl];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-
+    NSLog(@"request = %@", request);
     NSError *error = nil;
     NSURLResponse *response = nil;
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSLog(@"returnData = %@", returnData);
     if(error){
         NSLog(@"Error on getting location strings from google: %@",error);
         NSDictionary *emptyReturnDictionary = @{@"country":@"", @"state":@"", @"city":@"", @"neighborhood":@""};
@@ -226,6 +229,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     }
     NSError *errorJSON = nil;
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&errorJSON]; //TODO: app has crashed here
+    NSLog(@"dictionary = %@", dictionary);
     if(errorJSON){
         NSLog(@"Error on converting the returned data to a dictionary: %@", errorJSON);
         NSDictionary *emptyReturnDictionary = @{@"country":@"", @"state":@"", @"city":@"", @"neighborhood":@""};
@@ -233,27 +237,33 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     }
     
     NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
+    NSLog(@"formattedAddress = %@", formattedAddress);
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
+    NSLog(@"locationArray = %@", locationArray);
     
     NSMutableDictionary *locationStringDictionary = [[NSMutableDictionary alloc] init];
-    locationStringDictionary[@"Country"] = @"";
-    locationStringDictionary[@"State"] = @"";
-    locationStringDictionary[@"City"] = @"";
-    locationStringDictionary[@"Neighborhood"] = @"";
+    locationStringDictionary[@"country"] = @"";
+    locationStringDictionary[@"state"] = @"";
+    locationStringDictionary[@"city"] = @"";
+    locationStringDictionary[@"neighborhood"] = @"";
+    NSLog(@"locationStringDictionary = %@", locationStringDictionary);
     if([locationArray count] > 0){
+        NSLog(@"count > 0");
         locationStringDictionary[@"country"] = [locationArray[[locationArray count] - 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 1){
+        NSLog(@"count > 1");
         locationStringDictionary[@"state"] = [locationArray[[locationArray count] - 2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 2){
+        NSLog(@"count > 2");
         locationStringDictionary[@"city"] = [locationArray[[locationArray count] - 3] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
     if([locationArray count] > 3){
+        NSLog(@"count > 3");
         locationStringDictionary[@"neighborhood"] = [locationArray[[locationArray count] - 4] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     }
-
-    NSLog(@"locationStringDictionary = %@", locationStringDictionary);
+    NSLog(@"Now, locationStringDictionary = %@", locationStringDictionary);
 
     return locationStringDictionary;
 }
