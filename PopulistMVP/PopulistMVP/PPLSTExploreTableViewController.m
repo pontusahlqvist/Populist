@@ -365,7 +365,7 @@
     self.events = [newEventsArray mutableCopy];
     if([self.events count] > 0){
         //check to see if the best fit event has been updated. If so, push the change to the detailedVC
-        Event* bestEvent = [self.events objectAtIndex:0];
+        Event* bestEvent = [self.events firstObject];
         if(![self.currentEvent.eventId isEqualToString:bestEvent.eventId]){
             //the best fit event switched. We must handle this in the chatVC
             [self disableChatVCBecauseUserLeftIt];

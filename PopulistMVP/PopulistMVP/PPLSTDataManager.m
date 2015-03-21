@@ -538,6 +538,13 @@ int maxMessageLengthForPush = 1000;
         }
         
         newIncomingContribution.event = eventToWhichThisContributionBelongs;
+
+        if([newIncomingContribution.contributionType isEqualToString:@"photo"]){
+            //update the titleContribution
+            eventToWhichThisContributionBelongs.titleContribution = newIncomingContribution;
+            [self.delegate didUpdateTitleContributionForEvent:eventToWhichThisContributionBelongs];
+        }
+
         [self.pushDelegate didAddIncomingContribution:newIncomingContribution ForEvent:eventToWhichThisContributionBelongs];
         eventToWhichThisContributionBelongs.lastActive = newIncomingContribution.createdAt;
         [self.delegate didUpdateLastActiveForEvent:eventToWhichThisContributionBelongs];
