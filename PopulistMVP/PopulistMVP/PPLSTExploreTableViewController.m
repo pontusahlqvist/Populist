@@ -399,6 +399,7 @@
 }
 
 -(void) cleanUpEventsInBackground{
+    NSLog(@"PPLSTExploreTableViewController - cleanUpEventsInBackground");
     //set up a separate queue and context and then use those to delete the unused events from core data.
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
     ^{
@@ -406,9 +407,19 @@
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
             NSMutableArray *eventsToKeep = self.events;
+            NSLog(@"cleaning up events. Will want to add %@ with eventId = %@", self.previousCurrentEvent, self.previousCurrentEvent.eventId);
             if(self.previousCurrentEvent){
+                NSLog(@"adding the event to the list! Id = %@", self.previousCurrentEvent.eventId);
                 [eventsToKeep addObject:self.previousCurrentEvent];
             }
+            if(self.currentEvent && ![eventsToKeep containsObject:self.currentEvent]){
+                NSLog(@"adding currentEvent too. Id = %@", self.currentEvent.eventId);
+                [eventsToKeep addObject:self.currentEvent];
+            } else{
+                NSLog(@"didn't add the currentEvent. Note, self.currentEvent = %@ with id = %@", self.currentEvent, self.currentEvent.eventId);
+                NSLog(@"[eventsToKeep containsObject:self.currentEvent] = %i", [eventsToKeep containsObject:self.currentEvent]);
+            }
+            NSLog(@"done adding the events. Will now delete them.");
             [self.dataManager cleanUpUnusedDataForEventsNotIn:eventsToKeep inContext:context];
         }];
     });
