@@ -14,7 +14,7 @@
 @interface PPLSTExploreTableViewController ()
 @property (nonatomic) BOOL isDecelerating;
 @property (nonatomic) BOOL isDragging;
-
+@property (strong, nonatomic) Event *previousCurrentEvent; //intended to be used to avoid cleanup of an event that's currently in the chat view
 @end
 
 @implementation PPLSTExploreTableViewController
@@ -133,8 +133,10 @@
             if(![bestEvent.eventId isEqualToString:self.currentEvent.eventId]){
                 [self disableChatVCBecauseUserLeftIt];
             }
+            self.previousCurrentEvent = self.currentEvent;
             self.currentEvent = bestEvent;
         } else{
+            self.previousCurrentEvent = self.currentEvent;
             self.currentEvent = nil;
         }
     }
@@ -162,7 +164,8 @@
             }
         }
     }
-    self.currentEvent.containsUser = @0;
+    self.currentEvent.containsUser = @0; //TODO: should these changes be saved in context?
+    self.previousCurrentEvent = self.currentEvent;
     self.currentEvent = nil;
 }
 
@@ -177,7 +180,8 @@
             }
         }
     }
-    self.currentEvent.containsUser = @0;
+    self.currentEvent.containsUser = @0; //TODO: should these changes be saved in context?
+    self.previousCurrentEvent = self.currentEvent;
     self.currentEvent = nil;
 }
 
@@ -370,9 +374,11 @@
             //the best fit event switched. We must handle this in the chatVC
             [self disableChatVCBecauseUserLeftIt];
         }
+        self.previousCurrentEvent = self.currentEvent;
         self.currentEvent = bestEvent;
     } else{
         [self disableChatVCBecauseUserLeftIt];
+        self.previousCurrentEvent = self.currentEvent;
         self.currentEvent = nil;
     }
     [self removeInvisibleEvents];
@@ -399,7 +405,11 @@
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
-            [self.dataManager cleanUpUnusedDataForEventsNotIn:self.events inContext:context];
+            NSMutableArray *eventsToKeep = self.events;
+            if(self.previousCurrentEvent){
+                [eventsToKeep addObject:self.previousCurrentEvent];
+            }
+            [self.dataManager cleanUpUnusedDataForEventsNotIn:eventsToKeep inContext:context];
         }];
     });
 }
