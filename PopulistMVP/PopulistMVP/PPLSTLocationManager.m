@@ -13,6 +13,9 @@
 @property (strong, nonatomic) CLLocation *bestLocationDuringUpdate; //keeps track of the best location found during the update
 @property (strong, nonatomic) PPLSTUpdatingLocationView *updatingLocationView;
 @property (strong, nonatomic) NSDate *timeOfLastLocationCheck; //Note: different from timeOfLastUpdate since that has to do with actual clustering.
+//The following two keep track of the location sent to parse for tracking purposes
+@property (strong, nonatomic) CLLocation *lastLocationSentToParse;
+@property (strong, nonatomic) NSDate *timeOfLastLocationSentToParse;
 @end
 
 @implementation PPLSTLocationManager
@@ -30,6 +33,9 @@ float worstHorizontalAccuracyToEnableChat = 100.0; //meters - if accuracy falls 
 float maxWaitTimeForLocationUpdate = 20.0; //seconds - max wait time before we give up
 float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired accuracy
 
+//these parameters are for the location updates sent to parse to keep track of the user's location in case we want to send location targeted pushes
+float timeAfterParseLocationUpdateShouldOccur = 15;//30*60;
+float distanceMovedAfterParseLocationUpdateShouldOccur = 100.0;
 
 #pragma mark - Initialization
 
@@ -74,7 +80,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     CLLocation *newLocation = [locations lastObject];
     NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
     if(-[newLocation.timestamp timeIntervalSinceNow] < 5){ //if the new location is newer than 5s old, we're done.
-        if(!self.isUpdatingLocation){ //this means that this update must be a significant location change from the background. Just use it to update parse
+        if(!self.isUpdatingLocation && [self shouldSendLocationToParse]){ //this means that this update must be a significant location change from the background. Just use it to update parse
             [self sendLocationToParse:newLocation]; //TODO: should we place an accuracy resistriction here?
             return;
         }
@@ -90,7 +96,9 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
             self.bestLocationDuringUpdate = nil;
             [self setCurrentLocationStrings];//TODO: we don't really need to do this all the time, right?
             self.isUpdatingLocation = NO;
-            [self sendLocationToParse:self.currentLocation];
+            if([self shouldSendLocationToParse]){
+                [self sendLocationToParse:self.currentLocation];
+            }
             if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
                 [self.delegate locationUpdatedTo:self.bestLocationDuringUpdate From:oldLocation withPoorAccuracy:NO];
             } else{
@@ -101,11 +109,27 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     }
 }
 
+-(BOOL) shouldSendLocationToParse{
+    if(!self.timeOfLastLocationSentToParse || !self.lastLocationSentToParse){
+        return YES;
+    }
+    if([self timeBetween:self.timeOfLastLocationSentToParse and:[NSDate date]] > timeAfterParseLocationUpdateShouldOccur){
+        return YES;
+    }
+    if([self.currentLocation distanceFromLocation:self.lastLocationSentToParse] > distanceMovedAfterParseLocationUpdateShouldOccur){
+        return YES;
+    }
+    return NO;
+}
+
 -(void) sendLocationToParse:(CLLocation*)newLocation{
+    NSLog(@"PPLSTLocationManager - sendLocationToParse");
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setObject:[PFGeoPoint geoPointWithLatitude:self.currentLocation.coordinate.latitude longitude:self.currentLocation.coordinate.longitude] forKey:@"lastKnownLocation"];
     [currentInstallation setObject:[NSDate date] forKey:@"lastKnownLocationDate"];
     [currentInstallation saveInBackground];
+    self.lastLocationSentToParse = [self.currentLocation copy];
+    self.timeOfLastLocationSentToParse = [NSDate date];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
