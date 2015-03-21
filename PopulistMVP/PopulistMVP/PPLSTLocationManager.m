@@ -124,11 +124,15 @@ float distanceMovedAfterParseLocationUpdateShouldOccur = 100.0;
 
 -(void) sendLocationToParse:(CLLocation*)newLocation{
     NSLog(@"PPLSTLocationManager - sendLocationToParse");
+    if(!newLocation){
+        NSLog(@"newLocation = nil");
+        return;
+    }
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setObject:[PFGeoPoint geoPointWithLatitude:self.currentLocation.coordinate.latitude longitude:self.currentLocation.coordinate.longitude] forKey:@"lastKnownLocation"];
+    [currentInstallation setObject:[PFGeoPoint geoPointWithLatitude:newLocation.coordinate.latitude longitude:newLocation.coordinate.longitude] forKey:@"lastKnownLocation"];
     [currentInstallation setObject:[NSDate date] forKey:@"lastKnownLocationDate"];
     [currentInstallation saveInBackground];
-    self.lastLocationSentToParse = [self.currentLocation copy];
+    self.lastLocationSentToParse = [newLocation copy];
     self.timeOfLastLocationSentToParse = [NSDate date];
 }
 
