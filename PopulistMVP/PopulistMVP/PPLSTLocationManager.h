@@ -50,7 +50,7 @@
 -(BOOL) movedTooFarFromLocationOfLastUpdate;
 
 -(void) updateTimeOfLastUpdate:(NSDate*)newTimeOfLastUpdate;
--(BOOL) waitedToLongSinceTimeOfLastUpdate;
+-(BOOL) waitedTooLongSinceTimeOfLastUpdate;
 
 -(NSDictionary*) getLocationStringData;
 

@@ -2,4 +2,6 @@ Issues:
 -parse creates duplicate events even when not queried simultaneously - Reason: max number of events returned is 100. Then with the local and global, this becomes 200. Thus, since there are a lot of nearby events, it will sometimes not return the one that’s next to you. Must filter on last update I guess…
 -if 0.9 event is merged into another 0.9 event, neither show up in the exploreVC. Must update importance after merge.
 -titlephotos are sometimes empty for events without title image
+-double merges are still occurring. Maybe when two photos in two events are submitted almost at the same time. We might need to put some lock code on parse’s side. 
+-context issues as for a long time: issue occurs for reasonably well-understood reasons.
 

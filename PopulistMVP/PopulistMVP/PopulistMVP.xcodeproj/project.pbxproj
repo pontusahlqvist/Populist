@@ -82,6 +82,12 @@
 		165346E81A5F0DF500343183 /* PPLSTExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165346E71A5F0DF500343183 /* PPLSTExploreTableViewController.m */; };
 		16671E4D1A6C58FD00AD394F /* PPLSTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16671E4C1A6C58FD00AD394F /* PPLSTImagePickerController.m */; };
 		16671E501A6C5CE100AD394F /* PPLSTImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16671E4F1A6C5CE100AD394F /* PPLSTImageDetailViewController.m */; };
+		167B40831ABD0C3D00D4B579 /* chat bubble no convo 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40821ABD0C3D00D4B579 /* chat bubble no convo 3x.png */; };
+		167B40851ABD0C4400D4B579 /* chat bubble no convo 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40841ABD0C4400D4B579 /* chat bubble no convo 2x.png */; };
+		167B40871ABD0C4900D4B579 /* chat bubble no convo 1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40861ABD0C4900D4B579 /* chat bubble no convo 1x.png */; };
+		167B40891ABD0D2400D4B579 /* blank grey 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40881ABD0D2400D4B579 /* blank grey 3x.png */; };
+		167B408B1ABD0D2900D4B579 /* blank grey 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B408A1ABD0D2900D4B579 /* blank grey 2x.png */; };
+		167B408D1ABD0D2F00D4B579 /* blank grey 1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B408C1ABD0D2F00D4B579 /* blank grey 1x.png */; };
 		167F78951A58725E00C7AB64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78941A58725E00C7AB64 /* Foundation.framework */; };
 		167F78971A58725E00C7AB64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78961A58725E00C7AB64 /* CoreGraphics.framework */; };
 		167F78991A58725E00C7AB64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78981A58725E00C7AB64 /* UIKit.framework */; };
@@ -313,6 +319,12 @@
 		16671E4C1A6C58FD00AD394F /* PPLSTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTImagePickerController.m; sourceTree = "<group>"; };
 		16671E4E1A6C5CE100AD394F /* PPLSTImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTImageDetailViewController.h; sourceTree = "<group>"; };
 		16671E4F1A6C5CE100AD394F /* PPLSTImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTImageDetailViewController.m; sourceTree = "<group>"; };
+		167B40821ABD0C3D00D4B579 /* chat bubble no convo 3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat bubble no convo 3x.png"; sourceTree = "<group>"; };
+		167B40841ABD0C4400D4B579 /* chat bubble no convo 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat bubble no convo 2x.png"; sourceTree = "<group>"; };
+		167B40861ABD0C4900D4B579 /* chat bubble no convo 1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat bubble no convo 1x.png"; sourceTree = "<group>"; };
+		167B40881ABD0D2400D4B579 /* blank grey 3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 3x.png"; sourceTree = "<group>"; };
+		167B408A1ABD0D2900D4B579 /* blank grey 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 2x.png"; sourceTree = "<group>"; };
+		167B408C1ABD0D2F00D4B579 /* blank grey 1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 1x.png"; sourceTree = "<group>"; };
 		167F78911A58725E00C7AB64 /* PopulistMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopulistMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F78941A58725E00C7AB64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		167F78961A58725E00C7AB64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -895,6 +907,9 @@
 		16E619471A92E0D100FBAAB3 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				167B408C1ABD0D2F00D4B579 /* blank grey 1x.png */,
+				167B408A1ABD0D2900D4B579 /* blank grey 2x.png */,
+				167B40881ABD0D2400D4B579 /* blank grey 3x.png */,
 				16F7DAC51A724057003215E9 /* Populist60.png */,
 				16F7DAAB1A722A54003215E9 /* Populist120.png */,
 				16E619AC1AA27BE600FBAAB3 /* Populist180.png */,
@@ -910,6 +925,9 @@
 				16E6199C1AA2793800FBAAB3 /* compose32.png */,
 				16E6199E1AA2793D00FBAAB3 /* compose64.png */,
 				16E619A01AA2794200FBAAB3 /* compose96.png */,
+				167B40861ABD0C4900D4B579 /* chat bubble no convo 1x.png */,
+				167B40841ABD0C4400D4B579 /* chat bubble no convo 2x.png */,
+				167B40821ABD0C3D00D4B579 /* chat bubble no convo 3x.png */,
 			);
 			name = "Explore VC";
 			sourceTree = "<group>";
@@ -1052,6 +1070,7 @@
 				163E3DA91A64DD8000913FBF /* jsq_messages_icon.psd in Resources */,
 				1639C5491AB24A200023E70D /* closeWhite64.png in Resources */,
 				16F7DAC11A723E1C003215E9 /* grey.jpg in Resources */,
+				167B408B1ABD0D2900D4B579 /* blank grey 2x.png in Resources */,
 				16E619991AA2788900FBAAB3 /* accept50.png in Resources */,
 				167F78A11A58725E00C7AB64 /* InfoPlist.strings in Resources */,
 				16F7DABF1A723E1C003215E9 /* darkBlue.jpg in Resources */,
@@ -1064,6 +1083,7 @@
 				16E6195F1AA2632100FBAAB3 /* reverseCameraWhite108.png in Resources */,
 				16E6196D1AA265CB00FBAAB3 /* flashAutoWhite108.png in Resources */,
 				16E6196B1AA2652200FBAAB3 /* mappinDark96.png in Resources */,
+				167B40871ABD0C4900D4B579 /* chat bubble no convo 1x.png in Resources */,
 				163E3D9D1A64DD3600913FBF /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				16E6196F1AA265D100FBAAB3 /* flashAutoWhite72.png in Resources */,
 				163E3D7D1A64DD3600913FBF /* JSQMessagesViewController.xib in Resources */,
@@ -1079,6 +1099,7 @@
 				1639C5471AB24A190023E70D /* closeWhite32.png in Resources */,
 				16E619751AA265E700FBAAB3 /* flashOnWhite72.png in Resources */,
 				163E3D731A64DD3600913FBF /* JSQMessagesAssets.bundle in Resources */,
+				167B40891ABD0D2400D4B579 /* blank grey 3x.png in Resources */,
 				16E6198B1AA275AB00FBAAB3 /* camera40.png in Resources */,
 				16E619631AA2642000FBAAB3 /* flashOffWhite72.png in Resources */,
 				1639C54B1AB24A250023E70D /* closeWhite96.png in Resources */,
@@ -1114,11 +1135,14 @@
 				16E619651AA2642400FBAAB3 /* flashOffWhite108.png in Resources */,
 				163E3D911A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				16E6192A1A8589F900FBAAB3 /* flag.png in Resources */,
+				167B40851ABD0C4400D4B579 /* chat bubble no convo 2x.png in Resources */,
 				16E619A91AA27AF400FBAAB3 /* takePicture300.png in Resources */,
 				16888AAC1A7FE7B500AC4F60 /* cancel90.png in Resources */,
 				16E619AF1AA2AE9600FBAAB3 /* PlaceholderImage.png in Resources */,
 				16F3FF701A7C4A9A001BD00F /* launchImage5s.PNG in Resources */,
+				167B40831ABD0C3D00D4B579 /* chat bubble no convo 3x.png in Resources */,
 				16E6199F1AA2793D00FBAAB3 /* compose64.png in Resources */,
+				167B408D1ABD0D2F00D4B579 /* blank grey 1x.png in Resources */,
 				16888AAA1A7FE72E00AC4F60 /* accept100.png in Resources */,
 				163E3D931A64DD3600913FBF /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				16F7DAC01A723E1C003215E9 /* darkGreen.jpg in Resources */,

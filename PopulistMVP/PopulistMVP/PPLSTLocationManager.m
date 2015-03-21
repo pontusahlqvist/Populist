@@ -84,11 +84,11 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
         }
         if([self.bestLocationDuringUpdate horizontalAccuracy] <= desiredHorizontalAccuracy || ([self.bestLocationDuringUpdate horizontalAccuracy] <= acceptableHorizontalAccuracy && timeSinceStartedUpdating > maxWaitTimeForDesiredAccuracy) || timeSinceStartedUpdating >= maxWaitTimeForLocationUpdate){
             [self.locationManager stopUpdatingLocation];
-            [self.updatingLocationView removeFromSuperview];
+            [self.updatingLocationView removeFromSuperview]; //TODO: what if it wasn't added?
             CLLocation *oldLocation = self.currentLocation;
             self.currentLocation = self.bestLocationDuringUpdate;
             self.bestLocationDuringUpdate = nil;
-            [self setCurrentLocationStrings];
+            [self setCurrentLocationStrings];//TODO: we don't really need to do this all the time, right?
             self.isUpdatingLocation = NO;
             [self sendLocationToParse:self.currentLocation];
             if([self.currentLocation horizontalAccuracy] <= worstHorizontalAccuracyToEnableChat){
@@ -193,7 +193,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
     }
 }
 
--(BOOL) waitedToLongSinceTimeOfLastUpdate{
+-(BOOL) waitedTooLongSinceTimeOfLastUpdate{
     return [self waitedTooLongFrom:self.timeOfLastUpdate To:[NSDate date]];
 }
 

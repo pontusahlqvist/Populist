@@ -324,7 +324,7 @@
         [self.locationManager updateTimeOfLastUpdate:[NSDate date]];
         [self.locationManager updateLocationOfLastUpdate:self.locationManager.currentLocation];
         [self disableChatVCBecauseOfPoorLocation];
-    } else if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedToLongSinceTimeOfLastUpdate]){
+    } else if([self.locationManager movedTooFarFromLocationOfLastUpdate] || [self.locationManager waitedTooLongSinceTimeOfLastUpdate]){
         //The user moved too far from the old location or they waited to long to refresh, so we update the events
         [self.dataManager eventThatUserBelongsTo]; //note: this returns an event, but we'll deal with it on the dataManager delegate call
     }
