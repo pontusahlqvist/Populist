@@ -324,6 +324,9 @@ int maxMessageLengthForPush = 1000;
         PFFile *file = [parseContribution objectForKey:@"image"];
         NSData *parseImageData = [file getData];
         UIImage *image = [UIImage imageWithData:parseImageData];
+        if(!image){
+            return nil;
+        }
         contribution.imagePath = [self storeImage:image forContributionId:contribution.contributionId];
         contribution.contributingUserId = [parseContribution objectForKey:@"userId"];
         contribution.createdAt = parseContribution.createdAt;
@@ -740,7 +743,7 @@ int maxMessageLengthForPush = 1000;
         context.parentContext = self.context;
         [context performBlock:^{
             NSLog(@"About to download the media for this contribution");
-            [self downloadMediaForContribution:contribution inContext:self.context];//TODO: shouldn't this be context?
+            [self downloadMediaForContribution:contribution inContext:context];//TODO: shouldn't this be context?
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
                 if(cell.spinner){
@@ -750,10 +753,12 @@ int maxMessageLengthForPush = 1000;
                 }
                 if(contribution.imagePath){
                     cell.titleImageView.image = [self getImageWithFileName:contribution.imagePath];
-                } else{
+                } else if([[self.imagesInMemoryForContributionId allKeys] containsObject:contribution.contributionId]){
                     //for some reason the save must have failed. Let's look to memory to see if we can recover it.
                     NSLog(@"The save must have failed. Resorting to looking at the in-memory stuff: %@", self.imagesInMemoryForContributionId);
                     cell.titleImageView.image = self.imagesInMemoryForContributionId[contribution.contributionId];
+                } else{
+                    cell.titleImageView.image = [UIImage imageNamed:@"oopsImage"];
                 }
                 [cell.parentTableView reloadData];
             });
@@ -922,6 +927,9 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 /*this method gets the image at the given file path. If it has already been loaded, it gets it from memory, otherwise it loads it into memory. This avoids multiple calls to the filesystem which necessarily slows down the app.*/
 -(UIImage*) getImageWithFileName:(NSString*)fileName{
     NSLog(@"PPLSTDataManager - getImageWithFileName:%@",fileName);
+    if(!fileName){
+        return nil;
+    }
     if(![[self.imagesAtFilePath allKeys] containsObject:fileName] || !self.imagesAtFilePath[fileName]){
         NSLog(@"self.imageAtFilePath doesn't already contain the fileName or the filename is nil");
         NSString *filePath = [self filePathForImageWithFileName:fileName];
