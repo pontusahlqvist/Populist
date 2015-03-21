@@ -132,9 +132,9 @@
             Event *bestEvent = [self.events firstObject];
             if(![bestEvent.eventId isEqualToString:self.currentEvent.eventId]){
                 [self disableChatVCBecauseUserLeftIt];
+                self.previousCurrentEvent = self.currentEvent;
+                self.currentEvent = bestEvent;
             }
-            self.previousCurrentEvent = self.currentEvent;
-            self.currentEvent = bestEvent;
         } else{
             self.previousCurrentEvent = self.currentEvent;
             self.currentEvent = nil;
@@ -373,9 +373,9 @@
         if(![self.currentEvent.eventId isEqualToString:bestEvent.eventId]){
             //the best fit event switched. We must handle this in the chatVC
             [self disableChatVCBecauseUserLeftIt];
+            self.previousCurrentEvent = self.currentEvent;
+            self.currentEvent = bestEvent;
         }
-        self.previousCurrentEvent = self.currentEvent;
-        self.currentEvent = bestEvent;
     } else{
         [self disableChatVCBecauseUserLeftIt];
         self.previousCurrentEvent = self.currentEvent;
