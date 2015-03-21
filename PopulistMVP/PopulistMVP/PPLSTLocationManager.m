@@ -236,7 +236,7 @@ float maxWaitTimeForDesiredAccuracy = 5.0; //seconds - max wait time for desired
         return emptyReturnDictionary;
     }
     
-    NSString *formattedAddress = dictionary[@"results"][0][@"formatted_address"];
+    NSString *formattedAddress = [dictionary[@"results"] firstObject][@"formatted_address"];
     NSLog(@"formattedAddress = %@", formattedAddress);
     NSArray *locationArray = [formattedAddress componentsSeparatedByString:@","];
     NSLog(@"locationArray = %@", locationArray);

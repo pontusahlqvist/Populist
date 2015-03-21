@@ -497,7 +497,7 @@ int maxMessageLengthForPush = 1000;
         //trigger an update on the explore VC because the event that the user belongs to has changed
         [self.delegate updateEventsTo:events];
     }
-    return events[0];
+    return [events firstObject];
 }
 
 -(void) flagContribution:(Contribution*) contributionToBeFlagged{
@@ -818,7 +818,7 @@ int maxMessageLengthForPush = 1000;
         NSLog(@"Error: No event found in core data with eventId = %@",eventId);
         return nil;
     }
-    return returnedEvents[0];
+    return [returnedEvents firstObject];
 }
 
 //retreives a contribution object from core data
@@ -837,7 +837,7 @@ NSLog(@"getContributionFromCoreDataWithId - 4");
         return nil;
     }
 NSLog(@"getContributionFromCoreDataWithId - 5");
-    return returnedContributions[0];
+    return [returnedContributions firstObject];
 }
 
 //just saves the current state to core data

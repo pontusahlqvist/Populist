@@ -129,7 +129,7 @@
         self.events = [[self.dataManager sendSignalAndDownloadEventMetaDataWithInputLatitude:currentLocation.coordinate.latitude andLongitude:currentLocation.coordinate.longitude andDate:[NSDate date]] mutableCopy];
 
         if([self.events count] > 0){
-            Event *bestEvent = [self.events objectAtIndex:0];
+            Event *bestEvent = [self.events firstObject];
             if(![bestEvent.eventId isEqualToString:self.currentEvent.eventId]){
                 [self disableChatVCBecauseUserLeftIt];
             }
