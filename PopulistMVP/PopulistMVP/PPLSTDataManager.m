@@ -718,11 +718,7 @@ int maxMessageLengthForPush = 1000;
         cell.titleImageView.image = self.imagesInMemoryForContributionId[contribution.contributionId];
         return;
     }
-    //Just in case the dummy image was not saved in any way, we don't want it to end sending a request to parse, so we intercept it here
-    if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
-        cell.titleImageView.image = [UIImage imageNamed:@"PlaceholderImage"];
-        return;
-    }
+
     NSNumber *loading = self.isLoading[contribution.contributionId];
     NSLog(@"loading = %@", loading);
     if([loading isEqualToNumber:@1]){
