@@ -719,7 +719,11 @@ int maxMessageLengthForPush = 1000;
         cell.titleImageView.image = self.imagesInMemoryForContributionId[contribution.contributionId];
         return;
     }
-    
+    //Just in case the dummy image was not saved in any way, we don't want it to end sending a request to parse, so we intercept it here
+    if([[contribution.contributionId substringToIndex:5] isEqualToString:@"dummy"]){
+        cell.titleImageView.image = [UIImage imageNamed:@"PlaceholderImage"];
+        return;
+    }
     NSNumber *loading = self.isLoading[contribution.contributionId];
     NSLog(@"loading = %@", loading);
     if([loading isEqualToNumber:@1]){
@@ -741,7 +745,7 @@ int maxMessageLengthForPush = 1000;
         context.parentContext = self.context;
         [context performBlock:^{
             NSLog(@"About to download the media for this contribution");
-            [self downloadMediaForContribution:contribution inContext:self.context];
+            [self downloadMediaForContribution:contribution inContext:self.context];//TODO: shouldn't this be context?
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.isLoading[contribution.contributionId] = @0;
                 if(cell.spinner){
