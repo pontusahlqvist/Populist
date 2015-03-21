@@ -148,7 +148,9 @@
         return; //shouldn't be part of this event
     }
     [self handleUserId:newContribution.contributingUserId];
-    [self.contributions addObject:newContribution];
+    if(newContribution){
+        [self.contributions addObject:newContribution];
+    }
     [self.collectionView reloadData];
     [self scrollToBottomAnimated:YES];
 }
@@ -401,7 +403,9 @@
             }
             newMessage = [JSQMessage messageWithSenderId:contribution.contributingUserId displayName:@"asdf" media:photo];
         }
-        [messages addObject:newMessage];
+        if(newMessage){
+            [messages addObject:newMessage];
+        }
     }
     return messages;
 }
@@ -416,8 +420,9 @@
 
 -(void) handleNewContribution:(Contribution*)newContribution{
     NSLog(@"PPLSTChatViewController - handleNewContribution:%@", newContribution);
-    [self.contributions addObject:newContribution];
-    
+    if(newContribution){
+        [self.contributions addObject:newContribution];
+    }
     if([self.event.importance floatValue] < 1.0){
         [self.dataManager increaseImportanceOfEvent:self.event By:2.0];
     }
@@ -433,7 +438,9 @@
         self.statusForSenderId = [self.dataManager getStatusDictionaryForEvent:self.event];
         if([[self.statusForSenderId allKeys] containsObject:userId]){
             NSLog(@"about to add the userId to self.userIds");
-            [self.userIds addObject:userId]; //Note: if for some reason, the save of the object takes too long and the userId hasn't been added to the list yet, we'll make sure to pull the avatar next time.
+            if(userId){
+                [self.userIds addObject:userId]; //Note: if for some reason, the save of the object takes too long and the userId hasn't been added to the list yet, we'll make sure to pull the avatar next time.
+            }
         }
     }
 }

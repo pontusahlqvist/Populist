@@ -254,8 +254,9 @@ int maxMessageLengthForPush = 1000;
             }
             event.titleContribution = titleContribution;
         }
-
-        [events addObject:event];
+        if(event){
+            [events addObject:event];
+        }
     }
         
     [self saveCoreDataInContext:self.context];
@@ -290,7 +291,9 @@ int maxMessageLengthForPush = 1000;
         if([newContribution.contributionType isEqualToString:@"message"]){
             newContribution.message = contributionData[@"message"];
         }
-        [contributions addObject:newContribution];
+        if(newContribution){
+            [contributions addObject:newContribution];
+        }
     }
     [self saveCoreDataInContext:context];
     
@@ -440,8 +443,9 @@ int maxMessageLengthForPush = 1000;
                     contribution.contributionId = objectId;
                 }
             }
-            [self.contributionIds addObject:objectId];
-            
+            if(objectId){
+                [self.contributionIds addObject:objectId];
+            }
             contribution.createdAt = parseContribution.createdAt;
 
             //send push notification
@@ -519,7 +523,9 @@ int maxMessageLengthForPush = 1000;
     }
     NSString *contributionId = data[@"c"];
     if(![self.contributionIds containsObject:contributionId]){
-        [self.contributionIds addObject:contributionId];
+        if(contributionId){
+            [self.contributionIds addObject:contributionId];
+        }
         //it's a new contribution
         Contribution *newIncomingContribution = [self createContributionWithId:contributionId inContext:self.context];
         newIncomingContribution.contributingUserId = data[@"u"];
@@ -565,10 +571,14 @@ int maxMessageLengthForPush = 1000;
     //update channels for push notifications
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     if([[currentInstallation objectForKey:@"channels"] containsObject:[@"merge" stringByAppendingString:oldEventId]]){
-        [currentInstallation addObject:[@"merge" stringByAppendingString:newEventId] forKey:@"channels"];
+        if(newEventId){
+            [currentInstallation addObject:[@"merge" stringByAppendingString:newEventId] forKey:@"channels"];
+        }
     }
     if([[currentInstallation objectForKey:@"channels"] containsObject:[@"event" stringByAppendingString:oldEventId]]){
-        [currentInstallation addObject:[@"event" stringByAppendingString:newEventId] forKey:@"channels"];
+        if(newEventId){
+            [currentInstallation addObject:[@"event" stringByAppendingString:newEventId] forKey:@"channels"];
+        }
     }
     [currentInstallation save];
     
@@ -631,7 +641,9 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:%@ inContext:%@",eventsToKeep, context);
     NSMutableArray *eventIdsToKeep = [[NSMutableArray alloc] init];
     for (Event *event in eventsToKeep) {
-        [eventIdsToKeep addObject:event.eventId];
+        if(event.eventId){
+            [eventIdsToKeep addObject:event.eventId];
+        }
     }
     //retrieve all the events from core data not in the array passed in
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
@@ -850,7 +862,9 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 //creates a new contribution with a given id
 -(Contribution*) createContributionWithId:(NSString*)contributionId inContext:(NSManagedObjectContext*)context{
     NSLog(@"PPLSTDataManager - createContributionWithId:%@",contributionId);
-    [self.contributionIds addObject:contributionId]; //keep track of which objects are currently being stored
+    if(contributionId){
+        [self.contributionIds addObject:contributionId]; //keep track of which objects are currently being stored
+    }
     Contribution *contribution = [NSEntityDescription insertNewObjectForEntityForName:@"Contribution" inManagedObjectContext:context];
     contribution.contributionId = contributionId;
     [self saveCoreDataInContext:context];
