@@ -207,7 +207,6 @@ int maxMessageLengthForPush = 1000;
     NSDictionary *result = [PFCloud  callFunction:@"getClusters" withParameters:@{@"latitude": [NSNumber numberWithFloat:latitude], @"longitude": [NSNumber numberWithFloat:longitude]}];
     NSArray *eventDataArray = result[@"customClusterObjects"];
 
-
     NSMutableArray *events = [[NSMutableArray alloc] init];
     for(NSDictionary *eventDictionary in eventDataArray){
         NSLog(@"eventDictionary = %@", eventDictionary);

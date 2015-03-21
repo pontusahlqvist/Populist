@@ -406,7 +406,7 @@
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         context.parentContext = self.dataManager.context;
         [context performBlock:^{
-            NSMutableArray *eventsToKeep = self.events;
+            NSMutableArray *eventsToKeep = [self.events mutableCopy];
             NSLog(@"cleaning up events. Will want to add %@ with eventId = %@", self.previousCurrentEvent, self.previousCurrentEvent.eventId);
             if(self.previousCurrentEvent){
                 NSLog(@"adding the event to the list! Id = %@", self.previousCurrentEvent.eventId);
