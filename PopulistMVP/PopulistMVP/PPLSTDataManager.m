@@ -114,16 +114,16 @@ int maxMessageLengthForPush = 1000;
 -(void) createAvatarForStatusDictionary{
     NSLog(@"PPLSTDataManager - createAvatarForStatusDictionary");
 
-    self.avatarImageSourceForStatus[@0] = @"gold.jpg";
-    self.avatarImageSourceForStatus[@1] = @"salmon.jpg";
-    self.avatarImageSourceForStatus[@2] = @"lightBlue.jpg";
-    self.avatarImageSourceForStatus[@3] = @"darkGreen.jpg";
-    self.avatarImageSourceForStatus[@4] = @"lightGreen.jpg";
-    self.avatarImageSourceForStatus[@5] = @"purple.png";
-    self.avatarImageSourceForStatus[@6] = @"red.jpg";
-    self.avatarImageSourceForStatus[@7] = @"black.png";
-    self.avatarImageSourceForStatus[@8] = @"orange.jpg";
-    self.avatarImageSourceForStatus[@9] = @"grey.jpg";
+    self.avatarImageSourceForStatus[@0] = @"darkBlue";
+    self.avatarImageSourceForStatus[@1] = @"yellow";
+    self.avatarImageSourceForStatus[@2] = @"lightBlue";
+    self.avatarImageSourceForStatus[@3] = @"darkOrange";
+    self.avatarImageSourceForStatus[@4] = @"khaki";
+    self.avatarImageSourceForStatus[@5] = @"red";
+    self.avatarImageSourceForStatus[@6] = @"brightBlue";
+    self.avatarImageSourceForStatus[@7] = @"darkTeal";
+    self.avatarImageSourceForStatus[@8] = @"purple";
+    self.avatarImageSourceForStatus[@9] = @"pink";
 
     NSArray *firstLetter = [NSArray arrayWithObjects: @"", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
     NSArray *secondLetter = [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil];
