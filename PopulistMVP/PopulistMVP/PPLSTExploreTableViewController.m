@@ -459,15 +459,39 @@
     NSLog(@"self.location: -%@-%@-%@-%@",self.locationManager.country,self.locationManager.state,self.locationManager.city,self.locationManager.neighborhood);
     NSLog(@"event.location: -%@-%@-%@-%@",eventCountry, eventState, eventCity, eventNeighborhood);
     
+    NSString *stringToReturn = @"";
     if(([eventNeighborhood isEqualToString:self.locationManager.neighborhood] && ![eventNeighborhood isEqualToString:@""]) || ([eventCity isEqualToString:self.locationManager.city] && ![eventCity isEqualToString:@""])){
-        return event.neighborhood;
+        stringToReturn = event.neighborhood;
     } else if([eventState isEqualToString:self.locationManager.state] && ![eventState isEqualToString:@""]){
-        return event.city;
+        stringToReturn = event.city;
     } else if([eventCountry isEqualToString:self.locationManager.country] && ![eventCountry isEqualToString:@""]){
-        return [NSString stringWithFormat:@"%@, %@", event.city, event.state];
+        stringToReturn = [NSString stringWithFormat:@"%@, %@", event.city, event.state];
     } else{
-        return event.country;
+        stringToReturn = event.country;
     }
+
+    if([stringToReturn isEqualToString:@""] || !stringToReturn){
+        //as a backup, in case it failed we replace the string with distance
+        float latitude = [event.latitude floatValue];
+        float longitude = [event.longitude floatValue];
+        float distance = [self.locationManager.currentLocation distanceFromLocation:[[CLLocation alloc] initWithLatitude:latitude longitude:longitude]]/1609.0;
+        if(distance < 0.189){ // 0.189miles = 1000ft
+            float feetAway = distance*5280.0;
+            if(feetAway < 100){ //two digits - round to nearest 10ft.
+                stringToReturn = @"within 100 feet";
+            } else if(feetAway < 1000){ //three digits - round to nearest 50 ft.
+                feetAway = [[NSString stringWithFormat:@"%.0f",feetAway*2.0/100.0] floatValue]*100.0/2.0;
+                stringToReturn = [NSString stringWithFormat:@"%.0f feet away",feetAway];
+            }
+        } else if(distance < 10.0){
+            stringToReturn = [NSString stringWithFormat:@"%.1f miles away",distance];
+        } else if(distance < 100.0){
+            stringToReturn = [NSString stringWithFormat:@"%.0f miles away",distance];
+        } else{
+            stringToReturn = @"trending globally";
+        }
+    }
+    return stringToReturn;
 }
 
 @end
