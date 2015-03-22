@@ -464,10 +464,10 @@ Parse.Cloud.afterSave("Contribution", function(request){
 Parse.Cloud.define("createNewEmptyCluster", function(request, response){
     //grab the submitted data
     var location = new Parse.GeoPoint({latitude: request.params.latitude, longitude: request.params.longitude});
-    var country = request.params.country;
-    var state = request.params.state;
-    var city = request.params.city;
-    var neighborhood = request.params.neighborhood;
+//    var country = request.params.country;
+//    var state = request.params.state;
+//    var city = request.params.city;
+//    var neighborhood = request.params.neighborhood;
     
     //create a new cluster
     var newCluster = new Parse.Object("FlatCluster");
@@ -495,11 +495,11 @@ Parse.Cloud.define("createNewEmptyCluster", function(request, response){
     newCluster.set("alpha",alpha);
     newCluster.set("beta",beta);
 
-    //set location strings
-    newCluster.set("country", country);
-    newCluster.set("state", state);
-    newCluster.set("city", city);
-    newCluster.set("neighborhood", neighborhood);
+    //set location strings - for backward compatibility so that those who expect these don't crash. Will remove at some point.
+    newCluster.set("country", " ");
+    newCluster.set("state", " ");
+    newCluster.set("city", " ");
+    newCluster.set("neighborhood", " ");
 
     newCluster.save({
         success: function(){

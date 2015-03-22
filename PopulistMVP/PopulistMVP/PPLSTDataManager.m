@@ -146,10 +146,9 @@ int maxMessageLengthForPush = 1000;
 
 -(PFObject*) sendSignalWithLatitude:(float)latitude andLongitude:(float)longitude andDate:(NSDate*)date{
     NSLog(@"PPLSTDataManager - sendSignalWithLatitude:%f andLongitude:%f andDate:%@", latitude, longitude, date);
-    NSDictionary *locationDataDictionary = [self.locationManager getLocationStringData];
     NSLog(@"Right before creating the parameter dictionary. Here are the parameters:");
-    NSLog(@"latitude: %f, longitude: %f, locationDataDictionary: %@, locationDataDictionary[country]: %@, locationDataDictionary[state]: %@, locationDataDictionary[city]: %@, locationDataDictionary[neighborhood]: %@.", longitude, latitude, locationDataDictionary, locationDataDictionary[@"country"], locationDataDictionary[@"state"], locationDataDictionary[@"city"], locationDataDictionary[@"neighborhood"]);
-    NSDictionary *parameterDictionary = @{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude], @"country":locationDataDictionary[@"country"], @"state":locationDataDictionary[@"state"], @"city":locationDataDictionary[@"city"], @"neighborhood":locationDataDictionary[@"neighborhood"]};
+    NSLog(@"latitude: %f, longitude: %f", longitude, latitude);
+    NSDictionary *parameterDictionary = @{@"latitude":[NSNumber numberWithDouble:latitude], @"longitude": [NSNumber numberWithDouble:longitude]};
     PFObject *newEvent = [PFCloud callFunction:@"createNewEmptyCluster" withParameters:parameterDictionary];
     return newEvent;
 }
@@ -169,15 +168,11 @@ int maxMessageLengthForPush = 1000;
         PFObject *newEvent = [self sendSignalWithLatitude:latitude andLongitude:longitude andDate:date];
         NSString *eventId = newEvent.objectId;
         Event *currentEvent = [self createEventWithId:eventId inContext:self.context];
-        currentEvent.city = [newEvent objectForKey:@"city"];
-        currentEvent.country = [newEvent objectForKey:@"country"];
         currentEvent.containsUser = @1;
         currentEvent.importance = [newEvent objectForKey:@"importance"];
         currentEvent.lastActive = [newEvent objectForKey:@"updatedAt"];
         currentEvent.latitude = [NSNumber numberWithFloat:latitude];
         currentEvent.longitude = [NSNumber numberWithFloat:longitude];
-        currentEvent.neighborhood = [newEvent objectForKey:@"neighborhood"];
-        currentEvent.state = [newEvent objectForKey:@"state"];
         
         Contribution *titleContribution = [self newDummyTitleContribution];
         //Set relationship
@@ -215,15 +210,11 @@ int maxMessageLengthForPush = 1000;
         Event *event = [self getEventFromCoreDataWithId:eventId inContext:self.context];
         if(!event) event = [self createEventWithId:eventId inContext:self.context];
         
-        event.city = eventDictionary[@"city"];
         event.containsUser = [NSNumber numberWithBool:[eventDictionary[@"containsUser"] boolValue]]; //@"YES" gets converted to YES.
-        event.country = eventDictionary[@"country"];
         event.importance = eventDictionary[@"importance"];
         event.lastActive = eventDictionary[@"updatedAt"];
         event.latitude = eventDictionary[@"latitude"];
         event.longitude = eventDictionary[@"longitude"];
-        event.neighborhood = eventDictionary[@"neighborhood"];
-        event.state = eventDictionary[@"state"];
 
         //TODO: Note that when the event only has messages, it's possible that event.titleContribution = nil AND titleContributionId = nil. Then perhaps the following will still evaluate to true since maybe [nil isEqualToString:nil] probably evaluates to false. Then we'll start creating new titleContributions each time we refresh. We must therefore add here && (titleContributionId || event.titleContribution) which together with what's already there equates to requiring titleContributionId != nil.
         NSString *titleContributionId = eventDictionary[@"titlePhotoId"];

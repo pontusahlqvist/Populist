@@ -13,21 +13,17 @@
         <relationship name="parentEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="titleContribution" inverseEntity="Event" syncable="YES"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES">
-        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="containsUser" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="importance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="lastActive" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="neighborhood" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="contributions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contribution" inverseName="event" inverseEntity="Contribution" syncable="YES"/>
         <relationship name="titleContribution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contribution" inverseName="parentEvent" inverseEntity="Contribution" syncable="YES"/>
     </entity>
     <elements>
         <element name="Contribution" positionX="2977" positionY="1125" width="128" height="193"/>
-        <element name="Event" positionX="2646" positionY="1080" width="128" height="223"/>
+        <element name="Event" positionX="2646" positionY="1080" width="128" height="165"/>
     </elements>
 </model>

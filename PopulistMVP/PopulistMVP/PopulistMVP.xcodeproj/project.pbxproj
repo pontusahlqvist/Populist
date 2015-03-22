@@ -88,6 +88,8 @@
 		167B40891ABD0D2400D4B579 /* blank grey 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40881ABD0D2400D4B579 /* blank grey 3x.png */; };
 		167B408B1ABD0D2900D4B579 /* blank grey 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B408A1ABD0D2900D4B579 /* blank grey 2x.png */; };
 		167B408D1ABD0D2F00D4B579 /* blank grey 1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B408C1ABD0D2F00D4B579 /* blank grey 1x.png */; };
+		167B40901ABE594400D4B579 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B408F1ABE594400D4B579 /* Event.m */; };
+		167B40931ABE594500D4B579 /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B40921ABE594500D4B579 /* Contribution.m */; };
 		167F78951A58725E00C7AB64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78941A58725E00C7AB64 /* Foundation.framework */; };
 		167F78971A58725E00C7AB64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78961A58725E00C7AB64 /* CoreGraphics.framework */; };
 		167F78991A58725E00C7AB64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78981A58725E00C7AB64 /* UIKit.framework */; };
@@ -166,8 +168,6 @@
 		16F7DAC21A723E1C003215E9 /* lightBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DABD1A723E1C003215E9 /* lightBlue.jpg */; };
 		16F7DAC31A723E1C003215E9 /* salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DABE1A723E1C003215E9 /* salmon.jpg */; };
 		16F7DAC61A724057003215E9 /* Populist60.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7DAC51A724057003215E9 /* Populist60.png */; };
-		16F7DAD71A78031C003215E9 /* Contribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAD61A78031C003215E9 /* Contribution.m */; };
-		16F7DADA1A78031C003215E9 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7DAD91A78031C003215E9 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +325,10 @@
 		167B40881ABD0D2400D4B579 /* blank grey 3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 3x.png"; sourceTree = "<group>"; };
 		167B408A1ABD0D2900D4B579 /* blank grey 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 2x.png"; sourceTree = "<group>"; };
 		167B408C1ABD0D2F00D4B579 /* blank grey 1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank grey 1x.png"; sourceTree = "<group>"; };
+		167B408E1ABE594400D4B579 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		167B408F1ABE594400D4B579 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		167B40911ABE594500D4B579 /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contribution.h; sourceTree = "<group>"; };
+		167B40921ABE594500D4B579 /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contribution.m; sourceTree = "<group>"; };
 		167F78911A58725E00C7AB64 /* PopulistMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopulistMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F78941A58725E00C7AB64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		167F78961A58725E00C7AB64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -413,10 +417,6 @@
 		16F7DABD1A723E1C003215E9 /* lightBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightBlue.jpg; sourceTree = "<group>"; };
 		16F7DABE1A723E1C003215E9 /* salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmon.jpg; sourceTree = "<group>"; };
 		16F7DAC51A724057003215E9 /* Populist60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Populist60.png; sourceTree = "<group>"; };
-		16F7DAD51A78031C003215E9 /* Contribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contribution.h; path = ../Contribution.h; sourceTree = "<group>"; };
-		16F7DAD61A78031C003215E9 /* Contribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contribution.m; path = ../Contribution.m; sourceTree = "<group>"; };
-		16F7DAD81A78031C003215E9 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
-		16F7DAD91A78031C003215E9 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -653,10 +653,10 @@
 				16F7DAA81A717CE5003215E9 /* PPLSTLocationManager.h */,
 				16F7DAA91A717CE5003215E9 /* PPLSTLocationManager.m */,
 				167F78A81A58725E00C7AB64 /* PopulistMVP.xcdatamodeld */,
-				16F7DAD81A78031C003215E9 /* Event.h */,
-				16F7DAD91A78031C003215E9 /* Event.m */,
-				16F7DAD51A78031C003215E9 /* Contribution.h */,
-				16F7DAD61A78031C003215E9 /* Contribution.m */,
+				167B40911ABE594500D4B579 /* Contribution.h */,
+				167B40921ABE594500D4B579 /* Contribution.m */,
+				167B408E1ABE594400D4B579 /* Event.h */,
+				167B408F1ABE594400D4B579 /* Event.m */,
 			);
 			name = "Model / Core Data";
 			sourceTree = "<group>";
@@ -1179,7 +1179,6 @@
 				16E6191F1A855B6500FBAAB3 /* PPLSTReportView.m in Sources */,
 				163E3D7F1A64DD3600913FBF /* JSQMessagesBubbleImageFactory.m in Sources */,
 				163E3D851A64DD3600913FBF /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
-				16F7DAD71A78031C003215E9 /* Contribution.m in Sources */,
 				16E6193B1A8EC23300FBAAB3 /* PPLSTMutableDictionary.m in Sources */,
 				16E619421A91305700FBAAB3 /* PPLSTUUID.m in Sources */,
 				163E3D761A64DD3600913FBF /* NSString+JSQMessages.m in Sources */,
@@ -1193,6 +1192,7 @@
 				167F78AA1A58725E00C7AB64 /* PopulistMVP.xcdatamodeld in Sources */,
 				163E3D811A64DD3600913FBF /* JSQMessagesTimestampFormatter.m in Sources */,
 				163E3D891A64DD3600913FBF /* JSQMessagesAvatarImage.m in Sources */,
+				167B40901ABE594400D4B579 /* Event.m in Sources */,
 				16671E4D1A6C58FD00AD394F /* PPLSTImagePickerController.m in Sources */,
 				163E3D781A64DD3600913FBF /* UIDevice+JSQMessages.m in Sources */,
 				167F78A71A58725E00C7AB64 /* PPLSTAppDelegate.m in Sources */,
@@ -1200,7 +1200,6 @@
 				167F78A31A58725E00C7AB64 /* main.m in Sources */,
 				163E3D7E1A64DD3600913FBF /* JSQMessagesAvatarImageFactory.m in Sources */,
 				16E6192D1A89252F00FBAAB3 /* PPLSTUpdatingLocationView.m in Sources */,
-				16F7DADA1A78031C003215E9 /* Event.m in Sources */,
 				163E3D751A64DD3600913FBF /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				163E3D8E1A64DD3600913FBF /* JSQMessagesCollectionView.m in Sources */,
 				163E3D7A1A64DD3600913FBF /* UIView+JSQMessages.m in Sources */,
@@ -1208,6 +1207,7 @@
 				163E3D9A1A64DD3600913FBF /* JSQMessagesToolbarContentView.m in Sources */,
 				163E3D861A64DD3600913FBF /* JSQLocationMediaItem.m in Sources */,
 				163E3D941A64DD3600913FBF /* JSQMessagesComposerTextView.m in Sources */,
+				167B40931ABE594500D4B579 /* Contribution.m in Sources */,
 				163E3D8D1A64DD3600913FBF /* JSQMessagesCellTextView.m in Sources */,
 				167F78D11A5876C000C7AB64 /* PPLSTEventTableViewCell.m in Sources */,
 				163E3D881A64DD3600913FBF /* JSQMessage.m in Sources */,

@@ -2,7 +2,7 @@
 //  Contribution.h
 //  PopulistMVP
 //
-//  Created by Pontus Ahlqvist on 1/27/15.
+//  Created by Pontus Ahlqvist on 3/21/15.
 //  Copyright (c) 2015 PontusAhlqvist. All rights reserved.
 //
 
@@ -17,11 +17,10 @@
 @property (nonatomic, retain) NSString * contributionId;
 @property (nonatomic, retain) NSString * contributionType;
 @property (nonatomic, retain) NSDate * createdAt;
-@property (nonatomic, retain) NSString * iconId;
 @property (nonatomic, retain) NSString * imagePath;
-@property (nonatomic, retain) NSString * message;
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSNumber * longitude;
+@property (nonatomic, retain) NSString * message;
 @property (nonatomic, retain) Event *event;
 @property (nonatomic, retain) Event *parentEvent;
 

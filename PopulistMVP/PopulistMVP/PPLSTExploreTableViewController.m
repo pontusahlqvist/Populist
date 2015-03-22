@@ -446,30 +446,12 @@
     }
 }
 
-//returns location string relevant to this user (e.g. neighborhood if in the same city but only country if on the other side of the world)
+//returns location string relevant to this user (e.g. distance or trending globally etc)
 -(NSString *) locationStringForEvent:(Event*)event{
     if([self.locationManager veryNearEvent:event]){
         return @"Here";
     }
-    NSString *eventNeighborhood = [event.neighborhood stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *eventCity = [event.city stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *eventState = [event.state stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *eventCountry = [event.country stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-
-    NSLog(@"self.location: -%@-%@-%@-%@",self.locationManager.country,self.locationManager.state,self.locationManager.city,self.locationManager.neighborhood);
-    NSLog(@"event.location: -%@-%@-%@-%@",eventCountry, eventState, eventCity, eventNeighborhood);
-    
     NSString *stringToReturn = @"";
-    if(([eventNeighborhood isEqualToString:self.locationManager.neighborhood] && ![eventNeighborhood isEqualToString:@""]) || ([eventCity isEqualToString:self.locationManager.city] && ![eventCity isEqualToString:@""])){
-        stringToReturn = event.neighborhood;
-    } else if([eventState isEqualToString:self.locationManager.state] && ![eventState isEqualToString:@""]){
-        stringToReturn = event.city;
-    } else if([eventCountry isEqualToString:self.locationManager.country] && ![eventCountry isEqualToString:@""]){
-        stringToReturn = [NSString stringWithFormat:@"%@, %@", event.city, event.state];
-    } else{
-        stringToReturn = event.country;
-    }
-
     if([stringToReturn isEqualToString:@""] || !stringToReturn){
         //as a backup, in case it failed we replace the string with distance
         float latitude = [event.latitude floatValue];

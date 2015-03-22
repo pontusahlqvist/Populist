@@ -35,10 +35,6 @@
 @property (strong, nonatomic) CLLocation *locationOfLastUpdate; //the location at which the last clustering was done
 @property (strong, nonatomic) NSDate *timeOfLastUpdate; //the time at which the last clustering was done
 @property (strong, nonatomic) CLLocation *currentLocation;
-@property (strong, nonatomic) NSString *country;
-@property (strong, nonatomic) NSString *state;
-@property (strong, nonatomic) NSString *city;
-@property (strong, nonatomic) NSString *neighborhood;
 
 #pragma mark - Public API
 
