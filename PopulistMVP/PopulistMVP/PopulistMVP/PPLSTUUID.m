@@ -90,7 +90,8 @@ static CFMutableDictionaryRef CreateKeychainQueryDictionary(void)
 #if TARGET_IPHONE_SIMULATOR
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-	return [[UIDevice currentDevice] uniqueIdentifier];
+//	return [[UIDevice currentDevice] uniqueIdentifier];
+	return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 #pragma clang diagnostic pop
 #endif
 	CFUUIDRef uuidRef = CFUUIDCreate(NULL);

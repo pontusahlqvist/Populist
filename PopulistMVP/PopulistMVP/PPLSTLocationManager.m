@@ -80,8 +80,10 @@ float distanceMovedAfterParseLocationUpdateShouldOccur = 100.0;
     CLLocation *newLocation = [locations lastObject];
     NSLog(@"locationManager didUpdateLocation lastObject = %@, accuracy = %f", newLocation, [newLocation horizontalAccuracy]);
     if(-[newLocation.timestamp timeIntervalSinceNow] < 5){ //if the new location is newer than 5s old, we're done.
-        if(!self.isUpdatingLocation && [self shouldSendLocationToParse]){ //this means that this update must be a significant location change from the background. Just use it to update parse
-            [self sendLocationToParse:newLocation]; //TODO: should we place an accuracy resistriction here?
+        if(!self.isUpdatingLocation){ //this means that this update must be a significant location change from the background. Use it at most to update parse
+            if([self shouldSendLocationToParse]){
+                [self sendLocationToParse:newLocation]; //TODO: should we place an accuracy resistriction here?
+            }
             return;
         }
         float timeSinceStartedUpdating = -[self.startedUpdatingLocationAt timeIntervalSinceNow];

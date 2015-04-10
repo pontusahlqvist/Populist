@@ -1360,8 +1360,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "bc1169fb-523f-4d93-a1bd-ec193f0bb232";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "2b5d3a8b-ce6b-422d-b775-344ba25b27fa";
+				SDKROOT = iphoneos8.2;
 			};
 			name = Debug;
 		};
@@ -1393,8 +1393,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "bc1169fb-523f-4d93-a1bd-ec193f0bb232";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "2b5d3a8b-ce6b-422d-b775-344ba25b27fa";
+				SDKROOT = iphoneos8.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1414,7 +1414,7 @@
 				GCC_PREFIX_HEADER = "PopulistMVP/PopulistMVP-Prefix.pch";
 				INFOPLIST_FILE = "PopulistMVP/PopulistMVP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bc1169fb-523f-4d93-a1bd-ec193f0bb232";
+				PROVISIONING_PROFILE = "2b5d3a8b-ce6b-422d-b775-344ba25b27fa";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1435,7 +1435,7 @@
 				GCC_PREFIX_HEADER = "PopulistMVP/PopulistMVP-Prefix.pch";
 				INFOPLIST_FILE = "PopulistMVP/PopulistMVP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bc1169fb-523f-4d93-a1bd-ec193f0bb232";
+				PROVISIONING_PROFILE = "2b5d3a8b-ce6b-422d-b775-344ba25b27fa";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

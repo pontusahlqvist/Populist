@@ -62,19 +62,19 @@ var minuteCutoffMerge = 60*1;
 
 //var minuteCutoffGetLocal = 1;
 //var minuteCutoffGetGlobal = 1;
-var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
+var minuteCutoffGetLocal = 60*24*7*10*5;//60*24*7;
 var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
 
 var maxMilesToAdd = 0.5;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
-var minLocalFitValue = 1.0;
+var minLocalFitValue = 0.1;
 var minGlobalFitValue = 1.0;
 //local stuff
 var localGettingMilesCutoff = 10;
-var typicalDistanceForGettingLocal = 10;
+var typicalDistanceForGettingLocal = 20;
 //var secondDecayForLocalGetting = 60;
-var secondDecayForLocalGetting = 60*60*24*7*10;//60*60*8; //typical time decay for finding a nearby cluster (since last update).
+var secondDecayForLocalGetting = 60*60*24*7*10*50;//60*60*8; //typical time decay for finding a nearby cluster (since last update).
 
 //global stuff
 //var secondDecayForGlobalGetting = 60;
@@ -765,7 +765,7 @@ function filterAndOrderClusters(baseData, clusters){
             newCustomClusterObject["importance"] = Math.floor(importance);
             newCustomClusterObject["latitude"] = cluster.get("location").latitude;
             newCustomClusterObject["longitude"] = cluster.get("location").longitude;
-            newCustomClusterObject["updatedAt"] = cluster.updatedAt;
+            newCustomClusterObject["updatedAt"] = cluster.get("tk");//cluster.updatedAt;
             newCustomClusterObject["country"] = cluster.get("country");
             newCustomClusterObject["city"] = cluster.get("city");
             newCustomClusterObject["state"] = cluster.get("state");
