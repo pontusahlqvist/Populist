@@ -185,6 +185,26 @@
     self.currentEvent = nil;
 }
 
+-(Event*) getEventInChatVC{
+    NSLog(@"PPLSTExploreTableViewController - getEventIdInChatVC");
+    Event *eventInChatVC = nil;
+    NSInteger myVCIndex = [self.navigationController.viewControllers indexOfObject:self];
+    if([self.navigationController.viewControllers count] > myVCIndex+1){
+        //this means that another vc sits ontop of the exploreVC
+        UIViewController *nextVC = self.navigationController.viewControllers[myVCIndex+1];
+        if([nextVC isKindOfClass:[PPLSTChatViewController class]]){
+            eventInChatVC = [(PPLSTChatViewController*)nextVC event];
+        } else{
+            NSLog(@"While there is another VC sitting on top of the current VC, it's not of the ChatVC type and so we can't get the currentEventId");
+            NSLog(@"Instead it's of class %@", [[nextVC class] description]);
+        }
+    } else{
+        NSLog(@"There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view");
+    }
+    NSLog(@"returning the event Id %@", eventInChatVC);
+    return eventInChatVC;
+}
+
 
 -(void) updateEvents{
     NSLog(@"updateEvents");
@@ -411,6 +431,11 @@
             if(self.previousCurrentEvent){
                 NSLog(@"adding the event to the list! Id = %@", self.previousCurrentEvent.eventId);
                 [eventsToKeep addObject:self.previousCurrentEvent];
+            }
+            Event *eventInChatVC = [self getEventInChatVC];
+            if(eventInChatVC){
+                NSLog(@"adding the event from the chatVC to the list: %@ with id = %@", eventInChatVC, eventInChatVC.eventId);
+                [eventsToKeep addObject:eventInChatVC];
             }
             if(self.currentEvent && ![eventsToKeep containsObject:self.currentEvent]){
                 NSLog(@"adding currentEvent too. Id = %@", self.currentEvent.eventId);
