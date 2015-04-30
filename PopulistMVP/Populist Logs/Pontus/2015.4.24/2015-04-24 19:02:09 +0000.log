@@ -1,0 +1,743 @@
+2015-04-24 12:02:09.035 PopulistMVP[10724:3044248] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-04-24 12:02:09.100 PopulistMVP[10724:3044248] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 12:02:09.942 PopulistMVP[10724:3044248] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-04-24 12:02:10.016 PopulistMVP[10724:3044248] BPXLUUIDHandler Unhandled Keychain Error -25308
+2015-04-24 12:02:10.017 PopulistMVP[10724:3044248] PPLSTDataManager - createAvatarForStatusDictionary
+2015-04-24 12:02:10.043 PopulistMVP[10724:3044248] updateEvents
+2015-04-24 12:02:10.044 PopulistMVP[10724:3044248] startUpdatingEvents
+2015-04-24 12:02:10.574 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didChangeAuthorizationStatus to status = 3
+2015-04-24 12:02:10.577 PopulistMVP[10724:3044248] didAcceptAuthorization triggered in ExploreVC
+2015-04-24 12:02:10.578 PopulistMVP[10724:3044248] updateEvents
+2015-04-24 12:02:10.598 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:08 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:10.662 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:08 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:10.691 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:10.704 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:10.711 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:10.732 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13629677,-118.35412652> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:10.740 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13629677,-118.35412744> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:10.745 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13629677,-118.35412744> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:10.753 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13629677,-118.35412752> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:10.758 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13629677,-118.35412752> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:10 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:10.832 PopulistMVP[10724:3044248] didRegisterForRemoteNotificationWithDeviceToken:<cb2f36e9 ef56ae29 ed086cd0 e26abac3 49d43523 bb5e5ae8 ce990aec 5caafa05>
+2015-04-24 12:02:10.845 PopulistMVP[10724:3044248] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 12:02:14.856 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13634597,-118.35437083> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:14 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:14.860 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13634597,-118.35437083> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 12:02:14 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 12:02:15.879 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13634610,-118.35449282> +/- 10.00m (speed 2.72 mps / course 222.19) @ 4/24/15, 12:02:15 PM Pacific Daylight Time"
+)
+2015-04-24 12:02:15.884 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13634610,-118.35449282> +/- 10.00m (speed 2.72 mps / course 222.19) @ 4/24/15, 12:02:15 PM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 12:02:15.900 PopulistMVP[10724:3044248] PPLSTLocationManager - sendLocationToParse
+2015-04-24 12:02:15.916 PopulistMVP[10724:3044248] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 12:02:15.917 PopulistMVP[10724:3044248] finishUpdatingEvents
+2015-04-24 12:02:15.939 PopulistMVP[10724:3044248] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.13634610,-118.35449282> +/- 10.00m (speed 2.72 mps / course 222.19) @ 4/24/15, 12:02:15 PM Pacific Daylight Time
+2015-04-24 12:02:15.940 PopulistMVP[10724:3044248] PPLSTLocationManager - updateTimeOfLastUpdate:2015-04-24 19:02:15 +0000
+2015-04-24 12:02:15.941 PopulistMVP[10724:3044248] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.136345 andLongitude:-118.354492 andDate:2015-04-24 19:02:15 +0000
+2015-04-24 12:02:15.941 PopulistMVP[10724:3044248] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.136345 andLongitude:-118.354492 andDate:2015-04-24 19:02:15 +0000
+2015-04-24 12:02:15.955 PopulistMVP[10724:3044248] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 12:02:17.470 PopulistMVP[10724:3044248] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 1;
+    isActive = NO;
+    latitude = "34.13662677259842";
+    longitude = "-118.3555995533794";
+    neighborhood = " ";
+    objectId = BqT8ZPewAt;
+    state = " ";
+    titlePhotoId = 2zt83XQoA3;
+    updatedAt = "2015-04-12 18:47:10 +0000";
+}
+2015-04-24 12:02:17.471 PopulistMVP[10724:3044248] PPLSTDataManager - getEventFromCoreDataWithId:BqT8ZPewAt
+2015-04-24 12:02:17.475 PopulistMVP[10724:3044248] Error: No event found in core data with eventId = BqT8ZPewAt
+2015-04-24 12:02:17.475 PopulistMVP[10724:3044248] PPLSTDataManager - createEventWithId:BqT8ZPewAt
+2015-04-24 12:02:17.478 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.485 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.486 PopulistMVP[10724:3044248] PPLSTDataManager - getContributionFromCoreDataWithId:2zt83XQoA3
+2015-04-24 12:02:17.486 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 1
+2015-04-24 12:02:17.487 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 2
+2015-04-24 12:02:17.487 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 3
+2015-04-24 12:02:17.490 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 4
+2015-04-24 12:02:17.491 PopulistMVP[10724:3044248] Error: No contribution found in core data with contributionId = 2zt83XQoA3
+2015-04-24 12:02:17.491 PopulistMVP[10724:3044248] PPLSTDataManager - createContributionWithId:2zt83XQoA3
+2015-04-24 12:02:17.493 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.500 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.508 PopulistMVP[10724:3044248] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 6;
+    isActive = NO;
+    latitude = "34.10183864991667";
+    longitude = "-118.3396956758538";
+    neighborhood = " ";
+    objectId = es3awjVTFa;
+    state = " ";
+    titlePhotoId = oh4znhNXRe;
+    updatedAt = "2015-04-03 18:31:43 +0000";
+}
+2015-04-24 12:02:17.509 PopulistMVP[10724:3044248] PPLSTDataManager - getEventFromCoreDataWithId:es3awjVTFa
+2015-04-24 12:02:17.510 PopulistMVP[10724:3044248] Error: No event found in core data with eventId = es3awjVTFa
+2015-04-24 12:02:17.511 PopulistMVP[10724:3044248] PPLSTDataManager - createEventWithId:es3awjVTFa
+2015-04-24 12:02:17.512 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.515 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.516 PopulistMVP[10724:3044248] PPLSTDataManager - getContributionFromCoreDataWithId:oh4znhNXRe
+2015-04-24 12:02:17.517 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 1
+2015-04-24 12:02:17.517 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 2
+2015-04-24 12:02:17.518 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 3
+2015-04-24 12:02:17.519 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 4
+2015-04-24 12:02:17.520 PopulistMVP[10724:3044248] Error: No contribution found in core data with contributionId = oh4znhNXRe
+2015-04-24 12:02:17.520 PopulistMVP[10724:3044248] PPLSTDataManager - createContributionWithId:oh4znhNXRe
+2015-04-24 12:02:17.521 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.524 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.525 PopulistMVP[10724:3044248] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 2;
+    isActive = NO;
+    latitude = "34.10224920140835";
+    longitude = "-118.3360489657263";
+    neighborhood = " ";
+    objectId = Gyo1Coiz3u;
+    state = " ";
+    titlePhotoId = ngheqi97Df;
+    updatedAt = "2015-04-03 17:41:40 +0000";
+}
+2015-04-24 12:02:17.526 PopulistMVP[10724:3044248] PPLSTDataManager - getEventFromCoreDataWithId:Gyo1Coiz3u
+2015-04-24 12:02:17.528 PopulistMVP[10724:3044248] Error: No event found in core data with eventId = Gyo1Coiz3u
+2015-04-24 12:02:17.529 PopulistMVP[10724:3044248] PPLSTDataManager - createEventWithId:Gyo1Coiz3u
+2015-04-24 12:02:17.530 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.534 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.535 PopulistMVP[10724:3044248] PPLSTDataManager - getContributionFromCoreDataWithId:ngheqi97Df
+2015-04-24 12:02:17.536 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 1
+2015-04-24 12:02:17.537 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 2
+2015-04-24 12:02:17.537 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 3
+2015-04-24 12:02:17.538 PopulistMVP[10724:3044248] getContributionFromCoreDataWithId - 4
+2015-04-24 12:02:17.539 PopulistMVP[10724:3044248] Error: No contribution found in core data with contributionId = ngheqi97Df
+2015-04-24 12:02:17.539 PopulistMVP[10724:3044248] PPLSTDataManager - createContributionWithId:ngheqi97Df
+2015-04-24 12:02:17.540 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.543 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.544 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.547 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.548 PopulistMVP[10724:3044248] PPLSTDataManager - sendSignalWithLatitude:34.136345 andLongitude:-118.354492 andDate:2015-04-24 19:02:15 +0000
+2015-04-24 12:02:17.548 PopulistMVP[10724:3044248] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 12:02:17.549 PopulistMVP[10724:3044248] latitude: -118.354492, longitude: 34.136345
+2015-04-24 12:02:17.554 PopulistMVP[10724:3044248] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 12:02:17.788 PopulistMVP[10724:3044248] PPLSTDataManager - createEventWithId:H96J2MLtt4
+2015-04-24 12:02:17.789 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.791 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.792 PopulistMVP[10724:3044248] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 12:02:17.793 PopulistMVP[10724:3044248] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 12:02:17.793 PopulistMVP[10724:3044248] PPLSTDataManager - createContributionWithId:dummyfzxc0WG0lV
+2015-04-24 12:02:17.794 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.797 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.798 PopulistMVP[10724:3044248] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.800 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.801 PopulistMVP[10724:3044248] channels: (
+    global
+)
+2015-04-24 12:02:17.809 PopulistMVP[10724:3044248] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 12:02:17.814 PopulistMVP[10724:3044260] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 12:02:17.815 PopulistMVP[10724:3044260] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 12:02:17.815 PopulistMVP[10724:3044260] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 12:02:17.816 PopulistMVP[10724:3044260] returning the event Id (null)
+2015-04-24 12:02:17.816 PopulistMVP[10724:3044260] adding currentEvent too. Id = H96J2MLtt4
+2015-04-24 12:02:17.817 PopulistMVP[10724:3044260] done adding the events. Will now delete them.
+2015-04-24 12:02:17.823 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:02:17.822 PopulistMVP[10724:3044260] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740da710> (entity: Event; id: 0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36> ; data: {\n    containsUser = 0;\n    contributions =     (\n    );\n    eventId = BqT8ZPewAt;\n    importance = 1;\n    lastActive = \"2015-04-12 18:47:10 +0000\";\n    latitude = \"34.13663\";\n    longitude = \"-118.3556\";\n    titleContribution = \"0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58>\";\n})",
+    "<Event: 0x1740dc230> (entity: Event; id: 0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37> ; data: {\n    containsUser = 0;\n    contributions =     (\n    );\n    eventId = es3awjVTFa;\n    importance = 6;\n    lastActive = \"2015-04-03 18:31:43 +0000\";\n    latitude = \"34.10184\";\n    longitude = \"-118.3397\";\n    titleContribution = \"0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59>\";\n})",
+    "<Event: 0x1740dc3f0> (entity: Event; id: 0xd000000000980000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p38> ; data: {\n    containsUser = 0;\n    contributions =     (\n    );\n    eventId = Gyo1Coiz3u;\n    importance = 2;\n    lastActive = \"2015-04-03 17:41:40 +0000\";\n    latitude = \"34.10225\";\n    longitude = \"-118.3361\";\n    titleContribution = \"0xd000000000f00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p60>\";\n})",
+    "<Event: 0x1700d5850> (entity: Event; id: 0xd0000000009c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p39> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = H96J2MLtt4;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.13634\";\n    longitude = \"-118.3545\";\n    titleContribution = \"0xd000000000f40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p61>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1701ee700>
+2015-04-24 12:02:17.826 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:02:17.827 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = (null)
+2015-04-24 12:02:17.828 PopulistMVP[10724:3044248] loading = (null)
+2015-04-24 12:02:17.828 PopulistMVP[10724:3044248] it wasn't loading, so we'll move forward
+2015-04-24 12:02:17.881 PopulistMVP[10724:3044248] About to dispatch async
+2015-04-24 12:02:17.882 PopulistMVP[10724:3044287] About to download the media for this contribution
+2015-04-24 12:02:17.884 PopulistMVP[10724:3044287] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:02:17.902 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:02:17.904 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:02:17.906 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = (null)
+2015-04-24 12:02:17.907 PopulistMVP[10724:3044248] loading = (null)
+2015-04-24 12:02:17.907 PopulistMVP[10724:3044248] it wasn't loading, so we'll move forward
+2015-04-24 12:02:17.910 PopulistMVP[10724:3044248] About to dispatch async
+2015-04-24 12:02:17.911 PopulistMVP[10724:3044261] About to download the media for this contribution
+2015-04-24 12:02:17.913 PopulistMVP[10724:3044261] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:02:17.960 PopulistMVP[10724:3044260] About to delete contribution with ID Jh9ZVl5HWt
+2015-04-24 12:02:17.962 PopulistMVP[10724:3044260] About to delete contribution with ID tmpId1153851501
+2015-04-24 12:02:17.963 PopulistMVP[10724:3044260] About to delete contribution with ID tmpId1606946231
+2015-04-24 12:02:17.964 PopulistMVP[10724:3044260] About to delete contribution with ID eXSsc9324J
+2015-04-24 12:02:17.964 PopulistMVP[10724:3044260] About to delete contribution with ID tmpId1153851501
+2015-04-24 12:02:17.965 PopulistMVP[10724:3044260] Deleting Event with ID ie8ngGhTb8
+2015-04-24 12:02:17.967 PopulistMVP[10724:3044260] About to delete contribution with ID i11d4AHOoE
+2015-04-24 12:02:17.967 PopulistMVP[10724:3044260] Deleting Event with ID Q3CakRGejA
+2015-04-24 12:02:17.969 PopulistMVP[10724:3044260] About to delete contribution with ID dummyQKLSjEy4CZ
+2015-04-24 12:02:17.969 PopulistMVP[10724:3044260] Deleting Event with ID vxdCF652hh
+2015-04-24 12:02:17.971 PopulistMVP[10724:3044260] About to delete contribution with ID dummywcDVRab5y9
+2015-04-24 12:02:17.971 PopulistMVP[10724:3044260] Deleting Event with ID (null)
+2015-04-24 12:02:17.973 PopulistMVP[10724:3044260] PPLSTDataManager - saveCoreData
+2015-04-24 12:02:17.978 PopulistMVP[10724:3044260] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.979 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:02:17.982 PopulistMVP[10724:3044260] Deleting file with fileName = jzJCaRYsgZ
+2015-04-24 12:02:17.984 PopulistMVP[10724:3044260] Deleting file with fileName = V74lolx4Oh
+2015-04-24 12:02:18.843 PopulistMVP[10724:3044287] PPLSTDataManager - storeImage:<UIImage: 0x174280c30>
+2015-04-24 12:27:36.257 PopulistMVP[10724:3044248] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x170360600>
+2015-04-24 12:27:36.339 PopulistMVP[10724:3044287] PPLSTDataManager - getEmptyFileName
+2015-04-24 12:27:36.340 PopulistMVP[10724:3044287] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 12:27:36.379 PopulistMVP[10724:3044287] PPLSTDataManager - saveCoreData
+2015-04-24 12:27:36.381 PopulistMVP[10724:3044287] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:36.381 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:36.382 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:36.383 PopulistMVP[10724:3044248] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 12:27:36.383 PopulistMVP[10724:3044248] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/Aj6ATjjX2A.png
+2015-04-24 12:27:36.385 PopulistMVP[10724:3044248] the image is <UIImage: 0x17009e9b0>
+2015-04-24 12:27:36.385 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey:Aj6ATjjX2A
+2015-04-24 12:27:36.385 PopulistMVP[10724:3044248] self.keysSet = {(
+)}
+2015-04-24 12:27:36.386 PopulistMVP[10724:3044248] [self.keysArray count] = 0. Max = 10
+2015-04-24 12:27:36.386 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 12:27:36.388 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13667563,-118.35399066> +/- 5.00m (speed 0.00 mps / course 183.52) @ 4/24/15, 12:27:36 PM Pacific Daylight Time"
+)
+2015-04-24 12:27:36.389 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13667563,-118.35399066> +/- 5.00m (speed 0.00 mps / course 183.52) @ 4/24/15, 12:27:36 PM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 12:27:36.390 PopulistMVP[10724:3044248] PPLSTLocationManager - sendLocationToParse
+2015-04-24 12:27:36.394 PopulistMVP[10724:3044248] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 12:27:36.395 PopulistMVP[10724:3044248] Distance Moved = 59.006336
+2015-04-24 12:27:36.395 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:36.397 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:36.398 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:36.399 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:36.400 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:36.401 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = (null)
+2015-04-24 12:27:36.401 PopulistMVP[10724:3044248] loading = 1
+2015-04-24 12:27:36.401 PopulistMVP[10724:3044248] It's loading, let's return
+2015-04-24 12:27:38.403 PopulistMVP[10724:3044248] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x170360600>
+2015-04-24 12:27:38.424 PopulistMVP[10724:3044248] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174019410> didUpdateLocations:(
+    "<+34.13667563,-118.35399066> +/- 5.00m (speed 0.00 mps / course 183.52) @ 4/24/15, 12:27:38 PM Pacific Daylight Time"
+)
+2015-04-24 12:27:38.425 PopulistMVP[10724:3044248] locationManager didUpdateLocation lastObject = <+34.13667563,-118.35399066> +/- 5.00m (speed 0.00 mps / course 183.52) @ 4/24/15, 12:27:38 PM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 12:27:38.425 PopulistMVP[10724:3044248] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 12:27:38.426 PopulistMVP[10724:3044248] Distance Moved = 59.006271
+2015-04-24 12:27:39.112 PopulistMVP[10724:3044261] PPLSTDataManager - storeImage:<UIImage: 0x1740998c0>
+2015-04-24 12:27:39.254 PopulistMVP[10724:3044261] PPLSTDataManager - getEmptyFileName
+2015-04-24 12:27:39.254 PopulistMVP[10724:3044261] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 12:27:39.283 PopulistMVP[10724:3044261] PPLSTDataManager - saveCoreData
+2015-04-24 12:27:39.283 PopulistMVP[10724:3044261] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:39.284 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:39.284 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:39.284 PopulistMVP[10724:3044248] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 12:27:39.285 PopulistMVP[10724:3044248] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/9VNFsfJ4qH.png
+2015-04-24 12:27:39.286 PopulistMVP[10724:3044248] the image is <UIImage: 0x17409fb30>
+2015-04-24 12:27:39.286 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey:9VNFsfJ4qH
+2015-04-24 12:27:39.286 PopulistMVP[10724:3044248] self.keysSet = {(
+    Aj6ATjjX2A
+)}
+2015-04-24 12:27:39.286 PopulistMVP[10724:3044248] [self.keysArray count] = 1. Max = 10
+2015-04-24 12:27:39.287 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 12:27:39.287 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:39.288 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:39.288 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:39.289 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:39.289 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:39.289 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:39.289 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:39.289 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:39.290 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:39.290 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:39.290 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:39.291 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:39.291 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:39.291 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:39.291 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:39.291 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:41.209 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:41.210 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:41.210 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:41.211 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:41.211 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:41.211 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:41.211 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:41.211 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:41.212 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:41.212 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:41.212 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:41.213 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:41.213 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:41.213 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:41.214 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:41.214 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:41.221 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = ngheqi97Df
+2015-04-24 12:27:41.600 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:41.600 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:41.601 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:41.601 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:41.601 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:41.601 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:41.601 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:41.602 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:41.602 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = ngheqi97Df
+2015-04-24 12:27:41.602 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f62d650; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17402d100>> ForContribution:<Contribution: 0x1740dc310> (entity: Contribution; id: 0xd000000000f00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p60> ; data: {
+    contributingUserId = "";
+    contributionId = ngheqi97Df;
+    contributionType = photo;
+    createdAt = "2015-04-03 17:41:40 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000980000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p38>";
+})
+2015-04-24 12:27:41.603 PopulistMVP[10724:3044248] contributionId = ngheqi97Df, contributionType = photo, imagePath = (null)
+2015-04-24 12:27:41.603 PopulistMVP[10724:3044248] loading = (null)
+2015-04-24 12:27:41.603 PopulistMVP[10724:3044248] it wasn't loading, so we'll move forward
+2015-04-24 12:27:41.604 PopulistMVP[10724:3044248] About to dispatch async
+2015-04-24 12:27:41.605 PopulistMVP[10724:3044261] About to download the media for this contribution
+2015-04-24 12:27:41.606 PopulistMVP[10724:3044261] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740dc310> (entity: Contribution; id: 0xd000000000f00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p60> ; data: {
+    contributingUserId = "";
+    contributionId = ngheqi97Df;
+    contributionType = photo;
+    createdAt = "2015-04-03 17:41:40 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000980000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p38>";
+})
+2015-04-24 12:27:44.263 PopulistMVP[10724:3044261] PPLSTDataManager - storeImage:<UIImage: 0x174280cd0>
+2015-04-24 12:27:44.333 PopulistMVP[10724:3044261] PPLSTDataManager - getEmptyFileName
+2015-04-24 12:27:44.333 PopulistMVP[10724:3044261] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 12:27:44.364 PopulistMVP[10724:3044261] PPLSTDataManager - saveCoreData
+2015-04-24 12:27:44.365 PopulistMVP[10724:3044261] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:44.365 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:44.365 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 12:27:44.366 PopulistMVP[10724:3044248] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 12:27:44.366 PopulistMVP[10724:3044248] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/LoGBufBRBH.png
+2015-04-24 12:27:44.367 PopulistMVP[10724:3044248] the image is <UIImage: 0x170281ae0>
+2015-04-24 12:27:44.367 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey:LoGBufBRBH
+2015-04-24 12:27:44.367 PopulistMVP[10724:3044248] self.keysSet = {(
+    9VNFsfJ4qH,
+    Aj6ATjjX2A
+)}
+2015-04-24 12:27:44.368 PopulistMVP[10724:3044248] [self.keysArray count] = 2. Max = 10
+2015-04-24 12:27:44.368 PopulistMVP[10724:3044248] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 12:27:44.368 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:44.369 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:44.369 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:44.369 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:44.369 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:44.370 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:44.370 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:44.370 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:44.370 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = ngheqi97Df
+2015-04-24 12:27:44.371 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f62d650; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17402d100>> ForContribution:<Contribution: 0x1740dc310> (entity: Contribution; id: 0xd000000000f00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p60> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = ngheqi97Df;
+    contributionType = photo;
+    createdAt = "2015-04-03 17:41:40 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000980000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p38>";
+})
+2015-04-24 12:27:44.371 PopulistMVP[10724:3044248] contributionId = ngheqi97Df, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 12:27:44.371 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:44.371 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 12:27:44.372 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x170281ae0>
+2015-04-24 12:27:44.372 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:44.372 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 12:27:45.029 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:45.030 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:45.032 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:45.032 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.033 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:45.033 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:45.034 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.034 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:45.035 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = ngheqi97Df
+2015-04-24 12:27:45.037 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f62d650; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17402d100>> ForContribution:<Contribution: 0x1740dc310> (entity: Contribution; id: 0xd000000000f00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p60> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = ngheqi97Df;
+    contributionType = photo;
+    createdAt = "2015-04-03 17:41:40 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000980000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p38>";
+})
+2015-04-24 12:27:45.038 PopulistMVP[10724:3044248] contributionId = ngheqi97Df, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 12:27:45.039 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.039 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 12:27:45.040 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x170281ae0>
+2015-04-24 12:27:45.040 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.041 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 12:27:45.045 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:45.045 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:45.045 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:45.046 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.046 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.046 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:45.046 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.046 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.512 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:45.513 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:45.514 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:45.514 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.514 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.514 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:45.515 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.515 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.516 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:45.516 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:45.517 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:45.517 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.517 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:45.517 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:45.518 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.518 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:45.578 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:45.579 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:45.580 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:45.580 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.581 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.581 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:45.581 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.582 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:45.582 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:45.583 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:45.584 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:45.584 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:45.585 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:45.585 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:45.585 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:45.586 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:46.354 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = 2zt83XQoA3
+2015-04-24 12:27:46.355 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f606cb0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170031280>> ForContribution:<Contribution: 0x1700d67a0> (entity: Contribution; id: 0xd000000000e80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p58> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = 2zt83XQoA3;
+    contributionType = photo;
+    createdAt = "2015-04-12 18:47:10 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000900000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p36>";
+})
+2015-04-24 12:27:46.357 PopulistMVP[10724:3044248] contributionId = 2zt83XQoA3, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 12:27:46.357 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:46.358 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:46.358 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17009e9b0>
+2015-04-24 12:27:46.359 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:46.359 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 12:27:46.360 PopulistMVP[10724:3044248] Formatting Event Cell for contributionId = oh4znhNXRe
+2015-04-24 12:27:46.361 PopulistMVP[10724:3044248] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x13f608310; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x17003cd80>> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000ec0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p59> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = oh4znhNXRe;
+    contributionType = photo;
+    createdAt = "2015-04-03 18:31:43 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000940000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p37>";
+})
+2015-04-24 12:27:46.363 PopulistMVP[10724:3044248] contributionId = oh4znhNXRe, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 12:27:46.363 PopulistMVP[10724:3044248] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 12:27:46.363 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:46.364 PopulistMVP[10724:3044248] Just got the image <UIImage: 0x17409fb30>
+2015-04-24 12:27:46.364 PopulistMVP[10724:3044248] Yay, the image wasn't nil
+2015-04-24 12:27:46.365 PopulistMVP[10724:3044248] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 12:27:46.845 PopulistMVP[10724:3044287] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1700d5850> (entity: Event; id: 0xd0000000009c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p39> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = H96J2MLtt4;
+    importance = 0;
+    lastActive = nil;
+    latitude = "34.13634";
+    longitude = "-118.3545";
+    titleContribution = "0xd000000000f40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p61>";
+})
+2015-04-24 12:27:47.529 PopulistMVP[10724:3044287] return from parse: {
+    contributionIds =     (
+    );
+}
+2015-04-24 12:27:47.529 PopulistMVP[10724:3044287] arrayOfContributionData = (
+)
+2015-04-24 12:27:47.530 PopulistMVP[10724:3044287] PPLSTDataManager - saveCoreData
+2015-04-24 12:27:47.530 PopulistMVP[10724:3044287] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:47.531 PopulistMVP[10724:3044248] PPLSTDataManager - contextHasChanged
+2015-04-24 12:27:47.532 PopulistMVP[10724:3044287] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1700d5850> (entity: Event; id: 0xd0000000009c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p39> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = H96J2MLtt4;
+    importance = 0;
+    lastActive = nil;
+    latitude = "34.13634";
+    longitude = "-118.3545";
+    titleContribution = "0xd000000000f40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p61>";
+})
+2015-04-24 12:27:47.759 PopulistMVP[10724:3044287] return from parse: {
+    statusArray =     (
+    );
+}
+2015-04-24 12:27:47.760 PopulistMVP[10724:3044287] userIds = {(
+)}
+2015-04-24 12:27:47.887 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170097930 UIButton:0x13f548ed0.centerX == UIView:0x17418d1a0.centerX>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.888 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170283e80 UIButton:0x13f548ed0.centerY == UIView:0x17418d1a0.centerY>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.890 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170282fd0 UIButton:0x13f63b1e0'Cancel'.left == UIView:0x17418d1a0.left + 10>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.890 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x1702832a0 UIButton:0x13f63b1e0'Cancel'.bottom == UIView:0x17418d1a0.bottom - 10>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.892 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170283cf0 UIButton:0x13f62d0b0.centerX == UIView:0x17418d0d0.right - 30>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.892 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170283fc0 UIButton:0x13f62d0b0.centerY == UIView:0x17418d0d0.top + 25>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.894 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x1702840b0 UIButton:0x13f63c340.centerX == UIView:0x17418d0d0.left + 30>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.895 PopulistMVP[10724:3044248] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170284100 UIButton:0x13f63c340.centerY == UIView:0x17418d0d0.top + 25>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 12:27:47.974 PopulistMVP[10724:3044248] Snapshotting a view that has not been rendered results in an empty snapshot. Ensure your view has been rendered at least once before snapshotting or snapshot after screen updates.
+2015-04-24 12:27:53.750 PopulistMVP[10724:3044248] PPLSTImagePickerController - imagePickerController didFinishPicking!
+2015-04-24 12:27:53.755 PopulistMVP[10724:3044248] PPLSTChatViewController - flipImageCorrectly:<UIImage: 0x174282fd0> size {2448, 3264} orientation 3 scale 1.000000
+2015-04-24 12:27:54.006 PopulistMVP[10724:3044287] BSXPCMessage received error for message: Connection interrupted
+2015-04-24 12:27:54.881 PopulistMVP[10724:3044248] handleAcceptImage
+2015-04-24 12:27:54.882 PopulistMVP[10724:3044248] PPLSTChatViewController - didFinishPickingImage:
+2015-04-24 12:27:54.891 PopulistMVP[10724:3044248] PPLSTChatViewController - cropImage:<UIImage: 0x170289150> size {750, 750} orientation 0 scale 1.000000 AndScaleToPoints:750.000000
+2015-04-24 12:27:54.892 PopulistMVP[10724:3044248] PPLSTChatViewController - flipImageCorrectly:<UIImage: 0x170289150> size {750, 750} orientation 0 scale 1.000000
+2015-04-24 12:27:54.983 PopulistMVP[10724:3044248] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[1]'
+*** First throw call stack:
+(0x18244659c 0x192b9c0e4 0x182334798 0x1823345c8 0x1000d06b4 0x1000b9368 0x186c2cd34 0x186c15e48 0x186c2c6d0 0x186c2c35c 0x186c258b0 0x186bf8fa8 0x186e97f58 0x186bf7510 0x1823fe9ec 0x1823fdc90 0x1823fbd40 0x1823290a4 0x18b4cb5a4 0x186c5e3c0 0x1000bae84 0x19320aa08)
+libc++abi.dylib: terminating with uncaught exception of type NSException

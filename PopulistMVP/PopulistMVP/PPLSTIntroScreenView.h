@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PPLSTIntroScreenView : UIView
-
+-(id)initWithFrame:(CGRect)frame;
 @end

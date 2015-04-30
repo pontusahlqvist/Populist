@@ -40,6 +40,12 @@ int maxMessageLengthForPush = 1000;
         //setup a listener to see if other contexts on other threads have been saved
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contextHasChanged:) name:NSManagedObjectContextDidSaveNotification object:nil];
         self.contributingUserId = [PPLSTUUID UUID];
+        if(!self.contributingUserId){ // try again
+            self.contributingUserId = [PPLSTUUID UUID];
+        }
+        if(!self.contributingUserId){ //if it's still null, it's better to create a random string than have the app crash down the line
+            self.contributingUserId = [@"tmpUID" stringByAppendingString:[self randomStringWithLength:10]];
+        }
         
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
         appDelegate.dataManager = self;
@@ -157,6 +163,11 @@ int maxMessageLengthForPush = 1000;
     NSLog(@"PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:%f andLongitude:%f andDate:%@",latitude,longitude,date);
     //first setup a new event with the given location and time. Then, fetch and return the events
     NSMutableArray *eventsFromCloud = [[self downloadEventMetaDataWithInputLatitude:latitude andLongitude:longitude andDate:date] mutableCopy];
+    NSLog(@"eventsFromCloud = %@", eventsFromCloud);
+    NSLog(@"eventsFromCloud.count = %li", eventsFromCloud.count);
+    if(!eventsFromCloud){ //in case the request failed
+        return nil;
+    }
     Event *firstEvent = [eventsFromCloud firstObject];
     NSString *oldCurrentEventId = nil;
     if(self.currentEvent){
@@ -166,6 +177,9 @@ int maxMessageLengthForPush = 1000;
         self.currentEvent = firstEvent;
     } else{
         PFObject *newEvent = [self sendSignalWithLatitude:latitude andLongitude:longitude andDate:date];
+        if(!newEvent){ //in case the request failed.
+            return nil;
+        }
         NSString *eventId = newEvent.objectId;
         Event *currentEvent = [self createEventWithId:eventId inContext:self.context];
         currentEvent.containsUser = @1;
@@ -869,7 +883,8 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 //stores an image in the file system and returns the imagePath
 -(NSString *) storeImage:(UIImage*)image forContributionId:(NSString*)contributionId{
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
-    NSData *imageData = UIImagePNGRepresentation(image);
+//    NSData *imageData = UIImagePNGRepresentation(image);
+    NSData *imageData = UIImageJPEGRepresentation(image,0.5);
     NSString *fileName = [self getEmptyFileName];
 
     if (![imageData writeToFile:[self filePathForImageWithFileName:fileName] atomically:NO]){
@@ -884,7 +899,7 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 
 -(NSString*) filePathForImageWithFileName:(NSString*)fileName{
     NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]];
+    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",fileName]];
     return fpath;
 }
 
@@ -894,12 +909,12 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
     NSString *imageName = [self randomStringWithLength:10];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",imageName]];
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
     while([fileManager fileExistsAtPath:filePath]){
         imageName = [self randomStringWithLength:10];
-        filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
+        filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",imageName]];
     }
     return imageName;
 }

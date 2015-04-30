@@ -1,0 +1,299 @@
+2015-04-24 16:14:18.943 PopulistMVP[10966:3099047] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-04-24 16:14:18.978 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 16:14:19.012 PopulistMVP[10966:3099047] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-04-24 16:14:19.053 PopulistMVP[10966:3099047] PPLSTDataManager - createAvatarForStatusDictionary
+2015-04-24 16:14:19.062 PopulistMVP[10966:3099047] updateEvents
+2015-04-24 16:14:19.062 PopulistMVP[10966:3099047] startUpdatingEvents
+2015-04-24 16:14:19.129 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didChangeAuthorizationStatus to status = 3
+2015-04-24 16:14:19.130 PopulistMVP[10966:3099047] didAcceptAuthorization triggered in ExploreVC
+2015-04-24 16:14:19.130 PopulistMVP[10966:3099047] updateEvents
+2015-04-24 16:14:19.132 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14104897,-118.35676171> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 3:11:22 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.133 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14104897,-118.35676171> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 3:11:22 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:19.148 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14084531,-118.35681648> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.150 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14084531,-118.35681648> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:19.151 PopulistMVP[10966:3099047] didRegisterForRemoteNotificationWithDeviceToken:<cb2f36e9 ef56ae29 ed086cd0 e26abac3 49d43523 bb5e5ae8 ce990aec 5caafa05>
+2015-04-24 16:14:19.153 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 16:14:19.155 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14084531,-118.35681648> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.155 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14084531,-118.35681648> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:19.174 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14084541,-118.35681650> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.174 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14084541,-118.35681650> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:19.176 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14084541,-118.35681650> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.176 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14084541,-118.35681650> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:19.349 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14084546,-118.35681651> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:19.350 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14084546,-118.35681651> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:20.186 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14086637,-118.35684446> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:20 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:20.187 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14086637,-118.35684446> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:14:20 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:14:22.454 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14091453,-118.35690949> +/- 30.00m (speed 1.14 mps / course 198.28) @ 4/24/15, 4:14:22 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:22.455 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14091453,-118.35690949> +/- 30.00m (speed 1.14 mps / course 198.28) @ 4/24/15, 4:14:22 PM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 16:14:23.455 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14085443,-118.35691804> +/- 10.00m (speed 0.00 mps / course 198.28) @ 4/24/15, 4:14:23 PM Pacific Daylight Time"
+)
+2015-04-24 16:14:23.458 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14085443,-118.35691804> +/- 10.00m (speed 0.00 mps / course 198.28) @ 4/24/15, 4:14:23 PM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 16:14:23.461 PopulistMVP[10966:3099047] PPLSTLocationManager - sendLocationToParse
+2015-04-24 16:14:23.481 PopulistMVP[10966:3099047] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 16:14:23.482 PopulistMVP[10966:3099047] finishUpdatingEvents
+2015-04-24 16:14:23.506 PopulistMVP[10966:3099047] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.14085443,-118.35691804> +/- 10.00m (speed 0.00 mps / course 198.28) @ 4/24/15, 4:14:23 PM Pacific Daylight Time
+2015-04-24 16:14:23.507 PopulistMVP[10966:3099047] PPLSTLocationManager - updateTimeOfLastUpdate:2015-04-24 23:14:23 +0000
+2015-04-24 16:14:23.509 PopulistMVP[10966:3099047] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.140854 andLongitude:-118.356918 andDate:2015-04-24 23:14:23 +0000
+2015-04-24 16:14:23.511 PopulistMVP[10966:3099047] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.140854 andLongitude:-118.356918 andDate:2015-04-24 23:14:23 +0000
+2015-04-24 16:14:23.521 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 16:22:41.184 PopulistMVP[10966:3099982] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1740ffb00 {NSUnderlyingError=0x17024f270 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/update, NSErrorFailingURLKey=https://api.parse.com/2/update, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 16:22:41.185 PopulistMVP[10966:3099983] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1740fef00 {NSUnderlyingError=0x1742491b0 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 16:22:41.185 PopulistMVP[10966:3099984] [Warning]: Network connection failed. Making attempt 2 after sleeping for 1.881773 seconds.
+2015-04-24 16:22:41.185 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:22:41.186 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:41.186 PopulistMVP[10966:3099047] PPLSTDataManager - sendSignalWithLatitude:34.140854 andLongitude:-118.356918 andDate:2015-04-24 23:14:23 +0000
+2015-04-24 16:22:41.187 PopulistMVP[10966:3099047] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 16:22:41.187 PopulistMVP[10966:3099047] latitude: -118.356918, longitude: 34.140854
+2015-04-24 16:22:41.189 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 16:22:42.368 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:OS9AgmNHXv
+2015-04-24 16:22:42.373 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:22:42.379 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:42.380 PopulistMVP[10966:3099047] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 16:22:42.381 PopulistMVP[10966:3099047] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 16:22:42.382 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:dummyfzxc0WG0lV
+2015-04-24 16:22:42.384 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:22:42.391 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:42.398 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:22:42.402 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:42.402 PopulistMVP[10966:3099047] channels: (
+    global
+)
+2015-04-24 16:22:42.411 PopulistMVP[10966:3099047] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 16:22:42.413 PopulistMVP[10966:3099978] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 16:22:42.413 PopulistMVP[10966:3099978] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 16:22:42.414 PopulistMVP[10966:3099978] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 16:22:42.414 PopulistMVP[10966:3099978] returning the event Id (null)
+2015-04-24 16:22:42.415 PopulistMVP[10966:3099978] adding currentEvent too. Id = OS9AgmNHXv
+2015-04-24 16:22:42.415 PopulistMVP[10966:3099978] done adding the events. Will now delete them.
+2015-04-24 16:22:42.418 PopulistMVP[10966:3099978] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740dde30> (entity: Event; id: 0xd000000000a40000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p41> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = OS9AgmNHXv;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.14085\";\n    longitude = \"-118.3569\";\n    titleContribution = \"0xd0000000010c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p67>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1703e0c00>
+2015-04-24 16:22:42.433 PopulistMVP[10966:3099047] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x17016b1c0>
+2015-04-24 16:22:42.442 PopulistMVP[10966:3099978] About to delete contribution with ID 2zt83XQoA3
+2015-04-24 16:22:42.444 PopulistMVP[10966:3099978] Deleting Event with ID BqT8ZPewAt
+2015-04-24 16:22:42.445 PopulistMVP[10966:3099978] About to delete contribution with ID oh4znhNXRe
+2015-04-24 16:22:42.446 PopulistMVP[10966:3099978] Deleting Event with ID es3awjVTFa
+2015-04-24 16:22:42.447 PopulistMVP[10966:3099978] About to delete contribution with ID ngheqi97Df
+2015-04-24 16:22:42.447 PopulistMVP[10966:3099978] Deleting Event with ID Gyo1Coiz3u
+2015-04-24 16:22:42.448 PopulistMVP[10966:3099978] About to delete contribution with ID MMRcBUevKN
+2015-04-24 16:22:42.448 PopulistMVP[10966:3099978] About to delete contribution with ID tmpId1646035001
+2015-04-24 16:22:42.449 PopulistMVP[10966:3099978] About to delete contribution with ID tmpId1083454666
+2015-04-24 16:22:42.449 PopulistMVP[10966:3099978] About to delete contribution with ID MMRcBUevKN
+2015-04-24 16:22:42.449 PopulistMVP[10966:3099978] Deleting Event with ID H96J2MLtt4
+2015-04-24 16:22:42.449 PopulistMVP[10966:3099978] About to delete contribution with ID dummyHSf71iezcB
+2015-04-24 16:22:42.450 PopulistMVP[10966:3099978] Deleting Event with ID oBFOvuuDlG
+2015-04-24 16:22:42.450 PopulistMVP[10966:3099978] PPLSTDataManager - saveCoreData
+2015-04-24 16:22:42.452 PopulistMVP[10966:3099978] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:42.453 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:22:42.453 PopulistMVP[10966:3099978] Deleting file with fileName = xwuggw4mFg
+2015-04-24 16:22:42.455 PopulistMVP[10966:3099978] Deleting file with fileName = NmNqfXqfK9
+2015-04-24 16:22:42.456 PopulistMVP[10966:3099978] Deleting file with fileName = fzxc0WG0lV
+2015-04-24 16:22:42.457 PopulistMVP[10966:3099978] Deleting file with fileName = djbEHKvrLK
+2015-04-24 16:22:42.479 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14082815,-118.35675299> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:42.480 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14082815,-118.35675299> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:22:42.481 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14082815,-118.35675299> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:42.482 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14082815,-118.35675299> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:22:42.565 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14082877,-118.35674825> +/- 107.29m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:42.567 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14082877,-118.35674825> +/- 107.29m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time, accuracy = 107.286023
+2015-04-24 16:22:42.575 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14082877,-118.35674825> +/- 107.29m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:42.577 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14082877,-118.35674825> +/- 107.29m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time, accuracy = 107.286472
+2015-04-24 16:22:42.722 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14082671,-118.35682875> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:42.723 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14082671,-118.35682875> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:22:42 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:22:44.704 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.14100103,-118.35691066> +/- 10.00m (speed 0.92 mps / course 16.88) @ 4/24/15, 4:22:44 PM Pacific Daylight Time"
+)
+2015-04-24 16:22:44.706 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.14100103,-118.35691066> +/- 10.00m (speed 0.92 mps / course 16.88) @ 4/24/15, 4:22:44 PM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 16:22:44.707 PopulistMVP[10966:3099047] PPLSTLocationManager - sendLocationToParse
+2015-04-24 16:22:44.713 PopulistMVP[10966:3099047] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 16:22:44.717 PopulistMVP[10966:3099047] Distance Moved = 16.276251
+2015-04-24 16:55:18.018 PopulistMVP[10966:3099047] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x17016b1c0>
+2015-04-24 16:55:18.140 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.13640850,-118.35513007> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:55:18 PM Pacific Daylight Time"
+)
+2015-04-24 16:55:18.324 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.13640850,-118.35513007> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:55:18 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:55:20.012 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.13643837,-118.35508275> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:55:19 PM Pacific Daylight Time"
+)
+2015-04-24 16:55:20.025 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.13643837,-118.35508275> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 4:55:19 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 16:55:20.812 PopulistMVP[10966:3099047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170205940> didUpdateLocations:(
+    "<+34.13652606,-118.35519061> +/- 10.00m (speed 0.35 mps / course -1.00) @ 4/24/15, 4:55:20 PM Pacific Daylight Time"
+)
+2015-04-24 16:55:20.817 PopulistMVP[10966:3099047] locationManager didUpdateLocation lastObject = <+34.13652606,-118.35519061> +/- 10.00m (speed 0.35 mps / course -1.00) @ 4/24/15, 4:55:20 PM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 16:55:20.872 PopulistMVP[10966:3099047] PPLSTLocationManager - sendLocationToParse
+2015-04-24 16:55:20.879 PopulistMVP[10966:3099047] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 16:55:20.881 PopulistMVP[10966:3099047] Distance Moved = 505.885773
+2015-04-24 16:55:20.884 PopulistMVP[10966:3099047] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 16:55:20.886 PopulistMVP[10966:3099047] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.136524 andLongitude:-118.355194 andDate:2015-04-24 23:55:20 +0000
+2015-04-24 16:55:20.889 PopulistMVP[10966:3099047] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.136524 andLongitude:-118.355194 andDate:2015-04-24 23:55:20 +0000
+2015-04-24 16:55:20.951 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 16:55:22.541 PopulistMVP[10966:3099047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 1;
+    isActive = NO;
+    latitude = "34.13662677259842";
+    longitude = "-118.3555995533794";
+    neighborhood = " ";
+    objectId = BqT8ZPewAt;
+    state = " ";
+    titlePhotoId = 2zt83XQoA3;
+    updatedAt = "2015-04-12 18:47:10 +0000";
+}
+2015-04-24 16:55:22.542 PopulistMVP[10966:3099047] PPLSTDataManager - getEventFromCoreDataWithId:BqT8ZPewAt
+2015-04-24 16:55:22.547 PopulistMVP[10966:3099047] Error: No event found in core data with eventId = BqT8ZPewAt
+2015-04-24 16:55:22.547 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:BqT8ZPewAt
+2015-04-24 16:55:22.548 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.557 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.558 PopulistMVP[10966:3099047] PPLSTDataManager - getContributionFromCoreDataWithId:2zt83XQoA3
+2015-04-24 16:55:22.559 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 1
+2015-04-24 16:55:22.560 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 2
+2015-04-24 16:55:22.561 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 3
+2015-04-24 16:55:22.563 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 4
+2015-04-24 16:55:22.566 PopulistMVP[10966:3099047] Error: No contribution found in core data with contributionId = 2zt83XQoA3
+2015-04-24 16:55:22.567 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:2zt83XQoA3
+2015-04-24 16:55:22.568 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.576 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.580 PopulistMVP[10966:3099047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 2;
+    isActive = YES;
+    latitude = "34.13655779264503";
+    longitude = "-118.3541575012843";
+    neighborhood = " ";
+    objectId = H96J2MLtt4;
+    state = " ";
+    titlePhotoId = MMRcBUevKN;
+    updatedAt = "2015-04-24 20:11:10 +0000";
+}
+2015-04-24 16:55:22.582 PopulistMVP[10966:3099047] PPLSTDataManager - getEventFromCoreDataWithId:H96J2MLtt4
+2015-04-24 16:55:22.586 PopulistMVP[10966:3099047] Error: No event found in core data with eventId = H96J2MLtt4
+2015-04-24 16:55:22.588 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:H96J2MLtt4
+2015-04-24 16:55:22.589 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.601 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.601 PopulistMVP[10966:3099047] PPLSTDataManager - getContributionFromCoreDataWithId:MMRcBUevKN
+2015-04-24 16:55:22.602 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 1
+2015-04-24 16:55:22.603 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 2
+2015-04-24 16:55:22.606 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 3
+2015-04-24 16:55:22.611 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 4
+2015-04-24 16:55:22.612 PopulistMVP[10966:3099047] Error: No contribution found in core data with contributionId = MMRcBUevKN
+2015-04-24 16:55:22.613 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:MMRcBUevKN
+2015-04-24 16:55:22.613 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.621 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.622 PopulistMVP[10966:3099047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 6;
+    isActive = NO;
+    latitude = "34.10183864991667";
+    longitude = "-118.3396956758538";
+    neighborhood = " ";
+    objectId = es3awjVTFa;
+    state = " ";
+    titlePhotoId = oh4znhNXRe;
+    updatedAt = "2015-04-03 18:31:43 +0000";
+}
+2015-04-24 16:55:22.629 PopulistMVP[10966:3099047] PPLSTDataManager - getEventFromCoreDataWithId:es3awjVTFa
+2015-04-24 16:55:22.632 PopulistMVP[10966:3099047] Error: No event found in core data with eventId = es3awjVTFa
+2015-04-24 16:55:22.639 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:es3awjVTFa
+2015-04-24 16:55:22.640 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.647 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.655 PopulistMVP[10966:3099047] PPLSTDataManager - getContributionFromCoreDataWithId:oh4znhNXRe
+2015-04-24 16:55:22.657 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 1
+2015-04-24 16:55:22.659 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 2
+2015-04-24 16:55:22.660 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 3
+2015-04-24 16:55:22.664 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 4
+2015-04-24 16:55:22.665 PopulistMVP[10966:3099047] Error: No contribution found in core data with contributionId = oh4znhNXRe
+2015-04-24 16:55:22.666 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:oh4znhNXRe
+2015-04-24 16:55:22.667 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.672 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.677 PopulistMVP[10966:3099047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 2;
+    isActive = NO;
+    latitude = "34.10224920140835";
+    longitude = "-118.3360489657263";
+    neighborhood = " ";
+    objectId = Gyo1Coiz3u;
+    state = " ";
+    titlePhotoId = ngheqi97Df;
+    updatedAt = "2015-04-03 17:41:40 +0000";
+}
+2015-04-24 16:55:22.679 PopulistMVP[10966:3099047] PPLSTDataManager - getEventFromCoreDataWithId:Gyo1Coiz3u
+2015-04-24 16:55:22.684 PopulistMVP[10966:3099047] Error: No event found in core data with eventId = Gyo1Coiz3u
+2015-04-24 16:55:22.685 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:Gyo1Coiz3u
+2015-04-24 16:55:22.690 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.700 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.701 PopulistMVP[10966:3099047] PPLSTDataManager - getContributionFromCoreDataWithId:ngheqi97Df
+2015-04-24 16:55:22.701 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 1
+2015-04-24 16:55:22.703 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 2
+2015-04-24 16:55:22.704 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 3
+2015-04-24 16:55:22.708 PopulistMVP[10966:3099047] getContributionFromCoreDataWithId - 4
+2015-04-24 16:55:22.715 PopulistMVP[10966:3099047] Error: No contribution found in core data with contributionId = ngheqi97Df
+2015-04-24 16:55:22.716 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:ngheqi97Df
+2015-04-24 16:55:22.717 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.750 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.757 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 16:55:22.769 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 16:55:22.771 PopulistMVP[10966:3099047] PPLSTDataManager - sendSignalWithLatitude:34.136524 andLongitude:-118.355194 andDate:2015-04-24 23:55:20 +0000
+2015-04-24 16:55:22.773 PopulistMVP[10966:3099047] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 16:55:22.774 PopulistMVP[10966:3099047] latitude: -118.355194, longitude: 34.136524
+2015-04-24 16:55:22.792 PopulistMVP[10966:3099047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 17:43:07.603 PopulistMVP[10966:3116903] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1702e3900 {NSUnderlyingError=0x1742448f0 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 17:43:07.731 PopulistMVP[10966:3099047] PPLSTDataManager - createEventWithId:(null)
+2015-04-24 17:43:07.734 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 17:43:07.818 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 17:43:07.819 PopulistMVP[10966:3099047] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 17:43:07.820 PopulistMVP[10966:3099047] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 17:43:07.820 PopulistMVP[10966:3099047] PPLSTDataManager - createContributionWithId:dummyAj6ATjjX2A
+2015-04-24 17:43:07.823 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 17:43:07.827 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 17:43:07.828 PopulistMVP[10966:3099047] PPLSTDataManager - saveCoreData
+2015-04-24 17:43:07.832 PopulistMVP[10966:3099047] PPLSTDataManager - contextHasChanged
+2015-04-24 17:43:07.834 PopulistMVP[10966:3099047] channels: (
+    global,
+    mergeOS9AgmNHXv
+)
+2015-04-24 17:43:07.835 PopulistMVP[10966:3099047] trying to remove mergeOS9AgmNHXv
+2015-04-24 17:43:08.288 PopulistMVP[10966:3099047] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSCFConstantString stringByAppendingString:]: nil argument'
+*** First throw call stack:
+(0x18244659c 0x192b9c0e4 0x1824464dc 0x183231884 0x100079400 0x10007c6d8 0x10008ba30 0x10008814c 0x182b97848 0x182b941ac 0x182b8ee5c 0x1823fea28 0x1823fdb30 0x1823fc154 0x1823290a4 0x18b4cb5a4 0x186c5e3c0 0x10006ee84 0x19320aa08)
+libc++abi.dylib: terminating with uncaught exception of type NSException

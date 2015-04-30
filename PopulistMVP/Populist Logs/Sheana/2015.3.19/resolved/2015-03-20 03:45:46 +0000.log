@@ -1,0 +1,1470 @@
+2015-03-19 20:45:46.414 PopulistMVP[7160:4143931] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-19 20:45:46.480 PopulistMVP[7160:4143931] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:45:47.493 PopulistMVP[7160:4143931] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-19 20:45:47.638 PopulistMVP[7160:4143931] PPLSTDataManager - createAvatarForStatusDictionary
+2015-03-19 20:45:47.689 PopulistMVP[7160:4143931] updateEvents
+2015-03-19 20:45:47.692 PopulistMVP[7160:4143931] startUpdatingEvents
+2015-03-19 20:45:48.726 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didChangeAuthorizationStatus to status = 3
+2015-03-19 20:45:48.728 PopulistMVP[7160:4143931] didAcceptAuthorization triggered in ExploreVC
+2015-03-19 20:45:48.733 PopulistMVP[7160:4143931] updateEvents
+2015-03-19 20:45:48.873 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03203704,-118.44504052> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:45 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:48.879 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03203704,-118.44504052> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:45 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:45:48.901 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03203748,-118.44503997> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:48.919 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03203748,-118.44503997> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:45:49.249 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03203748,-118.44503997> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:49.266 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03203748,-118.44503997> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:45:49.278 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03203761,-118.44503979> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:49.335 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03203761,-118.44503979> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:45:49.441 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03203766,-118.44503974> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:49.453 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03203766,-118.44503974> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:45:47 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:45:49.462 PopulistMVP[7160:4143931] didRegisterForRemoteNotificationWithDeviceToken:<5e1806a1 ba71bd03 34906353 422927d6 7a14a696 6266789f a5344523 5862ee85>
+2015-03-19 20:45:49.475 PopulistMVP[7160:4143931] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:45:51.037 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03251863,-118.44374324> +/- 30.00m (speed 17.53 mps / course 62.93) @ 3/19/15, 8:45:50 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:51.065 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03251863,-118.44374324> +/- 30.00m (speed 17.53 mps / course 62.93) @ 3/19/15, 8:45:50 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-19 20:45:51.078 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03257416,-118.44361315> +/- 30.00m (speed 17.53 mps / course 62.93) @ 3/19/15, 8:45:50 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:51.086 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03257416,-118.44361315> +/- 30.00m (speed 17.53 mps / course 62.93) @ 3/19/15, 8:45:50 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-19 20:45:51.693 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.03262868,-118.44353889> +/- 5.00m (speed 13.44 mps / course 54.14) @ 3/19/15, 8:45:51 PM Pacific Daylight Time"
+)
+2015-03-19 20:45:51.698 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.03262868,-118.44353889> +/- 5.00m (speed 13.44 mps / course 54.14) @ 3/19/15, 8:45:51 PM Pacific Daylight Time, accuracy = 5.000000
+2015-03-19 20:45:51.717 PopulistMVP[7160:4143931] PPLSTLocationManager - getLocationStringData
+2015-03-19 20:45:51.718 PopulistMVP[7160:4143931] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.032629 and longitude = -118.443539
+2015-03-19 20:45:51.722 PopulistMVP[7160:4143931] request = <NSMutableURLRequest: 0x14d202f0> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.032629,-118.443539&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-19 20:45:52.469 PopulistMVP[7160:4143931] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 22536177 74656c6c 65222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202253 61777465 6c6c6522 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226e65 69676862 6f72686f 6f64222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 73222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a20224c 41222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6c6f6361 6c697479 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657320 436f756e 7479222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4c6f7320 416e6765 6c657320 436f756e 7479222c 0a202020 20202020 20202020 20202020 22747970 65732220 3a205b20 2261646d 696e6973 74726174 6976655f 61726561 5f6c6576 656c5f32 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 43616c69 666f726e 6961222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4341222c 0a202020 20202020 20202020 20202020 22747970 65732220 3a205b20 2261646d 696e6973 74726174 6976655f 61726561 5f6c6576 656c5f31 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 556e6974 65642053 74617465 73222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202255 53222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20202020 20202020 7d0a2020 20202020 2020205d 2c0a2020 20202020 20202022 666f726d 61747465 645f6164 64726573 7322203a 20225361 7774656c 6c652c20 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 30353730 3038392c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34333533 3031330a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3032 38313035 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37383538 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 34333339 30332c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34353432 3737320a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35373030 38392c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 33353330 31330a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303238 31303537 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343737 38353838 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a69 616f764b 574f3777 6f415257 357a3964 5657684b 3777222c 0a202020 20202020 20202274 79706573 22203a20 5b20226e 65696768 626f7268 6f6f6422 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202257 65737420 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22576573 74204c6f 7320416e 67656c65 73222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 57657374 204c6f73 20416e67 656c6573 2c204c6f 7320416e 67656c65 732c2043 412c2055 5341222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3036 32353333 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343130 36333932 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 32373836 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37323132 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 34313230 38352c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34343235 39360a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e5f 74797065 22203a20 22415050 524f5849 4d415445 222c0a20 20202020 20202020 20202022 76696577 706f7274 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3036 32353333 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343130 36333932 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 32373836 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37323132 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 4c586567 53336537 776f4152 3368324a 45586d34 39796b22 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 2020207d 2c0a2020 20202020 7b0a2020 20202020 20202022 61646472 6573735f 636f6d70 6f6e656e 74732220 3a205b0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 33333733 3036312c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 31353532 3839310a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 332e3730 33363931 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3636 38313735 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35323233 34322c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 32343336 3834390a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e33 33373330 36312c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e31 35353238 39310a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203333 2e373033 36393137 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e363638 31373539 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a45 396f6e33 46334877 6f415239 4168474a 575f664c 2d49222c 0a202020 20202020 20202274 79706573 22203a20 5b20226c 6f63616c 69747922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202255 6e697465 64205374 61746573 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20225553 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 0a202020 20202020 20205d2c 0a202020 20202020 20202266 6f726d61 74746564 5f616464 72657373 22203a20 22556e69 74656420 53746174 6573222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2037 312e3338 39383838 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d36362e 39343533 39343639 39393939 39390a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203138 2e393131 30363432 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 3137322e 34343538 3935350a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203337 2e303930 32342c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 39352e37 31323839 310a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203439 2e33382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 340a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2032352e 38322c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 32342e33 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 437a5979 35495331 366c5152 51726665 51354b35 4f787722 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d0a 2020205d 2c0a2020 20227374 61747573 22203a20 224f4b22 0a7d0a>
+2015-03-19 20:45:52.633 PopulistMVP[7160:4143931] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = Sawtelle;
+                    "short_name" = Sawtelle;
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Sawtelle, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.0570089";
+                        lng = "-118.4353013";
+                    };
+                    southwest =                     {
+                        lat = "34.0281057";
+                        lng = "-118.4778588";
+                    };
+                };
+                location =                 {
+                    lat = "34.0433903";
+                    lng = "-118.4542772";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.0570089";
+                        lng = "-118.4353013";
+                    };
+                    southwest =                     {
+                        lat = "34.0281057";
+                        lng = "-118.4778588";
+                    };
+                };
+            };
+            "place_id" = ChIJiaovKWO7woARW5z9dVWhK7w;
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "West Los Angeles";
+                    "short_name" = "West Los Angeles";
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "West Los Angeles, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.062533";
+                        lng = "-118.4106392";
+                    };
+                    southwest =                     {
+                        lat = "34.027862";
+                        lng = "-118.4772128";
+                    };
+                };
+                location =                 {
+                    lat = "34.0412085";
+                    lng = "-118.442596";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.062533";
+                        lng = "-118.4106392";
+                    };
+                    southwest =                     {
+                        lat = "34.027862";
+                        lng = "-118.4772128";
+                    };
+                };
+            };
+            "place_id" = ChIJLXegS3e7woAR3h2JEXm49yk;
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+                location =                 {
+                    lat = "34.0522342";
+                    lng = "-118.2436849";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+            };
+            "place_id" = "ChIJE9on3F3HwoAR9AhGJW_fL-I";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-19 20:45:52.783 PopulistMVP[7160:4143931] formattedAddress = Sawtelle, Los Angeles, CA, USA
+2015-03-19 20:45:52.797 PopulistMVP[7160:4143931] locationArray = (
+    Sawtelle,
+    " Los Angeles",
+    " CA",
+    " USA"
+)
+2015-03-19 20:45:52.799 PopulistMVP[7160:4143931] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+}
+2015-03-19 20:45:52.805 PopulistMVP[7160:4143931] count > 0
+2015-03-19 20:45:52.881 PopulistMVP[7160:4143931] count > 1
+2015-03-19 20:45:52.883 PopulistMVP[7160:4143931] count > 2
+2015-03-19 20:45:52.885 PopulistMVP[7160:4143931] count > 3
+2015-03-19 20:45:52.887 PopulistMVP[7160:4143931] Now, locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = Sawtelle;
+    state = CA;
+}
+2015-03-19 20:45:52.895 PopulistMVP[7160:4143931] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-03-19 20:45:52.896 PopulistMVP[7160:4143931] finishUpdatingEvents
+2015-03-19 20:45:52.906 PopulistMVP[7160:4143931] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.03262868,-118.44353889> +/- 5.00m (speed 13.44 mps / course 54.14) @ 3/19/15, 8:45:51 PM Pacific Daylight Time
+2015-03-19 20:45:52.913 PopulistMVP[7160:4143931] PPLSTLocationManager - updateTimeOfLastUpdate:2015-03-20 03:45:52 +0000
+2015-03-19 20:45:52.917 PopulistMVP[7160:4143931] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.032627 andLongitude:-118.443542 andDate:2015-03-20 03:45:52 +0000
+2015-03-19 20:45:52.919 PopulistMVP[7160:4143931] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.032627 andLongitude:-118.443542 andDate:2015-03-20 03:45:52 +0000
+2015-03-19 20:45:52.931 PopulistMVP[7160:4143931] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:45:54.524 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02274442899787";
+    longitude = "-118.4389076003552";
+    neighborhood = "Mar Vista";
+    objectId = Xj9R5AzyZK;
+    state = CA;
+    updatedAt = "2015-03-11 02:24:56 +0000";
+}
+2015-03-19 20:45:54.526 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:Xj9R5AzyZK
+2015-03-19 20:45:54.532 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = Xj9R5AzyZK
+2015-03-19 20:45:54.533 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:Xj9R5AzyZK
+2015-03-19 20:45:54.538 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.547 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.549 PopulistMVP[7160:4143931] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:54.550 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfzxc0WG0lV
+2015-03-19 20:45:54.551 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.552 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.553 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.559 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.560 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 5
+2015-03-19 20:45:54.583 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02422286758448";
+    longitude = "-118.4460007673244";
+    neighborhood = "Mar Vista";
+    objectId = haDax8K9An;
+    state = CA;
+    titlePhotoId = bImD9YiEYe;
+    updatedAt = "2015-02-11 18:59:46 +0000";
+}
+2015-03-19 20:45:54.585 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:haDax8K9An
+2015-03-19 20:45:54.587 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = haDax8K9An
+2015-03-19 20:45:54.588 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:haDax8K9An
+2015-03-19 20:45:54.589 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.596 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.598 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:bImD9YiEYe
+2015-03-19 20:45:54.599 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.600 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.601 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.605 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.607 PopulistMVP[7160:4143931] Error: No contribution found in core data with contributionId = bImD9YiEYe
+2015-03-19 20:45:54.608 PopulistMVP[7160:4143931] PPLSTDataManager - createContributionWithId:bImD9YiEYe
+2015-03-19 20:45:54.609 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.615 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.617 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02275006055554";
+    longitude = "-118.4389866190583";
+    neighborhood = "Mar Vista";
+    objectId = REdlMbNC9e;
+    state = CA;
+    updatedAt = "2015-03-13 00:45:57 +0000";
+}
+2015-03-19 20:45:54.618 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:REdlMbNC9e
+2015-03-19 20:45:54.621 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = REdlMbNC9e
+2015-03-19 20:45:54.622 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:REdlMbNC9e
+2015-03-19 20:45:54.623 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.628 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.629 PopulistMVP[7160:4143931] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:54.630 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAj6ATjjX2A
+2015-03-19 20:45:54.631 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.632 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.633 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.635 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.636 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 5
+2015-03-19 20:45:54.638 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02177250013812";
+    longitude = "-118.428137309886";
+    neighborhood = "Mar Vista";
+    objectId = s3voIdnzmQ;
+    state = CA;
+    updatedAt = "2015-03-15 02:59:03 +0000";
+}
+2015-03-19 20:45:54.639 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:s3voIdnzmQ
+2015-03-19 20:45:54.642 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = s3voIdnzmQ
+2015-03-19 20:45:54.643 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:s3voIdnzmQ
+2015-03-19 20:45:54.644 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.649 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.650 PopulistMVP[7160:4143931] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:54.651 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:dummy9VNFsfJ4qH
+2015-03-19 20:45:54.652 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.653 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.654 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.656 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.660 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 5
+2015-03-19 20:45:54.673 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02277045730924";
+    longitude = "-118.4385241955007";
+    neighborhood = "Mar Vista";
+    objectId = 4BjOlzPwWN;
+    state = CA;
+    titlePhotoId = z3sypqRJmu;
+    updatedAt = "2015-02-12 19:55:52 +0000";
+}
+2015-03-19 20:45:54.676 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:4BjOlzPwWN
+2015-03-19 20:45:54.724 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = 4BjOlzPwWN
+2015-03-19 20:45:54.731 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:4BjOlzPwWN
+2015-03-19 20:45:54.733 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.741 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.743 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:z3sypqRJmu
+2015-03-19 20:45:54.744 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.749 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.749 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.755 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.756 PopulistMVP[7160:4143931] Error: No contribution found in core data with contributionId = z3sypqRJmu
+2015-03-19 20:45:54.760 PopulistMVP[7160:4143931] PPLSTDataManager - createContributionWithId:z3sypqRJmu
+2015-03-19 20:45:54.761 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.771 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.773 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01994497936997";
+    longitude = "-118.4544266972369";
+    neighborhood = "Sunset Park";
+    objectId = 70RdIyxEXV;
+    state = CA;
+    titlePhotoId = dgAsqSsZAY;
+    updatedAt = "2015-02-01 20:25:08 +0000";
+}
+2015-03-19 20:45:54.775 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:70RdIyxEXV
+2015-03-19 20:45:54.778 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = 70RdIyxEXV
+2015-03-19 20:45:54.780 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:70RdIyxEXV
+2015-03-19 20:45:54.781 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.788 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.791 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:dgAsqSsZAY
+2015-03-19 20:45:54.792 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.793 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.794 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.796 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.797 PopulistMVP[7160:4143931] Error: No contribution found in core data with contributionId = dgAsqSsZAY
+2015-03-19 20:45:54.798 PopulistMVP[7160:4143931] PPLSTDataManager - createContributionWithId:dgAsqSsZAY
+2015-03-19 20:45:54.799 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.804 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.806 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02123307751989";
+    longitude = "-118.4314938503337";
+    neighborhood = "Mar Vista";
+    objectId = dBzy8barjz;
+    state = CA;
+    updatedAt = "2015-02-04 16:57:04 +0000";
+}
+2015-03-19 20:45:54.808 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:dBzy8barjz
+2015-03-19 20:45:54.811 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = dBzy8barjz
+2015-03-19 20:45:54.812 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:dBzy8barjz
+2015-03-19 20:45:54.813 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.819 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.820 PopulistMVP[7160:4143931] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:54.821 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLoGBufBRBH
+2015-03-19 20:45:54.822 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.823 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.824 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.827 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.828 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 5
+2015-03-19 20:45:54.831 PopulistMVP[7160:4143931] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02106929525455";
+    longitude = "-118.4286034796939";
+    neighborhood = "Mar Vista";
+    objectId = 3MRBBPdOKt;
+    state = CA;
+    titlePhotoId = yODgD2gI1N;
+    updatedAt = "2015-01-31 01:41:23 +0000";
+}
+2015-03-19 20:45:54.832 PopulistMVP[7160:4143931] PPLSTDataManager - getEventFromCoreDataWithId:3MRBBPdOKt
+2015-03-19 20:45:54.835 PopulistMVP[7160:4143931] Error: No event found in core data with eventId = 3MRBBPdOKt
+2015-03-19 20:45:54.836 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:3MRBBPdOKt
+2015-03-19 20:45:54.837 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.843 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.844 PopulistMVP[7160:4143931] PPLSTDataManager - getContributionFromCoreDataWithId:yODgD2gI1N
+2015-03-19 20:45:54.845 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 1
+2015-03-19 20:45:54.847 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 2
+2015-03-19 20:45:54.848 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 3
+2015-03-19 20:45:54.850 PopulistMVP[7160:4143931] getContributionFromCoreDataWithId - 4
+2015-03-19 20:45:54.851 PopulistMVP[7160:4143931] Error: No contribution found in core data with contributionId = yODgD2gI1N
+2015-03-19 20:45:54.853 PopulistMVP[7160:4143931] PPLSTDataManager - createContributionWithId:yODgD2gI1N
+2015-03-19 20:45:54.854 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.859 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.860 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:54.864 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:54.865 PopulistMVP[7160:4143931] PPLSTDataManager - sendSignalWithLatitude:34.032627 andLongitude:-118.443542 andDate:2015-03-20 03:45:52 +0000
+2015-03-19 20:45:54.866 PopulistMVP[7160:4143931] PPLSTLocationManager - getLocationStringData
+2015-03-19 20:45:54.867 PopulistMVP[7160:4143931] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.032629 and longitude = -118.443539
+2015-03-19 20:45:54.869 PopulistMVP[7160:4143931] request = <NSMutableURLRequest: 0x14e403b0> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.032629,-118.443539&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-19 20:45:54.883 PopulistMVP[7160:4143931] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 22536177 74656c6c 65222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202253 61777465 6c6c6522 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226e65 69676862 6f72686f 6f64222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 73222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a20224c 41222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6c6f6361 6c697479 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657320 436f756e 7479222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4c6f7320 416e6765 6c657320 436f756e 7479222c 0a202020 20202020 20202020 20202020 22747970 65732220 3a205b20 2261646d 696e6973 74726174 6976655f 61726561 5f6c6576 656c5f32 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 43616c69 666f726e 6961222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4341222c 0a202020 20202020 20202020 20202020 22747970 65732220 3a205b20 2261646d 696e6973 74726174 6976655f 61726561 5f6c6576 656c5f31 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 556e6974 65642053 74617465 73222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202255 53222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20202020 20202020 7d0a2020 20202020 2020205d 2c0a2020 20202020 20202022 666f726d 61747465 645f6164 64726573 7322203a 20225361 7774656c 6c652c20 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 30353730 3038392c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34333533 3031330a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3032 38313035 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37383538 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 34333339 30332c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34353432 3737320a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35373030 38392c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 33353330 31330a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303238 31303537 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343737 38353838 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a69 616f764b 574f3777 6f415257 357a3964 5657684b 3777222c 0a202020 20202020 20202274 79706573 22203a20 5b20226e 65696768 626f7268 6f6f6422 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202257 65737420 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22576573 74204c6f 7320416e 67656c65 73222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 57657374 204c6f73 20416e67 656c6573 2c204c6f 7320416e 67656c65 732c2043 412c2055 5341222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3036 32353333 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343130 36333932 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 32373836 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37323132 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 34313230 38352c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34343235 39360a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e5f 74797065 22203a20 22415050 524f5849 4d415445 222c0a20 20202020 20202020 20202022 76696577 706f7274 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 342e3036 32353333 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e343130 36333932 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 32373836 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3437 37323132 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 4c586567 53336537 776f4152 3368324a 45586d34 39796b22 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 2020207d 2c0a2020 20202020 7b0a2020 20202020 20202022 61646472 6573735f 636f6d70 6f6e656e 74732220 3a205b0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 33333733 3036312c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 31353532 3839310a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 332e3730 33363931 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3636 38313735 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35323233 34322c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 32343336 3834390a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e33 33373330 36312c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e31 35353238 39310a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203333 2e373033 36393137 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e363638 31373539 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a45 396f6e33 46334877 6f415239 4168474a 575f664c 2d49222c 0a202020 20202020 20202274 79706573 22203a20 5b20226c 6f63616c 69747922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202255 6e697465 64205374 61746573 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20225553 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 0a202020 20202020 20205d2c 0a202020 20202020 20202266 6f726d61 74746564 5f616464 72657373 22203a20 22556e69 74656420 53746174 6573222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2037 312e3338 39383838 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d36362e 39343533 39343639 39393939 39390a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203138 2e393131 30363432 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 3137322e 34343538 3935350a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203337 2e303930 32342c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 39352e37 31323839 310a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203439 2e33382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 340a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2032352e 38322c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 32342e33 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 437a5979 35495331 366c5152 51726665 51354b35 4f787722 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d0a 2020205d 2c0a2020 20227374 61747573 22203a20 224f4b22 0a7d0a>
+2015-03-19 20:45:54.915 PopulistMVP[7160:4143931] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = Sawtelle;
+                    "short_name" = Sawtelle;
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Sawtelle, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.0570089";
+                        lng = "-118.4353013";
+                    };
+                    southwest =                     {
+                        lat = "34.0281057";
+                        lng = "-118.4778588";
+                    };
+                };
+                location =                 {
+                    lat = "34.0433903";
+                    lng = "-118.4542772";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.0570089";
+                        lng = "-118.4353013";
+                    };
+                    southwest =                     {
+                        lat = "34.0281057";
+                        lng = "-118.4778588";
+                    };
+                };
+            };
+            "place_id" = ChIJiaovKWO7woARW5z9dVWhK7w;
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "West Los Angeles";
+                    "short_name" = "West Los Angeles";
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "West Los Angeles, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.062533";
+                        lng = "-118.4106392";
+                    };
+                    southwest =                     {
+                        lat = "34.027862";
+                        lng = "-118.4772128";
+                    };
+                };
+                location =                 {
+                    lat = "34.0412085";
+                    lng = "-118.442596";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.062533";
+                        lng = "-118.4106392";
+                    };
+                    southwest =                     {
+                        lat = "34.027862";
+                        lng = "-118.4772128";
+                    };
+                };
+            };
+            "place_id" = ChIJLXegS3e7woAR3h2JEXm49yk;
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+                location =                 {
+                    lat = "34.0522342";
+                    lng = "-118.2436849";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+            };
+            "place_id" = "ChIJE9on3F3HwoAR9AhGJW_fL-I";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-19 20:45:54.937 PopulistMVP[7160:4143931] formattedAddress = Sawtelle, Los Angeles, CA, USA
+2015-03-19 20:45:54.938 PopulistMVP[7160:4143931] locationArray = (
+    Sawtelle,
+    " Los Angeles",
+    " CA",
+    " USA"
+)
+2015-03-19 20:45:54.939 PopulistMVP[7160:4143931] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+}
+2015-03-19 20:45:54.940 PopulistMVP[7160:4143931] count > 0
+2015-03-19 20:45:54.940 PopulistMVP[7160:4143931] count > 1
+2015-03-19 20:45:54.941 PopulistMVP[7160:4143931] count > 2
+2015-03-19 20:45:54.942 PopulistMVP[7160:4143931] count > 3
+2015-03-19 20:45:54.943 PopulistMVP[7160:4143931] Now, locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = Sawtelle;
+    state = CA;
+}
+2015-03-19 20:45:54.944 PopulistMVP[7160:4143931] Right before creating the parameter dictionary. Here are the parameters:
+2015-03-19 20:45:54.945 PopulistMVP[7160:4143931] latitude: -118.443542, longitude: 34.032627, locationDataDictionary: {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = Sawtelle;
+    state = CA;
+}, locationDataDictionary[country]: USA, locationDataDictionary[state]: CA, locationDataDictionary[city]: Los Angeles, locationDataDictionary[neighborhood]: Sawtelle.
+2015-03-19 20:45:54.951 PopulistMVP[7160:4143931] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:45:55.400 PopulistMVP[7160:4143931] PPLSTDataManager - createEventWithId:uIneYdiKLz
+2015-03-19 20:45:55.401 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:55.404 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:55.406 PopulistMVP[7160:4143931] PPLSTDataManager - newDummyTitleContribution
+2015-03-19 20:45:55.407 PopulistMVP[7160:4143931] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:55.408 PopulistMVP[7160:4143931] PPLSTDataManager - createContributionWithId:dummyNmNqfXqfK9
+2015-03-19 20:45:55.409 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:55.413 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:55.414 PopulistMVP[7160:4143931] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:55.418 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:55.419 PopulistMVP[7160:4143931] channels: (
+    global
+)
+2015-03-19 20:45:55.441 PopulistMVP[7160:4143957] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x14d8b700> (entity: Event; id: 0x14d8e050 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p729> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = Xj9R5AzyZK;\n    importance = 2;\n    lastActive = \"2015-03-11 02:24:56 +0000\";\n    latitude = \"34.02274\";\n    longitude = \"-118.4389\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14e319d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p936>\";\n})",
+    "<Event: 0x14d92410> (entity: Event; id: 0x14d93000 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p730> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = haDax8K9An;\n    importance = 2;\n    lastActive = \"2015-02-11 18:59:46 +0000\";\n    latitude = \"34.02422\";\n    longitude = \"-118.446\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14d92330 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p981>\";\n})",
+    "<Event: 0x14e39a60> (entity: Event; id: 0x14e34920 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p731> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = REdlMbNC9e;\n    importance = 1;\n    lastActive = \"2015-03-13 00:45:57 +0000\";\n    latitude = \"34.02275\";\n    longitude = \"-118.439\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14e39d70 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p939>\";\n})",
+    "<Event: 0x14d92340> (entity: Event; id: 0x14d92ec0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p732> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = s3voIdnzmQ;\n    importance = 2;\n    lastActive = \"2015-03-15 02:59:03 +0000\";\n    latitude = \"34.02177\";\n    longitude = \"-118.4281\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14d92e80 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p971>\";\n})",
+    "<Event: 0x14e397e0> (entity: Event; id: 0x14e39e30 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p733> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = 4BjOlzPwWN;\n    importance = 2;\n    lastActive = \"2015-02-12 19:55:52 +0000\";\n    latitude = \"34.02277\";\n    longitude = \"-118.4385\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14e74b80 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p982>\";\n})",
+    "<Event: 0x14d944c0> (entity: Event; id: 0x14e398a0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p734> ; data: {\n    city = \"Santa Monica\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = 70RdIyxEXV;\n    importance = 2;\n    lastActive = \"2015-02-01 20:25:08 +0000\";\n    latitude = \"34.01994\";\n    longitude = \"-118.4544\";\n    neighborhood = \"Sunset Park\";\n    state = CA;\n    titleContribution = \"0x14e5a400 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p983>\";\n})",
+    "<Event: 0x14e39730> (entity: Event; id: 0x14d94250 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p735> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = dBzy8barjz;\n    importance = 1;\n    lastActive = \"2015-02-04 16:57:04 +0000\";\n    latitude = \"34.02123\";\n    longitude = \"-118.4315\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14e5a3e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p973>\";\n})",
+    "<Event: 0x14e71d50> (entity: Event; id: 0x14d94bf0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p736> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = 3MRBBPdOKt;\n    importance = 1;\n    lastActive = \"2015-01-31 01:41:23 +0000\";\n    latitude = \"34.02107\";\n    longitude = \"-118.4286\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x14e7ca50 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p984>\";\n})"
+) inContext:<NSManagedObjectContext: 0x14d97c20>
+2015-03-19 20:45:55.467 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-03-19 20:45:55.474 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e701b0; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x14e67f40>> ForContribution:<Contribution: 0x14e18900> (entity: Contribution; id: 0x14e319d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p936> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-03-01 00:47:16 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d8e050 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p729>";
+})
+2015-03-19 20:45:55.478 PopulistMVP[7160:4143931] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = (null)
+2015-03-19 20:45:55.479 PopulistMVP[7160:4143931] loading = (null)
+2015-03-19 20:45:55.482 PopulistMVP[7160:4143931] it wasn't loading, so we'll move forward
+2015-03-19 20:45:55.514 PopulistMVP[7160:4143931] About to dispatch async
+2015-03-19 20:45:55.516 PopulistMVP[7160:4144101] About to download the media for this contribution
+2015-03-19 20:45:55.517 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:55.517 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:45:55.518 PopulistMVP[7160:4144101] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x14e18900> (entity: Contribution; id: 0x14e319d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p936> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-03-01 00:47:16 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d8e050 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p729>";
+})
+2015-03-19 20:45:55.526 PopulistMVP[7160:4144101] PPLSTDataManager - storeImage:<UIImage: 0x14e41040>
+2015-03-19 20:45:55.537 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = bImD9YiEYe
+2015-03-19 20:45:55.540 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e82e90; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x14e78fb0>> ForContribution:<Contribution: 0x14d90f00> (entity: Contribution; id: 0x14d92330 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p981> ; data: {
+    contributingUserId = "";
+    contributionId = bImD9YiEYe;
+    contributionType = photo;
+    createdAt = "2015-02-11 18:59:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d93000 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p730>";
+})
+2015-03-19 20:45:55.543 PopulistMVP[7160:4143931] contributionId = bImD9YiEYe, contributionType = photo, imagePath = (null)
+2015-03-19 20:45:55.545 PopulistMVP[7160:4144101] PPLSTDataManager - getEmptyFileName
+2015-03-19 20:45:55.545 PopulistMVP[7160:4143931] loading = (null)
+2015-03-19 20:45:55.547 PopulistMVP[7160:4144101] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:55.547 PopulistMVP[7160:4143931] it wasn't loading, so we'll move forward
+2015-03-19 20:45:55.548 PopulistMVP[7160:4144101] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:55.552 PopulistMVP[7160:4143931] About to dispatch async
+2015-03-19 20:45:55.554 PopulistMVP[7160:4143942] About to download the media for this contribution
+2015-03-19 20:45:55.555 PopulistMVP[7160:4143942] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x14d90f00> (entity: Contribution; id: 0x14d92330 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p981> ; data: {
+    contributingUserId = "";
+    contributionId = bImD9YiEYe;
+    contributionType = photo;
+    createdAt = "2015-02-11 18:59:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d93000 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p730>";
+})
+2015-03-19 20:45:55.556 PopulistMVP[7160:4144101] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:55.558 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:55.560 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:45:55.565 PopulistMVP[7160:4144101] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:55.620 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-03-19 20:45:55.621 PopulistMVP[7160:4143931] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-03-19 20:45:55.623 PopulistMVP[7160:4143931] the filePath is /var/mobile/Containers/Data/Application/E18BF749-37DF-4745-A261-FDE5815482DC/Documents/gqHSf71iez.png
+2015-03-19 20:45:55.629 PopulistMVP[7160:4143931] the image is <UIImage: 0x14da0f80>
+2015-03-19 20:45:55.630 PopulistMVP[7160:4143931] PPLST prepareDictionaryForInsertWithKey:gqHSf71iez
+2015-03-19 20:45:55.631 PopulistMVP[7160:4143931] self.keysSet = {(
+)}
+2015-03-19 20:45:55.632 PopulistMVP[7160:4143931] [self.keysArray count] = 0. Max = 10
+2015-03-19 20:45:55.633 PopulistMVP[7160:4143931] PPLST prepareDictionaryForInsertWithKey - done
+2015-03-19 20:45:55.641 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-03-19 20:45:55.643 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e701b0; baseClass = UITableViewCell; frame = (0 0; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x14e67f40>> ForContribution:<Contribution: 0x14e18900> (entity: Contribution; id: 0x14e319d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p936> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-03-01 00:47:16 +0000";
+    event = nil;
+    imagePath = gqHSf71iez;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d8e050 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p729>";
+})
+2015-03-19 20:45:55.646 PopulistMVP[7160:4143931] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = gqHSf71iez
+2015-03-19 20:45:55.647 PopulistMVP[7160:4143931] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-19 20:45:55.647 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-03-19 20:45:55.648 PopulistMVP[7160:4143931] Just got the image <UIImage: 0x14da0f80>
+2015-03-19 20:45:55.649 PopulistMVP[7160:4143931] Yay, the image wasn't nil
+2015-03-19 20:45:55.650 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-03-19 20:45:55.651 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:55.652 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:45:55.654 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = bImD9YiEYe
+2015-03-19 20:45:55.655 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e82e90; baseClass = UITableViewCell; frame = (0 330; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x14e78fb0>> ForContribution:<Contribution: 0x14d90f00> (entity: Contribution; id: 0x14d92330 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p981> ; data: {
+    contributingUserId = "";
+    contributionId = bImD9YiEYe;
+    contributionType = photo;
+    createdAt = "2015-02-11 18:59:46 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d93000 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p730>";
+})
+2015-03-19 20:45:55.657 PopulistMVP[7160:4143931] contributionId = bImD9YiEYe, contributionType = photo, imagePath = (null)
+2015-03-19 20:45:55.658 PopulistMVP[7160:4143931] loading = 1
+2015-03-19 20:45:55.659 PopulistMVP[7160:4143931] It's loading, let's return
+2015-03-19 20:45:55.660 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:55.661 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:45:55.680 PopulistMVP[7160:4143957] About to delete contribution with ID dummyLY34AAQWyg
+2015-03-19 20:45:55.681 PopulistMVP[7160:4143957] Deleting Event with ID oOonxk1977
+2015-03-19 20:45:55.689 PopulistMVP[7160:4143957] About to delete contribution with ID T93IfORQAh
+2015-03-19 20:45:55.689 PopulistMVP[7160:4143957] Deleting Event with ID a0zvn6jSxE
+2015-03-19 20:45:55.692 PopulistMVP[7160:4143957] About to delete contribution with ID EzWDvH8jkX
+2015-03-19 20:45:55.693 PopulistMVP[7160:4143957] Deleting Event with ID rrLryzmaQ4
+2015-03-19 20:45:55.697 PopulistMVP[7160:4143957] About to delete contribution with ID URnHqeMrAB
+2015-03-19 20:45:55.698 PopulistMVP[7160:4143957] Deleting Event with ID joAOP58mom
+2015-03-19 20:45:55.701 PopulistMVP[7160:4143957] About to delete contribution with ID dummyy965CSUrp2
+2015-03-19 20:45:55.701 PopulistMVP[7160:4143957] Deleting Event with ID 4XlO65mvhG
+2015-03-19 20:45:55.704 PopulistMVP[7160:4143957] About to delete contribution with ID yb6idMWD4a
+2015-03-19 20:45:55.705 PopulistMVP[7160:4143957] Deleting Event with ID aNbTqtPoIe
+2015-03-19 20:45:55.708 PopulistMVP[7160:4143957] About to delete contribution with ID sH8L42KTaA
+2015-03-19 20:45:55.709 PopulistMVP[7160:4143957] Deleting Event with ID R8AGD1lotk
+2015-03-19 20:45:55.714 PopulistMVP[7160:4143957] About to delete contribution with ID H4JA942xJr
+2015-03-19 20:45:55.715 PopulistMVP[7160:4143957] Deleting Event with ID BJlM8ol8O6
+2015-03-19 20:45:55.723 PopulistMVP[7160:4143957] About to delete contribution with ID wJFSo2h5mN
+2015-03-19 20:45:55.725 PopulistMVP[7160:4143957] Deleting Event with ID AKHQaVBWhW
+2015-03-19 20:45:55.730 PopulistMVP[7160:4143957] About to delete contribution with ID dummy649VOR3g7q
+2015-03-19 20:45:55.731 PopulistMVP[7160:4143957] Deleting Event with ID BzI4MZSeLK
+2015-03-19 20:45:55.734 PopulistMVP[7160:4143942] PPLSTDataManager - storeImage:<UIImage: 0x14e41040>
+2015-03-19 20:45:55.735 PopulistMVP[7160:4143957] About to delete contribution with ID mWnxX8cPZR
+2015-03-19 20:45:55.736 PopulistMVP[7160:4143957] Deleting Event with ID PitpniWfTF
+2015-03-19 20:45:55.740 PopulistMVP[7160:4143957] About to delete contribution with ID EM4B3oOVK9
+2015-03-19 20:45:55.741 PopulistMVP[7160:4143957] Deleting Event with ID 9jYWKnDCKK
+2015-03-19 20:45:55.744 PopulistMVP[7160:4143957] About to delete contribution with ID PlspdcNQrC
+2015-03-19 20:45:55.745 PopulistMVP[7160:4143957] Deleting Event with ID cjxYEDAo7a
+2015-03-19 20:45:55.749 PopulistMVP[7160:4143957] About to delete contribution with ID ELqt6zWZMm
+2015-03-19 20:45:55.750 PopulistMVP[7160:4143957] Deleting Event with ID 7FursU4nmZ
+2015-03-19 20:45:55.753 PopulistMVP[7160:4143957] About to delete contribution with ID W2yBTOAqe7
+2015-03-19 20:45:55.754 PopulistMVP[7160:4143957] Deleting Event with ID wqVHqITtqn
+2015-03-19 20:45:55.757 PopulistMVP[7160:4143957] About to delete contribution with ID A6atGLjlMU
+2015-03-19 20:45:55.759 PopulistMVP[7160:4143957] Deleting Event with ID w0XAlfhIwI
+2015-03-19 20:45:55.763 PopulistMVP[7160:4143957] About to delete contribution with ID n4wLWaZd2R
+2015-03-19 20:45:55.764 PopulistMVP[7160:4143957] Deleting Event with ID By8a4okoSU
+2015-03-19 20:45:55.768 PopulistMVP[7160:4143957] About to delete contribution with ID HKAw4VLaWN
+2015-03-19 20:45:55.769 PopulistMVP[7160:4143957] Deleting Event with ID 4GmiIWfgFi
+2015-03-19 20:45:55.775 PopulistMVP[7160:4143957] About to delete contribution with ID G9AZS00WMh
+2015-03-19 20:45:55.776 PopulistMVP[7160:4143957] Deleting Event with ID 2FZfxAgPRI
+2015-03-19 20:45:55.779 PopulistMVP[7160:4143957] About to delete contribution with ID CTu7DmM9po
+2015-03-19 20:45:55.780 PopulistMVP[7160:4143957] Deleting Event with ID EA55jb8lQf
+2015-03-19 20:45:55.787 PopulistMVP[7160:4143957] About to delete contribution with ID rFWQzZ7MKe
+2015-03-19 20:45:55.788 PopulistMVP[7160:4143957] Deleting Event with ID 6mUJu3r1u2
+2015-03-19 20:45:55.793 PopulistMVP[7160:4143957] About to delete contribution with ID aW33Da7pNm
+2015-03-19 20:45:55.794 PopulistMVP[7160:4143957] Deleting Event with ID KphaAi9MqP
+2015-03-19 20:45:55.797 PopulistMVP[7160:4143957] About to delete contribution with ID ebVKmcxRoR
+2015-03-19 20:45:55.798 PopulistMVP[7160:4143957] Deleting Event with ID jB8lYOousQ
+2015-03-19 20:45:55.801 PopulistMVP[7160:4143957] About to delete contribution with ID M5WMX8Pl7p
+2015-03-19 20:45:55.801 PopulistMVP[7160:4143957] Deleting Event with ID 69TxvGpxJy
+2015-03-19 20:45:55.804 PopulistMVP[7160:4143957] About to delete contribution with ID Nh8h8EXDtX
+2015-03-19 20:45:55.805 PopulistMVP[7160:4143957] Deleting Event with ID ocVpU25ugR
+2015-03-19 20:45:55.808 PopulistMVP[7160:4143957] About to delete contribution with ID 4VZCsC9oNH
+2015-03-19 20:45:55.809 PopulistMVP[7160:4143957] Deleting Event with ID Go4eGF5AIU
+2015-03-19 20:45:55.814 PopulistMVP[7160:4143957] About to delete contribution with ID cHA6JwyNyO
+2015-03-19 20:45:55.815 PopulistMVP[7160:4143957] Deleting Event with ID LShplbfiEf
+2015-03-19 20:45:55.818 PopulistMVP[7160:4143957] About to delete contribution with ID yf8TSe2OPK
+2015-03-19 20:45:55.818 PopulistMVP[7160:4143957] Deleting Event with ID 0LxAGQFyf2
+2015-03-19 20:45:55.822 PopulistMVP[7160:4143957] About to delete contribution with ID f1x3kJkl1N
+2015-03-19 20:45:55.824 PopulistMVP[7160:4143957] Deleting Event with ID tdlwosCqGk
+2015-03-19 20:45:55.827 PopulistMVP[7160:4143957] About to delete contribution with ID WnYtJGQovO
+2015-03-19 20:45:55.829 PopulistMVP[7160:4143957] Deleting Event with ID GFIB53uXF6
+2015-03-19 20:45:55.832 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId1264817709
+2015-03-19 20:45:55.835 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId1115438165
+2015-03-19 20:45:55.838 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId1474833169
+2015-03-19 20:45:55.840 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId156091745
+2015-03-19 20:45:55.842 PopulistMVP[7160:4143957] About to delete contribution with ID vnCtWxJDSs
+2015-03-19 20:45:55.845 PopulistMVP[7160:4143957] About to delete contribution with ID vGolDJNtmR
+2015-03-19 20:45:55.847 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId500782188
+2015-03-19 20:45:55.850 PopulistMVP[7160:4143957] About to delete contribution with ID IPGvzi9Dqj
+2015-03-19 20:45:55.852 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId1580723810
+2015-03-19 20:45:55.855 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId16807
+2015-03-19 20:45:55.858 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId16807
+2015-03-19 20:45:55.860 PopulistMVP[7160:4143957] About to delete contribution with ID tmpId1998097157
+2015-03-19 20:45:55.863 PopulistMVP[7160:4143957] About to delete contribution with ID mqm3KkcoIx
+2015-03-19 20:45:55.865 PopulistMVP[7160:4143957] About to delete contribution with ID WePgvsyWid
+2015-03-19 20:45:55.867 PopulistMVP[7160:4143957] About to delete contribution with ID mqm3KkcoIx
+2015-03-19 20:45:55.868 PopulistMVP[7160:4143957] Deleting Event with ID LViprcbCVk
+2015-03-19 20:45:55.871 PopulistMVP[7160:4143957] About to delete contribution with ID 2Ao2wZB2Fv
+2015-03-19 20:45:55.873 PopulistMVP[7160:4143957] Deleting Event with ID dH2nzRR6xD
+2015-03-19 20:45:55.877 PopulistMVP[7160:4143957] About to delete contribution with ID 4NMwWS9YXO
+2015-03-19 20:45:55.878 PopulistMVP[7160:4143957] Deleting Event with ID UB5EoM6CON
+2015-03-19 20:45:55.882 PopulistMVP[7160:4143957] About to delete contribution with ID dummyLK5t5pJqPy
+2015-03-19 20:45:55.883 PopulistMVP[7160:4143957] Deleting Event with ID kuwMqazzzu
+2015-03-19 20:45:55.886 PopulistMVP[7160:4143957] About to delete contribution with ID 6T30moymbi
+2015-03-19 20:45:55.888 PopulistMVP[7160:4143957] Deleting Event with ID 8PbUNh32N4
+2015-03-19 20:45:55.891 PopulistMVP[7160:4143957] About to delete contribution with ID Rf8LSYpthC
+2015-03-19 20:45:55.893 PopulistMVP[7160:4143957] Deleting Event with ID WWkvsj95Da
+2015-03-19 20:45:55.898 PopulistMVP[7160:4143957] About to delete contribution with ID 49xaaaeqDT
+2015-03-19 20:45:55.899 PopulistMVP[7160:4143957] Deleting Event with ID Kjg7lQ6ElE
+2015-03-19 20:45:55.902 PopulistMVP[7160:4143957] About to delete contribution with ID rPdol1Jf6y
+2015-03-19 20:45:55.903 PopulistMVP[7160:4143957] Deleting Event with ID 7PL0u2S9Qr
+2015-03-19 20:45:55.907 PopulistMVP[7160:4143957] About to delete contribution with ID tkTFUMrVq8
+2015-03-19 20:45:55.908 PopulistMVP[7160:4143957] Deleting Event with ID 9o0RMmC2Qi
+2015-03-19 20:45:55.914 PopulistMVP[7160:4143957] About to delete contribution with ID AhOZIbexLC
+2015-03-19 20:45:55.915 PopulistMVP[7160:4143957] Deleting Event with ID UW11um0ueQ
+2015-03-19 20:45:55.920 PopulistMVP[7160:4143957] About to delete contribution with ID rRqx74WDkq
+2015-03-19 20:45:55.923 PopulistMVP[7160:4143957] Deleting Event with ID n5242VObju
+2015-03-19 20:45:55.926 PopulistMVP[7160:4143957] About to delete contribution with ID NpkNb5utZs
+2015-03-19 20:45:55.927 PopulistMVP[7160:4143957] Deleting Event with ID cEiC0cMNkc
+2015-03-19 20:45:55.936 PopulistMVP[7160:4143957] About to delete contribution with ID VjYfznawOo
+2015-03-19 20:45:55.937 PopulistMVP[7160:4143957] Deleting Event with ID 5bywb2Qe9s
+2015-03-19 20:45:55.942 PopulistMVP[7160:4143957] About to delete contribution with ID 3899nsNLuT
+2015-03-19 20:45:55.951 PopulistMVP[7160:4143957] Deleting Event with ID 7SQKiPbZMw
+2015-03-19 20:45:55.955 PopulistMVP[7160:4143957] About to delete contribution with ID 1dMMX5ZHEt
+2015-03-19 20:45:55.956 PopulistMVP[7160:4143957] Deleting Event with ID KdhcbW3NbI
+2015-03-19 20:45:55.960 PopulistMVP[7160:4143957] About to delete contribution with ID dummyNmNqfXqfK9
+2015-03-19 20:45:55.961 PopulistMVP[7160:4143957] Deleting Event with ID 8ykACl47rM
+2015-03-19 20:45:55.965 PopulistMVP[7160:4143957] About to delete contribution with ID Q9wo9S8sZy
+2015-03-19 20:45:55.967 PopulistMVP[7160:4143957] Deleting Event with ID zCsV1JkjXM
+2015-03-19 20:45:55.969 PopulistMVP[7160:4143957] About to delete contribution with ID qcSl2RQrK1
+2015-03-19 20:45:55.970 PopulistMVP[7160:4143957] Deleting Event with ID tJdHRvg8lf
+2015-03-19 20:45:55.973 PopulistMVP[7160:4143957] About to delete contribution with ID 2RtRbEKVbG
+2015-03-19 20:45:55.974 PopulistMVP[7160:4143957] Deleting Event with ID xUVcPAPQ2a
+2015-03-19 20:45:55.978 PopulistMVP[7160:4143957] About to delete contribution with ID 472kc7QpC7
+2015-03-19 20:45:55.979 PopulistMVP[7160:4143957] Deleting Event with ID 8ygzwcVNeI
+2015-03-19 20:45:55.987 PopulistMVP[7160:4143957] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:56.015 PopulistMVP[7160:4143957] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:56.017 PopulistMVP[7160:4143931] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:56.024 PopulistMVP[7160:4143957] Deleting file with fileName = V74lolx4Oh
+2015-03-19 20:45:56.032 PopulistMVP[7160:4143957] Deleting file with fileName = BBKNLvwJBy
+2015-03-19 20:45:56.036 PopulistMVP[7160:4143957] Deleting file with fileName = qfK9Nxwugg
+2015-03-19 20:45:56.042 PopulistMVP[7160:4143957] Deleting file with fileName = zxc0WG0lVA
+2015-03-19 20:45:56.046 PopulistMVP[7160:4143957] Deleting file with fileName = j6ATjjX2A9
+2015-03-19 20:45:56.059 PopulistMVP[7160:4143957] Deleting file with fileName = sfJ4qHLoGB
+2015-03-19 20:45:56.083 PopulistMVP[7160:4143957] Deleting file with fileName = NFsfJ4qHLo
+2015-03-19 20:45:56.097 PopulistMVP[7160:4143957] Deleting file with fileName = NmNqfXqfK9
+2015-03-19 20:45:56.106 PopulistMVP[7160:4143957] Deleting file with fileName = hHGCc0Fy6f
+2015-03-19 20:45:56.109 PopulistMVP[7160:4143942] PPLSTDataManager - getEmptyFileName
+2015-03-19 20:45:56.110 PopulistMVP[7160:4143957] Deleting file with fileName = KkPJnkGR7Q
+2015-03-19 20:45:56.111 PopulistMVP[7160:4143942] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:45:56.117 PopulistMVP[7160:4143957] Deleting file with fileName = fBRBHNmNqf
+2015-03-19 20:45:56.120 PopulistMVP[7160:4143957] Deleting file with fileName = Nxwuggw4mF
+2015-03-19 20:45:56.123 PopulistMVP[7160:4143957] Deleting file with fileName = 6ATjjX2A9V
+2015-03-19 20:45:56.126 PopulistMVP[7160:4143957] Deleting file with fileName = GBufBRBHNm
+2015-03-19 20:45:56.134 PopulistMVP[7160:4143942] PPLSTDataManager - saveCoreData
+2015-03-19 20:45:56.161 PopulistMVP[7160:4143942] PPLSTDataManager - contextHasChanged
+2015-03-19 20:45:56.167 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:cBdjbEHKvr
+2015-03-19 20:45:56.168 PopulistMVP[7160:4143931] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-03-19 20:45:56.170 PopulistMVP[7160:4143931] the filePath is /var/mobile/Containers/Data/Application/E18BF749-37DF-4745-A261-FDE5815482DC/Documents/cBdjbEHKvr.png
+2015-03-19 20:45:56.175 PopulistMVP[7160:4143931] the image is <UIImage: 0x14d8dfd0>
+2015-03-19 20:45:56.176 PopulistMVP[7160:4143931] PPLST prepareDictionaryForInsertWithKey:cBdjbEHKvr
+2015-03-19 20:45:56.176 PopulistMVP[7160:4143931] self.keysSet = {(
+    gqHSf71iez
+)}
+2015-03-19 20:45:56.177 PopulistMVP[7160:4143931] [self.keysArray count] = 1. Max = 10
+2015-03-19 20:45:56.178 PopulistMVP[7160:4143931] PPLST prepareDictionaryForInsertWithKey - done
+2015-03-19 20:45:56.180 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-03-19 20:45:56.182 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e701b0; baseClass = UITableViewCell; frame = (0 0; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x14e67f40>> ForContribution:<Contribution: 0x14e18900> (entity: Contribution; id: 0x14e319d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p936> ; data: {
+    contributingUserId = "";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-03-01 00:47:16 +0000";
+    event = nil;
+    imagePath = gqHSf71iez;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d8e050 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p729>";
+})
+2015-03-19 20:45:56.184 PopulistMVP[7160:4143931] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = gqHSf71iez
+2015-03-19 20:45:56.185 PopulistMVP[7160:4143931] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-19 20:45:56.186 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-03-19 20:45:56.187 PopulistMVP[7160:4143931] Just got the image <UIImage: 0x14da0f80>
+2015-03-19 20:45:56.187 PopulistMVP[7160:4143931] Yay, the image wasn't nil
+2015-03-19 20:45:56.188 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-03-19 20:45:56.190 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:56.191 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:45:56.192 PopulistMVP[7160:4143931] Formatting Event Cell for contributionId = bImD9YiEYe
+2015-03-19 20:45:56.194 PopulistMVP[7160:4143931] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x14e82e90; baseClass = UITableViewCell; frame = (0 330; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x14e78fb0>> ForContribution:<Contribution: 0x14d90f00> (entity: Contribution; id: 0x14d92330 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p981> ; data: {
+    contributingUserId = "A94580CE-BF67-487B-81F3-88D58B9DF3C5";
+    contributionId = bImD9YiEYe;
+    contributionType = photo;
+    createdAt = "2015-02-11 18:59:39 +0000";
+    event = nil;
+    imagePath = cBdjbEHKvr;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x14d93000 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p730>";
+})
+2015-03-19 20:45:56.196 PopulistMVP[7160:4143931] contributionId = bImD9YiEYe, contributionType = photo, imagePath = cBdjbEHKvr
+2015-03-19 20:45:56.197 PopulistMVP[7160:4143931] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-19 20:45:56.198 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:cBdjbEHKvr
+2015-03-19 20:45:56.199 PopulistMVP[7160:4143931] Just got the image <UIImage: 0x14d8dfd0>
+2015-03-19 20:45:56.199 PopulistMVP[7160:4143931] Yay, the image wasn't nil
+2015-03-19 20:45:56.200 PopulistMVP[7160:4143931] PPLSTDataManager - getImageWithFileName:cBdjbEHKvr
+2015-03-19 20:45:56.201 PopulistMVP[7160:4143931] self.location: -USA-CA-Los Angeles-Sawtelle
+2015-03-19 20:45:56.202 PopulistMVP[7160:4143931] event.location: -USA-CA-Los Angeles-Mar Vista
+2015-03-19 20:51:15.362 PopulistMVP[7160:4143931] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x14e59d50>
+2015-03-19 20:51:16.652 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02101368,-118.42756372> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:16.801 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02101368,-118.42756372> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:51:16.808 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02101368,-118.42756372> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:16.926 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02101368,-118.42756372> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:51:16.935 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02103694,-118.42760411> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:16.938 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02103694,-118.42760411> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:51:16.942 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02104267,-118.42761404> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:16.986 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02104267,-118.42761404> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:51:16 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-19 20:51:24.150 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02103039,-118.42766977> +/- 50.00m (speed 5.42 mps / course 158.55) @ 3/19/15, 8:51:21 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:24.352 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02103039,-118.42766977> +/- 50.00m (speed 5.42 mps / course 158.55) @ 3/19/15, 8:51:21 PM Pacific Daylight Time, accuracy = 50.000000
+2015-03-19 20:51:25.788 PopulistMVP[7160:4143931] PPLSTLocationManager - locationManager:<CLLocationManager: 0x14d747e0> didUpdateLocations:(
+    "<+34.02098131,-118.42770154> +/- 10.00m (speed 0.83 mps / course -1.00) @ 3/19/15, 8:51:22 PM Pacific Daylight Time"
+)
+2015-03-19 20:51:26.005 PopulistMVP[7160:4143931] locationManager didUpdateLocation lastObject = <+34.02098131,-118.42770154> +/- 10.00m (speed 0.83 mps / course -1.00) @ 3/19/15, 8:51:22 PM Pacific Daylight Time, accuracy = 10.000000
+2015-03-19 20:51:26.020 PopulistMVP[7160:4143931] PPLSTLocationManager - getLocationStringData
+2015-03-19 20:51:26.024 PopulistMVP[7160:4143931] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.020981 and longitude = -118.427702
+2015-03-19 20:51:26.025 PopulistMVP[7160:4143931] request = <NSMutableURLRequest: 0x14d734b0> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.020981,-118.427702&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-19 20:51:26.526 PopulistMVP[7160:4143931] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 224d6172 20566973 7461222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4d617220 56697374 61222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4d617220 56697374 612c204c 6f732041 6e67656c 65732c20 43412c20 55534122 2c0a2020 20202020 20202022 67656f6d 65747279 22203a20 7b0a2020 20202020 20202020 20202262 6f756e64 7322203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 33313335 392c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3431 37313733 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33332e39 39333630 332c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3435 36323131 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 31353235 36372c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34333338 3334350a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 33313335 392c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3431 37313733 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33332e39 39333630 332c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3435 36323131 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 4d584e6b 2d466136 776f4152 6671536a 36443067 68733822 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 2020207d 2c0a2020 20202020 7b0a2020 20202020 20202022 61646472 6573735f 636f6d70 6f6e656e 74732220 3a205b0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 33333733 3036312c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 31353532 3839310a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 332e3730 33363931 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3636 38313735 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35323233 34322c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 32343336 3834390a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e33 33373330 36312c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e31 35353238 39310a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203333 2e373033 36393137 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e363638 31373539 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a45 396f6e33 46334877 6f415239 4168474a 575f664c 2d49222c 0a202020 20202020 20202274 79706573 22203a20 5b20226c 6f63616c 69747922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202255 6e697465 64205374 61746573 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20225553 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 0a202020 20202020 20205d2c 0a202020 20202020 20202266 6f726d61 74746564 5f616464 72657373 22203a20 22556e69 74656420 53746174 6573222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2037 312e3338 39383838 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d36362e 39343533 39343639 39393939 39390a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203138 2e393131 30363432 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 3137322e 34343538 3935350a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203337 2e303930 32342c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 39352e37 31323839 310a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203439 2e33382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 340a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2032352e 38322c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 32342e33 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 437a5979 35495331 366c5152 51726665 51354b35 4f787722 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d0a 2020205d 2c0a2020 20227374 61747573 22203a20 224f4b22 0a7d0a>
+2015-03-19 20:51:26.541 PopulistMVP[7160:4143931] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Mar Vista";
+                    "short_name" = "Mar Vista";
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Mar Vista, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.031359";
+                        lng = "-118.417173";
+                    };
+                    southwest =                     {
+                        lat = "33.993603";
+                        lng = "-118.4562118";
+                    };
+                };
+                location =                 {
+                    lat = "34.0152567";
+                    lng = "-118.4338345";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.031359";
+                        lng = "-118.417173";
+                    };
+                    southwest =                     {
+                        lat = "33.993603";
+                        lng = "-118.4562118";
+                    };
+                };
+            };
+            "place_id" = "ChIJMXNk-Fa6woARfqSj6D0ghs8";
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+                location =                 {
+                    lat = "34.0522342";
+                    lng = "-118.2436849";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+            };
+            "place_id" = "ChIJE9on3F3HwoAR9AhGJW_fL-I";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-19 20:51:26.835 PopulistMVP[7160:4143931] formattedAddress = Mar Vista, Los Angeles, CA, USA
+2015-03-19 20:51:26.836 PopulistMVP[7160:4143931] locationArray = (
+    "Mar Vista",
+    " Los Angeles",
+    " CA",
+    " USA"
+)
+2015-03-19 20:51:26.837 PopulistMVP[7160:4143931] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+}
+2015-03-19 20:51:26.838 PopulistMVP[7160:4143931] count > 0
+2015-03-19 20:51:26.839 PopulistMVP[7160:4143931] count > 1
+2015-03-19 20:51:26.842 PopulistMVP[7160:4143931] count > 2
+2015-03-19 20:51:26.847 PopulistMVP[7160:4143931] count > 3
+2015-03-19 20:51:26.851 PopulistMVP[7160:4143931] Now, locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = "Mar Vista";
+    state = CA;
+}

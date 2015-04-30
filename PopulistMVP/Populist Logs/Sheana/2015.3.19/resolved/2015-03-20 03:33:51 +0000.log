@@ -1,0 +1,1254 @@
+2015-03-19 20:33:51.912 PopulistMVP[7140:4141436] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-19 20:33:52.031 PopulistMVP[7140:4141436] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:33:52.792 PopulistMVP[7140:4141436] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-19 20:33:52.900 PopulistMVP[7140:4141436] PPLSTDataManager - createAvatarForStatusDictionary
+2015-03-19 20:33:52.941 PopulistMVP[7140:4141436] updateEvents
+2015-03-19 20:33:52.942 PopulistMVP[7140:4141436] startUpdatingEvents
+2015-03-19 20:33:53.582 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didChangeAuthorizationStatus to status = 3
+2015-03-19 20:33:53.587 PopulistMVP[7140:4141436] didAcceptAuthorization triggered in ExploreVC
+2015-03-19 20:33:53.588 PopulistMVP[7140:4141436] updateEvents
+2015-03-19 20:33:53.621 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:51 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:53.679 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:51 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-19 20:33:53.701 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:52 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:53.713 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:52 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-19 20:33:53.726 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:52 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:53.738 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00748477,-118.49029784> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:52 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-19 20:33:53.761 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00751788,-118.49033171> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:53 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:53.769 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00751788,-118.49033171> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:53 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-19 20:33:53.816 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00750644,-118.49032002> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:53 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:53.823 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00750644,-118.49032002> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/19/15, 8:33:53 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-19 20:33:53.832 PopulistMVP[7140:4141436] didRegisterForRemoteNotificationWithDeviceToken:<5e1806a1 ba71bd03 34906353 422927d6 7a14a696 6266789f a5344523 5862ee85>
+2015-03-19 20:33:53.839 PopulistMVP[7140:4141436] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:33:56.713 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00949580,-118.49259004> +/- 100.00m (speed 3.89 mps / course 64.69) @ 3/19/15, 8:33:56 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:56.723 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00949580,-118.49259004> +/- 100.00m (speed 3.89 mps / course 64.69) @ 3/19/15, 8:33:56 PM Pacific Daylight Time, accuracy = 100.000000
+2015-03-19 20:33:57.644 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00990186,-118.49259197> +/- 30.00m (speed 4.64 mps / course 48.16) @ 3/19/15, 8:33:57 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:57.648 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00990186,-118.49259197> +/- 30.00m (speed 4.64 mps / course 48.16) @ 3/19/15, 8:33:57 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-19 20:33:58.645 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00983581,-118.49261343> +/- 30.00m (speed 5.02 mps / course 45.00) @ 3/19/15, 8:33:58 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:58.648 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00983581,-118.49261343> +/- 30.00m (speed 5.02 mps / course 45.00) @ 3/19/15, 8:33:58 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-19 20:33:59.137 PopulistMVP[7140:4141436] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15e9b610> didUpdateLocations:(
+    "<+34.00994599,-118.49249616> +/- 10.00m (speed 5.11 mps / course 46.41) @ 3/19/15, 8:33:59 PM Pacific Daylight Time"
+)
+2015-03-19 20:33:59.140 PopulistMVP[7140:4141436] locationManager didUpdateLocation lastObject = <+34.00994599,-118.49249616> +/- 10.00m (speed 5.11 mps / course 46.41) @ 3/19/15, 8:33:59 PM Pacific Daylight Time, accuracy = 10.000000
+2015-03-19 20:33:59.158 PopulistMVP[7140:4141436] PPLSTLocationManager - getLocationStringData
+2015-03-19 20:33:59.159 PopulistMVP[7140:4141436] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.009946 and longitude = -118.492496
+2015-03-19 20:33:59.162 PopulistMVP[7140:4141436] request = <NSMutableURLRequest: 0x15e4f070> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.009946,-118.492496&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-19 20:33:59.740 PopulistMVP[7140:4141436] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 2253616e 7461204d 6f6e6963 61222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202253 616e7461 204d6f6e 69636122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 53616e74 61204d6f 6e696361 2c204341 2c205553 41222c0a 20202020 20202020 20226765 6f6d6574 72792220 3a207b0a 20202020 20202020 20202020 22626f75 6e647322 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303530 35362c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 34333432 360a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033332e 39393331 3635362c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 35313734 3135330a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303139 34353433 2c0a2020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3439 31313931 320a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303530 35362c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 34333432 360a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033332e 39393331 3635362c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 35313734 3135330a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d0a20 20202020 20202020 7d2c0a20 20202020 20202020 22706c61 63655f69 6422203a 20224368 494a4751 43527773 366b776f 4152715f 556a5f37 554b4637 51222c0a 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 207d2c0a 20202020 20207b0a 20202020 20202020 20226164 64726573 735f636f 6d706f6e 656e7473 22203a20 5b0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 556e6974 65642053 74617465 73222c0a 20202020 20202020 20226765 6f6d6574 72792220 3a207b0a 20202020 20202020 20202020 22626f75 6e647322 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203731 2e333839 3838382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 34353339 34363939 39393939 390a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2031382e 39313130 3634322c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a2031 37322e34 34353839 35350a20 20202020 20202020 20202020 20207d0a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 22203a20 7b0a2020 20202020 20202020 20202020 20226c61 7422203a 2033372e 30393032 342c0a20 20202020 20202020 20202020 2020226c 6e672220 3a202d39 352e3731 32383931 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e5f7479 70652220 3a202241 5050524f 58494d41 5445222c 0a202020 20202020 20202020 20227669 6577706f 72742220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2034392e 33382c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d36 362e3934 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 32352e38 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3132 342e3339 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a43 7a597935 49533136 6c515251 72666551 354b354f 7877222c 0a202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 207d0a20 20205d2c 0a202020 22737461 74757322 203a2022 4f4b220a 7d0a>
+2015-03-19 20:33:59.756 PopulistMVP[7140:4141436] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Santa Monica";
+                    "short_name" = "Santa Monica";
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Santa Monica, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.05056";
+                        lng = "-118.443426";
+                    };
+                    southwest =                     {
+                        lat = "33.9931656";
+                        lng = "-118.5174153";
+                    };
+                };
+                location =                 {
+                    lat = "34.0194543";
+                    lng = "-118.4911912";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.05056";
+                        lng = "-118.443426";
+                    };
+                    southwest =                     {
+                        lat = "33.9931656";
+                        lng = "-118.5174153";
+                    };
+                };
+            };
+            "place_id" = "ChIJGQCRws6kwoARq_Uj_7UKF7Q";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-19 20:33:59.776 PopulistMVP[7140:4141436] formattedAddress = Santa Monica, CA, USA
+2015-03-19 20:33:59.779 PopulistMVP[7140:4141436] locationArray = (
+    "Santa Monica",
+    " CA",
+    " USA"
+)
+2015-03-19 20:33:59.780 PopulistMVP[7140:4141436] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+}
+2015-03-19 20:33:59.782 PopulistMVP[7140:4141436] count > 0
+2015-03-19 20:33:59.783 PopulistMVP[7140:4141436] count > 1
+2015-03-19 20:33:59.783 PopulistMVP[7140:4141436] count > 2
+2015-03-19 20:33:59.785 PopulistMVP[7140:4141436] Now, locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Santa Monica";
+    country = USA;
+    state = CA;
+}
+2015-03-19 20:33:59.793 PopulistMVP[7140:4141436] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-03-19 20:33:59.793 PopulistMVP[7140:4141436] finishUpdatingEvents
+2015-03-19 20:33:59.806 PopulistMVP[7140:4141436] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.00994599,-118.49249616> +/- 10.00m (speed 5.11 mps / course 46.41) @ 3/19/15, 8:33:59 PM Pacific Daylight Time
+2015-03-19 20:33:59.807 PopulistMVP[7140:4141436] PPLSTLocationManager - updateTimeOfLastUpdate:2015-03-20 03:33:59 +0000
+2015-03-19 20:33:59.808 PopulistMVP[7140:4141436] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.009945 andLongitude:-118.492493 andDate:2015-03-20 03:33:59 +0000
+2015-03-19 20:33:59.820 PopulistMVP[7140:4141436] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.009945 andLongitude:-118.492493 andDate:2015-03-20 03:33:59 +0000
+2015-03-19 20:33:59.828 PopulistMVP[7140:4141436] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-19 20:34:01.254 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.01438869270724";
+    longitude = "-118.4964596968361";
+    neighborhood = Downtown;
+    objectId = LShplbfiEf;
+    state = CA;
+    titlePhotoId = cHA6JwyNyO;
+    updatedAt = "2015-03-09 02:02:19 +0000";
+}
+2015-03-19 20:34:01.256 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:LShplbfiEf
+2015-03-19 20:34:01.272 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.00984992570709";
+    longitude = "-118.4966798680202";
+    neighborhood = "200 Santa Monica Pier";
+    objectId = 0LxAGQFyf2;
+    state = "CA 90401";
+    titlePhotoId = yf8TSe2OPK;
+    updatedAt = "2015-02-09 01:06:42 +0000";
+}
+2015-03-19 20:34:01.273 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:0LxAGQFyf2
+2015-03-19 20:34:01.292 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.01612405077141";
+    longitude = "-118.4967097926256";
+    neighborhood = Downtown;
+    objectId = waUqPm8bgq;
+    state = CA;
+    updatedAt = "2015-03-06 04:27:15 +0000";
+}
+2015-03-19 20:34:01.294 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:waUqPm8bgq
+2015-03-19 20:34:01.296 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = waUqPm8bgq
+2015-03-19 20:34:01.297 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:waUqPm8bgq
+2015-03-19 20:34:01.298 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.308 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.310 PopulistMVP[7140:4141436] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:34:01.311 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfzxc0WG0lV
+2015-03-19 20:34:01.312 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.312 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.313 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.316 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.316 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 5
+2015-03-19 20:34:01.328 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 23;
+    isActive = NO;
+    latitude = "34.01700103003831";
+    longitude = "-118.4690499552863";
+    neighborhood = "Sunset Park";
+    objectId = joAOP58mom;
+    state = CA;
+    titlePhotoId = URnHqeMrAB;
+    updatedAt = "2015-02-02 20:20:52 +0000";
+}
+2015-03-19 20:34:01.330 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:joAOP58mom
+2015-03-19 20:34:01.333 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.013146867899";
+    longitude = "-118.4951230393805";
+    neighborhood = Downtown;
+    objectId = 6mUJu3r1u2;
+    state = CA;
+    titlePhotoId = rFWQzZ7MKe;
+    updatedAt = "2015-03-03 04:17:14 +0000";
+}
+2015-03-19 20:34:01.340 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:6mUJu3r1u2
+2015-03-19 20:34:01.346 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01318891125471";
+    longitude = "-118.4947873742271";
+    neighborhood = Downtown;
+    objectId = KphaAi9MqP;
+    state = CA;
+    titlePhotoId = aW33Da7pNm;
+    updatedAt = "2015-03-03 02:09:13 +0000";
+}
+2015-03-19 20:34:01.347 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:KphaAi9MqP
+2015-03-19 20:34:01.350 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01327987206318";
+    longitude = "-118.4951876827818";
+    neighborhood = Downtown;
+    objectId = 69TxvGpxJy;
+    state = CA;
+    titlePhotoId = M5WMX8Pl7p;
+    updatedAt = "2015-02-19 04:03:18 +0000";
+}
+2015-03-19 20:34:01.351 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:69TxvGpxJy
+2015-03-19 20:34:01.355 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01658686466036";
+    longitude = "-118.4971545717428";
+    neighborhood = Downtown;
+    objectId = Kjg7lQ6ElE;
+    state = CA;
+    titlePhotoId = 49xaaaeqDT;
+    updatedAt = "2015-02-27 04:47:15 +0000";
+}
+2015-03-19 20:34:01.356 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:Kjg7lQ6ElE
+2015-03-19 20:34:01.358 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = Kjg7lQ6ElE
+2015-03-19 20:34:01.359 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:Kjg7lQ6ElE
+2015-03-19 20:34:01.360 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.369 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.370 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:49xaaaeqDT
+2015-03-19 20:34:01.371 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.372 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.372 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.375 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.375 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = 49xaaaeqDT
+2015-03-19 20:34:01.376 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:49xaaaeqDT
+2015-03-19 20:34:01.377 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.382 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.384 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01706924036124";
+    longitude = "-118.5018392918666";
+    neighborhood = "Wilshire Montana";
+    objectId = 7PL0u2S9Qr;
+    state = CA;
+    titlePhotoId = rPdol1Jf6y;
+    updatedAt = "2015-03-15 00:01:43 +0000";
+}
+2015-03-19 20:34:01.387 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:7PL0u2S9Qr
+2015-03-19 20:34:01.396 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 7PL0u2S9Qr
+2015-03-19 20:34:01.397 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:7PL0u2S9Qr
+2015-03-19 20:34:01.398 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.403 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.404 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:rPdol1Jf6y
+2015-03-19 20:34:01.405 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.405 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.406 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.409 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.410 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = rPdol1Jf6y
+2015-03-19 20:34:01.410 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:rPdol1Jf6y
+2015-03-19 20:34:01.411 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.415 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.417 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.00086181224239";
+    longitude = "-118.482712097397";
+    neighborhood = "Ocean Park";
+    objectId = aNbTqtPoIe;
+    state = CA;
+    titlePhotoId = yb6idMWD4a;
+    updatedAt = "2015-03-13 03:40:00 +0000";
+}
+2015-03-19 20:34:01.418 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:aNbTqtPoIe
+2015-03-19 20:34:01.422 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.01643044084824";
+    longitude = "-118.4983685813741";
+    neighborhood = Downtown;
+    objectId = 9o0RMmC2Qi;
+    state = CA;
+    titlePhotoId = tkTFUMrVq8;
+    updatedAt = "2015-03-06 03:25:52 +0000";
+}
+2015-03-19 20:34:01.423 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:9o0RMmC2Qi
+2015-03-19 20:34:01.425 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 9o0RMmC2Qi
+2015-03-19 20:34:01.426 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:9o0RMmC2Qi
+2015-03-19 20:34:01.427 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.432 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.433 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:tkTFUMrVq8
+2015-03-19 20:34:01.434 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.435 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.436 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.438 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.439 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = tkTFUMrVq8
+2015-03-19 20:34:01.445 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:tkTFUMrVq8
+2015-03-19 20:34:01.446 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.458 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.459 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.0165323810842";
+    longitude = "-118.4983384177751";
+    neighborhood = Downtown;
+    objectId = UW11um0ueQ;
+    state = CA;
+    titlePhotoId = AhOZIbexLC;
+    updatedAt = "2015-03-01 21:18:16 +0000";
+}
+2015-03-19 20:34:01.461 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:UW11um0ueQ
+2015-03-19 20:34:01.464 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = UW11um0ueQ
+2015-03-19 20:34:01.464 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:UW11um0ueQ
+2015-03-19 20:34:01.465 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.471 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.472 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:AhOZIbexLC
+2015-03-19 20:34:01.473 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.473 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.474 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.476 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.477 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = AhOZIbexLC
+2015-03-19 20:34:01.478 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:AhOZIbexLC
+2015-03-19 20:34:01.479 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.483 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.484 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.01866629423598";
+    longitude = "-118.4998240121561";
+    neighborhood = "Wilshire Montana";
+    objectId = n5242VObju;
+    state = CA;
+    titlePhotoId = rRqx74WDkq;
+    updatedAt = "2015-02-13 20:48:39 +0000";
+}
+2015-03-19 20:34:01.486 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:n5242VObju
+2015-03-19 20:34:01.488 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = n5242VObju
+2015-03-19 20:34:01.489 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:n5242VObju
+2015-03-19 20:34:01.490 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.495 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.496 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:rRqx74WDkq
+2015-03-19 20:34:01.497 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.498 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.499 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.501 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.501 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = rRqx74WDkq
+2015-03-19 20:34:01.502 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:rRqx74WDkq
+2015-03-19 20:34:01.504 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.515 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.517 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01440167677526";
+    longitude = "-118.4965007827421";
+    neighborhood = Downtown;
+    objectId = 4zxvinXwRp;
+    state = CA;
+    updatedAt = "2015-03-01 00:47:16 +0000";
+}
+2015-03-19 20:34:01.519 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:4zxvinXwRp
+2015-03-19 20:34:01.521 PopulistMVP[7140:4141436] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:34:01.522 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAj6ATjjX2A
+2015-03-19 20:34:01.523 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.524 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.525 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.527 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.528 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 5
+2015-03-19 20:34:01.529 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.00334820804838";
+    longitude = "-118.4846878811338";
+    neighborhood = "Ocean Park";
+    objectId = BJlM8ol8O6;
+    state = CA;
+    titlePhotoId = H4JA942xJr;
+    updatedAt = "2015-03-13 02:36:58 +0000";
+}
+2015-03-19 20:34:01.531 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:BJlM8ol8O6
+2015-03-19 20:34:01.535 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01606985990828";
+    longitude = "-118.4965688884994";
+    neighborhood = Downtown;
+    objectId = cEiC0cMNkc;
+    state = CA;
+    titlePhotoId = NpkNb5utZs;
+    updatedAt = "2015-03-15 00:14:24 +0000";
+}
+2015-03-19 20:34:01.536 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:cEiC0cMNkc
+2015-03-19 20:34:01.539 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = cEiC0cMNkc
+2015-03-19 20:34:01.539 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:cEiC0cMNkc
+2015-03-19 20:34:01.540 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.546 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.547 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:NpkNb5utZs
+2015-03-19 20:34:01.548 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.549 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.550 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.552 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.553 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = NpkNb5utZs
+2015-03-19 20:34:01.554 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:NpkNb5utZs
+2015-03-19 20:34:01.555 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.567 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.569 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01639079365693";
+    longitude = "-118.4969389544547";
+    neighborhood = Downtown;
+    objectId = NLgPRITyAp;
+    state = CA;
+    updatedAt = "2015-03-06 04:21:55 +0000";
+}
+2015-03-19 20:34:01.570 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:NLgPRITyAp
+2015-03-19 20:34:01.573 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = NLgPRITyAp
+2015-03-19 20:34:01.574 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:NLgPRITyAp
+2015-03-19 20:34:01.575 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.580 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.581 PopulistMVP[7140:4141436] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:34:01.582 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:dummy9VNFsfJ4qH
+2015-03-19 20:34:01.582 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.583 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.584 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.586 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.587 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = dummy9VNFsfJ4qH
+2015-03-19 20:34:01.588 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:dummy9VNFsfJ4qH
+2015-03-19 20:34:01.589 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.593 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.594 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01746401519571";
+    longitude = "-118.5012759796406";
+    neighborhood = "Wilshire Montana";
+    objectId = 5bywb2Qe9s;
+    state = CA;
+    titlePhotoId = VjYfznawOo;
+    updatedAt = "2015-02-18 03:17:39 +0000";
+}
+2015-03-19 20:34:01.596 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:5bywb2Qe9s
+2015-03-19 20:34:01.598 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 5bywb2Qe9s
+2015-03-19 20:34:01.599 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:5bywb2Qe9s
+2015-03-19 20:34:01.600 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.678 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.680 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:VjYfznawOo
+2015-03-19 20:34:01.682 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.682 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.683 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.685 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.689 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = VjYfznawOo
+2015-03-19 20:34:01.689 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:VjYfznawOo
+2015-03-19 20:34:01.690 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.700 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.702 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01730321906601";
+    longitude = "-118.4937204878306";
+    neighborhood = Downtown;
+    objectId = dH2nzRR6xD;
+    state = CA;
+    titlePhotoId = 2Ao2wZB2Fv;
+    updatedAt = "2015-02-26 04:06:07 +0000";
+}
+2015-03-19 20:34:01.704 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:dH2nzRR6xD
+2015-03-19 20:34:01.713 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.0156023844046";
+    longitude = "-118.4962103019894";
+    neighborhood = Downtown;
+    objectId = tdlwosCqGk;
+    state = CA;
+    titlePhotoId = f1x3kJkl1N;
+    updatedAt = "2015-02-27 04:36:18 +0000";
+}
+2015-03-19 20:34:01.715 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:tdlwosCqGk
+2015-03-19 20:34:01.719 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01988620295874";
+    longitude = "-118.4940157152576";
+    neighborhood = Downtown;
+    objectId = FcNMRw4DwX;
+    state = CA;
+    updatedAt = "2015-03-14 23:20:40 +0000";
+}
+2015-03-19 20:34:01.720 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:FcNMRw4DwX
+2015-03-19 20:34:01.723 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = FcNMRw4DwX
+2015-03-19 20:34:01.724 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:FcNMRw4DwX
+2015-03-19 20:34:01.725 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.730 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.731 PopulistMVP[7140:4141436] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:34:01.732 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLoGBufBRBH
+2015-03-19 20:34:01.733 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.734 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.735 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.737 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.737 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = dummyLoGBufBRBH
+2015-03-19 20:34:01.738 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:dummyLoGBufBRBH
+2015-03-19 20:34:01.739 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.744 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.745 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.01593126696581";
+    longitude = "-118.4708282468737";
+    neighborhood = "Sunset Park";
+    objectId = 4XlO65mvhG;
+    state = CA;
+    updatedAt = "2015-03-19 16:50:14 +0000";
+}
+2015-03-19 20:34:01.747 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:4XlO65mvhG
+2015-03-19 20:34:01.750 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01692920801167";
+    longitude = "-118.4942074232539";
+    neighborhood = Downtown;
+    objectId = UB5EoM6CON;
+    state = CA;
+    titlePhotoId = 4NMwWS9YXO;
+    updatedAt = "2015-02-26 03:24:24 +0000";
+}
+2015-03-19 20:34:01.751 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:UB5EoM6CON
+2015-03-19 20:34:01.755 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01778908961064";
+    longitude = "-118.5013801737349";
+    neighborhood = "Wilshire Montana";
+    objectId = 7SQKiPbZMw;
+    state = CA;
+    titlePhotoId = 3899nsNLuT;
+    updatedAt = "2015-03-10 02:03:57 +0000";
+}
+2015-03-19 20:34:01.761 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:7SQKiPbZMw
+2015-03-19 20:34:01.765 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 7SQKiPbZMw
+2015-03-19 20:34:01.766 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:7SQKiPbZMw
+2015-03-19 20:34:01.767 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.773 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.774 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:3899nsNLuT
+2015-03-19 20:34:01.774 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.775 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.776 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.778 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.779 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = 3899nsNLuT
+2015-03-19 20:34:01.780 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:3899nsNLuT
+2015-03-19 20:34:01.781 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.785 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.787 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01764193738129";
+    longitude = "-118.4988950206082";
+    neighborhood = Downtown;
+    objectId = KdhcbW3NbI;
+    state = CA;
+    titlePhotoId = 1dMMX5ZHEt;
+    updatedAt = "2015-03-12 18:42:12 +0000";
+}
+2015-03-19 20:34:01.788 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:KdhcbW3NbI
+2015-03-19 20:34:01.790 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = KdhcbW3NbI
+2015-03-19 20:34:01.791 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:KdhcbW3NbI
+2015-03-19 20:34:01.792 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.796 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.798 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:1dMMX5ZHEt
+2015-03-19 20:34:01.798 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.799 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.800 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.802 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.803 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = 1dMMX5ZHEt
+2015-03-19 20:34:01.811 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:1dMMX5ZHEt
+2015-03-19 20:34:01.813 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.818 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.819 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01686002781335";
+    longitude = "-118.4975298755423";
+    neighborhood = Downtown;
+    objectId = 8ykACl47rM;
+    state = CA;
+    updatedAt = "2015-03-14 23:29:15 +0000";
+}
+2015-03-19 20:34:01.820 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:8ykACl47rM
+2015-03-19 20:34:01.823 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 8ykACl47rM
+2015-03-19 20:34:01.824 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:8ykACl47rM
+2015-03-19 20:34:01.825 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.830 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.831 PopulistMVP[7140:4141436] PPLSTDataManager - randomgStringWithLength:10
+2015-03-19 20:34:01.832 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:dummyNmNqfXqfK9
+2015-03-19 20:34:01.833 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.834 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.834 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.837 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.837 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = dummyNmNqfXqfK9
+2015-03-19 20:34:01.838 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:dummyNmNqfXqfK9
+2015-03-19 20:34:01.839 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.843 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.845 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.01732723397665";
+    longitude = "-118.4693031551319";
+    objectId = R8AGD1lotk;
+    state = CA;
+    titlePhotoId = sH8L42KTaA;
+    updatedAt = "2015-03-11 19:38:04 +0000";
+}
+2015-03-19 20:34:01.846 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:R8AGD1lotk
+2015-03-19 20:34:01.850 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = YES;
+    latitude = "33.99970089258781";
+    longitude = "-118.4814938357399";
+    neighborhood = "Ocean Park";
+    objectId = LViprcbCVk;
+    state = CA;
+    titlePhotoId = mqm3KkcoIx;
+    updatedAt = "2015-03-20 03:21:08 +0000";
+}
+2015-03-19 20:34:01.852 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:LViprcbCVk
+2015-03-19 20:34:01.854 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:mqm3KkcoIx
+2015-03-19 20:34:01.855 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.856 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.858 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.866 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.868 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 5
+2015-03-19 20:34:01.870 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01708978230806";
+    longitude = "-118.49780750507";
+    neighborhood = Downtown;
+    objectId = zCsV1JkjXM;
+    state = CA;
+    titlePhotoId = Q9wo9S8sZy;
+    updatedAt = "2015-02-13 20:34:40 +0000";
+}
+2015-03-19 20:34:01.871 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:zCsV1JkjXM
+2015-03-19 20:34:01.874 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = zCsV1JkjXM
+2015-03-19 20:34:01.874 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:zCsV1JkjXM
+2015-03-19 20:34:01.875 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.882 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.883 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:Q9wo9S8sZy
+2015-03-19 20:34:01.884 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:01.885 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:01.885 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:01.888 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:01.889 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = Q9wo9S8sZy
+2015-03-19 20:34:01.890 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:Q9wo9S8sZy
+2015-03-19 20:34:01.891 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:01.895 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:01.897 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01734223451187";
+    longitude = "-118.4937062971846";
+    neighborhood = Downtown;
+    objectId = kuwMqazzzu;
+    state = CA;
+    updatedAt = "2015-02-25 03:01:32 +0000";
+}
+2015-03-19 20:34:01.898 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:kuwMqazzzu
+2015-03-19 20:34:01.901 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.00044482108337";
+    longitude = "-118.4825277764293";
+    neighborhood = "Ocean Park";
+    objectId = 7FursU4nmZ;
+    state = CA;
+    titlePhotoId = ELqt6zWZMm;
+    updatedAt = "2015-02-05 03:42:03 +0000";
+}
+2015-03-19 20:34:01.903 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:7FursU4nmZ
+2015-03-19 20:34:01.906 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.0008830093455";
+    longitude = "-118.4825823931529";
+    neighborhood = "Ocean Park";
+    objectId = w0XAlfhIwI;
+    state = CA;
+    titlePhotoId = A6atGLjlMU;
+    updatedAt = "2015-01-31 04:59:01 +0000";
+}
+2015-03-19 20:34:01.907 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:w0XAlfhIwI
+2015-03-19 20:34:01.917 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.01709744824415";
+    longitude = "-118.4691585146364";
+    neighborhood = "Sunset Park";
+    objectId = BzI4MZSeLK;
+    state = CA;
+    updatedAt = "2015-03-06 18:26:38 +0000";
+}
+2015-03-19 20:34:01.920 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:BzI4MZSeLK
+2015-03-19 20:34:25.142 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.01816157503606";
+    longitude = "-118.4992533098013";
+    neighborhood = Downtown;
+    objectId = tJdHRvg8lf;
+    state = CA;
+    titlePhotoId = qcSl2RQrK1;
+    updatedAt = "2015-02-27 05:29:44 +0000";
+}
+2015-03-19 20:34:25.147 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:tJdHRvg8lf
+2015-03-19 20:34:25.148 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = tJdHRvg8lf
+2015-03-19 20:34:25.151 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:tJdHRvg8lf
+2015-03-19 20:34:25.153 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.169 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.172 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:qcSl2RQrK1
+2015-03-19 20:34:25.194 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:25.199 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:25.200 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:25.201 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:25.202 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = qcSl2RQrK1
+2015-03-19 20:34:25.204 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:qcSl2RQrK1
+2015-03-19 20:34:25.205 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.208 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.210 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01683513915944";
+    longitude = "-118.4695911895783";
+    neighborhood = "Sunset Park";
+    objectId = PitpniWfTF;
+    state = CA;
+    titlePhotoId = mWnxX8cPZR;
+    updatedAt = "2015-03-17 17:23:01 +0000";
+}
+2015-03-19 20:34:25.211 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:PitpniWfTF
+2015-03-19 20:34:25.227 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01886295068116";
+    longitude = "-118.4984296875636";
+    neighborhood = Downtown;
+    objectId = xUVcPAPQ2a;
+    state = CA;
+    titlePhotoId = 2RtRbEKVbG;
+    updatedAt = "2015-01-31 23:45:00 +0000";
+}
+2015-03-19 20:34:25.228 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:xUVcPAPQ2a
+2015-03-19 20:34:25.229 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = xUVcPAPQ2a
+2015-03-19 20:34:25.231 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:xUVcPAPQ2a
+2015-03-19 20:34:25.232 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.235 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.236 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:2RtRbEKVbG
+2015-03-19 20:34:25.238 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:25.238 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:25.239 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:25.241 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:25.242 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = 2RtRbEKVbG
+2015-03-19 20:34:25.243 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:2RtRbEKVbG
+2015-03-19 20:34:25.243 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.246 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.247 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01730012336996";
+    longitude = "-118.4701250655691";
+    neighborhood = "Sunset Park";
+    objectId = wqVHqITtqn;
+    state = CA;
+    titlePhotoId = W2yBTOAqe7;
+    updatedAt = "2015-03-19 19:59:08 +0000";
+}
+2015-03-19 20:34:25.249 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:wqVHqITtqn
+2015-03-19 20:34:25.251 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02032797684864";
+    longitude = "-118.4987092285488";
+    neighborhood = "Wilshire Montana";
+    objectId = 8ygzwcVNeI;
+    state = CA;
+    titlePhotoId = 472kc7QpC7;
+    updatedAt = "2015-01-31 22:02:27 +0000";
+}
+2015-03-19 20:34:25.252 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:8ygzwcVNeI
+2015-03-19 20:34:25.254 PopulistMVP[7140:4141436] Error: No event found in core data with eventId = 8ygzwcVNeI
+2015-03-19 20:34:25.255 PopulistMVP[7140:4141436] PPLSTDataManager - createEventWithId:8ygzwcVNeI
+2015-03-19 20:34:25.257 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.260 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.261 PopulistMVP[7140:4141436] PPLSTDataManager - getContributionFromCoreDataWithId:472kc7QpC7
+2015-03-19 20:34:25.262 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 1
+2015-03-19 20:34:25.262 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 2
+2015-03-19 20:34:25.263 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 3
+2015-03-19 20:34:25.265 PopulistMVP[7140:4141436] getContributionFromCoreDataWithId - 4
+2015-03-19 20:34:25.267 PopulistMVP[7140:4141436] Error: No contribution found in core data with contributionId = 472kc7QpC7
+2015-03-19 20:34:25.267 PopulistMVP[7140:4141436] PPLSTDataManager - createContributionWithId:472kc7QpC7
+2015-03-19 20:34:25.269 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.274 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.275 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99522340369923";
+    longitude = "-118.4799030400709";
+    neighborhood = Venice;
+    objectId = EA55jb8lQf;
+    state = CA;
+    titlePhotoId = CTu7DmM9po;
+    updatedAt = "2015-02-15 23:34:59 +0000";
+}
+2015-03-19 20:34:25.276 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:EA55jb8lQf
+2015-03-19 20:34:25.278 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01695815413819";
+    longitude = "-118.4690482393643";
+    neighborhood = "Sunset Park";
+    objectId = By8a4okoSU;
+    state = CA;
+    titlePhotoId = n4wLWaZd2R;
+    updatedAt = "2015-02-24 02:12:44 +0000";
+}
+2015-03-19 20:34:25.279 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:By8a4okoSU
+2015-03-19 20:34:25.281 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01726037909813";
+    longitude = "-118.4692174779504";
+    neighborhood = "Sunset Park";
+    objectId = 2FZfxAgPRI;
+    state = CA;
+    titlePhotoId = G9AZS00WMh;
+    updatedAt = "2015-02-13 00:34:29 +0000";
+}
+2015-03-19 20:34:25.283 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:2FZfxAgPRI
+2015-03-19 20:34:25.286 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01697475117241";
+    longitude = "-118.4690303541786";
+    neighborhood = "Sunset Park";
+    objectId = 4GmiIWfgFi;
+    state = CA;
+    titlePhotoId = HKAw4VLaWN;
+    updatedAt = "2015-02-05 20:20:17 +0000";
+}
+2015-03-19 20:34:25.287 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:4GmiIWfgFi
+2015-03-19 20:34:25.290 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Santa Monica";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.01700161647921";
+    longitude = "-118.469092863375";
+    neighborhood = "Sunset Park";
+    objectId = jB8lYOousQ;
+    state = CA;
+    titlePhotoId = ebVKmcxRoR;
+    updatedAt = "2015-02-09 19:00:37 +0000";
+}
+2015-03-19 20:34:25.291 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:jB8lYOousQ
+2015-03-19 20:34:25.293 PopulistMVP[7140:4141436] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "33.99460460806514";
+    longitude = "-118.4763853190581";
+    neighborhood = Venice;
+    objectId = Go4eGF5AIU;
+    state = CA;
+    titlePhotoId = 4VZCsC9oNH;
+    updatedAt = "2015-01-31 05:35:36 +0000";
+}
+2015-03-19 20:34:25.294 PopulistMVP[7140:4141436] PPLSTDataManager - getEventFromCoreDataWithId:Go4eGF5AIU
+2015-03-19 20:34:25.296 PopulistMVP[7140:4141436] PPLSTDataManager - saveCoreData
+2015-03-19 20:34:25.300 PopulistMVP[7140:4141436] PPLSTDataManager - contextHasChanged
+2015-03-19 20:34:25.302 PopulistMVP[7140:4141436] PPLSTDataManager - sendSignalWithLatitude:34.009945 andLongitude:-118.492493 andDate:2015-03-20 03:33:59 +0000
+2015-03-19 20:34:25.303 PopulistMVP[7140:4141436] PPLSTLocationManager - getLocationStringData
+2015-03-19 20:34:25.304 PopulistMVP[7140:4141436] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.009946 and longitude = -118.492496
+2015-03-19 20:34:25.305 PopulistMVP[7140:4141436] request = <NSMutableURLRequest: 0x15d8e640> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.009946,-118.492496&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-19 20:34:25.310 PopulistMVP[7140:4141436] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 2253616e 7461204d 6f6e6963 61222c0a 20202020 20202020 20202020 20202022 73686f72 745f6e61 6d652220 3a202253 616e7461 204d6f6e 69636122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 53616e74 61204d6f 6e696361 2c204341 2c205553 41222c0a 20202020 20202020 20226765 6f6d6574 72792220 3a207b0a 20202020 20202020 20202020 22626f75 6e647322 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303530 35362c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 34333432 360a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033332e 39393331 3635362c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 35313734 3135330a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303139 34353433 2c0a2020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3439 31313931 320a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203334 2e303530 35362c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e34 34333432 360a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033332e 39393331 3635362c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 35313734 3135330a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d0a20 20202020 20202020 7d2c0a20 20202020 20202020 22706c61 63655f69 6422203a 20224368 494a4751 43527773 366b776f 4152715f 556a5f37 554b4637 51222c0a 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 207d2c0a 20202020 20207b0a 20202020 20202020 20226164 64726573 735f636f 6d706f6e 656e7473 22203a20 5b0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 556e6974 65642053 74617465 73222c0a 20202020 20202020 20226765 6f6d6574 72792220 3a207b0a 20202020 20202020 20202020 22626f75 6e647322 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203731 2e333839 3838382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 34353339 34363939 39393939 390a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2031382e 39313130 3634322c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a2031 37322e34 34353839 35350a20 20202020 20202020 20202020 20207d0a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 22203a20 7b0a2020 20202020 20202020 20202020 20226c61 7422203a 2033372e 30393032 342c0a20 20202020 20202020 20202020 2020226c 6e672220 3a202d39 352e3731 32383931 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e5f7479 70652220 3a202241 5050524f 58494d41 5445222c 0a202020 20202020 20202020 20227669 6577706f 72742220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2034392e 33382c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d36 362e3934 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 32352e38 322c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3132 342e3339 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a43 7a597935 49533136 6c515251 72666551 354b354f 7877222c 0a202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 207d0a20 20205d2c 0a202020 22737461 74757322 203a2022 4f4b220a 7d0a>
+2015-03-19 20:34:25.318 PopulistMVP[7140:4141436] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Santa Monica";
+                    "short_name" = "Santa Monica";
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Santa Monica, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.05056";
+                        lng = "-118.443426";
+                    };
+                    southwest =                     {
+                        lat = "33.9931656";
+                        lng = "-118.5174153";
+                    };
+                };
+                location =                 {
+                    lat = "34.0194543";
+                    lng = "-118.4911912";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.05056";
+                        lng = "-118.443426";
+                    };
+                    southwest =                     {
+                        lat = "33.9931656";
+                        lng = "-118.5174153";
+                    };
+                };
+            };
+            "place_id" = "ChIJGQCRws6kwoARq_Uj_7UKF7Q";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-19 20:34:25.323 PopulistMVP[7140:4141436] formattedAddress = Santa Monica, CA, USA
+2015-03-19 20:34:25.323 PopulistMVP[7140:4141436] locationArray = (
+    "Santa Monica",
+    " CA",
+    " USA"
+)
+2015-03-19 20:34:25.324 PopulistMVP[7140:4141436] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+}
+2015-03-19 20:34:25.325 PopulistMVP[7140:4141436] count > 0
+2015-03-19 20:34:25.325 PopulistMVP[7140:4141436] count > 1
+2015-03-19 20:34:25.326 PopulistMVP[7140:4141436] count > 2
+2015-03-19 20:34:25.326 PopulistMVP[7140:4141436] Now, locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Santa Monica";
+    country = USA;
+    state = CA;
+}
+2015-03-19 20:34:25.327 PopulistMVP[7140:4141436] Right before creating the parameter dictionary. Here are the parameters:
+2015-03-19 20:34:25.327 PopulistMVP[7140:4141436] latitude: -118.492493, longitude: 34.009945, locationDataDictionary: {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Santa Monica";
+    country = USA;
+    state = CA;
+}, locationDataDictionary[country]: USA, locationDataDictionary[state]: CA, locationDataDictionary[city]: Santa Monica, locationDataDictionary[neighborhood]: (null).
+2015-03-19 20:34:25.330 PopulistMVP[7140:4141436] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[5]'
+*** First throw call stack:
+(0x25cef49f 0x334a5c8b 0x25c0f873 0x25c0f657 0xa31c3 0xa35a7 0xbdb57 0xbfd81 0xba1c7 0x263add85 0x263a9c2b 0x263a39a1 0x25cb5d7d 0x25cb5041 0x25cb3b7b 0x25c013c1 0x25c011d3 0x2cfff0a9 0x29210fa1 0x92c09 0x33a25aaf)
+libc++abi.dylib: terminating with uncaught exception of type NSException

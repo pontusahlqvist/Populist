@@ -356,6 +356,7 @@
     UIImage *image = [self cropImage:originalImage AndScaleToPoints:750.0];
     
     //setup the contribution
+    NSLog(@"self.event = %@, self.event.eventId = %@, senderId = %@, location = %@", self.event, self.event.eventId, self.senderId, self.locationManager.currentLocation);
     NSDictionary *metaData = @{@"eventId": self.event.eventId, @"senderId": self.senderId, @"contributionType": @"photo",@"location":self.locationManager.currentLocation};
     
     Contribution *newContribution = [self.dataManager uploadContributionWithData:metaData andPhoto:image];

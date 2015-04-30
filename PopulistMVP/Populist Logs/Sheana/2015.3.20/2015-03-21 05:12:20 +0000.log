@@ -1,0 +1,331 @@
+2015-03-20 22:12:20.689 PopulistMVP[6978:1683765] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-20 22:12:20.768 PopulistMVP[6978:1683765] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-20 22:12:22.130 PopulistMVP[6978:1683765] Reachability Flag Status: WR t----l- networkStatusForFlags
+2015-03-20 22:12:22.245 PopulistMVP[6978:1683765] BPXLUUIDHandler Unhandled Keychain Error -25308
+2015-03-20 22:12:22.246 PopulistMVP[6978:1683765] PPLSTDataManager - createAvatarForStatusDictionary
+2015-03-20 22:12:22.292 PopulistMVP[6978:1683765] updateEvents
+2015-03-20 22:12:22.293 PopulistMVP[6978:1683765] startUpdatingEvents
+2015-03-20 22:12:22.571 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didChangeAuthorizationStatus to status = 3
+2015-03-20 22:12:22.573 PopulistMVP[6978:1683765] didAcceptAuthorization triggered in ExploreVC
+2015-03-20 22:12:22.574 PopulistMVP[6978:1683765] updateEvents
+2015-03-20 22:12:22.596 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:19 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:22.600 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:19 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:22.617 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:22.654 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:22.658 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:22.662 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:22.674 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01555239,-118.43086339> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:22.682 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01555239,-118.43086339> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:22.688 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01556733,-118.43087054> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:22.698 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01556733,-118.43087054> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:22 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:22.700 PopulistMVP[6978:1683765] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-03-20 22:12:22.707 PopulistMVP[6978:1683765] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-20 22:12:31.337 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01553966,-118.43081832> +/- 198.32m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:31 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:31.340 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01553966,-118.43081832> +/- 198.32m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:31 PM Pacific Daylight Time, accuracy = 198.317866
+2015-03-20 22:12:41.852 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01652694,-118.42927753> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:41 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:41.855 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01652694,-118.42927753> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:41 PM Pacific Daylight Time, accuracy = 165.000000
+2015-03-20 22:12:50.845 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.01650166,-118.42926066> +/- 190.47m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:50 PM Pacific Daylight Time"
+)
+2015-03-20 22:12:50.848 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.01650166,-118.42926066> +/- 190.47m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:50 PM Pacific Daylight Time, accuracy = 190.470355
+2015-03-20 22:12:50.859 PopulistMVP[6978:1683765] PPLSTLocationManager - getLocationStringData
+2015-03-20 22:12:50.861 PopulistMVP[6978:1683765] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.015522 and longitude = -118.430849
+2015-03-20 22:12:50.869 PopulistMVP[6978:1683765] request = <NSMutableURLRequest: 0x1742066d0> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.015522,-118.430849&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }
+2015-03-20 22:12:51.564 PopulistMVP[6978:1683765] returnData = <7b0a2020 20227265 73756c74 7322203a 205b0a20 20202020 207b0a20 20202020 20202020 22616464 72657373 5f636f6d 706f6e65 6e747322 203a205b 0a202020 20202020 20202020 207b0a20 20202020 20202020 20202020 2020226c 6f6e675f 6e616d65 22203a20 224d6172 20566973 7461222c 0a202020 20202020 20202020 20202020 2273686f 72745f6e 616d6522 203a2022 4d617220 56697374 61222c0a 20202020 20202020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4d617220 56697374 612c204c 6f732041 6e67656c 65732c20 43412c20 55534122 2c0a2020 20202020 20202022 67656f6d 65747279 22203a20 7b0a2020 20202020 20202020 20202262 6f756e64 7322203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 33313335 392c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3431 37313733 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33332e39 39333630 332c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3435 36323131 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 31353235 36372c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 34333338 3334350a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 33313335 392c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3431 37313733 0a202020 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202020 20202273 6f757468 77657374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33332e39 39333630 332c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3435 36323131 380a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 4d584e6b 2d466136 776f4152 6671536a 36443067 68733822 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 6e656967 68626f72 686f6f64 222c2022 706f6c69 74696361 6c22205d 0a202020 2020207d 2c0a2020 20202020 7b0a2020 20202020 20202022 61646472 6573735f 636f6d70 6f6e656e 74732220 3a205b0a 20202020 20202020 20202020 7b0a2020 20202020 20202020 20202020 20226c6f 6e675f6e 616d6522 203a2022 4c6f7320 416e6765 6c657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 224c4122 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 20226c6f 63616c69 7479222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224c6f 7320416e 67656c65 7320436f 756e7479 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f32222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 20224361 6c69666f 726e6961 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20224341 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202261 646d696e 69737472 61746976 655f6172 65615f6c 6576656c 5f31222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20207b0a 20202020 20202020 20202020 20202022 6c6f6e67 5f6e616d 6522203a 2022556e 69746564 20537461 74657322 2c0a2020 20202020 20202020 20202020 20227368 6f72745f 6e616d65 22203a20 22555322 2c0a2020 20202020 20202020 20202020 20227479 70657322 203a205b 2022636f 756e7472 79222c20 22706f6c 69746963 616c2220 5d0a2020 20202020 20202020 20207d0a 20202020 20202020 205d2c0a 20202020 20202020 2022666f 726d6174 7465645f 61646472 65737322 203a2022 4c6f7320 416e6765 6c65732c 2043412c 20555341 222c0a20 20202020 20202020 2267656f 6d657472 7922203a 207b0a20 20202020 20202020 20202022 626f756e 64732220 3a207b0a 20202020 20202020 20202020 20202022 6e6f7274 68656173 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2033342e 33333733 3036312c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 31353532 3839310a 20202020 20202020 20202020 2020207d 2c0a2020 20202020 20202020 20202020 2022736f 75746877 65737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2033 332e3730 33363931 372c0a20 20202020 20202020 20202020 20202020 20226c6e 6722203a 202d3131 382e3636 38313735 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 2c0a2020 20202020 20202020 2020226c 6f636174 696f6e22 203a207b 0a202020 20202020 20202020 20202020 226c6174 22203a20 33342e30 35323233 34322c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 3131382e 32343336 3834390a 20202020 20202020 20202020 7d2c0a20 20202020 20202020 20202022 6c6f6361 74696f6e 5f747970 6522203a 20224150 50524f58 494d4154 45222c0a 20202020 20202020 20202020 22766965 77706f72 7422203a 207b0a20 20202020 20202020 20202020 2020226e 6f727468 65617374 22203a20 7b0a2020 20202020 20202020 20202020 20202020 226c6174 22203a20 33342e33 33373330 36312c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 31382e31 35353238 39310a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203333 2e373033 36393137 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d313138 2e363638 31373539 0a202020 20202020 20202020 20202020 7d0a2020 20202020 20202020 20207d0a 20202020 20202020 207d2c0a 20202020 20202020 2022706c 6163655f 69642220 3a202243 68494a45 396f6e33 46334877 6f415239 4168474a 575f664c 2d49222c 0a202020 20202020 20202274 79706573 22203a20 5b20226c 6f63616c 69747922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d2c 0a202020 2020207b 0a202020 20202020 20202261 64647265 73735f63 6f6d706f 6e656e74 7322203a 205b0a20 20202020 20202020 2020207b 0a202020 20202020 20202020 20202020 226c6f6e 675f6e61 6d652220 3a202255 6e697465 64205374 61746573 222c0a20 20202020 20202020 20202020 20202273 686f7274 5f6e616d 6522203a 20225553 222c0a20 20202020 20202020 20202020 20202274 79706573 22203a20 5b202263 6f756e74 7279222c 2022706f 6c697469 63616c22 205d0a20 20202020 20202020 2020207d 0a202020 20202020 20205d2c 0a202020 20202020 20202266 6f726d61 74746564 5f616464 72657373 22203a20 22556e69 74656420 53746174 6573222c 0a202020 20202020 20202267 656f6d65 74727922 203a207b 0a202020 20202020 20202020 2022626f 756e6473 22203a20 7b0a2020 20202020 20202020 20202020 20226e6f 72746865 61737422 203a207b 0a202020 20202020 20202020 20202020 20202022 6c617422 203a2037 312e3338 39383838 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 2d36362e 39343533 39343639 39393939 39390a20 20202020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20202020 22736f75 74687765 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203138 2e393131 30363432 2c0a2020 20202020 20202020 20202020 20202020 226c6e67 22203a20 3137322e 34343538 3935350a 20202020 20202020 20202020 2020207d 0a202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 226c6f63 6174696f 6e22203a 207b0a20 20202020 20202020 20202020 2020226c 61742220 3a203337 2e303930 32342c0a 20202020 20202020 20202020 20202022 6c6e6722 203a202d 39352e37 31323839 310a2020 20202020 20202020 20207d2c 0a202020 20202020 20202020 20226c6f 63617469 6f6e5f74 79706522 203a2022 41505052 4f58494d 41544522 2c0a2020 20202020 20202020 20202276 69657770 6f727422 203a207b 0a202020 20202020 20202020 20202020 226e6f72 74686561 73742220 3a207b0a 20202020 20202020 20202020 20202020 2020226c 61742220 3a203439 2e33382c 0a202020 20202020 20202020 20202020 20202022 6c6e6722 203a202d 36362e39 340a2020 20202020 20202020 20202020 207d2c0a 20202020 20202020 20202020 20202022 736f7574 68776573 7422203a 207b0a20 20202020 20202020 20202020 20202020 20226c61 7422203a 2032352e 38322c0a 20202020 20202020 20202020 20202020 2020226c 6e672220 3a202d31 32342e33 390a2020 20202020 20202020 20202020 207d0a20 20202020 20202020 2020207d 0a202020 20202020 20207d2c 0a202020 20202020 20202270 6c616365 5f696422 203a2022 4368494a 437a5979 35495331 366c5152 51726665 51354b35 4f787722 2c0a2020 20202020 20202022 74797065 7322203a 205b2022 636f756e 74727922 2c202270 6f6c6974 6963616c 22205d0a 20202020 20207d0a 2020205d 2c0a2020 20227374 61747573 22203a20 224f4b22 0a7d0a>
+2015-03-20 22:12:51.592 PopulistMVP[6978:1683765] dictionary = {
+    results =     (
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Mar Vista";
+                    "short_name" = "Mar Vista";
+                    types =                     (
+                        neighborhood,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Mar Vista, Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.031359";
+                        lng = "-118.417173";
+                    };
+                    southwest =                     {
+                        lat = "33.993603";
+                        lng = "-118.4562118";
+                    };
+                };
+                location =                 {
+                    lat = "34.0152567";
+                    lng = "-118.4338345";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.031359";
+                        lng = "-118.417173";
+                    };
+                    southwest =                     {
+                        lat = "33.993603";
+                        lng = "-118.4562118";
+                    };
+                };
+            };
+            "place_id" = "ChIJMXNk-Fa6woARfqSj6D0ghs8";
+            types =             (
+                neighborhood,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "Los Angeles";
+                    "short_name" = LA;
+                    types =                     (
+                        locality,
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "Los Angeles County";
+                    "short_name" = "Los Angeles County";
+                    types =                     (
+                        "administrative_area_level_2",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = California;
+                    "short_name" = CA;
+                    types =                     (
+                        "administrative_area_level_1",
+                        political
+                    );
+                },
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "Los Angeles, CA, USA";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+                location =                 {
+                    lat = "34.0522342";
+                    lng = "-118.2436849";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "34.3373061";
+                        lng = "-118.1552891";
+                    };
+                    southwest =                     {
+                        lat = "33.7036917";
+                        lng = "-118.6681759";
+                    };
+                };
+            };
+            "place_id" = "ChIJE9on3F3HwoAR9AhGJW_fL-I";
+            types =             (
+                locality,
+                political
+            );
+        },
+                {
+            "address_components" =             (
+                                {
+                    "long_name" = "United States";
+                    "short_name" = US;
+                    types =                     (
+                        country,
+                        political
+                    );
+                }
+            );
+            "formatted_address" = "United States";
+            geometry =             {
+                bounds =                 {
+                    northeast =                     {
+                        lat = "71.389888";
+                        lng = "-66.94539469999999";
+                    };
+                    southwest =                     {
+                        lat = "18.9110642";
+                        lng = "172.4458955";
+                    };
+                };
+                location =                 {
+                    lat = "37.09024";
+                    lng = "-95.712891";
+                };
+                "location_type" = APPROXIMATE;
+                viewport =                 {
+                    northeast =                     {
+                        lat = "49.38";
+                        lng = "-66.94";
+                    };
+                    southwest =                     {
+                        lat = "25.82";
+                        lng = "-124.39";
+                    };
+                };
+            };
+            "place_id" = ChIJCzYy5IS16lQRQrfeQ5K5Oxw;
+            types =             (
+                country,
+                political
+            );
+        }
+    );
+    status = OK;
+}
+2015-03-20 22:12:51.603 PopulistMVP[6978:1683765] formattedAddress = Mar Vista, Los Angeles, CA, USA
+2015-03-20 22:12:51.604 PopulistMVP[6978:1683765] locationArray = (
+    "Mar Vista",
+    " Los Angeles",
+    " CA",
+    " USA"
+)
+2015-03-20 22:12:51.606 PopulistMVP[6978:1683765] locationStringDictionary = {
+    city = "";
+    country = "";
+    neighborhood = "";
+    state = "";
+}
+2015-03-20 22:12:51.607 PopulistMVP[6978:1683765] count > 0
+2015-03-20 22:12:51.608 PopulistMVP[6978:1683765] count > 1
+2015-03-20 22:12:51.608 PopulistMVP[6978:1683765] count > 2
+2015-03-20 22:12:51.609 PopulistMVP[6978:1683765] count > 3
+2015-03-20 22:12:51.611 PopulistMVP[6978:1683765] Now, locationStringDictionary = {
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = "Mar Vista";
+    state = CA;
+}
+2015-03-20 22:12:51.620 PopulistMVP[6978:1683765] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-03-20 22:12:51.620 PopulistMVP[6978:1683765] finishUpdatingEvents
+2015-03-20 22:12:51.638 PopulistMVP[6978:1683765] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.01552215,-118.43084885> +/- 165.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:12:19 PM Pacific Daylight Time
+2015-03-20 22:12:51.640 PopulistMVP[6978:1683765] PPLSTLocationManager - updateTimeOfLastUpdate:2015-03-21 05:12:51 +0000
+2015-03-20 22:12:51.641 PopulistMVP[6978:1683765] poorAccuracy = YES
+2015-03-20 22:12:51.643 PopulistMVP[6978:1683765] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.015522 andLongitude:-118.430847 andDate:2015-03-21 05:12:51 +0000
+2015-03-20 22:12:51.652 PopulistMVP[6978:1683765] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-20 22:17:21.189 PopulistMVP[6978:1683849] CFNetwork SSLHandshake failed (-9806)
+2015-03-20 22:17:21.520 PopulistMVP[6978:1684860] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1700fd100 {NSUnderlyingError=0x17005b510 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-03-20 22:17:21.596 PopulistMVP[6978:1684872] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1702e0b80 {NSUnderlyingError=0x170240c60 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/update, NSErrorFailingURLKey=https://api.parse.com/2/update, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-03-20 22:17:21.598 PopulistMVP[6978:1683765] PPLSTDataManager - saveCoreData
+2015-03-20 22:17:21.601 PopulistMVP[6978:1683765] PPLSTDataManager - contextHasChanged
+2015-03-20 22:17:21.631 PopulistMVP[6978:1684001] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+) inContext:<NSManagedObjectContext: 0x1701fa700>
+2015-03-20 22:17:21.652 PopulistMVP[6978:1684873] [Warning]: Network connection failed. Making attempt 2 after sleeping for 1.641825 seconds.
+2015-03-20 22:17:21.613 PopulistMVP[6978:1683765] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x174178480>
+2015-03-20 22:17:21.842 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:21.858 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:21.935 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:21.947 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:22.164 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:22.210 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02088883,-118.42770059> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:22.217 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02088981,-118.42769709> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:22.223 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02088981,-118.42769709> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:22.237 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02088898,-118.42769716> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:22.243 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02088898,-118.42769716> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:21 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:22.246 PopulistMVP[6978:1683765] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x174178480>
+2015-03-20 22:17:22.268 PopulistMVP[6978:1684001] About to delete contribution with ID dummycDVRab5y96
+2015-03-20 22:17:22.269 PopulistMVP[6978:1684001] Deleting Event with ID jJMd2BXOst
+2015-03-20 22:17:22.270 PopulistMVP[6978:1684001] PPLSTDataManager - saveCoreData
+2015-03-20 22:17:22.285 PopulistMVP[6978:1684001] PPLSTDataManager - contextHasChanged
+2015-03-20 22:17:22.287 PopulistMVP[6978:1683765] PPLSTDataManager - contextHasChanged
+2015-03-20 22:17:27.229 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02102340,-118.42767196> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:27 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:27.232 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02102340,-118.42767196> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:27 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:33.208 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02113079,-118.42755825> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:33 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:33.211 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02113079,-118.42755825> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:33 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:39.452 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02113193,-118.42756182> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:39 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:39.455 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02113193,-118.42756182> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:39 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:45.862 PopulistMVP[6978:1683765] PPLSTLocationManager - locationManager:<CLLocationManager: 0x1702069f0> didUpdateLocations:(
+    "<+34.02109348,-118.42756426> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:45 PM Pacific Daylight Time"
+)
+2015-03-20 22:17:45.865 PopulistMVP[6978:1683765] locationManager didUpdateLocation lastObject = <+34.02109348,-118.42756426> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 10:17:45 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 22:17:45.867 PopulistMVP[6978:1683765] PPLSTLocationManager - getLocationStringData
+2015-03-20 22:17:45.868 PopulistMVP[6978:1683765] We're using the coordiantes self.currentLocation.coordinate.latitude = 34.020889 and longitude = -118.427701
+2015-03-20 22:17:45.875 PopulistMVP[6978:1683765] request = <NSMutableURLRequest: 0x170206080> { URL: https://maps.googleapis.com/maps/api/geocode/json?latlng=34.020889,-118.427701&sensor=false&result_type=neighborhood%7Clocality%7Ccountry&key=AIzaSyClR6wH3_BfA1bXFjr3LEI-Cp_SiOrPJog }

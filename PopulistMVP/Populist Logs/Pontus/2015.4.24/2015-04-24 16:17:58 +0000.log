@@ -1,0 +1,2034 @@
+2015-04-24 09:17:58.995 PopulistMVP[10588:3015757] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-04-24 09:17:59.044 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 09:17:59.084 PopulistMVP[10588:3015757] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-04-24 09:17:59.126 PopulistMVP[10588:3015757] PPLSTDataManager - createAvatarForStatusDictionary
+2015-04-24 09:17:59.134 PopulistMVP[10588:3015757] updateEvents
+2015-04-24 09:17:59.135 PopulistMVP[10588:3015757] startUpdatingEvents
+2015-04-24 09:17:59.228 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didChangeAuthorizationStatus to status = 3
+2015-04-24 09:17:59.228 PopulistMVP[10588:3015757] didAcceptAuthorization triggered in ExploreVC
+2015-04-24 09:17:59.228 PopulistMVP[10588:3015757] updateEvents
+2015-04-24 09:17:59.236 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02096124,-118.42764945> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/23/15, 8:59:32 PM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.237 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02096124,-118.42764945> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/23/15, 8:59:32 PM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:17:59.250 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02099689,-118.42766324> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.252 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02099689,-118.42766324> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:17:59.252 PopulistMVP[10588:3015757] didRegisterForRemoteNotificationWithDeviceToken:<cb2f36e9 ef56ae29 ed086cd0 e26abac3 49d43523 bb5e5ae8 ce990aec 5caafa05>
+2015-04-24 09:17:59.256 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 09:17:59.258 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02099689,-118.42766324> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.259 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02099689,-118.42766324> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:17:59.265 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02100449,-118.42778626> +/- 257.62m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.266 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02100449,-118.42778626> +/- 257.62m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time, accuracy = 257.622540
+2015-04-24 09:17:59.269 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02101187,-118.42790550> +/- 257.62m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.270 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02101187,-118.42790550> +/- 257.62m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time, accuracy = 257.622949
+2015-04-24 09:17:59.598 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02106414,-118.42765461> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time"
+)
+2015-04-24 09:17:59.598 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02106414,-118.42765461> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:17:59 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:18:02.111 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02095106,-118.42762744> +/- 30.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:18:02 AM Pacific Daylight Time"
+)
+2015-04-24 09:18:02.112 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02095106,-118.42762744> +/- 30.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:18:02 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 09:18:03.054 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02095106,-118.42762744> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:18:03 AM Pacific Daylight Time"
+)
+2015-04-24 09:18:03.055 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02095106,-118.42762744> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:18:03 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 09:18:03.056 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 09:18:03.059 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 09:18:03.059 PopulistMVP[10588:3015757] finishUpdatingEvents
+2015-04-24 09:18:03.060 PopulistMVP[10588:3015757] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02095106,-118.42762744> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:18:03 AM Pacific Daylight Time
+2015-04-24 09:18:03.060 PopulistMVP[10588:3015757] PPLSTLocationManager - updateTimeOfLastUpdate:2015-04-24 16:18:03 +0000
+2015-04-24 09:18:03.060 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.020950 andLongitude:-118.427628 andDate:2015-04-24 16:18:03 +0000
+2015-04-24 09:18:03.061 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.020950 andLongitude:-118.427628 andDate:2015-04-24 16:18:03 +0000
+2015-04-24 09:18:03.062 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 09:18:03.872 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 16;
+    isActive = NO;
+    latitude = "34.02099478116366";
+    longitude = "-118.4276601984587";
+    neighborhood = " ";
+    objectId = PUmdlJlliN;
+    state = " ";
+    titlePhotoId = xoJZ7mu5jk;
+    updatedAt = "2015-03-29 22:19:56 +0000";
+}
+2015-04-24 09:18:03.872 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:PUmdlJlliN
+2015-04-24 09:18:03.877 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 14;
+    isActive = NO;
+    latitude = "34.02101784022428";
+    longitude = "-118.4276529448533";
+    neighborhood = " ";
+    objectId = 5f2XwVBGxA;
+    state = " ";
+    titlePhotoId = MM44km2aRQ;
+    updatedAt = "2015-03-22 22:31:54 +0000";
+}
+2015-04-24 09:18:03.877 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:5f2XwVBGxA
+2015-04-24 09:18:03.879 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 4;
+    isActive = NO;
+    latitude = "34.020984446524";
+    longitude = "-118.4276288216548";
+    neighborhood = " ";
+    objectId = sxiAhYpOpv;
+    state = " ";
+    titlePhotoId = jThWmPfRQd;
+    updatedAt = "2015-04-03 03:33:07 +0000";
+}
+2015-04-24 09:18:03.879 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:sxiAhYpOpv
+2015-04-24 09:18:03.880 PopulistMVP[10588:3015757] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02103269913581";
+    longitude = "-118.427660414746";
+    neighborhood = "Mar Vista";
+    objectId = fm9E9HE7P3;
+    state = CA;
+    titlePhotoId = LRj5NN2OQX;
+    updatedAt = "2015-03-07 04:27:48 +0000";
+}
+2015-04-24 09:18:03.881 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:fm9E9HE7P3
+2015-04-24 09:18:03.882 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02104995048346";
+    longitude = "-118.4276859548825";
+    neighborhood = " ";
+    objectId = Z3rqAlU7eG;
+    state = " ";
+    titlePhotoId = ckcXYByWbn;
+    updatedAt = "2015-03-22 23:57:09 +0000";
+}
+2015-04-24 09:18:03.882 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:Z3rqAlU7eG
+2015-04-24 09:18:03.883 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02101789742429";
+    longitude = "-118.4276557071686";
+    neighborhood = " ";
+    objectId = Dk50Jq7Qf8;
+    state = " ";
+    titlePhotoId = lHv2HygVL9;
+    updatedAt = "2015-04-10 17:40:07 +0000";
+}
+2015-04-24 09:18:03.884 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:Dk50Jq7Qf8
+2015-04-24 09:18:03.884 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:03.886 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:03.886 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.020950 andLongitude:-118.427628 andDate:2015-04-24 16:18:03 +0000
+2015-04-24 09:18:03.887 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 09:18:03.887 PopulistMVP[10588:3015757] latitude: -118.427628, longitude: 34.020950
+2015-04-24 09:18:03.888 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 09:18:04.058 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:7GhOA0ikZs
+2015-04-24 09:18:04.059 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.061 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.062 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 09:18:04.062 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:18:04.062 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummyfzxc0WG0lV
+2015-04-24 09:18:04.062 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.065 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.067 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.068 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.068 PopulistMVP[10588:3015757] channels: (
+    global
+)
+2015-04-24 09:18:04.071 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 09:18:04.071 PopulistMVP[10588:3015792] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 09:18:04.071 PopulistMVP[10588:3015792] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 09:18:04.071 PopulistMVP[10588:3015792] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 09:18:04.072 PopulistMVP[10588:3015792] returning the event Id (null)
+2015-04-24 09:18:04.072 PopulistMVP[10588:3015792] adding currentEvent too. Id = 7GhOA0ikZs
+2015-04-24 09:18:04.072 PopulistMVP[10588:3015792] done adding the events. Will now delete them.
+2015-04-24 09:18:04.075 PopulistMVP[10588:3015792] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1700d2ec0> (entity: Event; id: 0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x174036200 'contributions'>\";\n    eventId = PUmdlJlliN;\n    importance = 16;\n    lastActive = \"2015-03-29 22:19:56 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39>\";\n})",
+    "<Event: 0x1700d1640> (entity: Event; id: 0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x170228c20 'contributions'>\";\n    eventId = 5f2XwVBGxA;\n    importance = 14;\n    lastActive = \"2015-03-22 22:31:54 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40>\";\n})",
+    "<Event: 0x1700d3e10> (entity: Event; id: 0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x1702355e0 'contributions'>\";\n    eventId = sxiAhYpOpv;\n    importance = 4;\n    lastActive = \"2015-04-03 03:33:07 +0000\";\n    latitude = \"34.02098\";\n    longitude = \"-118.4276\";\n    titleContribution = \"0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42>\";\n})",
+    "<Event: 0x1740d3d30> (entity: Event; id: 0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x174036cc0 'contributions'>\";\n    eventId = fm9E9HE7P3;\n    importance = 6;\n    lastActive = \"2015-03-07 04:27:48 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41>\";\n})",
+    "<Event: 0x1700d3f60> (entity: Event; id: 0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x1702357a0 'contributions'>\";\n    eventId = Z3rqAlU7eG;\n    importance = 3;\n    lastActive = \"2015-03-22 23:57:09 +0000\";\n    latitude = \"34.02105\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43>\";\n})",
+    "<Event: 0x1740d40b0> (entity: Event; id: 0xd000000000680000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p26> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x174036e80 'contributions'>\";\n    eventId = Dk50Jq7Qf8;\n    importance = 1;\n    lastActive = \"2015-04-10 17:40:07 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000000b00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p44>\";\n})",
+    "<Event: 0x1740d4350> (entity: Event; id: 0xd000000000740000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p29> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = 7GhOA0ikZs;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.02095\";\n    longitude = \"-118.4276\";\n    titleContribution = \"0xd000000000bc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p47>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1701f6900>
+2015-04-24 09:18:04.076 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-24 09:18:04.077 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:56 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:18:04.078 PopulistMVP[10588:3015757] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = (null)
+2015-04-24 09:18:04.078 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:18:04.078 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:18:04.099 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:18:04.100 PopulistMVP[10588:3015777] About to download the media for this contribution
+2015-04-24 09:18:04.100 PopulistMVP[10588:3015777] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:56 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:18:04.105 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = MM44km2aRQ
+2015-04-24 09:18:04.105 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:18:04.106 PopulistMVP[10588:3015757] contributionId = MM44km2aRQ, contributionType = photo, imagePath = (null)
+2015-04-24 09:18:04.106 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:18:04.106 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:18:04.107 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:18:04.108 PopulistMVP[10588:3015789] About to download the media for this contribution
+2015-04-24 09:18:04.109 PopulistMVP[10588:3015789] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:18:04.124 PopulistMVP[10588:3015792] About to delete contribution with ID dummyCSUrp2649V
+2015-04-24 09:18:04.125 PopulistMVP[10588:3015792] Deleting Event with ID khLeeg2kpN
+2015-04-24 09:18:04.125 PopulistMVP[10588:3015792] About to delete contribution with ID dummyOR3g7qLY34
+2015-04-24 09:18:04.125 PopulistMVP[10588:3015792] Deleting Event with ID o8If2NVV6x
+2015-04-24 09:18:04.130 PopulistMVP[10588:3015792] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.131 PopulistMVP[10588:3015792] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.132 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.287 PopulistMVP[10588:3015777] PPLSTDataManager - storeImage:<UIImage: 0x174093b00>
+2015-04-24 09:18:04.345 PopulistMVP[10588:3015777] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:18:04.345 PopulistMVP[10588:3015777] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:18:04.368 PopulistMVP[10588:3015777] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.369 PopulistMVP[10588:3015777] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.369 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.370 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:18:04.370 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:18:04.370 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/Aj6ATjjX2A.png
+2015-04-24 09:18:04.372 PopulistMVP[10588:3015757] the image is <UIImage: 0x174093b00>
+2015-04-24 09:18:04.372 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:Aj6ATjjX2A
+2015-04-24 09:18:04.372 PopulistMVP[10588:3015757] self.keysSet = {(
+)}
+2015-04-24 09:18:04.372 PopulistMVP[10588:3015757] [self.keysArray count] = 0. Max = 10
+2015-04-24 09:18:04.372 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:18:04.373 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-24 09:18:04.374 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:18:04.374 PopulistMVP[10588:3015757] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 09:18:04.375 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:18:04.375 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:18:04.375 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174093b00>
+2015-04-24 09:18:04.375 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:18:04.375 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:18:04.376 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = MM44km2aRQ
+2015-04-24 09:18:04.377 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:18:04.378 PopulistMVP[10588:3015757] contributionId = MM44km2aRQ, contributionType = photo, imagePath = (null)
+2015-04-24 09:18:04.378 PopulistMVP[10588:3015757] loading = 1
+2015-04-24 09:18:04.378 PopulistMVP[10588:3015757] It's loading, let's return
+2015-04-24 09:18:04.497 PopulistMVP[10588:3015789] PPLSTDataManager - storeImage:<UIImage: 0x170094370>
+2015-04-24 09:18:04.536 PopulistMVP[10588:3015789] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:18:04.537 PopulistMVP[10588:3015789] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:18:04.552 PopulistMVP[10588:3015789] PPLSTDataManager - saveCoreData
+2015-04-24 09:18:04.552 PopulistMVP[10588:3015789] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.553 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:18:04.553 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:18:04.554 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:18:04.554 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/9VNFsfJ4qH.png
+2015-04-24 09:18:04.555 PopulistMVP[10588:3015757] the image is <UIImage: 0x174094c30>
+2015-04-24 09:18:04.555 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:9VNFsfJ4qH
+2015-04-24 09:18:04.555 PopulistMVP[10588:3015757] self.keysSet = {(
+    Aj6ATjjX2A
+)}
+2015-04-24 09:18:04.555 PopulistMVP[10588:3015757] [self.keysArray count] = 1. Max = 10
+2015-04-24 09:18:04.556 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:18:04.556 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174093b00>
+2015-04-24 09:18:04.557 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:18:04.558 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:18:04.558 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = MM44km2aRQ
+2015-04-24 09:18:04.558 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:18:04.559 PopulistMVP[10588:3015757] contributionId = MM44km2aRQ, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 09:18:04.559 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:18:04.559 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:18:04.559 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174094c30>
+2015-04-24 09:18:04.559 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:18:04.560 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:23:45.816 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 09:23:45.905 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02101418,-118.42765975> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:18:43 AM Pacific Daylight Time"
+)
+2015-04-24 09:23:45.906 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02101418,-118.42765975> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:18:43 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:23:45.999 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02102609,-118.42786757> +/- 338.58m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:45 AM Pacific Daylight Time"
+)
+2015-04-24 09:23:46.000 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02102609,-118.42786757> +/- 338.58m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:45 AM Pacific Daylight Time, accuracy = 338.578798
+2015-04-24 09:23:46.007 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02103734,-118.42806412> +/- 338.58m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:45 AM Pacific Daylight Time"
+)
+2015-04-24 09:23:46.008 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02103734,-118.42806412> +/- 338.58m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:45 AM Pacific Daylight Time, accuracy = 338.578798
+2015-04-24 09:23:46.188 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02098430,-118.42767018> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:46 AM Pacific Daylight Time"
+)
+2015-04-24 09:23:46.189 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02098430,-118.42767018> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 9:23:46 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 09:23:46.828 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-24 09:23:46.831 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:23:46.832 PopulistMVP[10588:3015757] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 09:23:46.832 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:46.832 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:23:46.832 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174093b00>
+2015-04-24 09:23:46.833 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:46.833 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:23:46.834 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = MM44km2aRQ
+2015-04-24 09:23:46.835 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:23:46.835 PopulistMVP[10588:3015757] contributionId = MM44km2aRQ, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 09:23:46.835 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:46.835 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:23:46.836 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174094c30>
+2015-04-24 09:23:46.836 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:46.836 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:23:46.889 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:47.033 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:47.250 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:47.450 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:47.451 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:47.452 PopulistMVP[10588:3015757] contributionId = jThWmPfRQd, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:47.452 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:23:47.452 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:23:47.454 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:23:47.454 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:47.454 PopulistMVP[10588:3017920] About to download the media for this contribution
+2015-04-24 09:23:47.455 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:48 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:47.455 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:47.455 PopulistMVP[10588:3017920] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:47.455 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:23:47.455 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:23:47.456 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:23:47.456 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:47.457 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:57:09 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:47.457 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:47.457 PopulistMVP[10588:3017926] About to download the media for this contribution
+2015-04-24 09:23:47.457 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:23:47.458 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:23:47.458 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:23:47.458 PopulistMVP[10588:3017926] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:48 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:47.460 PopulistMVP[10588:3017921] About to download the media for this contribution
+2015-04-24 09:23:47.465 PopulistMVP[10588:3017921] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:57:09 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:47.878 PopulistMVP[10588:3017920] PPLSTDataManager - storeImage:<UIImage: 0x170092ca0>
+2015-04-24 09:23:47.929 PopulistMVP[10588:3017920] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:23:47.929 PopulistMVP[10588:3017920] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:23:47.951 PopulistMVP[10588:3017920] PPLSTDataManager - saveCoreData
+2015-04-24 09:23:47.952 PopulistMVP[10588:3017920] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:47.952 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:47.955 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:47.955 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:23:47.955 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/LoGBufBRBH.png
+2015-04-24 09:23:47.956 PopulistMVP[10588:3015757] the image is <UIImage: 0x174095d60>
+2015-04-24 09:23:47.956 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:LoGBufBRBH
+2015-04-24 09:23:47.957 PopulistMVP[10588:3015757] self.keysSet = {(
+    9VNFsfJ4qH,
+    Aj6ATjjX2A
+)}
+2015-04-24 09:23:47.957 PopulistMVP[10588:3015757] [self.keysArray count] = 2. Max = 10
+2015-04-24 09:23:47.957 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:23:47.957 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:47.958 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:47.958 PopulistMVP[10588:3015757] contributionId = jThWmPfRQd, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 09:23:47.958 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:47.958 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:47.959 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174095d60>
+2015-04-24 09:23:47.959 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:47.959 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:47.959 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:47.960 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:48 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:47.960 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:47.961 PopulistMVP[10588:3015757] loading = 1
+2015-04-24 09:23:47.961 PopulistMVP[10588:3015757] It's loading, let's return
+2015-04-24 09:23:47.961 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:47.962 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:57:09 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:47.962 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:47.962 PopulistMVP[10588:3015757] loading = 1
+2015-04-24 09:23:47.962 PopulistMVP[10588:3015757] It's loading, let's return
+2015-04-24 09:23:47.979 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02098312,-118.42764010> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:23:47 AM Pacific Daylight Time"
+)
+2015-04-24 09:23:47.980 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02098312,-118.42764010> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 9:23:47 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 09:23:47.981 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 09:23:47.986 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 09:23:47.987 PopulistMVP[10588:3015757] Distance Moved = 3.743495
+2015-04-24 09:23:48.155 PopulistMVP[10588:3017921] PPLSTDataManager - storeImage:<UIImage: 0x174096760>
+2015-04-24 09:23:48.211 PopulistMVP[10588:3017926] PPLSTDataManager - storeImage:<UIImage: 0x174096a30>
+2015-04-24 09:23:48.219 PopulistMVP[10588:3017921] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:23:48.219 PopulistMVP[10588:3017921] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:23:48.247 PopulistMVP[10588:3017921] PPLSTDataManager - saveCoreData
+2015-04-24 09:23:48.247 PopulistMVP[10588:3017921] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:48.248 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:48.248 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.248 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:23:48.249 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/NmNqfXqfK9.png
+2015-04-24 09:23:48.249 PopulistMVP[10588:3017926] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:23:48.249 PopulistMVP[10588:3017926] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:23:48.250 PopulistMVP[10588:3015757] the image is <UIImage: 0x170094690>
+2015-04-24 09:23:48.250 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:NmNqfXqfK9
+2015-04-24 09:23:48.250 PopulistMVP[10588:3015757] self.keysSet = {(
+    9VNFsfJ4qH,
+    LoGBufBRBH,
+    Aj6ATjjX2A
+)}
+2015-04-24 09:23:48.250 PopulistMVP[10588:3015757] [self.keysArray count] = 3. Max = 10
+2015-04-24 09:23:48.250 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:23:48.251 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:48.251 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] contributionId = jThWmPfRQd, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174095d60>
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.252 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:48.253 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:48.253 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:48 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:48.254 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:48.254 PopulistMVP[10588:3015757] loading = 1
+2015-04-24 09:23:48.254 PopulistMVP[10588:3015757] It's loading, let's return
+2015-04-24 09:23:48.254 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:48.255 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:56:47 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:48.255 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = NmNqfXqfK9
+2015-04-24 09:23:48.255 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.255 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.255 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x170094690>
+2015-04-24 09:23:48.256 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.256 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.267 PopulistMVP[10588:3017926] PPLSTDataManager - saveCoreData
+2015-04-24 09:23:48.268 PopulistMVP[10588:3017926] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:48.269 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:48.269 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:48.270 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:23:48.270 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/Nxwuggw4mF.png
+2015-04-24 09:23:48.271 PopulistMVP[10588:3015757] the image is <UIImage: 0x174096a30>
+2015-04-24 09:23:48.272 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:Nxwuggw4mF
+2015-04-24 09:23:48.272 PopulistMVP[10588:3015757] self.keysSet = {(
+    LoGBufBRBH,
+    NmNqfXqfK9,
+    9VNFsfJ4qH,
+    Aj6ATjjX2A
+)}
+2015-04-24 09:23:48.272 PopulistMVP[10588:3015757] [self.keysArray count] = 4. Max = 10
+2015-04-24 09:23:48.272 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:23:48.272 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:48.273 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 770; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:48.273 PopulistMVP[10588:3015757] contributionId = jThWmPfRQd, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174095d60>
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:48.274 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:48.275 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:32 +0000";
+    event = nil;
+    imagePath = Nxwuggw4mF;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:48.275 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = Nxwuggw4mF
+2015-04-24 09:23:48.275 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.275 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:48.276 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174096a30>
+2015-04-24 09:23:48.276 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.276 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:48.276 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:48.277 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:56:47 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:48.277 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = NmNqfXqfK9
+2015-04-24 09:23:48.277 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.277 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.278 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x170094690>
+2015-04-24 09:23:48.278 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.278 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.926 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:48.927 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:32 +0000";
+    event = nil;
+    imagePath = Nxwuggw4mF;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:48.927 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = Nxwuggw4mF
+2015-04-24 09:23:48.928 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.928 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:48.928 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174096a30>
+2015-04-24 09:23:48.928 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.928 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:48.929 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:48.929 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:56:47 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = NmNqfXqfK9
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x170094690>
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:48.930 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:48.984 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = lHv2HygVL9
+2015-04-24 09:23:49.903 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:49.905 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:56:47 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:49.906 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = NmNqfXqfK9
+2015-04-24 09:23:49.906 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:49.907 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:49.907 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x170094690>
+2015-04-24 09:23:49.908 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:49.908 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:49.909 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = lHv2HygVL9
+2015-04-24 09:23:49.911 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 1925; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1740d3fd0> (entity: Contribution; id: 0xd000000000b00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p44> ; data: {
+    contributingUserId = "";
+    contributionId = lHv2HygVL9;
+    contributionType = photo;
+    createdAt = "2015-04-10 17:40:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000680000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p26>";
+})
+2015-04-24 09:23:49.912 PopulistMVP[10588:3015757] contributionId = lHv2HygVL9, contributionType = photo, imagePath = (null)
+2015-04-24 09:23:49.913 PopulistMVP[10588:3015757] loading = (null)
+2015-04-24 09:23:49.913 PopulistMVP[10588:3015757] it wasn't loading, so we'll move forward
+2015-04-24 09:23:49.916 PopulistMVP[10588:3015757] About to dispatch async
+2015-04-24 09:23:49.918 PopulistMVP[10588:3017926] About to download the media for this contribution
+2015-04-24 09:23:49.919 PopulistMVP[10588:3017926] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740d3fd0> (entity: Contribution; id: 0xd000000000b00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p44> ; data: {
+    contributingUserId = "";
+    contributionId = lHv2HygVL9;
+    contributionType = photo;
+    createdAt = "2015-04-10 17:40:07 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000680000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p26>";
+})
+2015-04-24 09:23:50.102 PopulistMVP[10588:3017926] PPLSTDataManager - storeImage:<UIImage: 0x174096760>
+2015-04-24 09:23:50.158 PopulistMVP[10588:3017926] PPLSTDataManager - getEmptyFileName
+2015-04-24 09:23:50.158 PopulistMVP[10588:3017926] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 09:23:50.176 PopulistMVP[10588:3017926] PPLSTDataManager - saveCoreData
+2015-04-24 09:23:50.177 PopulistMVP[10588:3017926] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:50.177 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 09:23:50.177 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-04-24 09:23:50.178 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 09:23:50.178 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/gqHSf71iez.png
+2015-04-24 09:23:50.179 PopulistMVP[10588:3015757] the image is <UIImage: 0x174096760>
+2015-04-24 09:23:50.179 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:gqHSf71iez
+2015-04-24 09:23:50.179 PopulistMVP[10588:3015757] self.keysSet = {(
+    LoGBufBRBH,
+    NmNqfXqfK9,
+    Nxwuggw4mF,
+    9VNFsfJ4qH,
+    Aj6ATjjX2A
+)}
+2015-04-24 09:23:50.180 PopulistMVP[10588:3015757] [self.keysArray count] = 5. Max = 10
+2015-04-24 09:23:50.180 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 09:23:50.180 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = ckcXYByWbn
+2015-04-24 09:23:50.181 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3da0> (entity: Contribution; id: 0xd000000000ac0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p43> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = ckcXYByWbn;
+    contributionType = photo;
+    createdAt = "2015-03-22 23:56:47 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000640000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p25>";
+})
+2015-04-24 09:23:50.181 PopulistMVP[10588:3015757] contributionId = ckcXYByWbn, contributionType = photo, imagePath = NmNqfXqfK9
+2015-04-24 09:23:50.181 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.181 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:50.182 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x170094690>
+2015-04-24 09:23:50.182 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.182 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-04-24 09:23:50.182 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = lHv2HygVL9
+2015-04-24 09:23:50.183 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 1925; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1740d3fd0> (entity: Contribution; id: 0xd000000000b00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p44> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = lHv2HygVL9;
+    contributionType = photo;
+    createdAt = "2015-04-10 17:40:07 +0000";
+    event = nil;
+    imagePath = gqHSf71iez;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000680000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p26>";
+})
+2015-04-24 09:23:50.183 PopulistMVP[10588:3015757] contributionId = lHv2HygVL9, contributionType = photo, imagePath = gqHSf71iez
+2015-04-24 09:23:50.183 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.183 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-04-24 09:23:50.183 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174096760>
+2015-04-24 09:23:50.184 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.184 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:gqHSf71iez
+2015-04-24 09:23:50.752 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = LRj5NN2OQX
+2015-04-24 09:23:50.754 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3f60> (entity: Contribution; id: 0xd000000000a40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p41> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = LRj5NN2OQX;
+    contributionType = photo;
+    createdAt = "2015-03-07 04:27:32 +0000";
+    event = nil;
+    imagePath = Nxwuggw4mF;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd0000000005c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p23>";
+})
+2015-04-24 09:23:50.755 PopulistMVP[10588:3015757] contributionId = LRj5NN2OQX, contributionType = photo, imagePath = Nxwuggw4mF
+2015-04-24 09:23:50.756 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.757 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:50.757 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174096a30>
+2015-04-24 09:23:50.758 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.758 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Nxwuggw4mF
+2015-04-24 09:23:50.802 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = jThWmPfRQd
+2015-04-24 09:23:50.804 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530470; baseClass = UITableViewCell; frame = (0 1925; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170032200>> ForContribution:<Contribution: 0x1700d3c50> (entity: Contribution; id: 0xd000000000a80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p42> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = jThWmPfRQd;
+    contributionType = photo;
+    createdAt = "2015-04-03 03:33:07 +0000";
+    event = nil;
+    imagePath = LoGBufBRBH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000600000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p24>";
+})
+2015-04-24 09:23:50.805 PopulistMVP[10588:3015757] contributionId = jThWmPfRQd, contributionType = photo, imagePath = LoGBufBRBH
+2015-04-24 09:23:50.806 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.807 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:50.807 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174095d60>
+2015-04-24 09:23:50.808 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.808 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:LoGBufBRBH
+2015-04-24 09:23:50.852 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = MM44km2aRQ
+2015-04-24 09:23:50.854 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f530c90; baseClass = UITableViewCell; frame = (0 1540; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174036c60>> ForContribution:<Contribution: 0x1700d3cc0> (entity: Contribution; id: 0xd000000000a00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p40> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = MM44km2aRQ;
+    contributionType = photo;
+    createdAt = "2015-03-22 22:31:54 +0000";
+    event = nil;
+    imagePath = 9VNFsfJ4qH;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000580000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p22>";
+})
+2015-04-24 09:23:50.855 PopulistMVP[10588:3015757] contributionId = MM44km2aRQ, contributionType = photo, imagePath = 9VNFsfJ4qH
+2015-04-24 09:23:50.856 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.857 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:23:50.857 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174094c30>
+2015-04-24 09:23:50.858 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.858 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:9VNFsfJ4qH
+2015-04-24 09:23:50.886 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-24 09:23:50.887 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 1155; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1740d3da0> (entity: Contribution; id: 0xd0000000009c0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p39> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = Aj6ATjjX2A;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000000540000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p21>";
+})
+2015-04-24 09:23:50.889 PopulistMVP[10588:3015757] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = Aj6ATjjX2A
+2015-04-24 09:23:50.889 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 09:23:50.890 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 09:23:50.891 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x174093b00>
+2015-04-24 09:23:50.891 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 09:23:50.891 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:Aj6ATjjX2A
+2015-04-24 11:05:18.274 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:05:25.535 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02586512,-118.43084711> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:05:25 AM Pacific Daylight Time"
+)
+2015-04-24 11:05:25.561 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02586512,-118.43084711> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:05:25 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:05:26.256 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:05:26.622 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.02568214,-118.43106109> +/- 10.00m (speed 4.44 mps / course 281.25) @ 4/24/15, 11:05:26 AM Pacific Daylight Time"
+)
+2015-04-24 11:05:26.632 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.02568214,-118.43106109> +/- 10.00m (speed 4.44 mps / course 281.25) @ 4/24/15, 11:05:26 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 11:05:26.772 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:05:26.818 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:05:26.820 PopulistMVP[10588:3015757] Distance Moved = 613.171692
+2015-04-24 11:05:26.823 PopulistMVP[10588:3015757] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 11:05:26.825 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.025681 andLongitude:-118.431061 andDate:2015-04-24 18:05:26 +0000
+2015-04-24 11:05:26.827 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.025681 andLongitude:-118.431061 andDate:2015-04-24 18:05:26 +0000
+2015-04-24 11:05:27.106 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:16:20.206 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9806)
+2015-04-24 11:16:20.492 PopulistMVP[10588:3037378] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1740ef000 {NSUnderlyingError=0x17405fbf0 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 11:16:20.627 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:16:20.721 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:20.723 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.025681 andLongitude:-118.431061 andDate:2015-04-24 18:05:26 +0000
+2015-04-24 11:16:20.727 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 11:16:20.770 PopulistMVP[10588:3015757] latitude: -118.431061, longitude: 34.025681
+2015-04-24 11:16:20.824 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:16:21.502 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:2VoKTDg21x
+2015-04-24 11:16:21.503 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:16:21.507 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:21.508 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 11:16:21.508 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:16:21.509 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummycBdjbEHKvr
+2015-04-24 11:16:21.510 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:16:21.512 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:21.513 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:16:21.517 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:21.517 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    merge7GhOA0ikZs
+)
+2015-04-24 11:16:21.518 PopulistMVP[10588:3015757] trying to remove merge7GhOA0ikZs
+2015-04-24 11:16:21.530 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - updateEventsTo:
+2015-04-24 11:16:21.542 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 11:16:21.543 PopulistMVP[10588:3037361] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 11:16:21.545 PopulistMVP[10588:3037361] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 11:16:21.545 PopulistMVP[10588:3037361] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 11:16:21.547 PopulistMVP[10588:3037361] returning the event Id (null)
+2015-04-24 11:16:21.549 PopulistMVP[10588:3037361] adding currentEvent too. Id = 2VoKTDg21x
+2015-04-24 11:16:21.550 PopulistMVP[10588:3037361] done adding the events. Will now delete them.
+2015-04-24 11:16:21.555 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:16:21.562 PopulistMVP[10588:3037361] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740d0fb0> (entity: Event; id: 0xd000000000780000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p30> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = 2VoKTDg21x;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.02568\";\n    longitude = \"-118.4311\";\n    titleContribution = \"0xd000000000c00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p48>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1741f7d00>
+2015-04-24 11:16:21.592 PopulistMVP[10588:3037361] About to delete contribution with ID jThWmPfRQd
+2015-04-24 11:16:21.615 PopulistMVP[10588:3037361] Deleting Event with ID sxiAhYpOpv
+2015-04-24 11:16:21.868 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03255947,-118.37820494> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:21.872 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03255947,-118.37820494> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time, accuracy = 2000.000000
+2015-04-24 11:16:21.880 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03255947,-118.37820494> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:21.895 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03255947,-118.37820494> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time, accuracy = 2000.000000
+2015-04-24 11:16:21.931 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03220227,-118.37001815> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:21.939 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03220227,-118.37001815> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time, accuracy = 2000.000000
+2015-04-24 11:16:21.952 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03202368,-118.36592491> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:22.034 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03202368,-118.36592491> +/- 2000.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:16:21 AM Pacific Daylight Time, accuracy = 2000.000000
+2015-04-24 11:16:22.037 PopulistMVP[10588:3037361] About to delete contribution with ID lHv2HygVL9
+2015-04-24 11:16:22.038 PopulistMVP[10588:3037361] Deleting Event with ID Dk50Jq7Qf8
+2015-04-24 11:16:22.044 PopulistMVP[10588:3037361] About to delete contribution with ID ckcXYByWbn
+2015-04-24 11:16:22.045 PopulistMVP[10588:3037361] Deleting Event with ID Z3rqAlU7eG
+2015-04-24 11:16:22.050 PopulistMVP[10588:3037361] About to delete contribution with ID xoJZ7mu5jk
+2015-04-24 11:16:22.052 PopulistMVP[10588:3037361] Deleting Event with ID PUmdlJlliN
+2015-04-24 11:16:22.058 PopulistMVP[10588:3037361] About to delete contribution with ID dummyfzxc0WG0lV
+2015-04-24 11:16:22.059 PopulistMVP[10588:3037361] Deleting Event with ID 7GhOA0ikZs
+2015-04-24 11:16:22.063 PopulistMVP[10588:3037361] About to delete contribution with ID LRj5NN2OQX
+2015-04-24 11:16:22.066 PopulistMVP[10588:3037361] Deleting Event with ID fm9E9HE7P3
+2015-04-24 11:16:22.069 PopulistMVP[10588:3037361] About to delete contribution with ID MM44km2aRQ
+2015-04-24 11:16:22.070 PopulistMVP[10588:3037361] Deleting Event with ID 5f2XwVBGxA
+2015-04-24 11:16:22.073 PopulistMVP[10588:3037361] PPLSTDataManager - saveCoreData
+2015-04-24 11:16:22.076 PopulistMVP[10588:3037361] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:22.081 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:16:22.195 PopulistMVP[10588:3037361] Deleting file with fileName = LoGBufBRBH
+2015-04-24 11:16:22.291 PopulistMVP[10588:3037361] Deleting file with fileName = NmNqfXqfK9
+2015-04-24 11:16:22.294 PopulistMVP[10588:3037361] Deleting file with fileName = gqHSf71iez
+2015-04-24 11:16:22.301 PopulistMVP[10588:3037361] Deleting file with fileName = 9VNFsfJ4qH
+2015-04-24 11:16:22.348 PopulistMVP[10588:3037361] Deleting file with fileName = Nxwuggw4mF
+2015-04-24 11:16:22.352 PopulistMVP[10588:3037361] Deleting file with fileName = Aj6ATjjX2A
+2015-04-24 11:16:37.291 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03349420,-118.35935868> +/- 50.00m (speed 26.27 mps / course 90.70) @ 4/24/15, 11:16:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:37.308 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03349420,-118.35935868> +/- 50.00m (speed 26.27 mps / course 90.70) @ 4/24/15, 11:16:37 AM Pacific Daylight Time, accuracy = 50.000000
+2015-04-24 11:16:38.157 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03338481,-118.35952917> +/- 30.00m (speed 26.51 mps / course 89.65) @ 4/24/15, 11:16:38 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:38.160 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03338481,-118.35952917> +/- 30.00m (speed 26.51 mps / course 89.65) @ 4/24/15, 11:16:38 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:16:39.152 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03347408,-118.35918652> +/- 30.00m (speed 27.89 mps / course 85.08) @ 4/24/15, 11:16:39 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:39.156 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03347408,-118.35918652> +/- 30.00m (speed 27.89 mps / course 85.08) @ 4/24/15, 11:16:39 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:16:40.157 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03346641,-118.35891545> +/- 30.00m (speed 26.34 mps / course 87.54) @ 4/24/15, 11:16:40 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:40.160 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03346641,-118.35891545> +/- 30.00m (speed 26.34 mps / course 87.54) @ 4/24/15, 11:16:40 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:16:41.151 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03371572,-118.35852855> +/- 30.00m (speed 26.46 mps / course 85.83) @ 4/24/15, 11:16:41 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:41.154 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03371572,-118.35852855> +/- 30.00m (speed 26.46 mps / course 85.83) @ 4/24/15, 11:16:41 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:16:42.155 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03373443,-118.35821887> +/- 30.00m (speed 26.61 mps / course 85.83) @ 4/24/15, 11:16:42 AM Pacific Daylight Time"
+)
+2015-04-24 11:16:42.159 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03373443,-118.35821887> +/- 30.00m (speed 26.61 mps / course 85.83) @ 4/24/15, 11:16:42 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:16:42.161 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:16:42.179 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:16:42.181 PopulistMVP[10588:3015757] Distance Moved = 6438.721680
+2015-04-24 11:16:42.182 PopulistMVP[10588:3015757] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 11:16:42.183 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.033386 andLongitude:-118.359528 andDate:2015-04-24 18:16:42 +0000
+2015-04-24 11:16:42.185 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.033386 andLongitude:-118.359528 andDate:2015-04-24 18:16:42 +0000
+2015-04-24 11:16:42.195 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:13.781 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9806)
+2015-04-24 11:18:13.786 PopulistMVP[10588:3038548] [Error]: Error Domain=NSURLErrorDomain Code=-1005 "The network connection was lost." UserInfo=0x1700f1a80 {NSUnderlyingError=0x170055fc0 "The network connection was lost.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, _kCFStreamErrorDomainKey=1, _kCFStreamErrorCodeKey=57, NSLocalizedDescription=The network connection was lost.} (Code: 100, Version: 1.6.1)
+2015-04-24 11:18:13.830 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:13.834 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:13.835 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.033386 andLongitude:-118.359528 andDate:2015-04-24 18:16:42 +0000
+2015-04-24 11:18:13.835 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 11:18:13.835 PopulistMVP[10588:3015757] latitude: -118.359528, longitude: 34.033386
+2015-04-24 11:18:13.837 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:14.315 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9802)
+2015-04-24 11:18:14.566 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9824)
+2015-04-24 11:18:14.570 PopulistMVP[10588:3015799] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2015-04-24 11:18:14.572 PopulistMVP[10588:3038544] [Error]: Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo=0x1741bd260 {_kCFStreamErrorCodeKey=-9824, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, NSUnderlyingError=0x17405e690 "An SSL error has occurred and a secure connection to the server cannot be made.", NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://api.parse.com/2/update, NSErrorFailingURLStringKey=https://api.parse.com/2/update, _kCFStreamErrorDomainKey=3} (Code: 100, Version: 1.6.1)
+2015-04-24 11:18:14.575 PopulistMVP[10588:3038548] [Warning]: Network connection failed. Making attempt 2 after sleeping for 1.736629 seconds.
+2015-04-24 11:18:14.681 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:bdF2yGjnLZ
+2015-04-24 11:18:14.682 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:14.684 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:14.685 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 11:18:14.686 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:18:14.686 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummyLK5t5pJqPy
+2015-04-24 11:18:14.687 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:14.692 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:14.693 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:14.696 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:14.697 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    merge2VoKTDg21x
+)
+2015-04-24 11:18:14.698 PopulistMVP[10588:3015757] trying to remove merge2VoKTDg21x
+2015-04-24 11:18:14.707 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - updateEventsTo:
+2015-04-24 11:18:14.709 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 11:18:14.711 PopulistMVP[10588:3038547] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 11:18:14.711 PopulistMVP[10588:3038547] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 11:18:14.712 PopulistMVP[10588:3038547] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 11:18:14.712 PopulistMVP[10588:3038547] returning the event Id (null)
+2015-04-24 11:18:14.713 PopulistMVP[10588:3038547] adding currentEvent too. Id = bdF2yGjnLZ
+2015-04-24 11:18:14.713 PopulistMVP[10588:3038547] done adding the events. Will now delete them.
+2015-04-24 11:18:14.714 PopulistMVP[10588:3038547] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1700d1640> (entity: Event; id: 0xd0000000007c0000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p31> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = bdF2yGjnLZ;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.03339\";\n    longitude = \"-118.3595\";\n    titleContribution = \"0xd000000000c40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p49>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1701f7500>
+2015-04-24 11:18:14.780 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:18:14.819 PopulistMVP[10588:3038547] About to delete contribution with ID dummycBdjbEHKvr
+2015-04-24 11:18:14.820 PopulistMVP[10588:3038547] Deleting Event with ID 2VoKTDg21x
+2015-04-24 11:18:14.820 PopulistMVP[10588:3038547] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:14.821 PopulistMVP[10588:3038547] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:14.822 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:14.847 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03375961,-118.35660338> +/- 30.00m (speed 26.18 mps / course 85.08) @ 4/24/15, 11:16:56 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:14.849 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03375961,-118.35660338> +/- 30.00m (speed 26.18 mps / course 85.08) @ 4/24/15, 11:16:56 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:18:14.925 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03410055,-118.35111685> +/- 694.04m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:18:14 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:14.926 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03410055,-118.35111685> +/- 694.04m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:18:14 AM Pacific Daylight Time, accuracy = 694.036281
+2015-04-24 11:18:14.938 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03405854,-118.35111372> +/- 694.04m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:18:14 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:14.940 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03405854,-118.35111372> +/- 694.04m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:18:14 AM Pacific Daylight Time, accuracy = 694.036281
+2015-04-24 11:18:17.034 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03517364,-118.34930191> +/- 30.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:17 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:17.035 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03517364,-118.34930191> +/- 30.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:17 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:18:18.039 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03544781,-118.34953451> +/- 10.00m (speed 2.24 mps / course 318.87) @ 4/24/15, 11:18:18 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:18.040 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03544781,-118.34953451> +/- 10.00m (speed 2.24 mps / course 318.87) @ 4/24/15, 11:18:18 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 11:18:18.041 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:18:18.042 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:18:18.042 PopulistMVP[10588:3015757] Distance Moved = 7389.339844
+2015-04-24 11:18:18.043 PopulistMVP[10588:3015757] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 11:18:18.043 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.035446 andLongitude:-118.349533 andDate:2015-04-24 18:18:18 +0000
+2015-04-24 11:18:18.043 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.035446 andLongitude:-118.349533 andDate:2015-04-24 18:18:18 +0000
+2015-04-24 11:18:18.044 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:18.437 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:18.438 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:18.438 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.035446 andLongitude:-118.349533 andDate:2015-04-24 18:18:18 +0000
+2015-04-24 11:18:18.439 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 11:18:18.439 PopulistMVP[10588:3015757] latitude: -118.349533, longitude: 34.035446
+2015-04-24 11:18:18.442 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:18.698 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:ie8ngGhTb8
+2015-04-24 11:18:18.698 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:18.699 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:18.700 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 11:18:18.700 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:18:18.700 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummyehHGCc0Fy6
+2015-04-24 11:18:18.701 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:18.702 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:18.702 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:18.704 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:18.704 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    mergebdF2yGjnLZ
+)
+2015-04-24 11:18:18.704 PopulistMVP[10588:3015757] trying to remove mergebdF2yGjnLZ
+2015-04-24 11:18:18.707 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - updateEventsTo:
+2015-04-24 11:18:18.708 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 11:18:18.709 PopulistMVP[10588:3038547] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 11:18:18.709 PopulistMVP[10588:3038547] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 11:18:18.709 PopulistMVP[10588:3038547] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 11:18:18.709 PopulistMVP[10588:3038547] returning the event Id (null)
+2015-04-24 11:18:18.710 PopulistMVP[10588:3038547] adding currentEvent too. Id = ie8ngGhTb8
+2015-04-24 11:18:18.710 PopulistMVP[10588:3038547] done adding the events. Will now delete them.
+2015-04-24 11:18:18.710 PopulistMVP[10588:3038547] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = ie8ngGhTb8;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.03545\";\n    longitude = \"-118.3495\";\n    titleContribution = \"0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1701f5a00>
+2015-04-24 11:18:18.712 PopulistMVP[10588:3038547] About to delete contribution with ID dummyLK5t5pJqPy
+2015-04-24 11:18:18.712 PopulistMVP[10588:3038547] Deleting Event with ID bdF2yGjnLZ
+2015-04-24 11:18:18.712 PopulistMVP[10588:3038547] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:18.713 PopulistMVP[10588:3038547] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:18.713 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:22.049 PopulistMVP[10588:3015757] updateEvents
+2015-04-24 11:18:22.050 PopulistMVP[10588:3015757] startUpdatingEvents
+2015-04-24 11:18:22.087 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03540208,-118.34952889> +/- 5.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:22 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:22.088 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03540208,-118.34952889> +/- 5.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:22 AM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 11:18:22.089 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:18:22.089 PopulistMVP[10588:3015757] finishUpdatingEvents
+2015-04-24 11:18:22.092 PopulistMVP[10588:3015757] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.03540208,-118.34952889> +/- 5.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:22 AM Pacific Daylight Time
+2015-04-24 11:18:22.092 PopulistMVP[10588:3015757] PPLSTLocationManager - updateTimeOfLastUpdate:2015-04-24 18:18:22 +0000
+2015-04-24 11:18:22.093 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.035400 andLongitude:-118.349525 andDate:2015-04-24 18:18:22 +0000
+2015-04-24 11:18:22.093 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.035400 andLongitude:-118.349525 andDate:2015-04-24 18:18:22 +0000
+2015-04-24 11:18:22.096 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:22.921 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = YES;
+    country = " ";
+    importance = 0;
+    isActive = YES;
+    latitude = "34.03544616699219";
+    longitude = "-118.3495330810547";
+    neighborhood = " ";
+    objectId = ie8ngGhTb8;
+    state = " ";
+    updatedAt = "2015-04-24 18:18:18 +0000";
+}
+2015-04-24 11:18:22.923 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:ie8ngGhTb8
+2015-04-24 11:18:22.927 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:22.930 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:22.931 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    mergeie8ngGhTb8
+)
+2015-04-24 11:18:22.937 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 11:18:22.940 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03540208,-118.34952889> +/- 5.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:22 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:22.941 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03540208,-118.34952889> +/- 5.00m (speed 0.00 mps / course -1.00) @ 4/24/15, 11:18:22 AM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 11:18:22.943 PopulistMVP[10588:3038547] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 11:18:22.943 PopulistMVP[10588:3038547] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 11:18:22.944 PopulistMVP[10588:3038547] There seems like there is no ChatVC sitting ontop of the current view controller. In other words, we're in the explore view
+2015-04-24 11:18:22.945 PopulistMVP[10588:3038547] returning the event Id (null)
+2015-04-24 11:18:22.946 PopulistMVP[10588:3038547] adding currentEvent too. Id = ie8ngGhTb8
+2015-04-24 11:18:22.946 PopulistMVP[10588:3038547] done adding the events. Will now delete them.
+2015-04-24 11:18:22.948 PopulistMVP[10588:3038547] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = ie8ngGhTb8;\n    importance = 0;\n    lastActive = \"2015-04-24 18:18:18 +0000\";\n    latitude = \"34.03545\";\n    longitude = \"-118.3495\";\n    titleContribution = \"0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1701f7700>
+2015-04-24 11:18:22.956 PopulistMVP[10588:3038547] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:22.956 PopulistMVP[10588:3038547] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:22.956 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:27.044 PopulistMVP[10588:3038540] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = ie8ngGhTb8;
+    importance = 0;
+    lastActive = "2015-04-24 18:18:18 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>";
+})
+2015-04-24 11:18:27.621 PopulistMVP[10588:3038540] return from parse: {
+    contributionIds =     (
+    );
+}
+2015-04-24 11:18:27.622 PopulistMVP[10588:3038540] arrayOfContributionData = (
+)
+2015-04-24 11:18:27.624 PopulistMVP[10588:3038540] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:27.625 PopulistMVP[10588:3038540] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:27.625 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:27.626 PopulistMVP[10588:3038540] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = ie8ngGhTb8;
+    importance = 0;
+    lastActive = "2015-04-24 18:18:18 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>";
+})
+2015-04-24 11:18:28.104 PopulistMVP[10588:3038540] return from parse: {
+    statusArray =     (
+    );
+}
+2015-04-24 11:18:28.105 PopulistMVP[10588:3038540] userIds = {(
+)}
+2015-04-24 11:18:34.444 PopulistMVP[10588:3038540] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = ie8ngGhTb8;
+    importance = 0;
+    lastActive = "2015-04-24 18:18:18 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>";
+})
+2015-04-24 11:18:35.127 PopulistMVP[10588:3038540] return from parse: {
+    contributionIds =     (
+    );
+}
+2015-04-24 11:18:35.127 PopulistMVP[10588:3038540] arrayOfContributionData = (
+)
+2015-04-24 11:18:35.127 PopulistMVP[10588:3038540] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:35.127 PopulistMVP[10588:3038540] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:35.127 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:35.129 PopulistMVP[10588:3038540] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+    );
+    eventId = ie8ngGhTb8;
+    importance = 0;
+    lastActive = "2015-04-24 18:18:18 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000c80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p50>";
+})
+2015-04-24 11:18:35.343 PopulistMVP[10588:3038540] return from parse: {
+    statusArray =     (
+    );
+}
+2015-04-24 11:18:35.343 PopulistMVP[10588:3038540] userIds = {(
+)}
+2015-04-24 11:18:36.271 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x17408e100 UIButton:0x15f633080.centerX == UIView:0x17018c7e0.centerX>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.272 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x17009a810 UIButton:0x15f633080.centerY == UIView:0x17018c7e0.centerY>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.275 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170099f00 UIButton:0x15f518b00'Cancel'.left == UIView:0x17018c7e0.left + 10>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.275 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170099eb0 UIButton:0x15f518b00'Cancel'.bottom == UIView:0x17018c7e0.bottom - 10>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.277 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170099c80 UIButton:0x15f633370.centerX == UIView:0x17018c710.right - 30>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.277 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x17009a5e0 UIButton:0x15f633370.centerY == UIView:0x17018c710.top + 25>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.280 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x170099b40 UIButton:0x15f639d30.centerX == UIView:0x17018c710.left + 30>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.280 PopulistMVP[10588:3015757] The view hierarchy is not prepared for the constraint: <NSLayoutConstraint:0x17009aef0 UIButton:0x15f639d30.centerY == UIView:0x17018c710.top + 25>
+	When added to a view, the constraint's items must be descendants of that view (or the view itself). This will crash if the constraint needs to be resolved before the view hierarchy is assembled. Break on -[UIView _viewHierarchyUnpreparedForConstraint:] to debug.
+2015-04-24 11:18:36.402 PopulistMVP[10588:3015757] Snapshotting a view that has not been rendered results in an empty snapshot. Ensure your view has been rendered at least once before snapshotting or snapshot after screen updates.
+2015-04-24 11:18:38.075 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:18:38.119 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:38.121 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 11:18:38.123 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:18:38.127 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:18:38.128 PopulistMVP[10588:3015757] Distance Moved = 2.301000
+2015-04-24 11:18:38.130 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time"
+)
+2015-04-24 11:18:38.133 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 11:18:39.781 PopulistMVP[10588:3015757] PPLSTImagePickerController - imagePickerController didFinishPicking!
+2015-04-24 11:18:39.785 PopulistMVP[10588:3015757] PPLSTChatViewController - flipImageCorrectly:<UIImage: 0x17408f550> size {2448, 3264} orientation 3 scale 1.000000
+2015-04-24 11:18:39.988 PopulistMVP[10588:3038545] BSXPCMessage received error for message: Connection interrupted
+2015-04-24 11:18:41.175 PopulistMVP[10588:3015757] handleAcceptImage
+2015-04-24 11:18:41.175 PopulistMVP[10588:3015757] PPLSTChatViewController - didFinishPickingImage:
+2015-04-24 11:18:41.185 PopulistMVP[10588:3015757] PPLSTChatViewController - cropImage:<UIImage: 0x17009fe50> size {750, 750} orientation 0 scale 1.000000 AndScaleToPoints:750.000000
+2015-04-24 11:18:41.185 PopulistMVP[10588:3015757] PPLSTChatViewController - flipImageCorrectly:<UIImage: 0x17009fe50> size {750, 750} orientation 0 scale 1.000000
+2015-04-24 11:18:41.242 PopulistMVP[10588:3015757] PPLSTDataManager - uploadContributionWithData:{
+    contributionType = photo;
+    eventId = ie8ngGhTb8;
+    location = "<+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time";
+    senderId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+} andPhoto<UIImage: 0x170280410> size {750, 750} orientation 0 scale 2.000000
+2015-04-24 11:18:41.242 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:tmpId1153851501
+2015-04-24 11:18:41.243 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:41.247 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:41.247 PopulistMVP[10588:3015757] PPLSTDataManager - imageWithImage:<UIImage: 0x170280410> size {750, 750} orientation 0 scale 2.000000 scaledToSize:(GCSize)newSize
+2015-04-24 11:18:41.285 PopulistMVP[10588:3015757] PPLSTDataManager - storeImage:<UIImage: 0x17009afe0> size {320, 320} orientation 0 scale 2.000000
+2015-04-24 11:18:41.366 PopulistMVP[10588:3015757] PPLSTDataManager - getEmptyFileName
+2015-04-24 11:18:41.366 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:18:41.407 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:ie8ngGhTb8
+2015-04-24 11:18:41.415 PopulistMVP[10588:3015757] PPLSTDataManager - uploadAndSaveContributionInBackground:<Contribution: 0x1700d8170> (entity: Contribution; id: 0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1153851501;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:41 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = V74lolx4Oh;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = nil;
+    parentEvent = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+})
+2015-04-24 11:18:41.416 PopulistMVP[10588:3015757] PPLSTChatViewController - handleNewContribution:<Contribution: 0x1700d8170> (entity: Contribution; id: 0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1153851501;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:41 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = V74lolx4Oh;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = nil;
+    parentEvent = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+})
+2015-04-24 11:18:41.416 PopulistMVP[10588:3038540] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:18:41.416 PopulistMVP[10588:3038540] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 11:18:41.416 PopulistMVP[10588:3038540] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/V74lolx4Oh.png
+2015-04-24 11:18:41.417 PopulistMVP[10588:3015757] PPLSTDataManager - increaseImportanceOfEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 0;
+    lastActive = "2015-04-24 18:18:18 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+}) By:2.000000
+2015-04-24 11:18:41.417 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:41.419 PopulistMVP[10588:3038540] the image is <UIImage: 0x1740955e0> size {640, 640} orientation 0 scale 1.000000
+2015-04-24 11:18:41.419 PopulistMVP[10588:3038540] PPLST prepareDictionaryForInsertWithKey:V74lolx4Oh
+2015-04-24 11:18:41.419 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:41.419 PopulistMVP[10588:3038540] self.keysSet = {(
+    LoGBufBRBH,
+    NmNqfXqfK9,
+    Nxwuggw4mF,
+    gqHSf71iez,
+    9VNFsfJ4qH,
+    Aj6ATjjX2A
+)}
+2015-04-24 11:18:41.420 PopulistMVP[10588:3038540] [self.keysArray count] = 6. Max = 10
+2015-04-24 11:18:41.420 PopulistMVP[10588:3038540] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:18:41.421 PopulistMVP[10588:3015757] PPLSTChatViewController - handleUserId:09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:18:41.422 PopulistMVP[10588:3015757] it was a new userId. About to ask for the new userIdDictionary
+2015-04-24 11:18:41.422 PopulistMVP[10588:3015757] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:18:41 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+})
+2015-04-24 11:18:41.425 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:18:42.276 PopulistMVP[10588:3015757] return from parse: {
+    statusArray =     (
+    );
+}
+2015-04-24 11:18:42.279 PopulistMVP[10588:3015757] In the process of converting contributionId = tmpId1153851501 where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:18:42.282 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:18:42.283 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:tmpId1153851501
+2015-04-24 11:18:42.284 PopulistMVP[10588:3015757] self.keysSet = {(
+)}
+2015-04-24 11:18:42.284 PopulistMVP[10588:3015757] [self.keysArray count] = 0. Max = 10
+2015-04-24 11:18:42.284 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:18:42.310 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}
+2015-04-24 11:18:42.355 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:18:42.355 PopulistMVP[10588:3015757] has
+2015-04-24 11:18:42.366 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:18:42 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x1740955e0> size {640, 640} orientation 0 scale 1.000000, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1700d8170> (entity: Contribution; id: 0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1153851501;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:41 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = V74lolx4Oh;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = nil;
+    parentEvent = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x15f8a7800; baseClass = UICollectionView; frame = (0 0; 375 623); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17405fb60>; layer = <CALayer: 0x17023a640>; contentOffset: {0, 0}; contentSize: {375, 220}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f5170f0>
+2015-04-24 11:18:42.366 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:18:44.143 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:18:44.144 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:18:48.090 PopulistMVP[10588:3015757] PPLSTDataManager - handleIncomingDataFromPush:{
+    aps =     {
+        alert = "New stuff at your event!";
+    };
+    c = eXSsc9324J;
+    d =     {
+        "__type" = Date;
+        iso = "2015-04-24T18:18:43.249Z";
+    };
+    e = ie8ngGhTb8;
+    t = photo;
+    u = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+}
+2015-04-24 11:18:48.091 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:ie8ngGhTb8
+2015-04-24 11:19:03.067 PopulistMVP[10588:3015757] didPressSendButton
+2015-04-24 11:19:03.068 PopulistMVP[10588:3015757] PPLSTDataManager - uploadContributionWithData:{
+    contributionType = message;
+    eventId = ie8ngGhTb8;
+    location = "<+34.03539643,-118.34955286> +/- 5.00m (speed 0.77 mps / course 131.48) @ 4/24/15, 11:18:38 AM Pacific Daylight Time";
+    message = "Westbound I-10 entrance ramp is closed";
+    senderId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+} andPhoto(null)
+2015-04-24 11:19:03.069 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:tmpId1606946231
+2015-04-24 11:19:03.069 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:03.070 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:03.070 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:ie8ngGhTb8
+2015-04-24 11:19:03.071 PopulistMVP[10588:3015757] PPLSTDataManager - uploadAndSaveContributionInBackground:<Contribution: 0x1700deae0> (entity: Contribution; id: 0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1606946231;
+    contributionType = message;
+    createdAt = "2015-04-24 18:19:03 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = "Westbound I-10 entrance ramp is closed";
+    parentEvent = nil;
+})
+2015-04-24 11:19:03.072 PopulistMVP[10588:3015757] PPLSTChatViewController - handleNewContribution:<Contribution: 0x1700deae0> (entity: Contribution; id: 0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1606946231;
+    contributionType = message;
+    createdAt = "2015-04-24 18:19:03 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = "Westbound I-10 entrance ramp is closed";
+    parentEvent = nil;
+})
+2015-04-24 11:19:03.073 PopulistMVP[10588:3015757] PPLSTChatViewController - handleUserId:09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:19:03.073 PopulistMVP[10588:3015757] it was a new userId. About to ask for the new userIdDictionary
+2015-04-24 11:19:03.073 PopulistMVP[10588:3015757] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>",
+        "0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:19:03 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+})
+2015-04-24 11:19:03.075 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:19:04.148 PopulistMVP[10588:3015757] return from parse: {
+    statusArray =     (
+        "09425E21-46F9-4014-B2AF-74EB104AFD46"
+    );
+}
+2015-04-24 11:19:04.149 PopulistMVP[10588:3015757] about to add the userId to self.userIds
+2015-04-24 11:19:04.202 PopulistMVP[10588:3015757] In the process of converting contributionId = tmpId1606946231 where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:19:04.203 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:tmpId1606946231
+2015-04-24 11:19:04.203 PopulistMVP[10588:3015757] self.keysSet = {(
+    tmpId1153851501
+)}
+2015-04-24 11:19:04.204 PopulistMVP[10588:3015757] [self.keysArray count] = 1. Max = 10
+2015-04-24 11:19:04.204 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:19:04.212 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}
+2015-04-24 11:19:04.222 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:04.222 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:04.225 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:18:42 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x1740955e0> size {640, 640} orientation 0 scale 1.000000, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1700d8170> (entity: Contribution; id: 0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1153851501;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:43 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = V74lolx4Oh;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = nil;
+    parentEvent = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+}) inCollectionView:<JSQMessagesCollectionView: 0x15f8a7800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17405fb60>; layer = <CALayer: 0x17023a640>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f5170f0>
+2015-04-24 11:19:04.227 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:19:04.232 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000008016> {length = 2, path = 0 - 1}
+2015-04-24 11:19:04.249 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:04.249 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:04.253 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:19:03 +0000, isMediaMessage=0, text=Westbound I-10 entrance ramp is closed, media=(null)> ForContribution:<Contribution: 0x1700deae0> (entity: Contribution; id: 0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1606946231;
+    contributionType = message;
+    createdAt = "2015-04-24 18:19:03 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = "Westbound I-10 entrance ramp is closed";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x15f8a7800; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17405fb60>; layer = <CALayer: 0x17023a640>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f5170f0>
+2015-04-24 11:19:05.170 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:05.172 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:05.840 PopulistMVP[10588:3015757] PPLSTDataManager - handleIncomingDataFromPush:{
+    aps =     {
+        alert = "New stuff at your event!";
+    };
+    c = Jh9ZVl5HWt;
+    d =     {
+        "__type" = Date;
+        iso = "2015-04-24T18:19:03.726Z";
+    };
+    e = ie8ngGhTb8;
+    m = "Westbound I-10 entrance ramp is closed";
+    t = message;
+    u = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+}
+2015-04-24 11:19:05.841 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:ie8ngGhTb8
+2015-04-24 11:19:17.866 PopulistMVP[10588:3015757] Formatting Event Cell for contributionId = tmpId1153851501
+2015-04-24 11:19:17.868 PopulistMVP[10588:3015757] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15f529c60; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170236560>> ForContribution:<Contribution: 0x1700d8170> (entity: Contribution; id: 0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = tmpId1153851501;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:43 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = V74lolx4Oh;
+    latitude = "34.03539642694782";
+    longitude = "-118.3495528624564";
+    message = nil;
+    parentEvent = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+})
+2015-04-24 11:19:17.869 PopulistMVP[10588:3015757] contributionId = tmpId1153851501, contributionType = photo, imagePath = V74lolx4Oh
+2015-04-24 11:19:17.869 PopulistMVP[10588:3015757] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-24 11:19:17.869 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:19:17.869 PopulistMVP[10588:3015757] Just got the image <UIImage: 0x1740955e0> size {640, 640} orientation 0 scale 1.000000
+2015-04-24 11:19:17.870 PopulistMVP[10588:3015757] Yay, the image wasn't nil
+2015-04-24 11:19:17.870 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:V74lolx4Oh
+2015-04-24 11:19:26.241 PopulistMVP[10588:3015757] Selected Row Number 0
+2015-04-24 11:19:26.258 PopulistMVP[10588:3039121] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>",
+        "0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:19:03 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+})
+2015-04-24 11:19:26.964 PopulistMVP[10588:3039121] return from parse: {
+    contributionIds =     (
+                {
+            Jh9ZVl5HWt = message;
+            contributionId = Jh9ZVl5HWt;
+            createdAt = "2015-04-24 18:19:03 +0000";
+            message = "Westbound I-10 entrance ramp is closed";
+            type = message;
+            userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+        },
+                {
+            contributionId = eXSsc9324J;
+            createdAt = "2015-04-24 18:18:43 +0000";
+            eXSsc9324J = photo;
+            message = "";
+            type = photo;
+            userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+        }
+    );
+}
+2015-04-24 11:19:26.964 PopulistMVP[10588:3039121] arrayOfContributionData = (
+        {
+        Jh9ZVl5HWt = message;
+        contributionId = Jh9ZVl5HWt;
+        createdAt = "2015-04-24 18:19:03 +0000";
+        message = "Westbound I-10 entrance ramp is closed";
+        type = message;
+        userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    },
+        {
+        contributionId = eXSsc9324J;
+        createdAt = "2015-04-24 18:18:43 +0000";
+        eXSsc9324J = photo;
+        message = "";
+        type = photo;
+        userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    }
+)
+2015-04-24 11:19:26.964 PopulistMVP[10588:3039121] considering contribution with Id = Jh9ZVl5HWt
+2015-04-24 11:19:26.965 PopulistMVP[10588:3039121] PPLSTDataManager - getContributionFromCoreDataWithId:Jh9ZVl5HWt
+2015-04-24 11:19:26.965 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 1
+2015-04-24 11:19:26.965 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 2
+2015-04-24 11:19:26.965 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 3
+2015-04-24 11:19:26.966 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 4
+2015-04-24 11:19:26.966 PopulistMVP[10588:3039121] Error: No contribution found in core data with contributionId = Jh9ZVl5HWt
+2015-04-24 11:19:26.966 PopulistMVP[10588:3039121] PPLSTDataManager - createContributionWithId:Jh9ZVl5HWt
+2015-04-24 11:19:26.967 PopulistMVP[10588:3039121] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:26.968 PopulistMVP[10588:3039121] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:26.968 PopulistMVP[10588:3039121] considering contribution with Id = eXSsc9324J
+2015-04-24 11:19:26.968 PopulistMVP[10588:3039121] PPLSTDataManager - getContributionFromCoreDataWithId:eXSsc9324J
+2015-04-24 11:19:26.969 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 1
+2015-04-24 11:19:26.969 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 2
+2015-04-24 11:19:26.969 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 3
+2015-04-24 11:19:26.970 PopulistMVP[10588:3039121] getContributionFromCoreDataWithId - 4
+2015-04-24 11:19:26.970 PopulistMVP[10588:3039121] Error: No contribution found in core data with contributionId = eXSsc9324J
+2015-04-24 11:19:26.970 PopulistMVP[10588:3039121] PPLSTDataManager - createContributionWithId:eXSsc9324J
+2015-04-24 11:19:26.970 PopulistMVP[10588:3039121] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:26.971 PopulistMVP[10588:3039121] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:26.972 PopulistMVP[10588:3039121] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:26.972 PopulistMVP[10588:3039121] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:26.973 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:26.973 PopulistMVP[10588:3039121] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>",
+        "0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>",
+        "0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53>",
+        "0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:19:03 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+})
+2015-04-24 11:19:27.201 PopulistMVP[10588:3039121] return from parse: {
+    statusArray =     (
+        "09425E21-46F9-4014-B2AF-74EB104AFD46"
+    );
+}
+2015-04-24 11:19:27.201 PopulistMVP[10588:3039121] userIds = {(
+    "09425E21-46F9-4014-B2AF-74EB104AFD46"
+)}
+2015-04-24 11:19:27.202 PopulistMVP[10588:3015757] In the process of converting contributionId = eXSsc9324J where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:19:27.202 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:eXSsc9324J
+2015-04-24 11:19:27.202 PopulistMVP[10588:3015757] self.keysSet = {(
+)}
+2015-04-24 11:19:27.202 PopulistMVP[10588:3015757] [self.keysArray count] = 0. Max = 10
+2015-04-24 11:19:27.202 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:19:27.203 PopulistMVP[10588:3015757] In the process of converting contributionId = Jh9ZVl5HWt where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-24 11:19:27.203 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:Jh9ZVl5HWt
+2015-04-24 11:19:27.203 PopulistMVP[10588:3015757] self.keysSet = {(
+    eXSsc9324J
+)}
+2015-04-24 11:19:27.203 PopulistMVP[10588:3015757] [self.keysArray count] = 1. Max = 10
+2015-04-24 11:19:27.203 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:19:27.204 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}
+2015-04-24 11:19:27.256 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:27.256 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:27.257 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:19:27 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=(null), appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c2140> (entity: Contribution; id: 0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = eXSsc9324J;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:43 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x1600afc00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17425daf0>; layer = <CALayer: 0x1742225e0>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f506570>
+2015-04-24 11:19:27.258 PopulistMVP[10588:3039121] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1742c2140> (entity: Contribution; id: 0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = eXSsc9324J;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:43 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = nil;
+})
+2015-04-24 11:19:27.260 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000008016> {length = 2, path = 0 - 1}
+2015-04-24 11:19:27.264 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:27.265 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:27.266 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:19:03 +0000, isMediaMessage=0, text=Westbound I-10 entrance ramp is closed, media=(null)> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Jh9ZVl5HWt;
+    contributionType = message;
+    createdAt = "2015-04-24 18:19:03 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "Westbound I-10 entrance ramp is closed";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x1600afc00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17425daf0>; layer = <CALayer: 0x1742225e0>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f506570>
+2015-04-24 11:19:27.385 PopulistMVP[10588:3039121] PPLSTDataManager - storeImage:<UIImage: 0x170282a80> size {640, 640} orientation 0 scale 1.000000
+2015-04-24 11:19:27.442 PopulistMVP[10588:3039121] PPLSTDataManager - getEmptyFileName
+2015-04-24 11:19:27.443 PopulistMVP[10588:3039121] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:19:27.473 PopulistMVP[10588:3039121] PPLSTDataManager - saveCoreData
+2015-04-24 11:19:27.473 PopulistMVP[10588:3039121] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:27.473 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:19:27.474 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:jzJCaRYsgZ
+2015-04-24 11:19:27.474 PopulistMVP[10588:3015757] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-24 11:19:27.474 PopulistMVP[10588:3015757] the filePath is /var/mobile/Containers/Data/Application/62120D79-B58D-4641-A4FD-6790CDA3C550/Documents/jzJCaRYsgZ.png
+2015-04-24 11:19:27.475 PopulistMVP[10588:3015757] the image is <UIImage: 0x174281f90> size {640, 640} orientation 0 scale 1.000000
+2015-04-24 11:19:27.475 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey:jzJCaRYsgZ
+2015-04-24 11:19:27.476 PopulistMVP[10588:3015757] self.keysSet = {(
+    gqHSf71iez,
+    9VNFsfJ4qH,
+    LoGBufBRBH,
+    Nxwuggw4mF,
+    NmNqfXqfK9,
+    Aj6ATjjX2A,
+    V74lolx4Oh
+)}
+2015-04-24 11:19:27.476 PopulistMVP[10588:3015757] [self.keysArray count] = 7. Max = 10
+2015-04-24 11:19:27.476 PopulistMVP[10588:3015757] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-24 11:19:27.477 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}
+2015-04-24 11:19:27.480 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:27.480 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:27.481 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:19:27 +0000, isMediaMessage=1, text=(null), media=<JSQPhotoMediaItem: image=<UIImage: 0x174281f90> size {640, 640} orientation 0 scale 1.000000, appliesMediaViewMaskAsOutgoing=1>> ForContribution:<Contribution: 0x1742c2140> (entity: Contribution; id: 0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = eXSsc9324J;
+    contributionType = photo;
+    createdAt = "2015-04-24 18:18:43 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = jzJCaRYsgZ;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x1600afc00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17425daf0>; layer = <CALayer: 0x1742225e0>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f506570>
+2015-04-24 11:19:27.481 PopulistMVP[10588:3015757] PPLSTDataManager - getImageWithFileName:jzJCaRYsgZ
+2015-04-24 11:19:27.483 PopulistMVP[10588:3015757] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000008016> {length = 2, path = 0 - 1}
+2015-04-24 11:19:27.484 PopulistMVP[10588:3015757] PPLSTDataManager - avatarForStatus:0
+2015-04-24 11:19:27.485 PopulistMVP[10588:3015757] has
+2015-04-24 11:19:27.486 PopulistMVP[10588:3015757] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-24 18:19:03 +0000, isMediaMessage=0, text=Westbound I-10 entrance ramp is closed, media=(null)> ForContribution:<Contribution: 0x1740dae80> (entity: Contribution; id: 0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = Jh9ZVl5HWt;
+    contributionType = message;
+    createdAt = "2015-04-24 18:19:03 +0000";
+    event = "0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = "Westbound I-10 entrance ramp is closed";
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x1600afc00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x17425daf0>; layer = <CALayer: 0x1742225e0>; contentOffset: {0, 0}; contentSize: {375, 283}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x15f506570>
+2015-04-24 11:28:55.380 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:28:55.567 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06693168,-118.32744441> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:28:55 AM Pacific Daylight Time"
+)
+2015-04-24 11:28:55.599 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06693168,-118.32744441> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:28:55 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:28:57.398 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06739365,-118.32743352> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:28:57 AM Pacific Daylight Time"
+)
+2015-04-24 11:28:57.403 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06739365,-118.32743352> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:28:57 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:28:58.095 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06731660,-118.32732850> +/- 30.00m (speed 5.78 mps / course 34.10) @ 4/24/15, 11:28:58 AM Pacific Daylight Time"
+)
+2015-04-24 11:28:58.173 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06731660,-118.32732850> +/- 30.00m (speed 5.78 mps / course 34.10) @ 4/24/15, 11:28:58 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:28:59.079 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06733680,-118.32727997> +/- 30.00m (speed 5.36 mps / course 43.59) @ 4/24/15, 11:28:59 AM Pacific Daylight Time"
+)
+2015-04-24 11:28:59.086 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06733680,-118.32727997> +/- 30.00m (speed 5.36 mps / course 43.59) @ 4/24/15, 11:28:59 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:29:00.066 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06736081,-118.32723705> +/- 30.00m (speed 5.15 mps / course 47.46) @ 4/24/15, 11:29:00 AM Pacific Daylight Time"
+)
+2015-04-24 11:29:00.071 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06736081,-118.32723705> +/- 30.00m (speed 5.15 mps / course 47.46) @ 4/24/15, 11:29:00 AM Pacific Daylight Time, accuracy = 30.000000
+2015-04-24 11:29:01.059 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.06742448,-118.32727008> +/- 10.00m (speed 4.16 mps / course 358.59) @ 4/24/15, 11:29:01 AM Pacific Daylight Time"
+)
+2015-04-24 11:29:01.063 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.06742448,-118.32727008> +/- 10.00m (speed 4.16 mps / course 358.59) @ 4/24/15, 11:29:01 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-24 11:29:01.065 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:29:01.082 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:29:01.084 PopulistMVP[10588:3015757] Distance Moved = 4103.750000
+2015-04-24 11:29:01.085 PopulistMVP[10588:3015757] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 11:29:01.086 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.067425 andLongitude:-118.327271 andDate:2015-04-24 18:29:01 +0000
+2015-04-24 11:29:01.087 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.067425 andLongitude:-118.327271 andDate:2015-04-24 18:29:01 +0000
+2015-04-24 11:29:01.130 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:35:30.558 PopulistMVP[10588:3015757] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 2;
+    isActive = NO;
+    latitude = "34.07204618803788";
+    longitude = "-118.357530176713";
+    neighborhood = " ";
+    objectId = Q3CakRGejA;
+    state = " ";
+    titlePhotoId = i11d4AHOoE;
+    updatedAt = "2015-04-18 21:01:23 +0000";
+}
+2015-04-24 11:35:30.608 PopulistMVP[10588:3015757] PPLSTDataManager - getEventFromCoreDataWithId:Q3CakRGejA
+2015-04-24 11:35:30.621 PopulistMVP[10588:3015757] Error: No event found in core data with eventId = Q3CakRGejA
+2015-04-24 11:35:30.633 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:Q3CakRGejA
+2015-04-24 11:35:30.642 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:30.785 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:30.800 PopulistMVP[10588:3015757] PPLSTDataManager - getContributionFromCoreDataWithId:i11d4AHOoE
+2015-04-24 11:35:30.802 PopulistMVP[10588:3015757] getContributionFromCoreDataWithId - 1
+2015-04-24 11:35:30.810 PopulistMVP[10588:3015757] getContributionFromCoreDataWithId - 2
+2015-04-24 11:35:30.811 PopulistMVP[10588:3015757] getContributionFromCoreDataWithId - 3
+2015-04-24 11:35:30.813 PopulistMVP[10588:3015757] getContributionFromCoreDataWithId - 4
+2015-04-24 11:35:30.841 PopulistMVP[10588:3015757] Error: No contribution found in core data with contributionId = i11d4AHOoE
+2015-04-24 11:35:30.843 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:i11d4AHOoE
+2015-04-24 11:35:30.844 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:30.917 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:30.919 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:30.979 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:30.981 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.067425 andLongitude:-118.327271 andDate:2015-04-24 18:29:01 +0000
+2015-04-24 11:35:30.982 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 11:35:30.983 PopulistMVP[10588:3015757] latitude: -118.327271, longitude: 34.067425
+2015-04-24 11:35:30.991 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:35:31.626 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:vxdCF652hh
+2015-04-24 11:35:31.627 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:31.629 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:31.630 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 11:35:31.631 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:35:31.632 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummyQKLSjEy4CZ
+2015-04-24 11:35:31.633 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:31.637 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:31.637 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:31.641 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:31.642 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    mergeie8ngGhTb8,
+    eventie8ngGhTb8
+)
+2015-04-24 11:35:31.642 PopulistMVP[10588:3015757] trying to remove mergeie8ngGhTb8
+2015-04-24 11:35:31.654 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - updateEventsTo:
+2015-04-24 11:35:31.779 PopulistMVP[10588:3015757] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-24 11:35:31.780 PopulistMVP[10588:3040927] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-24 11:35:31.781 PopulistMVP[10588:3040927] PPLSTExploreTableViewController - getEventIdInChatVC
+2015-04-24 11:35:31.783 PopulistMVP[10588:3040927] returning the event Id <Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 0;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>",
+        "0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>",
+        "0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53>",
+        "0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:19:03 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+})
+2015-04-24 11:35:31.787 PopulistMVP[10588:3040927] adding the event from the chatVC to the list: <Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {
+    containsUser = 0;
+    contributions =     (
+        "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>",
+        "0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>",
+        "0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53>",
+        "0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54>"
+    );
+    eventId = ie8ngGhTb8;
+    importance = 2;
+    lastActive = "2015-04-24 18:19:03 +0000";
+    latitude = "34.03545";
+    longitude = "-118.3495";
+    titleContribution = "0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>";
+}) with id = ie8ngGhTb8
+2015-04-24 11:35:31.788 PopulistMVP[10588:3040927] adding currentEvent too. Id = vxdCF652hh
+2015-04-24 11:35:31.789 PopulistMVP[10588:3040927] done adding the events. Will now delete them.
+2015-04-24 11:35:31.794 PopulistMVP[10588:3040927] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1700d5a10> (entity: Event; id: 0xd000000000840000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p33> ; data: {\n    containsUser = 0;\n    contributions =     (\n    );\n    eventId = Q3CakRGejA;\n    importance = 2;\n    lastActive = \"2015-04-18 21:01:23 +0000\";\n    latitude = \"34.07204\";\n    longitude = \"-118.3575\";\n    titleContribution = \"0xd000000000dc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p55>\";\n})",
+    "<Event: 0x1740d3390> (entity: Event; id: 0xd000000000800000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p32> ; data: {\n    containsUser = 0;\n    contributions =     (\n        \"0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>\",\n        \"0xd000000000d00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p52>\",\n        \"0xd000000000d40002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p53>\",\n        \"0xd000000000d80002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p54>\"\n    );\n    eventId = ie8ngGhTb8;\n    importance = 2;\n    lastActive = \"2015-04-24 18:19:03 +0000\";\n    latitude = \"34.03545\";\n    longitude = \"-118.3495\";\n    titleContribution = \"0xd000000000cc0002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p51>\";\n})",
+    "<Event: 0x1740dbf90> (entity: Event; id: 0xd000000000880000 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Event/p34> ; data: {\n    containsUser = 1;\n    contributions =     (\n    );\n    eventId = vxdCF652hh;\n    importance = 0;\n    lastActive = nil;\n    latitude = \"34.06742\";\n    longitude = \"-118.3273\";\n    titleContribution = \"0xd000000000e00002 <x-coredata://9036611E-5F2A-4F86-82C3-6184DB480DD2/Contribution/p56>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1743e2d00>
+2015-04-24 11:35:32.127 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:30 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:32.131 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:30 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:35:32.133 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:35:32.162 PopulistMVP[10588:3040927] PPLSTDataManager - saveCoreData
+2015-04-24 11:35:32.163 PopulistMVP[10588:3040927] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:32.163 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:35:37.211 PopulistMVP[10588:3015757] PPLSTLocationManager - onLocationTick:<__NSCFTimer: 0x1741660c0>
+2015-04-24 11:35:37.258 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:37.265 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:35:37.291 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:37.296 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08399508,-118.32884288> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:35:37.372 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08416971,-118.32884309> +/- 259.03m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:37.386 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08416971,-118.32884309> +/- 259.03m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time, accuracy = 259.034005
+2015-04-24 11:35:37.393 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08416120,-118.32881236> +/- 259.03m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:37.397 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08416120,-118.32881236> +/- 259.03m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time, accuracy = 259.034591
+2015-04-24 11:35:37.509 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08543026,-118.32878797> +/- 165.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:37.520 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08543026,-118.32878797> +/- 165.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:37 AM Pacific Daylight Time, accuracy = 165.000000
+2015-04-24 11:35:38.291 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08542139,-118.32849713> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:38 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:38.293 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08542139,-118.32849713> +/- 65.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:38 AM Pacific Daylight Time, accuracy = 65.000000
+2015-04-24 11:35:38.986 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08534226,-118.32872828> +/- 50.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:38 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:38.993 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08534226,-118.32872828> +/- 50.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:38 AM Pacific Daylight Time, accuracy = 50.000000
+2015-04-24 11:35:39.055 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08546057,-118.32877161> +/- 50.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:39 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:39.059 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08546057,-118.32877161> +/- 50.00m (speed -1.00 mps / course -1.00) @ 4/24/15, 11:35:39 AM Pacific Daylight Time, accuracy = 50.000000
+2015-04-24 11:35:40.087 PopulistMVP[10588:3015757] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174017880> didUpdateLocations:(
+    "<+34.08551660,-118.32873582> +/- 5.00m (speed 16.13 mps / course 355.78) @ 4/24/15, 11:35:40 AM Pacific Daylight Time"
+)
+2015-04-24 11:35:40.108 PopulistMVP[10588:3015757] locationManager didUpdateLocation lastObject = <+34.08551660,-118.32873582> +/- 5.00m (speed 16.13 mps / course 355.78) @ 4/24/15, 11:35:40 AM Pacific Daylight Time, accuracy = 5.000000
+2015-04-24 11:35:40.110 PopulistMVP[10588:3015757] PPLSTLocationManager - sendLocationToParse
+2015-04-24 11:35:40.125 PopulistMVP[10588:3015757] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-24 11:35:40.131 PopulistMVP[10588:3015757] Distance Moved = 5880.879883
+2015-04-24 11:35:40.131 PopulistMVP[10588:3015757] PPLSTDataManager - eventThatUserBelongsTo
+2015-04-24 11:35:40.132 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.085518 andLongitude:-118.328735 andDate:2015-04-24 18:35:40 +0000
+2015-04-24 11:35:40.146 PopulistMVP[10588:3015757] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.085518 andLongitude:-118.328735 andDate:2015-04-24 18:35:40 +0000
+2015-04-24 11:35:40.164 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:43:59.846 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9810)
+2015-04-24 11:44:02.453 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9802)
+2015-04-24 11:44:03.625 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9824)
+2015-04-24 11:44:03.628 PopulistMVP[10588:3015799] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2015-04-24 11:44:03.631 PopulistMVP[10588:3041427] [Error]: Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo=0x1701bf480 {_kCFStreamErrorCodeKey=-9824, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, NSUnderlyingError=0x174443540 "An SSL error has occurred and a secure connection to the server cannot be made.", NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://api.parse.com/2/update, NSErrorFailingURLStringKey=https://api.parse.com/2/update, _kCFStreamErrorDomainKey=3} (Code: 100, Version: 1.6.1)
+2015-04-24 11:44:03.632 PopulistMVP[10588:3041395] [Warning]: Network connection failed. Making attempt 2 after sleeping for 1.932296 seconds.
+2015-04-24 11:50:33.502 PopulistMVP[10588:3043033] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1700f9b80 {NSUnderlyingError=0x1744438a0 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/update, NSErrorFailingURLKey=https://api.parse.com/2/update, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 11:50:33.533 PopulistMVP[10588:3043032] [Warning]: Network connection failed. Making attempt 3 after sleeping for 3.864591 seconds.
+2015-04-24 11:50:33.598 PopulistMVP[10588:3043062] [Error]: Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo=0x1700f3900 {NSUnderlyingError=0x174440d80 "The request timed out.", NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSLocalizedDescription=The request timed out.} (Code: 100, Version: 1.6.1)
+2015-04-24 11:50:33.601 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:50:33.617 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:50:33.618 PopulistMVP[10588:3015757] PPLSTDataManager - sendSignalWithLatitude:34.085518 andLongitude:-118.328735 andDate:2015-04-24 18:35:40 +0000
+2015-04-24 11:50:33.618 PopulistMVP[10588:3015757] Right before creating the parameter dictionary. Here are the parameters:
+2015-04-24 11:50:33.619 PopulistMVP[10588:3015757] latitude: -118.328735, longitude: 34.085518
+2015-04-24 11:50:33.816 PopulistMVP[10588:3015757] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-24 11:50:43.235 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9824)
+2015-04-24 11:50:43.237 PopulistMVP[10588:3015799] CFNetwork SSLHandshake failed (-9824)
+2015-04-24 11:50:43.241 PopulistMVP[10588:3015799] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2015-04-24 11:50:43.243 PopulistMVP[10588:3015799] NSURLConnection/CFURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2015-04-24 11:50:43.246 PopulistMVP[10588:3043032] [Error]: Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo=0x1741bddc0 {_kCFStreamErrorCodeKey=-9824, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, NSUnderlyingError=0x174440bd0 "An SSL error has occurred and a secure connection to the server cannot be made.", NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://api.parse.com/2/update, NSErrorFailingURLStringKey=https://api.parse.com/2/update, _kCFStreamErrorDomainKey=3} (Code: 100, Version: 1.6.1)
+2015-04-24 11:50:43.247 PopulistMVP[10588:3043062] [Error]: Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo=0x1741b9a60 {_kCFStreamErrorCodeKey=-9824, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, NSUnderlyingError=0x17425a220 "An SSL error has occurred and a secure connection to the server cannot be made.", NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://api.parse.com/2/client_function, NSErrorFailingURLStringKey=https://api.parse.com/2/client_function, _kCFStreamErrorDomainKey=3} (Code: 100, Version: 1.6.1)
+2015-04-24 11:50:43.250 PopulistMVP[10588:3043032] [Warning]: Network connection failed. Making attempt 4 after sleeping for 7.729183 seconds.
+2015-04-24 11:50:43.250 PopulistMVP[10588:3015757] PPLSTDataManager - createEventWithId:(null)
+2015-04-24 11:50:43.251 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:50:43.254 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:50:43.254 PopulistMVP[10588:3015757] PPLSTDataManager - newDummyTitleContribution
+2015-04-24 11:50:43.255 PopulistMVP[10588:3015757] PPLSTDataManager - randomgStringWithLength:10
+2015-04-24 11:50:43.256 PopulistMVP[10588:3015757] PPLSTDataManager - createContributionWithId:dummywcDVRab5y9
+2015-04-24 11:50:43.257 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:50:43.260 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:50:43.261 PopulistMVP[10588:3015757] PPLSTDataManager - saveCoreData
+2015-04-24 11:50:43.264 PopulistMVP[10588:3015757] PPLSTDataManager - contextHasChanged
+2015-04-24 11:50:43.265 PopulistMVP[10588:3015757] channels: (
+    global,
+    mergeo8If2NVV6x,
+    eventie8ngGhTb8,
+    mergevxdCF652hh
+)
+2015-04-24 11:50:43.266 PopulistMVP[10588:3015757] trying to remove mergevxdCF652hh
+2015-04-24 11:50:43.275 PopulistMVP[10588:3015757] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSCFConstantString stringByAppendingString:]: nil argument'
+*** First throw call stack:
+(0x18244659c 0x192b9c0e4 0x1824464dc 0x183231884 0x100041400 0x1000446d8 0x100053a30 0x10005014c 0x182b97848 0x182b941ac 0x182b8ee5c 0x1823fea28 0x1823fdb30 0x1823fc154 0x1823290a4 0x18b4cb5a4 0x186c5e3c0 0x100036e84 0x19320aa08)
+libc++abi.dylib: terminating with uncaught exception of type NSException

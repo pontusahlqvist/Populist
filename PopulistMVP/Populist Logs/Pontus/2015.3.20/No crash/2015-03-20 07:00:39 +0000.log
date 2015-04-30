@@ -1,0 +1,37 @@
+2015-03-20 00:00:39.706 PopulistMVP[5565:1479001] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-03-20 00:00:39.767 PopulistMVP[5565:1479001] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-20 00:00:40.257 PopulistMVP[5565:1479001] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-03-20 00:00:40.293 PopulistMVP[5565:1479001] PPLSTDataManager - createAvatarForStatusDictionary
+2015-03-20 00:00:40.301 PopulistMVP[5565:1479001] updateEvents
+2015-03-20 00:00:40.302 PopulistMVP[5565:1479001] startUpdatingEvents
+2015-03-20 00:00:40.346 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didChangeAuthorizationStatus to status = 3
+2015-03-20 00:00:40.346 PopulistMVP[5565:1479001] didAcceptAuthorization triggered in ExploreVC
+2015-03-20 00:00:40.346 PopulistMVP[5565:1479001] updateEvents
+2015-03-20 00:00:40.349 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02176116,-118.43160924> +/- 10.00m (speed 10.28 mps / course 146.87) @ 3/19/15, 5:09:13 PM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.351 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02176116,-118.43160924> +/- 10.00m (speed 10.28 mps / course 146.87) @ 3/19/15, 5:09:13 PM Pacific Daylight Time, accuracy = 10.000000
+2015-03-20 00:00:40.356 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02104686,-118.42763551> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.357 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02104686,-118.42763551> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 00:00:40.359 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02104686,-118.42763551> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.360 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02104686,-118.42763551> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 00:00:40.361 PopulistMVP[5565:1479001] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-03-20 00:00:40.364 PopulistMVP[5565:1479001] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-20 00:00:40.421 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02104744,-118.42763853> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.422 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02104744,-118.42763853> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 00:00:40.429 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02104757,-118.42764116> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.430 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02104757,-118.42764116> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time, accuracy = 65.000000
+2015-03-20 00:00:40.668 PopulistMVP[5565:1479001] PPLSTLocationManager - locationManager:<CLLocationManager: 0x170019a10> didUpdateLocations:(
+    "<+34.02105442,-118.42764620> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time"
+)
+2015-03-20 00:00:40.669 PopulistMVP[5565:1479001] locationManager didUpdateLocation lastObject = <+34.02105442,-118.42764620> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/20/15, 12:00:40 AM Pacific Daylight Time, accuracy = 65.000000

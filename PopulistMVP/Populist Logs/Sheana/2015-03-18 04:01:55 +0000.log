@@ -1,0 +1,758 @@
+2015-03-17 21:01:55.213 PopulistMVP[6504:3852719] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-03-17 21:01:55.316 PopulistMVP[6504:3852719] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-17 21:01:55.974 PopulistMVP[6504:3852719] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-03-17 21:01:56.022 PopulistMVP[6504:3852719] PPLSTDataManager - createAvatarForStatusDictionary
+2015-03-17 21:01:56.045 PopulistMVP[6504:3852719] updateEvents
+2015-03-17 21:01:56.045 PopulistMVP[6504:3852719] startUpdatingEvents
+2015-03-17 21:01:56.183 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didChangeAuthorizationStatus to status = 3
+2015-03-17 21:01:56.183 PopulistMVP[6504:3852719] didAcceptAuthorization triggered in ExploreVC
+2015-03-17 21:01:56.184 PopulistMVP[6504:3852719] updateEvents
+2015-03-17 21:01:56.206 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02108190,-118.42753265> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 7:58:48 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.208 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02108190,-118.42753265> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 7:58:48 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-17 21:01:56.211 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02105388,-118.42760235> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.213 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02105388,-118.42760235> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-17 21:01:56.215 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02105388,-118.42760235> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.217 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02105388,-118.42760235> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-17 21:01:56.218 PopulistMVP[6504:3852719] didRegisterForRemoteNotificationWithDeviceToken:<5e1806a1 ba71bd03 34906353 422927d6 7a14a696 6266789f a5344523 5862ee85>
+2015-03-17 21:01:56.229 PopulistMVP[6504:3852719] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-17 21:01:56.310 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02114811,-118.42760420> +/- 235.35m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.312 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02114811,-118.42760420> +/- 235.35m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time, accuracy = 235.349741
+2015-03-17 21:01:56.338 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02115042,-118.42770901> +/- 235.35m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.340 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02115042,-118.42770901> +/- 235.35m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time, accuracy = 235.349741
+2015-03-17 21:01:56.621 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02104800,-118.42759587> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:56.623 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02104800,-118.42759587> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:56 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-17 21:01:58.319 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02102574,-118.42762356> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:58 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:58.321 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02102574,-118.42762356> +/- 65.00m (speed -1.00 mps / course -1.00) @ 3/17/15, 9:01:58 PM Pacific Daylight Time, accuracy = 65.000000
+2015-03-17 21:01:59.028 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:01:59 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:59.031 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:01:59 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-17 21:01:59.093 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:01:59 PM Pacific Daylight Time"
+)
+2015-03-17 21:01:59.095 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:01:59 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-17 21:02:00.102 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:02:00 PM Pacific Daylight Time"
+)
+2015-03-17 21:02:00.104 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02103005,-118.42768410> +/- 30.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:02:00 PM Pacific Daylight Time, accuracy = 30.000000
+2015-03-17 21:02:01.155 PopulistMVP[6504:3852719] PPLSTLocationManager - locationManager:<CLLocationManager: 0x15da2fc0> didUpdateLocations:(
+    "<+34.02098530,-118.42767555> +/- 10.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:02:01 PM Pacific Daylight Time"
+)
+2015-03-17 21:02:01.157 PopulistMVP[6504:3852719] locationManager didUpdateLocation lastObject = <+34.02098530,-118.42767555> +/- 10.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:02:01 PM Pacific Daylight Time, accuracy = 10.000000
+2015-03-17 21:02:01.490 PopulistMVP[6504:3852719] locationStringDictionary = {
+    City = "";
+    Country = "";
+    Neighborhood = "";
+    State = "";
+    city = "Los Angeles";
+    country = USA;
+    neighborhood = "Mar Vista";
+    state = CA;
+}
+2015-03-17 21:02:01.494 PopulistMVP[6504:3852719] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-03-17 21:02:01.494 PopulistMVP[6504:3852719] finishUpdatingEvents
+2015-03-17 21:02:01.501 PopulistMVP[6504:3852719] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02098530,-118.42767555> +/- 10.00m (speed 0.00 mps / course 156.45) @ 3/17/15, 9:02:01 PM Pacific Daylight Time
+2015-03-17 21:02:01.502 PopulistMVP[6504:3852719] PPLSTLocationManager - updateTimeOfLastUpdate:2015-03-18 04:02:01 +0000
+2015-03-17 21:02:01.503 PopulistMVP[6504:3852719] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.020985 andLongitude:-118.427673 andDate:2015-03-18 04:02:01 +0000
+2015-03-17 21:02:01.504 PopulistMVP[6504:3852719] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.020985 andLongitude:-118.427673 andDate:2015-03-18 04:02:01 +0000
+2015-03-17 21:02:01.509 PopulistMVP[6504:3852719] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-03-17 21:02:01.858 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = YES;
+    country = USA;
+    importance = 0;
+    isActive = YES;
+    latitude = "34.02099609375";
+    longitude = "-118.4276580810547";
+    neighborhood = "Mar Vista";
+    objectId = DU8Cof3mS2;
+    state = CA;
+    updatedAt = "2015-03-18 02:04:24 +0000";
+}
+2015-03-17 21:02:01.859 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:DU8Cof3mS2
+2015-03-17 21:02:01.865 PopulistMVP[6504:3852719] PPLSTDataManager - randomgStringWithLength:10
+2015-03-17 21:02:01.866 PopulistMVP[6504:3852719] PPLSTDataManager - getContributionFromCoreDataWithId:dummyfzxc0WG0lV
+2015-03-17 21:02:01.867 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 1
+2015-03-17 21:02:01.867 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 2
+2015-03-17 21:02:01.868 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 3
+2015-03-17 21:02:01.871 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 4
+2015-03-17 21:02:01.871 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 5
+2015-03-17 21:02:01.885 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 42;
+    isActive = NO;
+    latitude = "34.02101355771917";
+    longitude = "-118.4276580509148";
+    neighborhood = "Mar Vista";
+    objectId = HvHxadIVKA;
+    state = CA;
+    titlePhotoId = 432iBhXkEU;
+    updatedAt = "2015-02-15 20:28:07 +0000";
+}
+2015-03-17 21:02:01.886 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:HvHxadIVKA
+2015-03-17 21:02:01.889 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 13;
+    isActive = NO;
+    latitude = "34.02098768152816";
+    longitude = "-118.4276429927528";
+    neighborhood = "Mar Vista";
+    objectId = O9Sl4rSgYe;
+    state = CA;
+    updatedAt = "2015-03-05 22:57:56 +0000";
+}
+2015-03-17 21:02:01.890 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:O9Sl4rSgYe
+2015-03-17 21:02:01.892 PopulistMVP[6504:3852719] PPLSTDataManager - randomgStringWithLength:10
+2015-03-17 21:02:01.892 PopulistMVP[6504:3852719] PPLSTDataManager - getContributionFromCoreDataWithId:dummyAj6ATjjX2A
+2015-03-17 21:02:01.893 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 1
+2015-03-17 21:02:01.893 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 2
+2015-03-17 21:02:01.894 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 3
+2015-03-17 21:02:01.895 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 4
+2015-03-17 21:02:01.896 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 5
+2015-03-17 21:02:01.897 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 11;
+    isActive = NO;
+    latitude = "34.0210059359184";
+    longitude = "-118.4276589053762";
+    neighborhood = "Mar Vista";
+    objectId = eKAxW0pzLu;
+    state = CA;
+    titlePhotoId = 0wtYKycoLI;
+    updatedAt = "2015-02-10 20:06:11 +0000";
+}
+2015-03-17 21:02:01.898 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:eKAxW0pzLu
+2015-03-17 21:02:01.901 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 18;
+    isActive = NO;
+    latitude = "34.02103617384203";
+    longitude = "-118.4276513226451";
+    neighborhood = "Mar Vista";
+    objectId = wPSS6e201S;
+    state = CA;
+    titlePhotoId = jS16wyASqY;
+    updatedAt = "2015-02-07 01:52:45 +0000";
+}
+2015-03-17 21:02:01.902 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:wPSS6e201S
+2015-03-17 21:02:01.905 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02099175141007";
+    longitude = "-118.4276715613467";
+    neighborhood = "Mar Vista";
+    objectId = KyEeFZRhkq;
+    state = CA;
+    titlePhotoId = d11f2DeaqQ;
+    updatedAt = "2015-03-02 01:52:19 +0000";
+}
+2015-03-17 21:02:01.906 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:KyEeFZRhkq
+2015-03-17 21:02:01.908 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 10;
+    isActive = NO;
+    latitude = "34.02100463047196";
+    longitude = "-118.4276625162953";
+    neighborhood = "Mar Vista";
+    objectId = RD8dSAhqAy;
+    state = CA;
+    titlePhotoId = 14GHutb3q5;
+    updatedAt = "2015-02-08 02:38:18 +0000";
+}
+2015-03-17 21:02:01.909 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:RD8dSAhqAy
+2015-03-17 21:02:01.911 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 10;
+    isActive = NO;
+    latitude = "34.02103396033796";
+    longitude = "-118.427660232342";
+    neighborhood = "Mar Vista";
+    objectId = SOyF65odh2;
+    state = CA;
+    titlePhotoId = dv4C30TAKi;
+    updatedAt = "2015-02-12 18:40:16 +0000";
+}
+2015-03-17 21:02:01.911 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:SOyF65odh2
+2015-03-17 21:02:01.914 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 11;
+    isActive = NO;
+    latitude = "34.02102881070993";
+    longitude = "-118.4276638342738";
+    neighborhood = "Mar Vista";
+    objectId = TwDoXRsZLv;
+    state = CA;
+    titlePhotoId = 9KmzsJrP7E;
+    updatedAt = "2015-01-31 03:10:32 +0000";
+}
+2015-03-17 21:02:01.915 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:TwDoXRsZLv
+2015-03-17 21:02:01.918 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 12;
+    isActive = NO;
+    latitude = "34.02104491661797";
+    longitude = "-118.4276580435787";
+    neighborhood = "Mar Vista";
+    objectId = g45Lk0bA30;
+    state = CA;
+    titlePhotoId = vkzAsKTHkr;
+    updatedAt = "2015-02-07 01:52:15 +0000";
+}
+2015-03-17 21:02:01.918 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:g45Lk0bA30
+2015-03-17 21:02:01.921 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02100191372924";
+    longitude = "-118.4277054405147";
+    neighborhood = "Mar Vista";
+    objectId = eSDjAGf0Qz;
+    state = CA;
+    titlePhotoId = JWkbHRhnbd;
+    updatedAt = "2015-02-07 08:19:11 +0000";
+}
+2015-03-17 21:02:01.921 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:eSDjAGf0Qz
+2015-03-17 21:02:01.924 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02102616210514";
+    longitude = "-118.4276560659882";
+    neighborhood = "Mar Vista";
+    objectId = ACGE87Qvkq;
+    state = CA;
+    titlePhotoId = MZmSXnA1mV;
+    updatedAt = "2015-03-12 20:43:28 +0000";
+}
+2015-03-17 21:02:01.925 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:ACGE87Qvkq
+2015-03-17 21:02:01.927 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02103269913581";
+    longitude = "-118.427660414746";
+    neighborhood = "Mar Vista";
+    objectId = fm9E9HE7P3;
+    state = CA;
+    titlePhotoId = LRj5NN2OQX;
+    updatedAt = "2015-03-07 04:27:48 +0000";
+}
+2015-03-17 21:02:01.928 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:fm9E9HE7P3
+2015-03-17 21:02:01.930 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.0210215311101";
+    longitude = "-118.427653658118";
+    neighborhood = "Mar Vista";
+    objectId = 76q9Z3iZxf;
+    state = CA;
+    titlePhotoId = LsLqWn7S16;
+    updatedAt = "2015-03-08 18:26:21 +0000";
+}
+2015-03-17 21:02:01.931 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:76q9Z3iZxf
+2015-03-17 21:02:01.934 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02100949742864";
+    longitude = "-118.427691999593";
+    neighborhood = "Mar Vista";
+    objectId = Fx8LJWqBZ8;
+    state = CA;
+    titlePhotoId = WBSgNoHVH3;
+    updatedAt = "2015-02-02 05:11:51 +0000";
+}
+2015-03-17 21:02:01.935 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:Fx8LJWqBZ8
+2015-03-17 21:02:01.937 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 7;
+    isActive = NO;
+    latitude = "34.0210341731657";
+    longitude = "-118.4276728662877";
+    neighborhood = "Mar Vista";
+    objectId = vo8FR3xzWM;
+    state = CA;
+    titlePhotoId = vCuH5z1y3v;
+    updatedAt = "2015-02-07 01:53:22 +0000";
+}
+2015-03-17 21:02:01.937 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:vo8FR3xzWM
+2015-03-17 21:02:01.940 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02102855385472";
+    longitude = "-118.4276746740376";
+    neighborhood = "Mar Vista";
+    objectId = zeh7DtRcX0;
+    state = CA;
+    titlePhotoId = xg6K8ijf4P;
+    updatedAt = "2015-01-31 00:02:35 +0000";
+}
+2015-03-17 21:02:01.941 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:zeh7DtRcX0
+2015-03-17 21:02:01.943 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.0210199510587";
+    longitude = "-118.4277028002207";
+    neighborhood = "Mar Vista";
+    objectId = cLCODUS7pU;
+    state = CA;
+    titlePhotoId = 0lfVgWbpKd;
+    updatedAt = "2015-02-04 05:24:08 +0000";
+}
+2015-03-17 21:02:01.944 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:cLCODUS7pU
+2015-03-17 21:02:01.946 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02102119740507";
+    longitude = "-118.4276479577981";
+    neighborhood = "Mar Vista";
+    objectId = omqyUQ1ql3;
+    state = CA;
+    titlePhotoId = IRfVZg8Aa9;
+    updatedAt = "2015-02-12 07:28:39 +0000";
+}
+2015-03-17 21:02:01.947 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:omqyUQ1ql3
+2015-03-17 21:02:01.950 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02100745982168";
+    longitude = "-118.4276526162418";
+    neighborhood = "Mar Vista";
+    objectId = wDueINjX7v;
+    state = CA;
+    titlePhotoId = RC55648KLk;
+    updatedAt = "2015-02-08 18:59:05 +0000";
+}
+2015-03-17 21:02:01.950 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:wDueINjX7v
+2015-03-17 21:02:01.953 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02101553752839";
+    longitude = "-118.4276655391445";
+    neighborhood = "Mar Vista";
+    objectId = LY0GzJnfhL;
+    state = CA;
+    titlePhotoId = kugFqJZs3r;
+    updatedAt = "2015-02-01 22:55:48 +0000";
+}
+2015-03-17 21:02:01.954 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:LY0GzJnfhL
+2015-03-17 21:02:01.956 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02098737053295";
+    longitude = "-118.4276373126165";
+    neighborhood = "Mar Vista";
+    objectId = Ax6TZ6d9l8;
+    state = CA;
+    updatedAt = "2015-03-15 18:49:06 +0000";
+}
+2015-03-17 21:02:01.957 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:Ax6TZ6d9l8
+2015-03-17 21:02:01.959 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02099484944684";
+    longitude = "-118.4276908226261";
+    neighborhood = "Mar Vista";
+    objectId = SNEk0EjtAk;
+    state = CA;
+    updatedAt = "2015-02-03 07:45:14 +0000";
+}
+2015-03-17 21:02:01.960 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:SNEk0EjtAk
+2015-03-17 21:02:01.962 PopulistMVP[6504:3852719] PPLSTDataManager - randomgStringWithLength:10
+2015-03-17 21:02:01.963 PopulistMVP[6504:3852719] PPLSTDataManager - getContributionFromCoreDataWithId:dummy9VNFsfJ4qH
+2015-03-17 21:02:01.963 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 1
+2015-03-17 21:02:01.964 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 2
+2015-03-17 21:02:01.965 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 3
+2015-03-17 21:02:01.967 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 4
+2015-03-17 21:02:01.967 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 5
+2015-03-17 21:02:01.968 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02100856830307";
+    longitude = "-118.4276668429852";
+    neighborhood = "Mar Vista";
+    objectId = fewf9BumUm;
+    state = CA;
+    titlePhotoId = OUyH0UtkVz;
+    updatedAt = "2015-02-05 02:37:52 +0000";
+}
+2015-03-17 21:02:01.969 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:fewf9BumUm
+2015-03-17 21:02:01.971 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 5;
+    isActive = NO;
+    latitude = "34.02103857582922";
+    longitude = "-118.4276466214489";
+    neighborhood = "Mar Vista";
+    objectId = PtapG16Yl3;
+    state = CA;
+    updatedAt = "2015-02-03 07:00:53 +0000";
+}
+2015-03-17 21:02:01.971 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:PtapG16Yl3
+2015-03-17 21:02:01.973 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 4;
+    isActive = NO;
+    latitude = "34.02090855492153";
+    longitude = "-118.4276725600251";
+    neighborhood = "Mar Vista";
+    objectId = 8CyDARhTa5;
+    state = CA;
+    titlePhotoId = zRDqRBmgFW;
+    updatedAt = "2015-02-13 18:57:13 +0000";
+}
+2015-03-17 21:02:01.974 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:8CyDARhTa5
+2015-03-17 21:02:01.975 PopulistMVP[6504:3852719] Error: No event found in core data with eventId = 8CyDARhTa5
+2015-03-17 21:02:01.976 PopulistMVP[6504:3852719] PPLSTDataManager - createEventWithId:8CyDARhTa5
+2015-03-17 21:02:01.976 PopulistMVP[6504:3852719] PPLSTDataManager - saveCoreData
+2015-03-17 21:02:01.986 PopulistMVP[6504:3852719] PPLSTDataManager - contextHasChanged
+2015-03-17 21:02:01.987 PopulistMVP[6504:3852719] PPLSTDataManager - getContributionFromCoreDataWithId:zRDqRBmgFW
+2015-03-17 21:02:01.987 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 1
+2015-03-17 21:02:01.988 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 2
+2015-03-17 21:02:01.988 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 3
+2015-03-17 21:02:01.989 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 4
+2015-03-17 21:02:01.990 PopulistMVP[6504:3852719] Error: No contribution found in core data with contributionId = zRDqRBmgFW
+2015-03-17 21:02:01.990 PopulistMVP[6504:3852719] PPLSTDataManager - createContributionWithId:zRDqRBmgFW
+2015-03-17 21:02:01.993 PopulistMVP[6504:3852719] PPLSTDataManager - saveCoreData
+2015-03-17 21:02:01.996 PopulistMVP[6504:3852719] PPLSTDataManager - contextHasChanged
+2015-03-17 21:02:01.997 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02099557178344";
+    longitude = "-118.4276593841088";
+    neighborhood = "Mar Vista";
+    objectId = eoE1TgeJCI;
+    state = CA;
+    titlePhotoId = 8QM7NZxM0Q;
+    updatedAt = "2015-02-08 07:13:27 +0000";
+}
+2015-03-17 21:02:01.997 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:eoE1TgeJCI
+2015-03-17 21:02:01.999 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02103416955273";
+    longitude = "-118.4276823076166";
+    neighborhood = "Mar Vista";
+    objectId = DkXC8cul6F;
+    state = CA;
+    titlePhotoId = lyEyq9ocYw;
+    updatedAt = "2015-02-04 17:09:24 +0000";
+}
+2015-03-17 21:02:02.000 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:DkXC8cul6F
+2015-03-17 21:02:02.002 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02102593713904";
+    longitude = "-118.4276547416177";
+    neighborhood = "Mar Vista";
+    objectId = T3qZAxQe72;
+    state = CA;
+    titlePhotoId = fPgbD9FUbi;
+    updatedAt = "2015-02-02 17:35:27 +0000";
+}
+2015-03-17 21:02:02.003 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:T3qZAxQe72
+2015-03-17 21:02:02.004 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 2;
+    isActive = NO;
+    latitude = "34.02101370011396";
+    longitude = "-118.4276583617667";
+    neighborhood = "Mar Vista";
+    objectId = wAze0tEH5E;
+    state = CA;
+    titlePhotoId = GnQJDXTdP6;
+    updatedAt = "2015-02-17 17:11:10 +0000";
+}
+2015-03-17 21:02:02.005 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:wAze0tEH5E
+2015-03-17 21:02:02.007 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02103445261439";
+    longitude = "-118.4277099483267";
+    neighborhood = "Mar Vista";
+    objectId = Hp0IKBtAgk;
+    state = CA;
+    updatedAt = "2015-03-06 02:47:47 +0000";
+}
+2015-03-17 21:02:02.008 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:Hp0IKBtAgk
+2015-03-17 21:02:02.010 PopulistMVP[6504:3852719] PPLSTDataManager - randomgStringWithLength:10
+2015-03-17 21:02:02.010 PopulistMVP[6504:3852719] PPLSTDataManager - getContributionFromCoreDataWithId:dummyLoGBufBRBH
+2015-03-17 21:02:02.011 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 1
+2015-03-17 21:02:02.011 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 2
+2015-03-17 21:02:02.012 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 3
+2015-03-17 21:02:02.016 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 4
+2015-03-17 21:02:02.017 PopulistMVP[6504:3852719] getContributionFromCoreDataWithId - 5
+2015-03-17 21:02:02.019 PopulistMVP[6504:3852719] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02101200727468";
+    longitude = "-118.4276277535216";
+    neighborhood = "Mar Vista";
+    objectId = 7apejMZn5Y;
+    state = CA;
+    updatedAt = "2015-03-13 21:31:35 +0000";
+}
+2015-03-17 21:02:02.020 PopulistMVP[6504:3852719] PPLSTDataManager - getEventFromCoreDataWithId:7apejMZn5Y
+2015-03-17 21:02:02.022 PopulistMVP[6504:3852719] PPLSTDataManager - saveCoreData
+2015-03-17 21:02:02.025 PopulistMVP[6504:3852719] PPLSTDataManager - contextHasChanged
+2015-03-17 21:02:02.026 PopulistMVP[6504:3852719] channels: (
+    global
+)
+2015-03-17 21:02:02.057 PopulistMVP[6504:3852719] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-03-17 21:02:02.060 PopulistMVP[6504:3852719] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15ed74a0; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x15e96b80>> ForContribution:<Contribution: 0x15ecd1b0> (entity: Contribution; id: 0x15ec2160 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p735> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 19:25:13 +0000";
+    event = nil;
+    imagePath = gZQKLSjEy4;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x15ecd2e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p557>";
+})
+2015-03-17 21:02:02.061 PopulistMVP[6504:3852719] contributionId = 432iBhXkEU, contributionType = photo, imagePath = gZQKLSjEy4
+2015-03-17 21:02:02.062 PopulistMVP[6504:3852719] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-17 21:02:02.062 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:gZQKLSjEy4
+2015-03-17 21:02:02.062 PopulistMVP[6504:3852719] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-03-17 21:02:02.063 PopulistMVP[6504:3852719] the filePath is /var/mobile/Containers/Data/Application/9882A597-F43C-4126-AB03-F2109E21DFEC/Documents/gZQKLSjEy4.png
+2015-03-17 21:02:02.070 PopulistMVP[6504:3852719] the image is <UIImage: 0x15dc2440>
+2015-03-17 21:02:02.070 PopulistMVP[6504:3852719] PPLST prepareDictionaryForInsertWithKey:gZQKLSjEy4
+2015-03-17 21:02:02.071 PopulistMVP[6504:3852719] self.keysSet = {(
+)}
+2015-03-17 21:02:02.071 PopulistMVP[6504:3852719] [self.keysArray count] = 0. Max = 10
+2015-03-17 21:02:02.071 PopulistMVP[6504:3852719] PPLST prepareDictionaryForInsertWithKey - done
+2015-03-17 21:02:02.072 PopulistMVP[6504:3852719] Just got the image <UIImage: 0x15dc2440>
+2015-03-17 21:02:02.072 PopulistMVP[6504:3852719] Yay, the image wasn't nil
+2015-03-17 21:02:02.073 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:gZQKLSjEy4
+2015-03-17 21:02:02.065 PopulistMVP[6504:3852746] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x15eccd60> (entity: Event; id: 0x15ecd2e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p557> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15eca440 'contributions'>\";\n    country = USA;\n    eventId = HvHxadIVKA;\n    importance = 42;\n    lastActive = \"2015-02-15 20:28:07 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ec2160 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p735>\";\n})",
+    "<Event: 0x15dbe520> (entity: Event; id: 0x15dbe730 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p389> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbe890 'contributions'>\";\n    country = USA;\n    eventId = O9Sl4rSgYe;\n    importance = 13;\n    lastActive = \"2015-03-05 22:57:56 +0000\";\n    latitude = \"34.02099\";\n    longitude = \"-118.4276\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecdda0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p729>\";\n})",
+    "<Event: 0x15ecd870> (entity: Event; id: 0x15ecd620 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p562> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecde50 'contributions'>\";\n    country = USA;\n    eventId = eKAxW0pzLu;\n    importance = 11;\n    lastActive = \"2015-02-10 20:06:11 +0000\";\n    latitude = \"34.02101\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecdca0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p740>\";\n})",
+    "<Event: 0x15dbf120> (entity: Event; id: 0x15dbee60 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p558> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ece100 'contributions'>\";\n    country = USA;\n    eventId = wPSS6e201S;\n    importance = 18;\n    lastActive = \"2015-02-07 01:52:45 +0000\";\n    latitude = \"34.02104\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecda00 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p736>\";\n})",
+    "<Event: 0x15ece5f0> (entity: Event; id: 0x15ece7b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p574> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ece630 'contributions'>\";\n    country = USA;\n    eventId = KyEeFZRhkq;\n    importance = 5;\n    lastActive = \"2015-03-02 01:52:19 +0000\";\n    latitude = \"34.02099\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15eca7e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p753>\";\n})",
+    "<Event: 0x15ecea30> (entity: Event; id: 0x15ecebf0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p566> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecea70 'contributions'>\";\n    country = USA;\n    eventId = RD8dSAhqAy;\n    importance = 10;\n    lastActive = \"2015-02-08 02:38:18 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ece6b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p745>\";\n})",
+    "<Event: 0x15ecee70> (entity: Event; id: 0x15ecf030 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p560> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15eceeb0 'contributions'>\";\n    country = USA;\n    eventId = SOyF65odh2;\n    importance = 10;\n    lastActive = \"2015-02-12 18:40:16 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15eceaf0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p738>\";\n})",
+    "<Event: 0x15dbefc0> (entity: Event; id: 0x15dbf1d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p563> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbee00 'contributions'>\";\n    country = USA;\n    eventId = TwDoXRsZLv;\n    importance = 11;\n    lastActive = \"2015-01-31 03:10:32 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbe930 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p742>\";\n})",
+    "<Event: 0x15ecf2b0> (entity: Event; id: 0x15ecf470 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p561> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbf020 'contributions'>\";\n    country = USA;\n    eventId = g45Lk0bA30;\n    importance = 12;\n    lastActive = \"2015-02-07 01:52:15 +0000\";\n    latitude = \"34.02105\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbef10 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p739>\";\n})",
+    "<Event: 0x15ecf480> (entity: Event; id: 0x15ecf3b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p590> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecf3c0 'contributions'>\";\n    country = USA;\n    eventId = eSDjAGf0Qz;\n    importance = 4;\n    lastActive = \"2015-02-07 08:19:11 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecf660 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p770>\";\n})",
+    "<Event: 0x15dbf8a0> (entity: Event; id: 0x15dbfa90 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p564> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbf740 'contributions'>\";\n    country = USA;\n    eventId = ACGE87Qvkq;\n    importance = 5;\n    lastActive = \"2015-03-12 20:43:28 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbf6d0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p743>\";\n})",
+    "<Event: 0x15dbfb80> (entity: Event; id: 0x15dbf9b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p565> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbfc20 'contributions'>\";\n    country = USA;\n    eventId = fm9E9HE7P3;\n    importance = 6;\n    lastActive = \"2015-03-07 04:27:48 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbf980 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p744>\";\n})",
+    "<Event: 0x15dc0150> (entity: Event; id: 0x15dc0310 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p568> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc0190 'contributions'>\";\n    country = USA;\n    eventId = 76q9Z3iZxf;\n    importance = 5;\n    lastActive = \"2015-03-08 18:26:21 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbfda0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p747>\";\n})",
+    "<Event: 0x15ecf920> (entity: Event; id: 0x15ecfae0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p589> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecf6f0 'contributions'>\";\n    country = USA;\n    eventId = Fx8LJWqBZ8;\n    importance = 4;\n    lastActive = \"2015-02-02 05:11:51 +0000\";\n    latitude = \"34.02101\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecf0e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p769>\";\n})",
+    "<Event: 0x15dc0590> (entity: Event; id: 0x15dc0750 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p573> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc05d0 'contributions'>\";\n    country = USA;\n    eventId = vo8FR3xzWM;\n    importance = 7;\n    lastActive = \"2015-02-07 01:53:22 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc0210 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p752>\";\n})",
+    "<Event: 0x15dc0cc0> (entity: Event; id: 0x15dc0e80 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p577> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ec62b0 'contributions'>\";\n    country = USA;\n    eventId = zeh7DtRcX0;\n    importance = 6;\n    lastActive = \"2015-01-31 00:02:35 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecf9b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p756>\";\n})",
+    "<Event: 0x15dc0ef0> (entity: Event; id: 0x15dc10e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p588> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc0610 'contributions'>\";\n    country = USA;\n    eventId = cLCODUS7pU;\n    importance = 4;\n    lastActive = \"2015-02-04 05:24:08 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc0b40 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p768>\";\n})",
+    "<Event: 0x15dc10f0> (entity: Event; id: 0x15dc0ea0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p569> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecfb40 'contributions'>\";\n    country = USA;\n    eventId = omqyUQ1ql3;\n    importance = 5;\n    lastActive = \"2015-02-12 07:28:39 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ec4660 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p748>\";\n})",
+    "<Event: 0x15dc1480> (entity: Event; id: 0x15dc1280 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p576> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecfde0 'contributions'>\";\n    country = USA;\n    eventId = wDueINjX7v;\n    importance = 5;\n    lastActive = \"2015-02-08 18:59:05 +0000\";\n    latitude = \"34.02101\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc1620 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p755>\";\n})",
+    "<Event: 0x15ed01e0> (entity: Event; id: 0x15ed03f0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p578> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ed03d0 'contributions'>\";\n    country = USA;\n    eventId = LY0GzJnfhL;\n    importance = 5;\n    lastActive = \"2015-02-01 22:55:48 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecfd20 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p757>\";\n})",
+    "<Event: 0x15ed0670> (entity: Event; id: 0x15ed0830 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p403> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ed0440 'contributions'>\";\n    country = USA;\n    eventId = Ax6TZ6d9l8;\n    importance = 3;\n    lastActive = \"2015-03-15 18:49:06 +0000\";\n    latitude = \"34.02099\";\n    longitude = \"-118.4276\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ed0140 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p718>\";\n})",
+    "<Event: 0x15dbe9a0> (entity: Event; id: 0x15dbe950 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p441> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dbec90 'contributions'>\";\n    country = USA;\n    eventId = SNEk0EjtAk;\n    importance = 2;\n    lastActive = \"2015-02-03 07:45:14 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ed0730 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p741>\";\n})",
+    "<Event: 0x15dc1d80> (entity: Event; id: 0x15dc1f40 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p582> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc1b50 'contributions'>\";\n    country = USA;\n    eventId = fewf9BumUm;\n    importance = 3;\n    lastActive = \"2015-02-05 02:37:52 +0000\";\n    latitude = \"34.02101\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc1810 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p762>\";\n})",
+    "<Event: 0x15ed0ba0> (entity: Event; id: 0x15ed0d60 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p571> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ed08c0 'contributions'>\";\n    country = USA;\n    eventId = PtapG16Yl3;\n    importance = 5;\n    lastActive = \"2015-02-03 07:00:53 +0000\";\n    latitude = \"34.02104\";\n    longitude = \"-118.4276\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = nil;\n})",
+    "<Event: 0x15ed0c30> (entity: Event; id: 0x15ed2150 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p592> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions =     (\n    );\n    country = USA;\n    eventId = 8CyDARhTa5;\n    importance = 4;\n    lastActive = \"2015-02-13 18:57:13 +0000\";\n    latitude = \"34.02091\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc34c0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p771>\";\n})",
+    "<Event: 0x15ed0f20> (entity: Event; id: 0x15ec9700 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p587> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecd500 'contributions'>\";\n    country = USA;\n    eventId = eoE1TgeJCI;\n    importance = 2;\n    lastActive = \"2015-02-08 07:13:27 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15e4e790 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p767>\";\n})",
+    "<Event: 0x15dbea30> (entity: Event; id: 0x15dc23c0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p584> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc2110 'contributions'>\";\n    country = USA;\n    eventId = DkXC8cul6F;\n    importance = 3;\n    lastActive = \"2015-02-04 17:09:24 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbf970 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p764>\";\n})",
+    "<Event: 0x15dc2ea0> (entity: Event; id: 0x15dc2c40 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p580> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc0280 'contributions'>\";\n    country = USA;\n    eventId = T3qZAxQe72;\n    importance = 3;\n    lastActive = \"2015-02-02 17:35:27 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dc3010 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p760>\";\n})",
+    "<Event: 0x15dc0df0> (entity: Event; id: 0x15dbe6c0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p585> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc0710 'contributions'>\";\n    country = USA;\n    eventId = wAze0tEH5E;\n    importance = 2;\n    lastActive = \"2015-02-17 17:11:10 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15dbe6b0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p765>\";\n})",
+    "<Event: 0x15dc1010> (entity: Event; id: 0x15dc3fc0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p591> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15dc17f0 'contributions'>\";\n    country = USA;\n    eventId = Hp0IKBtAgk;\n    importance = 1;\n    lastActive = \"2015-03-06 02:47:47 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ed0940 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p750>\";\n})",
+    "<Event: 0x15ec4620> (entity: Event; id: 0x15ecf2a0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p472> ; data: {\n    city = \"Los Angeles\";\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x15ecdfe0 'contributions'>\";\n    country = USA;\n    eventId = 7apejMZn5Y;\n    importance = 1;\n    lastActive = \"2015-03-13 21:31:35 +0000\";\n    latitude = \"34.02101\";\n    longitude = \"-118.4276\";\n    neighborhood = \"Mar Vista\";\n    state = CA;\n    titleContribution = \"0x15ecf650 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p758>\";\n})"
+) inContext:<NSManagedObjectContext: 0x15dc45a0>
+2015-03-17 21:02:02.081 PopulistMVP[6504:3852719] Formatting Event Cell for contributionId = dummyAj6ATjjX2A
+2015-03-17 21:02:02.085 PopulistMVP[6504:3852719] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15dc6370; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x15dc5f70>> ForContribution:<Contribution: 0x15ece090> (entity: Contribution; id: 0x15ecdda0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p729> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = dummyAj6ATjjX2A;
+    contributionType = photo;
+    createdAt = "2015-03-18 02:34:17 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x15dbe730 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p389>";
+})
+2015-03-17 21:02:02.087 PopulistMVP[6504:3852719] contributionId = dummyAj6ATjjX2A, contributionType = photo, imagePath = (null)
+2015-03-17 21:02:02.088 PopulistMVP[6504:3852719] loading = (null)
+2015-03-17 21:02:02.088 PopulistMVP[6504:3852719] it wasn't loading, so we'll move forward
+2015-03-17 21:02:02.100 PopulistMVP[6504:3852719] About to dispatch async
+2015-03-17 21:02:02.103 PopulistMVP[6504:3852749] About to download the media for this contribution
+2015-03-17 21:02:02.104 PopulistMVP[6504:3852749] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x15ece090> (entity: Contribution; id: 0x15ecdda0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p729> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = dummyAj6ATjjX2A;
+    contributionType = photo;
+    createdAt = "2015-03-18 02:34:17 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x15dbe730 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p389>";
+})
+2015-03-17 21:02:02.109 PopulistMVP[6504:3852749] PPLSTDataManager - storeImage:<UIImage: 0x15ec9eb0>
+2015-03-17 21:02:02.172 PopulistMVP[6504:3852749] PPLSTDataManager - getEmptyFileName
+2015-03-17 21:02:02.174 PopulistMVP[6504:3852749] PPLSTDataManager - randomgStringWithLength:10
+2015-03-17 21:02:02.191 PopulistMVP[6504:3852749] PPLSTDataManager - saveCoreData
+2015-03-17 21:02:02.196 PopulistMVP[6504:3852749] PPLSTDataManager - contextHasChanged
+2015-03-17 21:02:02.214 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-03-17 21:02:02.215 PopulistMVP[6504:3852719] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-03-17 21:02:02.216 PopulistMVP[6504:3852719] the filePath is /var/mobile/Containers/Data/Application/9882A597-F43C-4126-AB03-F2109E21DFEC/Documents/NmNqfXqfK9.png
+2015-03-17 21:02:02.224 PopulistMVP[6504:3852719] the image is <UIImage: 0x15edb660>
+2015-03-17 21:02:02.225 PopulistMVP[6504:3852719] PPLST prepareDictionaryForInsertWithKey:NmNqfXqfK9
+2015-03-17 21:02:02.225 PopulistMVP[6504:3852719] self.keysSet = {(
+    gZQKLSjEy4
+)}
+2015-03-17 21:02:02.226 PopulistMVP[6504:3852719] [self.keysArray count] = 1. Max = 10
+2015-03-17 21:02:02.226 PopulistMVP[6504:3852719] PPLST prepareDictionaryForInsertWithKey - done
+2015-03-17 21:02:02.232 PopulistMVP[6504:3852719] Formatting Event Cell for contributionId = 432iBhXkEU
+2015-03-17 21:02:02.234 PopulistMVP[6504:3852719] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15ed74a0; baseClass = UITableViewCell; frame = (0 0; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x15e96b80>> ForContribution:<Contribution: 0x15ecd1b0> (entity: Contribution; id: 0x15ec2160 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p735> ; data: {
+    contributingUserId = "3C6710D5-EB04-47C2-AD67-DC55B8903B9D";
+    contributionId = 432iBhXkEU;
+    contributionType = photo;
+    createdAt = "2015-02-15 19:25:13 +0000";
+    event = nil;
+    imagePath = gZQKLSjEy4;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x15ecd2e0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p557>";
+})
+2015-03-17 21:02:02.236 PopulistMVP[6504:3852719] contributionId = 432iBhXkEU, contributionType = photo, imagePath = gZQKLSjEy4
+2015-03-17 21:02:02.240 PopulistMVP[6504:3852719] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-17 21:02:02.247 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:gZQKLSjEy4
+2015-03-17 21:02:02.250 PopulistMVP[6504:3852719] Just got the image <UIImage: 0x15dc2440>
+2015-03-17 21:02:02.251 PopulistMVP[6504:3852719] Yay, the image wasn't nil
+2015-03-17 21:02:02.255 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:gZQKLSjEy4
+2015-03-17 21:02:02.260 PopulistMVP[6504:3852719] Formatting Event Cell for contributionId = dummyAj6ATjjX2A
+2015-03-17 21:02:02.261 PopulistMVP[6504:3852719] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x15dc6370; baseClass = UITableViewCell; frame = (0 330; 320 330); hidden = YES; autoresize = W; layer = <CALayer: 0x15dc5f70>> ForContribution:<Contribution: 0x15ece090> (entity: Contribution; id: 0x15ecdda0 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Contribution/p729> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = dummyAj6ATjjX2A;
+    contributionType = photo;
+    createdAt = "2015-03-18 02:34:17 +0000";
+    event = nil;
+    imagePath = NmNqfXqfK9;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0x15dbe730 <x-coredata://26DFD26D-6171-4A53-82BB-491E670D0340/Event/p389>";
+})
+2015-03-17 21:02:02.262 PopulistMVP[6504:3852719] contributionId = dummyAj6ATjjX2A, contributionType = photo, imagePath = NmNqfXqfK9
+2015-03-17 21:02:02.263 PopulistMVP[6504:3852719] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-03-17 21:02:02.263 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-03-17 21:02:02.264 PopulistMVP[6504:3852719] Just got the image <UIImage: 0x15edb660>
+2015-03-17 21:02:02.265 PopulistMVP[6504:3852719] Yay, the image wasn't nil
+2015-03-17 21:02:02.265 PopulistMVP[6504:3852719] PPLSTDataManager - getImageWithFileName:NmNqfXqfK9
+2015-03-17 21:02:02.300 PopulistMVP[6504:3852746] About to delete contribution with ID PZTi0Qo0pH
+2015-03-17 21:02:02.300 PopulistMVP[6504:3852746] Deleting Event with ID rsnwQ8KZKE
+2015-03-17 21:02:02.304 PopulistMVP[6504:3852746] About to delete contribution with ID j3RbPCUKhW
+2015-03-17 21:02:02.304 PopulistMVP[6504:3852746] Deleting Event with ID MkoTPmbuCr
+2015-03-17 21:02:02.306 PopulistMVP[6504:3852746] About to delete contribution with ID ozd2uFrZZC
+2015-03-17 21:02:02.306 PopulistMVP[6504:3852746] Deleting Event with ID zhSAsjkVVK
+2015-03-17 21:02:02.308 PopulistMVP[6504:3852746] About to delete contribution with ID dummyNmNqfXqfK9
+2015-03-17 21:02:02.308 PopulistMVP[6504:3852746] Deleting Event with ID HV3Tj2D4Xp
+2015-03-17 21:02:02.310 PopulistMVP[6504:3852746] About to delete contribution with ID dummyNxwuggw4mF
+2015-03-17 21:02:02.311 PopulistMVP[6504:3852746] Deleting Event with ID 7EsoDLVQmT
+2015-03-17 21:02:02.313 PopulistMVP[6504:3852746] About to delete contribution with ID sHzWplLon0
+2015-03-17 21:02:02.313 PopulistMVP[6504:3852746] Deleting Event with ID mqd4mpB5TX
+2015-03-17 21:02:02.315 PopulistMVP[6504:3852746] About to delete contribution with ID dummyLK5t5pJqPy
+2015-03-17 21:02:02.316 PopulistMVP[6504:3852746] Deleting Event with ID JVB1MvpGdE
+2015-03-17 21:02:02.317 PopulistMVP[6504:3852746] About to delete contribution with ID 4d1ajcZYEP
+2015-03-17 21:02:02.318 PopulistMVP[6504:3852746] Deleting Event with ID 3n26U3sca0
+2015-03-17 21:02:02.320 PopulistMVP[6504:3852746] About to delete contribution with ID jcWoKPqhkQ
+2015-03-17 21:02:02.321 PopulistMVP[6504:3852746] Deleting Event with ID nTthyfKmGp
+2015-03-17 21:02:02.323 PopulistMVP[6504:3852746] PPLSTDataManager - saveCoreData
+2015-03-17 21:02:02.325 PopulistMVP[6504:3852746] PPLSTDataManager - contextHasChanged
+2015-03-17 21:02:02.326 PopulistMVP[6504:3852719] PPLSTDataManager - contextHasChanged

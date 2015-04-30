@@ -171,7 +171,7 @@ static NSString *_uuid = nil;
 		}
 		else // Any other error, log it and return nil
 		{
-			NSLog(@"BPXLUUIDHandler Unhandled Keychain Error %ld", (long)status);
+			NSLog(@"1 - BPXLUUIDHandler Unhandled Keychain Error %ld", (long)status);
 			return nil;
 		}
 	}
@@ -191,7 +191,7 @@ static NSString *_uuid = nil;
 		}
 		else // Any other error, log it and return nil
 		{
-			NSLog(@"BPXLUUIDHandler Unhandled Keychain Error %ld", (long)status);
+			NSLog(@"2 - BPXLUUIDHandler Unhandled Keychain Error %ld", (long)status);
 			return nil;
 		}
 	}

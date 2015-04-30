@@ -1,0 +1,569 @@
+2015-04-19 09:22:21.497 PopulistMVP[8128:2331047] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-04-19 09:22:21.559 PopulistMVP[8128:2331047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-19 09:22:22.064 PopulistMVP[8128:2331047] Reachability Flag Status: -R -----l- networkStatusForFlags
+2015-04-19 09:22:22.094 PopulistMVP[8128:2331047] PPLSTDataManager - createAvatarForStatusDictionary
+2015-04-19 09:22:22.102 PopulistMVP[8128:2331047] updateEvents
+2015-04-19 09:22:22.102 PopulistMVP[8128:2331047] startUpdatingEvents
+2015-04-19 09:22:22.146 PopulistMVP[8128:2331047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174203850> didChangeAuthorizationStatus to status = 3
+2015-04-19 09:22:22.146 PopulistMVP[8128:2331047] didAcceptAuthorization triggered in ExploreVC
+2015-04-19 09:22:22.146 PopulistMVP[8128:2331047] updateEvents
+2015-04-19 09:22:22.149 PopulistMVP[8128:2331047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174203850> didUpdateLocations:(
+    "<+34.02079888,-118.42725512> +/- 5.00m (speed 0.00 mps / course 146.95) @ 4/18/15, 11:32:06 PM Pacific Daylight Time"
+)
+2015-04-19 09:22:22.150 PopulistMVP[8128:2331047] locationManager didUpdateLocation lastObject = <+34.02079888,-118.42725512> +/- 5.00m (speed 0.00 mps / course 146.95) @ 4/18/15, 11:32:06 PM Pacific Daylight Time, accuracy = 5.000000
+2015-04-19 09:22:22.174 PopulistMVP[8128:2331047] PPLSTLocationManager - locationManager:<CLLocationManager: 0x174203850> didUpdateLocations:(
+    "<+34.02098873,-118.42767119> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/19/15, 9:22:22 AM Pacific Daylight Time"
+)
+2015-04-19 09:22:22.175 PopulistMVP[8128:2331047] locationManager didUpdateLocation lastObject = <+34.02098873,-118.42767119> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/19/15, 9:22:22 AM Pacific Daylight Time, accuracy = 10.000000
+2015-04-19 09:22:22.176 PopulistMVP[8128:2331047] PPLSTLocationManager - sendLocationToParse
+2015-04-19 09:22:22.178 PopulistMVP[8128:2331047] PPLSTExploreTablewViewController - locationUpdatedTo
+2015-04-19 09:22:22.179 PopulistMVP[8128:2331047] finishUpdatingEvents
+2015-04-19 09:22:22.179 PopulistMVP[8128:2331047] PPLSTLocationManager - updateLocationOfLastUpdate:<+34.02098873,-118.42767119> +/- 10.00m (speed 0.00 mps / course -1.00) @ 4/19/15, 9:22:22 AM Pacific Daylight Time
+2015-04-19 09:22:22.180 PopulistMVP[8128:2331047] PPLSTLocationManager - updateTimeOfLastUpdate:2015-04-19 16:22:22 +0000
+2015-04-19 09:22:22.180 PopulistMVP[8128:2331047] PPLSTDataManager - sendSignalAndDownloadEventMetaDataWithInputLatitude:34.020988 andLongitude:-118.427673 andDate:2015-04-19 16:22:22 +0000
+2015-04-19 09:22:22.180 PopulistMVP[8128:2331047] PPLSTDataManager - downloadEventMetaDataWithInputLatitude:34.020988 andLongitude:-118.427673 andDate:2015-04-19 16:22:22 +0000
+2015-04-19 09:22:22.181 PopulistMVP[8128:2331047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-19 09:22:23.150 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = YES;
+    country = " ";
+    importance = 3;
+    isActive = YES;
+    latitude = "34.02106111312007";
+    longitude = "-118.4276309386447";
+    neighborhood = " ";
+    objectId = Advt7iyIau;
+    state = " ";
+    updatedAt = "2015-04-19 15:58:22 +0000";
+}
+2015-04-19 09:22:23.150 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:Advt7iyIau
+2015-04-19 09:22:23.159 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 16;
+    isActive = NO;
+    latitude = "34.02099478116366";
+    longitude = "-118.4276601984587";
+    neighborhood = " ";
+    objectId = PUmdlJlliN;
+    state = " ";
+    titlePhotoId = xoJZ7mu5jk;
+    updatedAt = "2015-03-29 22:19:56 +0000";
+}
+2015-04-19 09:22:23.160 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:PUmdlJlliN
+2015-04-19 09:22:23.164 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 14;
+    isActive = NO;
+    latitude = "34.02101784022428";
+    longitude = "-118.4276529448533";
+    neighborhood = " ";
+    objectId = 5f2XwVBGxA;
+    state = " ";
+    titlePhotoId = MM44km2aRQ;
+    updatedAt = "2015-03-22 22:31:54 +0000";
+}
+2015-04-19 09:22:23.165 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:5f2XwVBGxA
+2015-04-19 09:22:23.166 PopulistMVP[8128:2331047] eventDictionary = {
+    city = "Los Angeles";
+    containsUser = NO;
+    country = USA;
+    importance = 6;
+    isActive = NO;
+    latitude = "34.02103269913581";
+    longitude = "-118.427660414746";
+    neighborhood = "Mar Vista";
+    objectId = fm9E9HE7P3;
+    state = CA;
+    titlePhotoId = LRj5NN2OQX;
+    updatedAt = "2015-03-07 04:27:48 +0000";
+}
+2015-04-19 09:22:23.167 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:fm9E9HE7P3
+2015-04-19 09:22:23.169 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 4;
+    isActive = NO;
+    latitude = "34.020984446524";
+    longitude = "-118.4276288216548";
+    neighborhood = " ";
+    objectId = sxiAhYpOpv;
+    state = " ";
+    titlePhotoId = jThWmPfRQd;
+    updatedAt = "2015-04-03 03:33:07 +0000";
+}
+2015-04-19 09:22:23.170 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:sxiAhYpOpv
+2015-04-19 09:22:23.171 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 3;
+    isActive = NO;
+    latitude = "34.02104995048346";
+    longitude = "-118.4276859548825";
+    neighborhood = " ";
+    objectId = Z3rqAlU7eG;
+    state = " ";
+    titlePhotoId = ckcXYByWbn;
+    updatedAt = "2015-03-22 23:57:09 +0000";
+}
+2015-04-19 09:22:23.172 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:Z3rqAlU7eG
+2015-04-19 09:22:23.174 PopulistMVP[8128:2331047] eventDictionary = {
+    city = " ";
+    containsUser = NO;
+    country = " ";
+    importance = 1;
+    isActive = NO;
+    latitude = "34.02101789742429";
+    longitude = "-118.4276557071686";
+    neighborhood = " ";
+    objectId = Dk50Jq7Qf8;
+    state = " ";
+    titlePhotoId = lHv2HygVL9;
+    updatedAt = "2015-04-10 17:40:07 +0000";
+}
+2015-04-19 09:22:23.174 PopulistMVP[8128:2331047] PPLSTDataManager - getEventFromCoreDataWithId:Dk50Jq7Qf8
+2015-04-19 09:22:23.175 PopulistMVP[8128:2331047] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:23.181 PopulistMVP[8128:2331047] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:23.181 PopulistMVP[8128:2331047] channels: (
+    global
+)
+2015-04-19 09:22:23.187 PopulistMVP[8128:2331047] PPLSTExploreTableViewController - cleanUpEventsInBackground
+2015-04-19 09:22:23.188 PopulistMVP[8128:2331075] cleaning up events. Will want to add (null) with eventId = (null)
+2015-04-19 09:22:23.194 PopulistMVP[8128:2331075] didn't add the currentEvent. Note, self.currentEvent = <Event: 0x1740da630> (entity: Event; id: 0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600> ; data: {
+    containsUser = 1;
+    contributions = "<relationship fault: 0x174226f40 'contributions'>";
+    eventId = Advt7iyIau;
+    importance = 3;
+    lastActive = "2015-04-19 15:58:22 +0000";
+    latitude = "34.02106";
+    longitude = "-118.4276";
+    titleContribution = "0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502>";
+}) with id = Advt7iyIau
+2015-04-19 09:22:23.195 PopulistMVP[8128:2331075] [eventsToKeep containsObject:self.currentEvent] = 1
+2015-04-19 09:22:23.195 PopulistMVP[8128:2331075] done adding the events. Will now delete them.
+2015-04-19 09:22:23.196 PopulistMVP[8128:2331047] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-04-19 09:22:23.200 PopulistMVP[8128:2331047] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x12fe23db0; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x170220320>> ForContribution:<Contribution: 0x1740d9750> (entity: Contribution; id: 0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-04-19 15:53:45 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600>";
+})
+2015-04-19 09:22:23.198 PopulistMVP[8128:2331075] PPLSTDataManager - cleanUpUnusedDataForEventsNotIn:(
+    "<Event: 0x1740da630> (entity: Event; id: 0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600> ; data: {\n    containsUser = 1;\n    contributions = \"<relationship fault: 0x174226f40 'contributions'>\";\n    eventId = Advt7iyIau;\n    importance = 3;\n    lastActive = \"2015-04-19 15:58:22 +0000\";\n    latitude = \"34.02106\";\n    longitude = \"-118.4276\";\n    titleContribution = \"0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502>\";\n})",
+    "<Event: 0x1700dbd60> (entity: Event; id: 0xd000000018e40000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1593> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x1742254a0 'contributions'>\";\n    eventId = PUmdlJlliN;\n    importance = 16;\n    lastActive = \"2015-03-29 22:19:56 +0000\";\n    latitude = \"34.021\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000026fc0002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2495>\";\n})",
+    "<Event: 0x1740d9b40> (entity: Event; id: 0xd000000018e80000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1594> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x174225c00 'contributions'>\";\n    eventId = 5f2XwVBGxA;\n    importance = 14;\n    lastActive = \"2015-03-22 22:31:54 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000027000002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2496>\";\n})",
+    "<Event: 0x1740db5f0> (entity: Event; id: 0xd000000018ec0000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1595> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x17023d840 'contributions'>\";\n    eventId = fm9E9HE7P3;\n    importance = 6;\n    lastActive = \"2015-03-07 04:27:48 +0000\";\n    latitude = \"34.02103\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000027040002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2497>\";\n})",
+    "<Event: 0x1700dbeb0> (entity: Event; id: 0xd000000018f00000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1596> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x17023e960 'contributions'>\";\n    eventId = sxiAhYpOpv;\n    importance = 4;\n    lastActive = \"2015-04-03 03:33:07 +0000\";\n    latitude = \"34.02098\";\n    longitude = \"-118.4276\";\n    titleContribution = \"0xd000000027080002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2498>\";\n})",
+    "<Event: 0x1740d9210> (entity: Event; id: 0xd000000018f40000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1597> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x174225ce0 'contributions'>\";\n    eventId = Z3rqAlU7eG;\n    importance = 3;\n    lastActive = \"2015-03-22 23:57:09 +0000\";\n    latitude = \"34.02105\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd0000000270c0002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2499>\";\n})",
+    "<Event: 0x1740dc380> (entity: Event; id: 0xd000000018f80000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1598> ; data: {\n    containsUser = 0;\n    contributions = \"<relationship fault: 0x17422aea0 'contributions'>\";\n    eventId = Dk50Jq7Qf8;\n    importance = 1;\n    lastActive = \"2015-04-10 17:40:07 +0000\";\n    latitude = \"34.02102\";\n    longitude = \"-118.4277\";\n    titleContribution = \"0xd000000027100002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2500>\";\n})"
+) inContext:<NSManagedObjectContext: 0x1741edf00>
+2015-04-19 09:22:23.201 PopulistMVP[8128:2331047] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = (null)
+2015-04-19 09:22:23.202 PopulistMVP[8128:2331047] loading = (null)
+2015-04-19 09:22:23.203 PopulistMVP[8128:2331047] it wasn't loading, so we'll move forward
+2015-04-19 09:22:23.211 PopulistMVP[8128:2331047] About to dispatch async
+2015-04-19 09:22:23.216 PopulistMVP[8128:2331077] About to download the media for this contribution
+2015-04-19 09:22:23.217 PopulistMVP[8128:2331077] PPLSTDataManager - downloadMediaForContribution:<Contribution: 0x1740d9750> (entity: Contribution; id: 0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-04-19 15:53:45 +0000";
+    event = nil;
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600>";
+})
+2015-04-19 09:22:23.220 PopulistMVP[8128:2331047] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-19 09:22:23.221 PopulistMVP[8128:2331077] PPLSTDataManager - storeImage:<UIImage: 0x1740840b0>
+2015-04-19 09:22:23.221 PopulistMVP[8128:2331047] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x12fd22890; baseClass = UITableViewCell; frame = (0 0; 320 44); layer = <CALayer: 0x174222160>> ForContribution:<Contribution: 0x1740d7d10> (entity: Contribution; id: 0xd000000026fc0002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2495> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = fV74olxOLz;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000018e40000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1593>";
+})
+2015-04-19 09:22:23.222 PopulistMVP[8128:2331047] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = fV74olxOLz
+2015-04-19 09:22:23.222 PopulistMVP[8128:2331047] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-19 09:22:23.223 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:fV74olxOLz
+2015-04-19 09:22:23.225 PopulistMVP[8128:2331047] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-19 09:22:23.271 PopulistMVP[8128:2331047] the filePath is /var/mobile/Containers/Data/Application/B6C2C08E-BE04-4EDD-8766-86E6452F24B9/Documents/fV74olxOLz.png
+2015-04-19 09:22:23.275 PopulistMVP[8128:2331047] the image is <UIImage: 0x17008a870>
+2015-04-19 09:22:23.275 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey:fV74olxOLz
+2015-04-19 09:22:23.276 PopulistMVP[8128:2331047] self.keysSet = {(
+)}
+2015-04-19 09:22:23.276 PopulistMVP[8128:2331047] [self.keysArray count] = 0. Max = 10
+2015-04-19 09:22:23.276 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-19 09:22:23.276 PopulistMVP[8128:2331047] Just got the image <UIImage: 0x17008a870>
+2015-04-19 09:22:23.276 PopulistMVP[8128:2331047] Yay, the image wasn't nil
+2015-04-19 09:22:23.277 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:fV74olxOLz
+2015-04-19 09:22:23.338 PopulistMVP[8128:2331047] didRegisterForRemoteNotificationWithDeviceToken:<7713a765 5de3b6d7 fb140745 5cd4c3a5 124775c8 87133450 4390442c e6829766>
+2015-04-19 09:22:23.326 PopulistMVP[8128:2331077] PPLSTDataManager - getEmptyFileName
+2015-04-19 09:22:23.341 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.342 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.342 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.347 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.349 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.349 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.350 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.350 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.350 PopulistMVP[8128:2331047] Warning: A long-running operation is being executed on the main thread. 
+ Break on warnBlockingOperationOnMainThread() to debug.
+2015-04-19 09:22:23.350 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.352 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.353 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.355 PopulistMVP[8128:2331075] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:23.357 PopulistMVP[8128:2331075] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:23.357 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.358 PopulistMVP[8128:2331047] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:23.359 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.360 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.360 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.361 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.362 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.362 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.364 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.364 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.365 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.365 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.365 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.366 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.366 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.366 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.367 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.368 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.369 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.369 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.369 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.370 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.370 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.370 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.371 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.371 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.371 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.372 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.372 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.372 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.373 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.373 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.374 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.374 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.375 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.375 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.375 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.376 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.376 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.377 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.377 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.378 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.378 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.379 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.379 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.380 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.380 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.380 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.381 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.381 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.382 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.382 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.383 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.383 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.384 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.384 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.385 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.385 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.386 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.386 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.387 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.387 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.388 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.389 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.390 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.390 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.390 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.391 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.392 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.393 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.393 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.394 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.394 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.394 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.395 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.395 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.395 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.396 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.396 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.397 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.397 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.398 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.398 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.399 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.399 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.400 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.400 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.401 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.402 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.402 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.403 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.403 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.403 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.404 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.405 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.405 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.405 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.406 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.406 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.407 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.407 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.407 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.408 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.408 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.409 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.409 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.409 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.410 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.410 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.410 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.411 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.411 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.412 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.412 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.413 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.413 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.413 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.414 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.414 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.415 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.415 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.415 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.416 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.416 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.416 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.417 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.417 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.418 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.419 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.420 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.420 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.421 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.421 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.421 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.422 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.423 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.427 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.427 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.427 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.429 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.429 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.429 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.430 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.430 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.431 PopulistMVP[8128:2331077] PPLSTDataManager - randomgStringWithLength:10
+2015-04-19 09:22:23.436 PopulistMVP[8128:2331077] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:23.437 PopulistMVP[8128:2331077] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:23.437 PopulistMVP[8128:2331047] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:23.438 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:j9WCVDzMCB
+2015-04-19 09:22:23.438 PopulistMVP[8128:2331047] self.imageAtFilePath doesn't already contain the fileName or the filename is nil
+2015-04-19 09:22:23.439 PopulistMVP[8128:2331047] the filePath is /var/mobile/Containers/Data/Application/B6C2C08E-BE04-4EDD-8766-86E6452F24B9/Documents/j9WCVDzMCB.png
+2015-04-19 09:22:23.440 PopulistMVP[8128:2331047] the image is <UIImage: 0x1740840b0>
+2015-04-19 09:22:23.441 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey:j9WCVDzMCB
+2015-04-19 09:22:23.441 PopulistMVP[8128:2331047] self.keysSet = {(
+    fV74olxOLz
+)}
+2015-04-19 09:22:23.441 PopulistMVP[8128:2331047] [self.keysArray count] = 1. Max = 10
+2015-04-19 09:22:23.441 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-19 09:22:23.442 PopulistMVP[8128:2331047] Formatting Event Cell for contributionId = dummyfzxc0WG0lV
+2015-04-19 09:22:23.443 PopulistMVP[8128:2331047] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x12fe23db0; baseClass = UITableViewCell; frame = (0 0; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x170220320>> ForContribution:<Contribution: 0x1740d9750> (entity: Contribution; id: 0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = dummyfzxc0WG0lV;
+    contributionType = photo;
+    createdAt = "2015-04-19 15:53:45 +0000";
+    event = nil;
+    imagePath = j9WCVDzMCB;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600>";
+})
+2015-04-19 09:22:23.443 PopulistMVP[8128:2331047] contributionId = dummyfzxc0WG0lV, contributionType = photo, imagePath = j9WCVDzMCB
+2015-04-19 09:22:23.443 PopulistMVP[8128:2331047] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-19 09:22:23.444 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:j9WCVDzMCB
+2015-04-19 09:22:23.444 PopulistMVP[8128:2331047] Just got the image <UIImage: 0x1740840b0>
+2015-04-19 09:22:23.444 PopulistMVP[8128:2331047] Yay, the image wasn't nil
+2015-04-19 09:22:23.444 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:j9WCVDzMCB
+2015-04-19 09:22:23.445 PopulistMVP[8128:2331047] Formatting Event Cell for contributionId = xoJZ7mu5jk
+2015-04-19 09:22:23.445 PopulistMVP[8128:2331047] PPLSTDataManager - formatEventCell:<PPLSTEventTableViewCell: 0x12fd22890; baseClass = UITableViewCell; frame = (0 385; 375 385); hidden = YES; autoresize = W; layer = <CALayer: 0x174222160>> ForContribution:<Contribution: 0x1740d7d10> (entity: Contribution; id: 0xd000000026fc0002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2495> ; data: {
+    contributingUserId = "1819E914-FFD3-4284-AEDA-20529F845680";
+    contributionId = xoJZ7mu5jk;
+    contributionType = photo;
+    createdAt = "2015-03-29 22:19:50 +0000";
+    event = nil;
+    imagePath = fV74olxOLz;
+    latitude = nil;
+    longitude = nil;
+    message = nil;
+    parentEvent = "0xd000000018e40000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1593>";
+})
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] contributionId = xoJZ7mu5jk, contributionType = photo, imagePath = fV74olxOLz
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] it's a photo and the imagePath is not nil, nor is it the empty string
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:fV74olxOLz
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] Just got the image <UIImage: 0x17008a870>
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] Yay, the image wasn't nil
+2015-04-19 09:22:23.446 PopulistMVP[8128:2331047] PPLSTDataManager - getImageWithFileName:fV74olxOLz
+2015-04-19 09:22:46.677 PopulistMVP[8128:2331047] Selected Row Number 0
+2015-04-19 09:22:46.860 PopulistMVP[8128:2331077] PPLSTDataManager - downloadContributionMetaDataForEvent:<Event: 0x1740da630> (entity: Event; id: 0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600> ; data: {
+    containsUser = 1;
+    contributions = "<relationship fault: 0x174226f40 'contributions'>";
+    eventId = Advt7iyIau;
+    importance = 3;
+    lastActive = "2015-04-19 15:58:22 +0000";
+    latitude = "34.02106";
+    longitude = "-118.4276";
+    titleContribution = "0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502>";
+})
+2015-04-19 09:22:47.115 PopulistMVP[8128:2331077] return from parse: {
+    contributionIds =     (
+                {
+            contributionId = n0Dima9DeT;
+            createdAt = "2015-04-19 15:59:03 +0000";
+            message = Hi;
+            n0Dima9DeT = message;
+            type = message;
+            userId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+        },
+                {
+            contributionId = f75fVQoS85;
+            createdAt = "2015-04-19 15:53:55 +0000";
+            f75fVQoS85 = message;
+            message = Hey;
+            type = message;
+            userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+        }
+    );
+}
+2015-04-19 09:22:47.116 PopulistMVP[8128:2331077] arrayOfContributionData = (
+        {
+        contributionId = n0Dima9DeT;
+        createdAt = "2015-04-19 15:59:03 +0000";
+        message = Hi;
+        n0Dima9DeT = message;
+        type = message;
+        userId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    },
+        {
+        contributionId = f75fVQoS85;
+        createdAt = "2015-04-19 15:53:55 +0000";
+        f75fVQoS85 = message;
+        message = Hey;
+        type = message;
+        userId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    }
+)
+2015-04-19 09:22:47.117 PopulistMVP[8128:2331077] considering contribution with Id = n0Dima9DeT
+2015-04-19 09:22:47.117 PopulistMVP[8128:2331077] PPLSTDataManager - getContributionFromCoreDataWithId:n0Dima9DeT
+2015-04-19 09:22:47.117 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 1
+2015-04-19 09:22:47.118 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 2
+2015-04-19 09:22:47.118 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 3
+2015-04-19 09:22:47.119 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 4
+2015-04-19 09:22:47.119 PopulistMVP[8128:2331077] Error: No contribution found in core data with contributionId = n0Dima9DeT
+2015-04-19 09:22:47.120 PopulistMVP[8128:2331077] PPLSTDataManager - createContributionWithId:n0Dima9DeT
+2015-04-19 09:22:47.120 PopulistMVP[8128:2331077] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:47.124 PopulistMVP[8128:2331077] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:47.125 PopulistMVP[8128:2331077] considering contribution with Id = f75fVQoS85
+2015-04-19 09:22:47.125 PopulistMVP[8128:2331077] PPLSTDataManager - getContributionFromCoreDataWithId:f75fVQoS85
+2015-04-19 09:22:47.125 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 1
+2015-04-19 09:22:47.125 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 2
+2015-04-19 09:22:47.125 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 3
+2015-04-19 09:22:47.126 PopulistMVP[8128:2331077] getContributionFromCoreDataWithId - 4
+2015-04-19 09:22:47.126 PopulistMVP[8128:2331077] Error: No contribution found in core data with contributionId = f75fVQoS85
+2015-04-19 09:22:47.126 PopulistMVP[8128:2331077] PPLSTDataManager - createContributionWithId:f75fVQoS85
+2015-04-19 09:22:47.126 PopulistMVP[8128:2331077] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:47.128 PopulistMVP[8128:2331077] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:47.128 PopulistMVP[8128:2331077] PPLSTDataManager - saveCoreData
+2015-04-19 09:22:47.128 PopulistMVP[8128:2331077] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:47.129 PopulistMVP[8128:2331047] PPLSTDataManager - contextHasChanged
+2015-04-19 09:22:47.129 PopulistMVP[8128:2331077] PPLSTDataManager - getStatusDictionaryForEvent:<Event: 0x1740da630> (entity: Event; id: 0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600> ; data: {
+    containsUser = 1;
+    contributions =     (
+        "0xd0000000271c0002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2503>",
+        "0xd000000027240002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2505>",
+        "0xd000000027200002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2504>"
+    );
+    eventId = Advt7iyIau;
+    importance = 3;
+    lastActive = "2015-04-19 15:58:22 +0000";
+    latitude = "34.02106";
+    longitude = "-118.4276";
+    titleContribution = "0xd000000027180002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2502>";
+})
+2015-04-19 09:22:47.320 PopulistMVP[8128:2331077] return from parse: {
+    statusArray =     (
+        "09425E21-46F9-4014-B2AF-74EB104AFD46",
+        "8AAAA485-5B2D-4611-B37F-1762B6E49B12"
+    );
+}
+2015-04-19 09:22:47.321 PopulistMVP[8128:2331077] userIds = {(
+    "09425E21-46F9-4014-B2AF-74EB104AFD46",
+    "8AAAA485-5B2D-4611-B37F-1762B6E49B12"
+)}
+2015-04-19 09:22:47.321 PopulistMVP[8128:2331047] In the process of converting contributionId = f75fVQoS85 where the senderId = 09425E21-46F9-4014-B2AF-74EB104AFD46
+2015-04-19 09:22:47.321 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey:f75fVQoS85
+2015-04-19 09:22:47.322 PopulistMVP[8128:2331047] self.keysSet = {(
+)}
+2015-04-19 09:22:47.322 PopulistMVP[8128:2331047] [self.keysArray count] = 0. Max = 10
+2015-04-19 09:22:47.322 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-19 09:22:47.323 PopulistMVP[8128:2331047] In the process of converting contributionId = n0Dima9DeT where the senderId = 8AAAA485-5B2D-4611-B37F-1762B6E49B12
+2015-04-19 09:22:47.323 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey:n0Dima9DeT
+2015-04-19 09:22:47.323 PopulistMVP[8128:2331047] self.keysSet = {(
+    f75fVQoS85
+)}
+2015-04-19 09:22:47.323 PopulistMVP[8128:2331047] [self.keysArray count] = 1. Max = 10
+2015-04-19 09:22:47.324 PopulistMVP[8128:2331047] PPLST prepareDictionaryForInsertWithKey - done
+2015-04-19 09:22:47.324 PopulistMVP[8128:2331047] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}
+2015-04-19 09:22:47.343 PopulistMVP[8128:2331047] PPLSTDataManager - avatarForStatus:0
+2015-04-19 09:22:47.343 PopulistMVP[8128:2331047] has
+2015-04-19 09:22:47.354 PopulistMVP[8128:2331047] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=09425E21-46F9-4014-B2AF-74EB104AFD46, senderDisplayName=asdf, date=2015-04-19 15:53:55 +0000, isMediaMessage=0, text=Hey, media=(null)> ForContribution:<Contribution: 0x1740dac50> (entity: Contribution; id: 0xd000000027240002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2505> ; data: {
+    contributingUserId = "09425E21-46F9-4014-B2AF-74EB104AFD46";
+    contributionId = f75fVQoS85;
+    contributionType = message;
+    createdAt = "2015-04-19 15:53:55 +0000";
+    event = "0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = Hey;
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13084de00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x170244410>; layer = <CALayer: 0x170420160>; contentOffset: {0, 0}; contentSize: {375, 100}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x12fd07830>
+2015-04-19 09:22:47.365 PopulistMVP[8128:2331047] PPLSTChatViewController - cellForItemAtIndexPath:<NSIndexPath: 0xc000000000008016> {length = 2, path = 0 - 1}
+2015-04-19 09:22:47.374 PopulistMVP[8128:2331047] PPLSTDataManager - avatarForStatus:1
+2015-04-19 09:22:47.374 PopulistMVP[8128:2331047] has
+2015-04-19 09:22:47.378 PopulistMVP[8128:2331047] PPLSTDataManager - formatJSQMessage:<JSQMessage: senderId=8AAAA485-5B2D-4611-B37F-1762B6E49B12, senderDisplayName=asdf, date=2015-04-19 15:59:03 +0000, isMediaMessage=0, text=Hi, media=(null)> ForContribution:<Contribution: 0x1740dee60> (entity: Contribution; id: 0xd000000027200002 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Contribution/p2504> ; data: {
+    contributingUserId = "8AAAA485-5B2D-4611-B37F-1762B6E49B12";
+    contributionId = n0Dima9DeT;
+    contributionType = message;
+    createdAt = "2015-04-19 15:59:03 +0000";
+    event = "0xd000000019000000 <x-coredata://C13A28EB-F916-4F6D-8660-0CFA0890DE48/Event/p1600>";
+    imagePath = nil;
+    latitude = nil;
+    longitude = nil;
+    message = Hi;
+    parentEvent = nil;
+}) inCollectionView:<JSQMessagesCollectionView: 0x13084de00; baseClass = UICollectionView; frame = (0 0; 375 603); clipsToBounds = YES; opaque = NO; autoresize = RM+BM; gestureRecognizers = <NSArray: 0x170244410>; layer = <CALayer: 0x170420160>; contentOffset: {0, 0}; contentSize: {375, 100}> collection view layout: <JSQMessagesCollectionViewFlowLayout: 0x12fd07830>

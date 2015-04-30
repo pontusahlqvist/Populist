@@ -10,6 +10,7 @@
 #import "PPLSTChatViewController.h"
 #import "PPLSTEventTableViewCell.h"
 #import <Parse/Parse.h>
+#import "PPLSTIntroScreenView.h"
 
 @interface PPLSTExploreTableViewController ()
 @property (nonatomic) BOOL isDecelerating;
@@ -38,9 +39,9 @@
         return;
     }
 
-    
-    
+
     // Do any additional setup after loading the view.
+
 
     self.locationManager = [[PPLSTLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -401,6 +402,12 @@
         self.previousCurrentEvent = self.currentEvent;
         self.currentEvent = nil;
     }
+
+    if([self.events count] > 0){
+        self.tableView.backgroundView = nil;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+    
     [self removeInvisibleEvents];
     [self.tableView reloadData];
     [self cleanUpEventsInBackground];

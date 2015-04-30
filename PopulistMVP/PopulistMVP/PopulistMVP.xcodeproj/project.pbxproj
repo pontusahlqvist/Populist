@@ -106,6 +106,7 @@
 		167B40B21ABF2F5C00D4B579 /* mappin32.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40AF1ABF2F5C00D4B579 /* mappin32.png */; };
 		167B40B31ABF2F5C00D4B579 /* mappin96.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40B01ABF2F5C00D4B579 /* mappin96.png */; };
 		167B40B51ABF39F000D4B579 /* mappin64.png in Resources */ = {isa = PBXBuildFile; fileRef = 167B40B41ABF39F000D4B579 /* mappin64.png */; };
+		167F02621AE53B7B001FD543 /* PPLSTIntroScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F02611AE53B7B001FD543 /* PPLSTIntroScreenView.m */; };
 		167F78951A58725E00C7AB64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78941A58725E00C7AB64 /* Foundation.framework */; };
 		167F78971A58725E00C7AB64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78961A58725E00C7AB64 /* CoreGraphics.framework */; };
 		167F78991A58725E00C7AB64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167F78981A58725E00C7AB64 /* UIKit.framework */; };
@@ -355,6 +356,8 @@
 		167B40AF1ABF2F5C00D4B579 /* mappin32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappin32.png; sourceTree = "<group>"; };
 		167B40B01ABF2F5C00D4B579 /* mappin96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappin96.png; sourceTree = "<group>"; };
 		167B40B41ABF39F000D4B579 /* mappin64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappin64.png; sourceTree = "<group>"; };
+		167F02601AE53B7B001FD543 /* PPLSTIntroScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLSTIntroScreenView.h; sourceTree = "<group>"; };
+		167F02611AE53B7B001FD543 /* PPLSTIntroScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLSTIntroScreenView.m; sourceTree = "<group>"; };
 		167F78911A58725E00C7AB64 /* PopulistMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopulistMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F78941A58725E00C7AB64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		167F78961A58725E00C7AB64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -697,6 +700,7 @@
 		165346DE1A5E207600343183 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				167F025F1AE53B39001FD543 /* Intro Screen View */,
 				16E6192E1A89253E00FBAAB3 /* Updating Location View */,
 				16E619201A855B7000FBAAB3 /* Report View */,
 				167F78D21A5876C600C7AB64 /* TableViewCells */,
@@ -712,6 +716,15 @@
 				165346E01A5E21E600343183 /* PPLSTNavigationController.m */,
 			);
 			name = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		167F025F1AE53B39001FD543 /* Intro Screen View */ = {
+			isa = PBXGroup;
+			children = (
+				167F02601AE53B7B001FD543 /* PPLSTIntroScreenView.h */,
+				167F02611AE53B7B001FD543 /* PPLSTIntroScreenView.m */,
+			);
+			name = "Intro Screen View";
 			sourceTree = "<group>";
 		};
 		167F78881A58725E00C7AB64 = {
@@ -1215,6 +1228,7 @@
 				16E6191C1A83F3E300FBAAB3 /* Reachability.m in Sources */,
 				163E3D7C1A64DD3600913FBF /* JSQMessagesViewController.m in Sources */,
 				163E3D901A64DD3600913FBF /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
+				167F02621AE53B7B001FD543 /* PPLSTIntroScreenView.m in Sources */,
 				163E3D831A64DD3600913FBF /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				16E6191F1A855B6500FBAAB3 /* PPLSTReportView.m in Sources */,
 				163E3D7F1A64DD3600913FBF /* JSQMessagesBubbleImageFactory.m in Sources */,
