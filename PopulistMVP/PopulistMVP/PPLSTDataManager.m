@@ -883,7 +883,7 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 //stores an image in the file system and returns the imagePath
 -(NSString *) storeImage:(UIImage*)image forContributionId:(NSString*)contributionId{
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
-//    NSData *imageData = UIImagePNGRepresentation(image); 
+//    NSData *imageData = UIImagePNGRepresentation(image);
     NSData *imageData = UIImageJPEGRepresentation(image,0.5);
     NSString *fileName = [self getEmptyFileName];
 
@@ -903,6 +903,13 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
     return fpath;
 }
 
+-(NSString*) PNGfilePathForImageWithFileName:(NSString*)fileName{
+    NSString *homeDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *fpath = [homeDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",fileName]];
+    return fpath;
+}
+
+
 //returns NSString representing a filePath which is guaranteed to be empty
 -(NSString*) getEmptyFileName{
     NSLog(@"PPLSTDataManager - getEmptyFileName");
@@ -910,11 +917,13 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
     
     NSString *imageName = [self randomStringWithLength:10];
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",imageName]];
+    NSString *PNGfilePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    while([fileManager fileExistsAtPath:filePath]){
+    while([fileManager fileExistsAtPath:filePath] || [fileManager fileExistsAtPath:PNGfilePath]){
         imageName = [self randomStringWithLength:10];
         filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",imageName]];
+        PNGfilePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
     }
     return imageName;
 }
@@ -945,7 +954,14 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
         if(image){ //protect against null images
             self.imagesAtFilePath[fileName] = image;
         } else{
-            return [UIImage imageNamed:@"oopsImage"];
+            //could perhaps be a png image from an old app install before we made the switch
+            NSString *filePathPNG = [self PNGfilePathForImageWithFileName:fileName];
+            image = [UIImage imageWithContentsOfFile:filePathPNG];
+            if(image){
+                self.imagesAtFilePath[fileName] = image;
+            } else{
+                return [UIImage imageNamed:@"oopsImage"];
+            }
         }
     }
     return self.imagesAtFilePath[fileName];
