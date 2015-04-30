@@ -62,17 +62,17 @@ var minuteCutoffMerge = 60*1;
 
 //var minuteCutoffGetLocal = 1;
 //var minuteCutoffGetGlobal = 1;
-var minuteCutoffGetLocal = 60*24*7*10*5;//60*24*7;
+var minuteCutoffGetLocal = 60*24*7*10;//60*24*7;
 var minuteCutoffGetGlobal = 60*24*7*10;//60*24*7;
 
 var maxMilesToAdd = 0.5;
 var maxMilesToMerge = maxMilesToAdd;
 //parameters for retrieving clusters
 var minLocalFitValue = 0.1;
-var minGlobalFitValue = 1.0;
+var minGlobalFitValue = 10000.0; //TODO: make sure this parameter makes sense.
 //local stuff
-var localGettingMilesCutoff = 10;
-var typicalDistanceForGettingLocal = 20;
+var localGettingMilesCutoff = 20;
+var typicalDistanceForGettingLocal = 10;
 //var secondDecayForLocalGetting = 60;
 var secondDecayForLocalGetting = 60*60*24*7*10*50;//60*60*8; //typical time decay for finding a nearby cluster (since last update).
 
@@ -690,9 +690,22 @@ Parse.Cloud.define("getClusters", function(request, response) {
     localQuery.withinMiles("location", location, localGettingMilesCutoff);
     localQuery.greaterThanOrEqualTo("validUntil", futureInfinity);
     localQuery.greaterThanOrEqualTo("tk", new Date(inputTime.getTime() - 1000*60*minuteCutoffGetLocal));
+    localQuery.greaterThanOrEqualTo("importance",1.0); //only show active clusters in this query. Relay the contribution clusters to the contributionQuery.
     localQuery.addDescending("tk"); //Note: necessary to ensure that recent events show up at all in the feed. This is important to ensure that users near eachother take part in the same event.
+    localQuery.limit(1000);
     var localQueryWrapped = new Parse.Query("FlatCluster");
     localQueryWrapped.matchesKeyInQuery("objectId", "objectId", localQuery);
+
+
+    var contributionQuery = new Parse.Query("FlatCluster");
+    contributionQuery.withinMiles("location",location,maxMilesToAdd);
+    contributionQuery.greaterThanOrEqualTo("validUntil", futureInfinity);
+    contributionQuery.greaterThanOrEqualTo("tk", new Date(inputTime.getTime() - 1000*60*minuteCutoffAdd));
+    contributionQuery.addDescending("tk"); //Note: necessary to ensure that recent events show up at all in the feed. This is important to ensure that users near eachother take part in the same event.
+    contributionQuery.limit(1000);
+    var contributionQueryWrapped = new Parse.Query("FlatCluster");
+    contributionQueryWrapped.matchesKeyInQuery("objectId","objectId",contributionQuery);
+
 
     var globalQuery = new Parse.Query("FlatCluster");
     globalQuery.greaterThanOrEqualTo("validUntil", futureInfinity);
@@ -701,8 +714,10 @@ Parse.Cloud.define("getClusters", function(request, response) {
     globalQuery.limit(5); //only allow 5 global events
 
     var totalQuery = Parse.Query.or(localQueryWrapped, globalQuery);
+    var totalLocalQuery = Parse.Query.or(localQueryWrapped, contributionQueryWrapped);
 //    totalQuery.find({ //NOTE: / TODO: limit can only be applied to the final query. As a result, we may end up losing the nearby query within the global query and thereby never see current conversations. For now, I just disabled the global query.
-    localQueryWrapped.find({
+//    localQueryWrapped.find({
+    totalLocalQuery.find({
         success: function(clusterObjects){
             console.log("There are the cluster objects that were found: " + clusterObjects);
             response.success({"customClusterObjects": filterAndOrderClusters({"location": location, "time": inputTime, "userId": userId}, clusterObjects)});
@@ -722,18 +737,18 @@ function filterAndOrderClusters(baseData, clusters){
     for(var i = 0; i < clusters.length; i++){
         var cluster = clusters[i];
         var importance = cluster.get("importance");
-        if(importance < 1.0){
-            console.log("importance = " + importance + " for event with id = " +cluster.id);
-        }
+
         var distanceToCluster = cluster.get("location").milesTo(baseLocation);
         
         var clusterTime = cluster.get("tk");
         var deltaTime = (baseTime.getTime() - clusterTime.getTime())/1000.0; //seconds between now and last update to cluster
         
-        var localFitValue = (importance / ((0.001 + distanceToCluster)/(typicalDistanceForGettingLocal))) * Math.exp(-deltaTime/secondDecayForLocalGetting);
+        var localFitValue = (importance / ((0.01 + distanceToCluster)/(typicalDistanceForGettingLocal))) * Math.exp(-deltaTime/secondDecayForLocalGetting);
         var globalFitValue = importance*Math.exp(-deltaTime/secondDecayForGlobalGetting); //base global fit value only on importance and time
         if(localFitValue > minLocalFitValue || globalFitValue > minGlobalFitValue){
-
+            if(importance >= 1.0){
+                console.log("local fit = " + localFitValue + ", global fit = " + globalFitValue);
+            }
             var titlePhotoIdArray = cluster.get("titlePhotoIdArray");
             var titlePhotoId = titlePhotoIdArray[titlePhotoIdArray.length - 1];
 
