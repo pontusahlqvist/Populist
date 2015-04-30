@@ -883,7 +883,7 @@ NSLog(@"getContributionFromCoreDataWithId - 5");
 //stores an image in the file system and returns the imagePath
 -(NSString *) storeImage:(UIImage*)image forContributionId:(NSString*)contributionId{
     NSLog(@"PPLSTDataManager - storeImage:%@",image);
-//    NSData *imageData = UIImagePNGRepresentation(image);
+//    NSData *imageData = UIImagePNGRepresentation(image); 
     NSData *imageData = UIImageJPEGRepresentation(image,0.5);
     NSString *fileName = [self getEmptyFileName];
 
