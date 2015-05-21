@@ -35,16 +35,22 @@ int maxMessageLengthForPush = 1000;
 -(id) init{
     self = [super init];
     if(self){
+        srand([[NSDate date] timeIntervalSince1970]); //make sure to seed the random number generator for later use
         id delegate = [[UIApplication sharedApplication] delegate];
         self.context = [delegate managedObjectContext];
         //setup a listener to see if other contexts on other threads have been saved
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contextHasChanged:) name:NSManagedObjectContextDidSaveNotification object:nil];
-        self.contributingUserId = [PPLSTUUID UUID];
-        if(!self.contributingUserId){ // try again
+        NSString *pplstuuid = [[NSUserDefaults standardUserDefaults] objectForKey:@"PPLSTUUID"];
+        if(!pplstuuid){
             self.contributingUserId = [PPLSTUUID UUID];
-        }
-        if(!self.contributingUserId){ //if it's still null, it's better to create a random string than have the app crash down the line
-            self.contributingUserId = [@"tmpUID" stringByAppendingString:[self randomStringWithLength:10]];
+            if(!self.contributingUserId){ // try again
+                self.contributingUserId = [PPLSTUUID UUID];
+            }
+            if(!self.contributingUserId){ //if it's still null, it's better to create a random string than have the app crash down the line
+                self.contributingUserId = [@"tmpUID" stringByAppendingString:[self randomStringWithLength:10]];
+            } else{
+                [[NSUserDefaults standardUserDefaults] setObject:self.contributingUserId forKey:@"PPLSTUUID"];
+            }
         }
         
         PPLSTAppDelegate *appDelegate = (PPLSTAppDelegate*)[UIApplication sharedApplication].delegate;
